@@ -1,0 +1,313 @@
+.landing-search {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .search-choice {
+        width: 100%;
+        height: auto;
+        padding: 6px;
+        background: rgba(19, 46, 71, 0.87);
+        box-shadow: 0px 24px 36.1px 1.9px rgba(10, 25, 40, 0.3);
+        border-radius: 5px;
+        display: inline-block;
+        span {
+            font-family: "Titillium Web", sans-serif;
+            color: #ffffff;
+            font-size: 20px;
+            padding: 15px 0px;
+            font-weight: 700;
+            text-align: center;
+            display: inline-block;
+            margin: 0% 0.9%;
+            border-radius: 5px;
+            transition: background 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+
+            &:hover {
+                background: #00aced;
+                box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+            }
+            &.active {
+                background: #00aced;
+                box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+            }
+            &.buy {
+                width: 23%;
+                margin-left: 0%;
+            }
+            &.sell {
+                width: 34.8%;
+            }
+            &.estimate {
+                width: 38.6%;
+                margin-right: 0%;
+            }
+        }
+    }
+    .search-field {
+        margin-top: 30px;
+        box-shadow: 0px 6px 20px 1.75px rgba(10, 25, 40, 0.27);
+        width: 100%;
+        .input-group {
+            position: relative;
+            &::after {
+                left: 0;
+                transition: left 0.3s ease;
+            }
+            &.buy::after {
+                bottom: 100%;
+                left: 13%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(255, 255, 255, 0);
+                border-bottom-color: #ffffff;
+                border-width: 12px;
+                margin-left: -12px;
+            }
+            &.sell::after {
+                bottom: 100%;
+                left: 43%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(255, 255, 255, 0);
+                border-bottom-color: #ffffff;
+                border-width: 12px;
+                margin-left: -12px;
+            }
+            &.estimate::after {
+                bottom: 100%;
+                left: 80%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(255, 255, 255, 0);
+                border-bottom-color: #ffffff;
+                border-width: 12px;
+                margin-left: -12px;
+            }
+        }
+        .form-control {
+            font-family: "Titillium Web", sans-serif;
+            color: #96a7bc;
+            background: #fff;
+            font-size: 19px;
+            font-weight: 300;
+            padding: 30px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            outline: none !important;
+            border: 0px;
+            &:hover,
+            &:active,
+            &:focus {
+                outline: none !important;
+                box-shadow: none; 
+            }
+        }
+        .input-group-text {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            outline: none !important;
+            border: 0px;
+            background: #fff;
+            width: 50px;
+            text-align: center;
+            i {
+                font-size: 26px;
+                color: #00aced;
+            }
+        }
+    }
+}
+.landing-links {
+    .col-link {
+        margin-bottom: 15px;
+        a {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        a:hover,
+        a:focus,
+        a:active {
+            opacity: 0.7;
+        }
+        h1 {
+            font-family: "Titillium Web", sans-serif;
+            color: #00aced;
+            font-size: 22px;
+            font-weight: 400;
+            text-align: left;
+            display: inline-block;
+        }
+        i {
+            float: right;
+            position: relative;
+            color: #00aced;
+            right: 10%;
+            font-size: 17px;
+        }
+        .separator {
+            position: absolute;
+            float: left;
+            width: 92%;
+            background: #eee;
+            height: 1px;
+            left: 3%;
+            top: 100%;
+        }
+        p {
+            font-family: "Titillium Web", sans-serif;
+            color:#929baf;
+            font-size: 17px;
+            font-weight: 300;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+    }
+    .col-link:last-child {
+        .separator {
+            display: none;
+        }
+    }
+}
+.property-slider {
+    .property-item {
+        padding: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, rgba(255,255,255,0) 42%, rgba(0,0,0,1) 100%);
+            opacity: .6; 
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        .time-on-market {
+            font-family: "Titillium Web", sans-serif;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            text-align: left;
+            text-shadow: 0px 0px 0px rgba(29, 38, 63, 0.41);
+            text-transform: lowercase;
+            display: block;
+            z-index: 0;
+            position: relative;
+        }
+        .sale-type {
+            font-family: "Titillium Web", sans-serif;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 26px;
+            text-align: left;
+            text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
+            margin-top: 80px;
+            display:  block;
+            z-index: 0;
+            position: relative;
+        }
+        .property-price {
+            font-family: "Titillium Web", sans-serif;
+            color: #ffffff;
+            font-size: 31px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            text-shadow: 0px 3px 5.7px rgba(29, 38, 63, 0.48);
+            text-transform: uppercase;
+            display: inline-block;
+            z-index: 0;
+            position: relative;
+        }
+        .property-info {
+            display: inline-block;
+            float: right;
+            margin-top: 3px;
+            .beds,
+            .baths,
+            .sqft {
+                font-family: "Titillium Web", sans-serif;
+                color: #ffffff;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: left;
+                text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
+                z-index: 0;
+                position: relative;
+            }
+            i {
+                color: #fff;
+                font-size: 5px;
+                vertical-align: middle;
+                padding-left: 5px;
+                padding-right: 5px;
+                z-index: 0;
+                position: relative;
+            }
+        }
+        .property-address {
+            margin-top: 5px;
+            font-family: "Titillium Web", sans-serif;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
+            z-index: 0;
+            position: relative;
+            display: block;
+        }
+    }
+}
+.owl-prev {
+    top: 37%;
+    position: absolute;
+    left: -20px;
+    span {
+        font-size: 50px;
+        color: #929baf;
+        transition: color 0.3s ease;
+        &:hover,
+        &:active,
+        &:focus {
+            color: #00aced;
+        }
+    }
+}
+.owl-next {
+    top: 37%;
+    position: absolute;
+    right: -20px;
+    span {
+        font-size: 50px;
+        color: #929baf;
+        transition: color 0.3s ease;
+        &:hover,
+        &:active,
+        &:focus {
+            color: #00aced;
+        }
+    }  
+}
