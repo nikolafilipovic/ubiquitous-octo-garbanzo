@@ -1,6 +1,6 @@
 <?php
 /**
- *  Loading up all Divi Builder modules.
+ * Loading up all Divi Builder modules.
  */
 function add_modules() {
     if (class_exists("ET_Builder_Module")) {
@@ -12,7 +12,7 @@ function add_modules() {
 }
 
 /**
- *  Method for initializing the Divi Builder modules.
+ * Method for initializing the Divi Builder modules.
  */
 function load_divi_modules() {
     global $pagenow;
@@ -40,7 +40,8 @@ function register_toc_menus() {
     register_nav_menu('footer-menu-1',__( 'Footer Links 1' ));
     register_nav_menu('footer-menu-2',__( 'Footer Links 2' ));
     register_nav_menu('footer-menu-3',__( 'Footer Links 3' ));
-  }
+}
+
 add_action( 'init', 'register_toc_menus' );
 
 /**
@@ -48,7 +49,5 @@ add_action( 'init', 'register_toc_menus' );
  */
 function load_static() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' ); //Loading up Divi styles.
-    //wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css' ); //Loading up Custom CSS.
-    //wp_enqueue_script( 'child-script', get_stylesheet_directory_uri() . '/js/owl.carousel.min' ); //Loading up Custom JS.
 }
 add_action( 'wp_enqueue_scripts', 'load_static' );
