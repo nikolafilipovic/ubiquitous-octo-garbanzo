@@ -10,7 +10,7 @@
     }
 </style>
 <!-- Pisi HTML OVDE -->
-<h1>Neki levi tag</h1>
+<h1>Idemo</h1>
 <?php
     get_footer();
 ?>

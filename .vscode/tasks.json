@@ -6,7 +6,7 @@
         {
             "label": "Sass Compile",
             "type": "shell",
-            "command": "node-sass scss/main.scss style.css",
+            "command": "node-sass scss/main.scss style.css --watch",
             "group": "build"
         }
     ]

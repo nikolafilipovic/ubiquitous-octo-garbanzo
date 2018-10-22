@@ -539,12 +539,12 @@ body {
     float: right;
     position: relative;
     color: #00aced;
-    right: 10%;
+    right: 7%;
     font-size: 17px;
-    transition: .3s ease;
-    -moz-transition: .3s ease;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease; }
+    transition: right  .3s ease;
+    -moz-transition: right .3s ease;
+    -webkit-transition: right .3s ease;
+    -o-transition: right .3s ease; }
     .landing-links .col-link i:hover {
       padding-left: 10px; }
   .landing-links .col-link .separator {
@@ -567,8 +567,8 @@ body {
   display: none; }
 
 .property-slider .property-item {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
@@ -604,7 +604,7 @@ body {
     line-height: 26px;
     text-align: left;
     text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
-    margin-top: 80px;
+    margin-top: 95px;
     display: block;
     z-index: 0;
     position: relative; }
@@ -613,7 +613,7 @@ body {
     color: #ffffff;
     font-size: 31px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 20px;
     text-align: left;
     text-shadow: 0px 3px 5.7px rgba(29, 38, 63, 0.48);
     text-transform: uppercase;
@@ -622,8 +622,7 @@ body {
     position: relative; }
   .property-slider .property-item .property-info {
     display: inline-block;
-    float: right;
-    margin-top: 3px; }
+    float: right; }
     .property-slider .property-item .property-info .beds,
     .property-slider .property-item .property-info .baths,
     .property-slider .property-item .property-info .sqft {
@@ -808,6 +807,12 @@ footer {
           opacity: 0.7; }
 
 /* Pisi CSS Ovde! */
+/* Sitna izmena */
+/* Jos jedna sitna izmena */
+/* Jos jedna bla bla */
+/* Sada menjam fajl u drugom editoru ali ce VS i dalje da kompajluje i ove izmene */
+/* jos jedna promena */
+/* proradi */
 @media only screen and (min-width: 960px) {
   .container {
     padding-top: 0;
