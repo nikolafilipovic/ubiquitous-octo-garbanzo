@@ -807,6 +807,7 @@ footer {
         footer .bottom-footer .footer-contact span a:hover, footer .bottom-footer .footer-contact span a:focus, footer .bottom-footer .footer-contact span a:active {
           opacity: 0.7; }
 
+/* Pisi CSS Ovde! */
 @media only screen and (min-width: 960px) {
   .container {
     padding-top: 0;
