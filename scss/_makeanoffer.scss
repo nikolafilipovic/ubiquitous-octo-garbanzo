@@ -5,7 +5,7 @@
 /* Sada menjam fajl u drugom editoru ali ce VS i dalje da kompajluje i ove izmene */
 /* jos jedna promena */
 /* proradi */
-#wrapper {
+.wrapper {
   background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
   background: -moz-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
   background: -o-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
@@ -237,4 +237,5 @@
         }
       }
     }
+
 }
