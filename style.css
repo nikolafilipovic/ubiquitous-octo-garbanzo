@@ -813,6 +813,226 @@ footer {
 /* Sada menjam fajl u drugom editoru ali ce VS i dalje da kompajluje i ove izmene */
 /* jos jedna promena */
 /* proradi */
+#wrapper {
+  background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+  background: -moz-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+  background: -o-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+  background: -ms-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+  background: linear-gradient(0deg, #a4d2f4 0%, #80c6f2 100%);
+  width: 100%;
+  height: auto; }
+  #wrapper .cleaner {
+    clear: both; }
+  #wrapper .wrapperTop {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 7.6px 0.4px rgba(53, 94, 140, 0.18);
+    width: auto;
+    height: 75px;
+    padding-top: 2%; }
+    #wrapper .wrapperTop p {
+      font-family: Graphik;
+      color: #00aced;
+      font-size: 32px;
+      /* Approximation due to font substitution */
+      font-weight: 400;
+      line-height: 52px;
+      /* Approximation due to font substitution */
+      text-align: left;
+      margin-left: 10%; }
+  #wrapper .wrapperMid {
+    margin: 0px auto;
+    text-align: center;
+    height: 180px;
+    width: 81%;
+    margin-top: 10%; }
+    #wrapper .wrapperMid h1 {
+      font-family: Graphik;
+      color: #ffffff;
+      font-size: 30px;
+      /* Approximation due to font substitution */
+      font-weight: 400;
+      line-height: 26px;
+      /* Approximation due to font substitution */
+      text-align: center;
+      transform: scaleY(1.0005);
+      /* width and height properties ommitted due to transform */ }
+    #wrapper .wrapperMid h2 {
+      font-family: Graphik;
+      color: #ffffff;
+      font-size: 30px;
+      /* Approximation due to font substitution */
+      font-weight: 500;
+      line-height: 26px;
+      /* Approximation due to font substitution */
+      text-align: center;
+      font-weight: bold; }
+    #wrapper .wrapperMid h3 {
+      font-family: Graphik;
+      color: #ffffff;
+      font-size: 21px;
+      /* Approximation due to font substitution */
+      font-weight: 500;
+      line-height: 26px;
+      /* Approximation due to font substitution */
+      text-align: center; }
+    #wrapper .wrapperMid hr {
+      background-color: #ffffff;
+      width: 20px;
+      height: 2px; }
+    #wrapper .wrapperMid h4 {
+      font-family: Graphik;
+      color: #ffffff;
+      font-size: 19px;
+      /* Approximation due to font substitution */
+      font-weight: 400;
+      line-height: 26px;
+      /* Approximation due to font substitution */
+      text-align: center;
+      transform: scaleY(1.0005);
+      /* width and height properties ommitted due to transform */ }
+    #wrapper .wrapperMid h5 {
+      font-family: Graphik;
+      color: #ffffff;
+      font-size: 20px;
+      /* Approximation due to font substitution */
+      font-weight: 400;
+      line-height: 26px;
+      /* Approximation due to font substitution */
+      text-align: center;
+      transform: scaleY(1.0005);
+      /* width and height properties ommitted due to transform */
+      margin-top: 5%; }
+    #wrapper .wrapperMid h6 {
+      font-family: Graphik;
+      color: #ffffff;
+      font-size: 20px;
+      /* Approximation due to font substitution */
+      font-weight: 400;
+      line-height: 26px;
+      /* Approximation due to font substitution */
+      text-align: center;
+      transform: scaleY(1.0005);
+      /* width and height properties ommitted due to transform */
+      margin-top: 17.5%; }
+  #wrapper .wrapperForm {
+    width: 83.5%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 7%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18); }
+    #wrapper .wrapperForm .formBottomLine {
+      border-bottom: 0.08px solid #d6dce6; }
+    #wrapper .wrapperForm h4 {
+      margin-left: 19%;
+      font-family: Graphik;
+      color: #1e232c;
+      margin-top: 2.3%;
+      font-size: 22px;
+      /* Approximation due to font substitution */
+      font-weight: 400;
+      line-height: 26px;
+      /* Approximation due to font substitution */
+      text-align: left;
+      transform: scaleY(1.0005);
+      /* width and height properties ommitted due to transform */ }
+    #wrapper .wrapperForm .formBlock {
+      height: 87px;
+      width: auto;
+      padding: 7.3%;
+      position: relative; }
+      #wrapper .wrapperForm .formBlock .formArrow {
+        height: 10px;
+        width: 10px;
+        float: right;
+        margin-bottom: 10%;
+        position: absolute;
+        bottom: 10%;
+        right: 10%; }
+      #wrapper .wrapperForm .formBlock .formCircle {
+        border-radius: 50%;
+        background-color: #00aced;
+        width: 40px;
+        height: 40px;
+        float: left; }
+    #wrapper .wrapperForm form {
+      font-family: Graphik;
+      margin: 0px auto;
+      height: auto;
+      width: 100%;
+      background-color: transparent; }
+      #wrapper .wrapperForm form .legend {
+        color: #ffffff;
+        font-weight: 500;
+        ine-height: 33.787px;
+        /* Approximation due to font substitution */
+        transform: scaleY(1.0005);
+        /* width and height properties ommitted due to transform */ }
+      #wrapper .wrapperForm form .wrapperFormText {
+        width: 100%;
+        height: auto; }
+        #wrapper .wrapperForm form .wrapperFormText input {
+          width: 48.3%;
+          height: 40px;
+          border-radius: 5px;
+          background-color: #ffffff;
+          padding-left: 5%;
+          margin-top: 2%;
+          margin-bottom: 2%;
+          border: none; }
+        #wrapper .wrapperForm form .wrapperFormText .input1 {
+          float: left; }
+        #wrapper .wrapperForm form .wrapperFormText .input2 {
+          float: right; }
+      #wrapper .wrapperForm form .formFullWidth {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding-left: 5%;
+        border: none; }
+      #wrapper .wrapperForm form .formSubmit {
+        background-color: #00aced;
+        color: #ffffff; }
+  #wrapper .wrapperFormTransparent {
+    background-color: transparent; }
+  #wrapper .personBlock {
+    width: 74%;
+    height: auto;
+    margin: 50px auto 0px auto;
+    background-color: #ffffff;
+    padding: 2%;
+    border-radius: 10px; }
+    #wrapper .personBlock .iconBlock {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      background-color: #c2c2c2;
+      float: left;
+      margin: 5% 0% 0% 5%; }
+    #wrapper .personBlock .infoBlock {
+      float: right;
+      width: auto; }
+      #wrapper .personBlock .infoBlock .infoblockName {
+        margin: 0px;
+        margin-top: -11px;
+        padding: 0px;
+        color: #c2c2c2; }
+    #wrapper .personBlock .fa-star {
+      color: #00aced; }
+  #wrapper .goBack {
+    width: auto;
+    height: 60px;
+    margin: 0px auto;
+    text-align: center; }
+    #wrapper .goBack a {
+      color: #ffffff; }
+      #wrapper .goBack a .fa {
+        margin-right: 3.3%; }
+
 @media only screen and (min-width: 960px) {
   .container {
     padding-top: 0;
