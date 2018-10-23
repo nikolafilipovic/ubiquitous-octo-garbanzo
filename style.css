@@ -1032,6 +1032,10 @@ footer {
       color: #ffffff; }
       .wrapper .goBack a .fa {
         margin-right: 3.3%; }
+  .wrapper .wrapperMidSmall {
+    height: 50px;
+    width: 300px;
+    background-color: red; }
 
 @media only screen and (min-width: 960px) {
   .container {
