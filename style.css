@@ -26,6 +26,8 @@
   src: local("Titillium Web Regular"), local("TitilliumWeb-Regular"), url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPecZTIAOhVxoMyOr9n_E7fdMPmDQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
+/* Some stupid variables
+------------------------------------------------------- */
 /* Importing all modules
 ------------------------------------------------------- */
 body {
@@ -830,7 +832,7 @@ footer {
     height: 75px;
     padding-top: 2%; }
     .wrapper .wrapperTop p {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #00aced;
       font-size: 32px;
       /* Approximation due to font substitution */
@@ -844,9 +846,9 @@ footer {
     text-align: center;
     height: 180px;
     width: 81%;
-    margin-top: 10%; }
+    padding-top: 10%; }
     .wrapper .wrapperMid h1 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 30px;
       /* Approximation due to font substitution */
@@ -857,7 +859,7 @@ footer {
       transform: scaleY(1.0005);
       /* width and height properties ommitted due to transform */ }
     .wrapper .wrapperMid h2 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 30px;
       /* Approximation due to font substitution */
@@ -867,7 +869,7 @@ footer {
       text-align: center;
       font-weight: bold; }
     .wrapper .wrapperMid h3 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 21px;
       /* Approximation due to font substitution */
@@ -880,7 +882,7 @@ footer {
       width: 20px;
       height: 2px; }
     .wrapper .wrapperMid h4 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 19px;
       /* Approximation due to font substitution */
@@ -891,7 +893,7 @@ footer {
       transform: scaleY(1.0005);
       /* width and height properties ommitted due to transform */ }
     .wrapper .wrapperMid h5 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 20px;
       /* Approximation due to font substitution */
@@ -903,7 +905,7 @@ footer {
       /* width and height properties ommitted due to transform */
       margin-top: 5%; }
     .wrapper .wrapperMid h6 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 20px;
       /* Approximation due to font substitution */
@@ -926,7 +928,7 @@ footer {
       border-bottom: 0.08px solid #d6dce6; }
     .wrapper .wrapperForm h4 {
       margin-left: 19%;
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #1e232c;
       margin-top: 2.3%;
       font-size: 22px;
@@ -957,7 +959,7 @@ footer {
         height: 40px;
         float: left; }
     .wrapper .wrapperForm form {
-      font-family: Graphik;
+      font-family: sans-serif;
       margin: 0px auto;
       height: auto;
       width: 100%;
@@ -985,6 +987,9 @@ footer {
           float: left; }
         .wrapper .wrapperForm form .wrapperFormText .input2 {
           float: right; }
+        .wrapper .wrapperForm form .wrapperFormText .formHalf {
+          width: 46.3%;
+          margin-left: 2%; }
       .wrapper .wrapperForm form .formFullWidth {
         width: 100%;
         height: 40px;
@@ -1033,9 +1038,7 @@ footer {
       .wrapper .goBack a .fa {
         margin-right: 3.3%; }
   .wrapper .wrapperMidSmall {
-    height: 50px;
-    width: 300px;
-    background-color: red; }
+    height: 80px; }
 
 @media only screen and (min-width: 960px) {
   .container {

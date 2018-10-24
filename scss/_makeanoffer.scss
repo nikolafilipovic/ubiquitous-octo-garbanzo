@@ -24,7 +24,7 @@
       height: 75px;
       padding-top: 2%;
         p{
-          font-family: Graphik;
+          font-family: $default-font-family;
           color:  #00aced;
           font-size: 32px;/* Approximation due to font substitution */
           font-weight: 400;
@@ -38,10 +38,10 @@
       text-align: center;
       height: 180px;
       width: 81%;
-      margin-top: 10%;
+      padding-top: 10%;
 
         h1 {
-          font-family: Graphik;
+          font-family: $default-font-family;
           color:  #ffffff;
           font-size: 30px;/* Approximation due to font substitution */
           font-weight: 400;
@@ -50,7 +50,7 @@
           transform: scaleY(1.0005);/* width and height properties ommitted due to transform */
         }
         h2 {
-          font-family: Graphik;
+          font-family: $default-font-family;
           color:  #ffffff;
           font-size: 30px;/* Approximation due to font substitution */
           font-weight: 500;
@@ -59,7 +59,7 @@
           font-weight: bold;
         }
         h3 {
-          font-family: Graphik;
+          font-family: $default-font-family;
           color:  #ffffff;
           font-size: 21px;/* Approximation due to font substitution */
           font-weight: 500;
@@ -72,7 +72,7 @@
           height: 2px;
         }
         h4 {
-          font-family: Graphik;
+          font-family: $default-font-family;
           color:  #ffffff;
           font-size: 19px;/* Approximation due to font substitution */
           font-weight: 400;
@@ -81,7 +81,7 @@
           transform: scaleY(1.0005);/* width and height properties ommitted due to transform */
         }
         h5 {
-          font-family: Graphik;
+          font-family: $default-font-family;
           color:  #ffffff;
           font-size: 20px;/* Approximation due to font substitution */
           font-weight: 400;
@@ -91,7 +91,7 @@
           margin-top: 5%;
         }
         h6 {
-          font-family: Graphik;
+          font-family: $default-font-family;
           color:  #ffffff;
           font-size: 20px;/* Approximation due to font substitution */
           font-weight: 400;
@@ -114,7 +114,7 @@
         }
         h4 {
           margin-left: 19%;
-          font-family: Graphik;
+          font-family: $default-font-family;
           color:  #1e232c;
           margin-top: 2.3%;
           font-size: 22px;/* Approximation due to font substitution */
@@ -146,7 +146,7 @@
             }
         }
         form {
-          font-family: Graphik;
+          font-family: $default-font-family;
           margin: 0px auto;
           height: auto;
           width: 100%;
@@ -175,6 +175,10 @@
                 }
                 .input2 {
                   float: right;
+                }
+                .formHalf{
+                  width: 46.3%;
+                  margin-left: 2%;
                 }
             }
           .formFullWidth {
@@ -238,7 +242,6 @@
       }
     }
     .wrapperMidSmall{
-      height: 50px;
-      background-color: red;
+      height: 80px;
     }
 }

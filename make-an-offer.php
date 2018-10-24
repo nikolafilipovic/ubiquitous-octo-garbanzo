@@ -195,20 +195,23 @@
     </div>
     <!-- Novi block -->
     <div class="wrapper">
-      <div class="wrapperMid">
+      <div class="wrapperMid wrapperMidSmall">
         <h1 class="hSmallMargin">Financial terms</h1>
       </div>
       <div class="wrapperForm wrapperFormTransparent">
         <form class="" action="index.html" method="post">
           <div class="wrapperFormText">
-            <input type="number" name="purPrice" value="" placeholder="$"/>
-            <input type="number" name="earnMoney" value="" placeholder="$"/>
-            <div class="cleaner">
-            </div>
+            <input type="number" class="formHalf" name="purPrice" value="" placeholder="$"/>
+            <input type="number" class="formHalf" name="earnMoney" value="" placeholder="$"/>
+            <div class="cleaner"></div>
+          </div>
+          <div class="wrapperFormText">
+            <input type="number" class="formHalf" name="purPrice" value="" placeholder="%" />
+            <input type="number" class="formHalf" name="earnMoney" value="" placeholder="$"/>
+            <div class="cleaner"></div>
           </div>
         </form>
       </div>
-      <div class="wrapperMidSmall"></div>
     </div>
 
 
