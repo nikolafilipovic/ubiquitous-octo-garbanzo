@@ -92,7 +92,7 @@
           <h1>We can write up the offer for you.</h1>
           <h5>Please provide the informaiton below and Annete will contact you within 5 minutes.</h5>
       </div>
-      <div class="wrapperForm wrapperFormTransparent">
+      <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
         <form class="" action="#" method="post">
           <div class="wrapperFormText">
             <input type="text" name="Name" class="input1" value="Strahinja" placeholder="Name" />
@@ -158,7 +158,7 @@
         <h1>Invite your agent</h1>
         <h6>We'll send your agent a link with your request to make an offer on this property.</h6>
       </div>
-      <div class="wrapperForm wrapperFormTransparent">
+      <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
         <form class="" action="#" method="post">
           <legend class="legend">Your informaiton</legend>
           <div class="wrapperFormText">
@@ -198,7 +198,7 @@
       <div class="wrapperMid wrapperMidSmall">
         <h1 class="hSmallMargin">Financial terms</h1>
       </div>
-      <div class="wrapperForm wrapperFormTransparent">
+      <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
         <form class="" action="index.html" method="post">
           <div class="wrapperFormText">
             <input type="number" class="formHalf" name="purPrice" value="" placeholder="$"/>
@@ -210,26 +210,81 @@
             <input type="number" class="formHalf" name="earnMoney" value="" placeholder="$"/>
             <div class="cleaner"></div>
           </div>
-          <div class="wrapperForm wrapperFormTransparent wrapperFormInherit">
+          <div class="wrapperForm wrapperFormTransparent wrapperFormInherit wrapperFormNothing">
               <input type="radio" value="Conventional"><span>Conventional</span>
               <input type="radio" value="FHA"><span>FHA</span>
               <input type="radio" value="VA"><span>VA</span>
               <input type="radio" value="CASH"><span>CASH</span>
           </div>
-          <div class="wrapperForm">
-          <form class="" action="#" method="post">
-          <legend class="legend">Close of escrow</legend>
-          <div class="wrapperFormText wrapperFormTransparent">
-            <input type="date" name="Name" class="input1" value="Strahinja" placeholder="Name" />
-            </div>
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
+            <legend class="legend legend1">Close of escrow</legend>
+            <form action="" method="post">
+              <input type="date" name="date"class="date" placeholder="Pick a date">
+            </form>
           </div>
-          <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-        </form>
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
+            <legend class="legend legend1" id="legend">Acceptance deadline</legend>
+            <form action="" method="post">
+              <input type="date" name="date"class="date" id="dateSmaller" placeholder="Pick a date">
+              <input type="time" name="time" id="time">
+              <div class="cleaner"></div>
+            </form>
           </div>
-        </form>
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing "id="wrapperFormFullWidth"> 
+            <form action="" method="post">
+              <input type="button" value=" &leftarrow; Back">
+              <input type="button" value=" Next &rightarrow;">
+            </form>
+          </div>
+      </div>
+      <div id="wrapperFooter" class="">
+        <h3>Make an offer</h3>
+        <div id="footerIcons">
+          <hr/>
+        </div>
+        <div class="cleaner"></div>
       </div>
     </div>
-
+    <!-- novi block -->
+    <div class="wrapper">
+      <div class="wrapperMid">
+        <h1>Contingecies</h1>
+      </div>
+      <div class="radioForms">
+        <div class="radioForm">
+          <h5>Appraisal</h5>
+          <form action="" method="post">
+            <input type="radio" name="" id="">Yes
+            <input type="radio" name="" id="" checked>No
+          </form>
+        </div>
+        <div class="radioForm radioFormRight">
+          <h5>Home inspection</h5>
+          <form action="" method="post">
+            <input type="radio" name="" id="">Yes
+            <input type="radio" name="" id="" checked>No
+          </form>
+        </div>
+        <div class="cleaner"></div>
+      </div>
+      <div class="radioForms">
+        <div class="radioForm">
+          <h5>Sale of another property</h5>
+          <form action="" method="post">
+            <input type="radio" name="" id="" checked>Yes
+            <input type="radio" name="" id="" >No
+          </form>
+        </div>
+        <div class="radioForm radioFormRight">
+          <h5>Is offer "as is"</h5>
+          <form action="" method="post">
+            <input type="radio" name="" id="" checked>Yes
+            <input type="radio" name="" id="" >No
+          </form>
+        </div>
+        <div class="cleaner"></div>
+      </div>
+    </div>
 
 </div> <!-- Wrapper ID-->
 

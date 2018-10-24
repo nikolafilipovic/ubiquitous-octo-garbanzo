@@ -967,10 +967,12 @@ footer {
       .wrapper .wrapperForm form .legend {
         color: #ffffff;
         font-weight: 500;
-        ine-height: 33.787px;
+        line-height: 33.787px;
         /* Approximation due to font substitution */
         transform: scaleY(1.0005);
         /* width and height properties ommitted due to transform */ }
+      .wrapper .wrapperForm form .legend1 {
+        margin-left: -10%; }
       .wrapper .wrapperForm form .wrapperFormText {
         width: 100%;
         height: auto; }
@@ -1002,8 +1004,29 @@ footer {
       .wrapper .wrapperForm form .formSubmit {
         background-color: #00aced;
         color: #ffffff; }
+    .wrapper .wrapperForm input[type=date] {
+      width: 120%;
+      height: 40px;
+      margin-left: -10%;
+      border-radius: 5px;
+      background-color: #ffffff;
+      border: none; }
+    .wrapper .wrapperForm input[type=button] {
+      width: 46%;
+      height: 50px;
+      color: #ffffff;
+      border-radius: 5px;
+      background-color: #00aced;
+      border: none;
+      margin-left: -5%; }
+      .wrapper .wrapperForm input[type=button]:first-child {
+        margin-right: 16%; }
   .wrapper .wrapperFormTransparent {
     background-color: transparent; }
+  .wrapper .wrapperFormNothing {
+    border-radius: none;
+    background-color: none;
+    box-shadow: none; }
   .wrapper .wrapperFormInherit {
     width: 100%;
     padding-left: 2%; }
@@ -1063,6 +1086,168 @@ footer {
         margin-right: 3.3%; }
   .wrapper .wrapperMidSmall {
     height: 80px; }
+  .wrapper #legend {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 33.787px;
+    /* Approximation due to font substitution */
+    transform: scaleY(1.0005);
+    /* width and height properties ommitted due to transform */
+    margin-left: -10%; }
+  .wrapper #dateSmaller {
+    width: 85%;
+    height: 40px;
+    margin-left: -10%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: none; }
+  .wrapper #time {
+    float: right;
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: none;
+    margin-right: -10%; }
+  .wrapper #wrapperFormFullWidth {
+    width: 100%;
+    padding-left: 5%; }
+  .wrapper #wrapperFooter {
+    background-color: #00aced;
+    width: 100%;
+    height: 50px;
+    margin-top: 20%;
+    position: relative; }
+    .wrapper #wrapperFooter h3 {
+      float: left;
+      margin-top: 4%;
+      color: #ffffff;
+      margin-left: 3%;
+      font-size: 19px; }
+    .wrapper #wrapperFooter #footerIcons {
+      float: right;
+      width: 40%;
+      height: 50px; }
+      .wrapper #wrapperFooter #footerIcons hr {
+        width: 20%;
+        height: 1px;
+        background-color: #ffffff;
+        position: absolute;
+        bottom: 10%;
+        right: 10%; }
+  .wrapper .radioForms {
+    color: #ffffff;
+    padding: 5% 0% 0% 3%;
+    width: 90%;
+    height: 100px;
+    margin: 0px auto; }
+    .wrapper .radioForms input[type=radio] {
+      font-size: 16px; }
+    .wrapper .radioForms h5 {
+      color: #ffffff;
+      font-size: 14.5px; }
+    .wrapper .radioForms .radioForm {
+      width: 50%;
+      height: inherit;
+      float: left; }
+    .wrapper .radioForms .radioFormRight {
+      float: right;
+      margin-right: -3%; }
+
+/* Search homes styling
+    - We're making our own grid, yaay!
+------------------------------------------------------- */
+#search-homes .form-control.search {
+  display: inline-block;
+  position: relative;
+  display: none; }
+
+#search-homes .dropdown {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 48%;
+  margin-bottom: 3%; }
+  #search-homes .dropdown .btn {
+    width: 100%;
+    text-align: left;
+    padding: 12px 12px;
+    font-family: sans-serif;
+    color: #1e232c;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: left;
+    background: #fff;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d6dce6;
+    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease; }
+    #search-homes .dropdown .btn::after {
+      display: none; }
+    #search-homes .dropdown .btn .fas {
+      float: right;
+      margin-top: 5px;
+      color: #1e232c;
+      transition: color 0.3s ease; }
+    #search-homes .dropdown .btn:hover, #search-homes .dropdown .btn:active, #search-homes .dropdown .btn:focus, #search-homes .dropdown .btn.active {
+      color: #00aced;
+      border-color: #00aced; }
+      #search-homes .dropdown .btn:hover .search-checkbox + label, #search-homes .dropdown .btn:active .search-checkbox + label, #search-homes .dropdown .btn:focus .search-checkbox + label, #search-homes .dropdown .btn.active .search-checkbox + label {
+        font-weight: 500; }
+      #search-homes .dropdown .btn:hover .fas, #search-homes .dropdown .btn:active .fas, #search-homes .dropdown .btn:focus .fas, #search-homes .dropdown .btn.active .fas {
+        color: #00aced; }
+    #search-homes .dropdown .btn .search-checkbox {
+      position: absolute;
+      opacity: 0; }
+      #search-homes .dropdown .btn .search-checkbox + label {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        font-weight: 300;
+        width: 100%; }
+        #search-homes .dropdown .btn .search-checkbox + label .fas.color {
+          float: initial;
+          font-size: 8px;
+          vertical-align: middle;
+          margin-top: -3px;
+          margin-right: 6px; }
+          #search-homes .dropdown .btn .search-checkbox + label .fas.color.red {
+            color: #e03225; }
+          #search-homes .dropdown .btn .search-checkbox + label .fas.color.blue {
+            color: #196aff; }
+          #search-homes .dropdown .btn .search-checkbox + label .fas.color.green {
+            color: #7cd62c; }
+          #search-homes .dropdown .btn .search-checkbox + label .fas.color.yellow {
+            color: #7cd62c; }
+      #search-homes .dropdown .btn .search-checkbox + label:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 16px;
+        height: 16px;
+        background: white;
+        border: 1px solid #d6dce6;
+        border-radius: 3px;
+        transition: background 0.3s ease; }
+      #search-homes .dropdown .btn .search-checkbox:hover + label:before {
+        background: #00aced; }
+      #search-homes .dropdown .btn .search-checkbox:checked + label:before {
+        background: #00aced; }
+      #search-homes .dropdown .btn .search-checkbox:checked + label:after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 10px;
+        background: white;
+        width: 1.5px;
+        height: 1.5px;
+        box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+        transform: rotate(45deg); }
+  #search-homes .dropdown:nth-child(odd) {
+    margin-left: 1%; }
+  #search-homes .dropdown:nth-child(even) {
+    margin-right: 1%; }
 
 @media only screen and (min-width: 960px) {
   .container {
