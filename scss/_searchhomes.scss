@@ -1,0 +1,127 @@
+/* Search homes styling
+    - We're making our own grid, yaay!
+------------------------------------------------------- */
+#search-homes {
+    .form-control {
+        &.search {
+            display: inline-block;
+            position: relative;
+            display: none;
+        }
+    }
+    .dropdown {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 48%;
+        margin-bottom: 3%;
+        .btn {
+            width: 100%;
+            text-align: left;
+            padding: 12px 12px;
+            font-family: $default-font-family;
+            color:  #1e232c;
+            font-size: 17px;
+            font-weight: 300;
+            text-align: left;
+            background: #fff;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color:  #d6dce6;
+            transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease;
+            &::after {
+                display: none;
+            }
+            .fas {
+                float: right;
+                margin-top: 5px;
+                color:  #1e232c;
+                transition: color 0.3s ease;
+            }
+            &:hover,
+            &:active,
+            &:focus,
+            &.active {
+                color: #00aced;
+                border-color:  #00aced;
+                .search-checkbox + label {
+                    font-weight: 500;
+                }
+                .fas {
+                    color: #00aced;
+                }
+            }
+            .search-checkbox {
+                position: absolute;
+                opacity: 0;
+                & + label {
+                  position: relative;
+                  cursor: pointer;
+                  padding: 0;
+                  font-weight: 300;
+                  width: 100%;
+                  .fas.color {
+                    float: initial;
+                    font-size: 8px;
+                    vertical-align: middle;
+                    margin-top: -3px;
+                    margin-right: 6px;
+                    &.red {
+                        color: #e03225;
+                    }
+                    &.blue {
+                        color: #196aff;
+                    }
+                    &.green {
+                        color: #7cd62c;
+                    }
+                    &.yellow {
+                        color: #7cd62c;
+                    }
+                  }
+                }
+                & + label:before {
+                  content: '';
+                  margin-right: 10px;
+                  display: inline-block;
+                  vertical-align: text-top;
+                  width: 16px;
+                  height: 16px;
+                  background: white;
+                  border: 1px solid #d6dce6;
+                  border-radius: 3px;
+                  transition: background 0.3s ease;
+                }
+                &:hover + label:before {
+                  background: #00aced;
+                }
+                &:checked + label:before {
+                  background: #00aced;
+                }
+                &:checked + label:after {
+                  content: '';
+                  position: absolute;
+                  left: 4px;
+                  top: 10px;
+                  background: white;
+                  width: 1.5px;
+                  height: 1.5px;
+                  box-shadow: 
+                    1.5px 0 0 white,
+                    3px 0 0 white,
+                    3px -1.5px 0 white,
+                    3px -3px 0 white,
+                    3px -4px 0 white,
+                    3px -6px 0 white;
+                  transform: rotate(45deg);
+                }
+            }
+        }
+        &:nth-child(odd){
+            margin-left: 1%;
+        }
+        &:nth-child(even){
+            margin-right: 1%;
+        }
+    }
+}

@@ -5,7 +5,7 @@
  Author:         DATAPOINT
  Author URI:     https://datapoint.co.rs
  Template:       Divi
- Version:        0.018
+ Version:        0.22
 */
 /* Adding some fonts and icons
 ------------------------------------------------------- */
@@ -26,6 +26,8 @@
   src: local("Titillium Web Regular"), local("TitilliumWeb-Regular"), url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPecZTIAOhVxoMyOr9n_E7fdMPmDQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
+/* Some stupid variables
+------------------------------------------------------- */
 /* Importing all modules
 ------------------------------------------------------- */
 body {
@@ -830,7 +832,7 @@ footer {
     height: 75px;
     padding-top: 2%; }
     .wrapper .wrapperTop p {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #00aced;
       font-size: 32px;
       /* Approximation due to font substitution */
@@ -844,9 +846,9 @@ footer {
     text-align: center;
     height: 180px;
     width: 81%;
-    margin-top: 10%; }
+    padding-top: 10%; }
     .wrapper .wrapperMid h1 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 30px;
       /* Approximation due to font substitution */
@@ -857,7 +859,7 @@ footer {
       transform: scaleY(1.0005);
       /* width and height properties ommitted due to transform */ }
     .wrapper .wrapperMid h2 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 30px;
       /* Approximation due to font substitution */
@@ -867,7 +869,7 @@ footer {
       text-align: center;
       font-weight: bold; }
     .wrapper .wrapperMid h3 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 21px;
       /* Approximation due to font substitution */
@@ -880,7 +882,7 @@ footer {
       width: 20px;
       height: 2px; }
     .wrapper .wrapperMid h4 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 19px;
       /* Approximation due to font substitution */
@@ -891,7 +893,7 @@ footer {
       transform: scaleY(1.0005);
       /* width and height properties ommitted due to transform */ }
     .wrapper .wrapperMid h5 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 20px;
       /* Approximation due to font substitution */
@@ -903,7 +905,7 @@ footer {
       /* width and height properties ommitted due to transform */
       margin-top: 5%; }
     .wrapper .wrapperMid h6 {
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #ffffff;
       font-size: 20px;
       /* Approximation due to font substitution */
@@ -926,7 +928,7 @@ footer {
       border-bottom: 0.08px solid #d6dce6; }
     .wrapper .wrapperForm h4 {
       margin-left: 19%;
-      font-family: Graphik;
+      font-family: sans-serif;
       color: #1e232c;
       margin-top: 2.3%;
       font-size: 22px;
@@ -957,7 +959,7 @@ footer {
         height: 40px;
         float: left; }
     .wrapper .wrapperForm form {
-      font-family: Graphik;
+      font-family: sans-serif;
       margin: 0px auto;
       height: auto;
       width: 100%;
@@ -985,6 +987,9 @@ footer {
           float: left; }
         .wrapper .wrapperForm form .wrapperFormText .input2 {
           float: right; }
+        .wrapper .wrapperForm form .wrapperFormText .formHalf {
+          width: 46.3%;
+          margin-left: 2%; }
       .wrapper .wrapperForm form .formFullWidth {
         width: 100%;
         height: 40px;
@@ -1033,8 +1038,107 @@ footer {
       .wrapper .goBack a .fa {
         margin-right: 3.3%; }
   .wrapper .wrapperMidSmall {
-    height: 50px;
-    background-color: red; }
+    height: 80px; }
+
+/* Search homes styling
+    - We're making our own grid, yaay!
+------------------------------------------------------- */
+#search-homes .form-control.search {
+  display: inline-block;
+  position: relative;
+  display: none; }
+
+#search-homes .dropdown {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 48%;
+  margin-bottom: 3%; }
+  #search-homes .dropdown .btn {
+    width: 100%;
+    text-align: left;
+    padding: 12px 12px;
+    font-family: sans-serif;
+    color: #1e232c;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: left;
+    background: #fff;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d6dce6;
+    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease; }
+    #search-homes .dropdown .btn::after {
+      display: none; }
+    #search-homes .dropdown .btn .fas {
+      float: right;
+      margin-top: 5px;
+      color: #1e232c;
+      transition: color 0.3s ease; }
+    #search-homes .dropdown .btn:hover, #search-homes .dropdown .btn:active, #search-homes .dropdown .btn:focus, #search-homes .dropdown .btn.active {
+      color: #00aced;
+      border-color: #00aced; }
+      #search-homes .dropdown .btn:hover .search-checkbox + label, #search-homes .dropdown .btn:active .search-checkbox + label, #search-homes .dropdown .btn:focus .search-checkbox + label, #search-homes .dropdown .btn.active .search-checkbox + label {
+        font-weight: 500; }
+      #search-homes .dropdown .btn:hover .fas, #search-homes .dropdown .btn:active .fas, #search-homes .dropdown .btn:focus .fas, #search-homes .dropdown .btn.active .fas {
+        color: #00aced; }
+    #search-homes .dropdown .btn .search-checkbox {
+      position: absolute;
+      opacity: 0; }
+      #search-homes .dropdown .btn .search-checkbox + label {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        font-weight: 300;
+        width: 100%; }
+        #search-homes .dropdown .btn .search-checkbox + label .fas.color {
+          float: initial;
+          font-size: 8px;
+          vertical-align: middle;
+          margin-top: -3px;
+          margin-right: 6px; }
+          #search-homes .dropdown .btn .search-checkbox + label .fas.color.red {
+            color: #e03225; }
+          #search-homes .dropdown .btn .search-checkbox + label .fas.color.blue {
+            color: #196aff; }
+          #search-homes .dropdown .btn .search-checkbox + label .fas.color.green {
+            color: #7cd62c; }
+          #search-homes .dropdown .btn .search-checkbox + label .fas.color.yellow {
+            color: #7cd62c; }
+      #search-homes .dropdown .btn .search-checkbox + label:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 16px;
+        height: 16px;
+        background: white;
+        border: 1px solid #d6dce6;
+        border-radius: 3px;
+        transition: background 0.3s ease; }
+      #search-homes .dropdown .btn .search-checkbox:hover + label:before {
+        background: #00aced; }
+      #search-homes .dropdown .btn .search-checkbox:checked + label:before {
+        background: #00aced; }
+      #search-homes .dropdown .btn .search-checkbox:checked + label:after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 10px;
+        background: white;
+        width: 1.5px;
+        height: 1.5px;
+        box-shadow: 1.5px 0 0 white,
+ 3px 0 0 white,
+ 3px -1.5px 0 white,
+ 3px -3px 0 white,
+ 3px -4px 0 white,
+ 3px -6px 0 white;
+        transform: rotate(45deg); }
+  #search-homes .dropdown:nth-child(odd) {
+    margin-left: 1%; }
+  #search-homes .dropdown:nth-child(even) {
+    margin-right: 1%; }
 
 @media only screen and (min-width: 960px) {
   .container {
