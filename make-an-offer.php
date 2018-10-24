@@ -210,6 +210,22 @@
             <input type="number" class="formHalf" name="earnMoney" value="" placeholder="$"/>
             <div class="cleaner"></div>
           </div>
+          <div class="wrapperForm wrapperFormTransparent wrapperFormInherit">
+              <input type="radio" value="Conventional"><span>Conventional</span>
+              <input type="radio" value="FHA"><span>FHA</span>
+              <input type="radio" value="VA"><span>VA</span>
+              <input type="radio" value="CASH"><span>CASH</span>
+          </div>
+          <div class="wrapperForm">
+          <form class="" action="#" method="post">
+          <legend class="legend">Close of escrow</legend>
+          <div class="wrapperFormText wrapperFormTransparent">
+            <input type="date" name="Name" class="input1" value="Strahinja" placeholder="Name" />
+            </div>
+          </div>
+          <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
+        </form>
+          </div>
         </form>
       </div>
     </div>

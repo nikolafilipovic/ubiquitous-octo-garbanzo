@@ -200,6 +200,30 @@
     .wrapperFormTransparent {
       background-color: transparent;
     }
+    .wrapperFormInherit{
+      width: 100%;
+      padding-left: 2%;
+        input{
+          border-radius: 50%;
+          border-style: solid;
+          border-width: 3px;
+          border-color:  #ffffff;
+          box-sizing: border-box;
+          background-color:  rgba(245, 248, 249, 0);
+          width: 16px;
+          height: 16px;
+        }
+        span {
+          margin-left: 2.3%;
+          font-family: Graphik;
+          color:  #ffffff;
+          font-size: 20px;/* Approximation due to font substitution */
+          font-weight: 400;
+          line-height: 33.787px;/* Approximation due to font substitution */
+          text-align: left;
+          transform: scaleY(1.0005);/* width and height properties ommitted due to transform */
+        }
+    }
     .personBlock {
       width: 74%;
       height: auto;
@@ -244,4 +268,5 @@
     .wrapperMidSmall{
       height: 80px;
     }
+    
 }
