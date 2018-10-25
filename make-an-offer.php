@@ -247,7 +247,7 @@
     </div>
     <!-- novi block -->
     <div class="wrapper">
-      <div class="wrapperMid">
+      <div class="wrapperMid smallerH1">
         <h1>Contingecies</h1>
       </div>
       <div class="radioForms">
@@ -281,6 +281,25 @@
             <input type="radio" name="" id="" checked>Yes
             <input type="radio" name="" id="" >No
           </form>
+        </div>
+        <div class="cleaner"></div>
+      </div>
+      <div class="radioForms textForm">
+        <h5>Other terms</h5>
+        <form action="" method="post">
+          <input type="text" name="" id="" placeholder="Type here...">
+        </form>
+      </div>
+      <div class="buttons">
+        <form action="" method="post">
+          <input type="button" value=" &leftarrow; Back">
+          <input type="button" value=" Next &rightarrow;">
+        </form>
+      </div>
+      <div id="wrapperFooter" class="">
+        <h3>Make an offer</h3>
+        <div id="footerIcons">
+          <hr/>
         </div>
         <div class="cleaner"></div>
       </div>

@@ -1143,16 +1143,45 @@ footer {
     margin: 0px auto; }
     .wrapper .radioForms input[type=radio] {
       font-size: 16px; }
+      .wrapper .radioForms input[type=radio]:last-child {
+        margin-left: 5%; }
+    .wrapper .radioForms input[type=text] {
+      width: 100%;
+      height: 120px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      padding-bottom: 24%;
+      padding-left: 5%; }
     .wrapper .radioForms h5 {
       color: #ffffff;
-      font-size: 14.5px; }
+      font-size: 15.5px; }
     .wrapper .radioForms .radioForm {
       width: 50%;
       height: inherit;
       float: left; }
     .wrapper .radioForms .radioFormRight {
       float: right;
-      margin-right: -3%; }
+      margin-right: -15%; }
+  .wrapper .textForm {
+    height: auto;
+    width: 90%;
+    margin-left: 3%; }
+  .wrapper .smallerH1 {
+    margin-bottom: -80px; }
+  .wrapper .buttons {
+    width: 90%;
+    height: 50px;
+    margin: 0px auto; }
+    .wrapper .buttons input {
+      background-color: #00aced;
+      color: #ffffff;
+      border-radius: 5px;
+      border: none;
+      height: 50px;
+      width: 47%; }
+      .wrapper .buttons input:first-child {
+        margin-right: 5%; }
 
 /* Search homes styling
     - We're making our own grid, yaay!
