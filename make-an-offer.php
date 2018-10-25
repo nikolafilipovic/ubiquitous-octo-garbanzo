@@ -10,7 +10,7 @@
     }
 </style>
 <div id="wrapper">
-    <div class="wrapper">
+    <div class="wrapper" id="pageone">
       <div class="wrapperTop">
         <a href="#"><p><i class="fa fa-angle-left" aria-hidden="true"></i> Back</p></a>
       </div>
@@ -60,7 +60,7 @@
         </div>
     </div>
     <!-- Novi block -->
-    <div class="wrapper">
+    <div class="wrapper" id="pagetwo">
       <div class="wrapperMid">
           <h1>Are you working with a real estate agent?</h1>
       </div>
@@ -87,7 +87,7 @@
     </div>
 
     <!-- Novi block -->
-    <div class="wrapper">
+    <div class="wrapper" id="pagethree">
       <div class="wrapperMid">
           <h1>We can write up the offer for you.</h1>
           <h5>Please provide the informaiton below and Annete will contact you within 5 minutes.</h5>
@@ -127,7 +127,7 @@
     </div>
 
     <!-- Novi block -->
-    <div class="wrapper">
+    <div class="wrapper" id="pagefour">
       <div class="wrapperMid">
         <h1>Success!</h1>
         <h6>Anette Brown will contact you shortly.</h6>
@@ -153,7 +153,7 @@
     </div>
 
     <!-- Novi block -->
-    <div class="wrapper">
+    <div class="wrapper" id="pagefive">
       <div class="wrapperMid">
         <h1>Invite your agent</h1>
         <h6>We'll send your agent a link with your request to make an offer on this property.</h6>
@@ -184,7 +184,7 @@
     </div>
 
     <!-- Novi block -->
-    <div class="wrapper">
+    <div class="wrapper" id="pagesix">
       <div class="wrapperMid">
         <h1>Success!</h1>
         <h6>An email has been sent to your agent.</h6>
@@ -194,7 +194,7 @@
       </div>
     </div>
     <!-- Novi block -->
-    <div class="wrapper">
+    <div class="wrapper" id="pageseven">
       <div class="wrapperMid wrapperMidSmall">
         <h1 class="hSmallMargin">Financial terms</h1>
       </div>
@@ -212,7 +212,7 @@
           </div>
           <div class="wrapperForm wrapperFormTransparent wrapperFormInherit wrapperFormNothing">
               <input type="radio" value="Conventional"><span>Conventional</span>
-              <input type="radio" value="FHA"><span>FHA</span>
+              <input type="radio" value="FHA" checked><span>FHA</span>
               <input type="radio" value="VA"><span>VA</span>
               <input type="radio" value="CASH"><span>CASH</span>
           </div>
@@ -246,7 +246,7 @@
       </div>
     </div>
     <!-- novi block -->
-    <div class="wrapper">
+    <div class="wrapper" id="pageeight">
       <div class="wrapperMid smallerH1">
         <h1>Contingecies</h1>
       </div>
@@ -305,7 +305,7 @@
       </div>
     </div>
     <!-- novi block -->
-    <div class="wrapper">
+    <div class="wrapper" id="pagenine">
       <div class="wrapperMid ">
         <h1>Offer documents</h1>
         <p>Please upload purchase contract and proof of funds or pre qualification letter</p>
@@ -327,7 +327,7 @@
     </div>
    </div>
    <!-- novi block -->
-   <div class="wrapper">
+   <div class="wrapper" id="pageten">
      <div class="wrapperMid">
        <h1>Verify your offer details</h1>
      </div>
@@ -427,6 +427,43 @@
         <div class="cleaner"></div>
       </div>
       <div id="button1">Close</div>
+   </div>
+   <div class="wrapper" id="FirstPage">
+      <div class="wrapperMid">
+        <h1>Welcome!</h1>
+        <h6>Let's make an offer on</h6>
+        <h2>1249 E Sonrisa Ave</h2>
+        <h6>Mesa, AZ 85212</h6>
+      </div>
+      <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
+        <form class="" action="#" method="post">
+          <legend class="legend">Your informaiton</legend>
+          <div class="wrapperFormText">
+            <input type="text" name="Name" class="input1" value="Strahinja" placeholder="Name" />
+            <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
+            <div class="cleaner">
+            </div>
+          </div>
+          <input type="number" name="phone" class="formFullWidth" id="phone" value="" placeholder="Phone">
+          <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
+          <input type="submit" class="formFullWidth formSubmit" name="submit" value="Next &nbsp; &rightarrow;">
+        </form>
+      </div>
+      <div class="personBlock">
+        <div class="iconBlock"></div>
+        <div class="infoBlock">
+          <h6>Anette Brown</h6>
+          <p class="infoblockName">Licensed agent</p>
+          <span class="fa fa-star" aria-hidden="true"></span>
+          <span class="fa fa-star" aria-hidden="true"></span>
+          <span class="fa fa-star" aria-hidden="true"></span>
+          <span class="fa fa-star" aria-hidden="true"></span>
+          <span class="fa fa-star" aria-hidden="true"></span>
+          <p>602-448-7377</p>
+          <span>anette@theofferco.com</span>
+        </div>
+        <div class="cleaner"></div>
+      </div>
    </div>
 </div> <!-- Wrapper ID-->
 

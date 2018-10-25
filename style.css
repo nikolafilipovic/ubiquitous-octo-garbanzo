@@ -1054,22 +1054,24 @@ footer {
       transform: scaleY(1.0005);
       /* width and height properties ommitted due to transform */ }
   .wrapper .personBlock {
-    width: 74%;
-    height: auto;
+    width: 78%;
+    height: 155px;
     margin: 50px auto 0px auto;
     background-color: #ffffff;
-    padding: 2%;
-    border-radius: 10px; }
+    padding: 6% 3%;
+    border-radius: 5px; }
     .wrapper .personBlock .iconBlock {
-      height: 70px;
-      width: 70px;
+      height: 90px;
+      width: 90px;
       border-radius: 50%;
       background-color: #c2c2c2;
       float: left;
-      margin: 5% 0% 0% 5%; }
+      margin: 3% 0% 0% 5%; }
     .wrapper .personBlock .infoBlock {
       float: right;
       width: auto; }
+      .wrapper .personBlock .infoBlock h6 {
+        margin-bottom: 1%; }
       .wrapper .personBlock .infoBlock .infoblockName {
         margin: 0px;
         margin-top: -11px;
@@ -1081,7 +1083,9 @@ footer {
     width: auto;
     height: 60px;
     margin: 0px auto;
-    text-align: center; }
+    margin-top: 20%;
+    text-align: center;
+    padding-top: 5%; }
     .wrapper .goBack a {
       color: #ffffff; }
       .wrapper .goBack a .fa {
@@ -1227,6 +1231,17 @@ footer {
     margin: 12% auto 0% auto; }
   .wrapper #lastPage .wrapperMid {
     height: auto; }
+  .wrapper #lastPage .personBlock h6 {
+    margin: 0%; }
+  .wrapper #FirstPage .wrapperMid {
+    height: auto; }
+  .wrapper #FirstPage h6 {
+    margin-top: 1%;
+    margin-bottom: 5%; }
+  .wrapper #FirstPage .personBlock h6 {
+    margin: 0%; }
+  .wrapper #pagethree, .wrapper #pagefour, .wrapper #pagefive, .wrapper #pageten, .wrapper #FirstPage {
+    padding-bottom: 10%; }
   .wrapper #button1 {
     margin: 80px auto 100px auto;
     height: 50px;
@@ -1237,6 +1252,456 @@ footer {
     color: #ffffff;
     padding: 3% 0% 0% 15%;
     font-size: 16px; }
+
+@media (min-width: 376px) and (max-width: 480px) {
+  .wrapper {
+    background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+    background: -moz-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+    background: -o-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+    background: -ms-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+    background: linear-gradient(0deg, #a4d2f4 0%, #80c6f2 100%);
+    width: 100%;
+    height: auto; }
+    .wrapper .cleaner {
+      clear: both; }
+    .wrapper .wrapperTop {
+      background-color: #ffffff;
+      box-shadow: 0px 1px 7.6px 0.4px rgba(53, 94, 140, 0.18);
+      width: auto;
+      height: 75px;
+      padding-top: 2%; }
+      .wrapper .wrapperTop p {
+        font-family: sans-serif;
+        color: #00aced;
+        font-size: 32px;
+        /* Approximation due to font substitution */
+        font-weight: 400;
+        line-height: 52px;
+        /* Approximation due to font substitution */
+        text-align: left;
+        margin-left: 10%; }
+    .wrapper .wrapperMid {
+      margin: 0px auto;
+      text-align: center;
+      height: 180px;
+      width: 81%;
+      padding-top: 10%; }
+      .wrapper .wrapperMid p {
+        color: #ffffff; }
+      .wrapper .wrapperMid h1 {
+        font-family: sans-serif;
+        color: #ffffff;
+        font-size: 30px;
+        /* Approximation due to font substitution */
+        font-weight: 400;
+        line-height: 26px;
+        /* Approximation due to font substitution */
+        text-align: center;
+        transform: scaleY(1.0005);
+        /* width and height properties ommitted due to transform */ }
+      .wrapper .wrapperMid h2 {
+        font-family: sans-serif;
+        color: #ffffff;
+        font-size: 30px;
+        /* Approximation due to font substitution */
+        font-weight: 500;
+        line-height: 26px;
+        /* Approximation due to font substitution */
+        text-align: center;
+        font-weight: bold; }
+      .wrapper .wrapperMid h3 {
+        font-family: sans-serif;
+        color: #ffffff;
+        font-size: 21px;
+        /* Approximation due to font substitution */
+        font-weight: 500;
+        line-height: 26px;
+        /* Approximation due to font substitution */
+        text-align: center; }
+      .wrapper .wrapperMid hr {
+        background-color: #ffffff;
+        width: 20px;
+        height: 2px; }
+      .wrapper .wrapperMid h4 {
+        font-family: sans-serif;
+        color: #ffffff;
+        font-size: 19px;
+        /* Approximation due to font substitution */
+        font-weight: 400;
+        line-height: 26px;
+        /* Approximation due to font substitution */
+        text-align: center;
+        transform: scaleY(1.0005);
+        /* width and height properties ommitted due to transform */ }
+      .wrapper .wrapperMid h5 {
+        font-family: sans-serif;
+        color: #ffffff;
+        font-size: 20px;
+        /* Approximation due to font substitution */
+        font-weight: 400;
+        line-height: 26px;
+        /* Approximation due to font substitution */
+        text-align: center;
+        transform: scaleY(1.0005);
+        /* width and height properties ommitted due to transform */
+        margin-top: 5%; }
+      .wrapper .wrapperMid h6 {
+        font-family: sans-serif;
+        color: #ffffff;
+        font-size: 20px;
+        /* Approximation due to font substitution */
+        font-weight: 400;
+        line-height: 26px;
+        /* Approximation due to font substitution */
+        text-align: center;
+        transform: scaleY(1.0005);
+        /* width and height properties ommitted due to transform */
+        margin-top: 17.5%; }
+    .wrapper .wrapperForm {
+      width: 83.5%;
+      height: auto;
+      margin: 0px auto;
+      margin-top: 15%;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18); }
+      .wrapper .wrapperForm .formBottomLine {
+        border-bottom: 0.08px solid #d6dce6; }
+      .wrapper .wrapperForm h4 {
+        margin-left: 19%;
+        font-family: sans-serif;
+        color: #1e232c;
+        margin-top: 2.3%;
+        font-size: 22px;
+        /* Approximation due to font substitution */
+        font-weight: 400;
+        line-height: 26px;
+        /* Approximation due to font substitution */
+        text-align: left;
+        transform: scaleY(1.0005);
+        /* width and height properties ommitted due to transform */ }
+      .wrapper .wrapperForm .formBlock {
+        height: 87px;
+        width: auto;
+        padding: 7.3%;
+        position: relative; }
+        .wrapper .wrapperForm .formBlock .formArrow {
+          height: 10px;
+          width: 10px;
+          float: right;
+          margin-bottom: 10%;
+          position: absolute;
+          bottom: 10%;
+          right: 10%; }
+        .wrapper .wrapperForm .formBlock .formCircle {
+          border-radius: 50%;
+          background-color: #00aced;
+          width: 40px;
+          height: 40px;
+          float: left; }
+      .wrapper .wrapperForm form {
+        font-family: sans-serif;
+        margin: 0px auto;
+        height: auto;
+        width: 100%;
+        background-color: transparent; }
+        .wrapper .wrapperForm form .legend {
+          color: #ffffff;
+          font-weight: 500;
+          line-height: 33.787px;
+          /* Approximation due to font substitution */
+          transform: scaleY(1.0005);
+          /* width and height properties ommitted due to transform */ }
+        .wrapper .wrapperForm form .legend1 {
+          margin-left: -10%; }
+        .wrapper .wrapperForm form .wrapperFormText {
+          width: 100%;
+          height: auto; }
+          .wrapper .wrapperForm form .wrapperFormText input {
+            width: 48.3%;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            padding-left: 5%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border: none; }
+          .wrapper .wrapperForm form .wrapperFormText .input1 {
+            float: left; }
+          .wrapper .wrapperForm form .wrapperFormText .input2 {
+            float: right; }
+          .wrapper .wrapperForm form .wrapperFormText .formHalf {
+            width: 46.3%;
+            margin-left: 2%; }
+        .wrapper .wrapperForm form .formFullWidth {
+          width: 100%;
+          height: 40px;
+          border-radius: 5px;
+          background-color: #ffffff;
+          margin-top: 2%;
+          margin-bottom: 2%;
+          padding-left: 5%;
+          border: none; }
+        .wrapper .wrapperForm form .formSubmit {
+          background-color: #00aced;
+          color: #ffffff; }
+      .wrapper .wrapperForm input[type=date] {
+        width: 120%;
+        height: 40px;
+        margin-left: -10%;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: none; }
+      .wrapper .wrapperForm input[type=button] {
+        width: 46%;
+        height: 50px;
+        color: #ffffff;
+        border-radius: 5px;
+        background-color: #00aced;
+        border: none;
+        margin-left: -5%; }
+        .wrapper .wrapperForm input[type=button]:first-child {
+          margin-right: 16%; }
+    .wrapper .wrapperFormTransparent {
+      background-color: transparent; }
+    .wrapper .wrapperFormNothing {
+      border-radius: none;
+      background-color: none;
+      box-shadow: none; }
+    .wrapper .wrapperFormInherit {
+      width: 100%;
+      padding-left: 2%; }
+      .wrapper .wrapperFormInherit input {
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #ffffff;
+        box-sizing: border-box;
+        background-color: rgba(245, 248, 249, 0);
+        width: 16px;
+        height: 16px; }
+      .wrapper .wrapperFormInherit span {
+        margin-left: 2.3%;
+        font-family: Graphik;
+        color: #ffffff;
+        font-size: 20px;
+        /* Approximation due to font substitution */
+        font-weight: 400;
+        line-height: 33.787px;
+        /* Approximation due to font substitution */
+        text-align: left;
+        transform: scaleY(1.0005);
+        /* width and height properties ommitted due to transform */ }
+    .wrapper .personBlock {
+      width: 78%;
+      height: 155px;
+      margin: 50px auto 0px auto;
+      background-color: #ffffff;
+      padding: 6% 3%;
+      border-radius: 5px; }
+      .wrapper .personBlock .iconBlock {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        background-color: #c2c2c2;
+        float: left;
+        margin: 3% 0% 0% 5%; }
+      .wrapper .personBlock .infoBlock {
+        float: right;
+        width: auto; }
+        .wrapper .personBlock .infoBlock h6 {
+          margin-bottom: 1%; }
+        .wrapper .personBlock .infoBlock .infoblockName {
+          margin: 0px;
+          margin-top: -11px;
+          padding: 0px;
+          color: #c2c2c2; }
+      .wrapper .personBlock .fa-star {
+        color: #00aced; }
+    .wrapper .goBack {
+      width: auto;
+      height: 60px;
+      margin: 0px auto;
+      margin-top: 20%;
+      text-align: center;
+      padding-top: 5%; }
+      .wrapper .goBack a {
+        color: #ffffff; }
+        .wrapper .goBack a .fa {
+          margin-right: 3.3%; }
+    .wrapper .wrapperMidSmall {
+      height: 80px; }
+    .wrapper #legend {
+      color: #ffffff;
+      font-weight: 500;
+      line-height: 33.787px;
+      /* Approximation due to font substitution */
+      transform: scaleY(1.0005);
+      /* width and height properties ommitted due to transform */
+      margin-left: -10%; }
+    .wrapper #dateSmaller {
+      width: 85%;
+      height: 40px;
+      margin-left: -10%;
+      border-radius: 5px;
+      background-color: #ffffff;
+      border: none; }
+    .wrapper #time {
+      float: right;
+      width: 30%;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      border: none;
+      margin-right: -10%; }
+    .wrapper #wrapperFormFullWidth {
+      width: 100%;
+      padding-left: 5%; }
+    .wrapper #wrapperFooter {
+      background-color: #00aced;
+      width: 100%;
+      height: 50px;
+      margin-top: 20%;
+      position: relative; }
+      .wrapper #wrapperFooter h3 {
+        float: left;
+        margin-top: 4%;
+        color: #ffffff;
+        margin-left: 3%;
+        font-size: 19px; }
+      .wrapper #wrapperFooter #footerIcons {
+        float: right;
+        width: 40%;
+        height: 50px; }
+        .wrapper #wrapperFooter #footerIcons hr {
+          width: 20%;
+          height: 1px;
+          background-color: #ffffff;
+          position: absolute;
+          bottom: 10%;
+          right: 10%; }
+    .wrapper .radioForms {
+      color: #ffffff;
+      padding: 5% 0% 0% 3%;
+      width: 90%;
+      height: 100px;
+      margin: 0px auto; }
+      .wrapper .radioForms input[type=radio] {
+        font-size: 16px; }
+        .wrapper .radioForms input[type=radio]:last-child {
+          margin-left: 5%; }
+      .wrapper .radioForms input[type=text] {
+        width: 100%;
+        height: 120px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding-bottom: 24%;
+        padding-left: 5%; }
+      .wrapper .radioForms h5 {
+        color: #ffffff;
+        font-size: 15.5px; }
+      .wrapper .radioForms .radioForm {
+        width: 50%;
+        height: inherit;
+        float: left; }
+      .wrapper .radioForms .radioFormRight {
+        float: right;
+        margin-right: -15%; }
+    .wrapper .textForm {
+      height: auto;
+      width: 90%;
+      margin-left: 3%; }
+    .wrapper .smallerH1 {
+      margin-bottom: -80px; }
+    .wrapper .buttons {
+      width: 90%;
+      height: 50px;
+      margin: 0px auto; }
+      .wrapper .buttons input {
+        background-color: #00aced;
+        color: #ffffff;
+        border-radius: 5px;
+        border: none;
+        height: 50px;
+        width: 47%; }
+        .wrapper .buttons input:first-child {
+          margin-right: 5%; }
+    .wrapper .Blokovi {
+      width: 90%;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #00aced;
+      margin: 0px auto;
+      margin-top: 3%;
+      margin-bottom: 6%; }
+    .wrapper #smallTable {
+      width: 90%;
+      margin: 0px auto;
+      height: auto;
+      margin-top: -80px;
+      color: #ffffff;
+      margin-left: 5%; }
+    .wrapper #smallTable1 {
+      width: 90%;
+      margin: 0px auto;
+      height: auto;
+      color: #ffffff;
+      margin-left: 5%; }
+    .wrapper #smallTable2 {
+      width: 90%;
+      margin: 0px auto;
+      height: auto;
+      color: #ffffff;
+      margin-left: 5%;
+      margin-bottom: 3%; }
+    .wrapper #lastPage h1 {
+      font-size: 27px;
+      margin-bottom: 4%; }
+    .wrapper #lastPage h2 {
+      font-size: 27px;
+      font-weight: bold; }
+    .wrapper #lastPage h5 {
+      margin-top: 1%;
+      font-size: 16px; }
+    .wrapper #lastPage h6 {
+      font-size: 16px;
+      width: 90%;
+      margin: 12% auto 0% auto; }
+    .wrapper #lastPage .wrapperMid {
+      height: auto; }
+    .wrapper #lastPage .personBlock h6 {
+      margin: 0%; }
+    .wrapper #FirstPage .wrapperMid {
+      height: auto; }
+    .wrapper #FirstPage h6 {
+      margin-top: 1%;
+      margin-bottom: 5%; }
+    .wrapper #FirstPage .personBlock h6 {
+      margin: 0%; }
+    .wrapper #pagethree, .wrapper #pagefour, .wrapper #pagefive, .wrapper #pageten, .wrapper #FirstPage {
+      padding-bottom: 10%; }
+    .wrapper #button1 {
+      margin: 80px auto 100px auto;
+      height: 50px;
+      width: 40%;
+      background-color: #00aced;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      padding: 3% 0% 0% 15%;
+      font-size: 16px; } }
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .wrapper .wrapperForm {
+    margin-top: 25%; }
+    .wrapper .wrapperForm h4 {
+      padding-left: 5%;
+      padding-top: 3%; }
+    .wrapper .wrapperForm .formBlock .formArrow {
+      bottom: 20%; }
+    .wrapper .wrapperForm .formBlock .formCircle {
+      margin-top: 2%; } }
 
 /* Search homes styling
     - We're making our own grid, yaay!
