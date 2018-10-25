@@ -304,7 +304,130 @@
         <div class="cleaner"></div>
       </div>
     </div>
-
+    <!-- novi block -->
+    <div class="wrapper">
+      <div class="wrapperMid ">
+        <h1>Offer documents</h1>
+        <p>Please upload purchase contract and proof of funds or pre qualification letter</p>
+      </div>
+      <div class="Blokovi"></div>
+      <div class="Blokovi"></div>
+    <div class="buttons">
+        <form action="" method="post">
+          <input type="button" value=" &leftarrow; Back">
+          <input type="button" value=" Next &rightarrow;">
+        </form>
+    </div>
+    <div id="wrapperFooter" class="">
+        <h3>Make an offer</h3>
+        <div id="footerIcons">
+          <hr/>
+        </div>
+        <div class="cleaner"></div>
+    </div>
+   </div>
+   <!-- novi block -->
+   <div class="wrapper">
+     <div class="wrapperMid">
+       <h1>Verify your offer details</h1>
+     </div>
+     <table id="smallTable">
+       <th>Submitting agent</th>
+       <tr>
+         <td>Full Name:</td>
+         <td>Rupert Murdoch</td>
+       </tr>
+       <tr>
+         <td>Phone:</td>
+         <td>713 - 550 - 000</td>
+       </tr>
+       <tr>
+         <td>Email:</td>
+         <td>rupert.murdoch@gmail.com</td>
+       </tr>
+     </table>
+     <table id="smallTable1">
+       <th>Financial terms</th>
+       <tr>
+         <td>Purchase price:</td>
+         <td>$2,545,000</td>
+       </tr>
+       <tr>
+         <td>Earnest money:</td>
+         <td>$5,689,000</td>
+       </tr>
+       <tr>
+         <td>Payment method:</td>
+         <td>VA</td>
+       </tr>
+       <tr>
+         <td>Down paymment:</td>
+         <td>$1,267,000</td>
+       </tr>
+       <tr>
+         <td>Loan amount:</td>
+         <td>$1,345,000</td>
+       </tr>
+       <tr>
+         <td>Close of escrow:</td>
+         <td>10.18.2018</td>
+       </tr>
+       <tr>
+         <td>Acceptance deadline:</td>
+         <td>12.26.2018, 6PM</td>
+       </tr>
+     </table>
+     <table id="smallTable2">
+       <th>Contingecies</th>
+       <tr>
+         <td>Appraisal:</td>
+         <td>No</td>
+       </tr>
+       <tr>
+         <td>Home inspection:</td>
+         <td>Yes</td>
+       </tr>
+       <tr>
+         <td>Sale of another property:</td>
+         <td>No</td>
+       </tr>
+       <tr>
+         <td>Is offer "as is":</td>
+         <td>Yes</td>
+       </tr>
+     </table>
+     <div class="buttons">
+        <form action="" method="post">
+          <input type="button" value=" &leftarrow; Back">
+          <input type="button" value=" Submit offer &rightarrow;">
+        </form>
+    </div>
+   </div>
+   <div class="wrapper" id="lastPage">
+      <div class="wrapperMid">
+       <h1>Success! Thank you for submitting your offer for</h1>
+       <h2>11249 E Sonrisa Ave</h2>
+       <h5>Mesa, AZ 85212</h5>
+       <h6>Please check your inbox for conformation email.</h6>
+       <h6>Please feel free to contact me anytime.</h6>
+      </div>
+      <div class="personBlock">
+        <div class="iconBlock"></div>
+        <div class="infoBlock">
+          <h6>Anette Brown</h6>
+          <p class="infoblockName">Licensed agent</p>
+          <span class="fa fa-star" aria-hidden="true"></span>
+          <span class="fa fa-star" aria-hidden="true"></span>
+          <span class="fa fa-star" aria-hidden="true"></span>
+          <span class="fa fa-star" aria-hidden="true"></span>
+          <span class="fa fa-star" aria-hidden="true"></span>
+          <p>602-448-7377</p>
+          <span>anette@theofferco.com</span>
+        </div>
+        <div class="cleaner"></div>
+      </div>
+      <div id="button1">Close</div>
+   </div>
 </div> <!-- Wrapper ID-->
 
 <?php
