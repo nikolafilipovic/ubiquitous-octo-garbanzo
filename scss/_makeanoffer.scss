@@ -503,7 +503,11 @@
     }
 }
 // --------------- MEDIA QUERRY -----------------// 
-
+@media (min-width:1025px){
+  #pagesix {
+    padding-bottom: 10%;
+  }
+}
 @media (min-width: 376px) and (max-width: 480px){
   .wrapper {
     background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
@@ -912,9 +916,9 @@
           border-radius: 5px;
           border: none;
           height: 50px;
-          width: 47%;
+          width: 46%;
           &:first-child{
-            margin-right: 5%;
+            margin-right: 6%;
           }
         }
       }
@@ -1004,20 +1008,37 @@
   }
 }
 @media (min-width: 320px) and (max-width: 375px){
-  .wrapper .wrapperForm {
-    margin-top: 25%;
-    h4{
-      padding-left: 5%;
-      padding-top: 3%;
+  .wrapper {
+    .buttons {
+      input {
+        width: 46%;
+        &:first-child{
+          margin-right: 6%;
+        }
+      }
     }
-    .formBlock{
-      .formArrow {
-        bottom: 20%;
+    .wrapperForm {
+      margin-top: 25%;
+      h4{
+        padding-left: 5%;
+        padding-top: 3%;
       }
-      .formCircle{
-        margin-top: 2%;
+      .formBlock{
+        .formArrow {
+          bottom: 20%;
+        }
+        .formCircle{
+          margin-top: 2%;
+        }
+      } 
+    }
+    .personBlock{
+      .iconBlock{
+        width: 85px;
+        height: 85px;
+        margin-left: 0%;
       }
-    } 
+    }
   }
 }
 

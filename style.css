@@ -1253,6 +1253,10 @@ footer {
     padding: 3% 0% 0% 15%;
     font-size: 16px; }
 
+@media (min-width: 1025px) {
+  #pagesix {
+    padding-bottom: 10%; } }
+
 @media (min-width: 376px) and (max-width: 480px) {
   .wrapper {
     background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
@@ -1624,9 +1628,9 @@ footer {
         border-radius: 5px;
         border: none;
         height: 50px;
-        width: 47%; }
+        width: 46%; }
         .wrapper .buttons input:first-child {
-          margin-right: 5%; }
+          margin-right: 6%; }
     .wrapper .Blokovi {
       width: 90%;
       height: 40px;
@@ -1693,6 +1697,10 @@ footer {
       font-size: 16px; } }
 
 @media (min-width: 320px) and (max-width: 375px) {
+  .wrapper .buttons input {
+    width: 46%; }
+    .wrapper .buttons input:first-child {
+      margin-right: 6%; }
   .wrapper .wrapperForm {
     margin-top: 25%; }
     .wrapper .wrapperForm h4 {
@@ -1701,7 +1709,11 @@ footer {
     .wrapper .wrapperForm .formBlock .formArrow {
       bottom: 20%; }
     .wrapper .wrapperForm .formBlock .formCircle {
-      margin-top: 2%; } }
+      margin-top: 2%; }
+  .wrapper .personBlock .iconBlock {
+    width: 85px;
+    height: 85px;
+    margin-left: 0%; } }
 
 /* Search homes styling
     - We're making our own grid, yaay!
