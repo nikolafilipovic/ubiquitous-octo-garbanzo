@@ -976,10 +976,14 @@ footer {
       .wrapper .wrapperForm form .legend1 {
         margin-left: -10%; }
       .wrapper .wrapperForm form .wrapperFormText {
-        width: 100%;
-        height: auto; }
+        width: 50%;
+        height: auto;
+        float: left; }
+        .wrapper .wrapperForm form .wrapperFormText legend {
+          padding-left: 3%;
+          color: #ffffff; }
         .wrapper .wrapperForm form .wrapperFormText input {
-          width: 48.3%;
+          width: 97%;
           height: 40px;
           border-radius: 5px;
           background-color: #ffffff;
@@ -992,7 +996,7 @@ footer {
         .wrapper .wrapperForm form .wrapperFormText .input2 {
           float: right; }
         .wrapper .wrapperForm form .wrapperFormText .formHalf {
-          width: 46.3%;
+          width: 97%;
           margin-left: 2%; }
       .wrapper .wrapperForm form .formFullWidth {
         width: 100%;
@@ -1253,7 +1257,7 @@ footer {
     padding: 3% 0% 0% 15%;
     font-size: 16px; }
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1366px) {
   #pagesix {
     padding-bottom: 10%; } }
 
@@ -1419,7 +1423,7 @@ footer {
         .wrapper .wrapperForm form .legend1 {
           margin-left: -10%; }
         .wrapper .wrapperForm form .wrapperFormText {
-          width: 100%;
+          width: 50%;
           height: auto; }
           .wrapper .wrapperForm form .wrapperFormText input {
             width: 48.3%;
@@ -1435,7 +1439,7 @@ footer {
           .wrapper .wrapperForm form .wrapperFormText .input2 {
             float: right; }
           .wrapper .wrapperForm form .wrapperFormText .formHalf {
-            width: 46.3%;
+            width: 95%;
             margin-left: 2%; }
         .wrapper .wrapperForm form .formFullWidth {
           width: 100%;

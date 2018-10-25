@@ -163,10 +163,15 @@
               margin-left: -10%;
             }
             .wrapperFormText {
-              width: 100%;
+              width: 50%;
               height: auto;
+              float: left;
+                legend {
+                    padding-left: 3%;
+                    color: #ffffff;
+                }
                 input {
-                  width: 48.3%;
+                  width: 97%;
                   height: 40px;
                   border-radius: 5px;
                   background-color:  #ffffff;
@@ -182,7 +187,7 @@
                   float: right;
                 }
                 .formHalf{
-                  width: 46.3%;
+                  width: 97%;
                   margin-left: 2%;
                 }
             }
@@ -221,6 +226,7 @@
             margin-right: 16%;
           }
         }
+        
     }
     .wrapperFormTransparent {
       background-color: transparent;
@@ -503,10 +509,10 @@
     }
 }
 // --------------- MEDIA QUERRY -----------------// 
-@media (min-width:1025px){
-  #pagesix {
-    padding-bottom: 10%;
-  }
+@media (min-width:1025px) and (max-width:1366px){
+    #pagesix {
+        padding-bottom: 10%;
+    }
 }
 @media (min-width: 376px) and (max-width: 480px){
   .wrapper {
@@ -667,7 +673,7 @@
                 margin-left: -10%;
               }
               .wrapperFormText {
-                width: 100%;
+                width: 50%;
                 height: auto;
                   input {
                     width: 48.3%;
@@ -686,7 +692,7 @@
                     float: right;
                   }
                   .formHalf{
-                    width: 46.3%;
+                    width: 95%;
                     margin-left: 2%;
                   }
               }

@@ -96,9 +96,9 @@
         <form class="" action="#" method="post">
           <div class="wrapperFormText">
             <input type="text" name="Name" class="input1" value="Strahinja" placeholder="Name" />
+          </div>
+          <div class="wrapperFormText">
             <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
-            <div class="cleaner">
-            </div>
           </div>
           <input type="number" class="formFullWidth" name="" value="" placeholder="Phone"/>
           <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
@@ -163,9 +163,10 @@
           <legend class="legend">Your informaiton</legend>
           <div class="wrapperFormText">
             <input type="text" name="Name" class="input1" value="Strahinja" placeholder="Name" />
-            <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
-            <div class="cleaner">
             </div>
+            <div class="wrapperFormText">
+            <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
+           
           </div>
           <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
         </form>
@@ -173,6 +174,8 @@
           <legend class="legend">Your agents informaiton</legend>
           <div class="wrapperFormText">
             <input type="text" name="Name" class="input1" value="" placeholder="Name" />
+            </div>
+            <div class="wrapperFormText">
             <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
             <div class="cleaner">
             </div>
@@ -200,17 +203,28 @@
       </div>
       <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
         <form class="" action="index.html" method="post">
-          <div class="wrapperFormText">
-            <input type="number" class="formHalf" name="purPrice" value="" placeholder="$"/>
-            <input type="number" class="formHalf" name="earnMoney" value="" placeholder="$"/>
-            <div class="cleaner"></div>
-          </div>
-          <div class="wrapperFormText">
-            <input type="number" class="formHalf" name="purPrice" value="" placeholder="%" />
-            <input type="number" class="formHalf" name="earnMoney" value="" placeholder="$"/>
-            <div class="cleaner"></div>
-          </div>
-          <div class="wrapperForm wrapperFormTransparent wrapperFormInherit wrapperFormNothing">
+            <div class="formsLeft">
+                <div class="wrapperFormText">
+                    <legend >Purchase price</legend>
+                    <input type="number" class="formHalf" name="purPrice" value="" placeholder="$"/>
+                  </div>
+                  <div class="wrapperFormText">
+                    <legend >Earnest money</legend>
+                    <input type="number" class="formHalf" name="earnMoney" value="" placeholder="$"/>
+                  </div>
+            </div>
+            <div class="formsRight">
+                <div class="wrapperFormText">
+                    <legend >Down payment</legend>
+                    <input type="number" class="formHalf" name="purPrice" value="" placeholder="%" />
+                </div>
+                <div class="wrapperFormText">
+                    <legend >Loan amount</legend>
+                    <input type="number" class="formHalf" name="earnMoney" value="" placeholder="$"/>
+
+                </div>
+            </div>
+          <div class="wrapperForm wrapperFormTransparent wrapperFormInherit wrapperFormNothing formsRight">
               <input type="radio" value="Conventional"><span>Conventional</span>
               <input type="radio" value="FHA" checked><span>FHA</span>
               <input type="radio" value="VA"><span>VA</span>
@@ -222,7 +236,7 @@
               <input type="date" name="date"class="date" placeholder="Pick a date">
             </form>
           </div>
-          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing formsRight">
             <legend class="legend legend1" id="legend">Acceptance deadline</legend>
             <form action="" method="post">
               <input type="date" name="date"class="date" id="dateSmaller" placeholder="Pick a date">
@@ -440,6 +454,8 @@
           <legend class="legend">Your informaiton</legend>
           <div class="wrapperFormText">
             <input type="text" name="Name" class="input1" value="Strahinja" placeholder="Name" />
+            </div>
+            <div class="wrapperFormText">
             <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
             <div class="cleaner">
             </div>
