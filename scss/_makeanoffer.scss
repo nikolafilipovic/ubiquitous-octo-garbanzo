@@ -162,6 +162,9 @@
             .legend1{
               margin-left: -10%;
             }
+            .legend2{
+                margin-left: 13%;
+            }
             .wrapperFormText {
               width: 50%;
               height: auto;
@@ -510,8 +513,47 @@
 }
 // --------------- MEDIA QUERRY -----------------// 
 @media (min-width:1025px) and (max-width:1366px){
+    #timeNone{
+        display: none;
+    }
     #pagesix {
         padding-bottom: 10%;
+    }
+    .wrapper{
+        .wrapperForm{
+            input[type=date]{
+                width: 48%;
+                float: right;
+             }
+        }
+        #wrapperFormFullWidth{
+            width: 30%;
+            padding-left: 0%;
+        }
+        .wrapperForm{
+          form{
+              margin-left: 3%;
+              .legend{
+                  margin-left: 8%;
+                  text-align: center;
+              }
+              .legend2{
+                  margin-left: 9.5%;
+              }
+            
+            .wrapperFormText{
+              .formHalf{
+                width: 80%;
+              }
+            }
+          }
+        }
+        #wrapperFooter{
+            margin: 0px auto;
+            width: 26%;
+            margin-top: 1%;
+            border-radius: 5px 5px 0px 0px;
+        }
     }
 }
 @media (min-width: 376px) and (max-width: 480px){

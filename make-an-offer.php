@@ -224,19 +224,28 @@
 
                 </div>
             </div>
+          
           <div class="wrapperForm wrapperFormTransparent wrapperFormInherit wrapperFormNothing formsRight">
               <input type="radio" value="Conventional"><span>Conventional</span>
               <input type="radio" value="FHA" checked><span>FHA</span>
               <input type="radio" value="VA"><span>VA</span>
               <input type="radio" value="CASH"><span>CASH</span>
           </div>
-          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
-            <legend class="legend legend1">Close of escrow</legend>
+            </form>
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing wrapperFormText" id="formDatee">
             <form action="" method="post">
-              <input type="date" name="date"class="date" placeholder="Pick a date">
+                <legend class="legend">Close of escrow</legend>
+                <input type="date" name="date"class="date" placeholder="Pick a date">
             </form>
           </div>
-          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing formsRight">
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing wrapperFormText" id="formDatee">
+            <form action="" method="post">
+                <legend class="legend legend2">Acceptance deadline</legend>
+                <input type="date" name="date"class="date" placeholder="Pick a date">
+            </form>
+          </div>
+         
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing formsRight" id="timeNone">
             <legend class="legend legend1" id="legend">Acceptance deadline</legend>
             <form action="" method="post">
               <input type="date" name="date"class="date" id="dateSmaller" placeholder="Pick a date">
@@ -244,7 +253,7 @@
               <div class="cleaner"></div>
             </form>
           </div>
-          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing "id="wrapperFormFullWidth"> 
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing " id="wrapperFormFullWidth"> 
             <form action="" method="post">
               <input type="button" value=" &leftarrow; Back">
               <input type="button" value=" Next &rightarrow;">

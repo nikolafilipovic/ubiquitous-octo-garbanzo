@@ -975,6 +975,8 @@ footer {
         /* width and height properties ommitted due to transform */ }
       .wrapper .wrapperForm form .legend1 {
         margin-left: -10%; }
+      .wrapper .wrapperForm form .legend2 {
+        margin-left: 13%; }
       .wrapper .wrapperForm form .wrapperFormText {
         width: 50%;
         height: auto;
@@ -1258,8 +1260,30 @@ footer {
     font-size: 16px; }
 
 @media (min-width: 1025px) and (max-width: 1366px) {
+  #timeNone {
+    display: none; }
   #pagesix {
-    padding-bottom: 10%; } }
+    padding-bottom: 10%; }
+  .wrapper .wrapperForm input[type=date] {
+    width: 48%;
+    float: right; }
+  .wrapper #wrapperFormFullWidth {
+    width: 30%;
+    padding-left: 0%; }
+  .wrapper .wrapperForm form {
+    margin-left: 3%; }
+    .wrapper .wrapperForm form .legend {
+      margin-left: 8%;
+      text-align: center; }
+    .wrapper .wrapperForm form .legend2 {
+      margin-left: 9.5%; }
+    .wrapper .wrapperForm form .wrapperFormText .formHalf {
+      width: 80%; }
+  .wrapper #wrapperFooter {
+    margin: 0px auto;
+    width: 26%;
+    margin-top: 1%;
+    border-radius: 5px 5px 0px 0px; } }
 
 @media (min-width: 376px) and (max-width: 480px) {
   .wrapper {
