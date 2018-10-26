@@ -12,7 +12,7 @@
 <div id="wrapper">
     <div class="wrapper" id="pageone">
       <div class="wrapperTop">
-        <a href="#"><p><i class="fa fa-angle-left" aria-hidden="true"></i> Back</p></a>
+        <p><i class="fa fa-angle-left" aria-hidden="true"></i><a href="#"> Back</a></p>
       </div>
       <div class="wrapperMid">
           <h1>Make an offer on</h1>
@@ -21,8 +21,8 @@
           <hr/>
           <h4>Let's get started. Who is making the offer?</h4>
       </div>
-      <div class="wrapperForm wrapperFormNothing">
-        <div class="formBlock formBottomLine formBorderTop">
+      <div class=" wrapperBlocks ">
+        <div class="formBlock  formBorderTop">
           <div class="formCircle">
 
           </div>
@@ -34,7 +34,7 @@
 
           </div>
         </div>
-        <div class="formBlock formBottomLine formBorderMid">
+        <div class="formBlock  formBorderMid">
           <div class="formCircle">
 
           </div>
@@ -59,12 +59,13 @@
           </div>
         </div>
     </div>
+    </div>
     <!-- Novi block -->
     <div class="wrapper" id="pagetwo">
       <div class="wrapperMid">
           <h1>Are you working with a real estate agent?</h1>
       </div>
-      <div class="wrapperForm wrapperFormNothing">
+      <div class=" wrapperBlocks">
         <div class="formBlock formBorderTop">
           <div class="formCircle">
 
@@ -90,24 +91,24 @@
     <div class="wrapper" id="pagethree">
       <div class="wrapperMid">
           <h1>We can write up the offer for you.</h1>
-          <h5>Please provide the informaiton below and Annete will contact you within 5 minutes.</h5>
+          <h3>Please provide the informaiton below and Annete will contact you within 5 minutes.</h3>
       </div>
-      <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
+      <div class="wrapperForm  ">
         <form class="" action="#" method="post">
-          <div class="wrapperFormText">
-            <input type="text" name="Name" class="input1" value="Strahinja" placeholder="Name" />
+          <div class="wrapperFormText formInput">
+            <input type="text" name="Name" class="formMR" value="Strahinja" placeholder="Name" />
           </div>
           <div class="wrapperFormText">
             <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
           </div>
-          <input type="number" class="formFullWidth" name="" value="" placeholder="Phone"/>
+          <input type="text" class="formMR" name="" value="" placeholder="Phone"/>
           <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-          <input type="submit" class="formFullWidth formSubmit" name="submit" value="Submit">
+          <input type="submit" class="formSubmitFull" name="submit" value="Submit &rightarrow;">
         </form>
       </div>
       <div class="personBlock">
         <div class="iconBlock">
-
+            
         </div>
         <div class="infoBlock">
           <h6>Anette Brown</h6>
@@ -124,13 +125,14 @@
 
         </div>
       </div>
+        <div class="cleaner"></div>
     </div>
 
     <!-- Novi block -->
     <div class="wrapper" id="pagefour">
       <div class="wrapperMid">
         <h1>Success!</h1>
-        <h6>Anette Brown will contact you shortly.</h6>
+        <h3>Anette Brown will contact you shortly.</h3>
       </div>
       <div class="personBlock">
         <div class="iconBlock">
@@ -156,13 +158,13 @@
     <div class="wrapper" id="pagefive">
       <div class="wrapperMid">
         <h1>Invite your agent</h1>
-        <h6>We'll send your agent a link with your request to make an offer on this property.</h6>
+        <h3>We'll send your agent a link with your request to make an offer on this property.</h3>
       </div>
-      <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
+      <div class="wrapperForm  wrapperFormBigger">
         <form class="" action="#" method="post">
           <legend class="legend">Your informaiton</legend>
           <div class="wrapperFormText">
-            <input type="text" name="Name" class="input1" value="Strahinja" placeholder="Name" />
+            <input type="text" name="Name" class="formMR" value="Strahinja" placeholder="Name" />
             </div>
             <div class="wrapperFormText">
             <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
@@ -170,10 +172,11 @@
           </div>
           <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
         </form>
+        
         <form class="" action="#" method="post">
           <legend class="legend">Your agents informaiton</legend>
           <div class="wrapperFormText">
-            <input type="text" name="Name" class="input1" value="" placeholder="Name" />
+            <input type="text" name="Name" class="formMR" value="" placeholder="Name" />
             </div>
             <div class="wrapperFormText">
             <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
@@ -181,8 +184,9 @@
             </div>
           </div>
           <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-          <input type="submit" class="formFullWidth formSubmit" name="submit" value="Submit">
+          <input type="submit" class="formSubmitFull" name="submit" value="Submit">
         </form>
+
       </div>
     </div>
 
@@ -190,10 +194,10 @@
     <div class="wrapper" id="pagesix">
       <div class="wrapperMid">
         <h1>Success!</h1>
-        <h6>An email has been sent to your agent.</h6>
+        <h3>An email has been sent to your agent.</h3>
       </div>
       <div class="goBack">
-        <a href="#"><p><i class="fa fa-angle-left" aria-hidden="true"></i>Go back</p></a>
+        <p><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Go back</a></p>
       </div>
     </div>
     <!-- Novi block -->
