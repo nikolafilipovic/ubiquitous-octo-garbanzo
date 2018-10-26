@@ -13,7 +13,7 @@
         border-radius: 5px;
         display: inline-block;
         span {
-            font-family: "Titillium Web", sans-serif;
+            font-family: $default-font-family;
             color: #ffffff;
             font-size: 20px;
             padding: 15px 0px;
@@ -100,7 +100,7 @@
             }
         }
         .form-control {
-            font-family: "Titillium Web", sans-serif;
+            font-family: $light-font-family;
             color: #96a7bc;
             background: #fff;
             font-size: 19px;
@@ -138,32 +138,34 @@
         a {
             opacity: 1;
             transition: opacity 0.3s ease;
-        }
-        a:hover,
-        a:focus,
-        a:active {
-            opacity: 0.7;
-        }
-        h1 {
-            font-family: "Titillium Web", sans-serif;
-            color: #00aced;
-            font-size: 22px;
-            font-weight: 400;
-            text-align: left;
-            display: inline-block;
-        }
-        i {
-            float: right;
-            position: relative;
-            color: #00aced;
-            right: 7%;
-            font-size: 17px;
-            transition: right  .3s ease;
-            -moz-transition: right .3s ease;
-            -webkit-transition: right .3s ease;
-            -o-transition: right .3s ease;
-            &:hover {
-                padding-left: 10px;
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 0.7;
+                i {
+                    right: 2%;
+                }
+            }
+            i {
+                float: right;
+                position: relative;
+                color: #00aced;
+                right: 5%;
+                font-size: 17px;
+                transition: right .3s ease;
+                &:hover,
+                &:focus,
+                &:active {
+                    right: 2%;
+                }
+            }
+            h1 {
+                font-family: $default-font-family;
+                color: #00aced;
+                font-size: 22px;
+                font-weight: 400;
+                text-align: left;
+                display: inline-block;
             }
         }
         .separator {
@@ -176,7 +178,7 @@
             top: 100%;
         }
         p {
-            font-family: "Titillium Web", sans-serif;
+            font-family: $light-font-family;
             color:#929baf;
             font-size: 17px;
             font-weight: 300;
@@ -192,8 +194,8 @@
 }
 .property-slider {
     .property-item {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 9px;
+        padding-bottom: 9px;
         padding-left: 20px;
         padding-right: 20px;
         border-radius: 5px;
@@ -211,7 +213,7 @@
             cursor: pointer;
           }
         .time-on-market {
-            font-family: "Titillium Web", sans-serif;
+            font-family: $default-font-family;
             color: #ffffff;
             font-size: 16px;
             font-weight: 500;
@@ -224,7 +226,7 @@
             position: relative;
         }
         .sale-type {
-            font-family: "Titillium Web", sans-serif;
+            font-family: $bold-font-family;
             color: #ffffff;
             font-size: 15px;
             font-weight: 600;
@@ -237,7 +239,7 @@
             position: relative;
         }
         .property-price {
-            font-family: "Titillium Web", sans-serif;
+            font-family: $light-font-family;
             color: #ffffff;
             font-size: 31px;
             font-weight: 400;
@@ -255,9 +257,9 @@
             .beds,
             .baths,
             .sqft {
-                font-family: "Titillium Web", sans-serif;
+                font-family: $light-font-family;
                 color: #ffffff;
-                font-size: 17px;
+                font-size: 16px;
                 font-weight: 400;
                 line-height: 26px;
                 text-align: left;
@@ -269,15 +271,15 @@
                 color: #fff;
                 font-size: 5px;
                 vertical-align: middle;
-                padding-left: 5px;
-                padding-right: 5px;
+                padding-left: 4px;
+                padding-right: 4px;
                 z-index: 0;
                 position: relative;
             }
         }
         .property-address {
             margin-top: 5px;
-            font-family: "Titillium Web", sans-serif;
+            font-family: $light-font-family;
             color: #ffffff;
             font-size: 14px;
             font-weight: 400;
