@@ -21,8 +21,8 @@
           <hr/>
           <h4>Let's get started. Who is making the offer?</h4>
       </div>
-      <div class="wrapperForm">
-        <div class="formBlock formBottomLine">
+      <div class="wrapperForm wrapperFormNothing">
+        <div class="formBlock formBottomLine formBorderTop">
           <div class="formCircle">
 
           </div>
@@ -34,7 +34,7 @@
 
           </div>
         </div>
-        <div class="formBlock formBottomLine">
+        <div class="formBlock formBottomLine formBorderMid">
           <div class="formCircle">
 
           </div>
@@ -46,7 +46,7 @@
 
           </div>
         </div>
-        <div class="formBlock">
+        <div class="formBlock formBorderBot">
           <div class="formCircle">
 
           </div>
@@ -64,8 +64,8 @@
       <div class="wrapperMid">
           <h1>Are you working with a real estate agent?</h1>
       </div>
-      <div class="wrapperForm">
-        <div class="formBlock formBottomLine">
+      <div class="wrapperForm wrapperFormNothing">
+        <div class="formBlock formBorderTop">
           <div class="formCircle">
 
           </div>
@@ -74,7 +74,7 @@
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
           </div>
         </div>
-        <div class="formBlock formBottomLine">
+        <div class="formBlock formBorderBot">
           <div class="formCircle">
 
           </div>
@@ -225,20 +225,20 @@
                 </div>
             </div>
           
-          <div class="wrapperForm wrapperFormTransparent wrapperFormInherit wrapperFormNothing formsRight">
+          <div class="wrapperForm wrapperFormTransparent wrapperFormInherit wrapperFormNothing formsRight FormaFull" >
               <input type="radio" value="Conventional"><span>Conventional</span>
               <input type="radio" value="FHA" checked><span>FHA</span>
               <input type="radio" value="VA"><span>VA</span>
               <input type="radio" value="CASH"><span>CASH</span>
           </div>
             </form>
-          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing wrapperFormText" id="formDatee">
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing wrapperFormText formDatee" >
             <form action="" method="post">
                 <legend class="legend">Close of escrow</legend>
                 <input type="date" name="date"class="date" placeholder="Pick a date">
             </form>
           </div>
-          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing wrapperFormText" id="formDatee">
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing wrapperFormText formDatee" >
             <form action="" method="post">
                 <legend class="legend legend2">Acceptance deadline</legend>
                 <input type="date" name="date"class="date" placeholder="Pick a date">
@@ -460,7 +460,7 @@
       </div>
       <div class="wrapperForm wrapperFormTransparent wrapperFormNothing">
         <form class="" action="#" method="post">
-          <legend class="legend">Your informaiton</legend>
+          <legend class="legend legend3">Submitting agent</legend>
           <div class="wrapperFormText">
             <input type="text" name="Name" class="input1" value="Strahinja" placeholder="Name" />
             </div>
