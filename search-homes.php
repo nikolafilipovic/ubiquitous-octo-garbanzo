@@ -52,73 +52,90 @@
     </div>
 </div> -->
 </div>
+<div class="clearfix"></div>
 <div id="search-homes">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <input class="form-control search" type="search" placeholder="Search address, city or zip..." aria-label="Search">
                 <div class="dropdown listing">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="listingdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="listingDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <input class="search-checkbox" id="listing" type="checkbox" value="Nothing">
                         <label for="listing"><i class="fas fa-circle color red"></i>Listing type <i class="fas fa-angle-down"></i></label>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="listingdropdown">
+                    <div class="dropdown-menu" aria-labelledby="listingDropdown">
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon" type="checkbox" value="Nothing"><label for="comingSoon">Coming soon</label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction">New construction</label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="openHouses" type="checkbox" value="Nothing"><label for="openHouses">Open houses</label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour">Virtual tour</label></a>
+                    </div>
+                </div>
+                <div class="dropdown foreclosures">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="foreclosuresDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input class="search-checkbox" id="foreclosures" type="checkbox" value="Nothing">
+                        <label for="foreclosures"><i class="fas fa-circle color blue"></i>Foreclosures <i class="fas fa-angle-down"></i></label>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="foreclosuresDropdown">
                         <a class="dropdown-item" href="#">One</a>
                         <a class="dropdown-item" href="#">Two</a>
                         <a class="dropdown-item" href="#">Three</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Any price
+                <div class="dropdown lastcall">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="lastcallDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input class="search-checkbox" id="lastcall" type="checkbox" value="Nothing">
+                        <label for="lastcall"><i class="fas fa-circle color green"></i>Last Call <i class="fas fa-info-circle info"></i><i class="fas fa-angle-down"></i></label>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu" aria-labelledby="lastcallDropdown">
+                        <p class="dropdown-item">Last call to make offers. These homes will <br/>go under contract in 24 hours.</p>
+                    </div>
+                </div>
+                <div class="dropdown sold">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="soldDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input class="search-checkbox" id="sold" type="checkbox" value="Nothing">
+                        <label for="sold"><i class="fas fa-circle color yellow"></i>Sold <i class="fas fa-angle-down"></i></label>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="soldDropdown">
                         <a class="dropdown-item" href="#">One</a>
                         <a class="dropdown-item" href="#">Two</a>
                         <a class="dropdown-item" href="#">Three</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        0+ Bedrooms
+                <div class="price-field">
+                    <h3>Price</h3>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Min">
+                        <input type="text" class="form-control" placeholder="Max">
+                    </div>
+                </div>
+                <div class="dropdown bedrooms">
+                    <h3>Bedrooms</h3>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="bedroomsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Any <i class="fas fa-angle-down"></i>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu" aria-labelledby="bedroomsDropdown">
                         <a class="dropdown-item" href="#">One</a>
                         <a class="dropdown-item" href="#">Two</a>
                         <a class="dropdown-item" href="#">Three</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Home Type (2)
+                <div class="dropdown hometype">
+                    <h3>Home type</h3>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="hometypeDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Any <i class="fas fa-angle-down"></i>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu" aria-labelledby="hometypeDropdown">
                         <a class="dropdown-item" href="#">One</a>
                         <a class="dropdown-item" href="#">Two</a>
                         <a class="dropdown-item" href="#">Three</a>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        All filters
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                <div class="search-links">
+                    <a href="#" id="filters">Filters</a>
+                    <a href="#">Sort</a>
+                    <a href="#">Map</a>
+                    <a href="#" id="save-search">Save search</a>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Sort: Highest Price
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-                <a href="#"> Map</a>
             </div>
         </div>
     </div>
