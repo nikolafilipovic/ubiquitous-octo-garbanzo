@@ -15,20 +15,20 @@
 				<div class="upper-footer">
 					<div class="container">
 						<div class="row">
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-links">
+							<div class="col-xl-4 d-xl-block col-lg-4 d-lg-block col-md-4 d-md-block d-none footer-links">
 								<h3>Search for homes by state</h3>
 								<?php echo( $footer_menu_1 ); ?>
-								<a href="#" class="more-link"><i class="fas fa-plus"></i><span>More</span></a>
+								<p class="more-link"><i class="fas fa-plus"></i><span>More</span></p>
 							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-links">
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 footer-links">
 								<h3>Search for homes by city</h3>
 								<?php echo( $footer_menu_2 ); ?>
-								<a href="#" class="more-link"><i class="fas fa-plus"></i><span>More</span></a>
+								<p class="more-link"><i class="fas fa-plus"></i><span>More</span></p>
 							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-links">
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 footer-links">
 								<h3>Search for homes by zip code</h3>
 								<?php echo( $footer_menu_3 ); ?>
-								<a href="#" class="more-link"><i class="fas fa-plus"></i><span>More</span></a>
+								<p class="more-link"><i class="fas fa-plus"></i><span>More</span></p>
 							</div>
 						</div>
 					</div>
@@ -36,16 +36,16 @@
 				<div class="bottom-footer">
 					<div class="container">
 						<div class="row">
-							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-xs-12 footer-copyright">
+							<div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12 footer-copyright">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo"><img src="<?php echo $template_directory_uri; ?>/images/footer-logo.png" alt=""/></a>
 								<span>© <?php echo date('Y'); ?> The Offer Company</span>
 							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-social">
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer-social">
 								<a href="#"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
 								<a href="#"><span class="social-icon"><i class="fab fa-twitter"></i></span></a>
 								<a href="#"><span class="social-icon"><i class="fab fa-instagram"></i></span></a>
 							</div>
-							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-contact">
+							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer-contact">
 								<h3>(888) 398-4855</h3>
 								<span><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></span>
 							</div>

@@ -10,30 +10,34 @@ footer {
         padding: 40px 0px;
         background: #e9eef4;
         .footer-links {
+            padding: 0px 35px;
             h3 {
-                font-family: "Titillium Web", sans-serif;
+                font-family: $bold-font-family;
                 color: #4a505d;
                 font-size: 17px;
                 font-weight: 600;
                 line-height: 30px;  
-                text-align: center;
+                text-align: left;
                 text-transform: uppercase;
             }
             .menu-footer-menu-1-container {
                 display: block;
             }
             ul {
-                -moz-column-count: 2;
-                -moz-column-gap: 10px;
-                -webkit-column-count: 4;
-                -webkit-column-gap: 10px;
-                column-count: 2;
-                column-gap: 10px;
-                text-align: center;
-                padding: 0px 50px;
+                -moz-column-count: 1;
+                -moz-column-gap: 0px;
+                -webkit-column-count: 1;
+                -webkit-column-gap: 0px;
+                column-count: 1;
+                column-gap: 0px;
+                text-align: left;
+                padding: 0px 0px;
                 li {
+                    &:nth-child(n+5) {
+                        display: none;
+                    }
                     a {
-                        font-family: "Titillium Web", sans-serif;
+                        font-family: $default-font-family;
                         color:  #78869c;
                         font-size: 16px;
                         font-weight: 300;
@@ -50,7 +54,7 @@ footer {
                 }
             }
             .more-link {
-                text-align: center;
+                text-align: left;
                 opacity: 1;
                 transition: opacity 0.3s ease;
                 display: block;
@@ -60,7 +64,7 @@ footer {
                     margin-right: 5px;
                 }
                 span {
-                    font-family: "Titillium Web", sans-serif;
+                    font-family: $default-font-family;
                     color:  #00aced;
                     font-size: 15px;
                     font-weight: 600;
@@ -92,7 +96,7 @@ footer {
                 }
             }
             span {
-                font-family: "Titillium Web", sans-serif;
+                font-family: $default-font-family;
                 color:  #b2bed9;
                 font-size: 16px;
                 font-weight: 400;
@@ -136,7 +140,7 @@ footer {
         }
         .footer-contact {
             h3 {
-                font-family: "Titillium Web", sans-serif;
+                font-family: $default-font-family;
                 color:  #b2bed9;
                 font-size: 22;
                 font-weight: 600;
@@ -148,7 +152,7 @@ footer {
                 display: block;
                 text-align: center;
                 a {
-                    font-family: "Titillium Web", sans-serif;
+                    font-family: $default-font-family;
                     color:  #b2bed9;
                     font-size: 16px;
                     font-weight: 400;

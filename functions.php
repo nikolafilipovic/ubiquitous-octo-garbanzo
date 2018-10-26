@@ -8,6 +8,7 @@ function add_modules() {
         include("modules/landing-search.php");
         include("modules/landing-links.php");
         include("modules/property-slider.php");
+        include("modules/tour-slider.php");
     }
 }
 

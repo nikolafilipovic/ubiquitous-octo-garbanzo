@@ -49,6 +49,23 @@
     .landing-links {
         .col-link {
             margin-bottom: 0px;
+            a {
+                &:hover,
+                &:focus,
+                &:active {
+                    i {
+                        right: 7%;
+                    }
+                }
+                i {
+                    right: 10%;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        right: 7%;
+                    }
+                }
+            }
             .separator {
                 position: absolute;
                 float: right;
@@ -91,6 +108,25 @@
             }
         }
         .bottom-footer {
+            .footer-links {
+                padding: 0px 0px;
+                h3 {
+                    text-align: center;
+                }
+                ul {
+                    -moz-column-count: 2;
+                    -moz-column-gap: 10px;
+                    -webkit-column-count: 2;
+                    -webkit-column-gap: 10px;
+                    column-count: 2;
+                    column-gap: 10px;
+                    text-align: center;
+                    padding: 0px 50px;
+                }
+                .more-link {
+                    text-align: left;
+                }
+            }
             .footer-copyright {
                 text-align: left;
                 margin-bottom: 0px;

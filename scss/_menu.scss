@@ -36,7 +36,7 @@
             font-size: 18px;
             text-transform: uppercase;
             color: #fff;
-            font-family: "Titillium Web", sans-serif;
+            font-family: $default-font-family;
             font-weight: 600;
             line-height: 2.3;
             display: none;
@@ -84,7 +84,7 @@
             left: 0;
         }
         p.menu-title {
-            font-family: "Titillium Web", sans-serif;
+            font-family: $bold-font-family;
             color: #898989;
             font-size: 17px;
             font-weight: 600;
@@ -121,7 +121,7 @@
                 .menu-item {
                     border-bottom: 1px solid #eee;
                     a {
-                        font-family: "Titillium Web", sans-serif;
+                        font-family: $default-font-family;
                         font-size: 18px;
                         font-weight: 600;
                         color: #1e232c;
@@ -140,6 +140,7 @@
                         li {
                             border-bottom: none;
                             a {
+                                font-family: $light-font-family;
                                 font-size: 16px;
                                 color: #898989;
                                 font-weight: 400;
