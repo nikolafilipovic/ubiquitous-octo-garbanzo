@@ -212,6 +212,7 @@
                     <legend >Earnest money</legend>
                     <input type="number" class="formHalf" name="earnMoney" value="" placeholder="$"/>
                   </div>
+                <div class="cleaner"></div>
             </div>
             <div class="formsRight">
                 <div class="wrapperFormText">
@@ -223,6 +224,7 @@
                     <input type="number" class="formHalf" name="earnMoney" value="" placeholder="$"/>
 
                 </div>
+                <div class="cleaner"></div>
             </div>
           
           <div class="wrapperForm wrapperFormTransparent wrapperFormInherit wrapperFormNothing formsRight FormaFull" >
@@ -232,7 +234,7 @@
               <input type="radio" value="CASH"><span>CASH</span>
           </div>
             </form>
-          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing wrapperFormText formDatee" >
+          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing wrapperFormText formDatee" id="fixedForm">
             <form action="" method="post">
                 <legend class="legend">Close of escrow</legend>
                 <input type="date" name="date"class="date" placeholder="Pick a date">

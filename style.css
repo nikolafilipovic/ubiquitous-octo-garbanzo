@@ -9,7 +9,6 @@
 */
 /* Adding some fonts and icons
 ------------------------------------------------------- */
-/* latin-ext */
 @import url("https://use.fontawesome.com/releases/v5.4.1/css/all.css");
 @font-face {
   font-family: 'Titillium Web';
@@ -18,13 +17,30 @@
   src: local("Titillium Web Regular"), local("TitilliumWeb-Regular"), url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPecZTIAOhVxoMyOr9n_E7fdM3mDbRS.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
-/* latin */
 @font-face {
   font-family: 'Titillium Web';
   font-style: normal;
   font-weight: 400;
   src: local("Titillium Web Regular"), local("TitilliumWeb-Regular"), url(https://fonts.gstatic.com/s/titilliumweb/v6/NaPecZTIAOhVxoMyOr9n_E7fdMPmDQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face {
+  font-family: "Graphik Light";
+  font-weight: 300;
+  src: url("/wp-content/themes/theoffercompany/fonts/Graphik-Light.eot");
+  src: url("/wp-content/themes/theoffercompany/fonts/Graphik-Light.woff") format("woff"), url("/wp-content/themes/theoffercompany/fonts/Graphik-Light.ttf") format("truetype"), url("/wp-content/themes/theoffercompany/fonts/Graphik-Light.svg") format("svg"); }
+
+@font-face {
+  font-family: "Graphik Regular";
+  font-weight: 400;
+  src: url("/wp-content/themes/theoffercompany/fonts/Graphik-Regular.eot");
+  src: url("/wp-content/themes/theoffercompany/fonts/Graphik-Regular.woff") format("woff"), url("/wp-content/themes/theoffercompany/fonts/Graphik-Regular.ttf") format("truetype"), url("/wp-content/themes/theoffercompany/fonts/Graphik-Regular.svg") format("svg"); }
+
+@font-face {
+  font-family: "Graphik Medium";
+  font-weight: 500;
+  src: url("/wp-content/themes/theoffercompany/fonts/Graphik-Medium.eot");
+  src: url("/wp-content/themes/theoffercompany/fonts/Graphik-Medium.woff") format("woff"), url("/wp-content/themes/theoffercompany/fonts/Graphik-Medium.ttf") format("truetype"), url("/wp-content/themes/theoffercompany/fonts/Graphik-Medium.svg") format("svg"); }
 
 /* Some stupid variables
 ------------------------------------------------------- */
@@ -808,1008 +824,6 @@ footer {
         footer .bottom-footer .footer-contact span a:hover, footer .bottom-footer .footer-contact span a:focus, footer .bottom-footer .footer-contact span a:active {
           opacity: 0.7; }
 
-/* Pisi CSS Ovde! */
-/* Sitna izmena */
-/* Jos jedna sitna izmena */
-/* Jos jedna bla bla */
-/* Sada menjam fajl u drugom editoru ali ce VS i dalje da kompajluje i ove izmene */
-/* jos jedna promena */
-/* proradi */
-.wrapper {
-  background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: -moz-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: -o-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: -ms-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: linear-gradient(0deg, #a4d2f4 0%, #80c6f2 100%);
-  width: 100%;
-  height: auto; }
-  .wrapper .cleaner {
-    clear: both; }
-  .wrapper .wrapperTop {
-    background-color: #ffffff;
-    box-shadow: 0px 1px 7.6px 0.4px rgba(53, 94, 140, 0.18);
-    width: auto;
-    height: 75px;
-    padding-top: 2%; }
-    .wrapper .wrapperTop p {
-      font-family: sans-serif;
-      color: #00aced;
-      font-size: 32px;
-      /* Approximation due to font substitution */
-      font-weight: 400;
-      line-height: 52px;
-      /* Approximation due to font substitution */
-      text-align: left;
-      margin-left: 10%; }
-  .wrapper .wrapperMid {
-    margin: 0px auto;
-    text-align: center;
-    height: 180px;
-    width: 81%;
-    padding-top: 10%; }
-    .wrapper .wrapperMid p {
-      color: #ffffff; }
-    .wrapper .wrapperMid h1 {
-      font-family: sans-serif;
-      color: #ffffff;
-      font-size: 30px;
-      /* Approximation due to font substitution */
-      font-weight: 400;
-      line-height: 26px;
-      /* Approximation due to font substitution */
-      text-align: center;
-      transform: scaleY(1.0005);
-      /* width and height properties ommitted due to transform */ }
-    .wrapper .wrapperMid h2 {
-      font-family: sans-serif;
-      color: #ffffff;
-      font-size: 30px;
-      /* Approximation due to font substitution */
-      font-weight: 500;
-      line-height: 26px;
-      /* Approximation due to font substitution */
-      text-align: center;
-      font-weight: bold; }
-    .wrapper .wrapperMid h3 {
-      font-family: sans-serif;
-      color: #ffffff;
-      font-size: 20px;
-      /* Approximation due to font substitution */
-      font-weight: 500;
-      line-height: 26px;
-      /* Approximation due to font substitution */
-      text-align: center; }
-    .wrapper .wrapperMid hr {
-      background-color: #ffffff;
-      width: 20px;
-      height: 2px; }
-    .wrapper .wrapperMid h4 {
-      font-family: sans-serif;
-      color: #ffffff;
-      font-size: 20px;
-      /* Approximation due to font substitution */
-      font-weight: 400;
-      line-height: 26px;
-      /* Approximation due to font substitution */
-      text-align: center;
-      transform: scaleY(1.0005);
-      /* width and height properties ommitted due to transform */ }
-    .wrapper .wrapperMid h5 {
-      font-family: sans-serif;
-      color: #ffffff;
-      font-size: 20px;
-      /* Approximation due to font substitution */
-      font-weight: 400;
-      line-height: 26px;
-      /* Approximation due to font substitution */
-      text-align: center;
-      transform: scaleY(1.0005);
-      /* width and height properties ommitted due to transform */
-      margin-top: 5%; }
-    .wrapper .wrapperMid h6 {
-      font-family: sans-serif;
-      color: #ffffff;
-      font-size: 20px;
-      /* Approximation due to font substitution */
-      font-weight: 400;
-      line-height: 26px;
-      /* Approximation due to font substitution */
-      text-align: center;
-      transform: scaleY(1.0005);
-      /* width and height properties ommitted due to transform */
-      margin-top: 13%; }
-  .wrapper .wrapperForm {
-    width: 83.5%;
-    height: auto;
-    margin: 0px auto;
-    margin-top: 9%;
-    border-radius: 10px;
-    box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18); }
-    .wrapper .wrapperForm .FormaFull {
-      width: 90%; }
-    .wrapper .wrapperForm .formDatee {
-      margin-top: 7%;
-      margin-bottom: 5%; }
-    .wrapper .wrapperForm h4 {
-      margin-left: 19%;
-      font-family: sans-serif;
-      color: #1e232c;
-      margin-top: 2.3%;
-      font-size: 22px;
-      /* Approximation due to font substitution */
-      font-weight: 400;
-      line-height: 26px;
-      /* Approximation due to font substitution */
-      text-align: left;
-      transform: scaleY(1.0005);
-      /* width and height properties ommitted due to transform */ }
-    .wrapper .wrapperForm .formBlock {
-      margin: 0px auto;
-      height: 80px;
-      width: 100%;
-      max-width: 360px;
-      padding: 4% 2%;
-      padding-bottom: 8%;
-      position: relative;
-      background-color: #ffffff;
-      border-radius: 10px;
-      border-bottom: 1px solid #c1c1c1; }
-      .wrapper .wrapperForm .formBlock .formArrow {
-        height: 10px;
-        width: 10px;
-        float: right;
-        margin-bottom: 10%;
-        position: absolute;
-        bottom: 10%;
-        right: 10%; }
-      .wrapper .wrapperForm .formBlock .formCircle {
-        border-radius: 50%;
-        background-color: #00aced;
-        width: 40px;
-        height: 40px;
-        float: left; }
-    .wrapper .wrapperForm .formBorderTop {
-      border-radius: 5px 5px 0px 0px; }
-    .wrapper .wrapperForm .formBorderMid {
-      border-radius: 0px;
-      border-bottom: 0.3px solid #c1c1c1; }
-    .wrapper .wrapperForm .formBorderBot {
-      border-radius: 0px 0px 5px 5px; }
-    .wrapper .wrapperForm form {
-      font-family: sans-serif;
-      margin: 0px auto;
-      height: auto;
-      width: 100%;
-      background-color: transparent; }
-      .wrapper .wrapperForm form .legend {
-        color: #ffffff;
-        font-weight: 500;
-        line-height: 33.787px;
-        /* Approximation due to font substitution */
-        transform: scaleY(1.0005);
-        /* width and height properties ommitted due to transform */ }
-      .wrapper .wrapperForm form .legend1 {
-        margin-left: -10%; }
-      .wrapper .wrapperForm form .legend2 {
-        margin-left: 13%; }
-      .wrapper .wrapperForm form .wrapperFormText {
-        width: 50%;
-        height: auto;
-        float: left; }
-        .wrapper .wrapperForm form .wrapperFormText legend {
-          padding-left: 3%;
-          color: #ffffff; }
-        .wrapper .wrapperForm form .wrapperFormText input {
-          width: 97%;
-          height: 40px;
-          border-radius: 5px;
-          background-color: #ffffff;
-          padding-left: 5%;
-          margin-top: 2%;
-          margin-bottom: 2%;
-          border: none; }
-        .wrapper .wrapperForm form .wrapperFormText .input1 {
-          float: left; }
-        .wrapper .wrapperForm form .wrapperFormText .input2 {
-          float: right; }
-        .wrapper .wrapperForm form .wrapperFormText .formHalf {
-          width: 97%;
-          margin-left: 2%; }
-      .wrapper .wrapperForm form .formFullWidth {
-        width: 100%;
-        height: 40px;
-        border-radius: 5px;
-        background-color: #ffffff;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        padding-left: 5%;
-        border: none; }
-      .wrapper .wrapperForm form .formSubmit {
-        background-color: #00aced;
-        color: #ffffff; }
-    .wrapper .wrapperForm input[type=date] {
-      width: 120%;
-      height: 40px;
-      margin-left: -10%;
-      border-radius: 5px;
-      background-color: #ffffff;
-      border: none; }
-    .wrapper .wrapperForm input[type=button] {
-      width: 46%;
-      height: 50px;
-      color: #ffffff;
-      border-radius: 5px;
-      background-color: #00aced;
-      border: none;
-      margin-left: -5%; }
-      .wrapper .wrapperForm input[type=button]:first-child {
-        margin-right: 16%; }
-  .wrapper .wrapperFormTransparent {
-    background-color: transparent; }
-  .wrapper .wrapperFormNothing {
-    border-radius: none;
-    background-color: none;
-    box-shadow: none; }
-  .wrapper .wrapperFormInherit {
-    width: 100%;
-    padding-left: 2%; }
-    .wrapper .wrapperFormInherit input {
-      border-radius: 50%;
-      border-style: solid;
-      border-width: 3px;
-      border-color: #ffffff;
-      box-sizing: border-box;
-      background-color: rgba(245, 248, 249, 0);
-      width: 16px;
-      height: 16px; }
-    .wrapper .wrapperFormInherit span {
-      margin-left: 2.3%;
-      font-family: Graphik;
-      color: #ffffff;
-      font-size: 20px;
-      /* Approximation due to font substitution */
-      font-weight: 400;
-      line-height: 33.787px;
-      /* Approximation due to font substitution */
-      text-align: left;
-      transform: scaleY(1.0005);
-      /* width and height properties ommitted due to transform */ }
-  .wrapper .personBlock {
-    width: 78%;
-    height: 155px;
-    margin: 50px auto 0px auto;
-    background-color: #ffffff;
-    padding: 6% 3%;
-    border-radius: 5px; }
-    .wrapper .personBlock .iconBlock {
-      height: 90px;
-      width: 90px;
-      border-radius: 50%;
-      background-color: #c2c2c2;
-      float: left;
-      margin: 3% 0% 0% 5%; }
-    .wrapper .personBlock .infoBlock {
-      float: right;
-      width: auto; }
-      .wrapper .personBlock .infoBlock h6 {
-        margin-bottom: 1%; }
-      .wrapper .personBlock .infoBlock .infoblockName {
-        margin: 0px;
-        margin-top: -11px;
-        padding: 0px;
-        color: #c2c2c2; }
-    .wrapper .personBlock .fa-star {
-      color: #00aced; }
-  .wrapper .goBack {
-    width: auto;
-    height: 60px;
-    margin: 0px auto;
-    margin-top: 20%;
-    text-align: center;
-    padding-top: 5%;
-    font-size: 19px; }
-    .wrapper .goBack a {
-      color: #ffffff; }
-      .wrapper .goBack a .fa {
-        margin-right: 3.3%; }
-  .wrapper .wrapperMidSmall {
-    height: 80px; }
-  .wrapper #legend {
-    color: #ffffff;
-    font-weight: 500;
-    line-height: 33.787px;
-    /* Approximation due to font substitution */
-    transform: scaleY(1.0005);
-    /* width and height properties ommitted due to transform */
-    margin-left: -10%; }
-  .wrapper #dateSmaller {
-    width: 85%;
-    height: 40px;
-    margin-left: -10%;
-    border-radius: 5px;
-    background-color: #ffffff;
-    border: none; }
-  .wrapper #time {
-    float: right;
-    width: 30%;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    border: none;
-    margin-right: -10%; }
-  .wrapper #wrapperFormFullWidth {
-    width: 100%;
-    padding-left: 5%; }
-  .wrapper #wrapperFooter {
-    background-color: #00aced;
-    width: 100%;
-    height: 50px;
-    margin-top: 20%;
-    position: relative; }
-    .wrapper #wrapperFooter h3 {
-      float: left;
-      margin-top: 4%;
-      color: #ffffff;
-      margin-left: 3%;
-      font-size: 19px; }
-    .wrapper #wrapperFooter #footerIcons {
-      float: right;
-      width: 40%;
-      height: 50px; }
-      .wrapper #wrapperFooter #footerIcons hr {
-        width: 20%;
-        height: 1px;
-        background-color: #ffffff;
-        position: absolute;
-        bottom: 10%;
-        right: 10%; }
-  .wrapper .radioForms {
-    color: #ffffff;
-    padding: 5% 0% 0% 3%;
-    width: 90%;
-    height: 100px;
-    margin: 0px auto; }
-    .wrapper .radioForms input[type=radio] {
-      font-size: 16px; }
-      .wrapper .radioForms input[type=radio]:last-child {
-        margin-left: 5%; }
-    .wrapper .radioForms input[type=text] {
-      width: 100%;
-      height: 120px;
-      border: none;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      padding-bottom: 24%;
-      padding-left: 5%; }
-    .wrapper .radioForms h5 {
-      color: #ffffff;
-      font-size: 15.5px; }
-    .wrapper .radioForms .radioForm {
-      width: 50%;
-      height: inherit;
-      float: left; }
-    .wrapper .radioForms .radioFormRight {
-      float: right;
-      margin-right: -15%; }
-  .wrapper .textForm {
-    height: auto;
-    width: 90%;
-    margin-left: 3%; }
-  .wrapper .smallerH1 {
-    margin-bottom: -80px; }
-  .wrapper .buttons {
-    width: 90%;
-    height: 50px;
-    margin: 0px auto; }
-    .wrapper .buttons input {
-      background-color: #00aced;
-      color: #ffffff;
-      border-radius: 5px;
-      border: none;
-      height: 50px;
-      width: 47%; }
-      .wrapper .buttons input:first-child {
-        margin-right: 5%; }
-  .wrapper .Blokovi {
-    width: 90%;
-    height: 40px;
-    border-radius: 5px;
-    background-color: #00aced;
-    margin: 0px auto;
-    margin-top: 3%;
-    margin-bottom: 6%; }
-  .wrapper #smallTable {
-    width: 90%;
-    margin: 0px auto;
-    height: auto;
-    margin-top: -80px;
-    color: #ffffff;
-    margin-left: 5%; }
-  .wrapper #smallTable1 {
-    width: 90%;
-    margin: 0px auto;
-    height: auto;
-    color: #ffffff;
-    margin-left: 5%; }
-  .wrapper #smallTable2 {
-    width: 90%;
-    margin: 0px auto;
-    height: auto;
-    color: #ffffff;
-    margin-left: 5%;
-    margin-bottom: 3%; }
-  .wrapper #lastPage h1 {
-    font-size: 27px;
-    margin-bottom: 4%; }
-  .wrapper #lastPage h2 {
-    font-size: 27px;
-    font-weight: bold; }
-  .wrapper #lastPage h5 {
-    margin-top: 1%;
-    font-size: 16px; }
-  .wrapper #lastPage h6 {
-    font-size: 16px;
-    width: 90%;
-    margin: 12% auto 0% auto; }
-  .wrapper #lastPage .wrapperMid {
-    height: auto; }
-  .wrapper #lastPage .personBlock h6 {
-    margin: 0%; }
-  .wrapper #FirstPage .wrapperMid {
-    height: auto; }
-  .wrapper #FirstPage h6 {
-    margin-top: 1%;
-    margin-bottom: 5%; }
-  .wrapper #FirstPage .personBlock h6 {
-    margin: 0%; }
-  .wrapper #pagethree, .wrapper #pagefour, .wrapper #pagefive, .wrapper #pageten, .wrapper #FirstPage {
-    padding-bottom: 10%; }
-  .wrapper #button1 {
-    margin: 80px auto 100px auto;
-    height: 50px;
-    width: 40%;
-    background-color: #00aced;
-    border: none;
-    border-radius: 5px;
-    color: #ffffff;
-    padding: 3% 0% 0% 15%;
-    font-size: 16px; }
-
-@media (min-width: 1025px) and (max-width: 1366px) {
-  #timeNone {
-    display: none; }
-  #pagesix, #pageseven {
-    padding-bottom: 10%; }
-  .wrapper .wrapperMid {
-    padding-top: 15%;
-    margin-bottom: 15%; }
-    .wrapper .wrapperMid h1 {
-      font-size: 30px; }
-  .wrapper .wrapperForm {
-    width: 60%; }
-    .wrapper .wrapperForm input[type=date] {
-      width: 48%;
-      float: right; }
-  .wrapper #wrapperFormFullWidth {
-    width: 30%;
-    padding-left: 0%;
-    margin-left: 36.3%; }
-  .wrapper .wrapperForm form {
-    margin-left: 3%; }
-    .wrapper .wrapperForm form .legend {
-      margin-left: 8%;
-      text-align: center; }
-    .wrapper .wrapperForm form .legend2 {
-      margin-left: 9.5%; }
-    .wrapper .wrapperForm form .legend3 {
-      text-align: left;
-      margin-left: 0px; }
-    .wrapper .wrapperForm form .wrapperFormText .formHalf {
-      width: 80%; }
-  .wrapper .wrapperForm .formBlock {
-    padding: 2% 2%;
-    padding-bottom: 4%; }
-    .wrapper .wrapperForm .formBlock .formArrow {
-      bottom: 1%; }
-  .wrapper .wrapperForm input[type="date"] {
-    width: 44.6%;
-    margin-right: 4%; }
-  .wrapper #wrapperFooter {
-    margin: 0px auto;
-    width: 26%;
-    margin-top: 2%;
-    margin-left: 38%;
-    border-radius: 5px 5px 0px 0px; }
-  .wrapper .wrapperFormInherit span {
-    margin-left: 2%;
-    margin-right: 1%; }
-  .wrapper .formDatee {
-    margin-top: 0% !important; }
-  .wrapper .radioForms {
-    width: 40%;
-    margin: 0px auto; }
-    .wrapper .radioForms .radioFormRight {
-      text-align: right;
-      padding-right: 15%; }
-    .wrapper .radioForms input[type=text] {
-      padding-bottom: 19%; }
-  .wrapper .buttons {
-    width: 40%; }
-    .wrapper .buttons input {
-      width: 43.6%; }
-      .wrapper .buttons input:first-child {
-        margin-left: 7%; }
-  .wrapper .personBlock {
-    width: 450px;
-    padding: 1.5% 3%; }
-  .wrapper #smallTable, .wrapper #smallTable1, .wrapper #smallTable2 {
-    width: 50%;
-    margin: 10px auto;
-    margin-left: 35%; }
-  .wrapper #button1 {
-    padding-top: 1%;
-    padding-left: 18%; }
-  .wrapper .Blokovi {
-    width: 40%; } }
-
-@media (min-width: 376px) and (max-width: 480px) {
-  .wrapper {
-    background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-    background: -moz-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-    background: -o-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-    background: -ms-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-    background: linear-gradient(0deg, #a4d2f4 0%, #80c6f2 100%);
-    width: 100%;
-    height: auto; }
-    .wrapper .cleaner {
-      clear: both; }
-    .wrapper .wrapperTop {
-      background-color: #ffffff;
-      box-shadow: 0px 1px 7.6px 0.4px rgba(53, 94, 140, 0.18);
-      width: auto;
-      height: 75px;
-      padding-top: 2%; }
-      .wrapper .wrapperTop p {
-        font-family: sans-serif;
-        color: #00aced;
-        font-size: 32px;
-        /* Approximation due to font substitution */
-        font-weight: 400;
-        line-height: 52px;
-        /* Approximation due to font substitution */
-        text-align: left;
-        margin-left: 10%; }
-    .wrapper .wrapperMid {
-      margin: 0px auto;
-      text-align: center;
-      height: 180px;
-      width: 81%;
-      padding-top: 10%; }
-      .wrapper .wrapperMid p {
-        color: #ffffff; }
-      .wrapper .wrapperMid h1 {
-        font-family: sans-serif;
-        color: #ffffff;
-        font-size: 30px;
-        /* Approximation due to font substitution */
-        font-weight: 400;
-        line-height: 26px;
-        /* Approximation due to font substitution */
-        text-align: center;
-        transform: scaleY(1.0005);
-        /* width and height properties ommitted due to transform */ }
-      .wrapper .wrapperMid h2 {
-        font-family: sans-serif;
-        color: #ffffff;
-        font-size: 30px;
-        /* Approximation due to font substitution */
-        font-weight: 500;
-        line-height: 26px;
-        /* Approximation due to font substitution */
-        text-align: center;
-        font-weight: bold; }
-      .wrapper .wrapperMid h3 {
-        font-family: sans-serif;
-        color: #ffffff;
-        font-size: 21px;
-        /* Approximation due to font substitution */
-        font-weight: 500;
-        line-height: 26px;
-        /* Approximation due to font substitution */
-        text-align: center; }
-      .wrapper .wrapperMid hr {
-        background-color: #ffffff;
-        width: 20px;
-        height: 2px; }
-      .wrapper .wrapperMid h4 {
-        font-family: sans-serif;
-        color: #ffffff;
-        font-size: 19px;
-        /* Approximation due to font substitution */
-        font-weight: 400;
-        line-height: 26px;
-        /* Approximation due to font substitution */
-        text-align: center;
-        transform: scaleY(1.0005);
-        /* width and height properties ommitted due to transform */ }
-      .wrapper .wrapperMid h5 {
-        font-family: sans-serif;
-        color: #ffffff;
-        font-size: 20px;
-        /* Approximation due to font substitution */
-        font-weight: 400;
-        line-height: 26px;
-        /* Approximation due to font substitution */
-        text-align: center;
-        transform: scaleY(1.0005);
-        /* width and height properties ommitted due to transform */
-        margin-top: 5%; }
-      .wrapper .wrapperMid h6 {
-        font-family: sans-serif;
-        color: #ffffff;
-        font-size: 20px;
-        /* Approximation due to font substitution */
-        font-weight: 400;
-        line-height: 26px;
-        /* Approximation due to font substitution */
-        text-align: center;
-        transform: scaleY(1.0005);
-        /* width and height properties ommitted due to transform */
-        margin-top: 17.5%; }
-    .wrapper .wrapperForm {
-      width: 83.5%;
-      height: auto;
-      margin: 0px auto;
-      margin-top: 15%;
-      border-radius: 10px;
-      background-color: #ffffff;
-      box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18); }
-      .wrapper .wrapperForm .formBottomLine {
-        border-bottom: 0.08px solid #d6dce6; }
-      .wrapper .wrapperForm h4 {
-        margin-left: 19%;
-        font-family: sans-serif;
-        color: #1e232c;
-        margin-top: 2.3%;
-        font-size: 22px;
-        /* Approximation due to font substitution */
-        font-weight: 400;
-        line-height: 26px;
-        /* Approximation due to font substitution */
-        text-align: left;
-        transform: scaleY(1.0005);
-        /* width and height properties ommitted due to transform */ }
-      .wrapper .wrapperForm .formBlock {
-        height: 87px;
-        width: auto;
-        padding: 7.3%;
-        position: relative; }
-        .wrapper .wrapperForm .formBlock .formArrow {
-          height: 10px;
-          width: 10px;
-          float: right;
-          margin-bottom: 10%;
-          position: absolute;
-          bottom: 10%;
-          right: 10%; }
-        .wrapper .wrapperForm .formBlock .formCircle {
-          border-radius: 50%;
-          background-color: #00aced;
-          width: 40px;
-          height: 40px;
-          float: left; }
-      .wrapper .wrapperForm form {
-        font-family: sans-serif;
-        margin: 0px auto;
-        height: auto;
-        width: 100%;
-        background-color: transparent; }
-        .wrapper .wrapperForm form .legend {
-          color: #ffffff;
-          font-weight: 500;
-          line-height: 33.787px;
-          /* Approximation due to font substitution */
-          transform: scaleY(1.0005);
-          /* width and height properties ommitted due to transform */ }
-        .wrapper .wrapperForm form .legend1 {
-          margin-left: -10%; }
-        .wrapper .wrapperForm form .wrapperFormText {
-          width: 50%;
-          height: auto; }
-          .wrapper .wrapperForm form .wrapperFormText input {
-            width: 48.3%;
-            height: 40px;
-            border-radius: 5px;
-            background-color: #ffffff;
-            padding-left: 5%;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            border: none; }
-          .wrapper .wrapperForm form .wrapperFormText .input1 {
-            float: left; }
-          .wrapper .wrapperForm form .wrapperFormText .input2 {
-            float: right; }
-          .wrapper .wrapperForm form .wrapperFormText .formHalf {
-            width: 95%;
-            margin-left: 2%; }
-        .wrapper .wrapperForm form .formFullWidth {
-          width: 100%;
-          height: 40px;
-          border-radius: 5px;
-          background-color: #ffffff;
-          margin-top: 2%;
-          margin-bottom: 2%;
-          padding-left: 5%;
-          border: none; }
-        .wrapper .wrapperForm form .formSubmit {
-          background-color: #00aced;
-          color: #ffffff; }
-      .wrapper .wrapperForm input[type=date] {
-        width: 120%;
-        height: 40px;
-        margin-left: -10%;
-        border-radius: 5px;
-        background-color: #ffffff;
-        border: none; }
-      .wrapper .wrapperForm input[type=button] {
-        width: 46%;
-        height: 50px;
-        color: #ffffff;
-        border-radius: 5px;
-        background-color: #00aced;
-        border: none;
-        margin-left: -5%; }
-        .wrapper .wrapperForm input[type=button]:first-child {
-          margin-right: 16%; }
-    .wrapper .wrapperFormTransparent {
-      background-color: transparent; }
-    .wrapper .wrapperFormNothing {
-      border-radius: none;
-      background-color: none;
-      box-shadow: none; }
-    .wrapper .wrapperFormInherit {
-      width: 100%;
-      padding-left: 2%; }
-      .wrapper .wrapperFormInherit input {
-        border-radius: 50%;
-        border-style: solid;
-        border-width: 3px;
-        border-color: #ffffff;
-        box-sizing: border-box;
-        background-color: rgba(245, 248, 249, 0);
-        width: 16px;
-        height: 16px; }
-      .wrapper .wrapperFormInherit span {
-        margin-left: 2.3%;
-        font-family: Graphik;
-        color: #ffffff;
-        font-size: 20px;
-        /* Approximation due to font substitution */
-        font-weight: 400;
-        line-height: 33.787px;
-        /* Approximation due to font substitution */
-        text-align: left;
-        transform: scaleY(1.0005);
-        /* width and height properties ommitted due to transform */ }
-    .wrapper .personBlock {
-      width: 78%;
-      height: 155px;
-      margin: 50px auto 0px auto;
-      background-color: #ffffff;
-      padding: 6% 3%;
-      border-radius: 5px; }
-      .wrapper .personBlock .iconBlock {
-        height: 90px;
-        width: 90px;
-        border-radius: 50%;
-        background-color: #c2c2c2;
-        float: left;
-        margin: 3% 0% 0% 5%; }
-      .wrapper .personBlock .infoBlock {
-        float: right;
-        width: auto; }
-        .wrapper .personBlock .infoBlock h6 {
-          margin-bottom: 1%; }
-        .wrapper .personBlock .infoBlock .infoblockName {
-          margin: 0px;
-          margin-top: -11px;
-          padding: 0px;
-          color: #c2c2c2; }
-      .wrapper .personBlock .fa-star {
-        color: #00aced; }
-    .wrapper .goBack {
-      width: auto;
-      height: 60px;
-      margin: 0px auto;
-      margin-top: 20%;
-      text-align: center;
-      padding-top: 5%; }
-      .wrapper .goBack a {
-        color: #ffffff; }
-        .wrapper .goBack a .fa {
-          margin-right: 3.3%; }
-    .wrapper .wrapperMidSmall {
-      height: 80px; }
-    .wrapper #legend {
-      color: #ffffff;
-      font-weight: 500;
-      line-height: 33.787px;
-      /* Approximation due to font substitution */
-      transform: scaleY(1.0005);
-      /* width and height properties ommitted due to transform */
-      margin-left: -10%; }
-    .wrapper #dateSmaller {
-      width: 85%;
-      height: 40px;
-      margin-left: -10%;
-      border-radius: 5px;
-      background-color: #ffffff;
-      border: none; }
-    .wrapper #time {
-      float: right;
-      width: 30%;
-      height: 40px;
-      border-radius: 5px;
-      background-color: #ffffff;
-      border: none;
-      margin-right: -10%; }
-    .wrapper #wrapperFormFullWidth {
-      width: 100%;
-      padding-left: 5%; }
-    .wrapper #wrapperFooter {
-      background-color: #00aced;
-      width: 100%;
-      height: 50px;
-      margin-top: 20%;
-      position: relative; }
-      .wrapper #wrapperFooter h3 {
-        float: left;
-        margin-top: 4%;
-        color: #ffffff;
-        margin-left: 3%;
-        font-size: 19px; }
-      .wrapper #wrapperFooter #footerIcons {
-        float: right;
-        width: 40%;
-        height: 50px; }
-        .wrapper #wrapperFooter #footerIcons hr {
-          width: 20%;
-          height: 1px;
-          background-color: #ffffff;
-          position: absolute;
-          bottom: 10%;
-          right: 10%; }
-    .wrapper .radioForms {
-      color: #ffffff;
-      padding: 5% 0% 0% 3%;
-      width: 90%;
-      height: 100px;
-      margin: 0px auto; }
-      .wrapper .radioForms input[type=radio] {
-        font-size: 16px; }
-        .wrapper .radioForms input[type=radio]:last-child {
-          margin-left: 5%; }
-      .wrapper .radioForms input[type=text] {
-        width: 100%;
-        height: 120px;
-        border: none;
-        border-radius: 5px;
-        margin-bottom: 20px;
-        padding-bottom: 24%;
-        padding-left: 5%; }
-      .wrapper .radioForms h5 {
-        color: #ffffff;
-        font-size: 15.5px; }
-      .wrapper .radioForms .radioForm {
-        width: 50%;
-        height: inherit;
-        float: left; }
-      .wrapper .radioForms .radioFormRight {
-        float: right;
-        margin-right: -15%; }
-    .wrapper .textForm {
-      height: auto;
-      width: 90%;
-      margin-left: 3%; }
-    .wrapper .smallerH1 {
-      margin-bottom: -80px; }
-    .wrapper .buttons {
-      width: 90%;
-      height: 50px;
-      margin: 0px auto; }
-      .wrapper .buttons input {
-        background-color: #00aced;
-        color: #ffffff;
-        border-radius: 5px;
-        border: none;
-        height: 50px;
-        width: 46%; }
-        .wrapper .buttons input:first-child {
-          margin-right: 6%; }
-    .wrapper .Blokovi {
-      width: 90%;
-      height: 40px;
-      border-radius: 5px;
-      background-color: #00aced;
-      margin: 0px auto;
-      margin-top: 3%;
-      margin-bottom: 6%; }
-    .wrapper #smallTable {
-      width: 90%;
-      margin: 0px auto;
-      height: auto;
-      margin-top: -80px;
-      color: #ffffff;
-      margin-left: 5%; }
-    .wrapper #smallTable1 {
-      width: 90%;
-      margin: 0px auto;
-      height: auto;
-      color: #ffffff;
-      margin-left: 5%; }
-    .wrapper #smallTable2 {
-      width: 90%;
-      margin: 0px auto;
-      height: auto;
-      color: #ffffff;
-      margin-left: 5%;
-      margin-bottom: 3%; }
-    .wrapper #lastPage h1 {
-      font-size: 27px;
-      margin-bottom: 4%; }
-    .wrapper #lastPage h2 {
-      font-size: 27px;
-      font-weight: bold; }
-    .wrapper #lastPage h5 {
-      margin-top: 1%;
-      font-size: 16px; }
-    .wrapper #lastPage h6 {
-      font-size: 16px;
-      width: 90%;
-      margin: 12% auto 0% auto; }
-    .wrapper #lastPage .wrapperMid {
-      height: auto; }
-    .wrapper #lastPage .personBlock h6 {
-      margin: 0%; }
-    .wrapper #FirstPage .wrapperMid {
-      height: auto; }
-    .wrapper #FirstPage h6 {
-      margin-top: 1%;
-      margin-bottom: 5%; }
-    .wrapper #FirstPage .personBlock h6 {
-      margin: 0%; }
-    .wrapper #pagethree, .wrapper #pagefour, .wrapper #pagefive, .wrapper #pageten, .wrapper #FirstPage {
-      padding-bottom: 10%; }
-    .wrapper #button1 {
-      margin: 80px auto 100px auto;
-      height: 50px;
-      width: 40%;
-      background-color: #00aced;
-      border: none;
-      border-radius: 5px;
-      color: #ffffff;
-      padding: 3% 0% 0% 15%;
-      font-size: 16px; } }
-
-@media (min-width: 320px) and (max-width: 375px) {
-  .wrapper .buttons input {
-    width: 46%; }
-    .wrapper .buttons input:first-child {
-      margin-right: 6%; }
-  .wrapper .wrapperForm {
-    margin-top: 25%; }
-    .wrapper .wrapperForm h4 {
-      padding-left: 5%;
-      padding-top: 3%; }
-    .wrapper .wrapperForm .formBlock .formArrow {
-      bottom: 20%; }
-    .wrapper .wrapperForm .formBlock .formCircle {
-      margin-top: 2%; }
-  .wrapper .personBlock .iconBlock {
-    width: 85px;
-    height: 85px;
-    margin-left: 0%; } }
-
 /* Search homes styling
     - We're making our own grid, yaay!
 ------------------------------------------------------- */
@@ -1823,17 +837,28 @@ footer {
   box-sizing: border-box;
   width: 48%;
   margin-bottom: 3%; }
+  #search-homes .dropdown h3 {
+    font-family: "Graphik Medium", sans-serif;
+    color: #1e232c;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0; }
   #search-homes .dropdown .btn {
     width: 100%;
     text-align: left;
-    padding: 12px 12px;
-    font-family: sans-serif;
+    padding: 12px 10px;
+    font-family: "Graphik Light", sans-serif;
     color: #1e232c;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 300;
     text-align: left;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 3px;
     border-style: solid;
     border-width: 1px;
     border-color: #d6dce6;
@@ -1847,9 +872,10 @@ footer {
       transition: color 0.3s ease; }
     #search-homes .dropdown .btn:hover, #search-homes .dropdown .btn:active, #search-homes .dropdown .btn:focus, #search-homes .dropdown .btn.active {
       color: #00aced;
-      border-color: #00aced; }
+      border-color: #00aced;
+      box-shadow: none; }
       #search-homes .dropdown .btn:hover .search-checkbox + label, #search-homes .dropdown .btn:active .search-checkbox + label, #search-homes .dropdown .btn:focus .search-checkbox + label, #search-homes .dropdown .btn.active .search-checkbox + label {
-        font-weight: 500; }
+        font-weight: bold; }
       #search-homes .dropdown .btn:hover .fas, #search-homes .dropdown .btn:active .fas, #search-homes .dropdown .btn:focus .fas, #search-homes .dropdown .btn.active .fas {
         color: #00aced; }
     #search-homes .dropdown .btn .search-checkbox {
@@ -1860,13 +886,14 @@ footer {
         cursor: pointer;
         padding: 0;
         font-weight: 300;
-        width: 100%; }
+        width: 100%;
+        display: block; }
         #search-homes .dropdown .btn .search-checkbox + label .fas.color {
           float: initial;
           font-size: 8px;
           vertical-align: middle;
           margin-top: -3px;
-          margin-right: 6px; }
+          margin-right: 4px; }
           #search-homes .dropdown .btn .search-checkbox + label .fas.color.red {
             color: #e03225; }
           #search-homes .dropdown .btn .search-checkbox + label .fas.color.blue {
@@ -1874,7 +901,12 @@ footer {
           #search-homes .dropdown .btn .search-checkbox + label .fas.color.green {
             color: #7cd62c; }
           #search-homes .dropdown .btn .search-checkbox + label .fas.color.yellow {
-            color: #7cd62c; }
+            color: #ffba13; }
+        #search-homes .dropdown .btn .search-checkbox + label .fas.info {
+          float: initial;
+          vertical-align: middle;
+          margin-top: -3px;
+          color: #00aced; }
       #search-homes .dropdown .btn .search-checkbox + label:before {
         content: '';
         margin-right: 10px;
@@ -1900,10 +932,139 @@ footer {
         height: 1.5px;
         box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
         transform: rotate(45deg); }
+  #search-homes .dropdown .dropdown-menu {
+    min-width: 12rem;
+    box-shadow: 0px 0px 66.5px 3.5px rgba(10, 25, 40, 0.19);
+    margin-top: 0.60rem;
+    border: none; }
+    #search-homes .dropdown .dropdown-menu .dropdown-item {
+      font-family: "Graphik Light", sans-serif;
+      color: #1e232c;
+      font-size: 17px;
+      font-weight: 300;
+      text-align: left; }
+    #search-homes .dropdown .dropdown-menu::after {
+      bottom: 100%;
+      left: 20%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: #ffffff;
+      border-width: 8px;
+      margin-left: -8px; }
+    #search-homes .dropdown .dropdown-menu .dropdown-checkbox {
+      position: absolute;
+      opacity: 0; }
+      #search-homes .dropdown .dropdown-menu .dropdown-checkbox + label {
+        position: relative;
+        cursor: pointer;
+        padding: 0;
+        font-weight: 300;
+        width: 100%;
+        display: block; }
+      #search-homes .dropdown .dropdown-menu .dropdown-checkbox + label:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        background: white;
+        border: 1px solid #d6dce6;
+        border-radius: 3px;
+        transition: background 0.3s ease; }
+      #search-homes .dropdown .dropdown-menu .dropdown-checkbox:hover + label:before {
+        background: #00aced; }
+      #search-homes .dropdown .dropdown-menu .dropdown-checkbox:checked + label:before {
+        background: #00aced; }
+      #search-homes .dropdown .dropdown-menu .dropdown-checkbox:checked label::after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 11px;
+        background: white;
+        width: 1.5px;
+        height: 1.5px;
+        box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+        transform: rotate(45deg); }
   #search-homes .dropdown:nth-child(odd) {
     margin-left: 1%; }
   #search-homes .dropdown:nth-child(even) {
     margin-right: 1%; }
+  #search-homes .dropdown.bedrooms {
+    margin-left: 0%; }
+  #search-homes .dropdown.hometype {
+    margin-left: 2%;
+    margin-right: 0%; }
+
+#search-homes .price-field {
+  width: 99%;
+  margin-left: 0%;
+  /* Because my grid skills are retarded */ }
+  #search-homes .price-field h3 {
+    font-family: "Graphik Medium", sans-serif;
+    color: #1e232c;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0; }
+  #search-homes .price-field .input-group .form-control {
+    font-family: "Graphik Light", sans-serif;
+    color: #96a7bc;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d6dce6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: 24px 12px;
+    box-shadow: inset 0px 11px 38px -24px rgba(0, 0, 0, 0.53); }
+    #search-homes .price-field .input-group .form-control:hover, #search-homes .price-field .input-group .form-control:active, #search-homes .price-field .input-group .form-control:focus {
+      box-shadow: inset 0px 8px 38px -24px rgba(0, 0, 0, 0.53); }
+    #search-homes .price-field .input-group .form-control:not(:last-child) {
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 0px !important; }
+    #search-homes .price-field .input-group .form-control:last-child {
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important; }
+
+#search-homes .search-links {
+  border-top: 1px solid #d6dce6;
+  padding: 15px 18px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 20px; }
+  #search-homes .search-links a {
+    font-family: "Graphik Light", sans-serif;
+    color: #00aced;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+    margin-right: 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+    outline: none; }
+    #search-homes .search-links a#filters {
+      font-weight: bold; }
+    #search-homes .search-links a#save-search {
+      float: right;
+      margin-right: 0; }
+    #search-homes .search-links a:hover, #search-homes .search-links a:active, #search-homes .search-links a:focus {
+      opacity: 0.7;
+      outline: none; }
 
 @media only screen and (min-width: 960px) {
   .container {
