@@ -24,7 +24,7 @@
       <div class=" wrapperBlocks ">
         <div class="formBlock  formBorderTop">
           <div class="formCircle">
-
+              <i class="fas fa-key farot"></i>
           </div>
           <h4>Buyer</h4>
           <div class="formArrow">
@@ -36,7 +36,7 @@
         </div>
         <div class="formBlock  formBorderMid">
           <div class="formCircle">
-
+              <i class="fas fa-user-circle"></i>
           </div>
           <h4>Buyers Agent</h4>
           <div class="formArrow">
@@ -48,7 +48,7 @@
         </div>
         <div class="formBlock formBorderBot">
           <div class="formCircle">
-
+              <i class="fas fa-hand-holding-usd"></i>
           </div>
           <h4>Investor</h4>
           <div class="formArrow">
@@ -68,7 +68,7 @@
       <div class=" wrapperBlocks">
         <div class="formBlock formBorderTop">
           <div class="formCircle">
-
+              <i class="fas fa-check"></i>
           </div>
           <h4>Yes</h4>
           <div class="formArrow">
@@ -77,7 +77,7 @@
         </div>
         <div class="formBlock formBorderBot">
           <div class="formCircle">
-
+              <i class="fas fa-times faml"></i>
           </div>
           <h4>No</h4>
           <div class="formArrow">

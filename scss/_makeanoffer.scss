@@ -94,6 +94,17 @@
                             margin: 7% 0% 0% 5%;
                             border-radius: 50%;
                             float: left;
+                            i{
+                                margin: 23%;
+                                font-size: 22px;
+                                color: #ffffff;
+                            }
+                            .faml{
+                                margin-left: 30%;
+                            }
+                            .farot{
+                                transform: rotateY(180deg);
+                            }
                         }
                         h4{
                             float: left;
@@ -399,10 +410,13 @@
 }
 #pageone, #pagetwo, #pagethree, #pagefour, #pagefive, #pagesix,#pageseven, #pageeight, #pagenine, #pageten, #lastPage, #FirstPage{
         padding-top: 15%;
-        padding-bottom: 6%;
+        padding-bottom: 13%;
     }
     #pageone{
         padding-top: 0%;
+        .wrapperMid h4{
+//            width: 320px;
+        }
     }
     #FirstPage .wrapperMid{
         margin-bottom: 10%;
@@ -413,10 +427,11 @@
     #pageten, #pagesix, #pagefive, #lastPage{
         padding-bottom: 9%;
     }
+
 @media (max-width:375px){
     .wrapper{
         .wrapperMid{
-            width: 285px;
+            width: 320px;
             h1{
                 font-size: 28px;
                 font-weight: normal;
@@ -460,11 +475,6 @@
         }
         .wrapperForm{
             width: 320px;
-            form{
-                input{
-//                    height: auto;
-                }
-            }
         }
         .personBlock{
             width: 280px;
