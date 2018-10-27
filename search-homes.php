@@ -9,49 +9,6 @@
         background: black;
     }
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">
-        <img src="/wp-content/themes/theoffercompany/images/menu_icon.png" width="32" height="32" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Buy</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Sell</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Estimate</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Mortgage</a>
-        </li>
-        </ul>
-        <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#">My account</a>
-        </li>
-        <li class="nav-item">
-            <p class="nav-link">or</p>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Register</a>
-        </li>
-        </ul>
-    </div>
-</nav>
-<!--   <div class="row">
-    <div class="d-block d-sm-none col-sm-12 col-xs-12">
-        <form class="form-inline col-sm-12 col-xs-12">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        </form>
-    </div>
-</div> -->
-</div>
 <div class="clearfix"></div>
 <div id="search-homes">
     <div class="container-fluid">
@@ -141,45 +98,52 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
             <!-- ovde ide mapa -->
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <div class="row">
-                <div class="col-xl-10 col-lg-10">
-                <!-- Mesto za adresu (Atlanta  GA Real Estate) -->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 property-list">
+                <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-1.png)">
+                    <span class="time-on-market">5 days on the market</span>
+                    <span class="sale-type">House for Sale</span>
+                    <h1 class="property-price">$425,000</h1>
+                    <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                    <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                 </div>
-                <div class="col-xl-2 col-lg-2">
-                <!-- save search -->
+                <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-2.png)">
+                    <span class="time-on-market">5 days on the market</span>
+                    <span class="sale-type">House for Sale</span>
+                    <h1 class="property-price">$425,000</h1>
+                    <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                    <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12 col-lg-12">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6">
-                    <!-- mesto za slike kuca -->
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                    <!-- mesto za slike kuca -->
-                    </div>
+                <div class="cta-insert">
+                    <h1>Be the first to know!</h1>
+                    <p>New homes are getting added every 2 minutes.
+                    Save your search and be the first to know.
+                    </p>
+                    <a href="" class="btn btn-primary btn-block cta">Save search <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-3.png)">
+                    <span class="time-on-market">5 days on the market</span>
+                    <span class="sale-type">House for Sale</span>
+                    <h1 class="property-price">$425,000</h1>
+                    <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                    <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                 </div>
-            </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid pagination">
         <div class="row">
-            <div class="d-block d-sm-none">
-            <nav aria-label="Page navigation example">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <nav aria-label="Pagination">
                 <ul class="pagination ">
-                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item"><a class="page-link" href="#">4</a></li>
                 <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                <li class="page-item"><a class="page-link next" href="#">Next</a></li>
                 </ul>
             </nav>
             </div>

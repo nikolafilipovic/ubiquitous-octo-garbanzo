@@ -36,3 +36,13 @@ body {
     opacity: 1;
     z-index: 99;
 }
+.et_pb_button {
+    &:hover,
+    &:action,
+    &:focus {
+        &::after {
+            margin-left: .3em;
+        }
+        
+    }
+}
