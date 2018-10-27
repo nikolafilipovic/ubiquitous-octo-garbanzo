@@ -253,38 +253,36 @@
       <div class="wrapperMid smallerH1">
         <h1>Contingecies</h1>
       </div>
-      <div class="radioForms wrapperForm">
-        <div class="radioForm ">
-          <h5>Appraisal</h5>
+      <div class="radioForms wrapperForm radioFormsVertical">
+        <div class="radioForm radioBlock">
+            <h5>Appraisal</h5>
           <form action="" method="post">
-            <input type="radio" name="choice" id=""><p>Yes</p>
+            <input type="radio" name="choice" id="" ><p>Yes</p>
+            <input type="radio" name="choice" id="" ><p>No</p>
+          </form> 
+        </div>
+        <div class="radioForm radioBlock radioBlock1">
+            <h5>Home inspection</h5>
+          <form action="" method="post" class="formSmall">
+            <input type="radio" name="choice" id="" ><p>Yes</p>
             <input type="radio" name="choice" id="" ><p>No</p>
           </form>
         </div>
-        <div class="radioForm  radioFormRight">
-          <h5>Home inspection</h5>
+        <div class="radioForm radioBlock">
+            <h5>Sale of another property</h5>
           <form action="" method="post">
-            <input type="radio" name="choice" id=""><p>Yes</p>
+            <input type="radio" name="choice" id="" ><p>Yes</p>
+            <input type="radio" name="choice" id="" ><p>No</p>
+          </form>
+        </div>
+        <div class="radioForm radioBlock radioBlock1">
+            <h5>Is offer "as is"</h5>
+          <form action="" method="post" class="formSmall">
+            <input type="radio" name="choice" id="" ><p>Yes</p>
             <input type="radio" name="choice" id="" ><p>No</p>
           </form>
         </div>
         <div class="cleaner"></div>
-      </div>
-      <div class="radioForms wrapperForm">
-        <div class="radioForm">
-          <h5>Sale of another property</h5>
-          <form action="" method="post">
-            <input type="radio" name="choice" id="" ><p>Yes</p>
-            <input type="radio" name="choice" id="" ><p>No</p>
-          </form>
-        </div>
-        <div class="radioForm radioFormRight">
-          <h5>Is offer "as is"</h5>
-          <form action="" method="post">
-            <input type="radio" name="choice" id="" ><p>Yes</p>
-            <input type="radio" name="choice" id="" ><p>No</p>
-          </form>
-        </div>
       </div>
       <div class="radioForms ">
         <h5>Other terms</h5>

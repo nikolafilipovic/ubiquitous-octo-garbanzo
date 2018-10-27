@@ -237,7 +237,7 @@
                     width: 90px;
                     border-radius: 50%;
                     float: left;
-                    margin: 9% 0% 0% 9%;
+                    margin: 8% 0% 0% 8%;
                     background-color: #c2c2c2;
                 }
                 .infoBlock{
@@ -284,13 +284,18 @@
                             width: 100%;
                             height: auto;
                             float: left;
-                                input{
-                                    width: 11%;
-                                    margin-right: 3%;
-                                }
+                                
                         }
                 }
         }
+        .radioBlock{
+            width: 200px !important;
+            padding-top: 5%;
+                h5{
+                    font-size: 13px;
+                }
+        }
+        
         .textForm{
             width: 100%;
             max-width: 360px;
@@ -302,9 +307,24 @@
             padding-left: 5%;
             
         }
-        .radioFormRight{
-            text-align: right;
+        .radioFormsVertical{
+                .radioBlock{
+                    h5{
+                        margin-left: 5%;
+                        font-size: 14px;
+                    }
+                    form{
+                        input{
+                            width: 18px;
+                            margin-right: 5%;
+                            margin-left: 5%;
+                        }
+                    }
+                }
         }
+        .radioBlock1{
+                width: 120px !important;
+            }
         .buttons{
             margin: 5% auto 0% auto;
             width: 360px;
@@ -336,7 +356,8 @@
                 }
         }
         #wrapperFooter{
-            width: 360px;
+            width: 100%;
+            max-width: 380px;
             height: 60px;
             margin: 7% auto 0% auto;
             background-color: #00aced;
@@ -368,14 +389,6 @@
             color: #ffffff;
         }
 }
-#pageone, #pagetwo, #pagethree, #pagefour, #pagefive, #pagesix, #pageten, #lastPage, #FirstPage{
-        padding-bottom: 5%;
-        
-        }
-#pagetwo, #pagethree, #pagefour, #pagefive, #pagesix, #pageten, #lastPage, #FirstPage{
-        
-        padding-top: 5%;
-        }
 #pagenine p{
     color: #ffffff;
 }
@@ -384,6 +397,22 @@
     font-weight: normal;
     margin: 3% auto
 }
+#pageone, #pagetwo, #pagethree, #pagefour, #pagefive, #pagesix,#pageseven, #pageeight, #pagenine, #pageten, #lastPage, #FirstPage{
+        padding-top: 15%;
+        padding-bottom: 6%;
+    }
+    #pageone{
+        padding-top: 0%;
+    }
+    #FirstPage .wrapperMid{
+        margin-bottom: 10%;
+    }
+    #pageseven, #pageeight, #pagenine{
+        padding-bottom: 0%;
+    }
+    #pageten, #pagesix, #pagefive, #lastPage{
+        padding-bottom: 9%;
+    }
 @media (max-width:375px){
     .wrapper{
         .wrapperMid{
@@ -469,7 +498,22 @@
             width: 320px;
             height: auto;
             .radioForm{
-                width: 160px;
+//                width: 160px;
+                form{
+                    display: flex;
+                    p{
+                        margin-top: 5%;
+                    }
+                }
+            }
+        }
+        .radioFormRight{
+            .radioForm{
+                form{
+                    input{
+                        margin-left: 10%;
+                    }
+                }
             }
         }
         #wrapperFooter{
@@ -502,4 +546,5 @@
             padding-top: 10%;
         }
     }
+    
 }

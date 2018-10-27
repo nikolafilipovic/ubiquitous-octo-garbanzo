@@ -1031,7 +1031,7 @@ footer {
       width: 90px;
       border-radius: 50%;
       float: left;
-      margin: 9% 0% 0% 9%;
+      margin: 8% 0% 0% 8%;
       background-color: #c2c2c2; }
     .wrapper .personBlock .infoBlock {
       height: 160px;
@@ -1069,9 +1069,11 @@ footer {
         width: 100%;
         height: auto;
         float: left; }
-        .wrapper .radioForms .radioForm form input {
-          width: 11%;
-          margin-right: 3%; }
+  .wrapper .radioBlock {
+    width: 200px !important;
+    padding-top: 5%; }
+    .wrapper .radioBlock h5 {
+      font-size: 13px; }
   .wrapper .textForm {
     width: 100%;
     max-width: 360px;
@@ -1081,8 +1083,15 @@ footer {
     border: none;
     padding-bottom: 30%;
     padding-left: 5%; }
-  .wrapper .radioFormRight {
-    text-align: right; }
+  .wrapper .radioFormsVertical .radioBlock h5 {
+    margin-left: 5%;
+    font-size: 14px; }
+  .wrapper .radioFormsVertical .radioBlock form input {
+    width: 18px;
+    margin-right: 5%;
+    margin-left: 5%; }
+  .wrapper .radioBlock1 {
+    width: 120px !important; }
   .wrapper .buttons {
     margin: 5% auto 0% auto;
     width: 360px;
@@ -1108,7 +1117,8 @@ footer {
       .wrapper #smallTable tr td:nth-child(even), .wrapper #smallTable1 tr td:nth-child(even), .wrapper #smallTable2 tr td:nth-child(even), .wrapper #smallTable3 tr td:nth-child(even) {
         text-align: right; }
   .wrapper #wrapperFooter {
-    width: 360px;
+    width: 100%;
+    max-width: 380px;
     height: 60px;
     margin: 7% auto 0% auto;
     background-color: #00aced;
@@ -1135,12 +1145,6 @@ footer {
   .wrapper p {
     color: #ffffff; }
 
-#pageone, #pagetwo, #pagethree, #pagefour, #pagefive, #pagesix, #pageten, #lastPage, #FirstPage {
-  padding-bottom: 5%; }
-
-#pagetwo, #pagethree, #pagefour, #pagefive, #pagesix, #pageten, #lastPage, #FirstPage {
-  padding-top: 5%; }
-
 #pagenine p {
   color: #ffffff; }
 
@@ -1148,6 +1152,22 @@ footer {
   text-align: justify;
   font-weight: normal;
   margin: 3% auto; }
+
+#pageone, #pagetwo, #pagethree, #pagefour, #pagefive, #pagesix, #pageseven, #pageeight, #pagenine, #pageten, #lastPage, #FirstPage {
+  padding-top: 15%;
+  padding-bottom: 6%; }
+
+#pageone {
+  padding-top: 0%; }
+
+#FirstPage .wrapperMid {
+  margin-bottom: 10%; }
+
+#pageseven, #pageeight, #pagenine {
+  padding-bottom: 0%; }
+
+#pageten, #pagesix, #pagefive, #lastPage {
+  padding-bottom: 9%; }
 
 @media (max-width: 375px) {
   .wrapper .wrapperMid {
@@ -1208,8 +1228,12 @@ footer {
   .wrapper .radioForms {
     width: 320px;
     height: auto; }
-    .wrapper .radioForms .radioForm {
-      width: 160px; }
+    .wrapper .radioForms .radioForm form {
+      display: flex; }
+      .wrapper .radioForms .radioForm form p {
+        margin-top: 5%; }
+  .wrapper .radioFormRight .radioForm form input {
+    margin-left: 10%; }
   .wrapper #wrapperFooter {
     border-radius: 0%; }
   .wrapper #smallTable, .wrapper #smallTable1, .wrapper #smallTable2, .wrapper #smallTable3 {
