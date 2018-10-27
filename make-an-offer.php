@@ -91,6 +91,8 @@
     <div class="wrapper" id="pagethree">
       <div class="wrapperMid">
           <h1>We can write up the offer for you.</h1>
+        </div>
+        <div class="wrapperMid wrapperWider">
           <h3>Please provide the informaiton below and Annete will contact you within 5 minutes.</h3>
       </div>
       <div class="wrapperForm  ">
@@ -227,41 +229,15 @@
             </div>
         </form>
         <div class="cleaner"></div>
-          <div class="wrapperForm wrapperFormRadio" >
-              <form action="index.html" method="post" class="formsLeft">
-                  <input type="radio" name="choice" value="Conventional"><span>Conventional</span>
-                  <input type="radio" name="choice" value="FHA" ><span>FHA</span>
-                  <input type="radio" name="choice" value="VA"><span>VA</span>
-                  <input type="radio" name="choice" value="CASH"><span>CASH</span>
-              </form>
-          </div>
-          <div class="wrapperForm wrapperFormText formsLeft" id="fixedForm">
-            <form action="" method="post">
-                <legend class="legend">Close of escrow</legend>
-                <input type="date" name="date"class="date" placeholder="Pick a date">
-            </form>
-          </div>
-          
-          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing wrapperFormText formDatee" >
-            <form action="" method="post">
-                <legend class="legend legend2">Acceptance deadline</legend>
-                <input type="date" name="date"class="date" placeholder="Pick a date">
-            </form>
-          </div>
-         
-          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing formsRight" id="timeNone">
-            <legend class="legend legend1" id="legend">Acceptance deadline</legend>
-            <form action="" method="post">
-              <input type="date" name="date"class="date" id="dateSmaller" placeholder="Pick a date">
-              <input type="time" name="time" id="time">
-              <div class="cleaner"></div>
-            </form>
-          </div>
-          <div class="wrapperForm wrapperFormTransparent wrapperFormNothing " id="wrapperFormFullWidth"> 
-            <form action="" method="post">
-              <input type="button" value=" &leftarrow; Back">
-              <input type="button" value=" Next &rightarrow;">
-            </form>
+        <div class="wrapperForm formsLeft wrapperFormRadio">
+          <form action="" class="formsLeft">
+            <input type="radio" name="choice" id=""><p>Conventional</p>
+            <input type="radio" name="choice" id=""><p>FHA</p>
+            <input type="radio" name="choice" id=""><p>VA</p>
+            <input type="radio" name="choice" id=""><p>CASH</p>
+          </form>
+        </div>
+        <div>
           </div>
       </div>
       <div id="wrapperFooter" class="">
@@ -281,15 +257,15 @@
         <div class="radioForm ">
           <h5>Appraisal</h5>
           <form action="" method="post">
-            <input type="radio" name="choice" id="">Yes
-            <input type="radio" name="choice" id="" checked>No
+            <input type="radio" name="choice" id=""><p>Yes</p>
+            <input type="radio" name="choice" id="" ><p>No</p>
           </form>
         </div>
         <div class="radioForm  radioFormRight">
           <h5>Home inspection</h5>
           <form action="" method="post">
-            <input type="radio" name="choice" id="">Yes
-            <input type="radio" name="choice" id="" checked>No
+            <input type="radio" name="choice" id=""><p>Yes</p>
+            <input type="radio" name="choice" id="" ><p>No</p>
           </form>
         </div>
         <div class="cleaner"></div>
@@ -298,15 +274,15 @@
         <div class="radioForm">
           <h5>Sale of another property</h5>
           <form action="" method="post">
-            <input type="radio" name="choice" id="" checked>Yes
-            <input type="radio" name="choice" id="" >No
+            <input type="radio" name="choice" id="" ><p>Yes</p>
+            <input type="radio" name="choice" id="" ><p>No</p>
           </form>
         </div>
         <div class="radioForm radioFormRight">
           <h5>Is offer "as is"</h5>
           <form action="" method="post">
-            <input type="radio" name="choice" id="" checked>Yes
-            <input type="radio" name="choice" id="" >No
+            <input type="radio" name="choice" id="" ><p>Yes</p>
+            <input type="radio" name="choice" id="" ><p>No</p>
           </form>
         </div>
       </div>
@@ -421,6 +397,17 @@
          <td>Yes</td>
        </tr>
      </table>
+       <p class="wrapperWider">Other terms: I'd make no further comments, offer is ready to be submitted and everything is great. Thanks a lot, looking forward to see your reply!
+       </p>
+       <table id="smallTable3">
+        <th>Offer documents</th>
+           <tr>
+            <td>PurchaseContract.pdf</td>
+           </tr>
+           <tr>
+            <td>ProofOfFunds, 10-19-18.pdf</td>
+           </tr>
+       </table>
      <div class="buttons">
         <form action="" method="post">
           <input type="button" value=" &leftarrow; Back">
@@ -451,7 +438,7 @@
         </div>
         <div class="cleaner"></div>
       </div>
-      <div id="button1">Close</div>
+      <div id="button1"><a href="">Close</a></div>
    </div>
    <div class="wrapper" id="FirstPage">
       <div class="wrapperMid">

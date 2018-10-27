@@ -84,6 +84,9 @@ body {
   opacity: 1;
   z-index: 99; }
 
+.et_pb_button:hover::after, .et_pb_button:action::after, .et_pb_button:focus::after {
+  margin-left: .3em; }
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -327,7 +330,7 @@ body {
       font-size: 18px;
       text-transform: uppercase;
       color: #fff;
-      font-family: "Titillium Web", sans-serif;
+      font-family: "Graphik Regular", sans-serif;
       font-weight: 600;
       line-height: 2.3;
       display: none;
@@ -362,7 +365,7 @@ body {
     .main-header .slide-out-container.open {
       left: 0; }
     .main-header .slide-out-container p.menu-title {
-      font-family: "Titillium Web", sans-serif;
+      font-family: "Graphik Medium", sans-serif;
       color: #898989;
       font-size: 17px;
       font-weight: 600;
@@ -390,7 +393,7 @@ body {
     .main-header .slide-out-container .navigation ul .menu-item {
       border-bottom: 1px solid #eee; }
       .main-header .slide-out-container .navigation ul .menu-item a {
-        font-family: "Titillium Web", sans-serif;
+        font-family: "Graphik Regular", sans-serif;
         font-size: 18px;
         font-weight: 600;
         color: #1e232c;
@@ -404,6 +407,7 @@ body {
       .main-header .slide-out-container .navigation ul .menu-item ul.sub-menu li {
         border-bottom: none; }
         .main-header .slide-out-container .navigation ul .menu-item ul.sub-menu li a {
+          font-family: "Graphik Light", sans-serif;
           font-size: 16px;
           color: #898989;
           font-weight: 400;
@@ -438,7 +442,7 @@ body {
     border-radius: 5px;
     display: inline-block; }
     .landing-search .search-choice span {
-      font-family: "Titillium Web", sans-serif;
+      font-family: "Graphik Regular", sans-serif;
       color: #ffffff;
       font-size: 20px;
       padding: 15px 0px;
@@ -512,7 +516,7 @@ body {
         border-width: 12px;
         margin-left: -12px; }
     .landing-search .search-field .form-control {
-      font-family: "Titillium Web", sans-serif;
+      font-family: "Graphik Light", sans-serif;
       color: #96a7bc;
       background: #fff;
       font-size: 19px;
@@ -542,29 +546,26 @@ body {
   .landing-links .col-link a {
     opacity: 1;
     transition: opacity 0.3s ease; }
-  .landing-links .col-link a:hover,
-  .landing-links .col-link a:focus,
-  .landing-links .col-link a:active {
-    opacity: 0.7; }
-  .landing-links .col-link h1 {
-    font-family: "Titillium Web", sans-serif;
-    color: #00aced;
-    font-size: 22px;
-    font-weight: 400;
-    text-align: left;
-    display: inline-block; }
-  .landing-links .col-link i {
-    float: right;
-    position: relative;
-    color: #00aced;
-    right: 7%;
-    font-size: 17px;
-    transition: right  .3s ease;
-    -moz-transition: right .3s ease;
-    -webkit-transition: right .3s ease;
-    -o-transition: right .3s ease; }
-    .landing-links .col-link i:hover {
-      padding-left: 10px; }
+    .landing-links .col-link a:hover, .landing-links .col-link a:focus, .landing-links .col-link a:active {
+      opacity: 0.7; }
+      .landing-links .col-link a:hover i, .landing-links .col-link a:focus i, .landing-links .col-link a:active i {
+        right: 2%; }
+    .landing-links .col-link a i {
+      float: right;
+      position: relative;
+      color: #00aced;
+      right: 5%;
+      font-size: 17px;
+      transition: right .3s ease; }
+      .landing-links .col-link a i:hover, .landing-links .col-link a i:focus, .landing-links .col-link a i:active {
+        right: 2%; }
+    .landing-links .col-link a h1 {
+      font-family: "Graphik Regular", sans-serif;
+      color: #00aced;
+      font-size: 22px;
+      font-weight: 400;
+      text-align: left;
+      display: inline-block; }
   .landing-links .col-link .separator {
     position: absolute;
     float: left;
@@ -574,7 +575,7 @@ body {
     left: 3%;
     top: 100%; }
   .landing-links .col-link p {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Graphik Light", sans-serif;
     color: #929baf;
     font-size: 17px;
     font-weight: 300;
@@ -585,8 +586,8 @@ body {
   display: none; }
 
 .property-slider .property-item {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
@@ -603,7 +604,7 @@ body {
     border-radius: 5px;
     cursor: pointer; }
   .property-slider .property-item .time-on-market {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Graphik Regular", sans-serif;
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
@@ -615,10 +616,11 @@ body {
     z-index: 0;
     position: relative; }
   .property-slider .property-item .sale-type {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Graphik Medium", sans-serif;
     color: #ffffff;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
+    text-transform: uppercase;
     line-height: 26px;
     text-align: left;
     text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
@@ -627,7 +629,7 @@ body {
     z-index: 0;
     position: relative; }
   .property-slider .property-item .property-price {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Graphik Light", sans-serif;
     color: #ffffff;
     font-size: 31px;
     font-weight: 400;
@@ -644,9 +646,9 @@ body {
     .property-slider .property-item .property-info .beds,
     .property-slider .property-item .property-info .baths,
     .property-slider .property-item .property-info .sqft {
-      font-family: "Titillium Web", sans-serif;
+      font-family: "Graphik Light", sans-serif;
       color: #ffffff;
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 26px;
       text-align: left;
@@ -657,13 +659,13 @@ body {
       color: #fff;
       font-size: 5px;
       vertical-align: middle;
-      padding-left: 5px;
-      padding-right: 5px;
+      padding-left: 4px;
+      padding-right: 4px;
       z-index: 0;
       position: relative; }
   .property-slider .property-item .property-address {
     margin-top: 5px;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Graphik Light", sans-serif;
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
@@ -707,55 +709,59 @@ footer {
   footer .upper-footer {
     padding: 40px 0px;
     background: #e9eef4; }
-    footer .upper-footer .footer-links h3 {
-      font-family: "Titillium Web", sans-serif;
-      color: #4a505d;
-      font-size: 17px;
-      font-weight: 600;
-      line-height: 30px;
-      text-align: center;
-      text-transform: uppercase; }
-    footer .upper-footer .footer-links .menu-footer-menu-1-container {
-      display: block; }
-    footer .upper-footer .footer-links ul {
-      -moz-column-count: 2;
-      -moz-column-gap: 10px;
-      -webkit-column-count: 4;
-      -webkit-column-gap: 10px;
-      column-count: 2;
-      column-gap: 10px;
-      text-align: center;
-      padding: 0px 50px; }
-      footer .upper-footer .footer-links ul li a {
-        font-family: "Titillium Web", sans-serif;
-        color: #78869c;
-        font-size: 16px;
-        font-weight: 300;
+    footer .upper-footer .footer-links {
+      padding: 0px 35px; }
+      footer .upper-footer .footer-links h3 {
+        font-family: "Graphik Medium", sans-serif;
+        color: #4a505d;
+        font-size: 17px;
+        font-weight: 500;
         line-height: 30px;
         text-align: left;
-        opacity: 1;
-        transition: opacity 0.3s ease; }
-        footer .upper-footer .footer-links ul li a:hover, footer .upper-footer .footer-links ul li a:focus, footer .upper-footer .footer-links ul li a:active {
-          opacity: 0.7; }
-    footer .upper-footer .footer-links .more-link {
-      text-align: center;
-      opacity: 1;
-      transition: opacity 0.3s ease;
-      display: block; }
-      footer .upper-footer .footer-links .more-link i {
-        color: #00aced;
-        font-size: 16px;
-        margin-right: 5px; }
-      footer .upper-footer .footer-links .more-link span {
-        font-family: "Titillium Web", sans-serif;
-        color: #00aced;
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 60px;
-        text-align: left;
         text-transform: uppercase; }
-      footer .upper-footer .footer-links .more-link:hover, footer .upper-footer .footer-links .more-link:focus, footer .upper-footer .footer-links .more-link:active {
-        opacity: 0.7; }
+      footer .upper-footer .footer-links .menu-footer-menu-1-container {
+        display: block; }
+      footer .upper-footer .footer-links ul {
+        -moz-column-count: 1;
+        -moz-column-gap: 0px;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 0px;
+        column-count: 1;
+        column-gap: 0px;
+        text-align: left;
+        padding: 0px 0px; }
+        footer .upper-footer .footer-links ul li:nth-child(n+5) {
+          display: none; }
+        footer .upper-footer .footer-links ul li a {
+          font-family: "Graphik Regular", sans-serif;
+          color: #78869c;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 30px;
+          text-align: left;
+          opacity: 1;
+          transition: opacity 0.3s ease; }
+          footer .upper-footer .footer-links ul li a:hover, footer .upper-footer .footer-links ul li a:focus, footer .upper-footer .footer-links ul li a:active {
+            opacity: 0.7; }
+      footer .upper-footer .footer-links .more-link {
+        text-align: left;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        display: block; }
+        footer .upper-footer .footer-links .more-link i {
+          color: #00aced;
+          font-size: 16px;
+          margin-right: 5px; }
+        footer .upper-footer .footer-links .more-link span {
+          font-family: "Graphik Regular", sans-serif;
+          color: #00aced;
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 60px;
+          text-align: left;
+          text-transform: uppercase; }
+        footer .upper-footer .footer-links .more-link:hover, footer .upper-footer .footer-links .more-link:focus, footer .upper-footer .footer-links .more-link:active {
+          opacity: 0.7; }
   footer .bottom-footer {
     padding: 50px 0px;
     background: #4a505d; }
@@ -770,7 +776,7 @@ footer {
           height: auto;
           display: block; }
       footer .bottom-footer .footer-copyright span {
-        font-family: "Titillium Web", sans-serif;
+        font-family: "Graphik Regular", sans-serif;
         color: #b2bed9;
         font-size: 16px;
         font-weight: 400;
@@ -790,7 +796,7 @@ footer {
         transition: opacity 0.3s ease; }
         footer .bottom-footer .footer-social a .social-icon {
           display: block;
-          background: #eee;
+          background: #b2bed9;
           border-radius: 50%;
           width: 40px;
           height: 40px; }
@@ -803,7 +809,7 @@ footer {
         footer .bottom-footer .footer-social a:hover, footer .bottom-footer .footer-social a:focus, footer .bottom-footer .footer-social a:active {
           opacity: 0.7; }
     footer .bottom-footer .footer-contact h3 {
-      font-family: "Titillium Web", sans-serif;
+      font-family: "Graphik Regular", sans-serif;
       color: #b2bed9;
       font-size: 22;
       font-weight: 600;
@@ -814,7 +820,7 @@ footer {
       display: block;
       text-align: center; }
       footer .bottom-footer .footer-contact span a {
-        font-family: "Titillium Web", sans-serif;
+        font-family: "Graphik Regular", sans-serif;
         color: #b2bed9;
         font-size: 16px;
         font-weight: 400;
@@ -825,6 +831,7 @@ footer {
           opacity: 0.7; }
 
 .wrapper {
+  font-family: "Graphik Medium", sans-serif;
   background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
   background: -moz-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
   background: -o-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
@@ -886,6 +893,11 @@ footer {
       color: #ffffff;
       font-weight: 400;
       transform: scaleY(1.0005); }
+  .wrapper .wrapperWider {
+    width: 360px;
+    height: auto;
+    margin: 0px auto;
+    text-align: center; }
   .wrapper .wrapperBlocks {
     width: 360px;
     height: auto;
@@ -985,8 +997,8 @@ footer {
       width: 50%;
       height: auto; }
       .wrapper .wrapperFormDekstop form input {
-        width: 90%;
-        margin-left: 5%; }
+        width: 94%;
+        margin-left: 3%; }
     .wrapper .wrapperFormDekstop .formsLeft {
       float: left; }
     .wrapper .wrapperFormDekstop .formsRight {
@@ -997,16 +1009,22 @@ footer {
     float: left; }
     .wrapper .wrapperFormRadio form {
       width: 100%;
-      height: auto; }
+      height: auto;
+      display: flex; }
+      .wrapper .wrapperFormRadio form p {
+        color: #ffffff;
+        padding-top: 2%;
+        font-size: 15px; }
       .wrapper .wrapperFormRadio form input {
-        width: 6%;
-        font-size: 11px; }
+        width: 7%;
+        justify-content: space-around;
+        margin-right: 3%; }
   .wrapper .personBlock {
     width: 390px;
     height: 160px;
     background-color: #ffffff;
     box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
-    margin: 3% auto;
+    margin: 3% auto 0% auto;
     border-radius: 5px; }
     .wrapper .personBlock .iconBlock {
       height: 90px;
@@ -1031,7 +1049,8 @@ footer {
         margin-right: 1%; }
   .wrapper .legend {
     color: #ffffff;
-    margin-left: 5%; }
+    margin-left: 3%;
+    margin-bottom: 3%; }
   .wrapper .radioForms {
     width: 100%;
     max-width: 360px;
@@ -1077,263 +1096,530 @@ footer {
         margin: 0px 2.2%;
         border: none;
         border-radius: 5px;
-        background-color: #00aced; }
-  .wrapper #smallTable, .wrapper #smallTable1, .wrapper #smallTable2 {
+        background-color: #00aced;
+        color: #ffffff; }
+  .wrapper #smallTable, .wrapper #smallTable1, .wrapper #smallTable2, .wrapper #smallTable3 {
     margin: 1% auto;
     width: 360px;
     height: auto;
     color: #ffffff; }
-    .wrapper #smallTable tr td, .wrapper #smallTable1 tr td, .wrapper #smallTable2 tr td {
+    .wrapper #smallTable tr td, .wrapper #smallTable1 tr td, .wrapper #smallTable2 tr td, .wrapper #smallTable3 tr td {
       width: 50%; }
-      .wrapper #smallTable tr td:nth-child(even), .wrapper #smallTable1 tr td:nth-child(even), .wrapper #smallTable2 tr td:nth-child(even) {
+      .wrapper #smallTable tr td:nth-child(even), .wrapper #smallTable1 tr td:nth-child(even), .wrapper #smallTable2 tr td:nth-child(even), .wrapper #smallTable3 tr td:nth-child(even) {
         text-align: right; }
   .wrapper #wrapperFooter {
     width: 360px;
     height: 60px;
     margin: 7% auto 0% auto;
-    background-color: #00aced; }
+    background-color: #00aced;
+    border-radius: 5px 5px 0px 0px; }
+    .wrapper #wrapperFooter h3 {
+      color: #ffffff;
+      padding-top: 5%;
+      margin-left: 3%; }
+  .wrapper #button1 {
+    border: none;
+    background-color: #00aced;
+    width: 200px;
+    height: 50px;
+    margin: 3% auto;
+    border-radius: 5px;
+    display: table; }
+    .wrapper #button1 a {
+      color: #ffffff;
+      font-size: 19px;
+      text-decoration: none;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+  .wrapper p {
+    color: #ffffff; }
+
+#pageone, #pagetwo, #pagethree, #pagefour, #pagefive, #pagesix, #pageten, #lastPage, #FirstPage {
+  padding-bottom: 5%; }
+
+#pagetwo, #pagethree, #pagefour, #pagefive, #pagesix, #pageten, #lastPage, #FirstPage {
+  padding-top: 5%; }
+
+#pagenine p {
+  color: #ffffff; }
+
+#pageten p {
+  text-align: justify;
+  font-weight: normal;
+  margin: 3% auto; }
+
+@media (max-width: 375px) {
+  .wrapper .wrapperMid {
+    width: 285px; }
+    .wrapper .wrapperMid h1 {
+      font-size: 28px;
+      font-weight: normal;
+      margin-bottom: 5%; }
+    .wrapper .wrapperMid h3 {
+      font-size: 15px;
+      font-weight: normal; }
+    .wrapper .wrapperMid h4 {
+      font-size: 16px;
+      font-weight: normal; }
+  .wrapper .wrapperWider {
+    width: 320px; }
+    .wrapper .wrapperWider h3 {
+      font-size: 16px;
+      font-weight: normal;
+      margin-bottom: 5%; }
+  .wrapper .wrapperBlocks {
+    width: 320px; }
+    .wrapper .wrapperBlocks .formBlock {
+      max-width: 320px;
+      height: 85px; }
+      .wrapper .wrapperBlocks .formBlock .formCircle {
+        margin: 6.5% 0% 0% 4%; }
+      .wrapper .wrapperBlocks .formBlock h4 {
+        margin-top: 9%;
+        width: 200px; }
+      .wrapper .wrapperBlocks .formBlock .formArrow {
+        height: 85px;
+        width: auto;
+        padding-left: 0%; }
+  .wrapper .wrapperForm {
+    width: 320px; }
+  .wrapper .personBlock {
+    width: 280px;
+    height: 120px; }
+    .wrapper .personBlock .iconBlock {
+      width: 75px;
+      height: 75px; }
+    .wrapper .personBlock .infoBlock {
+      height: 120px;
+      padding-left: 5%;
+      padding-top: 10%;
+      width: auto;
+      line-height: 17px; }
+      .wrapper .personBlock .infoBlock h6 {
+        line-height: 0px; }
+      .wrapper .personBlock .infoBlock p {
+        line-height: 12px;
+        padding-bottom: 0em; }
+      .wrapper .personBlock .infoBlock span {
+        line-height: 10px; }
+  .wrapper .legend {
+    margin-left: 0%; }
+  .wrapper .radioForms {
+    width: 320px;
+    height: auto; }
+    .wrapper .radioForms .radioForm {
+      width: 160px; }
+  .wrapper #wrapperFooter {
+    border-radius: 0%; }
+  .wrapper #smallTable, .wrapper #smallTable1, .wrapper #smallTable2, .wrapper #smallTable3 {
+    width: 320px; }
+  .wrapper .buttons {
+    width: 320px; }
+  #pagesix h1 {
+    margin-bottom: 30%; }
+  #pagesix .goBack {
+    margin-top: 30%; }
+  #pageeight h1 {
+    margin-bottom: 15%; }
+  #pagenine h1 {
+    margin-bottom: 15%;
+    padding-top: 10%; } }
 
 /* Search homes styling
     - We're making our own grid, yaay!
 ------------------------------------------------------- */
-#search-homes .form-control.search {
-  display: inline-block;
-  position: relative;
-  display: none; }
-
-#search-homes .dropdown {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 48%;
-  margin-bottom: 3%; }
-  #search-homes .dropdown h3 {
-    font-family: "Graphik Medium", sans-serif;
-    color: #1e232c;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: left;
-    text-transform: uppercase;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 0; }
-  #search-homes .dropdown .btn {
-    width: 100%;
-    text-align: left;
-    padding: 12px 10px;
-    font-family: "Graphik Light", sans-serif;
-    color: #1e232c;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: left;
-    background: #fff;
-    border-radius: 3px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #d6dce6;
-    transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease; }
-    #search-homes .dropdown .btn::after {
-      display: none; }
-    #search-homes .dropdown .btn .fas {
-      float: right;
-      margin-top: 5px;
+#search-homes {
+  margin: 20px 0px; }
+  #search-homes .form-control.search {
+    display: inline-block;
+    position: relative;
+    display: none; }
+  #search-homes .dropdown {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 48%;
+    margin-bottom: 3%; }
+    #search-homes .dropdown h3 {
+      font-family: "Graphik Medium", sans-serif;
       color: #1e232c;
-      transition: color 0.3s ease; }
-    #search-homes .dropdown .btn:hover, #search-homes .dropdown .btn:active, #search-homes .dropdown .btn:focus, #search-homes .dropdown .btn.active {
-      color: #00aced;
-      border-color: #00aced;
-      box-shadow: none; }
-      #search-homes .dropdown .btn:hover .search-checkbox + label, #search-homes .dropdown .btn:active .search-checkbox + label, #search-homes .dropdown .btn:focus .search-checkbox + label, #search-homes .dropdown .btn.active .search-checkbox + label {
-        font-weight: bold; }
-      #search-homes .dropdown .btn:hover .fas, #search-homes .dropdown .btn:active .fas, #search-homes .dropdown .btn:focus .fas, #search-homes .dropdown .btn.active .fas {
-        color: #00aced; }
-    #search-homes .dropdown .btn .search-checkbox {
-      position: absolute;
-      opacity: 0; }
-      #search-homes .dropdown .btn .search-checkbox + label {
-        position: relative;
-        cursor: pointer;
-        padding: 0;
-        font-weight: 300;
-        width: 100%;
-        display: block; }
-        #search-homes .dropdown .btn .search-checkbox + label .fas.color {
-          float: initial;
-          font-size: 8px;
-          vertical-align: middle;
-          margin-top: -3px;
-          margin-right: 4px; }
-          #search-homes .dropdown .btn .search-checkbox + label .fas.color.red {
-            color: #e03225; }
-          #search-homes .dropdown .btn .search-checkbox + label .fas.color.blue {
-            color: #196aff; }
-          #search-homes .dropdown .btn .search-checkbox + label .fas.color.green {
-            color: #7cd62c; }
-          #search-homes .dropdown .btn .search-checkbox + label .fas.color.yellow {
-            color: #ffba13; }
-        #search-homes .dropdown .btn .search-checkbox + label .fas.info {
-          float: initial;
-          vertical-align: middle;
-          margin-top: -3px;
-          color: #00aced; }
-      #search-homes .dropdown .btn .search-checkbox + label:before {
-        content: '';
-        margin-right: 10px;
-        display: inline-block;
-        vertical-align: text-top;
-        width: 16px;
-        height: 16px;
-        background: white;
-        border: 1px solid #d6dce6;
-        border-radius: 3px;
-        transition: background 0.3s ease; }
-      #search-homes .dropdown .btn .search-checkbox:hover + label:before {
-        background: #00aced; }
-      #search-homes .dropdown .btn .search-checkbox:checked + label:before {
-        background: #00aced; }
-      #search-homes .dropdown .btn .search-checkbox:checked + label:after {
-        content: '';
-        position: absolute;
-        left: 4px;
-        top: 10px;
-        background: white;
-        width: 1.5px;
-        height: 1.5px;
-        box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
-        transform: rotate(45deg); }
-  #search-homes .dropdown .dropdown-menu {
-    min-width: 12rem;
-    box-shadow: 0px 0px 66.5px 3.5px rgba(10, 25, 40, 0.19);
-    margin-top: 0.60rem;
-    border: none; }
-    #search-homes .dropdown .dropdown-menu .dropdown-item {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      text-transform: uppercase;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 0; }
+    #search-homes .dropdown .btn {
+      width: 100%;
+      text-align: left;
+      padding: 12px 10px;
       font-family: "Graphik Light", sans-serif;
       color: #1e232c;
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 300;
-      text-align: left; }
-    #search-homes .dropdown .dropdown-menu::after {
-      bottom: 100%;
-      left: 20%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(255, 255, 255, 0);
-      border-bottom-color: #ffffff;
-      border-width: 8px;
-      margin-left: -8px; }
-    #search-homes .dropdown .dropdown-menu .dropdown-checkbox {
-      position: absolute;
-      opacity: 0; }
-      #search-homes .dropdown .dropdown-menu .dropdown-checkbox + label {
-        position: relative;
-        cursor: pointer;
-        padding: 0;
-        font-weight: 300;
-        width: 100%;
-        display: block; }
-      #search-homes .dropdown .dropdown-menu .dropdown-checkbox + label:before {
-        content: '';
-        margin-right: 10px;
-        display: inline-block;
-        vertical-align: middle;
-        width: 16px;
-        height: 16px;
-        background: white;
-        border: 1px solid #d6dce6;
-        border-radius: 3px;
-        transition: background 0.3s ease; }
-      #search-homes .dropdown .dropdown-menu .dropdown-checkbox:hover + label:before {
-        background: #00aced; }
-      #search-homes .dropdown .dropdown-menu .dropdown-checkbox:checked + label:before {
-        background: #00aced; }
-      #search-homes .dropdown .dropdown-menu .dropdown-checkbox:checked label::after {
-        content: '';
+      text-align: left;
+      background: #fff;
+      border-radius: 3px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #d6dce6;
+      transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease; }
+      #search-homes .dropdown .btn::after {
+        display: none; }
+      #search-homes .dropdown .btn .fas {
+        float: right;
+        margin-top: 5px;
+        color: #1e232c;
+        transition: color 0.3s ease; }
+      #search-homes .dropdown .btn:hover, #search-homes .dropdown .btn:active, #search-homes .dropdown .btn:focus, #search-homes .dropdown .btn.active {
+        color: #00aced;
+        border-color: #00aced;
+        box-shadow: none; }
+        #search-homes .dropdown .btn:hover .search-checkbox + label, #search-homes .dropdown .btn:active .search-checkbox + label, #search-homes .dropdown .btn:focus .search-checkbox + label, #search-homes .dropdown .btn.active .search-checkbox + label {
+          font-weight: bold; }
+        #search-homes .dropdown .btn:hover .fas, #search-homes .dropdown .btn:active .fas, #search-homes .dropdown .btn:focus .fas, #search-homes .dropdown .btn.active .fas {
+          color: #00aced; }
+      #search-homes .dropdown .btn .search-checkbox {
         position: absolute;
-        left: 4px;
-        top: 11px;
-        background: white;
-        width: 1.5px;
-        height: 1.5px;
-        box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
-        transform: rotate(45deg); }
-  #search-homes .dropdown:nth-child(odd) {
-    margin-left: 1%; }
-  #search-homes .dropdown:nth-child(even) {
-    margin-right: 1%; }
-  #search-homes .dropdown.bedrooms {
-    margin-left: 0%; }
-  #search-homes .dropdown.hometype {
-    margin-left: 2%;
-    margin-right: 0%; }
-
-#search-homes .price-field {
-  width: 99%;
-  margin-left: 0%;
-  /* Because my grid skills are retarded */ }
-  #search-homes .price-field h3 {
-    font-family: "Graphik Medium", sans-serif;
-    color: #1e232c;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: left;
-    text-transform: uppercase;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 0; }
-  #search-homes .price-field .input-group .form-control {
-    font-family: "Graphik Light", sans-serif;
-    color: #96a7bc;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: left;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #d6dce6;
-    box-sizing: border-box;
-    border-radius: 3px;
-    background-color: #ffffff;
-    padding: 24px 12px;
-    box-shadow: inset 0px 11px 38px -24px rgba(0, 0, 0, 0.53); }
-    #search-homes .price-field .input-group .form-control:hover, #search-homes .price-field .input-group .form-control:active, #search-homes .price-field .input-group .form-control:focus {
-      box-shadow: inset 0px 8px 38px -24px rgba(0, 0, 0, 0.53); }
-    #search-homes .price-field .input-group .form-control:not(:last-child) {
-      border-top-right-radius: 0px !important;
-      border-bottom-right-radius: 0px !important; }
-    #search-homes .price-field .input-group .form-control:last-child {
-      border-top-left-radius: 0px !important;
-      border-bottom-left-radius: 0px !important; }
-
-#search-homes .search-links {
-  border-top: 1px solid #d6dce6;
-  padding: 15px 18px;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-top: 20px; }
-  #search-homes .search-links a {
-    font-family: "Graphik Light", sans-serif;
-    color: #00aced;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 30px;
-    text-align: left;
-    margin-right: 10px;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    text-decoration: none;
-    outline: none; }
-    #search-homes .search-links a#filters {
-      font-weight: bold; }
-    #search-homes .search-links a#save-search {
-      float: right;
-      margin-right: 0; }
-    #search-homes .search-links a:hover, #search-homes .search-links a:active, #search-homes .search-links a:focus {
-      opacity: 0.7;
+        opacity: 0; }
+        #search-homes .dropdown .btn .search-checkbox + label {
+          position: relative;
+          cursor: pointer;
+          padding: 0;
+          font-weight: 300;
+          width: 100%;
+          display: block; }
+          #search-homes .dropdown .btn .search-checkbox + label .fas.color {
+            float: initial;
+            font-size: 8px;
+            vertical-align: middle;
+            margin-top: -3px;
+            margin-right: 4px; }
+            #search-homes .dropdown .btn .search-checkbox + label .fas.color.red {
+              color: #e03225; }
+            #search-homes .dropdown .btn .search-checkbox + label .fas.color.blue {
+              color: #196aff; }
+            #search-homes .dropdown .btn .search-checkbox + label .fas.color.green {
+              color: #7cd62c; }
+            #search-homes .dropdown .btn .search-checkbox + label .fas.color.yellow {
+              color: #ffba13; }
+          #search-homes .dropdown .btn .search-checkbox + label .fas.info {
+            float: initial;
+            vertical-align: middle;
+            margin-top: -3px;
+            color: #00aced; }
+        #search-homes .dropdown .btn .search-checkbox + label:before {
+          content: '';
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: text-top;
+          width: 16px;
+          height: 16px;
+          background: white;
+          border: 1px solid #d6dce6;
+          border-radius: 3px;
+          transition: background 0.3s ease; }
+        #search-homes .dropdown .btn .search-checkbox:hover + label:before {
+          background: #00aced; }
+        #search-homes .dropdown .btn .search-checkbox:checked + label:before {
+          background: #00aced; }
+        #search-homes .dropdown .btn .search-checkbox:checked + label:after {
+          content: '';
+          position: absolute;
+          left: 4px;
+          top: 10px;
+          background: white;
+          width: 1.5px;
+          height: 1.5px;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          transform: rotate(45deg); }
+    #search-homes .dropdown .dropdown-menu {
+      min-width: 12rem;
+      box-shadow: 0px 0px 66.5px 3.5px rgba(10, 25, 40, 0.19);
+      margin-top: 0.60rem;
+      border: none; }
+      #search-homes .dropdown .dropdown-menu .dropdown-item {
+        font-family: "Graphik Light", sans-serif;
+        color: #1e232c;
+        font-size: 17px;
+        font-weight: 300;
+        text-align: left; }
+      #search-homes .dropdown .dropdown-menu::after {
+        bottom: 100%;
+        left: 20%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: #ffffff;
+        border-width: 8px;
+        margin-left: -8px; }
+      #search-homes .dropdown .dropdown-menu .dropdown-checkbox {
+        position: absolute;
+        opacity: 0; }
+        #search-homes .dropdown .dropdown-menu .dropdown-checkbox + label {
+          position: relative;
+          cursor: pointer;
+          padding: 0;
+          font-weight: 300;
+          width: 100%;
+          display: block; }
+        #search-homes .dropdown .dropdown-menu .dropdown-checkbox + label:before {
+          content: '';
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          width: 16px;
+          height: 16px;
+          background: white;
+          border: 1px solid #d6dce6;
+          border-radius: 3px;
+          transition: background 0.3s ease; }
+        #search-homes .dropdown .dropdown-menu .dropdown-checkbox:hover + label:before {
+          background: #00aced; }
+        #search-homes .dropdown .dropdown-menu .dropdown-checkbox:checked + label:before {
+          background: #00aced; }
+        #search-homes .dropdown .dropdown-menu .dropdown-checkbox:checked label::after {
+          content: '';
+          position: absolute;
+          left: 4px;
+          top: 11px;
+          background: white;
+          width: 1.5px;
+          height: 1.5px;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          transform: rotate(45deg); }
+    #search-homes .dropdown:nth-child(odd) {
+      margin-left: 1%; }
+    #search-homes .dropdown:nth-child(even) {
+      margin-right: 1%; }
+    #search-homes .dropdown.bedrooms {
+      margin-left: 0%; }
+    #search-homes .dropdown.hometype {
+      margin-left: 2%;
+      margin-right: 0%; }
+  #search-homes .price-field {
+    width: 99%;
+    margin-left: 0%;
+    /* Because my grid skills are retarded */ }
+    #search-homes .price-field h3 {
+      font-family: "Graphik Medium", sans-serif;
+      color: #1e232c;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      text-transform: uppercase;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding: 0; }
+    #search-homes .price-field .input-group .form-control {
+      font-family: "Graphik Light", sans-serif;
+      color: #96a7bc;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: left;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #d6dce6;
+      box-sizing: border-box;
+      border-radius: 3px;
+      background-color: #ffffff;
+      padding: 24px 12px;
+      box-shadow: inset 0px 11px 38px -24px rgba(0, 0, 0, 0.53); }
+      #search-homes .price-field .input-group .form-control:hover, #search-homes .price-field .input-group .form-control:active, #search-homes .price-field .input-group .form-control:focus {
+        box-shadow: inset 0px 8px 38px -24px rgba(0, 0, 0, 0.53); }
+      #search-homes .price-field .input-group .form-control:not(:last-child) {
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important; }
+      #search-homes .price-field .input-group .form-control:last-child {
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important; }
+  #search-homes .search-links {
+    border-top: 1px solid #d6dce6;
+    padding: 15px 18px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 20px; }
+    #search-homes .search-links a {
+      font-family: "Graphik Light", sans-serif;
+      color: #00aced;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 30px;
+      text-align: left;
+      margin-right: 10px;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+      text-decoration: none;
       outline: none; }
+      #search-homes .search-links a#filters {
+        font-weight: bold; }
+      #search-homes .search-links a#save-search {
+        float: right;
+        margin-right: 0; }
+      #search-homes .search-links a:hover, #search-homes .search-links a:active, #search-homes .search-links a:focus {
+        opacity: 0.7;
+        outline: none; }
+  #search-homes .property-list .property-item {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0px;
+    margin: 0 -15px;
+    cursor: pointer;
+    /*&:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(to bottom, rgba(255,255,255,0) 42%, rgba(0,0,0,1) 100%);
+                opacity: .6; 
+                border-radius: 0px;
+                cursor: pointer;
+              }*/ }
+    #search-homes .property-list .property-item .time-on-market {
+      font-family: "Graphik Regular", sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+      text-align: left;
+      text-shadow: 0px 0px 0px rgba(29, 38, 63, 0.41);
+      text-transform: lowercase;
+      display: block;
+      z-index: 0;
+      position: relative; }
+    #search-homes .property-list .property-item .sale-type {
+      font-family: "Graphik Medium", sans-serif;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 26px;
+      text-align: left;
+      text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
+      margin-top: 95px;
+      display: block;
+      z-index: 0;
+      position: relative; }
+    #search-homes .property-list .property-item .property-price {
+      font-family: "Graphik Light", sans-serif;
+      color: #ffffff;
+      font-size: 31px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      text-shadow: 0px 3px 5.7px rgba(29, 38, 63, 0.48);
+      text-transform: uppercase;
+      display: inline-block;
+      z-index: 0;
+      position: relative; }
+    #search-homes .property-list .property-item .property-info {
+      display: inline-block;
+      float: right; }
+      #search-homes .property-list .property-item .property-info .beds,
+      #search-homes .property-list .property-item .property-info .baths,
+      #search-homes .property-list .property-item .property-info .sqft {
+        font-family: "Graphik Light", sans-serif;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
+        z-index: 0;
+        position: relative; }
+      #search-homes .property-list .property-item .property-info i {
+        color: #fff;
+        font-size: 5px;
+        vertical-align: middle;
+        padding-left: 4px;
+        padding-right: 4px;
+        z-index: 0;
+        position: relative; }
+    #search-homes .property-list .property-item .property-address {
+      margin-top: 5px;
+      font-family: "Graphik Light", sans-serif;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
+      z-index: 0;
+      position: relative;
+      display: block; }
+  #search-homes .property-list .cta-insert {
+    display: block;
+    position: relative;
+    margin: 0 -15px;
+    background: #00aced;
+    padding: 20px 0px;
+    text-align: center; }
+    #search-homes .property-list .cta-insert h1 {
+      font-family: "Graphik Light", sans-serif;
+      color: #ffffff;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 34px;
+      text-align: center; }
+    #search-homes .property-list .cta-insert p {
+      font-family: "Graphik Light", sans-serif;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      text-align: center; }
+    #search-homes .property-list .cta-insert .cta {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      background-color: #00aced;
+      border-color: #00aced;
+      outline: none !important;
+      box-shadow: none !important; }
+      #search-homes .property-list .cta-insert .cta i {
+        font-size: 14px;
+        margin-left: 10px; }
+  #search-homes .pagination {
+    padding: 10px 0px;
+    text-align: center; }
+    #search-homes .pagination nav {
+      text-align: center; }
+      #search-homes .pagination nav li a {
+        font-family: "Graphik Regular", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 34px;
+        padding: 0;
+        background: #fff;
+        color: #373b43;
+        border-radius: 50%;
+        display: block;
+        width: 34px;
+        height: 34px;
+        border: 0;
+        margin: 0px 3px;
+        transition: background 0.3s ease, color 0.3s ease;
+        text-transform: uppercase; }
+        #search-homes .pagination nav li a:hover, #search-homes .pagination nav li a:active, #search-homes .pagination nav li a:focus {
+          background: #00aced;
+          color: #ffffff; }
+        #search-homes .pagination nav li a.next {
+          border-radius: 0;
+          width: auto;
+          height: auto;
+          padding: 0px 5px; }
 
 @media only screen and (min-width: 960px) {
   .container {
@@ -1365,6 +1651,12 @@ footer {
       left: 56%; }
   .landing-links .col-link {
     margin-bottom: 0px; }
+    .landing-links .col-link a:hover i, .landing-links .col-link a:focus i, .landing-links .col-link a:active i {
+      right: 7%; }
+    .landing-links .col-link a i {
+      right: 10%; }
+      .landing-links .col-link a i:hover, .landing-links .col-link a i:focus, .landing-links .col-link a i:active {
+        right: 7%; }
     .landing-links .col-link .separator {
       position: absolute;
       float: right;
@@ -1389,6 +1681,21 @@ footer {
     padding: 0px 0px; }
   footer .upper-footer .footer-links .more-link {
     text-align: left; }
+  footer .bottom-footer .footer-links {
+    padding: 0px 0px; }
+    footer .bottom-footer .footer-links h3 {
+      text-align: center; }
+    footer .bottom-footer .footer-links ul {
+      -moz-column-count: 2;
+      -moz-column-gap: 10px;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 10px;
+      column-count: 2;
+      column-gap: 10px;
+      text-align: center;
+      padding: 0px 50px; }
+    footer .bottom-footer .footer-links .more-link {
+      text-align: left; }
   footer .bottom-footer .footer-copyright {
     text-align: left;
     margin-bottom: 0px; }
