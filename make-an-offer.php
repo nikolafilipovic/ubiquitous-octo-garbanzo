@@ -309,8 +309,14 @@
         <h1>Offer documents</h1>
         <p>Please upload purchase contract and proof of funds or pre qualification letter</p>
       </div>
-      <div class="Blokovi"></div>
-      <div class="Blokovi"></div>
+      <div class="Blokovi">
+          <p>PurchaseContract.pdf</p>
+          <i class="fas fa-times"></i>
+        </div>
+      <div class="Blokovi BlokoviNC">
+          <p>Upload file</p>
+          <i class="fas fa-upload"></i>
+        </div>
     <div class="buttons">
         <form action="" method="post">
           <input type="button" value=" &leftarrow; Back">
@@ -330,6 +336,7 @@
      <div class="wrapperMid">
        <h1>Verify your offer details</h1>
      </div>
+    <div class="tableFloat">
      <table id="smallTable">
        <th>Submitting agent</th>
        <tr>
@@ -376,6 +383,8 @@
          <td>12.26.2018, 6PM</td>
        </tr>
      </table>
+    </div>
+       <div class="tableFloat">
      <table id="smallTable2">
        <th>Contingecies</th>
        <tr>
@@ -406,6 +415,8 @@
             <td>ProofOfFunds, 10-19-18.pdf</td>
            </tr>
        </table>
+       </div>
+       <div class="cleaner"></div>
      <div class="buttons">
         <form action="" method="post">
           <input type="button" value=" &leftarrow; Back">

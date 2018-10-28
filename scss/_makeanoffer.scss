@@ -87,6 +87,15 @@
                     max-width: 360px;
                     background-color: #ffffff;
                     border-radius: 10px;
+                    &:hover{
+                        .formArrow{
+                            i{
+                                transition: 0.3s ease;
+                                margin-left: 50%;
+                            }
+                        }
+                        
+                    }
                         .formCircle{
                             background-color:  #00aced;
                             width: 40px;
@@ -108,7 +117,7 @@
                         }
                         h4{
                             float: left;
-                            width: 220px;
+                            width: 200px;
                             font-size: 24px;
                             color: #000000;
                             font-weight: 400;
@@ -122,6 +131,8 @@
                             float: left;
                             padding-top: 10%;
                             padding-left: 7.5%;
+                            font-size: 20px;
+                            color: #c2c2c2;
                         }
                 }
                 .formBorderTop{
@@ -138,7 +149,7 @@
         }
         .wrapperForm{
             width: 360px;
-            height: 200px;
+            height: 205px;
             margin: 0px auto;
                 form{
                     width: 100%;
@@ -258,6 +269,9 @@
                     padding-left: 10%;
                     padding-top: 5%;
                 }
+                p{
+                    color: #000000;
+                }
         }
         .goBack{
             margin: 0px auto;
@@ -265,6 +279,12 @@
                 p a{
                     color: #ffffff;
                     font-size: 19px;
+                        &:hover{
+                            i{
+                                margin-right: 3%;
+                                transition: 0.3s ease;
+                            }
+                        }
                         i{
                             margin-right: 1%;
                         }
@@ -276,9 +296,8 @@
             margin-bottom: 3%;
         }
         .radioForms{
-            width: 100%;
-            max-width: 360px;
-            height: 130px;
+            width: 320px;
+            height: auto;
             margin: 0px auto;
                 h5{
                     font-size: 15px;
@@ -295,7 +314,10 @@
                             width: 100%;
                             height: auto;
                             float: left;
-                                
+                            display: flex;
+                                p{
+                                    margin-top: 5%;
+                                }
                         }
                 }
         }
@@ -354,6 +376,35 @@
                         }
                 }
         }
+        .Blokovi{
+            width: 360px;
+            height: 50px;
+            margin: 2% auto;
+            border-radius: 5px;
+            background-color: #00aced;
+            display: table;
+            padding-right: 1%;
+                p{
+                    width: 93%;
+                    padding-left: 5%;
+                    color: #ffffff;
+                    font-size: 17px;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                i{
+                    width: auto;
+                    font-size: 35px;
+                    color: #ffffff;
+                    margin-right: 15px;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+        }
+        .BlokoviNC{
+            background-color: transparent;
+            border: 2px solid #ffffff;
+        }
         #smallTable, #smallTable1, #smallTable2, #smallTable3{
             margin: 1% auto;
             width: 360px;
@@ -366,6 +417,11 @@
                         }
                 }
         }
+    .tableFloat{
+        width: 360px;
+        height: auto;
+        margin: 1% auto;
+    }
         #wrapperFooter{
             width: 100%;
             max-width: 380px;
@@ -421,13 +477,121 @@
     #FirstPage .wrapperMid{
         margin-bottom: 10%;
     }
-    #pageseven, #pageeight, #pagenine{
+    #pageseven, #pagenine{
         padding-bottom: 0%;
     }
     #pageten, #pagesix, #pagefive, #lastPage{
         padding-bottom: 9%;
     }
+    #pageeight{
+        padding-bottom: 2%;
+            h1{
+                margin-bottom: 15%;
+            }
+        }
+#pagenine {
+    padding-bottom: 2%;
+    padding-top: 5%;
+    h1{
+        margin-bottom: 10%;
+    }
+}
+#pagesix {
+    padding-bottom: 10%;
+    h1 {
+        margin-bottom: 30%;
+    }
+    .goBack{
+        margin-top: 30%;
+    }
+}
+#lastPage{
+    padding-bottom: 10%;
+}
+@media (min-width:769px) and (max-width:1024px){
+    .wrapper {
+        .wrapperWider{
+            width: 395px;
+        }
+        .wrapperForm{
+            width: 440px;
+        }
+        .radioBlock{
+            width: 230px !important;
+        }
+        .radioBlock1{
+            width: 120px !important;
+        }
+        .tableFloat{
+            float: left;
+            margin-left: 2%;
+            width: 47.2%;
+            #smallTable3{
+                margin-top: 6.5%;
+            }
+        }
+    }
+    
+}
 
+@media (max-width:768px){
+    .wrapper {
+        .wrapperWider{
+            width: 395px;
+        }
+        .wrapperForm{
+            width: 440px;
+        }
+        .radioBlock{
+            width: 230px !important;
+        }
+        .radioBlock1{
+            width: 120px !important;
+        }
+        .tableFloat{
+            float: left;
+            margin-left: 2%;
+            #smallTable3{
+                margin-top: 6.5%;
+            }
+        }
+    }
+   #pagefour{
+    padding-bottom: 14%;
+    padding-top: 14%;
+}
+#pageeight {
+    padding-bottom: 0%;
+    .wrapperForm{
+        width: 360px !important;
+    }
+    .radioForms{
+        width: 360px !important;
+    }
+}
+#pagenine{
+    padding-bottom: 0%;
+}
+#pageten{
+    padding-bottom: 11%;
+    .wrapperWider{
+        width: 360px;
+    }
+} 
+}
+@media (min-width:376px) and (max-width:765px){
+    .wrapper{
+        .wrapperForm{
+            width: 400px;
+        }
+        .tableFloat{
+            margin-left: 6%;
+        }
+    }
+    #pageten, #lastPage {
+    padding-bottom: 12%;
+    }
+}
 @media (max-width:375px){
     .wrapper{
         .wrapperMid{
@@ -508,7 +672,6 @@
             width: 320px;
             height: auto;
             .radioForm{
-//                width: 160px;
                 form{
                     display: flex;
                     p{
@@ -545,16 +708,14 @@
             margin-top: 30%;
         }
     }
-    #pageeight{
-        h1{
-            margin-bottom: 15%;
-        }
-    }
+    
     #pagenine {
         h1{
             margin-bottom: 15%;
             padding-top: 10%;
         }
     }
-    
+    #lastPage{
+        padding-bottom: 11%;
+    }
 }

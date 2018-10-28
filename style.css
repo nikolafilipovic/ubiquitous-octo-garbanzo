@@ -909,6 +909,9 @@ footer {
       max-width: 360px;
       background-color: #ffffff;
       border-radius: 10px; }
+      .wrapper .wrapperBlocks .formBlock:hover .formArrow i {
+        transition: 0.3s ease;
+        margin-left: 50%; }
       .wrapper .wrapperBlocks .formBlock .formCircle {
         background-color: #00aced;
         width: 40px;
@@ -926,7 +929,7 @@ footer {
           transform: rotateY(180deg); }
       .wrapper .wrapperBlocks .formBlock h4 {
         float: left;
-        width: 220px;
+        width: 200px;
         font-size: 24px;
         color: #000000;
         font-weight: 400;
@@ -938,7 +941,9 @@ footer {
         height: 100px;
         float: left;
         padding-top: 10%;
-        padding-left: 7.5%; }
+        padding-left: 7.5%;
+        font-size: 20px;
+        color: #c2c2c2; }
     .wrapper .wrapperBlocks .formBorderTop {
       border-radius: 5px 5px 0px 0px;
       border-bottom: 0.3px solid #c1c1c1; }
@@ -949,7 +954,7 @@ footer {
       border-top: 0.3px solid #c1c1c1; }
   .wrapper .wrapperForm {
     width: 360px;
-    height: 200px;
+    height: 205px;
     margin: 0px auto; }
     .wrapper .wrapperForm form {
       width: 100%;
@@ -1047,12 +1052,17 @@ footer {
       float: left;
       padding-left: 10%;
       padding-top: 5%; }
+    .wrapper .personBlock p {
+      color: #000000; }
   .wrapper .goBack {
     margin: 0px auto;
     text-align: center; }
     .wrapper .goBack p a {
       color: #ffffff;
       font-size: 19px; }
+      .wrapper .goBack p a:hover i {
+        margin-right: 3%;
+        transition: 0.3s ease; }
       .wrapper .goBack p a i {
         margin-right: 1%; }
   .wrapper .legend {
@@ -1060,9 +1070,8 @@ footer {
     margin-left: 3%;
     margin-bottom: 3%; }
   .wrapper .radioForms {
-    width: 100%;
-    max-width: 360px;
-    height: 130px;
+    width: 320px;
+    height: auto;
     margin: 0px auto; }
     .wrapper .radioForms h5 {
       font-size: 15px;
@@ -1076,7 +1085,10 @@ footer {
       .wrapper .radioForms .radioForm form {
         width: 100%;
         height: auto;
-        float: left; }
+        float: left;
+        display: flex; }
+        .wrapper .radioForms .radioForm form p {
+          margin-top: 5%; }
   .wrapper .radioBlock {
     width: 200px !important;
     padding-top: 5%; }
@@ -1115,6 +1127,31 @@ footer {
         border-radius: 5px;
         background-color: #00aced;
         color: #ffffff; }
+  .wrapper .Blokovi {
+    width: 360px;
+    height: 50px;
+    margin: 2% auto;
+    border-radius: 5px;
+    background-color: #00aced;
+    display: table;
+    padding-right: 1%; }
+    .wrapper .Blokovi p {
+      width: 93%;
+      padding-left: 5%;
+      color: #ffffff;
+      font-size: 17px;
+      display: table-cell;
+      vertical-align: middle; }
+    .wrapper .Blokovi i {
+      width: auto;
+      font-size: 35px;
+      color: #ffffff;
+      margin-right: 15px;
+      display: table-cell;
+      vertical-align: middle; }
+  .wrapper .BlokoviNC {
+    background-color: transparent;
+    border: 2px solid #ffffff; }
   .wrapper #smallTable, .wrapper #smallTable1, .wrapper #smallTable2, .wrapper #smallTable3 {
     margin: 1% auto;
     width: 360px;
@@ -1124,6 +1161,10 @@ footer {
       width: 50%; }
       .wrapper #smallTable tr td:nth-child(even), .wrapper #smallTable1 tr td:nth-child(even), .wrapper #smallTable2 tr td:nth-child(even), .wrapper #smallTable3 tr td:nth-child(even) {
         text-align: right; }
+  .wrapper .tableFloat {
+    width: 360px;
+    height: auto;
+    margin: 1% auto; }
   .wrapper #wrapperFooter {
     width: 100%;
     max-width: 380px;
@@ -1171,11 +1212,86 @@ footer {
 #FirstPage .wrapperMid {
   margin-bottom: 10%; }
 
-#pageseven, #pageeight, #pagenine {
+#pageseven, #pagenine {
   padding-bottom: 0%; }
 
 #pageten, #pagesix, #pagefive, #lastPage {
   padding-bottom: 9%; }
+
+#pageeight {
+  padding-bottom: 2%; }
+  #pageeight h1 {
+    margin-bottom: 15%; }
+
+#pagenine {
+  padding-bottom: 2%;
+  padding-top: 5%; }
+  #pagenine h1 {
+    margin-bottom: 10%; }
+
+#pagesix {
+  padding-bottom: 10%; }
+  #pagesix h1 {
+    margin-bottom: 30%; }
+  #pagesix .goBack {
+    margin-top: 30%; }
+
+#lastPage {
+  padding-bottom: 10%; }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .wrapper .wrapperWider {
+    width: 395px; }
+  .wrapper .wrapperForm {
+    width: 440px; }
+  .wrapper .radioBlock {
+    width: 230px !important; }
+  .wrapper .radioBlock1 {
+    width: 120px !important; }
+  .wrapper .tableFloat {
+    float: left;
+    margin-left: 2%;
+    width: 47.2%; }
+    .wrapper .tableFloat #smallTable3 {
+      margin-top: 6.5%; } }
+
+@media (max-width: 768px) {
+  .wrapper .wrapperWider {
+    width: 395px; }
+  .wrapper .wrapperForm {
+    width: 440px; }
+  .wrapper .radioBlock {
+    width: 230px !important; }
+  .wrapper .radioBlock1 {
+    width: 120px !important; }
+  .wrapper .tableFloat {
+    float: left;
+    margin-left: 2%; }
+    .wrapper .tableFloat #smallTable3 {
+      margin-top: 6.5%; }
+  #pagefour {
+    padding-bottom: 14%;
+    padding-top: 14%; }
+  #pageeight {
+    padding-bottom: 0%; }
+    #pageeight .wrapperForm {
+      width: 360px !important; }
+    #pageeight .radioForms {
+      width: 360px !important; }
+  #pagenine {
+    padding-bottom: 0%; }
+  #pageten {
+    padding-bottom: 11%; }
+    #pageten .wrapperWider {
+      width: 360px; } }
+
+@media (min-width: 376px) and (max-width: 765px) {
+  .wrapper .wrapperForm {
+    width: 400px; }
+  .wrapper .tableFloat {
+    margin-left: 6%; }
+  #pageten, #lastPage {
+    padding-bottom: 12%; } }
 
 @media (max-width: 375px) {
   .wrapper .wrapperMid {
@@ -1252,11 +1368,11 @@ footer {
     margin-bottom: 30%; }
   #pagesix .goBack {
     margin-top: 30%; }
-  #pageeight h1 {
-    margin-bottom: 15%; }
   #pagenine h1 {
     margin-bottom: 15%;
-    padding-top: 10%; } }
+    padding-top: 10%; }
+  #lastPage {
+    padding-bottom: 11%; } }
 
 /* Search homes styling
     - We're making our own grid, yaay!
