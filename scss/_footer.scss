@@ -14,9 +14,9 @@ footer {
             h3 {
                 font-family: $bold-font-family;
                 color: #4a505d;
-                font-size: 17px;
+                font-size: 15px;
                 font-weight: 500;
-                line-height: 30px;  
+                line-height: 19px;  
                 text-align: left;
                 text-transform: uppercase;
             }
@@ -33,15 +33,15 @@ footer {
                 text-align: left;
                 padding: 0px 0px;
                 li {
-                    &:nth-child(n+5) {
+                    &:nth-child(n+4) {
                         display: none;
                     }
                     a {
                         font-family: $default-font-family;
                         color:  #78869c;
-                        font-size: 16px;
+                        font-size: 15px;
                         font-weight: 300;
-                        line-height: 30px;
+                        line-height: 20px;
                         text-align: left;
                         opacity: 1;
                         transition: opacity 0.3s ease;
@@ -64,11 +64,10 @@ footer {
                     margin-right: 5px;
                 }
                 span {
-                    font-family: $default-font-family;
+                    font-family: $bold-font-family;
                     color:  #00aced;
-                    font-size: 15px;
-                    font-weight: 600;
-                    line-height: 60px;
+                    font-size: 14px;
+                    line-height: 50px;
                     text-align: left;
                     text-transform: uppercase;
                 }
@@ -76,6 +75,7 @@ footer {
                 &:focus,
                 &:active {
                     opacity: 0.7;
+                    cursor: pointer;
                 }
             }
         }

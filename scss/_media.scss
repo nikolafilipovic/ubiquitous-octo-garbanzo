@@ -9,6 +9,7 @@
         width: 80%;
     }
     .main-header {
+        padding-bottom: 40px;
         .logo {
             margin-top: -40px;
             &.slide {
@@ -79,6 +80,11 @@
             p {
                 max-width: 75%;
                 margin-bottom: 0px;
+            }
+            &:last-child {
+                .separator {
+                    display: none;
+                }
             }
         }
     }

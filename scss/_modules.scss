@@ -150,19 +150,19 @@
                 float: right;
                 position: relative;
                 color: #00aced;
-                right: 5%;
+                right: 1%;
                 font-size: 17px;
                 transition: right .3s ease;
                 &:hover,
                 &:focus,
                 &:active {
-                    right: 2%;
+                    right: 0%;
                 }
             }
             h1 {
                 font-family: $default-font-family;
                 color: #00aced;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 400;
                 text-align: left;
                 display: inline-block;
@@ -180,24 +180,19 @@
         p {
             font-family: $light-font-family;
             color:#929baf;
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 300;
             text-align: left;
             margin-bottom: 15px;
         }
     }
-    .col-link:last-child {
-        .separator {
-            display: none;
-        }
-    }
 }
 .property-slider {
     .property-item {
-        padding-top: 9px;
-        padding-bottom: 9px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
         border-radius: 5px;
         cursor: pointer;
         &:before {
@@ -215,8 +210,7 @@
         .time-on-market {
             font-family: $default-font-family;
             color: #ffffff;
-            font-size: 16px;
-            font-weight: 500;
+            font-size: 15px;
             line-height: 26px;
             text-align: left;
             text-shadow: 0px 0px 0px rgba(29, 38, 63, 0.41);
@@ -228,41 +222,39 @@
         .sale-type {
             font-family: $bold-font-family;
             color: #ffffff;
-            font-size: 15px;
-            font-weight: 500;
+            font-size: 14px;
             text-transform: uppercase;
-            line-height: 26px;
+            line-height: 30px;
             text-align: left;
             text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
-            margin-top: 95px;
+            margin-top: 85px;
             display:  block;
             z-index: 0;
             position: relative;
         }
         .property-price {
-            font-family: $light-font-family;
+            font-family: $default-font-family;
             color: #ffffff;
-            font-size: 31px;
-            font-weight: 400;
-            line-height: 20px;
+            font-size: 29px;
             text-align: left;
             text-shadow: 0px 3px 5.7px rgba(29, 38, 63, 0.48);
             text-transform: uppercase;
             display: inline-block;
             z-index: 0;
             position: relative;
+            padding-bottom: 0;
         }
         .property-info {
             display: inline-block;
             float: right;
+            margin-top: 5px;
             .beds,
             .baths,
             .sqft {
                 font-family: $light-font-family;
                 color: #ffffff;
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 400;
-                line-height: 26px;
                 text-align: left;
                 text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
                 z-index: 0;
@@ -279,12 +271,9 @@
             }
         }
         .property-address {
-            margin-top: 5px;
-            font-family: $light-font-family;
+            font-family: $default-font-family;
             color: #ffffff;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 20px;
+            font-size: 13px;
             text-align: left;
             text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
             z-index: 0;
