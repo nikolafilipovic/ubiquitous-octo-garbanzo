@@ -1,17 +1,18 @@
 .wrapper {
-//    font-family: $bold-font-family;
+//  font-family: $bold-font-family;
 //  background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
 //  background: -moz-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
 //  background: -o-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
 //  background: -ms-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
 //  background: linear-gradient(0deg, #a4d2f4 0%, #80c6f2 100%);
+    background: #00aced;
     background-image: url('/wp-content/themes/theoffercompany/images/make-offer-bg.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom center;
-        height: 100vh;
-  width: 100%;
-  height: auto;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom center;
+    height: 100vh;
+    width: 100%;
+    height: auto;
     .cleaner{
     clear: both;
   }
@@ -97,6 +98,7 @@
                     padding-top: 1%;
                     &:hover{
                         background-color: #edeeef;
+                        transition: 0.3s ease;
                         cursor: pointer;
                         .formArrow{
                             i{
