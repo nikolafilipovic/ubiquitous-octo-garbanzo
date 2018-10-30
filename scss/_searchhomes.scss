@@ -2,7 +2,7 @@
     - We're making our own grid, yaay!
 ------------------------------------------------------- */
 #search-homes {
-    margin: 20px 0px;
+    margin-top: 20px;
     .form-control {
         &.search {
             display: inline-block;
@@ -18,22 +18,22 @@
         h3 {
             font-family: $bold-font-family;
             color:  #1e232c;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             line-height: 30px;
             text-align: left;
             text-transform: uppercase;
             margin-top: 5px;
-            margin-bottom: 5px;
+            margin-bottom: 0px;
             padding: 0;
         }
         .btn {
             width: 100%;
             text-align: left;
-            padding: 12px 10px;
-            font-family: $light-font-family;
+            padding: 10px 10px;
+            font-family: $default-font-family;
             color:  #1e232c;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 300;
             text-align: left;
             background: #fff;
@@ -113,9 +113,9 @@
                   border-radius: 3px;
                   transition: background 0.3s ease;
                 }
-                &:hover + label:before {
+                /*&:hover + label:before {
                   background: #00aced;
-                }
+                }*/
                 &:checked + label:before {
                   background: #00aced;
                 }
@@ -144,9 +144,9 @@
             margin-top: 0.60rem;
             border: none;
             .dropdown-item {
-                font-family: $light-font-family;
+                font-family: $default-font-family;
                 color:  #1e232c;
-                font-size: 17px;
+                font-size: 15px;
                 font-weight: 300;
                 text-align: left;
             }
@@ -220,6 +220,47 @@
         }
         &.bedrooms {
             margin-left: 0%; 
+            .dropdown-wrapper {
+                width: 100%;
+                position: relative;
+                min-width: 15.5rem;
+                text-align: center;
+                .custom {
+                    background: #f5f8f9;
+                    display: inline-block;
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 50%;
+                    padding: 0;
+                    color: #7e8893;
+                    text-align: center;
+                    line-height: 2.8;
+                    margin: 0px 2px;
+                    transition: color 0.3s ease, background 0.3s ease;
+                    position: relative;
+                    font-size: 14px;
+                    font-family: $default-font-family;
+                    font-weight: 400;
+                    &:hover,
+                    &:active,
+                    &:focus,
+                    &.active {
+                        color: #fff;
+                        background: #00aced;
+                        cursor: pointer;
+                    }
+                }
+                .custom-checkbox {
+                    label {
+                        font-family: $default-font-family;
+                        color: #1e232c;
+                        font-size: 15px;
+                        font-weight: 300;
+                        text-align: left;
+                        padding: 5px 17px;
+                    }
+                }
+            }
         }
         &.hometype {
             margin-left: 2%;
@@ -232,13 +273,13 @@
         h3 {
             font-family: $bold-font-family;
             color:  #1e232c;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             line-height: 30px;
             text-align: left;
             text-transform: uppercase;
             margin-top: 5px;
-            margin-bottom: 5px;
+            margin-bottom: 0px;
             padding: 0;
         }
         .input-group {
@@ -279,11 +320,10 @@
         margin-right: -15px;
         margin-top: 20px;
         a {
-            font-family: $light-font-family;
+            font-family: $default-font-family;
             color:  #00aced;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 300;
-            line-height: 30px;
             text-align: left;
             margin-right: 10px;
             opacity: 1;
@@ -314,6 +354,7 @@
             border-radius: 0px;
             margin: 0 -15px;
             cursor: pointer;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%);
             /*&:before {
                 content: '';
                 position: absolute;
@@ -321,7 +362,7 @@
                 right: 0;
                 bottom: 0;
                 left: 0;
-                background-image: linear-gradient(to bottom, rgba(255,255,255,0) 42%, rgba(0,0,0,1) 100%);
+                
                 opacity: .6; 
                 border-radius: 0px;
                 cursor: pointer;
@@ -411,12 +452,12 @@
             position: relative;
             margin: 0 -15px;
             background: #00aced;
-            padding: 20px 0px;
+            padding: 25px 0px;
             text-align: center;
             h1 {
                 font-family: $light-font-family;
                 color:  #ffffff;
-                font-size: 26px;
+                font-size: 22px;
                 font-weight: 400;
                 line-height: 34px;
                 text-align: center;
@@ -424,14 +465,14 @@
             p {
                 font-family: $light-font-family;
                 color:  #ffffff;
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: 400;
                 line-height: 26px;
                 text-align: center;
             }
             .cta {
-                margin-top: 25px;
-                margin-bottom: 10px;
+                margin-top: 10px;
+                margin-bottom: 0px;
                 font-size: 14px;
                 background-color: #00aced;
                 border-color: #00aced;
@@ -447,38 +488,46 @@
     .pagination {
         padding: 10px 0px;
         text-align: center;
-        nav {
+        div {
+            display: block;
+            width: 100%;
             text-align: center;
-            li {
-                a {
-                    font-family: $default-font-family;
-                    
-                    font-size: 18px;
-                    font-weight: 500;
-                    text-align: center;
-                    line-height: 34px;
-                    padding: 0;
-                    background: #fff;
-                    color:  #373b43;
-                    border-radius: 50%;
-                    display: block;
-                    width: 34px;
-                    height: 34px;
-                    border: 0;
-                    margin: 0px 3px;
-                    transition: background 0.3s ease, color 0.3s ease;
-                    text-transform: uppercase;
-                    &:hover,
-                    &:active,
-                    &:focus {
-                        background: #00aced;
-                        color:  #ffffff;
-                    }
-                    &.next {
-                        border-radius: 0;
-                        width: auto;
-                        height: auto;
-                        padding: 0px 5px;
+            ul {
+                width: 100%;
+                display: block;
+                text-align: center;
+                clear: none;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    a {
+                        font-family: $default-font-family;
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 0;
+                        background: #fff;
+                        color:  #373b43;
+                        border-radius: 50%;
+                        display: block;
+                        width: 34px;
+                        line-height: 34px;
+                        height: 34px;
+                        border: 0;
+                        margin: 0px 2px;
+                        transition: background 0.3s ease, color 0.3s ease;
+                        text-transform: uppercase;
+                        &:hover,
+                        &:active,
+                        &:focus {
+                            background: #00aced;
+                            color:  #ffffff;
+                        }
+                        &.next {
+                            border-radius: 3px;
+                            width: auto;
+                            height: auto;
+                            padding: 0px 5px;
+                        }
                     }
                 }
             }

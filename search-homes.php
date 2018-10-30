@@ -18,7 +18,7 @@
                 <div class="dropdown listing">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="listingDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <input class="search-checkbox" id="listing" type="checkbox" value="Nothing">
-                        <label for="listing"><i class="fas fa-circle color red"></i>Listing type <i class="fas fa-angle-down"></i></label>
+                        <label for="listing"><i class="fas fa-circle color red"></i>Sale type <i class="fas fa-angle-down"></i></label>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="listingDropdown">
                         <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon" type="checkbox" value="Nothing"><label for="comingSoon">Coming soon</label></a>
@@ -71,9 +71,14 @@
                         Any <i class="fas fa-angle-down"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="bedroomsDropdown">
-                        <a class="dropdown-item" href="#">One</a>
-                        <a class="dropdown-item" href="#">Two</a>
-                        <a class="dropdown-item" href="#">Three</a>
+                        <div class="dropdown-wrapper">
+                            <a class="dropdown-item custom" href="#">Any</a>
+                            <a class="dropdown-item custom" href="#">+</a>
+                            <a class="dropdown-item custom" href="#">2+</a>
+                            <a class="dropdown-item custom" href="#">3+</a>
+                            <a class="dropdown-item custom" href="#">4+</a>
+                            <a class="dropdown-item custom-checkbox" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour">Use exact match</label></a>
+                        </div>
                     </div>
                 </div>
                 <div class="dropdown hometype">
@@ -102,14 +107,14 @@
             <!-- ovde ide mapa -->
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 property-list">
-                <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-1.png)">
+                <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-1.png)">
                     <span class="time-on-market">5 days on the market</span>
                     <span class="sale-type">House for Sale</span>
                     <h1 class="property-price">$425,000</h1>
                     <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
                     <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                 </div>
-                <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-2.png)">
+                <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-2.png)">
                     <span class="time-on-market">5 days on the market</span>
                     <span class="sale-type">House for Sale</span>
                     <h1 class="property-price">$425,000</h1>
@@ -123,7 +128,7 @@
                     </p>
                     <a href="" class="btn btn-primary btn-block cta">Save search <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-3.png)">
+                <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-3.png)">
                     <span class="time-on-market">5 days on the market</span>
                     <span class="sale-type">House for Sale</span>
                     <h1 class="property-price">$425,000</h1>
@@ -136,16 +141,16 @@
     <div class="container-fluid pagination">
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-            <nav aria-label="Pagination">
-                <ul class="pagination ">
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item"><a class="page-link next" href="#">Next</a></li>
-                </ul>
-            </nav>
+                <div>
+                    <ul class="pagination ">
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item"><a class="page-link next" href="#">Next</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
