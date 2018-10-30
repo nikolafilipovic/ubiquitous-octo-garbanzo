@@ -1,10 +1,15 @@
 .wrapper {
-    font-family: $bold-font-family;
-  background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: -moz-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: -o-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: -ms-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: linear-gradient(0deg, #a4d2f4 0%, #80c6f2 100%);
+//    font-family: $bold-font-family;
+//  background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+//  background: -moz-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+//  background: -o-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+//  background: -ms-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
+//  background: linear-gradient(0deg, #a4d2f4 0%, #80c6f2 100%);
+    background-image: url('/wp-content/themes/theoffercompany/images/make-offer-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+        height: 100vh;
   width: 100%;
   height: auto;
     .cleaner{
@@ -12,10 +17,11 @@
   }
     .wrapperTop{
         width: 100%;
-        height: 75px;
-        padding-top: 1%;
+        height: 60px;
+        padding-top: 1.5%;
         padding-left: 1%;
         padding-right: 1%;
+        margin-bottom: 10%;
             p{
               font-family: Graphik;
               color:  #ffffff;
@@ -26,6 +32,7 @@
                 a{
                     color: #ffffff;
                     text-decoration: none;
+                    font-family: $light-font-family;
                 }
             }
         }
@@ -87,7 +94,10 @@
                     max-width: 360px;
                     background-color: #ffffff;
                     border-radius: 10px;
+                    padding-top: 1%;
                     &:hover{
+                        background-color: #edeeef;
+                        cursor: pointer;
                         .formArrow{
                             i{
                                 transition: 0.3s ease;
@@ -394,7 +404,7 @@
                 }
                 i{
                     width: auto;
-                    font-size: 35px;
+                    font-size: 37px;
                     color: #ffffff;
                     margin-right: 15px;
                     display: table-cell;
@@ -594,6 +604,22 @@
 }
 @media (max-width:375px){
     .wrapper{
+        background-image: url('/wp-content/themes/theoffercompany/images/make-offer-bg-responsive.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+        height: 100vh;
+        .wrapperTop{
+            background-color: #ffffff;
+            padding-left: 15px;
+            p{
+              color: #00aced;
+            }
+            p a {
+                color: #00aced;
+                margin-left: 7px;
+            }
+        }
         .wrapperMid{
             width: 320px;
             h1{

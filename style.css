@@ -58,7 +58,8 @@ body {
 
 .under_header {
   margin-top: -140px;
-  padding-top: 140px !important; }
+  padding-top: 140px !important;
+  padding-bottom: 15px; }
 
 #page-container {
   left: 0px;
@@ -299,7 +300,7 @@ body {
   display: block;
   position: relative;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 5px;
   z-index: 99; }
   .main-header .logo {
     position: relative;
@@ -554,15 +555,15 @@ body {
       float: right;
       position: relative;
       color: #00aced;
-      right: 5%;
+      right: 1%;
       font-size: 17px;
       transition: right .3s ease; }
       .landing-links .col-link a i:hover, .landing-links .col-link a i:focus, .landing-links .col-link a i:active {
-        right: 2%; }
+        right: 0%; }
     .landing-links .col-link a h1 {
       font-family: "Graphik Regular", sans-serif;
       color: #00aced;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 400;
       text-align: left;
       display: inline-block; }
@@ -577,19 +578,16 @@ body {
   .landing-links .col-link p {
     font-family: "Graphik Light", sans-serif;
     color: #929baf;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 300;
     text-align: left;
     margin-bottom: 15px; }
 
-.landing-links .col-link:last-child .separator {
-  display: none; }
-
 .property-slider .property-item {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 5px;
   cursor: pointer; }
   .property-slider .property-item:before {
@@ -606,8 +604,7 @@ body {
   .property-slider .property-item .time-on-market {
     font-family: "Graphik Regular", sans-serif;
     color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px;
     line-height: 26px;
     text-align: left;
     text-shadow: 0px 0px 0px rgba(29, 38, 63, 0.41);
@@ -618,39 +615,37 @@ body {
   .property-slider .property-item .sale-type {
     font-family: "Graphik Medium", sans-serif;
     color: #ffffff;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 14px;
     text-transform: uppercase;
-    line-height: 26px;
+    line-height: 30px;
     text-align: left;
     text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
-    margin-top: 95px;
+    margin-top: 85px;
     display: block;
     z-index: 0;
     position: relative; }
   .property-slider .property-item .property-price {
-    font-family: "Graphik Light", sans-serif;
+    font-family: "Graphik Regular", sans-serif;
     color: #ffffff;
-    font-size: 31px;
-    font-weight: 400;
-    line-height: 20px;
+    font-size: 29px;
     text-align: left;
     text-shadow: 0px 3px 5.7px rgba(29, 38, 63, 0.48);
     text-transform: uppercase;
     display: inline-block;
     z-index: 0;
-    position: relative; }
+    position: relative;
+    padding-bottom: 0; }
   .property-slider .property-item .property-info {
     display: inline-block;
-    float: right; }
+    float: right;
+    margin-top: 5px; }
     .property-slider .property-item .property-info .beds,
     .property-slider .property-item .property-info .baths,
     .property-slider .property-item .property-info .sqft {
       font-family: "Graphik Light", sans-serif;
       color: #ffffff;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
-      line-height: 26px;
       text-align: left;
       text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
       z-index: 0;
@@ -664,12 +659,9 @@ body {
       z-index: 0;
       position: relative; }
   .property-slider .property-item .property-address {
-    margin-top: 5px;
-    font-family: "Graphik Light", sans-serif;
+    font-family: "Graphik Regular", sans-serif;
     color: #ffffff;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
+    font-size: 13px;
     text-align: left;
     text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
     z-index: 0;
@@ -714,9 +706,9 @@ footer {
       footer .upper-footer .footer-links h3 {
         font-family: "Graphik Medium", sans-serif;
         color: #4a505d;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 500;
-        line-height: 30px;
+        line-height: 19px;
         text-align: left;
         text-transform: uppercase; }
       footer .upper-footer .footer-links .menu-footer-menu-1-container {
@@ -730,14 +722,14 @@ footer {
         column-gap: 0px;
         text-align: left;
         padding: 0px 0px; }
-        footer .upper-footer .footer-links ul li:nth-child(n+5) {
+        footer .upper-footer .footer-links ul li:nth-child(n+4) {
           display: none; }
         footer .upper-footer .footer-links ul li a {
           font-family: "Graphik Regular", sans-serif;
           color: #78869c;
-          font-size: 16px;
+          font-size: 15px;
           font-weight: 300;
-          line-height: 30px;
+          line-height: 20px;
           text-align: left;
           opacity: 1;
           transition: opacity 0.3s ease; }
@@ -753,15 +745,15 @@ footer {
           font-size: 16px;
           margin-right: 5px; }
         footer .upper-footer .footer-links .more-link span {
-          font-family: "Graphik Regular", sans-serif;
+          font-family: "Graphik Medium", sans-serif;
           color: #00aced;
-          font-size: 15px;
-          font-weight: 600;
-          line-height: 60px;
+          font-size: 14px;
+          line-height: 50px;
           text-align: left;
           text-transform: uppercase; }
         footer .upper-footer .footer-links .more-link:hover, footer .upper-footer .footer-links .more-link:focus, footer .upper-footer .footer-links .more-link:active {
-          opacity: 0.7; }
+          opacity: 0.7;
+          cursor: pointer; }
   footer .bottom-footer {
     padding: 50px 0px;
     background: #4a505d; }
@@ -831,22 +823,22 @@ footer {
           opacity: 0.7; }
 
 .wrapper {
-  font-family: "Graphik Medium", sans-serif;
-  background: -webkit-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: -moz-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: -o-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: -ms-linear-gradient(90deg, #a4d2f4 0%, #80c6f2 100%);
-  background: linear-gradient(0deg, #a4d2f4 0%, #80c6f2 100%);
+  background-image: url("/wp-content/themes/theoffercompany/images/make-offer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
   width: 100%;
   height: auto; }
   .wrapper .cleaner {
     clear: both; }
   .wrapper .wrapperTop {
     width: 100%;
-    height: 75px;
-    padding-top: 1%;
+    height: 60px;
+    padding-top: 1.5%;
     padding-left: 1%;
-    padding-right: 1%; }
+    padding-right: 1%;
+    margin-bottom: 10%; }
     .wrapper .wrapperTop p {
       font-family: Graphik;
       color: #ffffff;
@@ -858,7 +850,8 @@ footer {
       text-align: left; }
       .wrapper .wrapperTop p a {
         color: #ffffff;
-        text-decoration: none; }
+        text-decoration: none;
+        font-family: "Graphik Light", sans-serif; }
   .wrapper .wrapperMid {
     width: 360px;
     height: auto;
@@ -908,10 +901,14 @@ footer {
       width: 100%;
       max-width: 360px;
       background-color: #ffffff;
-      border-radius: 10px; }
-      .wrapper .wrapperBlocks .formBlock:hover .formArrow i {
-        transition: 0.3s ease;
-        margin-left: 50%; }
+      border-radius: 10px;
+      padding-top: 1%; }
+      .wrapper .wrapperBlocks .formBlock:hover {
+        background-color: #edeeef;
+        cursor: pointer; }
+        .wrapper .wrapperBlocks .formBlock:hover .formArrow i {
+          transition: 0.3s ease;
+          margin-left: 50%; }
       .wrapper .wrapperBlocks .formBlock .formCircle {
         background-color: #00aced;
         width: 40px;
@@ -1144,7 +1141,7 @@ footer {
       vertical-align: middle; }
     .wrapper .Blokovi i {
       width: auto;
-      font-size: 35px;
+      font-size: 37px;
       color: #ffffff;
       margin-right: 15px;
       display: table-cell;
@@ -1294,76 +1291,90 @@ footer {
     padding-bottom: 12%; } }
 
 @media (max-width: 375px) {
-  .wrapper .wrapperMid {
-    width: 320px; }
-    .wrapper .wrapperMid h1 {
-      font-size: 28px;
-      font-weight: normal;
-      margin-bottom: 5%; }
-    .wrapper .wrapperMid h3 {
-      font-size: 15px;
-      font-weight: normal; }
-    .wrapper .wrapperMid h4 {
-      font-size: 16px;
-      font-weight: normal; }
-  .wrapper .wrapperWider {
-    width: 320px; }
-    .wrapper .wrapperWider h3 {
-      font-size: 16px;
-      font-weight: normal;
-      margin-bottom: 5%; }
-  .wrapper .wrapperBlocks {
-    width: 320px; }
-    .wrapper .wrapperBlocks .formBlock {
-      max-width: 320px;
-      height: 85px; }
-      .wrapper .wrapperBlocks .formBlock .formCircle {
-        margin: 6.5% 0% 0% 4%; }
-      .wrapper .wrapperBlocks .formBlock h4 {
-        margin-top: 9%;
-        width: 200px; }
-      .wrapper .wrapperBlocks .formBlock .formArrow {
-        height: 85px;
+  .wrapper {
+    background-image: url("/wp-content/themes/theoffercompany/images/make-offer-bg-responsive.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh; }
+    .wrapper .wrapperTop {
+      background-color: #ffffff;
+      padding-left: 15px; }
+      .wrapper .wrapperTop p {
+        color: #00aced; }
+      .wrapper .wrapperTop p a {
+        color: #00aced;
+        margin-left: 7px; }
+    .wrapper .wrapperMid {
+      width: 320px; }
+      .wrapper .wrapperMid h1 {
+        font-size: 28px;
+        font-weight: normal;
+        margin-bottom: 5%; }
+      .wrapper .wrapperMid h3 {
+        font-size: 15px;
+        font-weight: normal; }
+      .wrapper .wrapperMid h4 {
+        font-size: 16px;
+        font-weight: normal; }
+    .wrapper .wrapperWider {
+      width: 320px; }
+      .wrapper .wrapperWider h3 {
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 5%; }
+    .wrapper .wrapperBlocks {
+      width: 320px; }
+      .wrapper .wrapperBlocks .formBlock {
+        max-width: 320px;
+        height: 85px; }
+        .wrapper .wrapperBlocks .formBlock .formCircle {
+          margin: 6.5% 0% 0% 4%; }
+        .wrapper .wrapperBlocks .formBlock h4 {
+          margin-top: 9%;
+          width: 200px; }
+        .wrapper .wrapperBlocks .formBlock .formArrow {
+          height: 85px;
+          width: auto;
+          padding-left: 0%; }
+    .wrapper .wrapperForm {
+      width: 320px; }
+    .wrapper .personBlock {
+      width: 280px;
+      height: 120px; }
+      .wrapper .personBlock .iconBlock {
+        width: 75px;
+        height: 75px; }
+      .wrapper .personBlock .infoBlock {
+        height: 120px;
+        padding-left: 5%;
+        padding-top: 10%;
         width: auto;
-        padding-left: 0%; }
-  .wrapper .wrapperForm {
-    width: 320px; }
-  .wrapper .personBlock {
-    width: 280px;
-    height: 120px; }
-    .wrapper .personBlock .iconBlock {
-      width: 75px;
-      height: 75px; }
-    .wrapper .personBlock .infoBlock {
-      height: 120px;
-      padding-left: 5%;
-      padding-top: 10%;
-      width: auto;
-      line-height: 17px; }
-      .wrapper .personBlock .infoBlock h6 {
-        line-height: 0px; }
-      .wrapper .personBlock .infoBlock p {
-        line-height: 12px;
-        padding-bottom: 0em; }
-      .wrapper .personBlock .infoBlock span {
-        line-height: 10px; }
-  .wrapper .legend {
-    margin-left: 0%; }
-  .wrapper .radioForms {
-    width: 320px;
-    height: auto; }
-    .wrapper .radioForms .radioForm form {
-      display: flex; }
-      .wrapper .radioForms .radioForm form p {
-        margin-top: 5%; }
-  .wrapper .radioFormRight .radioForm form input {
-    margin-left: 10%; }
-  .wrapper #wrapperFooter {
-    border-radius: 0%; }
-  .wrapper #smallTable, .wrapper #smallTable1, .wrapper #smallTable2, .wrapper #smallTable3 {
-    width: 320px; }
-  .wrapper .buttons {
-    width: 320px; }
+        line-height: 17px; }
+        .wrapper .personBlock .infoBlock h6 {
+          line-height: 0px; }
+        .wrapper .personBlock .infoBlock p {
+          line-height: 12px;
+          padding-bottom: 0em; }
+        .wrapper .personBlock .infoBlock span {
+          line-height: 10px; }
+    .wrapper .legend {
+      margin-left: 0%; }
+    .wrapper .radioForms {
+      width: 320px;
+      height: auto; }
+      .wrapper .radioForms .radioForm form {
+        display: flex; }
+        .wrapper .radioForms .radioForm form p {
+          margin-top: 5%; }
+    .wrapper .radioFormRight .radioForm form input {
+      margin-left: 10%; }
+    .wrapper #wrapperFooter {
+      border-radius: 0%; }
+    .wrapper #smallTable, .wrapper #smallTable1, .wrapper #smallTable2, .wrapper #smallTable3 {
+      width: 320px; }
+    .wrapper .buttons {
+      width: 320px; }
   #pagesix h1 {
     margin-bottom: 30%; }
   #pagesix .goBack {
@@ -1777,14 +1788,16 @@ footer {
     width: 100%; }
   .et_pb_row {
     width: 80%; }
-  .main-header .logo {
-    margin-top: -40px; }
-    .main-header .logo.slide {
-      left: -320px; }
-    .main-header .logo #logo {
-      max-width: 100% !important; }
-  .main-header #menu-opener span {
-    display: block !important; }
+  .main-header {
+    padding-bottom: 40px; }
+    .main-header .logo {
+      margin-top: -40px; }
+      .main-header .logo.slide {
+        left: -320px; }
+      .main-header .logo #logo {
+        max-width: 100% !important; }
+    .main-header #menu-opener span {
+      display: block !important; }
   .under_header {
     padding-top: 164px !important; }
   .landing-search .search-choice {
@@ -1817,6 +1830,8 @@ footer {
     .landing-links .col-link p {
       max-width: 75%;
       margin-bottom: 0px; }
+    .landing-links .col-link:last-child .separator {
+      display: none; }
   .owl-prev {
     left: -50px; }
   .owl-next {
