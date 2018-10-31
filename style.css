@@ -637,25 +637,25 @@ body {
     padding-bottom: 0; }
   .property-slider .property-item .property-info {
     display: inline-block;
-    float: right;
     margin-top: 5px; }
     .property-slider .property-item .property-info .beds,
     .property-slider .property-item .property-info .baths,
     .property-slider .property-item .property-info .sqft {
       font-family: "Graphik Light", sans-serif;
       color: #ffffff;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 400;
       text-align: left;
       text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
       z-index: 0;
-      position: relative; }
+      position: relative;
+      vertical-align: text-bottom; }
     .property-slider .property-item .property-info i {
       color: #fff;
       font-size: 5px;
-      vertical-align: middle;
-      padding-left: 4px;
-      padding-right: 4px;
+      vertical-align: super;
+      padding-left: 3px;
+      padding-right: 3px;
       z-index: 0;
       position: relative; }
   .property-slider .property-item .property-address {
@@ -1415,7 +1415,7 @@ footer {
     #search-homes .dropdown .btn {
       width: 100%;
       text-align: left;
-      padding: 10px 10px;
+      padding: 10px 9px;
       font-family: "Graphik Regular", sans-serif;
       color: #1e232c;
       font-size: 15px;
@@ -1757,7 +1757,7 @@ footer {
     position: relative;
     margin: 0 -15px;
     background: #00aced;
-    padding: 25px 0px;
+    padding: 25px 10px;
     text-align: center; }
     #search-homes .property-list .cta-insert h1 {
       font-family: "Graphik Light", sans-serif;
@@ -1823,6 +1823,12 @@ footer {
               width: auto;
               height: auto;
               padding: 0px 5px; }
+  #search-homes .map-wrapper {
+    width: -webkit-fill-available;
+    display: block;
+    margin: 0 -15px;
+    position: relative;
+    height: 100%; }
 
 @media only screen and (min-width: 960px) {
   .container {

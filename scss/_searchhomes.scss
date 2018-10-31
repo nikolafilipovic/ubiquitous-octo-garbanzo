@@ -30,7 +30,7 @@
         .btn {
             width: 100%;
             text-align: left;
-            padding: 10px 10px;
+            padding: 10px 9px;
             font-family: $default-font-family;
             color:  #1e232c;
             font-size: 15px;
@@ -452,7 +452,7 @@
             position: relative;
             margin: 0 -15px;
             background: #00aced;
-            padding: 25px 0px;
+            padding: 25px 10px;
             text-align: center;
             h1 {
                 font-family: $light-font-family;
@@ -532,5 +532,12 @@
                 }
             }
         }
+    }
+    .map-wrapper {
+        width: -webkit-fill-available;
+        display: block;
+        margin: 0 -15px;
+        position: relative;
+        height: 100%;
     }
 }

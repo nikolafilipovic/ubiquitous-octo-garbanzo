@@ -12,7 +12,10 @@
 <div class="clearfix"></div>
 <div id="search-homes">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row d-xl-block d-lg-block d-md-block d-sm-none d-none desktop-fields">
+
+        </div>
+        <div class="row d-xl-none d-lg-none d-md-none d-sm-block d-block mobile-fields">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <input class="form-control search" type="search" placeholder="Search address, city or zip..." aria-label="Search">
                 <div class="dropdown listing">
@@ -103,8 +106,10 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-            <!-- ovde ide mapa -->
+            <div class="col-xl-6 d-xl-block col-lg-6 d-lg-block col-md-6 d-md-block col-sm-12 col-12 d-none">
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425342.1915312503!2d-112.40523308786538!3d33.605671055512104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C+AZ%2C+USA!5e0!3m2!1sen!2srs!4v1540947283725" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe><!-- ovde ide mapa -->
+                </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 property-list">
                 <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-1.png)">
@@ -138,7 +143,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid pagination">
+    <div class="container-fluid d-xl-none d-lg-none d-md-none d-sm-block d-block pagination">
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                 <div>
