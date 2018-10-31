@@ -10,10 +10,11 @@
     }
 </style>
 <div id="wrapper">
-    <div class="wrapper" id="pageone">
-      <div class="wrapperTop">
+    <div class="wrapperTop">
         <p><i class="fa fa-angle-left" aria-hidden="true"></i><a href="#"> Back</a></p>
       </div>
+    <div class="wrapper" id="pageone">
+      
       <div class="wrapperMid">
           <h1>Make an offer on</h1>
           <h2>11249 E Sonrisa Ave</h2>
@@ -58,6 +59,9 @@
 
           </div>
         </div>
+          <div class="cleaner">
+
+          </div>
     </div>
     </div>
     <!-- Novi block -->
@@ -86,7 +90,6 @@
         </div>
       </div>
     </div>
-
     <!-- Novi block -->
     <div class="wrapper" id="pagethree">
       <div class="wrapperMid">
@@ -114,12 +117,11 @@
         </div>
         <div class="infoBlock">
           <h6>Anette Brown</h6>
-          <p class="infoblockName">Licensed agent</p>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
           <p>602-448-7377</p>
           <span>anette@theofferco.com</span>
         </div>
@@ -129,7 +131,6 @@
       </div>
         <div class="cleaner"></div>
     </div>
-
     <!-- Novi block -->
     <div class="wrapper" id="pagefour">
       <div class="wrapperMid">
@@ -143,11 +144,11 @@
         <div class="infoBlock">
           <h6>Anette Brown</h6>
           <p class="infoblockName">Licensed agent</p>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
           <p>602-448-7377</p>
           <span>anette@theofferco.com</span>
         </div>
@@ -155,7 +156,6 @@
         </div>
       </div>
     </div>
-
     <!-- Novi block -->
     <div class="wrapper" id="pagefive">
       <div class="wrapperMid">
@@ -186,12 +186,11 @@
             </div>
           </div>
           <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-          <input type="submit" class="formSubmitFull" name="submit" value="Submit">
+            <button  class="formSubmitFull " type="submit">Submit<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </form>
 
       </div>
     </div>
-
     <!-- Novi block -->
     <div class="wrapper" id="pagesix">
       <div class="wrapperMid">
@@ -292,8 +291,8 @@
       </div>
       <div class="buttons">
         <form action="" method="post">
-          <input type="button" value=" &leftarrow; Back">
-          <input type="button" value=" Next &rightarrow;">
+          <button  class="formSubmitFull " type="submit"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
+          <button  class="formSubmitFull " type="submit">Next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </form>
       </div>
       <div id="wrapperFooter" class="">
@@ -319,8 +318,8 @@
         </div>
     <div class="buttons">
         <form action="" method="post">
-          <input type="button" value=" &leftarrow; Back">
-          <input type="button" value=" Next &rightarrow;">
+          <button  class="formSubmitFull " type="submit"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
+          <button  class="formSubmitFull " type="submit">Next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </form>
     </div>
     <div id="wrapperFooter" class="">
@@ -424,6 +423,7 @@
         </form>
     </div>
    </div>
+    <!-- novi block -->
    <div class="wrapper" id="lastPage">
       <div class="wrapperMid">
        <h1>Success! Thank you for submitting your offer for</h1>
@@ -437,11 +437,11 @@
         <div class="infoBlock">
           <h6>Anette Brown</h6>
           <p class="infoblockName">Licensed agent</p>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
           <p>602-448-7377</p>
           <span>anette@theofferco.com</span>
         </div>
@@ -449,6 +449,7 @@
       </div>
       <div id="button1"><a href="">Close</a></div>
    </div>
+    <!-- novi block -->
    <div class="wrapper" id="FirstPage">
       <div class="wrapperMid">
         <h1>Welcome!</h1>
@@ -474,11 +475,11 @@
         <div class="infoBlock">
           <h6>Anette Brown</h6>
           <p class="infoblockName">Licensed agent</p>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
-          <span class="fa fa-star" aria-hidden="true"></span>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
           <p>602-448-7377</p>
           <span>anette@theofferco.com</span>
         </div>

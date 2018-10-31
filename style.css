@@ -822,66 +822,68 @@ footer {
         footer .bottom-footer .footer-contact span a:hover, footer .bottom-footer .footer-contact span a:focus, footer .bottom-footer .footer-contact span a:active {
           opacity: 0.7; }
 
+.wrapperTop {
+  width: 100%;
+  height: 60px;
+  padding-top: 0.7%;
+  padding-left: 15px;
+  padding-right: 1%;
+  background-color: #7abeff; }
+  .wrapperTop p {
+    font-family: Graphik;
+    color: #ffffff;
+    font-size: 18px;
+    /* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 52px;
+    /* Approximation due to font substitution */
+    text-align: left; }
+    .wrapperTop p a {
+      color: #ffffff;
+      text-decoration: none;
+      font-family: "Graphik Light", sans-serif; }
+
 .wrapper {
-  background: #00aced;
+  background: #6bb7ff;
   background-image: url("/wp-content/themes/theoffercompany/images/make-offer-bg.png");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   background-position: bottom center;
   height: 100vh;
   width: 100%;
-  height: auto; }
+  padding-top: 10%; }
   .wrapper .cleaner {
     clear: both; }
-  .wrapper .wrapperTop {
-    width: 100%;
-    height: 60px;
-    padding-top: 1.5%;
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-bottom: 10%; }
-    .wrapper .wrapperTop p {
-      font-family: Graphik;
-      color: #ffffff;
-      font-size: 18px;
-      /* Approximation due to font substitution */
-      font-weight: 400;
-      line-height: 52px;
-      /* Approximation due to font substitution */
-      text-align: left; }
-      .wrapper .wrapperTop p a {
-        color: #ffffff;
-        text-decoration: none;
-        font-family: "Graphik Light", sans-serif; }
   .wrapper .wrapperMid {
     width: 360px;
     height: auto;
     margin: 0px auto;
     text-align: center; }
     .wrapper .wrapperMid h1 {
+      font-family: "Graphik Light", sans-serif;
       font-size: 30px;
       color: #ffffff;
-      font-weight: 400;
       transform: scaleY(1.0005); }
     .wrapper .wrapperMid h2 {
-      font-size: 30px;
+      font-family: "Graphik Medium", sans-serif;
+      font-size: 27px;
       color: #ffffff;
-      font-weight: 500;
       transform: scaleY(1.0005); }
     .wrapper .wrapperMid h3 {
+      font-family: "Graphik Light", sans-serif;
       font-size: 20px;
       color: #ffffff;
       font-weight: 500;
       transform: scaleY(1.0005); }
     .wrapper .wrapperMid h4 {
+      font-family: "Graphik Light", sans-serif;
       font-size: 18px;
       color: #ffffff;
-      font-weight: 400;
       transform: scaleY(1.0005); }
     .wrapper .wrapperMid hr {
       background-color: #ffffff;
-      width: 34px;
-      height: 4px; }
+      width: 20px;
+      height: 1px; }
     .wrapper .wrapperMid h5 {
       font-size: 15px;
       color: #ffffff;
@@ -895,7 +897,8 @@ footer {
   .wrapper .wrapperBlocks {
     width: 360px;
     height: auto;
-    margin: 0px auto; }
+    margin: 0px auto;
+    box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18); }
     .wrapper .wrapperBlocks .formBlock {
       margin: 0px auto;
       height: 100px;
@@ -920,18 +923,19 @@ footer {
         float: left; }
         .wrapper .wrapperBlocks .formBlock .formCircle i {
           margin: 23%;
-          font-size: 22px;
-          color: #ffffff; }
+          font-size: 18px;
+          color: #ffffff;
+          padding: 4%; }
         .wrapper .wrapperBlocks .formBlock .formCircle .faml {
           margin-left: 30%; }
         .wrapper .wrapperBlocks .formBlock .formCircle .farot {
           transform: rotateY(180deg); }
       .wrapper .wrapperBlocks .formBlock h4 {
+        font-family: "Graphik Regular", sans-serif;
         float: left;
         width: 200px;
-        font-size: 24px;
+        font-size: 21px;
         color: #000000;
-        font-weight: 400;
         margin-top: 10%;
         margin-left: 6%;
         transform: scaleY(1.0005); }
@@ -959,21 +963,22 @@ footer {
       width: 100%;
       height: auto; }
       .wrapper .wrapperForm form input {
-        width: 45%;
+        width: 49%;
         height: 40px;
         border-radius: 5px;
         color: #000000;
-        margin-bottom: 4%;
+        margin-bottom: 5%;
         border: none;
         padding-left: 3%;
         float: left; }
       .wrapper .wrapperForm form .formMR {
-        margin-right: 10%; }
+        margin-right: 2%; }
       .wrapper .wrapperForm form .formSubmitFull {
         background-color: #00aced;
         padding-left: 0%;
         width: 100%;
-        color: #ffffff; }
+        color: #ffffff;
+        margin-top: 2%; }
       .wrapper .wrapperForm form .formSubmitHalf {
         background-color: #00aced;
         padding-left: 0%;
@@ -990,7 +995,7 @@ footer {
       width: 100%;
       height: auto; }
       .wrapper .wrapperFormBigger form input {
-        width: 45%;
+        width: 49%;
         height: 40px;
         border-radius: 5px;
         color: #000000;
@@ -998,6 +1003,13 @@ footer {
         padding-left: 3%;
         border: none;
         float: left; }
+      .wrapper .wrapperFormBigger form button {
+        height: 40px;
+        border-radius: 5px;
+        border: none; }
+        .wrapper .wrapperFormBigger form button i {
+          margin-left: 10px;
+          font-size: 12px; }
     .wrapper .wrapperFormBigger .formFullWidth {
       width: 100%; }
   .wrapper .wrapperFormDekstop {
@@ -1052,11 +1064,16 @@ footer {
       padding-left: 10%;
       padding-top: 5%; }
     .wrapper .personBlock p {
-      color: #000000; }
+      color: #000000;
+      line-height: 11px; }
+    .wrapper .personBlock h6 {
+      font-size: 16.5px;
+      font-weight: bold; }
   .wrapper .goBack {
     margin: 0px auto;
     text-align: center; }
     .wrapper .goBack p a {
+      font-family: "Graphik Light", sans-serif;
       color: #ffffff;
       font-size: 19px; }
       .wrapper .goBack p a:hover i {
@@ -1119,17 +1136,27 @@ footer {
       width: 100%;
       height: 40px; }
       .wrapper .buttons form input {
-        width: 45%;
+        width: 46%;
         height: 40px;
-        margin: 0px 2.2%;
+        margin: 0px 1.75%;
         border: none;
         border-radius: 5px;
         background-color: #00aced;
         color: #ffffff; }
+      .wrapper .buttons form button {
+        width: 46%;
+        height: 40px;
+        margin: 0px 1.75%;
+        border: none;
+        border-radius: 5px;
+        background-color: #00aced;
+        color: #ffffff; }
+        .wrapper .buttons form button i {
+          margin: 0% 4%; }
   .wrapper .Blokovi {
     width: 360px;
     height: 50px;
-    margin: 2% auto;
+    margin: 4% auto;
     border-radius: 5px;
     background-color: #00aced;
     display: table;
@@ -1138,21 +1165,22 @@ footer {
       width: 93%;
       padding-left: 5%;
       color: #ffffff;
-      font-size: 17px;
+      font-size: 15px;
       display: table-cell;
       vertical-align: middle; }
     .wrapper .Blokovi i {
       width: auto;
-      font-size: 37px;
+      font-size: 29px;
       color: #ffffff;
       margin-right: 15px;
       display: table-cell;
       vertical-align: middle; }
   .wrapper .BlokoviNC {
     background-color: transparent;
-    border: 2px solid #ffffff; }
+    border: 2px solid #ffffff;
+    margin-bottom: 8%; }
   .wrapper #smallTable, .wrapper #smallTable1, .wrapper #smallTable2, .wrapper #smallTable3 {
-    margin: 1% auto;
+    margin: 0% auto;
     width: 360px;
     height: auto;
     color: #ffffff; }
@@ -1201,42 +1229,60 @@ footer {
   font-weight: normal;
   margin: 3% auto; }
 
-#pageone, #pagetwo, #pagethree, #pagefour, #pagefive, #pagesix, #pageseven, #pageeight, #pagenine, #pageten, #lastPage, #FirstPage {
-  padding-top: 15%;
-  padding-bottom: 13%; }
+#pageone .wrapperBlocks {
+  margin-top: 6%; }
 
-#pageone {
-  padding-top: 0%; }
+#pagetwo .wrapperBlocks {
+  margin-top: 30%; }
+
+#pagethree .personBlock {
+  margin-top: 16%; }
+
+#pagethree h1 {
+  width: 250px;
+  margin: 0px auto;
+  margin-bottom: 4%; }
+
+#pagethree .wrapperForm {
+  margin-top: 14%; }
+
+#pagefour h1 {
+  margin-bottom: 10%; }
+
+#pagefour .personBlock {
+  margin-top: 18%; }
+
+#pagefive h1 {
+  margin-bottom: 10%; }
+
+#pagefive h3 {
+  margin-bottom: 5%;
+  line-height: 24px; }
+
+#pagesix h1 {
+  margin-bottom: 12%; }
+
+#pageseven, #pageeight, #pagenine {
+  position: relative; }
 
 #FirstPage .wrapperMid {
   margin-bottom: 10%; }
 
-#pageseven, #pagenine {
-  padding-bottom: 0%; }
+#pageeight h1 {
+  margin-bottom: 5%; }
 
-#pageten, #pagesix, #pagefive, #lastPage {
-  padding-bottom: 9%; }
+#pagenine h1 {
+  margin-bottom: 6%; }
 
-#pageeight {
-  padding-bottom: 2%; }
-  #pageeight h1 {
-    margin-bottom: 15%; }
+#pagenine .wrapperMid {
+  margin-bottom: 10%; }
 
-#pagenine {
-  padding-bottom: 2%;
-  padding-top: 5%; }
-  #pagenine h1 {
-    margin-bottom: 10%; }
+#pageten h1 {
+  font-size: 25px;
+  margin-bottom: 4%; }
 
-#pagesix {
-  padding-bottom: 10%; }
-  #pagesix h1 {
-    margin-bottom: 30%; }
-  #pagesix .goBack {
-    margin-top: 30%; }
-
-#lastPage {
-  padding-bottom: 10%; }
+#pagesix .goBack {
+  margin-top: 20%; }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .wrapper .wrapperWider {
@@ -1266,64 +1312,48 @@ footer {
   .wrapper .tableFloat {
     float: left;
     margin-left: 2%; }
-    .wrapper .tableFloat #smallTable3 {
-      margin-top: 6.5%; }
   #pagefour {
     padding-bottom: 14%;
     padding-top: 14%; }
-  #pageeight {
-    padding-bottom: 0%; }
-    #pageeight .wrapperForm {
-      width: 360px !important; }
-    #pageeight .radioForms {
-      width: 360px !important; }
-  #pagenine {
-    padding-bottom: 0%; }
-  #pageten {
-    padding-bottom: 11%; }
-    #pageten .wrapperWider {
-      width: 360px; } }
+  #pageeight .wrapperForm {
+    width: 360px !important; }
+  #pageeight .radioForms {
+    width: 360px !important; }
+  #pageten .wrapperWider {
+    width: 360px; } }
 
 @media (min-width: 376px) and (max-width: 765px) {
   .wrapper .wrapperForm {
     width: 400px; }
   .wrapper .tableFloat {
-    margin-left: 6%; }
-  #pageten, #lastPage {
-    padding-bottom: 12%; } }
+    margin-left: 6%; } }
 
 @media (max-width: 375px) {
+  .wrapperTop {
+    background-color: #ffffff;
+    padding-left: 15px; }
+    .wrapperTop p {
+      color: #00aced; }
+    .wrapperTop p a {
+      color: #00aced;
+      margin-left: 7px; }
   .wrapper {
+    background: #7abeff;
     background-image: url("/wp-content/themes/theoffercompany/images/make-offer-bg-responsive.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: bottom center;
     height: 100vh; }
-    .wrapper .wrapperTop {
-      background-color: #ffffff;
-      padding-left: 15px; }
-      .wrapper .wrapperTop p {
-        color: #00aced; }
-      .wrapper .wrapperTop p a {
-        color: #00aced;
-        margin-left: 7px; }
     .wrapper .wrapperMid {
       width: 320px; }
-      .wrapper .wrapperMid h1 {
-        font-size: 28px;
-        font-weight: normal;
-        margin-bottom: 5%; }
       .wrapper .wrapperMid h3 {
-        font-size: 15px;
-        font-weight: normal; }
+        font-size: 15px; }
       .wrapper .wrapperMid h4 {
-        font-size: 16px;
-        font-weight: normal; }
+        font-size: 16px; }
     .wrapper .wrapperWider {
       width: 320px; }
       .wrapper .wrapperWider h3 {
         font-size: 16px;
-        font-weight: normal;
         margin-bottom: 5%; }
     .wrapper .wrapperBlocks {
       width: 320px; }
@@ -1350,14 +1380,18 @@ footer {
       .wrapper .personBlock .infoBlock {
         height: 120px;
         padding-left: 5%;
-        padding-top: 10%;
+        padding-top: 11%;
         width: auto;
-        line-height: 17px; }
+        line-height: 24px; }
         .wrapper .personBlock .infoBlock h6 {
           line-height: 0px; }
         .wrapper .personBlock .infoBlock p {
-          line-height: 12px;
+          line-height: 11px;
           padding-bottom: 0em; }
+        .wrapper .personBlock .infoBlock i {
+          line-height: 10px;
+          font-size: 9px;
+          color: #00aced; }
         .wrapper .personBlock .infoBlock span {
           line-height: 10px; }
     .wrapper .legend {
@@ -1372,20 +1406,15 @@ footer {
     .wrapper .radioFormRight .radioForm form input {
       margin-left: 10%; }
     .wrapper #wrapperFooter {
-      border-radius: 0%; }
+      border-radius: 0%;
+      position: absolute;
+      bottom: 0; }
     .wrapper #smallTable, .wrapper #smallTable1, .wrapper #smallTable2, .wrapper #smallTable3 {
       width: 320px; }
-    .wrapper .buttons {
-      width: 320px; }
-  #pagesix h1 {
-    margin-bottom: 30%; }
-  #pagesix .goBack {
-    margin-top: 30%; }
-  #pagenine h1 {
-    margin-bottom: 15%;
-    padding-top: 10%; }
-  #lastPage {
-    padding-bottom: 11%; } }
+  #pageten {
+    background-image: none; }
+    #pageten .wrapperWider {
+      width: 320px; } }
 
 /* Search homes styling
     - We're making our own grid, yaay!
