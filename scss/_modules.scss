@@ -246,26 +246,26 @@
         }
         .property-info {
             display: inline-block;
-            float: right;
             margin-top: 5px;
             .beds,
             .baths,
             .sqft {
                 font-family: $light-font-family;
                 color: #ffffff;
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 400;
                 text-align: left;
                 text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
                 z-index: 0;
                 position: relative;
+                vertical-align: text-bottom;
             }
             i {
                 color: #fff;
                 font-size: 5px;
-                vertical-align: middle;
-                padding-left: 4px;
-                padding-right: 4px;
+                vertical-align: super;
+                padding-left: 3px;
+                padding-right: 3px;
                 z-index: 0;
                 position: relative;
             }
