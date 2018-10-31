@@ -418,8 +418,8 @@
        <div class="cleaner"></div>
      <div class="buttons">
         <form action="" method="post">
-          <input type="button" value=" &leftarrow; Back">
-          <input type="button" value=" Submit offer &rightarrow;">
+          <button  class="formSubmitFull " type="submit"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
+          <button  class="formSubmitFull " type="submit">Submit offer<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </form>
     </div>
    </div>
