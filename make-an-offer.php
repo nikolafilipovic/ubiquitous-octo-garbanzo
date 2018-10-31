@@ -459,6 +459,7 @@
       </div>
       <div class="wrapperForm  ">
         <form class="" action="#" method="post">
+            <legend class="legend">Submitting agent</legend>
           <div class="wrapperFormText formInput">
             <input type="text" name="Name" class="formMR" value="Strahinja" placeholder="Name" />
           </div>
@@ -467,7 +468,7 @@
           </div>
           <input type="text" class="formFullWidth formMR" name="" value="" placeholder="Phone"/>
           <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-          <input type="submit" class="formSubmitFull" name="submit" value="Submit &rightarrow;">
+          <button  class="formSubmitFull " type="submit">Next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </form>
       </div>
       <div class="personBlock">
