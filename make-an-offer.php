@@ -106,7 +106,7 @@
         <div class="wrapperMid wrapperWider">
           <h3>Please provide the informaiton below and Annete will contact you within 5 minutes.</h3>
       </div>
-      <div class="wrapperForm  ">
+      <div class="wrapperForm ">
         <form class="" action="#" method="post">
           <div class="wrapperFormText formInput">
             <input type="text" name="Name" class="formMR" value="Strahinja" placeholder="Name" />
@@ -120,9 +120,7 @@
         </form>
       </div>
       <div class="personBlock">
-        <div class="iconBlock">
-            
-        </div>
+        <div class="iconBlock"></div>
         <div class="infoBlock">
           <h6>Anette Brown</h6>
           <i class="fa fa-star" aria-hidden="true"></i>
@@ -133,9 +131,7 @@
           <p>602-448-7377</p>
           <span>anette@theofferco.com</span>
         </div>
-        <div class="cleaner">
-
-        </div>
+        <div class="cleaner"></div>
       </div>
         <div class="cleaner"></div>
     </div>
@@ -146,9 +142,7 @@
         <h3>Anette Brown will contact you shortly.</h3>
       </div>
       <div class="personBlock">
-        <div class="iconBlock">
-
-        </div>
+        <div class="iconBlock"></div>
         <div class="infoBlock">
           <h6>Anette Brown</h6>
           <p class="infoblockName">Licensed agent</p>
@@ -160,8 +154,7 @@
           <p>602-448-7377</p>
           <span>anette@theofferco.com</span>
         </div>
-        <div class="cleaner">
-        </div>
+        <div class="cleaner"></div>
       </div>
     </div>
     <!-- Novi block -->
@@ -170,33 +163,29 @@
         <h1>Invite your agent</h1>
         <h3>We'll send your agent a link with your request to make an offer on this property.</h3>
       </div>
-      <div class="wrapperForm  wrapperFormBigger">
+      <div class="wrapperForm wrapperFormBigger">
         <form class="" action="#" method="post">
           <legend class="legend">Your informaiton</legend>
           <div class="wrapperFormText">
             <input type="text" name="Name" class="formMR" value="Strahinja" placeholder="Name" />
-            </div>
-            <div class="wrapperFormText">
-            <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
-           
           </div>
-          <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
+          <div class="wrapperFormText">
+            <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
+          </div>
+            <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
         </form>
-        
         <form class="" action="#" method="post">
           <legend class="legend">Your agents informaiton</legend>
           <div class="wrapperFormText">
             <input type="text" name="Name" class="formMR" value="" placeholder="Name" />
-            </div>
-            <div class="wrapperFormText">
+          </div>
+          <div class="wrapperFormText">
             <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
-            <div class="cleaner">
-            </div>
+            <div class="cleaner"></div>
           </div>
           <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-            <button  class="formSubmitFull " type="submit">Submit<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+          <button  class="formSubmitFull " type="submit">Submit<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </form>
-
       </div>
     </div>
     <!-- Novi block -->
@@ -219,7 +208,7 @@
             <div class="wrapperFormText">
                 <legend class="legend">Purchase price</legend>
                 <input type="text" class="formMR" name="purPrice" value="" placeholder="$"/>
-              </div>
+            </div>
             <div class="wrapperFormText">
                  <legend class="legend">Earnest money</legend>
                  <input type="text" class="" name="earnMoney" value="" placeholder="$"/>
@@ -245,13 +234,11 @@
           </form>
         </div>
         <div>
-          </div>
+        </div>
       </div>
       <div id="wrapperFooter" class="">
         <h3>Make an offer</h3>
-        <div id="footerIcons">
-          
-        </div>
+        <div id="footerIcons"></div>
         <div class="cleaner"></div>
       </div>
     </div>
@@ -291,7 +278,7 @@
         </div>
         <div class="cleaner"></div>
       </div>
-      <div class="radioForms ">
+      <div class="radioForms">
         <h5>Other terms</h5>
         <form action="" method="post">
           <input type="text" name="" id="" class="textForm" placeholder="Type here...">
@@ -305,8 +292,7 @@
       </div>
       <div id="wrapperFooter" class="">
         <h3>Make an offer</h3>
-        <div id="footerIcons">
-        </div>
+        <div id="footerIcons"></div>
         <div class="cleaner"></div>
       </div>
     </div>
@@ -332,9 +318,7 @@
     </div>
     <div id="wrapperFooter" class="">
         <h3>Make an offer</h3>
-        <div id="footerIcons">
-          
-        </div>
+        <div id="footerIcons"></div>
         <div class="cleaner"></div>
     </div>
    </div>
@@ -465,7 +449,7 @@
         <h2>1249 E Sonrisa Ave</h2>
         <h3>Mesa, AZ 85212</h3>
       </div>
-      <div class="wrapperForm  ">
+      <div class="wrapperForm">
         <form class="" action="#" method="post">
             <legend class="legend">Submitting agent</legend>
           <div class="wrapperFormText formInput">
