@@ -1,0 +1,76 @@
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  // to be dealt with... mobile first
+}
+
+.b-shadow {
+  box-shadow: 0px 6px 20px 1.75px rgba(10, 25, 40, 0.27);
+  //refactor everywhere!
+}
+
+.go-back {
+  background: white;
+  width: 100%;
+  padding: 30px 0;
+  font-size: 18.5px;
+  .fasback {
+    font-size: 18.5px;
+    padding: 0 16px;
+    color: $main-color;
+  }
+}
+
+figure {
+  margin-bottom: 0 !important;
+  background:white;
+  max-width:480px;
+}
+
+.lh-img {
+  position:relative;
+  span {
+    background: rgba(36, 44, 57, 0.7);
+    position: absolute;
+    color:white;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16.23px;
+    font-weight:bold;
+  }
+
+  span:first-child {
+    bottom: 15px;
+    right:15px;
+  }
+  
+  span:last-child {
+    top: 15px;
+    right:15px;
+  }
+}
+
+.offer-link-group {
+  width:100%;
+  .offer-link {
+    border-width: 0px !important;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 20px;
+    text-transform: uppercase;
+    margin: 1.5px 18px 9px;
+    width: 202px;
+    font-family: "Graphik Regular", Helvetica, Arial, Lucida, sans-serif !important;
+    background-color: $main-color;
+    a {
+      color: white;
+    }
+    .fasarrow {
+      color: white;
+      padding-left: 1em;
+    }
+  }
+}
+

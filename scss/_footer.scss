@@ -59,13 +59,13 @@ footer {
                 transition: opacity 0.3s ease;
                 display: block;
                 i {
-                    color:  #00aced;
+                    color:  $main-color;
                     font-size: 16px;
                     margin-right: 5px;
                 }
                 span {
                     font-family: $bold-font-family;
-                    color:  #00aced;
+                    color:  $main-color;
                     font-size: 14px;
                     line-height: 50px;
                     text-align: left;

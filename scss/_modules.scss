@@ -26,11 +26,11 @@
             cursor: pointer;
 
             &:hover {
-                background: #00aced;
+                background: $main-color;
                 box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
             }
             &.active {
-                background: #00aced;
+                background: $main-color;
                 box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
             }
             &.buy {
@@ -127,7 +127,7 @@
             text-align: center;
             i {
                 font-size: 26px;
-                color: #00aced;
+                color: $main-color;
             }
         }
     }
@@ -149,7 +149,7 @@
             i {
                 float: right;
                 position: relative;
-                color: #00aced;
+                color: $main-color;
                 right: 1%;
                 font-size: 17px;
                 transition: right .3s ease;
@@ -161,7 +161,7 @@
             }
             h1 {
                 font-family: $default-font-family;
-                color: #00aced;
+                color: $main-color;
                 font-size: 20px;
                 font-weight: 400;
                 text-align: left;
@@ -293,7 +293,7 @@
         &:hover,
         &:active,
         &:focus {
-            color: #00aced;
+            color: $main-color;
         }
     }
 }
@@ -308,7 +308,7 @@
         &:hover,
         &:active,
         &:focus {
-            color: #00aced;
+            color: $main-color;
         }
     }  
 }

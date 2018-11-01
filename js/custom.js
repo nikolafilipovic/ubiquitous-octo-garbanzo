@@ -35,6 +35,10 @@ function searchOption(option) {
 }
 /* Initialize the triggers */
 jQuery(document).ready(function(){
+    // to be replaced later
+    var openModal = jQuery("#open-modal");
+    
+
     jQuery( '#menu-opener' ).click(function() {
         openMenu();
     });
@@ -72,3 +76,5 @@ jQuery(document).ready(function(){
         }
     });
  })
+
+ 

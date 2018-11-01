@@ -109,8 +109,8 @@
             margin-top: 25px;
             margin-bottom: 10px;
             font-size: 14px;
-            background-color: #00aced;
-            border-color: #00aced;
+            background-color: $main-color;
+            border-color: $main-color;
             i {
                 font-size: 14px;
                 margin-left: 10px;
@@ -152,7 +152,7 @@
                     }
                     &.current_page_item {
                         a {
-                            color: #00aced;
+                            color: $main-color;
                             font-size: 19px;
                             padding-top: 10px;
                             padding-bottom: 10px;

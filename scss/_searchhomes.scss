@@ -55,14 +55,14 @@
             &:active,
             &:focus,
             &.active {
-                color: #00aced;
-                border-color:  #00aced;
+                color: $main-color;
+                border-color:  $main-color;
                 box-shadow: none;
                 .search-checkbox + label {
                     font-weight: bold;
                 }
                 .fas {
-                    color: #00aced;
+                    color: $main-color;
                 }
             }
             .search-checkbox {
@@ -98,7 +98,7 @@
                     float: initial;
                     vertical-align: middle;
                     margin-top: -3px;
-                    color: #00aced;
+                    color: $main-color;
                   }
                 }
                 & + label:before {
@@ -114,10 +114,10 @@
                   transition: background 0.3s ease;
                 }
                 &:hover + label:before {
-                  background: #00aced;
+                  background: $main-color;
                 }
                 &:checked + label:before {
-                  background: #00aced;
+                  background: $main-color;
                 }
                 &:checked + label:after {
                   content: '';
@@ -188,10 +188,10 @@
                   transition: background 0.3s ease;
                 }
                 &:hover + label:before {
-                  background: #00aced;
+                  background: $main-color;
                 }
                 &:checked + label:before {
-                  background: #00aced;
+                  background: $main-color;
                 }
                 &:checked label::after {
                   content: '';
@@ -280,7 +280,7 @@
         margin-top: 20px;
         a {
             font-family: $light-font-family;
-            color:  #00aced;
+            color:  $main-color;
             font-size: 16px;
             font-weight: 300;
             line-height: 30px;
@@ -410,7 +410,7 @@
             display: block;
             position: relative;
             margin: 0 -15px;
-            background: #00aced;
+            background: $main-color;
             padding: 20px 0px;
             text-align: center;
             h1 {
@@ -433,8 +433,8 @@
                 margin-top: 25px;
                 margin-bottom: 10px;
                 font-size: 14px;
-                background-color: #00aced;
-                border-color: #00aced;
+                background-color: $main-color;
+                border-color: $main-color;
                 outline: none !important;
                 box-shadow: none !important;
                 i {
@@ -471,7 +471,7 @@
                     &:hover,
                     &:active,
                     &:focus {
-                        background: #00aced;
+                        background: $main-color;
                         color:  #ffffff;
                     }
                     &.next {

@@ -13,19 +13,16 @@
 @import "_fonts";
 @import url("https://use.fontawesome.com/releases/v5.4.1/css/all.css");
 
-/* Some stupid variables
-------------------------------------------------------- */
-$default-font-family: "Graphik Regular", sans-serif;
-$light-font-family: "Graphik Light", sans-serif;
-$bold-font-family: "Graphik Medium", sans-serif;
 
 /* Importing all modules
 ------------------------------------------------------- */
-@import "_overrides";
-@import "_owlcarousel";
-@import "_menu";
-@import "_modules";
-@import "_footer";
-@import "_makeanoffer";
-@import "_searchhomes";
-@import "_media";
+@import "overrides";
+@import "variables";
+@import "owlcarousel";
+@import "menu";
+@import "modules";
+@import "footer";
+@import "makeanoffer";
+@import "searchhomes";
+@import "media";
+@import "list_homes";

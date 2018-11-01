@@ -42,8 +42,6 @@
   src: url("/wp-content/themes/theoffercompany/fonts/Graphik-Medium.eot");
   src: url("/wp-content/themes/theoffercompany/fonts/Graphik-Medium.woff") format("woff"), url("/wp-content/themes/theoffercompany/fonts/Graphik-Medium.ttf") format("truetype"), url("/wp-content/themes/theoffercompany/fonts/Graphik-Medium.svg") format("svg"); }
 
-/* Some stupid variables
-------------------------------------------------------- */
 /* Importing all modules
 ------------------------------------------------------- */
 body {
@@ -1867,3 +1865,61 @@ footer {
     margin-top: 0px; }
   footer .bottom-footer .footer-contact span {
     text-align: right; } }
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.b-shadow {
+  box-shadow: 0px 6px 20px 1.75px rgba(10, 25, 40, 0.27); }
+
+.go-back {
+  background: white;
+  width: 100%;
+  padding: 30px 0;
+  font-size: 18.5px; }
+  .go-back .fasback {
+    font-size: 18.5px;
+    padding: 0 16px;
+    color: #00aced; }
+
+figure {
+  margin-bottom: 0 !important;
+  background: white;
+  width: 480px; }
+
+.lh-img {
+  position: relative; }
+  .lh-img span {
+    background: rgba(36, 44, 57, 0.7);
+    position: absolute;
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16.23px;
+    font-weight: bold; }
+  .lh-img span:first-child {
+    bottom: 15px;
+    right: 15px; }
+  .lh-img span:last-child {
+    top: 15px;
+    right: 15px; }
+
+.offer-link-group {
+  width: 100%; }
+  .offer-link-group .offer-link {
+    border-width: 0px !important;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 20px;
+    text-transform: uppercase;
+    margin: 1.5px 18px 9px;
+    width: 202px;
+    font-family: "Graphik Regular", Helvetica, Arial, Lucida, sans-serif !important;
+    background-color: #00aced; }
+    .offer-link-group .offer-link a {
+      color: white; }
+    .offer-link-group .offer-link .fasarrow {
+      color: white;
+      padding-left: 1em; }
