@@ -52,3 +52,8 @@ function load_static() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' ); //Loading up Divi styles.
 }
 add_action( 'wp_enqueue_scripts', 'load_static' );
+/**
+ * Why wordpress can't you do everything?
+ * Adding custom CSS classes to <li> elements on the menu...
+ */
+require_once 'class-wp-bootstrap-navwalker.php';

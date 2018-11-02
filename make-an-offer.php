@@ -496,7 +496,6 @@
       </div>
    </div>
 </div> <!-- /WRAPPER ID-->
-
 <?php
     get_footer();
 ?>

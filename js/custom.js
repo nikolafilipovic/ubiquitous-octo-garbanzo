@@ -71,4 +71,11 @@ jQuery(document).ready(function(){
             }
         }
     });
+    if (jQuery(window).width() < 770) {
+        jQuery( "#before-cta" ).after(function() {
+            return '<div class="d-xl-none d-lg-none d-md-none d-sm-block d-block cta-insert"> <h1>Be the first to know!</h1> <p>New homes are getting added every 2 minutes. Save your search and be the first to know. </p> <a href="" class="btn btn-primary btn-block cta">Save search <i class="fas fa-arrow-right"></i></a> </div>';
+          });
+     }else{
+         return;
+     }
  })

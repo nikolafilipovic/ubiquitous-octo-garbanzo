@@ -21,12 +21,12 @@ class toc_landing_search extends ET_Builder_Module {
                     <span class="buy active">Buy</span><span class="sell">Sell</span><span class="estimate">Estimate</span>
                 </div>
                 <div class="search-field">
-                <div class="input-group buy" id="input-group">
-                    <input type="text" class="form-control" id="landing-search" placeholder="Enter address, neighborhood, city or zip...">
-                    <div class="input-group-prepend">
-                    <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
-                </div>
-                </div>
+					<div class="input-group buy" id="input-group">
+						<input type="text" class="form-control" id="landing-search" placeholder="Enter address, neighborhood, city or zip...">
+						<div class="input-group-prepend">
+							<div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
+						</div>
+					</div>
                 </div>
 			</div>'
 		);
