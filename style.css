@@ -1866,55 +1866,73 @@ footer {
   footer .bottom-footer .footer-contact span {
     text-align: right; } }
 
+.lh-wrapper {
+  max-width: 1024px;
+  margin: 0 auto; }
+
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
 .b-shadow {
-  box-shadow: 0px 6px 20px 1.75px rgba(10, 25, 40, 0.27); }
+  box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27); }
 
-.go-back {
+.row.row-without-margins {
+  margin: 0 !important; }
+
+.modal-menu {
   background: white;
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 0 30px 16px;
   font-size: 18.5px; }
-  .go-back .fasback {
+  .modal-menu .fasback {
     font-size: 18.5px;
     padding: 0 16px;
     color: #00aced; }
 
-figure {
+figure.lh-img-holder {
   margin-bottom: 0 !important;
-  background: white;
-  width: 480px; }
+  position: relative;
+  margin: 0 !important; }
 
-.lh-img {
-  position: relative; }
-  .lh-img span {
-    background: rgba(36, 44, 57, 0.7);
-    position: absolute;
-    color: white;
-    border-radius: 5px;
-    padding: 12px;
-    font-size: 16.23px;
-    font-weight: bold; }
-  .lh-img span:first-child {
-    bottom: 15px;
-    right: 15px; }
-  .lh-img span:last-child {
-    top: 15px;
-    right: 15px; }
+[class^="col-"].lh-img {
+  padding: 0 !important; }
+
+.lh-img-holder img {
+  display: block; }
+
+.lh-img-holder span {
+  background: rgba(36, 44, 57, 0.7);
+  position: absolute;
+  color: white;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16.23px;
+  font-weight: bold; }
+
+.lh-img-holder span:first-child {
+  bottom: 15px;
+  right: 15px; }
+
+.lh-img-holder span:last-child {
+  top: 15px;
+  right: 15px; }
+
+.fasarrow {
+  font-size: .9rem; }
 
 .offer-link-group {
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .offer-link-group .offer-link {
     border-width: 0px !important;
     display: inline-block;
     border-radius: 5px;
-    font-size: 15px;
-    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
     text-transform: uppercase;
-    margin: 1.5px 18px 9px;
+    margin: 10px 15px;
     width: 202px;
     font-family: "Graphik Regular", Helvetica, Arial, Lucida, sans-serif !important;
     background-color: #00aced; }
@@ -1923,3 +1941,50 @@ figure {
     .offer-link-group .offer-link .fasarrow {
       color: white;
       padding-left: 1em; }
+
+.lh-info-imp {
+  font-weight: 600; }
+
+.red-dot {
+  height: 10px;
+  width: 10px;
+  padding: 0 !important;
+  background-color: crimson;
+  border-radius: 50%; }
+
+.lh-info-wrapper {
+  color: black;
+  margin-top: 1.87em;
+  padding-left: 1.87em; }
+  .lh-info-wrapper p {
+    padding: 0;
+    font-size: 1.1rem; }
+  .lh-info-wrapper span {
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 1.2rem 0; }
+  .lh-info-wrapper span.small-dot {
+    margin: 0 .5rem;
+    font-weight: 100; }
+  .lh-info-wrapper .small-imp {
+    font-size: .9rem;
+    padding-left: .3em;
+    padding: 0; }
+  .lh-info-wrapper .large-link {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .5em 0; }
+    .lh-info-wrapper .large-link .fasarrow {
+      padding-left: .5em; }
+  .lh-info-wrapper a.lh-info-imp {
+    padding: 0;
+    margin: 1.3rem 0; }
+  .lh-info-wrapper .lh-money {
+    margin-top: .5rem;
+    padding-bottom: 0; }
+  .lh-info-wrapper .lh-house {
+    margin-bottom: 1.3rem; }
+
+.more-imgs {
+  background: crimson; }
