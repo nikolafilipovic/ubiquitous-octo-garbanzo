@@ -366,7 +366,10 @@
    </div>
    <!-- novi block -->
    <div class="wrapper" id="pageten">
-     <div class="wrapperMid">
+     <div class="container-fluid h-100">
+        <div class="row h-100">
+             <div class="col-12 my-auto">
+                <div class="wrapperMid">
        <h1>Verify your offer details</h1>
      </div>
     <div class="tableFloat">
@@ -456,6 +459,9 @@
           <button  class="formSubmitFull " type="submit">Submit offer<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </form>
     </div>
+             </div>
+        </div>  
+     </div>
    </div>
     <!-- novi block -->
    <div class="wrapper" id="lastPage">
