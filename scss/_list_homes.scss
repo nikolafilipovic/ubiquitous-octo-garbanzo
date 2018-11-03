@@ -119,6 +119,7 @@ figure.lh-img-holder {
     font-size: 1.1rem;
     display:inline-block;
     padding: 1.2rem 0;
+    font-weight: 600;
     @include respond-to(desktop) {
       padding: 0.5rem 0;
     }
@@ -153,7 +154,7 @@ figure.lh-img-holder {
     padding-bottom: 0;
   }
   .lh-map {
-    padding-right: 3.33em;
+    padding-right: 25px;
     justify-content: flex-end;
     @include respond-to('desktop') {
       padding-right: 0;
@@ -165,8 +166,37 @@ figure.lh-img-holder {
       height: 120px;
     }
   }
-  .lh-house {
-    margin-bottom: 1.3rem;
+  .lh-house-details {
+    .lh-house {
+      margin-bottom: 1.3rem;
+      &--desktop {
+        margin-top: 2rem;
+      }
+    }
+    .agent-phone {
+      transform: rotate(90deg);
+      color: white;
+      background: $main-color;
+      padding: .8em;
+      border-radius: 50%;
+      font-size: 16px;
+      &-text {
+        font-size: 1.2rem;
+        margin-left: 0.6em;
+      }
+    }
+    .agent-text {
+      margin-left: 1.4em;
+      color: white;
+      background: $main-color;
+      padding: .8em;
+      border-radius: 50%;
+      font-size: 16px;
+      &-text {
+        font-size: 1.2rem;
+        margin-left: 0.6em;
+      }
+    }
   }
 }
 

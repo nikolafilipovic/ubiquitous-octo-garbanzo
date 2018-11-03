@@ -20,14 +20,33 @@ Template Name: List Homes
           <img src="/wp-content/themes/theoffercompany/images/pexels-photo-259593.jpeg" alt="Propery-1">
           <figcaption class="d-md-none">
             <span>Virtual tour</span>
-            <span>1 / 27</span> 
-            <!-- to be hidden in desktop mode -->
+            <span>1 / 27</span>
           </figcaption> 
         </figure>
       </div>
 
       <div class="col-12 col-md-5 d-none d-md-block more-imgs">
-        <!-- 4 imgs -->
+        <div class="row no-gutters lh-pictures">  
+          <div class="col-6"><div class="pl"></div></div>
+          <div class="col-6"><div class="pl"></div></div>
+          <div class="col-6"><div class="pl"></div></div>
+          <div class="col-6"><div class="pl"></div></div>
+<!--
+          <div class="col-6">
+            <img src="/wp-content/themes/theoffercompany/images/property2.png" alt='prop1'/>
+          </div>
+          <div class="col-6">
+            <img src="/wp-content/themes/theoffercompany/images/property3.png" alt='prop1'/>
+          </div>
+          <div class="col-6">
+            <img src="/wp-content/themes/theoffercompany/images/property4.png" alt='prop1'/>
+          </div>
+          <div class="col-6">
+            <img src="/wp-content/themes/theoffercompany/images/property5.png" alt='prop1'/>
+          </div>
+          </div>
+-->
+        </div>
       </div>
     </div>
 
@@ -54,6 +73,12 @@ Template Name: List Homes
             <span>2 ba </span> 
             <span class="small-dot">&#8226;</span> 
             <span>1,209 sqft </span> 
+
+            <div class="d-none d-md-block lh-house-details">
+              <p class="lh-house lh-house--desktop">Open House <strong>Fri, Oct 12  &#8226; 11:00am - 2:00pm</strong></p>
+              <i class="fas fa-phone agent-phone"></i><strong class="agent-phone-text">Call Agent</strong>
+              <i class="fas fa-comment-alt agent-text"></i><strong class="agent-phone-text">Text Agent</strong>
+            </div>
           </div>
 
           <div class="col-12 col-md-5">
@@ -72,11 +97,9 @@ Template Name: List Homes
             </div>
           </div>
         </div>
-       
+        <p class="lh-house d-md-none">Open House <strong>Fri, Oct 12  &#8226; 11:00am - 2:00pm</strong></p>
       </div>
     </div>
-
-
     <!-- container fluid -->
   </div>
   <!-- lh-wrapper -->

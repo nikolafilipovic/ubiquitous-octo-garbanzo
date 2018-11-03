@@ -87,7 +87,206 @@
             font-family: $bold-font-family;
             color: #898989;
             font-size: 17px;
-            font-weight: 600;
+            font-weight: 500;
+            text-align: left;
+            text-transform: uppercase;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .close-menu {
+            float: right;
+            font-size: 32px;
+            color: #898989;
+            vertical-align: middle;
+            margin-top: -6px;
+            &:hover,
+            &:active,
+            &:focus {
+                cursor: pointer;
+            }
+        }
+        .nav-login-btn {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            background-color: #00aced;
+            border-color: #00aced;
+            i {
+                font-size: 14px;
+                margin-left: 10px;
+            }
+        }
+        .navigation {
+            ul {
+                .menu-item {
+                    border-bottom: 1px solid #eee;
+                    a {
+                        font-family: $bold-font-family;
+                        font-size: 17px;
+                        font-weight: 500;
+                        color: #1e232c;
+                        padding-top: 10px;
+                        padding-bottom: 5px;
+                        display: block;
+                        opacity: 1;
+                        transition: opacity 0.3s ease;
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            opacity: 0.7;
+                        }
+                    }
+                    ul.sub-menu {
+                        li {
+                            border-bottom: none;
+                            a {
+                                font-family: $light-font-family;
+                                font-size: 16px;
+                                color: #898989;
+                                font-weight: 400;
+                                padding-left: 5px;
+                                padding-top: 3px;
+                                padding-bottom: 3px;
+                            }
+                        }
+                    }
+                    &.current_page_item {
+                        a {
+                            color: #00aced;
+                            font-size: 19px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            display: block;
+                        }
+                    }
+                    &:last-child {
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.listing-header {
+    .navbar {
+        background: #fff;
+        box-shadow: 0px 0px 6.65px 0.35px rgba(10, 25, 40, 0.16);
+        .navbar-brand {
+            width: 15%;
+            margin-right: 0px;
+        }
+        .navbar-nav {
+            .nav-item {
+                a.nav-link {
+                    font-family: $default-font-family;
+                    color:  #ffffff;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-align: left;
+                }
+            }
+        }
+        .search-mobile-field {
+            margin: 0;
+            width: 82%;
+            margin-top: 2px;
+            border-left: 1px solid #d6dce6;
+            .homes-search-field-mobile {
+                #homes-search-mobile-field {
+                    font-family: $default-font-family;
+                    color:  #1e232c;
+                    background: #fff;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-align: left;
+                    padding: 24px 10px;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    outline: none !important;
+                    border: 0px;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        outline: none !important;
+                        box-shadow: none; 
+                    }
+                }
+                .input-group-text {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    outline: none !important;
+                    border: 0px;
+                    background: #fff;
+                    text-align: center;
+                    i {
+                        font-size: 19px;
+                        color: #00aced;
+                    }
+                }
+            }
+        }
+    }
+    #menu-opener,
+    #desktop-icon  {
+        width: 40px;
+        height: 40px;
+        background: url(/wp-content/themes/theoffercompany/images/menu_icon.png);
+        background-position: center center;
+        background-size: contain;
+        display: inline-block;
+        left: 5px;
+        position: relative;
+        z-index: 99;
+        opacity: 1;
+        transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.8s cubic-bezier(0.77, 0, 0.175, 1),box-shadow 0.3s ease;
+        border-radius: 50%;
+        visibility: visible;
+        &:hover,
+        &:active,
+        &:focus {
+            cursor: pointer;
+            box-shadow: 0em 0.5em 0.5em rgba(0, 0, 0, 0.1);
+        }
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    #menu-opener {
+        background: url(/wp-content/themes/theoffercompany/images/menu_icon_blue.png);
+        background-position: center center;
+        background-size: contain;
+    }
+    #desktop-icon.hide,
+    #menu-opener.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .et_slide_in_menu_container #mobile_menu_slide li a, 
+    .et_slide_in_menu_container #mobile_menu_slide li.current-menu-item a {
+        color: #000;
+    }
+    .slide-out-container {
+        height: 100%;
+        width: 320px;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: -320px;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+        padding: 40px;
+        &.open {
+            left: 0;
+        }
+        p.menu-title {
+            font-family: $bold-font-family;
+            color: #898989;
+            font-size: 17px;
+            font-weight: 500;
             text-align: left;
             text-transform: uppercase;
             display: inline-block;
@@ -121,9 +320,9 @@
                 .menu-item {
                     border-bottom: 1px solid #eee;
                     a {
-                        font-family: $default-font-family;
-                        font-size: 18px;
-                        font-weight: 600;
+                        font-family: $bold-font-family;
+                        font-size: 17px;
+                        font-weight: 500;
                         color: #1e232c;
                         padding-top: 10px;
                         padding-bottom: 5px;
