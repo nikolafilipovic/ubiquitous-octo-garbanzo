@@ -44,7 +44,7 @@ Template Name: List Homes
     </div>
 
     <div class="row no-gutters lh-info-wrapper">
-      <div class=" col-12 col-md-9">
+      <div class="col-12 col-md-9">
         <div class="row no-gutters">
           <div class="col-12 col-md-7">
             <h1 class="lh-info-imp">11249 E Sonrisa Ave</h1>
@@ -57,15 +57,22 @@ Template Name: List Homes
           </div>
 
           <div class="col-12 col-md-5">
-            <span class="red-dot"></span>
-            <strong class="small-imp">FOR SALE</strong>
-            <h1 class="lh-info-imp lh-money">$425,000</h1>
-            <a href="#" class="large-link lh-info-imp">Get pre-qualified
-              <i class="fas fa-arrow-right fasarrow"></i>
-            </a>
+            <div class="row no-gutters">
+              <div class="col-6 col-md-12">  
+              <span class="red-dot"></span>
+                <strong class="small-imp">FOR SALE</strong>
+                <h1 class="lh-info-imp lh-money">$425,000</h1>
+                <a href="#" class="large-link lh-info-imp">Get pre-qualified
+                  <i class="fas fa-arrow-right fasarrow"></i>
+                </a>
+              </div>
+              <div class="col-6 col-md-12 d-flex lh-map">
+                <img src="/wp-content/themes/theoffercompany/images/map.png" />
+              </div>
+            </div>
           </div>
         </div>
-        <p class="lh-house">Open House <strong>Fri, Oct 12  &#8226; 11:00am - 2:00pm</strong></p>
+       
       </div>
     </div>
 

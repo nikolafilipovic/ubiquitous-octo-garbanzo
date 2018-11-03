@@ -119,6 +119,9 @@ figure.lh-img-holder {
     font-size: 1.1rem;
     display:inline-block;
     padding: 1.2rem 0;
+    @include respond-to(desktop) {
+      padding: 0.5rem 0;
+    }
   }
   span.small-dot{
     margin: 0 .5rem;
@@ -140,11 +143,27 @@ figure.lh-img-holder {
   }
   a.lh-info-imp {
     padding: 0;
-    margin: 1.3rem 0;
+    margin: 1.6rem 0;
+    @include respond-to('desktop') {
+      margin: 0.6rem 0 2rem;
+    }
   }
   .lh-money {
     margin-top: .5rem;
     padding-bottom: 0;
+  }
+  .lh-map {
+    padding-right: 3.33em;
+    justify-content: flex-end;
+    @include respond-to('desktop') {
+      padding-right: 0;
+      justify-content: flex-start;
+    }
+    img {
+      display: block;
+      width: 120px;
+      height: 120px;
+    }
   }
   .lh-house {
     margin-bottom: 1.3rem;

@@ -1963,6 +1963,9 @@ figure.lh-img-holder {
     font-size: 1.1rem;
     display: inline-block;
     padding: 1.2rem 0; }
+    @media (min-width: 768px) {
+      .lh-info-wrapper span {
+        padding: 0.5rem 0; } }
   .lh-info-wrapper span.small-dot {
     margin: 0 .5rem;
     font-weight: 100; }
@@ -1979,10 +1982,24 @@ figure.lh-img-holder {
       padding-left: .5em; }
   .lh-info-wrapper a.lh-info-imp {
     padding: 0;
-    margin: 1.3rem 0; }
+    margin: 1.6rem 0; }
+    @media (min-width: 768px) {
+      .lh-info-wrapper a.lh-info-imp {
+        margin: 0.6rem 0 2rem; } }
   .lh-info-wrapper .lh-money {
     margin-top: .5rem;
     padding-bottom: 0; }
+  .lh-info-wrapper .lh-map {
+    padding-right: 3.33em;
+    justify-content: flex-end; }
+    @media (min-width: 768px) {
+      .lh-info-wrapper .lh-map {
+        padding-right: 0;
+        justify-content: flex-start; } }
+    .lh-info-wrapper .lh-map img {
+      display: block;
+      width: 120px;
+      height: 120px; }
   .lh-info-wrapper .lh-house {
     margin-bottom: 1.3rem; }
 
