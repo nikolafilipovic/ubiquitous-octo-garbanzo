@@ -982,7 +982,6 @@ footer {
 .wrapperTop {
   width: 100%;
   height: 60px;
-  padding-top: 0.7%;
   padding-left: 15px;
   padding-right: 1%;
   background-color: #80c7f2; }
@@ -1410,12 +1409,14 @@ footer {
 #pageone .wrapperBlocks {
   margin-top: 6%; }
 
-#pagetwo .wrapperBlocks {
-  margin-top: 15%;
-  margin-bottom: 15%; }
+#pagetwo {
+  height: 95vh; }
+  #pagetwo .wrapperBlocks {
+    margin-top: 10px;
+    margin-bottom: 15%; }
 
 #pagethree .personBlock {
-  margin-top: 6%; }
+  margin-top: 67px; }
 
 #pagethree h1 {
   width: 250px;
@@ -1423,14 +1424,14 @@ footer {
   margin-bottom: 4%; }
 
 #pagethree .wrapperForm {
-  margin-top: 3%; }
+  margin-top: 30px; }
 
 #pagefour {
   padding-bottom: 20%; }
   #pagefour h1 {
     margin-bottom: 10%; }
   #pagefour .personBlock {
-    margin-top: 7%; }
+    margin-top: 80px; }
 
 #pagefive h1 {
   margin-bottom: 10%; }
@@ -1491,10 +1492,10 @@ footer {
   margin-bottom: 7%; }
 
 #FirstPage .wrapperForm {
-  margin-top: 8%; }
+  margin-top: 88px; }
 
 #FirstPage .personBlock {
-  margin-top: 23%; }
+  margin-top: 200px; }
 
 #FirstPage button {
   height: 40px;
@@ -1553,7 +1554,7 @@ footer {
   #pageeight .wrapperForm {
     width: 360px !important; }
   #pageeight .radioForms {
-    width: 360px !important; }
+    width: 350px !important; }
   #pageten .wrapperWider {
     width: 360px; }
   #pagefive {
@@ -1635,7 +1636,7 @@ footer {
     .wrapper .legend {
       margin-left: 0%; }
     .wrapper .radioForms {
-      width: 320px;
+      width: 320px !important;
       height: auto; }
       .wrapper .radioForms .radioForm form {
         display: flex; }
