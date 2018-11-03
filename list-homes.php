@@ -142,6 +142,17 @@ Template Name: List Homes
               
               <input type="email" class="form-control" placeholder="Email" />
             </div>
+
+            <div class="input-group">
+              <textarea class="form-control" placeholder="Question"></textarea>
+            </div>
+
+             <div class="form-check d-flex justify-content-center">
+              <div>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I want financing information</label>
+              </div>
+            </div>
         </form>
       </div>
     </div>

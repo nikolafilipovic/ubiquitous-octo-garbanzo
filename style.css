@@ -2688,9 +2688,13 @@ figure.lh-img-holder {
     border: none; }
   .contact-agent-form .form-control {
     border: 1px solid #666;
-    border-left: none; }
+    border: none; }
     .contact-agent-form .form-control:active, .contact-agent-form .form-control:focus, .contact-agent-form .form-control:hover {
       outline: none;
       box-shadow: none; }
+  .contact-agent-form textarea {
+    height: 100px;
+    max-height: 200px;
+    min-height: 80px; }
   .contact-agent-form .fa-phone {
     transform: rotate(90deg); }
