@@ -200,7 +200,6 @@ figure.lh-img-holder {
   }
 }
 
-
 .lh-pictures {
   .image {
     display: block;
@@ -216,5 +215,56 @@ figure.lh-img-holder {
   }
   .col-6:nth-child(1), .col-6:nth-child(3) {
     margin-left: 4px;
+  }
+}
+
+.contact-agent {
+  &-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+  }
+  h2.contact-agent-prev-name {
+    font-size: 1.1rem;
+    color: $main-color;
+    padding-bottom: .2em;
+  }
+  &-details {
+    padding-left: .8em !important;
+  }
+  .fa-star {
+    color: $main-color;
+  }
+  &-controlls {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    .agent-phone {
+      transform: rotate(90deg);
+      color: white;
+      background: $main-color;
+      padding: .8em;
+      border-radius: 50%;
+      font-size: 12px;
+      &-text {
+        font-size: 1.1rem !important;
+        margin-left: 0.7em;
+      }
+    }
+    .agent-text {
+      margin-left: 1.4em;
+      color: white;
+      background: $main-color;
+      padding: .8em;
+      border-radius: 50%;
+      font-size: 12px;
+      &-text {
+        font-size: 1.1rem !important;
+        margin-left: 0.7em;
+      }
+    }
+  }
+  p {
+    color: #4a505d !important;
   }
 }

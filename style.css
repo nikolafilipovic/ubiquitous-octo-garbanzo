@@ -86,6 +86,10 @@ body {
 .et_pb_button:hover::after, .et_pb_button:action::after, .et_pb_button:focus::after {
   margin-left: .3em; }
 
+.t {
+  min-height: 100vh;
+  background: #00aced; }
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -2617,3 +2621,47 @@ figure.lh-img-holder {
     margin-bottom: 4px; }
   .lh-pictures .col-6:nth-child(1), .lh-pictures .col-6:nth-child(3) {
     margin-left: 4px; }
+
+.contact-agent-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem; }
+
+.contact-agent h2.contact-agent-prev-name {
+  font-size: 1.1rem;
+  color: #00aced;
+  padding-bottom: .2em; }
+
+.contact-agent-details {
+  padding-left: .8em !important; }
+
+.contact-agent .fa-star {
+  color: #00aced; }
+
+.contact-agent-controlls {
+  position: absolute;
+  top: 0;
+  right: 20px; }
+  .contact-agent-controlls .agent-phone {
+    transform: rotate(90deg);
+    color: white;
+    background: #00aced;
+    padding: .8em;
+    border-radius: 50%;
+    font-size: 12px; }
+    .contact-agent-controlls .agent-phone-text {
+      font-size: 1.1rem !important;
+      margin-left: 0.7em; }
+  .contact-agent-controlls .agent-text {
+    margin-left: 1.4em;
+    color: white;
+    background: #00aced;
+    padding: .8em;
+    border-radius: 50%;
+    font-size: 12px; }
+    .contact-agent-controlls .agent-text-text {
+      font-size: 1.1rem !important;
+      margin-left: 0.7em; }
+
+.contact-agent p {
+  color: #4a505d !important; }

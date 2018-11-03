@@ -39,21 +39,6 @@ Template Name: List Homes
           <div class="col-6">
             <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/property5.png')"></div>
           </div>
-<!--
-          <div class="col-6">
-            <img src="/wp-content/themes/theoffercompany/images/item.png" alt='prop1'/>
-          </div>
-          <div class="col-6">
-            <img src="/wp-content/themes/theoffercompany/images/property3.png" alt='prop1'/>
-          </div>
-          <div class="col-6">
-            <img src="/wp-content/themes/theoffercompany/images/property4.png" alt='prop1'/>
-          </div>
-          <div class="col-6">
-            <img src="/wp-content/themes/theoffercompany/images/property5.png" alt='prop1'/>
-          </div>
-          </div>
--->
         </div>
       </div>
     </div>
@@ -71,7 +56,7 @@ Template Name: List Homes
     </div>
 
     <div class="row no-gutters lh-info-wrapper">
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-8">
         <div class="row no-gutters">
           <div class="col-12 col-md-7">
             <h1 class="lh-info-imp">11249 E Sonrisa Ave</h1>
@@ -106,6 +91,28 @@ Template Name: List Homes
           </div>
         </div>
         <p class="lh-house d-md-none">Open House <strong>Fri, Oct 12  &#8226; 11:00am - 2:00pm</strong></p>
+      </div>
+      <div class="col-12 col-md-4 contact-agent">
+        <h1 class="contact-agent-title">Contact Agent</h1>
+        <div class="contact-agent-prev row no-gutters">
+          <div class="col-1">
+            <img src="/wp-content/themes/theoffercompany/images/woman.png" />
+          </div>
+          <div class="col-11 contact-agent-details">
+            <h2 class="contact-agent-prev-name">Anette Brown</h2>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <p>602-448-7377</p>
+            <p>annete@theofferco.com</p>
+            <div class="contact-agent-controlls d-block d-md-none">
+              <i class="fas fa-phone agent-phone"></i><span class="agent-phone-text">Call</span>
+              <i class="fas fa-comment-alt agent-text"></i><span class="agent-phone-text">Text</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- container fluid -->
