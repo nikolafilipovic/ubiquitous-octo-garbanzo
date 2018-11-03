@@ -200,6 +200,21 @@ figure.lh-img-holder {
   }
 }
 
-.more-imgs {
-  background: crimson;
+
+.lh-pictures {
+  .image {
+    display: block;
+    height: #{(397.59 / 2 - 2)}px;
+    background-size: cover;
+  }
+  justify-content: space-between;
+  .col-6 {
+    flex-basis: calc(50% - 4.5px);
+  }
+  .col-6:nth-child(1), .col-6:nth-child(2) {
+    margin-bottom: 4px;
+  }
+  .col-6:nth-child(1), .col-6:nth-child(3) {
+    margin-left: 4px;
+  }
 }

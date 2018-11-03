@@ -27,13 +27,21 @@ Template Name: List Homes
 
       <div class="col-12 col-md-5 d-none d-md-block more-imgs">
         <div class="row no-gutters lh-pictures">  
-          <div class="col-6"><div class="pl"></div></div>
-          <div class="col-6"><div class="pl"></div></div>
-          <div class="col-6"><div class="pl"></div></div>
-          <div class="col-6"><div class="pl"></div></div>
+          <div class="col-6">
+            <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/item.png')"></div>
+          </div>
+          <div class="col-6">
+            <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/property2.png')"></div>
+          </div>
+          <div class="col-6">
+            <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/property3.png')"></div>
+          </div>
+          <div class="col-6">
+            <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/property5.png')"></div>
+          </div>
 <!--
           <div class="col-6">
-            <img src="/wp-content/themes/theoffercompany/images/property2.png" alt='prop1'/>
+            <img src="/wp-content/themes/theoffercompany/images/item.png" alt='prop1'/>
           </div>
           <div class="col-6">
             <img src="/wp-content/themes/theoffercompany/images/property3.png" alt='prop1'/>

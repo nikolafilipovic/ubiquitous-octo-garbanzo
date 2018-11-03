@@ -86,19 +86,6 @@ body {
 .et_pb_button:hover::after, .et_pb_button:action::after, .et_pb_button:focus::after {
   margin-left: .3em; }
 
-.pl {
-  height: 196.795px;
-  background: yellow; }
-
-.lh-pictures {
-  justify-content: space-between; }
-  .lh-pictures .col-6 {
-    flex-basis: calc(50% - 4.5px); }
-  .lh-pictures .col-6:nth-child(1), .lh-pictures .col-6:nth-child(2) {
-    margin-bottom: 4px; }
-  .lh-pictures .col-6:nth-child(1), .lh-pictures .col-6:nth-child(3) {
-    margin-left: 4px; }
-
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -2618,5 +2605,15 @@ figure.lh-img-holder {
       font-size: 1.2rem;
       margin-left: 0.6em; }
 
-.more-imgs {
-  background: crimson; }
+.lh-pictures {
+  justify-content: space-between; }
+  .lh-pictures .image {
+    display: block;
+    height: 196.795px;
+    background-size: cover; }
+  .lh-pictures .col-6 {
+    flex-basis: calc(50% - 4.5px); }
+  .lh-pictures .col-6:nth-child(1), .lh-pictures .col-6:nth-child(2) {
+    margin-bottom: 4px; }
+  .lh-pictures .col-6:nth-child(1), .lh-pictures .col-6:nth-child(3) {
+    margin-left: 4px; }
