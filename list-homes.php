@@ -7,11 +7,37 @@ Template Name: List Homes
 <div class="lh-wrapper">
   <div class="container-fluid">
     <header class="modal-menu b-shadow">
-      <i class="fas fa-chevron-left fasback"></i>
-      <a href="#">Back</a>
+      <div class="go-back d-block d-md-none">
+        <i class="fas fa-chevron-left fasback"></i>
+        <a href="#">Back</a>
+      </div>
 
-      <!-- make an offer, schedule tour -->
-      <!-- save, share, virtual tour, remove, X -->
+      <div class="various-link d-none d-md-flex">
+        <div class="offer-link">
+          <a href="#">Make an offer</a>
+          <i class="fas fa-arrow-right fasarrow"></i>
+        </div>
+
+        <div class="offer-link">
+          <a href="#">Schedule tour</a>
+          <i class="fas fa-arrow-right fasarrow"></i>
+        </div>
+
+        <!-- save, share, virtual tour, remove, X -->
+        <div class="faw-options">
+          <i class="far fa-heart"></i>
+          <p>Save</p>
+
+          <i class="fas fa-share-alt"></i>
+          <p>Share</p>
+
+          <i class="fas fa-vr-cardboard"></i>
+          <p>Virtual Tour</p>
+
+          <i class="far fa-times-circle"></i>
+          <p>Remove</p>
+        </div>
+      </div>
     </header>
 
     <div class="row no-gutters">
@@ -145,139 +171,234 @@ Template Name: List Homes
           <img src="/wp-content/themes/theoffercompany/images/virtualtour.png" alt="virutal" />
         </div>
 
-        <!-- Ovde ide property Amentis, stavi u <h1> -->
+        <div class="lh-features">
+          <div class="hr hr-up d-block d-md-none"></div>
+          <h1 class="list-home-title">
+            Property Amentities
+            <i class="fas fa-chevron-down fadown"></i>
+          </h1>
+          <div class="hr hr-down d-block d-md-none"></div>
 
-        <h2 class="lh-subtitle">
-          Features
-        </h2>
-        <div class="lh-features-list-wrap">
-          <div class="row">
-            <div class="col-6">
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Type:
+          <h2 class="lh-subtitle">
+            Features
+          </h2>
+          <div class="lh-features-list-wrap">
+            <div class="row">
+              <div class="col-6">
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Type:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>House</strong>
+                  </div>
                 </div>
-                <div class="col-6 text-right">
-                  <strong>House</strong>
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Stories:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>2</strong>
+                  </div>
                 </div>
-              </div>
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Stories:
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Beds:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>4</strong>
+                  </div>
                 </div>
-                <div class="col-6 text-right">
-                  <strong>2</strong>
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Baths:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>2</strong>
+                  </div>
                 </div>
-              </div>
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Beds:
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    SqFt:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>556</strong>
+                  </div>
                 </div>
-                <div class="col-6 text-right">
-                  <strong>4</strong>
-                </div>
-              </div>
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Baths:
-                </div>
-                <div class="col-6 text-right">
-                  <strong>2</strong>
-                </div>
-              </div>
-              <div class="row no-gutters">
-                <div class="col-6">
-                  SqFt:
-                </div>
-                <div class="col-6 text-right">
-                  <strong>556</strong>
-                </div>
-              </div>
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Year Built:
-                </div>
-                <div class="col-6 text-right">
-                  <strong>2002</strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Pool:
-                </div>
-                <div class="col-6 text-right">
-                  <strong>Yes</strong>
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Year Built:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>2002</strong>
+                  </div>
                 </div>
               </div>
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Spa:
+              <div class="col-6">
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Pool:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>Yes</strong>
+                  </div>
                 </div>
-                <div class="col-6 text-right">
-                  <strong>Yes</strong>
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Spa:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>Yes</strong>
+                  </div>
                 </div>
-              </div>
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Lot size:
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Lot size:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>12000</strong>
+                  </div>
                 </div>
-                <div class="col-6 text-right">
-                  <strong>12000</strong>
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Garage spaces:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>4</strong>
+                  </div>
                 </div>
-              </div>
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Garage spaces:
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Carportspaces:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>2</strong>
+                  </div>
                 </div>
-                <div class="col-6 text-right">
-                  <strong>4</strong>
-                </div>
-              </div>
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Carportspaces:
-                </div>
-                <div class="col-6 text-right">
-                  <strong>2</strong>
-                </div>
-              </div>
-              <div class="row no-gutters">
-                <div class="col-6">
-                  Fireplace:
-                </div>
-                <div class="col-6 text-right">
-                  <strong>Yes</strong>
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    Fireplace:
+                  </div>
+                  <div class="col-6 text-right">
+                    <strong>Yes</strong>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <h2 class="lh-subtitle mt-3">
+            Room Details
+          </h2>
+          <div class="lh-details-block">
+            <p>Kitchen Features</p>
+            <strong>-</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Master bathroom</p>
+            <strong>Toilet, Soap dispenser, TV, Roof</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Laundry</p>
+            <strong>Dryer, Detergent, Ironing board</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Dining area</p>
+            <strong>-</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Basement</p>
+            <strong>Table tennis, Cinema, Popcorn</strong>
+          </div>
+          <h2 class="lh-subtitle">
+            Construction
+          </h2>
+          <div class="lh-details-block">
+            <p>Architecture</p>
+            <strong>-</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Finish</p>
+            <strong>One finish, Another one</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Frame</p>
+            <strong>Item, Another item</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Roofing</p>
+            <strong>-</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Fencing</p>
+            <strong>Wooden</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Cooling</p>
+            <strong>Air condition</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Heating</p>
+            <strong>-</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Utilities</p>
+            <strong>Item, Another item</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Water</p>
+            <strong>Yes</strong>
+          </div>
+          <div class="lh-details-block">
+            <p>Sewer</p>
+            <strong>Yes</strong>
+          </div>
+          <h2 class="lh-subtitle">
+            Other
+          </h2>
+          <div class="lh-details-block">
+            <p>HOA: <strong>Yes</strong></p>
+            <p>HOA free: <strong>$60</strong></p>
+            <p class="mb-4">HOA Frequency: <strong>Monthly</strong></p>
+          </div>
         </div>
-        <h2 class="lh-subtitle mt-3">
-          Room Details
-        </h2>
-        <div class="lh-details-block">
-          <p>Kitchen Features</p>
-          <strong>-</strong>
+        <div class="lh-finance w-100">
+            <h1 class="list-home-title d-block w-100">
+                Get Financing
+                <i class="fas fa-chevron-down fadown"></i>
+            </h1>
+            <div class="row no-gutters">
+              <div class="col-6 lh-finance-list">
+                <ul>
+                  <li>P&amp;I <strong>$1,642</strong></li>
+                  <li>Insurance <strong>$67</strong></li>
+                  <li>Taxes <strong>$226</strong></li>
+                  <li>PMI <strong>$0</strong></li>
+                  <li>HOA <strong>$60</strong></li>
+                </ul>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <div class="chart-wrapper">
+                  <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                   <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+
+                   <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#25aae1" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
+                   <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#3972b8" stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="40"></circle>
+                   <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#88d6f4" stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="35"></circle>
+                   <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d4dff2" stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="30"></circle>
+                       <g class="chart-text">
+                         <text x="50%" y="50%" class="chart-number">
+                           Your payment
+                         </text>
+                         <text x="50%" y="50%" class="chart-label">
+                           $1,994
+                         </text>
+                     </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="lh-details-block">
-          <p>Master bathroom</p>
-          <strong>Toilet, Soap dispenser, TV, Roof</strong>
-        </div>
-        <div class="lh-details-block">
-          <p>Laundry</p>
-          <strong>Dryer, Detergent, Ironing board</strong>
-        </div>
-        <div class="lh-details-block">
-          <p>Dining area</p>
-          <strong>-</strong>
-        </div>
-        <div class="lh-details-block">
-          <p>Basement</p>
-          <strong>Table tennis, Cinema, Popcorn</strong>
-        </div>
-      </div>
+      </div> <!--  lh-features -->
 
       <div class="col-12 col-md-4 contact-agent">
         <h1 class="contact-agent-title">Contact Agent</h1>
