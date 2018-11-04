@@ -118,13 +118,6 @@ Template Name: List Homes
           </div>
         </div>
 
-        <div class="lh-house-details">
-        <i class="fas fa-phone agent-phone"></i>
-      <strong class="agent-phone-text">Call Agent</strong>
-      <i class="fas fa-comment-alt agent-text"></i>
-      <strong class="agent-phone-text">Text Agent</strong>
-        </div>
-
 
       </div>
 
