@@ -2455,7 +2455,8 @@ footer {
 
 .container-fluid {
   padding-left: 0 !important;
-  padding-right: 0 !important; }
+  padding-right: 0 !important;
+  box-shadow: 3px 2px 16px 1px grey; }
 
 .b-shadow {
   box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27); }
@@ -2507,23 +2508,24 @@ figure.lh-img-holder {
 .offer-link-group {
   width: 100%;
   text-align: center; }
-  .offer-link-group .offer-link {
-    border-width: 0px !important;
-    display: inline-block;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
-    padding: 16px;
-    text-transform: uppercase;
-    margin: 10px 15px;
-    width: 202px;
-    font-family: "Graphik Regular", Helvetica, Arial, Lucida, sans-serif !important;
-    background-color: #00aced; }
-    .offer-link-group .offer-link a {
-      color: white; }
-    .offer-link-group .offer-link .fasarrow {
-      color: white;
-      padding-left: 1em; }
+
+.offer-link {
+  border-width: 0px !important;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  padding: 16px;
+  text-transform: uppercase;
+  margin: 10px 15px;
+  width: 202px;
+  font-family: "Graphik Regular", Helvetica, Arial, Lucida, sans-serif !important;
+  background-color: #00aced; }
+  .offer-link a {
+    color: white; }
+  .offer-link .fasarrow {
+    color: white;
+    padding-left: 1em; }
 
 .lh-info-imp {
   font-weight: 600; }
@@ -2596,7 +2598,7 @@ figure.lh-img-holder {
     border-radius: 50%;
     font-size: 16px; }
     .lh-info-wrapper .lh-house-details .agent-phone-text {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-left: 0.6em; }
   .lh-info-wrapper .lh-house-details .agent-text {
     margin-left: 1.4em;
@@ -2606,8 +2608,18 @@ figure.lh-img-holder {
     border-radius: 50%;
     font-size: 16px; }
     .lh-info-wrapper .lh-house-details .agent-text-text {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-left: 0.6em; }
+  .lh-info-wrapper .faw-options {
+    padding: 2em 0;
+    color: #00aced; }
+    .lh-info-wrapper .faw-options [class*='col-'] {
+      text-align: center; }
+    .lh-info-wrapper .faw-options i {
+      font-size: 2.5rem;
+      padding-right: .5em; }
+    .lh-info-wrapper .faw-options p {
+      margin-left: -1em; }
 
 .lh-pictures {
   justify-content: space-between; }
@@ -2621,6 +2633,11 @@ figure.lh-img-holder {
     margin-bottom: 4px; }
   .lh-pictures .col-6:nth-child(1), .lh-pictures .col-6:nth-child(3) {
     margin-left: 4px; }
+
+@media (min-width: 768px) {
+  .contact-agent {
+    padding-left: 1.45rem !important;
+    border-left: 1px solid #d6dce6; } }
 
 .contact-agent-title {
   text-transform: uppercase;
@@ -2650,8 +2667,15 @@ figure.lh-img-holder {
     border-radius: 50%;
     font-size: 12px; }
     .contact-agent-controlls .agent-phone-text {
-      font-size: 1.1rem !important;
       margin-left: 0.7em; }
+      @media (min-width: 320px) {
+        .contact-agent-controlls .agent-phone-text {
+          font-size: .8rem;
+          width: 10px; } }
+      @media (min-width: 480px) {
+        .contact-agent-controlls .agent-phone-text {
+          font-size: 1.1rem;
+          width: auto; } }
   .contact-agent-controlls .agent-text {
     margin-left: 1.4em;
     color: white;
@@ -2665,6 +2689,17 @@ figure.lh-img-holder {
 
 .contact-agent p {
   color: #4a505d !important; }
+
+.contact-agent .another-contact {
+  display: flex;
+  margin: 1em 0; }
+  .contact-agent .another-contact p {
+    font-size: .7rem; }
+  .contact-agent .another-contact .preferred-lender {
+    padding-left: 1em; }
+  @media (min-width: 768px) {
+    .contact-agent .another-contact {
+      justify-content: center; } }
 
 .contact-agent-form {
   margin-top: 2.5em;
@@ -2696,5 +2731,15 @@ figure.lh-img-holder {
     height: 100px;
     max-height: 200px;
     min-height: 80px; }
+  .contact-agent-form button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 600; }
+  .contact-agent-form .offer-link {
+    width: 100%;
+    padding: 10px;
+    margin: 1rem 0;
+    font-size: 1rem; }
   .contact-agent-form .fa-phone {
     transform: rotate(90deg); }
