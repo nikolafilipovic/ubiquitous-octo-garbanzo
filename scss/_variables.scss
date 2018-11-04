@@ -5,7 +5,11 @@ $bold-font-family: "Graphik Medium", sans-serif;
 
 $main-color: #00aced;
 
-.t {
-  min-height: 100vh;
-  background: $main-color;
+h1 {
+  &.list-home-title {
+    font-size: 22px;
+  }
+  &.list-home-title--pb {
+    padding-bottom: 1em;
+  }
 }

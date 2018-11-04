@@ -167,6 +167,16 @@ figure.lh-img-holder {
       height: 120px;
     }
   }
+
+  .lh-house-details.lh-house-details--big {
+    .agent-phone, .agent-text {
+      font-size: 22px;
+      &-text {
+        margin-right: 1.4em;
+      }
+    }
+  }
+
   .lh-house-details {
     .lh-house {
       margin-bottom: 1.3rem;
@@ -201,7 +211,7 @@ figure.lh-img-holder {
     }
 
     .faw-options {
-      padding: 2em 0;
+      padding-top: 2em;
       margin-right: 20px;
       color: $main-color;
       [class*='col-'] {
@@ -214,6 +224,19 @@ figure.lh-img-holder {
       p {
         margin-left: -1em;
       }
+    }
+  }
+
+  .hr {
+    margin-left: -42px;
+    width: calc(100% + 80px);
+    &-up {
+      padding-bottom: 25px;
+      border-top: 1px solid #d6dce6;
+    }
+    &-down {
+      padding-top: 25px;
+      border-bottom: 1px solid #d6dce6;
     }
   }
 
@@ -236,6 +259,10 @@ figure.lh-img-holder {
 }
 
 .contact-agent {
+  p {
+    color: #4a505d !important;
+  }
+
   @include respond-to('desktop') {
     padding-left: 1.45rem !important;
     border-left: 1px solid #d6dce6;
@@ -292,22 +319,19 @@ figure.lh-img-holder {
       }
     }
   }
-  p {
-    color: #4a505d !important;
-  }
+}
 
-  .another-contact {
-    display: flex;
-    margin: 1em 0;
-    p {
-      font-size: .7rem;
-    }
-    .preferred-lender {
-      padding-left: 1em;
-    }
-    @include respond-to('desktop') {
-      justify-content: center;
-    }
+.another-contact {
+  display: flex;
+  margin: 1em 0;
+  p {
+    font-size: .7rem;
+  }
+  .preferred-lender {
+    padding-left: 1em;
+  }
+  @include respond-to('desktop') {
+    justify-content: center;
   }
 }
 
@@ -363,5 +387,61 @@ figure.lh-img-holder {
 
   .fa-phone {
     transform: rotate(90deg);
+  }
+}
+
+.plus-button {
+  i {
+    margin-right: .33em;
+  }
+  text-transform: uppercase;
+  color: $main-color;
+  font-size: 1.3em;
+}
+
+.lh-virutal-tour {
+  margin: 3em 0 4em;
+  display: flex;
+  flex-direction: column;
+  .list-home-title {
+    margin-bottom: .7em;
+  }
+  img {
+    border-radius: 5px;
+    margin-right: 15px;
+    @include respond-to('mobile') {
+      margin-right: 25px !important;
+    }
+  }
+}
+
+.lh-subtitle {
+  color: $main-color;
+  text-transform: uppercase;;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.lh-house-prop-desc {
+  p {
+    padding-right: 25px;
+    color: #525b6a;
+    font-size: 17.3px;
+    margin-bottom: 1em;
+  }
+}
+
+.lh-features-list-wrap {
+  margin-right: 20px;
+  font-size: 13.6px;
+}
+
+.lh-details-block {
+  border-bottom: 1px solid #d6dce6;
+  margin-right: 20px;
+  margin-bottom: 1.3rem;
+  strong {
+    display: block;
+    margin-bottom: .5em;
   }
 }

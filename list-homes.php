@@ -1,8 +1,8 @@
-<?php 
+<?php
 /*
 Template Name: List Homes
 */
-  get_header(); 
+  get_header();
 ?>
 <div class="lh-wrapper">
   <div class="container-fluid">
@@ -94,6 +94,7 @@ Template Name: List Homes
         </div>
 
         <div class="faw-options d-block d-md-none">
+          <div class="hr hr-up"></div>
           <div class="row no-gutters">
             <div class="col-3">
               <i class="far fa-heart"></i>
@@ -116,9 +117,166 @@ Template Name: List Homes
             </div>
 
           </div>
+          <div class="hr hr-down"></div>
         </div>
 
+        <div class="lh-house-details lh-house-details--big d-flex d-md-none py-4">
+          <i class="fas fa-phone agent-phone"></i><p class="agent-phone-text d-flex align-items-center">Call Agent</p>
+          <i class="fas fa-comment-alt agent-text"></i><p class="agent-phone-text d-flex align-items-center">Text Agent</p>
+        </div>
 
+        <div class="lh-house-prop-desc">
+          <h1 class="list-home-title list-home-title--pb">Property Description</h1>
+          <p>
+            Rare opportunity awaits! Own a 40 units multi-family in up & coming area just minutes from the heart of Midtown in Atlanta.
+            This secluded gated property has 4 sided brick buildings situated in a shape of a square. Each unit has 2bdr/1bth.
+            Bring your contractors and decide on how to finish each unit to suite best your investment portfolio. Sold "AS-IS" without disclosures.
+            Close to Marta Westlake Station, Atlanta Beltline, The World Congress Center, Mercedes Benz Stadium, Georgia Tech Campus and other sites.
+            Security in place, appointment is needed.
+          </p>
+          <div class="plus-button">
+            <i class="fas fa-plus"></i>
+            More
+          </div>
+        </div>
+
+        <div class="lh-virutal-tour">
+          <h1 class="list-home-title">Virtual Walkthrough</h1>
+          <img src="/wp-content/themes/theoffercompany/images/virtualtour.png" alt="virutal" />
+        </div>
+
+        <!-- Ovde ide property Amentis, stavi u <h1> -->
+
+        <h2 class="lh-subtitle">
+          Features
+        </h2>
+        <div class="lh-features-list-wrap">
+          <div class="row">
+            <div class="col-6">
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Type:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>House</strong>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Stories:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>2</strong>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Beds:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>4</strong>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Baths:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>2</strong>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-6">
+                  SqFt:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>556</strong>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Year Built:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>2002</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Pool:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>Yes</strong>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Spa:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>Yes</strong>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Lot size:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>12000</strong>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Garage spaces:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>4</strong>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Carportspaces:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>2</strong>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col-6">
+                  Fireplace:
+                </div>
+                <div class="col-6 text-right">
+                  <strong>Yes</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="lh-subtitle mt-3">
+          Room Details
+        </h2>
+        <div class="lh-details-block">
+          <p>Kitchen Features</p>
+          <strong>-</strong>
+        </div>
+        <div class="lh-details-block">
+          <p>Master bathroom</p>
+          <strong>Toilet, Soap dispenser, TV, Roof</strong>
+        </div>
+        <div class="lh-details-block">
+          <p>Laundry</p>
+          <strong>Dryer, Detergent, Ironing board</strong>
+        </div>
+        <div class="lh-details-block">
+          <p>Dining area</p>
+          <strong>-</strong>
+        </div>
+        <div class="lh-details-block">
+          <p>Basement</p>
+          <strong>Table tennis, Cinema, Popcorn</strong>
+        </div>
       </div>
 
       <div class="col-12 col-md-4 contact-agent">
@@ -196,11 +354,11 @@ Template Name: List Homes
             <h2 class="contact-agent-prev-name">David Houze</h2>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- container fluid -->
-  </div>
-  <!-- lh-wrapper -->
-</div>
+
+
+      </div> <!-- contact-agent -->
+    </div > <!-- lh-info-wrapper -->
+  </div> <!-- container fluid -->
+</div>   <!-- lh-wrapper -->
 
 <?php get_footer(); ?>
