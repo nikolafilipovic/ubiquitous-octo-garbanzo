@@ -465,10 +465,9 @@ Template Name: List Homes
           <label class="lh-label">Loan program</label>
           <div class="lh-custom-select-wrap mb-4">
             <select name="cars" class="lh-custom-select">
-              <option selected>Custom Select Menu</option>
-              <option value="volvo">Volvo</option>
-              <option value="fiat">Fiat</option>
-              <option value="audi">Audi</option>
+              <option selected>30-year fixed</option>
+              <option>20-year fixed</option>
+              <option>10-year fixed</option>
             </select>
           </div>
 
@@ -482,12 +481,81 @@ Template Name: List Homes
             </div>
           </div>
 
-          <div class="form-check">
+          <div class="form-check mb-4">
             <input class="form-check-input" type="checkbox" id="check_tax">
             <label class="form-check-label" for="check_tax">
               Include taxes/insurance
             </label>
           </div>
+
+          <label class="lh-label">Property tax</label>
+          <div class="row no-gutters mb-3">
+            <div class="input-group mt-1 col-8 pr-1">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+              </div>
+              <input type="text" class="form-control" value="79,780" />
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  /year
+                </div>
+              </div>
+            </div>
+            <div class="input-group mt-1 col-4 pl-1">
+              <input type="text" class="form-control" value="0.68" />
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-percent"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <label class="lh-label">Property tax</label>
+          <div class="input-group mt-1 mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+            </div>
+            <input type="text" class="form-control" value="398,900" />
+            <div class="input-group-append">
+              <div class="input-group-text">
+                /year
+              </div>
+            </div>
+          </div>
+
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="check_tax">
+            <label class="form-check-label" for="check_tax">
+              Include PMI
+            </label>
+          </div>
+
+          <label class="lh-label">HOA dues</label>
+          <div class="input-group mt-1 mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+            </div>
+            <input type="text" class="form-control" value="60" />
+            <div class="input-group-append">
+              <div class="input-group-text">
+                /month
+              </div>
+            </div>
+          </div>
+
+          <p>
+            <small>
+              All calculations and costs are estimates.
+              This information is intended for planning and educational purposes only.
+            </small>
+          </p>
         </form>
 
         <div class="lh-transportation">
