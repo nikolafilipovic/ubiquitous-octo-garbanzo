@@ -86,9 +86,11 @@ body {
 .et_pb_button:hover::after, .et_pb_button:action::after, .et_pb_button:focus::after {
   margin-left: .3em; }
 
-.t {
-  min-height: 100vh;
-  background: #00aced; }
+h1.list-home-title {
+  font-size: 22px; }
+
+h1.list-home-title--pb {
+  padding-bottom: 1em; }
 
 /**
  * Owl Carousel v2.3.4
@@ -1772,7 +1774,7 @@ footer {
           background: white;
           width: 1.5px;
           height: 1.5px;
-          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
     #search-homes .mobile-fields .dropdown .dropdown-menu {
       min-width: 12rem;
@@ -1831,7 +1833,7 @@ footer {
           background: white;
           width: 1.5px;
           height: 1.5px;
-          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
     #search-homes .mobile-fields .dropdown:nth-child(odd) {
       margin-left: 1%; }
@@ -2467,12 +2469,29 @@ footer {
 .modal-menu {
   background: white;
   width: 100%;
-  padding: 30px 0 30px 16px;
   font-size: 18.5px; }
+  .modal-menu .go-back {
+    padding: 30px 0 30px 16px; }
   .modal-menu .fasback {
     font-size: 18.5px;
     padding: 0 16px;
     color: #00aced; }
+  .modal-menu .various-link {
+    align-items: center;
+    padding: .3em 0 0 1.87em; }
+    .modal-menu .various-link .offer-link {
+      margin-left: 0;
+      margin-right: 1em; }
+    .modal-menu .various-link .faw-options {
+      display: flex;
+      padding-top: 0; }
+      .modal-menu .various-link .faw-options .far, .modal-menu .various-link .faw-options .fas {
+        font-size: 1.7rem;
+        margin-right: .2em; }
+    .modal-menu .various-link .faw-options > * {
+      padding: 0 .5em; }
+    .modal-menu .various-link p {
+      font-size: 1rem; }
 
 figure.lh-img-holder {
   margin-bottom: 0 !important;
@@ -2586,41 +2605,59 @@ figure.lh-img-holder {
       display: block;
       width: 120px;
       height: 120px; }
-  .lh-info-wrapper .lh-house-details .lh-house {
+
+.lh-house-details.lh-house-details--big .agent-phone, .lh-house-details.lh-house-details--big .agent-text {
+  font-size: 16px; }
+  .lh-house-details.lh-house-details--big .agent-phone-text, .lh-house-details.lh-house-details--big .agent-text-text {
+    margin-right: 1.4em; }
+
+.lh-house-details {
+  margin: 2em 0; }
+  .lh-house-details .lh-house {
     margin-bottom: 1.3rem; }
-    .lh-info-wrapper .lh-house-details .lh-house--desktop {
+    .lh-house-details .lh-house--desktop {
       margin-top: 2rem; }
-  .lh-info-wrapper .lh-house-details .agent-phone {
+  .lh-house-details .agent-phone {
     transform: rotate(90deg);
     color: white;
     background: #00aced;
     padding: .8em;
-    border-radius: 50%;
-    font-size: 16px; }
-    .lh-info-wrapper .lh-house-details .agent-phone-text {
+    border-radius: 50%; }
+    .lh-house-details .agent-phone-text {
       font-size: 1rem;
       margin-left: 0.6em; }
-  .lh-info-wrapper .lh-house-details .agent-text {
+  .lh-house-details .agent-text {
     margin-left: 1.4em;
     color: white;
     background: #00aced;
     padding: .8em;
     border-radius: 50%;
     font-size: 16px; }
-    .lh-info-wrapper .lh-house-details .agent-text-text {
+    .lh-house-details .agent-text-text {
       font-size: 1rem;
       margin-left: 0.6em; }
-  .lh-info-wrapper .faw-options {
-    padding: 2em 0;
-    margin-right: 20px;
-    color: #00aced; }
-    .lh-info-wrapper .faw-options [class*='col-'] {
-      text-align: center; }
-    .lh-info-wrapper .faw-options i {
-      font-size: 2.5rem;
-      padding-right: .5em; }
-    .lh-info-wrapper .faw-options p {
-      margin-left: -1em; }
+
+.faw-options {
+  padding-top: 2em;
+  margin-right: 20px;
+  color: #00aced; }
+  .faw-options [class*='col-'] {
+    text-align: center; }
+  .faw-options i {
+    font-size: 2.5rem;
+    padding-right: .5em; }
+  .faw-options p {
+    margin-left: -1em; }
+
+.hr {
+  margin-left: -42px;
+  width: calc(100% + 80px); }
+  .hr-up {
+    padding-bottom: 25px;
+    border-top: 1px solid #d6dce6; }
+  .hr-down {
+    padding-top: 25px;
+    border-bottom: 1px solid #d6dce6; }
 
 .lh-pictures {
   justify-content: space-between; }
@@ -2634,6 +2671,9 @@ figure.lh-img-holder {
     margin-bottom: 4px; }
   .lh-pictures .col-6:nth-child(1), .lh-pictures .col-6:nth-child(3) {
     margin-left: 4px; }
+
+.contact-agent p {
+  color: #4a505d !important; }
 
 @media (min-width: 768px) {
   .contact-agent {
@@ -2688,27 +2728,50 @@ figure.lh-img-holder {
       font-size: 1.1rem !important;
       margin-left: 0.7em; }
 
-.contact-agent p {
-  color: #4a505d !important; }
-
-.contact-agent .another-contact {
+.another-contact {
   display: flex;
   margin: 1em 0; }
-  .contact-agent .another-contact p {
+  .another-contact p {
     font-size: .7rem; }
-  .contact-agent .another-contact .preferred-lender {
+  .another-contact .preferred-lender {
     padding-left: 1em; }
   @media (min-width: 768px) {
-    .contact-agent .another-contact {
+    .another-contact {
       justify-content: center; } }
 
-.contact-agent-form {
+.contact-agent-form, .lh-form {
   margin-top: 2.5em;
   margin-right: 20px; }
-  .contact-agent-form .input-group {
+  .contact-agent-form select.lh-custom-select, .lh-form select.lh-custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .8em .33em;
+    display: block;
+    width: 100%; }
+  .contact-agent-form .lh-custom-select-wrap, .lh-form .lh-custom-select-wrap {
+    position: relative; }
+    .contact-agent-form .lh-custom-select-wrap:before, .lh-form .lh-custom-select-wrap:before {
+      display: inline-block;
+      position: absolute;
+      right: 12px;
+      top: 16px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      text-rendering: auto;
+      font-variant: normal;
+      line-height: 1;
+      content: "\f078"; }
+  .contact-agent-form select::-ms-expand, .lh-form select::-ms-expand {
+    display: none; }
+  .contact-agent-form .lh-label, .lh-form .lh-label {
+    font-size: 1.1rem;
+    font-weight: 600; }
+  .contact-agent-form .input-group, .lh-form .input-group {
     margin: 15px 0;
-    border-right: none; }
-    .contact-agent-form .input-group:before {
+    border-right: none;
+    /*
+    &:before {
       content: "";
       width: 100%;
       height: 100%;
@@ -2717,30 +2780,191 @@ figure.lh-img-holder {
       z-index: 999;
       border-radius: 4px;
       box-shadow: inset 0px 0px 2px 2px #e7e7e7;
-      pointer-events: none; }
-  .contact-agent-form .input-group-text {
+      pointer-events: none;
+    } */ }
+  .contact-agent-form .input-group-text, .lh-form .input-group-text {
     background: none;
-    border: 1px solid;
-    border: none; }
-  .contact-agent-form .form-control {
+    border: 1px solid; }
+  .contact-agent-form .form-control, .lh-form .form-control {
     border: 1px solid #666;
-    border: none; }
-    .contact-agent-form .form-control:active, .contact-agent-form .form-control:focus, .contact-agent-form .form-control:hover {
+    padding: 1.4em .33em; }
+    .contact-agent-form .form-control:active, .contact-agent-form .form-control:focus, .contact-agent-form .form-control:hover, .lh-form .form-control:active, .lh-form .form-control:focus, .lh-form .form-control:hover {
       outline: none;
       box-shadow: none; }
-  .contact-agent-form textarea {
+  .contact-agent-form textarea, .lh-form textarea {
     height: 100px;
     max-height: 200px;
     min-height: 80px; }
-  .contact-agent-form button {
+  .contact-agent-form button, .lh-form button {
     background: none;
     border: none;
     color: white;
     font-weight: 600; }
-  .contact-agent-form .offer-link {
+  .contact-agent-form .offer-link, .lh-form .offer-link {
     width: 100%;
     padding: 10px;
     margin: 1rem 0;
     font-size: 1rem; }
-  .contact-agent-form .fa-phone {
+  .contact-agent-form .fa-phone, .lh-form .fa-phone {
     transform: rotate(90deg); }
+
+.plus-button {
+  text-transform: uppercase;
+  color: #00aced;
+  font-size: 1.2em;
+  font-weight: 600; }
+  .plus-button i {
+    margin-right: .33em; }
+
+.lh-virutal-tour {
+  margin: 3em 0 4em;
+  display: flex;
+  flex-direction: column; }
+  .lh-virutal-tour .list-home-title {
+    margin-bottom: .7em; }
+  .lh-virutal-tour img {
+    border-radius: 5px;
+    margin-right: 15px; }
+    @media (min-width: 480px) {
+      .lh-virutal-tour img {
+        margin-right: 25px !important; } }
+
+.fadown, .faup {
+  font-size: 1.7rem;
+  float: right;
+  padding: 0 1em; }
+
+.faup {
+  color: #00aced; }
+
+.fadown {
+  color: #d6dce6; }
+
+.lh-features .list-home-title {
+  padding: .5em 0; }
+
+.lh-features .hr-down {
+  margin-bottom: 2em; }
+
+.lh-features .lh-subtitle {
+  color: #00aced;
+  padding-top: 1em;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold; }
+
+.lh-house-prop-desc p {
+  padding-right: 25px;
+  color: #525b6a;
+  font-size: 17.3px;
+  margin-bottom: 1em; }
+
+.lh-features-list-wrap {
+  margin-right: 20px;
+  font-size: 13.6px; }
+
+.lh-finance .offer-link {
+  margin: 3rem 0 2rem;
+  width: calc(100% - 20px); }
+
+.lh-finance:before {
+  content: "";
+  display: block;
+  height: 50px;
+  position: absolute;
+  pointer-events: none;
+  box-shadow: inset 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27);
+  margin-left: -26px;
+  width: calc(100% + 26px); }
+
+.lh-finance i {
+  color: #00aced; }
+
+.lh-finance h1 {
+  padding-top: 2em;
+  margin-bottom: 1em; }
+
+.lh-finance ul li:nth-child(1):before {
+  background: #25aae1; }
+
+.lh-finance ul li:nth-child(2):before {
+  background: #0075ed; }
+
+.lh-finance ul li:nth-child(3):before {
+  background: #88d6f4; }
+
+.lh-finance ul li:nth-child(4):before {
+  background: #6da2e4; }
+
+.lh-finance ul li:nth-child(5):before {
+  background: #d3dff8; }
+
+.lh-finance ul li {
+  font-size: 18px;
+  margin: .7em 0; }
+  .lh-finance ul li:before {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 .5em .1em 0; }
+  .lh-finance ul li strong {
+    margin-left: .11em; }
+
+.lh-finance-list {
+  display: flex;
+  align-items: center; }
+
+.lh-details-block {
+  border-bottom: 1px solid #d6dce6;
+  margin-right: 20px;
+  margin-bottom: 1.3rem; }
+  .lh-details-block > strong {
+    display: block;
+    margin-bottom: .5em;
+    font-size: 1rem; }
+
+.lh-provider p, .lh-provider span {
+  font-size: .8rem;
+  font-weight: 100; }
+
+.lh-provider p, .lh-provider a {
+  font-weight: 600; }
+
+.lh-provider span {
+  padding: .5em 0 2em;
+  display: block; }
+
+.lh-provider .offer-link {
+  margin: 0 10px 20px 0;
+  padding: 14px !important; }
+
+/* SVG chart */
+.chart-text {
+  font: 16px "Graphik Regular", sans-serif, Arial, sans-serif;
+  fill: #000;
+  -moz-transform: translateY(0.25em);
+  -ms-transform: translateY(0.25em);
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em); }
+
+.chart-number {
+  font-size: 0.2em;
+  line-height: 1;
+  text-anchor: middle;
+  transform: translateY(-1.65em); }
+
+.chart-label {
+  font-size: 0.2em;
+  line-height: 1;
+  text-anchor: middle;
+  font-weight: bold; }
+
+.border-dotted {
+  border: 3px dotted #d6dce6;
+  padding: 1.2em;
+  font-size: 1.5rem;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  color: #00aced; }

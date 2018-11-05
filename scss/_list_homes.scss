@@ -22,12 +22,37 @@
 .modal-menu {
   background: white;
   width: 100%;
-  padding: 30px 0 30px 16px;
   font-size: 18.5px;
+  .go-back {
+    padding: 30px 0 30px 16px;
+  }
   .fasback {
     font-size: 18.5px;
     padding: 0 16px;
     color: $main-color;
+  }
+  .various-link {
+    align-items: center;
+    padding: .3em 0 0 1.87em;
+    .offer-link {
+      margin-left: 0;
+      margin-right: 1em;
+    }
+    .faw-options {
+      display: flex;
+      padding-top: 0;
+      .far,.fas {
+        font-size: 1.7rem;
+        margin-right: .2em;
+      }
+    }
+    .faw-options > * {
+      padding: 0 .5em;
+    }
+
+    p {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -64,7 +89,7 @@ figure.lh-img-holder {
     top: 15px;
     right:15px;
   }
-}
+} // lh-img-holder
 
 .fasarrow {
   font-size: .9rem;
@@ -94,7 +119,7 @@ figure.lh-img-holder {
     color: white;
     padding-left: 1em;
   }
-}
+} // offer-link
 
 .lh-info-imp {
   font-weight: 600;
@@ -167,55 +192,78 @@ figure.lh-img-holder {
       height: 120px;
     }
   }
-  .lh-house-details {
-    .lh-house {
-      margin-bottom: 1.3rem;
-      &--desktop {
-        margin-top: 2rem;
-      }
-    }
-    .agent-phone {
-      transform: rotate(90deg);
-      color: white;
-      background: $main-color;
-      padding: .8em;
-      border-radius: 50%;
-      font-size: 16px;
-      &-text {
-        font-size: 1rem;
-        margin-left: 0.6em;
-      }
-    }
-    .agent-text {
-      margin-left: 1.4em;
-      color: white;
-      background: $main-color;
-      padding: .8em;
-      border-radius: 50%;
-      font-size: 16px;
-      &-text {
-        font-size: 1rem;
-        margin-left: 0.6em;
-        }
-      }
-    }
+} // lh-info-wrapper
 
-    .faw-options {
-      padding: 2em 0;
-      margin-right: 20px;
-      color: $main-color;
-      [class*='col-'] {
-        text-align: center;
-      }
-      i {
-        font-size: 2.5rem;
-        padding-right: .5em;
-      }
-      p {
-        margin-left: -1em;
-      }
+.lh-house-details.lh-house-details--big {
+  .agent-phone, .agent-text {
+    font-size: 16px;
+    &-text {
+      margin-right: 1.4em;
     }
   }
+}
+
+.lh-house-details {
+  margin: 2em 0;
+  .lh-house {
+    margin-bottom: 1.3rem;
+    &--desktop {
+      margin-top: 2rem;
+    }
+  }
+  .agent-phone {
+    transform: rotate(90deg);
+    color: white;
+    background: $main-color;
+    padding: .8em;
+    border-radius: 50%;
+    &-text {
+      font-size: 1rem;
+      margin-left: 0.6em;
+    }
+  }
+  .agent-text {
+    margin-left: 1.4em;
+    color: white;
+    background: $main-color;
+    padding: .8em;
+    border-radius: 50%;
+    font-size: 16px;
+    &-text {
+      font-size: 1rem;
+      margin-left: 0.6em;
+    }
+  }
+} // lh-house-details
+
+  .faw-options {
+    padding-top: 2em;
+    margin-right: 20px;
+    color: $main-color;
+    [class*='col-'] {
+      text-align: center;
+    }
+    i {
+      font-size: 2.5rem;
+      padding-right: .5em;
+    }
+    p {
+      margin-left: -1em;
+    }
+  }
+
+.hr {
+  margin-left: -42px;
+  width: calc(100% + 80px);
+  &-up {
+    padding-bottom: 25px;
+    border-top: 1px solid $lightergray;
+  }
+  &-down {
+    padding-top: 25px;
+    border-bottom: 1px solid $lightergray;
+  }
+}
 
 .lh-pictures {
   .image {
@@ -236,9 +284,13 @@ figure.lh-img-holder {
 }
 
 .contact-agent {
+  p {
+    color: #4a505d !important;
+  }
+
   @include respond-to('desktop') {
     padding-left: 1.45rem !important;
-    border-left: 1px solid #d6dce6;
+    border-left: 1px solid $lightergray;
   }
   &-title {
     text-transform: uppercase;
@@ -292,31 +344,59 @@ figure.lh-img-holder {
       }
     }
   }
-  p {
-    color: #4a505d !important;
-  }
+} // contact agent
 
-  .another-contact {
-    display: flex;
-    margin: 1em 0;
-    p {
-      font-size: .7rem;
-    }
-    .preferred-lender {
-      padding-left: 1em;
-    }
-    @include respond-to('desktop') {
-      justify-content: center;
-    }
+.another-contact {
+  display: flex;
+  margin: 1em 0;
+  p {
+    font-size: .7rem;
+  }
+  .preferred-lender {
+    padding-left: 1em;
+  }
+  @include respond-to('desktop') {
+    justify-content: center;
   }
 }
 
-.contact-agent-form {
+.contact-agent-form, .lh-form {
   margin-top: 2.5em;
   margin-right: 20px;
+  select.lh-custom-select {
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   padding: .8em .33em;
+   display: block;
+   width: 100%;
+  }
+  .lh-custom-select-wrap {
+    position: relative;
+    &:before {
+      display: inline-block;
+      position: absolute;
+      right: 12px;
+      top: 16px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      text-rendering: auto;
+      font-variant: normal;
+      line-height: 1;
+      content: "\f078";
+    }
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  .lh-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
   .input-group {
     margin: 15px 0;
     border-right: none;
+    /*
     &:before {
       content: "";
       width: 100%;
@@ -327,16 +407,17 @@ figure.lh-img-holder {
       border-radius: 4px;
       box-shadow: inset 0px 0px 2px 2px #e7e7e7;
       pointer-events: none;
-    }
+    } */
   }
   .input-group-text {
     background: none;
     border: 1px solid;
-    border: none;
+    // border: none;
   }
   .form-control {
     border: 1px solid #666;
-    border: none;
+    padding: 1.4em .33em;
+    // border: none;
     &:active, &:focus, &:hover {
       outline: none;
       box-shadow: none;
@@ -364,4 +445,210 @@ figure.lh-img-holder {
   .fa-phone {
     transform: rotate(90deg);
   }
+} // contact agent form
+
+.plus-button {
+  i {
+    margin-right: .33em;
+  }
+  text-transform: uppercase;
+  color: $main-color;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.lh-virutal-tour {
+  margin: 3em 0 4em;
+  display: flex;
+  flex-direction: column;
+  .list-home-title {
+    margin-bottom: .7em;
+  }
+  img {
+    border-radius: 5px;
+    margin-right: 15px;
+    @include respond-to('mobile') {
+      margin-right: 25px !important;
+    }
+  }
+}
+
+.fadown, .faup {
+  font-size: 1.7rem;
+  float: right;
+  padding: 0 1em;
+}
+
+.faup {
+  color:$main-color;
+}
+
+.fadown {
+  color: $lightergray;
+}
+
+.lh-features {
+  .list-home-title {
+    padding: .5em 0
+  }
+
+  .hr-down {
+    margin-bottom: 2em;
+  }
+
+  .lh-subtitle {
+    color: $main-color;
+    padding-top: 1em;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+}
+
+.lh-house-prop-desc {
+  p {
+    padding-right: 25px;
+    color: #525b6a;
+    font-size: 17.3px;
+    margin-bottom: 1em;
+  }
+}
+
+.lh-features-list-wrap {
+  margin-right: 20px;
+  font-size: 13.6px;
+}
+
+.lh-finance {
+  .offer-link {
+      margin: 3rem 0 2rem;
+      width: calc(100% - 20px);
+  }
+  &:before {
+    content: "";
+    display: block;
+    height: 50px;
+    position: absolute;
+    pointer-events: none;
+    box-shadow: inset 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27);
+    margin-left: -26px;
+    width: calc(100% + 26px);
+  }
+  i {
+    color: $main-color;
+  }
+  h1 {
+    padding-top: 2em;
+    margin-bottom: 1em;
+  }
+  ul {
+    li:nth-child(1) {
+      &:before {
+        background: #25aae1;
+      }
+    }
+    li:nth-child(2) {
+      &:before {
+        background: #0075ed;
+      }
+    }
+    li:nth-child(3) {
+      &:before {
+        background: #88d6f4;
+      }
+    }
+    li:nth-child(4) {
+      &:before {
+        background: #6da2e4;
+      }
+    }
+    li:nth-child(5) {
+      &:before {
+        background: #d3dff8;
+      }
+    }
+    li {
+      &:before {
+        display: inline-block;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 .5em .1em 0;
+      }
+      font-size: 18px;
+      margin: .7em 0;
+      strong {
+        margin-left: .11em;
+      }
+    }
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.lh-details-block {
+  border-bottom: 1px solid $lightergray;
+  margin-right: 20px;
+  margin-bottom: 1.3rem;
+  & > strong {
+    display: block;
+    margin-bottom: .5em;
+    font-size: 1rem;
+  }
+}
+
+.lh-provider {
+  p, span {
+    font-size: .8rem;
+    font-weight: 100;
+  }
+  p, a {
+    font-weight: 600;
+  }
+  span {
+    padding: .5em 0 2em;
+    display: block;
+  }
+
+  .offer-link {
+    margin: 0 10px 20px 0;
+    padding: 14px !important;
+  }
+}
+
+/* SVG chart */
+.chart-text {
+  font: 16px $default-font-family, Arial, sans-serif;
+  fill: #000;
+  -moz-transform: translateY(0.25em);
+  -ms-transform: translateY(0.25em);
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em);
+}
+
+.chart-number {
+  font-size: 0.2em;
+  line-height: 1;
+  text-anchor: middle;
+  transform: translateY(-1.65em);
+}
+
+.chart-label {
+  font-size: 0.2em;
+  line-height: 1;
+  text-anchor: middle;
+  font-weight: bold;
+}
+
+.border-dotted {
+  border: 3px dotted $lightergray;
+  padding: 1.2em;
+  font-size: 1.5rem;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  color: $main-color;
 }

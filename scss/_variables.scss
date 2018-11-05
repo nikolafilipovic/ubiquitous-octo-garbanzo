@@ -4,8 +4,13 @@ $light-font-family: "Graphik Light", sans-serif;
 $bold-font-family: "Graphik Medium", sans-serif;
 
 $main-color: #00aced;
+$lightergray: #d6dce6;
 
-.t {
-  min-height: 100vh;
-  background: $main-color;
+h1 {
+  &.list-home-title {
+    font-size: 22px;
+  }
+  &.list-home-title--pb {
+    padding-bottom: 1em;
+  }
 }
