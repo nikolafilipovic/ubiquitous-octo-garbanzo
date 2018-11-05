@@ -196,7 +196,7 @@ figure.lh-img-holder {
 
 .lh-house-details.lh-house-details--big {
   .agent-phone, .agent-text {
-    font-size: 22px;
+    font-size: 16px;
     &-text {
       margin-right: 1.4em;
     }
@@ -204,6 +204,7 @@ figure.lh-img-holder {
 }
 
 .lh-house-details {
+  margin: 2em 0;
   .lh-house {
     margin-bottom: 1.3rem;
     &--desktop {
@@ -216,7 +217,6 @@ figure.lh-img-holder {
     background: $main-color;
     padding: .8em;
     border-radius: 50%;
-    font-size: 16px;
     &-text {
       font-size: 1rem;
       margin-left: 0.6em;
@@ -257,11 +257,11 @@ figure.lh-img-holder {
   width: calc(100% + 80px);
   &-up {
     padding-bottom: 25px;
-    border-top: 1px solid #d6dce6;
+    border-top: 1px solid $lightergray;
   }
   &-down {
     padding-top: 25px;
-    border-bottom: 1px solid #d6dce6;
+    border-bottom: 1px solid $lightergray;
   }
 }
 
@@ -290,7 +290,7 @@ figure.lh-img-holder {
 
   @include respond-to('desktop') {
     padding-left: 1.45rem !important;
-    border-left: 1px solid #d6dce6;
+    border-left: 1px solid $lightergray;
   }
   &-title {
     text-transform: uppercase;
@@ -360,12 +360,43 @@ figure.lh-img-holder {
   }
 }
 
-.contact-agent-form {
+.contact-agent-form, .lh-form {
   margin-top: 2.5em;
   margin-right: 20px;
+  select.lh-custom-select {
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   padding: .8em .33em;
+   display: block;
+   width: 100%;
+  }
+  .lh-custom-select-wrap {
+    position: relative;
+    &:before {
+      display: inline-block;
+      position: absolute;
+      right: 12px;
+      top: 16px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      text-rendering: auto;
+      font-variant: normal;
+      line-height: 1;
+      content: "\f078";
+    }
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  .lh-label {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
   .input-group {
     margin: 15px 0;
     border-right: none;
+    /*
     &:before {
       content: "";
       width: 100%;
@@ -376,16 +407,17 @@ figure.lh-img-holder {
       border-radius: 4px;
       box-shadow: inset 0px 0px 2px 2px #e7e7e7;
       pointer-events: none;
-    }
+    } */
   }
   .input-group-text {
     background: none;
     border: 1px solid;
-    border: none;
+    // border: none;
   }
   .form-control {
     border: 1px solid #666;
-    border: none;
+    padding: 1.4em .33em;
+    // border: none;
     &:active, &:focus, &:hover {
       outline: none;
       box-shadow: none;
@@ -421,7 +453,8 @@ figure.lh-img-holder {
   }
   text-transform: uppercase;
   color: $main-color;
-  font-size: 1.3em;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .lh-virutal-tour {
@@ -440,11 +473,18 @@ figure.lh-img-holder {
   }
 }
 
-.fadown {
+.fadown, .faup {
   font-size: 1.7rem;
-  color: #d6dce6;
   float: right;
   padding: 0 1em;
+}
+
+.faup {
+  color:$main-color;
+}
+
+.fadown {
+  color: $lightergray;
 }
 
 .lh-features {
@@ -481,13 +521,17 @@ figure.lh-img-holder {
 }
 
 .lh-finance {
+  .offer-link {
+      margin: 3rem 0 2rem;
+      width: calc(100% - 20px);
+  }
   &:before {
     content: "";
     display: block;
     height: 50px;
     position: absolute;
     pointer-events: none;
-    box-shadow: inset 0px 48px 39px -43px #c2c2c2;
+    box-shadow: inset 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27);
     margin-left: -26px;
     width: calc(100% + 26px);
   }
@@ -496,7 +540,7 @@ figure.lh-img-holder {
   }
   h1 {
     padding-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
   ul {
     li:nth-child(1) {
@@ -547,12 +591,32 @@ figure.lh-img-holder {
 }
 
 .lh-details-block {
-  border-bottom: 1px solid #d6dce6;
+  border-bottom: 1px solid $lightergray;
   margin-right: 20px;
   margin-bottom: 1.3rem;
   & > strong {
     display: block;
     margin-bottom: .5em;
+    font-size: 1rem;
+  }
+}
+
+.lh-provider {
+  p, span {
+    font-size: .8rem;
+    font-weight: 100;
+  }
+  p, a {
+    font-weight: 600;
+  }
+  span {
+    padding: .5em 0 2em;
+    display: block;
+  }
+
+  .offer-link {
+    margin: 0 10px 20px 0;
+    padding: 14px !important;
   }
 }
 
@@ -578,4 +642,13 @@ figure.lh-img-holder {
   line-height: 1;
   text-anchor: middle;
   font-weight: bold;
+}
+
+.border-dotted {
+  border: 3px dotted $lightergray;
+  padding: 1.2em;
+  font-size: 1.5rem;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  color: $main-color;
 }

@@ -146,7 +146,7 @@ Template Name: List Homes
           <div class="hr hr-down"></div>
         </div>
 
-        <div class="lh-house-details lh-house-details--big d-flex d-md-none py-4">
+        <div class="lh-house-details lh-house-details--big d-flex d-md-none">
           <i class="fas fa-phone agent-phone"></i><p class="agent-phone-text d-flex align-items-center">Call Agent</p>
           <i class="fas fa-comment-alt agent-text"></i><p class="agent-phone-text d-flex align-items-center">Text Agent</p>
         </div>
@@ -309,6 +309,10 @@ Template Name: List Homes
             <p>Basement</p>
             <strong>Table tennis, Cinema, Popcorn</strong>
           </div>
+          <div class="lh-details-block">
+            <p>Basement</p>
+            <strong>Office desk, Chair, Security safe</strong>
+          </div>
           <h2 class="lh-subtitle">
             Construction
           </h2>
@@ -360,11 +364,32 @@ Template Name: List Homes
             <p>HOA free: <strong>$60</strong></p>
             <p class="mb-4">HOA Frequency: <strong>Monthly</strong></p>
           </div>
+
+          <div class="lh-provider">
+            <p>Listing provided by</p>
+            <span>
+              <a href="#">Samuel Shechter</a>, License #357382,
+              <a href="#">Quicksilver Realty</a> inc.,<br/>
+              (404) 624-6362, Source: First Multiple Listing Service.
+              <a href="#">MLS Disclaimer</a>
+            </span>
+
+            <div class="offer-link">
+              <a href="#">Make an offer</a>
+              <i class="fas fa-arrow-right fasarrow"></i>
+            </div>
+
+            <div class="offer-link">
+              <a href="#">Schedule tour</a>
+              <i class="fas fa-arrow-right fasarrow"></i>
+            </div>
+          </div>
+
         </div>
         <div class="lh-finance w-100">
             <h1 class="list-home-title d-block w-100">
                 Get Financing
-                <i class="fas fa-chevron-down fadown"></i>
+                <i class="fas fa-chevron-up faup"></i>
             </h1>
             <div class="row no-gutters">
               <div class="col-6 lh-finance-list">
@@ -397,8 +422,123 @@ Template Name: List Homes
                 </div>
               </div>
             </div>
+            <div class="offer-link">
+              <a href="#">Get pre-qualified</a>
+              <i class="fas fa-arrow-right fasarrow"></i>
+            </div>
+            <div class="plus-button d-flex justify-content-center">
+              <i class="fas fa-plus"></i>
+              More
+            </div>
         </div>
+        <form class="lh-form">
+          <label class="lh-label">Home Price</label>
+          <div class="input-group mt-1 mb-4">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+            </div>
+            <input type="text" class="form-control" value="398,900" />
+          </div>
+
+          <label class="lh-label">Down payment</label>
+          <div class="row no-gutters mb-3">
+            <div class="input-group mt-1 col-8 pr-1">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
+              </div>
+              <input type="text" class="form-control" value="79,780" />
+            </div>
+            <div class="input-group mt-1 col-4 pl-1">
+              <input type="text" class="form-control" value="20" />
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-percent"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <label class="lh-label">Loan program</label>
+          <div class="lh-custom-select-wrap mb-4">
+            <select name="cars" class="lh-custom-select">
+              <option selected>Custom Select Menu</option>
+              <option value="volvo">Volvo</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+
+          <label class="lh-label">Interest rate</label>
+          <div class="input-group mt-1 mb-2">
+            <input type="text" class="form-control" value="4,627" />
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <i class="fa fa-percent"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check_tax">
+            <label class="form-check-label" for="check_tax">
+              Include taxes/insurance
+            </label>
+          </div>
+        </form>
+
+        <div class="lh-transportation">
+          <div class="hr hr-up"></div>
+          <h1 class="list-home-title d-block w-100">
+            Transportation
+            <i class="fas fa-chevron-up faup"></i>
+          </h1>
+          <div class="row no-gutters">
+            <div class="col-12 col-md-6">
+              <div class="row no-gutters">
+                <div class="border-dotted">
+                  75
+                </div>
+
+                <div class="">
+                  <p>Walk Score</p>
+                  <a href="#">Very Walkable</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row no-gutters">
+                <div class="border-dotted">
+                  75
+                </div>
+
+                <div class="">
+                  <p>Walk Score</p>
+                  <a href="#">Very Walkable</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="row no-gutters">
+                <div class="border-dotted">
+                  75
+                </div>
+
+                <div class="">
+                  <p>Walk Score</p>
+                  <a href="#">Very Walkable</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- lh-transportation -->
+
       </div> <!--  lh-features -->
+
+
 
       <div class="col-12 col-md-4 contact-agent">
         <h1 class="contact-agent-title">Contact Agent</h1>
