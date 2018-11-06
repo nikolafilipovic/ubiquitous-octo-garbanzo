@@ -448,22 +448,31 @@ Template Name: List Homes
         </div>
         <form class="lh-form">
           <label class="lh-label">Home Price</label>
-          <div class="form-group mt-1 mb-4">
-            <div class="has-dollar-left">
-              <input type="text" class="form-control" value="398,900" />
+          <div class="input-group mt-1 mb-4">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
             </div>
+            <input type="text" class="form-control" value="398,900" />
           </div>
 
           <label class="lh-label">Down payment</label>
           <div class="row no-gutters mb-3">
-            <div class="form-group mt-1 col-8 pr-1">
-              <div class="has-dollar-left">
-                <input type="text" class="form-control" value="398,900" />
+            <div class="input-group mt-1 col-8 pr-1">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-dollar-sign"></i>
+                </div>
               </div>
+              <input type="text" class="form-control" value="79,780" />
             </div>
-            <div class="form-group mt-1 col-4 pl-1">
-              <div class="has-amp-right">
-                <input type="text" class="form-control" value="20" />
+            <div class="input-group mt-1 col-4 pl-1">
+              <input type="text" class="form-control" value="20" />
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <i class="fa fa-percent"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -471,68 +480,29 @@ Template Name: List Homes
           <label class="lh-label">Loan program</label>
           <div class="lh-custom-select-wrap mb-4">
             <select name="cars" class="lh-custom-select">
-              <option selected>30-year fixed</option>
-              <option>20-year fixed</option>
-              <option>10-year fixed</option>
+              <option selected>Custom Select Menu</option>
+              <option value="volvo">Volvo</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
             </select>
           </div>
 
           <label class="lh-label">Interest rate</label>
-          <div class="form-group mt-1 mb-2">
-            <div class="has-amp-right">
-              <input type="text" class="form-control" value="4,627" />
+          <div class="input-group mt-1 mb-2">
+            <input type="text" class="form-control" value="4,627" />
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <i class="fa fa-percent"></i>
+              </div>
             </div>
           </div>
 
-          <div class="form-check mb-4">
+          <div class="form-check">
             <input class="form-check-input" type="checkbox" id="check_tax">
             <label class="form-check-label" for="check_tax">
               Include taxes/insurance
             </label>
           </div>
-
-          <label class="lh-label">Property tax</label>
-          <div class="row no-gutters mb-3">
-            <div class="form-group mt-1 col-8 pr-1">
-              <div class="has-year-right has-dollar-left">
-                <input type="text" class="form-control" value="2,712" />
-              </div>
-            </div>
-            <div class="form-group mt-1 col-4 pl-1">
-              <div class="has-amp-right">
-                <input type="text" class="form-control" value="0.68" />
-              </div>
-            </div>
-          </div>
-
-          <label class="lh-label">Property tax</label>
-          <div class="form-group mt-1 mb-2">
-            <div class="has-year-right has-dollar-left">
-              <input type="text" class="form-control" value="398,900" />
-            </div>
-          </div>
-
-          <div class="form-check mb-4">
-            <input class="form-check-input" type="checkbox" id="check_tax">
-            <label class="form-check-label" for="check_tax">
-              Include PMI
-            </label>
-          </div>
-
-          <label class="lh-label">HOA dues</label>
-          <div class="form-group mt-1 mb-4">
-            <div class="has-month-right has-dollar-left">
-              <input type="text" class="form-control" value="398,900" />
-            </div>
-          </div>
-
-
-          <p class="lh-apendix">
-            <small>
-              All calculations and costs are estimates.
-              This information is intended for planning and educational purposes only.
-            </small>
-          </p>
         </form>
 
         <div class="lh-transportation">
@@ -595,7 +565,7 @@ Template Name: List Homes
               </div>
               <div class="places-stars">
                 <h2>Shopping</h2>
-                <p>Walmart(0.85 mi)</p>
+                <p>Walmart (0.85 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -604,44 +574,35 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <span>5 reviews</span>
                 </div>
-                <p>Walmart(0.85 mi)</p>
+                <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
 
-                <p>Walmart(0.85 mi)</p>
+                <p>Damian Gonzales (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
               </div>
             </div>
 
-                        <div class="d-flex col-12 col-md-6">
+            <div class="d-flex col-12 col-md-6">
               <div>
                 <i class="fas fa-shopping-cart round-blue"></i>
               </div>
               <div class="places-stars">
-                <h2>Shopping</h2>
-                <p>Walmart(0.85 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
-                </div>
-                <p>Walmart(0.85 mi)</p>
+                <h2>Restaurants</h2>
+                <p>Walmart (0.85 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -651,25 +612,35 @@ Template Name: List Homes
                   <span>5 reviews</span>
                 </div>
 
-                <p>Walmart(0.85 mi)</p>
+                <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
+                </div>
+
+                <p>Damian Gonzales (2.87 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>2 reviews</span>
                 </div>
               </div>
             </div>
 
-                        <div class="d-flex col-12 col-md-6">
+            <div class="d-flex col-12 col-md-6">
               <div>
                 <i class="fas fa-shopping-cart round-blue"></i>
               </div>
               <div class="places-stars">
-                <h2>Shopping</h2>
-                <p>Walmart(0.85 mi)</p>
+                <h2>Fitness</h2>
+                <p>Walmart (0.85 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -678,35 +649,35 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <span>5 reviews</span>
                 </div>
-                <p>Walmart(0.85 mi)</p>
+                <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
 
-                <p>Walmart(0.85 mi)</p>
+                <p>Damian Gonzales (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
               </div>
             </div>
 
-                        <div class="d-flex col-12 col-md-6">
+            <div class="d-flex col-12 col-md-6">
               <div>
                 <i class="fas fa-shopping-cart round-blue"></i>
               </div>
               <div class="places-stars">
-                <h2>Shopping</h2>
-                <p>Walmart(0.85 mi)</p>
+                <h2>Hospital</h2>
+                <p>Walmart (0.85 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -715,29 +686,29 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <span>5 reviews</span>
                 </div>
-                <p>Walmart(0.85 mi)</p>
+                <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
 
-                <p>Walmart(0.85 mi)</p>
+                <p>Damian Gonzales (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>  <!-- lh-nearby-places -->
+        </div> <!-- lh-nearby-places -->
 
       </div> <!-- lh-features -->
 
