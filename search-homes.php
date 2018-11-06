@@ -3,6 +3,7 @@
         Template Name: Search Homes
     */
     get_header('listing');
+    $template_directory_uri = "/wp-content/themes/theoffercompany";
 ?>
 <style>
     .main-header {
@@ -84,7 +85,7 @@
                         <a class="dropdown-item active" href="#">Highest price</a>
                     </div>
                 </div>
-                <a href="#" class="desktop-fields-map">Map</a>
+                <a href="#" class="desktop-fields-map">List</a>
             </div>
         </div>
         <div class="row d-xl-none d-lg-none d-md-block d-sm-block d-block mobile-fields">
@@ -178,12 +179,12 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-6 d-xl-block col-lg-6 d-lg-block col-md-6 d-md-block col-sm-12 col-12 d-none">
+            <div class="col-xl-6 d-xl-block col-lg-6 d-lg-block col-md-6 d-md-block col-sm-12 col-12 d-none" id="map-area">
                 <div class="map-wrapper">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425342.1915312503!2d-112.40523308786538!3d33.605671055512104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b12ed50a179cb%3A0x8c69c7f8354a1bac!2sPhoenix%2C+AZ%2C+USA!5e0!3m2!1sen!2srs!4v1540947283725" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe><!-- ovde ide mapa -->
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 property-list">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 property-list" id="listing-area">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 d-lg-block d-md-block d-none listing-heading">
                         <h3 class="location-name">Atlanta GA Real Estate</h3>
@@ -270,6 +271,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <footer class="footer">   
+                        <div class="bottom-footer">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12 footer-copyright">
+                                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo"><img src="<?php echo $template_directory_uri; ?>/images/footer-logo.png" alt=""/></a>
+                                        <span>© <?php echo date('Y'); ?> The Offer Company</span>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer-social">
+                                        <a href="#"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
+                                        <a href="#"><span class="social-icon"><i class="fab fa-twitter"></i></span></a>
+                                        <a href="#"><span class="social-icon"><i class="fab fa-instagram"></i></span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer-contact">
+                                        <h3>(888) 398-4855</h3>
+                                        <span><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
             </div>
         </div>
     </div>
@@ -291,6 +315,7 @@
     </div>
 </div>
 <script>
+    /**
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -319,10 +344,15 @@
           });
         }
       }
+      */
 </script>
-<script async defer
+<!--<script async defer
   src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
-<?php
-    get_footer();
-?>
+</script>-->
+</div> <!-- #et-main-area -->
+</div> <!-- #page-container -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<?php wp_footer(); ?>
+</body>
+</html>

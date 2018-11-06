@@ -1774,7 +1774,7 @@ footer {
           background: white;
           width: 1.5px;
           height: 1.5px;
-          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
     #search-homes .mobile-fields .dropdown .dropdown-menu {
       min-width: 12rem;
@@ -1833,7 +1833,7 @@ footer {
           background: white;
           width: 1.5px;
           height: 1.5px;
-          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
     #search-homes .mobile-fields .dropdown:nth-child(odd) {
       margin-left: 1%; }
@@ -2246,7 +2246,7 @@ footer {
     background: #00aced;
     position: relative;
     z-index: 999;
-    box-shadow: 0; }
+    box-shadow: none; }
     .listing-header .navbar .navbar-brand {
       width: initial;
       margin-right: 1rem; }
@@ -2445,7 +2445,11 @@ footer {
     #search-homes .property-list .column-item:nth-child(even) {
       padding-right: 6px; }
     #search-homes .property-list .column-item:nth-child(odd) {
-      padding-left: 6px; } }
+      padding-left: 6px; }
+  #listing-area {
+    overflow-y: scroll; }
+  #search-page-body {
+    overflow-y: hidden; } }
 
 @media only screen and (max-width: 1365px) {
   #homes-search-desktop-field {
@@ -2454,11 +2458,6 @@ footer {
 .lh-wrapper {
   max-width: 1024px;
   margin: 0 auto; }
-
-.container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  box-shadow: 3px 2px 16px 1px grey; }
 
 .b-shadow {
   box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27); }

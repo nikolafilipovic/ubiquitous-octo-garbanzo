@@ -33,11 +33,20 @@ function searchOption(option) {
         return true;
     }
 }
+/* Div height */
+function docFill(){
+    if (jQuery(window).width() > 960) {
+        var areaHeight = jQuery(window).height() - 114;
+        jQuery("#map-area").css("height",areaHeight);
+        jQuery("#listing-area").css("height",areaHeight);
+    } else {
+        return true;
+    }
+  };
 /* Initialize the triggers */
 jQuery(document).ready(function(){
     // to be replaced later
     var openModal = jQuery("#open-modal");
-    
 
     jQuery( '#menu-opener' ).click(function() {
         openMenu();
@@ -82,4 +91,6 @@ jQuery(document).ready(function(){
      }else{
          return;
      }
+     docFill();
  })
+ jQuery(window).resize(docFill);
