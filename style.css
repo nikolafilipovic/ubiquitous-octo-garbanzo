@@ -1774,7 +1774,7 @@ footer {
           background: white;
           width: 1.5px;
           height: 1.5px;
-          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
     #search-homes .mobile-fields .dropdown .dropdown-menu {
       min-width: 12rem;
@@ -1833,7 +1833,7 @@ footer {
           background: white;
           width: 1.5px;
           height: 1.5px;
-          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
     #search-homes .mobile-fields .dropdown:nth-child(odd) {
       margin-left: 1%; }

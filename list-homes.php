@@ -595,7 +595,7 @@ Template Name: List Homes
               </div>
               <div class="places-stars">
                 <h2>Shopping</h2>
-                <p>Walmart(0.85 mi)</p>
+                <p>Walmart (0.85 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -604,44 +604,35 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <span>5 reviews</span>
                 </div>
-                <p>Walmart(0.85 mi)</p>
+                <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
 
-                <p>Walmart(0.85 mi)</p>
+                <p>Damian Gonzales (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
               </div>
             </div>
 
-                        <div class="d-flex col-12 col-md-6">
+            <div class="d-flex col-12 col-md-6">
               <div>
                 <i class="fas fa-shopping-cart round-blue"></i>
               </div>
               <div class="places-stars">
-                <h2>Shopping</h2>
-                <p>Walmart(0.85 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
-                </div>
-                <p>Walmart(0.85 mi)</p>
+                <h2>Restaurants</h2>
+                <p>Walmart (0.85 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -651,25 +642,35 @@ Template Name: List Homes
                   <span>5 reviews</span>
                 </div>
 
-                <p>Walmart(0.85 mi)</p>
+                <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
+                </div>
+
+                <p>Damian Gonzales (2.87 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>2 reviews</span>
                 </div>
               </div>
             </div>
 
-                        <div class="d-flex col-12 col-md-6">
+            <div class="d-flex col-12 col-md-6">
               <div>
                 <i class="fas fa-shopping-cart round-blue"></i>
               </div>
               <div class="places-stars">
-                <h2>Shopping</h2>
-                <p>Walmart(0.85 mi)</p>
+                <h2>Fitness</h2>
+                <p>Walmart (0.85 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -678,35 +679,35 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <span>5 reviews</span>
                 </div>
-                <p>Walmart(0.85 mi)</p>
+                <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
 
-                <p>Walmart(0.85 mi)</p>
+                <p>Damian Gonzales (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
               </div>
             </div>
 
-                        <div class="d-flex col-12 col-md-6">
+            <div class="d-flex col-12 col-md-6">
               <div>
                 <i class="fas fa-shopping-cart round-blue"></i>
               </div>
               <div class="places-stars">
-                <h2>Shopping</h2>
-                <p>Walmart(0.85 mi)</p>
+                <h2>Hospital</h2>
+                <p>Walmart (0.85 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -715,29 +716,29 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <span>5 reviews</span>
                 </div>
-                <p>Walmart(0.85 mi)</p>
+                <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
 
-                <p>Walmart(0.85 mi)</p>
+                <p>Damian Gonzales (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span>2 reviews</span>
                 </div>
               </div>
             </div>
           </div>
-        </div>  <!-- lh-nearby-places -->
+        </div> <!-- lh-nearby-places -->
 
       </div> <!-- lh-features -->
 
