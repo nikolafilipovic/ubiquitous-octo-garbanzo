@@ -418,6 +418,36 @@ figure.lh-img-holder {
     }
   }
 
+  .has-person-left {
+    position: relative;
+    &:before {
+      @extend %fa-base;
+      left: .6em;
+      top: 1em;
+      content: "\f007";
+    }
+    .form-control {
+      padding-left: 1.8em;
+    }
+  }
+
+  .has-phone-left {
+    @extend .has-person-left;
+    &:before {
+      content: "\f095";
+      transform: rotate(90deg);
+    }
+  }
+
+  .has-mail-left {
+    @extend .has-person-left;
+    &:before {
+      content: "\f0e0";
+    }
+  }
+
+
+
   .has-amp-right {
     position: relative;
     &:after {

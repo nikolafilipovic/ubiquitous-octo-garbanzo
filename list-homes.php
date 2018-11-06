@@ -765,33 +765,22 @@ Template Name: List Homes
           </div>
         </div>
         <form class="contact-agent-form">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <i class="fas fa-user"></i>
-              </div>
+          <div class="form-group">
+            <div class="has-person-left">
+              <input type="text" class="form-control" placeholder="Name" />
             </div>
-            <input type="text" class="form-control" placeholder="Name" />
           </div>
 
-          <div class="input-group">
-            <div class="shader"></div>
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <i class="fas fa-phone"></i>
-              </div>
+          <div class="form-group">
+            <div class="has-phone-left">
+              <input type="text" class="form-control" placeholder="Phone" />
             </div>
-            <input type="text" class="form-control" placeholder="Phone" />
           </div>
 
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <i class="fas fa-envelope"></i>
-              </div>
+          <div class="form-group">
+            <div class="has-mail-left">
+              <input type="email" class="form-control" placeholder="Email" />
             </div>
-
-            <input type="email" class="form-control" placeholder="Email" />
           </div>
 
           <div class="input-group">

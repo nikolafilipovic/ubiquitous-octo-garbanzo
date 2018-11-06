@@ -2780,6 +2780,19 @@ figure.lh-img-holder {
       content: "$"; }
     .contact-agent-form .has-dollar-left .form-control, .lh-form .has-dollar-left .form-control {
       padding-left: 1.4em; }
+  .contact-agent-form .has-person-left, .contact-agent-form .has-phone-left, .contact-agent-form .has-mail-left, .lh-form .has-person-left, .lh-form .has-phone-left, .lh-form .has-mail-left {
+    position: relative; }
+    .contact-agent-form .has-person-left:before, .contact-agent-form .has-phone-left:before, .contact-agent-form .has-mail-left:before, .lh-form .has-person-left:before, .lh-form .has-phone-left:before, .lh-form .has-mail-left:before {
+      left: .6em;
+      top: 1em;
+      content: "\f007"; }
+    .contact-agent-form .has-person-left .form-control, .contact-agent-form .has-phone-left .form-control, .contact-agent-form .has-mail-left .form-control, .lh-form .has-person-left .form-control, .lh-form .has-phone-left .form-control, .lh-form .has-mail-left .form-control {
+      padding-left: 1.8em; }
+  .contact-agent-form .has-phone-left:before, .lh-form .has-phone-left:before {
+    content: "\f095";
+    transform: rotate(90deg); }
+  .contact-agent-form .has-mail-left:before, .lh-form .has-mail-left:before {
+    content: "\f0e0"; }
   .contact-agent-form .has-amp-right, .contact-agent-form .has-year-right, .contact-agent-form .has-month-right, .lh-form .has-amp-right, .lh-form .has-year-right, .lh-form .has-month-right {
     position: relative; }
     .contact-agent-form .has-amp-right:after, .contact-agent-form .has-year-right:after, .contact-agent-form .has-month-right:after, .lh-form .has-amp-right:after, .lh-form .has-year-right:after, .lh-form .has-month-right:after {
@@ -2978,7 +2991,7 @@ figure.lh-img-holder {
   margin-right: 1em;
   color: #00aced; }
 
-.contact-agent-form .lh-custom-select-wrap:before, .lh-form .lh-custom-select-wrap:before {
+.contact-agent-form .lh-custom-select-wrap:before, .lh-form .lh-custom-select-wrap:before, .contact-agent-form .has-person-left:before, .contact-agent-form .has-phone-left:before, .contact-agent-form .has-mail-left:before, .lh-form .has-person-left:before, .lh-form .has-phone-left:before, .lh-form .has-mail-left:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   text-rendering: auto;
