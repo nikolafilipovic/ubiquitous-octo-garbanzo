@@ -22,12 +22,25 @@
   border-radius: 50%;
 }
 
-.row.row-without-margins {
-  margin: 0 !important;
+.round-num {
+  color: white;
+  font-size: 1.5rem;
+  background: #00aced;
+  text-align: center;
+  font-style: normal;
+  height: 50px;
+  padding-top: 13px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.small-caps {
+  font-size: 14px !important; 
 }
 
 .modal-menu {
-  background: white;
+background: white;
   width: 100%;
   font-size: 18.5px;
   .go-back {
@@ -377,6 +390,7 @@ figure.lh-img-holder {
     font-size: 0.95em;
     word-spacing: 1px;
     line-height: 1.4;
+    padding-bottom: 25px;
   }
   margin-top: 2.5em;
   margin-right: 20px;
@@ -756,15 +770,12 @@ figure.lh-img-holder {
       color: #a8b6c6;
     }
   }
-  .small-caps {
-    font-size: 14px; 
-  }
 }
 
 .lh-nearby-places {
   margin: 25px 0;
   .list-home-title {
-    padding: 0;
+    padding-bottom: 1.1em;
   }
   .places-stars {
     padding-left: 1.5em;
@@ -772,6 +783,7 @@ figure.lh-img-holder {
   h2 {
     font-size:18px;
     padding-top: .5em;
+    font-weight: 600;
   }
   p {
     font-size:16px;
@@ -779,18 +791,45 @@ figure.lh-img-holder {
   .stars-reviews {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 35px;
+    margin-bottom: .4em;
     i {
       color: $main-color;
-      padding-right: .5em;
+      padding-right: .3em;
     }
     span {
-      font-size: .9rem;
-      font-weight: lighter;
-      color:  #a8b6c6;
-      padding-left: 1em;
+      padding-left: .3em;
     }
   }
 }
+
+.lh-school-rankings {
+  margin-right: 20px;
+  .school-rank-group {
+    display: flex;
+    padding: 1em 0;
+    border-bottom: 1px solid $lightergray;
+    .faded {
+      font-size: .7rem !important;
+      padding-top: .2em;
+    }
+    .sch-r-desc {
+      padding-left: 1em;
+      p:first-of-type {
+        color: $main-color;
+      }
+    }
+  }
+  .school-rank-group:nth-child(4) {
+    border-bottom: none;
+  }
+}
+
+.faded {
+  font-size: .9rem !important;
+  font-weight: lighter !important;;
+  color:  #a8b6c6 !important;;
+}
+
 
 

@@ -190,7 +190,7 @@ Template Name: List Homes
           </h2>
           <div class="lh-features-list-wrap">
             <div class="row">
-              <div class="col-6">
+              <div class="col-6 col-md-4">
                 <div class="row no-gutters">
                   <div class="col-6">
                     Type:
@@ -240,7 +240,7 @@ Template Name: List Homes
                   </div>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-6 col-md-5">
                 <div class="row no-gutters">
                   <div class="col-6">
                     Pool:
@@ -602,7 +602,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span class="faded">5 reviews</span>
                 </div>
                 <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
@@ -611,7 +611,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>2 reviews</span>
+                  <span class="faded">2 reviews</span>
                 </div>
 
                 <p>Damian Gonzales (2.87 mi)</p>
@@ -621,89 +621,14 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>2 reviews</span>
+                  <span class="faded">2 reviews</span>
                 </div>
               </div>
             </div>
 
             <div class="d-flex col-12 col-md-6">
               <div>
-                <i class="fas fa-shopping-cart round-blue"></i>
-              </div>
-              <div class="places-stars">
-                <h2>Restaurants</h2>
-                <p>Walmart (0.85 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
-                </div>
-
-                <p>Jules Acupuncture (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span>2 reviews</span>
-                </div>
-
-                <p>Damian Gonzales (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span>2 reviews</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="d-flex col-12 col-md-6">
-              <div>
-                <i class="fas fa-shopping-cart round-blue"></i>
-              </div>
-              <div class="places-stars">
-                <h2>Fitness</h2>
-                <p>Walmart (0.85 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
-                </div>
-                <p>Jules Acupuncture (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span>2 reviews</span>
-                </div>
-
-                <p>Damian Gonzales (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span>2 reviews</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="d-flex col-12 col-md-6">
-              <div>
-                <i class="fas fa-shopping-cart round-blue"></i>
+                <i class="fas fa-briefcase-medical round-blue"></i>
               </div>
               <div class="places-stars">
                 <h2>Hospital</h2>
@@ -714,8 +639,9 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>5 reviews</span>
+                  <span class="faded">5 reviews</span>
                 </div>
+
                 <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
                   <i class="fas fa-star"></i>
@@ -723,7 +649,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>2 reviews</span>
+                  <span class="faded">2 reviews</span>
                 </div>
 
                 <p>Damian Gonzales (2.87 mi)</p>
@@ -733,12 +659,138 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span>2 reviews</span>
+                  <span class="faded">2 reviews</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex col-12 col-md-6">
+              <div>
+                <i class="fas fa-utensils round-blue"></i>
+              </div>
+              <div class="places-stars">
+                <h2>Restaurant</h2>
+                <p>Walmart (0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="faded">5 reviews</span>
+                </div>
+                <p>Jules Acupuncture (2.87 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="faded">2 reviews</span>
+                </div>
+
+                <p>Damian Gonzales (2.87 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="faded">2 reviews</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex col-12 col-md-6">
+              <div>
+                <i class="fas fa-running round-blue"></i>
+              </div>
+              <div class="places-stars">
+                <h2>Fitness</h2>
+                <p>Walmart (0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="faded">5 reviews</span>
+                </div>
+                <p>Jules Acupuncture (2.87 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="faded">2 reviews</span>
+                </div>
+
+                <p>Damian Gonzales (2.87 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="faded">2 reviews</span>
                 </div>
               </div>
             </div>
           </div>
+          <p class="small-caps">Data by <a class="small-caps" href="#"> Yelp</a></p>
+          <div class="hr hr-down"></div>
         </div> <!-- lh-nearby-places -->
+
+        <div class="lh-school-rankings">
+          <h1 class="list-home-title d-block w-100">
+            School Rankings
+            <i class="fas fa-chevron-up faup"></i>
+          </h1>
+          <div class="school-rank-group row no-gutters">
+            <div>
+              <i class="round-num">5</i>
+              <p class="faded">out of 10</p>
+            </div>
+            <div class="sch-r-desc">
+              <p>Marshall Ranch Elementary</p>
+              <p class="small-caps">0.9 mi</p>
+            </div>
+          </div>
+
+          <div class="school-rank-group row no-gutters">
+            <div>
+              <i class="round-num">6</i>
+              <p class="faded">out of 10</p>
+            </div>
+            <div class="sch-r-desc">
+              <p>Moon Valley High</p>
+              <p class="small-caps">0.9 mi</p>
+            </div>
+          </div>
+
+          <div class="school-rank-group row no-gutters">
+            <div>
+              <i class="round-num">8</i>
+              <p class="faded">out of 10</p>
+            </div>
+            <div class="sch-r-desc">
+              <p>Tumbleweed Elementary</p>
+              <p class="small-caps">0.9 mi</p>
+            </div>
+          </div>
+          <p class="small-caps">Data by <a class="small-caps" href="#"> GreatSchools.org</a></p>
+          <div class="hr hr-down"></div>
+        </div> <!-- lh-school-rankings -->
+          <div class="offer-link">
+            <a href="#">Make an offer</a>
+            <i class="fas fa-arrow-right fasarrow"></i>
+          </div>
+
+          <div class="offer-link">
+            <a href="#">Schedule tour</a>
+            <i class="fas fa-arrow-right fasarrow"></i>
+          </div>
 
       </div> <!-- lh-features -->
 

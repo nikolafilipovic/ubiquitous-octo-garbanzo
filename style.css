@@ -2469,8 +2469,20 @@ footer {
   padding: .8em;
   border-radius: 50%; }
 
-.row.row-without-margins {
-  margin: 0 !important; }
+.round-num {
+  color: white;
+  font-size: 1.5rem;
+  background: #00aced;
+  text-align: center;
+  font-style: normal;
+  height: 50px;
+  padding-top: 13px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block; }
+
+.small-caps {
+  font-size: 14px !important; }
 
 .modal-menu {
   background: white;
@@ -2653,7 +2665,7 @@ figure.lh-img-holder {
     padding-right: 20px; }
 
 .hr {
-  width: calc(100% + 30px);
+  width: calc(100% + 50px);
   margin-left: -30px; }
   @media (min-width: 768px) {
     .hr {
@@ -2753,7 +2765,8 @@ figure.lh-img-holder {
     color: #a6b4c6;
     font-size: 0.95em;
     word-spacing: 1px;
-    line-height: 1.4; }
+    line-height: 1.4;
+    padding-bottom: 25px; }
   .contact-agent-form select.lh-custom-select, .lh-form select.lh-custom-select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -3025,29 +3038,46 @@ figure.lh-img-holder {
   .lh-transportation .transp-desc p {
     color: #a8b6c6; }
 
-.lh-transportation .small-caps {
-  font-size: 14px; }
-
 .lh-nearby-places {
   margin: 25px 0; }
   .lh-nearby-places .list-home-title {
-    padding: 0; }
+    padding-bottom: 1.1em; }
   .lh-nearby-places .places-stars {
     padding-left: 1.5em; }
   .lh-nearby-places h2 {
     font-size: 18px;
-    padding-top: .5em; }
+    padding-top: .5em;
+    font-weight: 600; }
   .lh-nearby-places p {
     font-size: 16px; }
   .lh-nearby-places .stars-reviews {
     display: flex;
     align-items: center;
-    height: 50px; }
+    height: 35px;
+    margin-bottom: .4em; }
     .lh-nearby-places .stars-reviews i {
       color: #00aced;
-      padding-right: .5em; }
+      padding-right: .3em; }
     .lh-nearby-places .stars-reviews span {
-      font-size: .9rem;
-      font-weight: lighter;
-      color: #a8b6c6;
+      padding-left: .3em; }
+
+.lh-school-rankings {
+  margin-right: 20px; }
+  .lh-school-rankings .school-rank-group {
+    display: flex;
+    padding: 1em 0;
+    border-bottom: 1px solid #d6dce6; }
+    .lh-school-rankings .school-rank-group .faded {
+      font-size: .7rem !important;
+      padding-top: .2em; }
+    .lh-school-rankings .school-rank-group .sch-r-desc {
       padding-left: 1em; }
+      .lh-school-rankings .school-rank-group .sch-r-desc p:first-of-type {
+        color: #00aced; }
+  .lh-school-rankings .school-rank-group:nth-child(4) {
+    border-bottom: none; }
+
+.faded {
+  font-size: .9rem !important;
+  font-weight: lighter !important;
+  color: #a8b6c6 !important; }
