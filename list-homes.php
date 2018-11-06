@@ -833,9 +833,11 @@ Template Name: List Homes
               </div>
             </div>
             <div class="w-100-25 fp-links">
-              <div class="offer-link">
-                <a href="#">See all featured properties</a>
-                <i class="fas fa-arrow-right fasarrow"></i>
+              <div class="d-flex justify-content-center">
+                <div class="offer-link">
+                  <a href="#">See all featured properties</a>
+                  <i class="fas fa-arrow-right fasarrow"></i>
+                </div>
               </div>
               <div class="blue-border">
                 Buying but need to sell first? <span>The Offer Company will get you offers in 48 hours!</span>
