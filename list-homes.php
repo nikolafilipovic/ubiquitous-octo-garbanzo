@@ -366,9 +366,17 @@ Template Name: List Homes
             Other
           </h2>
           <div class="lh-details-block">
-            <p>HOA: <strong>Yes</strong></p>
-            <p>HOA free: <strong>$60</strong></p>
-            <p class="mb-4">HOA Frequency: <strong>Monthly</strong></p>
+            <div class="row no-gutters">
+              <div class="col-12 col-md-4">
+                <p>HOA: <strong>Yes</strong></p>
+              </div>                
+              <div class="col-12 col-md-4">
+                <p>HOA free: <strong>$60</strong></p>
+              </div>
+              <div class="col-12 col-md-4">
+                <p class="mb-4">HOA Frequency: <strong>Monthly</strong></p>
+              </div>
+            </div>
           </div>
 
           <div class="lh-provider">
@@ -380,14 +388,16 @@ Template Name: List Homes
               <a href="#">MLS Disclaimer</a>
             </span>
 
-            <div class="offer-link">
-              <a href="#">Make an offer</a>
-              <i class="fas fa-arrow-right fasarrow"></i>
-            </div>
+            <div class="d-flex d-md-none justify-content-center">
+              <div class="offer-link">
+                <a href="#">Make an offer</a>
+                <i class="fas fa-arrow-right fasarrow"></i>
+              </div>
 
-            <div class="offer-link">
-              <a href="#">Schedule tour</a>
-              <i class="fas fa-arrow-right fasarrow"></i>
+              <div class="offer-link">
+                <a href="#">Schedule tour</a>
+                <i class="fas fa-arrow-right fasarrow"></i>
+              </div>
             </div>
           </div>
 
@@ -795,7 +805,7 @@ Template Name: List Homes
           </div>
         </div> <!-- lh-school-rankings -->
 
-        <div class="lh-featured-props">
+        <div class="lh-featured-props mb-4">
           <div class="row">
             <div class="col-12 property-list">
               <div class="d-flex justify-content-center row no-gutters">
@@ -822,7 +832,7 @@ Template Name: List Homes
                 </div>
               </div>
             </div>
-            <div class="w-100 fp-links">
+            <div class="w-100-25 fp-links">
               <div class="offer-link">
                 <a href="#">See all featured properties</a>
                 <i class="fas fa-arrow-right fasarrow"></i>

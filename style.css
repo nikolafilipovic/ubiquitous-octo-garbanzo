@@ -92,6 +92,9 @@ h1.list-home-title {
 h1.list-home-title--pb {
   padding-bottom: 1em; }
 
+.w-100-25 {
+  width: calc(100% - 25px) !important; }
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -1774,7 +1777,7 @@ footer {
           background: white;
           width: 1.5px;
           height: 1.5px;
-          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
     #search-homes .mobile-fields .dropdown .dropdown-menu, .lh-featured-props .mobile-fields .dropdown .dropdown-menu {
       min-width: 12rem;
@@ -1833,7 +1836,7 @@ footer {
           background: white;
           width: 1.5px;
           height: 1.5px;
-          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
     #search-homes .mobile-fields .dropdown:nth-child(odd), .lh-featured-props .mobile-fields .dropdown:nth-child(odd) {
       margin-left: 1%; }
@@ -2768,6 +2771,8 @@ figure.lh-img-holder {
     word-spacing: 1px;
     line-height: 1.4;
     padding-bottom: 25px; }
+  .contact-agent-form textarea, .lh-form textarea {
+    padding: .7em !important; }
   .contact-agent-form select.lh-custom-select, .lh-form select.lh-custom-select {
     -webkit-appearance: none;
     -moz-appearance: none;
