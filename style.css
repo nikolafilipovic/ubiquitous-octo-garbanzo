@@ -3040,9 +3040,14 @@ figure.lh-img-holder {
   .lh-nearby-places p {
     font-size: 16px; }
   .lh-nearby-places .stars-reviews {
-    margin-top: -15px; }
+    display: flex;
+    align-items: center;
+    height: 50px; }
     .lh-nearby-places .stars-reviews i {
-      color: #00aced; }
+      color: #00aced;
+      padding-right: .5em; }
     .lh-nearby-places .stars-reviews span {
       font-size: .9rem;
-      color: #a8b6c6; }
+      font-weight: lighter;
+      color: #a8b6c6;
+      padding-left: 1em; }
