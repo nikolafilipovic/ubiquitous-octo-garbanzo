@@ -433,31 +433,22 @@ Template Name: List Homes
         </div>
         <form class="lh-form">
           <label class="lh-label">Home Price</label>
-          <div class="input-group mt-1 mb-4">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <i class="fas fa-dollar-sign"></i>
-              </div>
+          <div class="form-group mt-1 mb-4">
+            <div class="has-dollar-left">
+              <input type="text" class="form-control" value="398,900" />
             </div>
-            <input type="text" class="form-control" value="398,900" />
           </div>
 
           <label class="lh-label">Down payment</label>
           <div class="row no-gutters mb-3">
-            <div class="input-group mt-1 col-8 pr-1">
-              <div class="input-group-prepend">
-                <div class="input-group-text">
-                  <i class="fas fa-dollar-sign"></i>
-                </div>
+            <div class="form-group mt-1 col-8 pr-1">
+              <div class="has-dollar-left">
+                <input type="text" class="form-control" value="398,900" />
               </div>
-              <input type="text" class="form-control" value="79,780" />
             </div>
-            <div class="input-group mt-1 col-4 pl-1">
-              <input type="text" class="form-control" value="20" />
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <i class="fa fa-percent"></i>
-                </div>
+            <div class="form-group mt-1 col-4 pl-1">
+              <div class="has-amp-right">
+                <input type="text" class="form-control" value="20" />
               </div>
             </div>
           </div>
@@ -472,12 +463,9 @@ Template Name: List Homes
           </div>
 
           <label class="lh-label">Interest rate</label>
-          <div class="input-group mt-1 mb-2">
-            <input type="text" class="form-control" value="4,627" />
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <i class="fa fa-percent"></i>
-              </div>
+          <div class="form-group mt-1 mb-2">
+            <div class="has-amp-right">
+              <input type="text" class="form-control" value="4,627" />
             </div>
           </div>
 
@@ -490,41 +478,22 @@ Template Name: List Homes
 
           <label class="lh-label">Property tax</label>
           <div class="row no-gutters mb-3">
-            <div class="input-group mt-1 col-8 pr-1">
-              <div class="input-group-prepend">
-                <div class="input-group-text">
-                  <i class="fas fa-dollar-sign"></i>
-                </div>
-              </div>
-              <input type="text" class="form-control" value="79,780" />
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  /year
-                </div>
+            <div class="form-group mt-1 col-8 pr-1">
+              <div class="has-year-right has-dollar-left">
+                <input type="text" class="form-control" value="2,712" />
               </div>
             </div>
-            <div class="input-group mt-1 col-4 pl-1">
-              <input type="text" class="form-control" value="0.68" />
-              <div class="input-group-append">
-                <div class="input-group-text">
-                  <i class="fa fa-percent"></i>
-                </div>
+            <div class="form-group mt-1 col-4 pl-1">
+              <div class="has-amp-right">
+                <input type="text" class="form-control" value="0.68" />
               </div>
             </div>
           </div>
 
           <label class="lh-label">Property tax</label>
-          <div class="input-group mt-1 mb-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <i class="fas fa-dollar-sign"></i>
-              </div>
-            </div>
-            <input type="text" class="form-control" value="398,900" />
-            <div class="input-group-append">
-              <div class="input-group-text">
-                /year
-              </div>
+          <div class="form-group mt-1 mb-2">
+            <div class="has-year-right has-dollar-left">
+              <input type="text" class="form-control" value="398,900" />
             </div>
           </div>
 
@@ -536,21 +505,14 @@ Template Name: List Homes
           </div>
 
           <label class="lh-label">HOA dues</label>
-          <div class="input-group mt-1 mb-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <i class="fas fa-dollar-sign"></i>
-              </div>
-            </div>
-            <input type="text" class="form-control" value="60" />
-            <div class="input-group-append">
-              <div class="input-group-text">
-                /month
-              </div>
+          <div class="form-group mt-1 mb-4">
+            <div class="has-month-right has-dollar-left">
+              <input type="text" class="form-control" value="398,900" />
             </div>
           </div>
 
-          <p>
+
+          <p class="lh-apendix">
             <small>
               All calculations and costs are estimates.
               This information is intended for planning and educational purposes only.

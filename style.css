@@ -2742,54 +2742,48 @@ figure.lh-img-holder {
 .contact-agent-form, .lh-form {
   margin-top: 2.5em;
   margin-right: 20px; }
+  .contact-agent-form .lh-apendix, .lh-form .lh-apendix {
+    color: #a6b4c6;
+    font-size: 0.95em;
+    word-spacing: 1px;
+    line-height: 1.4; }
   .contact-agent-form select.lh-custom-select, .lh-form select.lh-custom-select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     padding: .8em .33em;
     display: block;
-    width: 100%; }
+    width: 100%;
+    border: 1px solid #d6dce6; }
   .contact-agent-form .lh-custom-select-wrap, .lh-form .lh-custom-select-wrap {
     position: relative; }
     .contact-agent-form .lh-custom-select-wrap:before, .lh-form .lh-custom-select-wrap:before {
-      display: inline-block;
-      position: absolute;
       right: 12px;
       top: 16px;
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      text-rendering: auto;
-      font-variant: normal;
-      line-height: 1;
       content: "\f078"; }
   .contact-agent-form select::-ms-expand, .lh-form select::-ms-expand {
     display: none; }
   .contact-agent-form .lh-label, .lh-form .lh-label {
     font-size: 1.1rem;
     font-weight: 600; }
-  .contact-agent-form .input-group, .lh-form .input-group {
-    margin: 15px 0;
-    border-right: none;
-    /*
-    &:before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      display: block;
-      position: absolute;
-      z-index: 999;
-      border-radius: 4px;
-      box-shadow: inset 0px 0px 2px 2px #e7e7e7;
-      pointer-events: none;
-    } */ }
-  .contact-agent-form .input-group-text, .lh-form .input-group-text {
-    background: none;
-    border: 1px solid #d6dce6;
-    color: #a6b4c6; }
-  .contact-agent-form .input-group-prepend + .form-control, .lh-form .input-group-prepend + .form-control {
-    border-left: none; }
-  .contact-agent-form .input-group-append ~ .form-control, .lh-form .input-group-append ~ .form-control {
-    border-right: none; }
+  .contact-agent-form .has-dollar-left, .lh-form .has-dollar-left {
+    position: relative; }
+    .contact-agent-form .has-dollar-left:before, .lh-form .has-dollar-left:before {
+      left: .6em;
+      content: "$"; }
+    .contact-agent-form .has-dollar-left .form-control, .lh-form .has-dollar-left .form-control {
+      padding-left: 1.4em; }
+  .contact-agent-form .has-amp-right, .contact-agent-form .has-year-right, .contact-agent-form .has-month-right, .lh-form .has-amp-right, .lh-form .has-year-right, .lh-form .has-month-right {
+    position: relative; }
+    .contact-agent-form .has-amp-right:after, .contact-agent-form .has-year-right:after, .contact-agent-form .has-month-right:after, .lh-form .has-amp-right:after, .lh-form .has-year-right:after, .lh-form .has-month-right:after {
+      right: .6em;
+      content: "%"; }
+    .contact-agent-form .has-amp-right .form-control, .contact-agent-form .has-year-right .form-control, .contact-agent-form .has-month-right .form-control, .lh-form .has-amp-right .form-control, .lh-form .has-year-right .form-control, .lh-form .has-month-right .form-control {
+      padding-right: 1.4em; }
+  .contact-agent-form .has-year-right:after, .lh-form .has-year-right:after {
+    content: "/year"; }
+  .contact-agent-form .has-month-right:after, .lh-form .has-month-right:after {
+    content: "/month"; }
   .contact-agent-form .form-control, .lh-form .form-control {
     border: 1px solid #d6dce6;
     padding: 1.4em .33em; }
@@ -2973,3 +2967,25 @@ figure.lh-img-holder {
   margin-right: 1em;
   margin-bottom: 1em;
   color: #00aced; }
+
+.contact-agent-form .lh-custom-select-wrap:before, .lh-form .lh-custom-select-wrap:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  text-rendering: auto;
+  font-variant: normal;
+  line-height: 1;
+  display: inline-block;
+  position: absolute;
+  color: #a6b4c6;
+  top: 1.2em; }
+
+.contact-agent-form .has-dollar-left:before, .lh-form .has-dollar-left:before, .contact-agent-form .has-amp-right:after, .contact-agent-form .has-year-right:after, .contact-agent-form .has-month-right:after, .lh-form .has-amp-right:after, .lh-form .has-year-right:after, .lh-form .has-month-right:after {
+  font-family: "Graphik Regular", sans-serif;
+  font-weight: 400;
+  text-rendering: auto;
+  font-variant: normal;
+  line-height: 1;
+  display: inline-block;
+  position: absolute;
+  color: #a6b4c6;
+  top: 1.3em; }
