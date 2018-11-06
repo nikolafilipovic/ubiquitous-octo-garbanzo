@@ -777,18 +777,13 @@ figure.lh-img-holder {
     font-size:16px;
   }
   .stars-reviews {
-    display: flex;
-    align-items: center;
-    height: 50px;
+    margin-top: -15px;
     i {
       color: $main-color;
-      padding-right: .5em;
     }
     span {
       font-size: .9rem;
-      font-weight: lighter;
       color:  #a8b6c6;
-      padding-left: 1em;
     }
   }
 }
