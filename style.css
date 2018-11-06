@@ -2761,7 +2761,8 @@ figure.lh-img-holder {
     padding: .8em .33em;
     display: block;
     width: 100%;
-    border: 1px solid #d6dce6; }
+    border: 1px solid #d6dce6;
+    box-shadow: inset 0px 9px 15px -10px #d6dce6; }
   .contact-agent-form .lh-custom-select-wrap, .lh-form .lh-custom-select-wrap {
     position: relative; }
     .contact-agent-form .lh-custom-select-wrap:before, .lh-form .lh-custom-select-wrap:before {
@@ -2806,10 +2807,10 @@ figure.lh-img-holder {
     content: "/month"; }
   .contact-agent-form .form-control, .lh-form .form-control {
     border: 1px solid #d6dce6;
-    padding: 1.4em .33em; }
+    padding: 1.4em .33em;
+    box-shadow: inset 0px 9px 15px -10px #d6dce6; }
     .contact-agent-form .form-control:active, .contact-agent-form .form-control:focus, .contact-agent-form .form-control:hover, .lh-form .form-control:active, .lh-form .form-control:focus, .lh-form .form-control:hover {
-      outline: none;
-      box-shadow: none; }
+      outline: none; }
   .contact-agent-form textarea, .lh-form textarea {
     height: 100px;
     max-height: 200px;

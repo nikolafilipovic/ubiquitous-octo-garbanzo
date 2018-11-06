@@ -388,6 +388,7 @@ figure.lh-img-holder {
    display: block;
    width: 100%;
    border: 1px solid $lightergray;
+   box-shadow: inset 0px 9px 15px -10px #d6dce6;
   }
   .lh-custom-select-wrap {
     position: relative;
@@ -477,10 +478,9 @@ figure.lh-img-holder {
   .form-control {
     border: 1px solid $lightergray;
     padding: 1.4em .33em;
-    // border: none;
+    box-shadow: inset 0px 9px 15px -10px #d6dce6;
     &:active, &:focus, &:hover {
       outline: none;
-      box-shadow: none;
     }
   }
   textarea {
