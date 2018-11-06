@@ -781,16 +781,60 @@ Template Name: List Homes
           </div>
           <p class="small-caps">Data by <a class="small-caps" href="#"> GreatSchools.org</a></p>
           <div class="hr hr-down"></div>
-        </div> <!-- lh-school-rankings -->
-          <div class="offer-link">
-            <a href="#">Make an offer</a>
-            <i class="fas fa-arrow-right fasarrow"></i>
-          </div>
 
-          <div class="offer-link">
-            <a href="#">Schedule tour</a>
-            <i class="fas fa-arrow-right fasarrow"></i>
+          <div class="sch-r-offer-link d-block d-md-none">
+            <div class="offer-link">
+              <a href="#">Make an offer</a>
+              <i class="fas fa-arrow-right fasarrow"></i>
+            </div>
+
+            <div class="offer-link">
+              <a href="#">Schedule tour</a>
+              <i class="fas fa-arrow-right fasarrow"></i>
+            </div>
           </div>
+        </div> <!-- lh-school-rankings -->
+
+        <div class="lh-featured-props">
+          <div class="row">
+            <div class="col-12 property-list">
+              <div class="d-flex justify-content-center row no-gutters">
+                <h1 class="list-home-title">Featured Properties Nearby</h1>
+                <div class="d-flex justify-content-center align-items-center col-12 column-item">
+                  <i class="fas fa-chevron-left"></i>
+                  <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-1.png)">
+                    <span class="time-on-market">
+                      5 days on the market
+                    </span>
+                    <span class="sale-type">
+                      <i class="red-dot"></i>
+                      House for Sale
+                    </span>
+                    <h1 class="property-price">$425,000</h1>
+                    <div class="property-info">
+                      <span class="beds">3 bds</span>
+                      <span class="baths">2 ba</span>
+                      <span class="sqft">1,209 sqft</span>
+                    </div>
+                    <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>
+                  </div>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="w-100 fp-links">
+              <div class="offer-link">
+                <a href="#">See all featured properties</a>
+                <i class="fas fa-arrow-right fasarrow"></i>
+              </div>
+              <div class="blue-border">
+                Buying but need to sell first? <span>The Offer Company will get you offers in 48 hours!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 
       </div> <!-- lh-features -->
 

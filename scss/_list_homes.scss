@@ -823,12 +823,91 @@ figure.lh-img-holder {
   .school-rank-group:nth-child(4) {
     border-bottom: none;
   }
+  .offer-link {
+    margin: 20px 10px 20px 0;
+    padding: 14px !important; 
+  }
+
+  .sch-r-offer-link {
+    &:after {
+      @include respond-to('desktop') {
+        display: none;
+      }
+      content: "";
+      display: block;
+      height: 50px;
+      position: absolute;
+      pointer-events: none;
+      box-shadow: inset 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27);
+      margin-left: -26px;
+      width: calc(100% + 26px);
+    }
+  }
 }
 
 .faded {
   font-size: .9rem !important;
   font-weight: lighter !important;;
   color:  #a8b6c6 !important;;
+}
+
+.lh-featured-props {
+  @include respond-to('xs-mobile') {
+    .property-item {
+      width:60%;
+    }
+  }
+  .fa-chevron-right, .fa-chevron-left {
+    font-size: 2.7rem;
+    padding: 0 .3em;
+    color: $lightergray;
+  }
+  .fa-chevron-right {
+    color: $main-color;
+  }
+  .offer-link {
+    width: auto;
+    text-transform: none;
+    margin: 2em 0;
+  }
+  .list-home-title {
+    padding: 1.5em 0;
+  }
+  .property-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .property-item {
+      border-radius: 5px;
+      margin:0 !important;
+      padding-right: 150px !important;
+      .sale-type {
+        padding: 0 !important;
+      }
+      .time-on-market {
+        padding: 0 !important;
+      }
+      .property-info {
+        margin-top: 0 !important;
+        .beds, .baths, .sqft {
+          vertical-align: unset !important;
+          padding: 0 !important;
+        }
+      }
+      .property-address {
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+.blue-border {
+  border: 1px solid $main-color;
+  border-radius: 5px;
+  padding:.7em;
+  span {
+    color: $main-color;
+  }
 }
 
 

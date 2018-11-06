@@ -1668,19 +1668,19 @@ footer {
 /* Search homes styling
     - We're making our own grid, yaay!
 ------------------------------------------------------- */
-#search-homes .form-control.search {
+#search-homes .form-control.search, .lh-featured-props .form-control.search {
   display: inline-block;
   position: relative;
   display: none; }
 
-#search-homes .mobile-fields {
+#search-homes .mobile-fields, .lh-featured-props .mobile-fields {
   margin-top: 20px; }
-  #search-homes .mobile-fields .dropdown {
+  #search-homes .mobile-fields .dropdown, .lh-featured-props .mobile-fields .dropdown {
     display: inline-block;
     box-sizing: border-box;
     width: 48%;
     margin-bottom: 3%; }
-    #search-homes .mobile-fields .dropdown h3 {
+    #search-homes .mobile-fields .dropdown h3, .lh-featured-props .mobile-fields .dropdown h3 {
       font-family: "Graphik Medium", sans-serif;
       color: #1e232c;
       font-size: 14px;
@@ -1691,7 +1691,7 @@ footer {
       margin-top: 5px;
       margin-bottom: 0px;
       padding: 0; }
-    #search-homes .mobile-fields .dropdown .btn {
+    #search-homes .mobile-fields .dropdown .btn, .lh-featured-props .mobile-fields .dropdown .btn {
       width: 100%;
       text-align: left;
       padding: 10px 9px;
@@ -1706,54 +1706,54 @@ footer {
       border-width: 1px;
       border-color: #d6dce6;
       transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease; }
-      #search-homes .mobile-fields .dropdown .btn::after {
+      #search-homes .mobile-fields .dropdown .btn::after, .lh-featured-props .mobile-fields .dropdown .btn::after {
         display: none; }
-      #search-homes .mobile-fields .dropdown .btn .fas {
+      #search-homes .mobile-fields .dropdown .btn .fas, .lh-featured-props .mobile-fields .dropdown .btn .fas {
         float: right;
         margin-top: 5px;
         color: #1e232c;
         transition: color 0.3s ease; }
-      #search-homes .mobile-fields .dropdown .btn:hover, #search-homes .mobile-fields .dropdown .btn:active, #search-homes .mobile-fields .dropdown .btn:focus, #search-homes .mobile-fields .dropdown .btn.active {
+      #search-homes .mobile-fields .dropdown .btn:hover, #search-homes .mobile-fields .dropdown .btn:active, #search-homes .mobile-fields .dropdown .btn:focus, #search-homes .mobile-fields .dropdown .btn.active, .lh-featured-props .mobile-fields .dropdown .btn:hover, .lh-featured-props .mobile-fields .dropdown .btn:active, .lh-featured-props .mobile-fields .dropdown .btn:focus, .lh-featured-props .mobile-fields .dropdown .btn.active {
         color: #00aced;
         border-color: #00aced;
         box-shadow: none; }
-        #search-homes .mobile-fields .dropdown .btn:hover .search-checkbox + label, #search-homes .mobile-fields .dropdown .btn:active .search-checkbox + label, #search-homes .mobile-fields .dropdown .btn:focus .search-checkbox + label, #search-homes .mobile-fields .dropdown .btn.active .search-checkbox + label {
+        #search-homes .mobile-fields .dropdown .btn:hover .search-checkbox + label, #search-homes .mobile-fields .dropdown .btn:active .search-checkbox + label, #search-homes .mobile-fields .dropdown .btn:focus .search-checkbox + label, #search-homes .mobile-fields .dropdown .btn.active .search-checkbox + label, .lh-featured-props .mobile-fields .dropdown .btn:hover .search-checkbox + label, .lh-featured-props .mobile-fields .dropdown .btn:active .search-checkbox + label, .lh-featured-props .mobile-fields .dropdown .btn:focus .search-checkbox + label, .lh-featured-props .mobile-fields .dropdown .btn.active .search-checkbox + label {
           font-weight: bold; }
-        #search-homes .mobile-fields .dropdown .btn:hover .fas, #search-homes .mobile-fields .dropdown .btn:active .fas, #search-homes .mobile-fields .dropdown .btn:focus .fas, #search-homes .mobile-fields .dropdown .btn.active .fas {
+        #search-homes .mobile-fields .dropdown .btn:hover .fas, #search-homes .mobile-fields .dropdown .btn:active .fas, #search-homes .mobile-fields .dropdown .btn:focus .fas, #search-homes .mobile-fields .dropdown .btn.active .fas, .lh-featured-props .mobile-fields .dropdown .btn:hover .fas, .lh-featured-props .mobile-fields .dropdown .btn:active .fas, .lh-featured-props .mobile-fields .dropdown .btn:focus .fas, .lh-featured-props .mobile-fields .dropdown .btn.active .fas {
           color: #00aced; }
-      #search-homes .mobile-fields .dropdown .btn .search-checkbox {
+      #search-homes .mobile-fields .dropdown .btn .search-checkbox, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox {
         position: absolute;
         opacity: 0;
         /*&:hover + label:before {
                       background: #00aced;
                     }*/ }
-        #search-homes .mobile-fields .dropdown .btn .search-checkbox + label {
+        #search-homes .mobile-fields .dropdown .btn .search-checkbox + label, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox + label {
           position: relative;
           cursor: pointer;
           padding: 0;
           font-weight: 300;
           width: 100%;
           display: block; }
-          #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.color {
+          #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.color, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox + label .fas.color {
             float: initial;
             font-size: 8px;
             vertical-align: middle;
             margin-top: -3px;
             margin-right: 4px; }
-            #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.red {
+            #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.red, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.red {
               color: #e03225; }
-            #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.blue {
+            #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.blue, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.blue {
               color: #196aff; }
-            #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.green {
+            #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.green, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.green {
               color: #7cd62c; }
-            #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.yellow {
+            #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.yellow, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox + label .fas.color.yellow {
               color: #ffba13; }
-          #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.info {
+          #search-homes .mobile-fields .dropdown .btn .search-checkbox + label .fas.info, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox + label .fas.info {
             float: initial;
             vertical-align: middle;
             margin-top: -3px;
             color: #00aced; }
-        #search-homes .mobile-fields .dropdown .btn .search-checkbox + label:before {
+        #search-homes .mobile-fields .dropdown .btn .search-checkbox + label:before, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox + label:before {
           content: '';
           margin-right: 10px;
           display: inline-block;
@@ -1764,9 +1764,9 @@ footer {
           border: 1px solid #d6dce6;
           border-radius: 3px;
           transition: background 0.3s ease; }
-        #search-homes .mobile-fields .dropdown .btn .search-checkbox:checked + label:before {
+        #search-homes .mobile-fields .dropdown .btn .search-checkbox:checked + label:before, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox:checked + label:before {
           background: #00aced; }
-        #search-homes .mobile-fields .dropdown .btn .search-checkbox:checked + label:after {
+        #search-homes .mobile-fields .dropdown .btn .search-checkbox:checked + label:after, .lh-featured-props .mobile-fields .dropdown .btn .search-checkbox:checked + label:after {
           content: '';
           position: absolute;
           left: 4px;
@@ -1776,18 +1776,18 @@ footer {
           height: 1.5px;
           box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
-    #search-homes .mobile-fields .dropdown .dropdown-menu {
+    #search-homes .mobile-fields .dropdown .dropdown-menu, .lh-featured-props .mobile-fields .dropdown .dropdown-menu {
       min-width: 12rem;
       box-shadow: 0px 0px 66.5px 3.5px rgba(10, 25, 40, 0.19);
       margin-top: 0.60rem;
       border: none; }
-      #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-item {
+      #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-item, .lh-featured-props .mobile-fields .dropdown .dropdown-menu .dropdown-item {
         font-family: "Graphik Regular", sans-serif;
         color: #1e232c;
         font-size: 15px;
         font-weight: 300;
         text-align: left; }
-      #search-homes .mobile-fields .dropdown .dropdown-menu::after {
+      #search-homes .mobile-fields .dropdown .dropdown-menu::after, .lh-featured-props .mobile-fields .dropdown .dropdown-menu::after {
         bottom: 100%;
         left: 20%;
         border: solid transparent;
@@ -1800,17 +1800,17 @@ footer {
         border-bottom-color: #ffffff;
         border-width: 8px;
         margin-left: -8px; }
-      #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox {
+      #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox, .lh-featured-props .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox {
         position: absolute;
         opacity: 0; }
-        #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox + label {
+        #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox + label, .lh-featured-props .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox + label {
           position: relative;
           cursor: pointer;
           padding: 0;
           font-weight: 300;
           width: 100%;
           display: block; }
-        #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox + label:before {
+        #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox + label:before, .lh-featured-props .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox + label:before {
           content: '';
           margin-right: 10px;
           display: inline-block;
@@ -1821,11 +1821,11 @@ footer {
           border: 1px solid #d6dce6;
           border-radius: 3px;
           transition: background 0.3s ease; }
-        #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox:hover + label:before {
+        #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox:hover + label:before, .lh-featured-props .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox:hover + label:before {
           background: #00aced; }
-        #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox:checked + label:before {
+        #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox:checked + label:before, .lh-featured-props .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox:checked + label:before {
           background: #00aced; }
-        #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox:checked label::after {
+        #search-homes .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox:checked label::after, .lh-featured-props .mobile-fields .dropdown .dropdown-menu .dropdown-checkbox:checked label::after {
           content: '';
           position: absolute;
           left: 4px;
@@ -1835,18 +1835,18 @@ footer {
           height: 1.5px;
           box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
-    #search-homes .mobile-fields .dropdown:nth-child(odd) {
+    #search-homes .mobile-fields .dropdown:nth-child(odd), .lh-featured-props .mobile-fields .dropdown:nth-child(odd) {
       margin-left: 1%; }
-    #search-homes .mobile-fields .dropdown:nth-child(even) {
+    #search-homes .mobile-fields .dropdown:nth-child(even), .lh-featured-props .mobile-fields .dropdown:nth-child(even) {
       margin-right: 1%; }
-    #search-homes .mobile-fields .dropdown.bedrooms {
+    #search-homes .mobile-fields .dropdown.bedrooms, .lh-featured-props .mobile-fields .dropdown.bedrooms {
       margin-left: 0%; }
-      #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper {
+      #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper, .lh-featured-props .mobile-fields .dropdown.bedrooms .dropdown-wrapper {
         width: 100%;
         position: relative;
         min-width: 15.5rem;
         text-align: center; }
-        #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom {
+        #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom, .lh-featured-props .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom {
           background: #f5f8f9;
           display: inline-block;
           width: 38px;
@@ -1862,26 +1862,26 @@ footer {
           font-size: 14px;
           font-family: "Graphik Regular", sans-serif;
           font-weight: 400; }
-          #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom:hover, #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom:active, #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom:focus, #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom.active {
+          #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom:hover, #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom:active, #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom:focus, #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom.active, .lh-featured-props .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom:hover, .lh-featured-props .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom:active, .lh-featured-props .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom:focus, .lh-featured-props .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom.active {
             color: #fff;
             background: #00aced;
             cursor: pointer; }
-        #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom-checkbox label {
+        #search-homes .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom-checkbox label, .lh-featured-props .mobile-fields .dropdown.bedrooms .dropdown-wrapper .custom-checkbox label {
           font-family: "Graphik Regular", sans-serif;
           color: #1e232c;
           font-size: 15px;
           font-weight: 300;
           text-align: left;
           padding: 5px 17px; }
-    #search-homes .mobile-fields .dropdown.hometype {
+    #search-homes .mobile-fields .dropdown.hometype, .lh-featured-props .mobile-fields .dropdown.hometype {
       margin-left: 2%;
       margin-right: 0%; }
 
-#search-homes .price-field {
+#search-homes .price-field, .lh-featured-props .price-field {
   width: 99%;
   margin-left: 0%;
   /* Because my grid skills are retarded */ }
-  #search-homes .price-field h3 {
+  #search-homes .price-field h3, .lh-featured-props .price-field h3 {
     font-family: "Graphik Medium", sans-serif;
     color: #1e232c;
     font-size: 14px;
@@ -1892,7 +1892,7 @@ footer {
     margin-top: 5px;
     margin-bottom: 0px;
     padding: 0; }
-  #search-homes .price-field .input-group .form-control {
+  #search-homes .price-field .input-group .form-control, .lh-featured-props .price-field .input-group .form-control {
     font-family: "Graphik Light", sans-serif;
     color: #96a7bc;
     font-size: 16px;
@@ -1906,22 +1906,22 @@ footer {
     background-color: #ffffff;
     padding: 24px 12px;
     box-shadow: inset 0px 11px 38px -24px rgba(0, 0, 0, 0.53); }
-    #search-homes .price-field .input-group .form-control:hover, #search-homes .price-field .input-group .form-control:active, #search-homes .price-field .input-group .form-control:focus {
+    #search-homes .price-field .input-group .form-control:hover, #search-homes .price-field .input-group .form-control:active, #search-homes .price-field .input-group .form-control:focus, .lh-featured-props .price-field .input-group .form-control:hover, .lh-featured-props .price-field .input-group .form-control:active, .lh-featured-props .price-field .input-group .form-control:focus {
       box-shadow: inset 0px 8px 38px -24px rgba(0, 0, 0, 0.53); }
-    #search-homes .price-field .input-group .form-control:not(:last-child) {
+    #search-homes .price-field .input-group .form-control:not(:last-child), .lh-featured-props .price-field .input-group .form-control:not(:last-child) {
       border-top-right-radius: 0px !important;
       border-bottom-right-radius: 0px !important; }
-    #search-homes .price-field .input-group .form-control:last-child {
+    #search-homes .price-field .input-group .form-control:last-child, .lh-featured-props .price-field .input-group .form-control:last-child {
       border-top-left-radius: 0px !important;
       border-bottom-left-radius: 0px !important; }
 
-#search-homes .search-links {
+#search-homes .search-links, .lh-featured-props .search-links {
   border-top: 1px solid #d6dce6;
   padding: 15px 18px;
   margin-left: -15px;
   margin-right: -15px;
   margin-top: 20px; }
-  #search-homes .search-links a {
+  #search-homes .search-links a, .lh-featured-props .search-links a {
     font-family: "Graphik Regular", sans-serif;
     color: #00aced;
     font-size: 15px;
@@ -1932,22 +1932,22 @@ footer {
     transition: opacity 0.3s ease;
     text-decoration: none;
     outline: none; }
-    #search-homes .search-links a#filters {
+    #search-homes .search-links a#filters, .lh-featured-props .search-links a#filters {
       font-weight: bold; }
-    #search-homes .search-links a#save-search {
+    #search-homes .search-links a#save-search, .lh-featured-props .search-links a#save-search {
       float: right;
       margin-right: 0; }
-    #search-homes .search-links a:hover, #search-homes .search-links a:active, #search-homes .search-links a:focus {
+    #search-homes .search-links a:hover, #search-homes .search-links a:active, #search-homes .search-links a:focus, .lh-featured-props .search-links a:hover, .lh-featured-props .search-links a:active, .lh-featured-props .search-links a:focus {
       opacity: 0.7;
       outline: none; }
 
-#search-homes .property-list .column-item {
+#search-homes .property-list .column-item, .lh-featured-props .property-list .column-item {
   padding: 0; }
 
-#search-homes .property-list .listing-heading {
+#search-homes .property-list .listing-heading, .lh-featured-props .property-list .listing-heading {
   padding: 15px 15px;
   padding-top: 25px; }
-  #search-homes .property-list .listing-heading .location-name {
+  #search-homes .property-list .listing-heading .location-name, .lh-featured-props .property-list .listing-heading .location-name {
     font-family: "Graphik Regular", sans-serif;
     color: #1e232c;
     font-size: 22px;
@@ -1955,13 +1955,13 @@ footer {
     text-align: left;
     margin: 0;
     padding: 0; }
-  #search-homes .property-list .listing-heading .location-info {
+  #search-homes .property-list .listing-heading .location-info, .lh-featured-props .property-list .listing-heading .location-info {
     font-family: "Graphik Regular", sans-serif;
     color: #1e232c;
     font-size: 15px;
     font-weight: 400;
     text-align: left; }
-  #search-homes .property-list .listing-heading .save-search {
+  #search-homes .property-list .listing-heading .save-search, .lh-featured-props .property-list .listing-heading .save-search {
     font-family: "Graphik Regular", sans-serif;
     color: #00aced;
     font-size: 16px;
@@ -1971,12 +1971,12 @@ footer {
     display: inline-block;
     margin-top: -35px; }
 
-#search-homes .property-list .property-item {
+#search-homes .property-list .property-item, .lh-featured-props .property-list .property-item {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 0px;
+  padding-right: 150px;
+  border-radius: 5px;
   margin: 0 auto;
   cursor: pointer;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%);
@@ -1988,12 +1988,12 @@ footer {
                 right: 0;
                 bottom: 0;
                 left: 0;
-                
-                opacity: .6; 
+
+                opacity: .6;
                 border-radius: 0px;
                 cursor: pointer;
               }*/ }
-  #search-homes .property-list .property-item .time-on-market {
+  #search-homes .property-list .property-item .time-on-market, .lh-featured-props .property-list .property-item .time-on-market {
     font-family: "Graphik Regular", sans-serif;
     color: #ffffff;
     font-size: 15px;
@@ -2004,14 +2004,14 @@ footer {
     display: block;
     z-index: 0;
     position: relative; }
-    #search-homes .property-list .property-item .time-on-market i {
+    #search-homes .property-list .property-item .time-on-market i, .lh-featured-props .property-list .property-item .time-on-market i {
       margin-right: 7px; }
-  #search-homes .property-list .property-item .favourite {
+  #search-homes .property-list .property-item .favourite, .lh-featured-props .property-list .property-item .favourite {
     float: right;
     margin-top: -16px;
     font-size: 22px;
     color: #fff; }
-  #search-homes .property-list .property-item .sale-type {
+  #search-homes .property-list .property-item .sale-type, .lh-featured-props .property-list .property-item .sale-type {
     font-family: "Graphik Medium", sans-serif;
     color: #ffffff;
     font-size: 14px;
@@ -2019,11 +2019,11 @@ footer {
     line-height: 30px;
     text-align: left;
     text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
-    margin-top: 85px;
+    margin-top: 120px;
     display: block;
     z-index: 0;
     position: relative; }
-    #search-homes .property-list .property-item .sale-type i.red-dot {
+    #search-homes .property-list .property-item .sale-type i.red-dot, .lh-featured-props .property-list .property-item .sale-type i.red-dot {
       width: 10px;
       height: 10px;
       background: red;
@@ -2031,7 +2031,7 @@ footer {
       border: 2px solid #fff;
       border-radius: 50%;
       margin-right: 4px; }
-  #search-homes .property-list .property-item .property-price {
+  #search-homes .property-list .property-item .property-price, .lh-featured-props .property-list .property-item .property-price {
     font-family: "Graphik Regular", sans-serif;
     color: #ffffff;
     font-size: 29px;
@@ -2042,12 +2042,13 @@ footer {
     z-index: 0;
     position: relative;
     padding-bottom: 0; }
-  #search-homes .property-list .property-item .property-info {
-    display: inline-block;
-    margin-top: 5px; }
+  #search-homes .property-list .property-item .property-info, .lh-featured-props .property-list .property-item .property-info {
+    display: inline-block; }
     #search-homes .property-list .property-item .property-info .beds,
     #search-homes .property-list .property-item .property-info .baths,
-    #search-homes .property-list .property-item .property-info .sqft {
+    #search-homes .property-list .property-item .property-info .sqft, .lh-featured-props .property-list .property-item .property-info .beds,
+    .lh-featured-props .property-list .property-item .property-info .baths,
+    .lh-featured-props .property-list .property-item .property-info .sqft {
       font-family: "Graphik Light", sans-serif;
       color: #ffffff;
       font-size: 13px;
@@ -2055,9 +2056,8 @@ footer {
       text-align: left;
       text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
       z-index: 0;
-      position: relative;
-      vertical-align: text-bottom; }
-    #search-homes .property-list .property-item .property-info i {
+      position: relative; }
+    #search-homes .property-list .property-item .property-info i, .lh-featured-props .property-list .property-item .property-info i {
       color: #fff;
       font-size: 5px;
       vertical-align: super;
@@ -2065,9 +2065,10 @@ footer {
       padding-right: 3px;
       z-index: 0;
       position: relative; }
-  #search-homes .property-list .property-item .property-address {
+  #search-homes .property-list .property-item .property-address, .lh-featured-props .property-list .property-item .property-address {
     font-family: "Graphik Regular", sans-serif;
     color: #ffffff;
+    padding: 0;
     font-size: 13px;
     text-align: left;
     text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
@@ -2075,28 +2076,28 @@ footer {
     position: relative;
     display: block; }
 
-#search-homes .property-list .cta-insert {
+#search-homes .property-list .cta-insert, .lh-featured-props .property-list .cta-insert {
   display: block;
   position: relative;
   margin: 0;
   background: #00aced;
   padding: 25px 10px;
   text-align: center; }
-  #search-homes .property-list .cta-insert h1 {
+  #search-homes .property-list .cta-insert h1, .lh-featured-props .property-list .cta-insert h1 {
     font-family: "Graphik Light", sans-serif;
     color: #ffffff;
     font-size: 22px;
     font-weight: 400;
     line-height: 34px;
     text-align: center; }
-  #search-homes .property-list .cta-insert p {
+  #search-homes .property-list .cta-insert p, .lh-featured-props .property-list .cta-insert p {
     font-family: "Graphik Light", sans-serif;
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
     text-align: center; }
-  #search-homes .property-list .cta-insert .cta {
+  #search-homes .property-list .cta-insert .cta, .lh-featured-props .property-list .cta-insert .cta {
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 14px;
@@ -2104,26 +2105,26 @@ footer {
     border-color: #00aced;
     outline: none !important;
     box-shadow: none !important; }
-    #search-homes .property-list .cta-insert .cta i {
+    #search-homes .property-list .cta-insert .cta i, .lh-featured-props .property-list .cta-insert .cta i {
       font-size: 14px;
       margin-left: 10px; }
 
-#search-homes .pagination {
+#search-homes .pagination, .lh-featured-props .pagination {
   padding: 10px 0px;
   text-align: center; }
-  #search-homes .pagination div {
+  #search-homes .pagination div, .lh-featured-props .pagination div {
     display: block;
     width: 100%;
     text-align: center; }
-    #search-homes .pagination div ul {
+    #search-homes .pagination div ul, .lh-featured-props .pagination div ul {
       width: 100%;
       display: block;
       text-align: center;
       clear: none;
       list-style: none; }
-      #search-homes .pagination div ul li {
+      #search-homes .pagination div ul li, .lh-featured-props .pagination div ul li {
         display: inline-block; }
-        #search-homes .pagination div ul li a {
+        #search-homes .pagination div ul li a, .lh-featured-props .pagination div ul li a {
           font-family: "Graphik Regular", sans-serif;
           font-size: 16px;
           font-weight: 500;
@@ -2139,16 +2140,16 @@ footer {
           margin: 0px 2px;
           transition: background 0.3s ease, color 0.3s ease;
           text-transform: uppercase; }
-          #search-homes .pagination div ul li a:hover, #search-homes .pagination div ul li a:active, #search-homes .pagination div ul li a:focus {
+          #search-homes .pagination div ul li a:hover, #search-homes .pagination div ul li a:active, #search-homes .pagination div ul li a:focus, .lh-featured-props .pagination div ul li a:hover, .lh-featured-props .pagination div ul li a:active, .lh-featured-props .pagination div ul li a:focus {
             background: #00aced;
             color: #ffffff; }
-          #search-homes .pagination div ul li a.next {
+          #search-homes .pagination div ul li a.next, .lh-featured-props .pagination div ul li a.next {
             border-radius: 3px;
             width: auto;
             height: auto;
             padding: 0px 5px; }
 
-#search-homes .map-wrapper {
+#search-homes .map-wrapper, .lh-featured-props .map-wrapper {
   width: -webkit-fill-available;
   display: block;
   margin: 0 -15px;
@@ -2665,7 +2666,7 @@ figure.lh-img-holder {
     padding-right: 20px; }
 
 .hr {
-  width: calc(100% + 50px);
+  width: calc(100% + 30px);
   margin-left: -30px; }
   @media (min-width: 768px) {
     .hr {
@@ -3076,8 +3077,70 @@ figure.lh-img-holder {
         color: #00aced; }
   .lh-school-rankings .school-rank-group:nth-child(4) {
     border-bottom: none; }
+  .lh-school-rankings .offer-link {
+    margin: 20px 10px 20px 0;
+    padding: 14px !important; }
+  .lh-school-rankings .sch-r-offer-link:after {
+    content: "";
+    display: block;
+    height: 50px;
+    position: absolute;
+    pointer-events: none;
+    box-shadow: inset 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27);
+    margin-left: -26px;
+    width: calc(100% + 26px); }
+    @media (min-width: 768px) {
+      .lh-school-rankings .sch-r-offer-link:after {
+        display: none; } }
 
 .faded {
   font-size: .9rem !important;
   font-weight: lighter !important;
   color: #a8b6c6 !important; }
+
+@media (min-width: 320px) {
+  .lh-featured-props .property-item {
+    width: 60%; } }
+
+.lh-featured-props .fa-chevron-right, .lh-featured-props .fa-chevron-left {
+  font-size: 2.7rem;
+  padding: 0 .3em;
+  color: #d6dce6; }
+
+.lh-featured-props .fa-chevron-right {
+  color: #00aced; }
+
+.lh-featured-props .offer-link {
+  width: auto;
+  text-transform: none;
+  margin: 2em 0; }
+
+.lh-featured-props .list-home-title {
+  padding: 1.5em 0; }
+
+.lh-featured-props .property-list {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .lh-featured-props .property-list .property-item {
+    border-radius: 5px;
+    margin: 0 !important;
+    padding-right: 150px !important; }
+    .lh-featured-props .property-list .property-item .sale-type {
+      padding: 0 !important; }
+    .lh-featured-props .property-list .property-item .time-on-market {
+      padding: 0 !important; }
+    .lh-featured-props .property-list .property-item .property-info {
+      margin-top: 0 !important; }
+      .lh-featured-props .property-list .property-item .property-info .beds, .lh-featured-props .property-list .property-item .property-info .baths, .lh-featured-props .property-list .property-item .property-info .sqft {
+        vertical-align: unset !important;
+        padding: 0 !important; }
+    .lh-featured-props .property-list .property-item .property-address {
+      padding: 0 !important; }
+
+.blue-border {
+  border: 1px solid #00aced;
+  border-radius: 5px;
+  padding: .7em; }
+  .blue-border span {
+    color: #00aced; }
