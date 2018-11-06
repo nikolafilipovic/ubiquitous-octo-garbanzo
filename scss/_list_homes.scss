@@ -15,6 +15,13 @@
   //refactor everywhere!
 }
 
+.round-blue {
+  color: white;
+  background: $main-color;
+  padding: .8em;
+  border-radius: 50%;
+}
+
 .row.row-without-margins {
   margin: 0 !important;
 }
@@ -200,6 +207,9 @@ figure.lh-img-holder {
     &-text {
       margin-right: 1.4em;
     }
+    .agent-phone {
+      transform: rotate(90deg);
+    }
   }
 }
 
@@ -212,11 +222,6 @@ figure.lh-img-holder {
     }
   }
   .agent-phone {
-    transform: rotate(90deg);
-    color: white;
-    background: $main-color;
-    padding: .8em;
-    border-radius: 50%;
     &-text {
       font-size: 1rem;
       margin-left: 0.6em;
@@ -238,7 +243,6 @@ figure.lh-img-holder {
 
   .faw-options {
     padding-top: 2em;
-    margin-right: 20px;
     color: $main-color;
     [class*='col-'] {
       text-align: center;
@@ -250,11 +254,18 @@ figure.lh-img-holder {
     p {
       margin-left: -1em;
     }
+    .fo-container {
+      padding-right:20px;
+    }
   }
 
 .hr {
-  margin-left: -42px;
-  width: calc(100% + 80px);
+  width: calc(100% + 30px);
+  margin-left: -30px;
+  @include respond-to('desktop') {
+    margin-left: 1px;
+    width: calc(100% - 29px);
+  }
   &-up {
     padding-bottom: 25px;
     border-top: 1px solid $lightergray;
@@ -522,10 +533,13 @@ figure.lh-img-holder {
 
 .lh-finance {
   .offer-link {
-      margin: 3rem 0 2rem;
-      width: calc(100% - 20px);
+    margin: 3rem 0 2rem;
+    width: calc(100% - 20px);
   }
   &:before {
+    @include respond-to('desktop') {
+      display: none;
+    }
     content: "";
     display: block;
     height: 50px;
@@ -537,9 +551,10 @@ figure.lh-img-holder {
   }
   i {
     color: $main-color;
+    margin-top: 3px;
   }
   h1 {
-    padding-top: 2em;
+    padding-top: 1em;
     margin-bottom: 1em;
   }
   ul {
@@ -645,10 +660,59 @@ figure.lh-img-holder {
 }
 
 .border-dotted {
-  border: 3px dotted $lightergray;
-  padding: 1.2em;
-  font-size: 1.5rem;
+  border: 2px dotted $lightergray;
+  padding: 1em;
+  font-size: 1.25rem;
   margin-right: 1em;
-  margin-bottom: 1em;
   color: $main-color;
 }
+
+.lh-transportation {
+  .list-home-title {
+    margin-bottom: 15px;
+  }
+  .transp-desc {
+    padding: .6em 0;
+    p, a {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    
+    p {
+      color: #a8b6c6;
+    }
+  }
+  .small-caps {
+    font-size: 14px; 
+  }
+}
+
+.lh-nearby-places {
+  margin: 25px 0;
+  .list-home-title {
+    padding: 0;
+  }
+  .places-stars {
+    padding-left: 1.5em;
+  }
+  h2 {
+    font-size:18px;
+    padding-top: .5em;
+  }
+  p {
+    font-size:16px;
+  }
+  .stars-reviews {
+    margin-top: -15px;
+    i {
+      color: $main-color;
+    }
+    span {
+      font-size: .9rem;
+      color:  #a8b6c6;
+    }
+  }
+
+}
+
+
