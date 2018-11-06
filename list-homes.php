@@ -96,8 +96,8 @@ Template Name: List Homes
 
             <div class="d-none d-md-block lh-house-details">
               <p class="lh-house lh-house--desktop">Open House <strong>Fri, Oct 12 &#8226; 11:00am - 2:00pm</strong></p>
-              <i class="fas fa-phone agent-phone"></i><strong class="agent-phone-text">Call Agent</strong>
-              <i class="fas fa-comment-alt agent-text"></i><strong class="agent-phone-text">Text Agent</strong>
+              <i class="fas fa-phone agent-phone round-blue"></i><strong class="agent-phone-text">Call Agent</strong>
+              <i class="fas fa-comment-alt agent-text round-blue"></i><strong class="agent-phone-text">Text Agent</strong>
             </div>
           </div>
           <div class="col-12 col-md-5">
@@ -121,7 +121,7 @@ Template Name: List Homes
 
         <div class="faw-options d-block d-md-none">
           <div class="hr hr-up"></div>
-          <div class="row no-gutters">
+          <div class="fo-container row no-gutters">
             <div class="col-3">
               <i class="far fa-heart"></i>
               <p>Save</p>
@@ -147,17 +147,23 @@ Template Name: List Homes
         </div>
 
         <div class="lh-house-details lh-house-details--big d-flex d-md-none">
-          <i class="fas fa-phone agent-phone"></i><p class="agent-phone-text d-flex align-items-center">Call Agent</p>
-          <i class="fas fa-comment-alt agent-text"></i><p class="agent-phone-text d-flex align-items-center">Text Agent</p>
+          <i class="fas fa-phone agent-phone round-blue"></i>
+          <p class="agent-phone-text d-flex align-items-center">Call Agent</p>
+          <i class="fas fa-comment-alt agent-text round-blue"></i>
+          <p class="agent-phone-text d-flex align-items-center">Text Agent</p>
         </div>
 
         <div class="lh-house-prop-desc">
           <h1 class="list-home-title list-home-title--pb">Property Description</h1>
           <p>
-            Rare opportunity awaits! Own a 40 units multi-family in up & coming area just minutes from the heart of Midtown in Atlanta.
-            This secluded gated property has 4 sided brick buildings situated in a shape of a square. Each unit has 2bdr/1bth.
-            Bring your contractors and decide on how to finish each unit to suite best your investment portfolio. Sold "AS-IS" without disclosures.
-            Close to Marta Westlake Station, Atlanta Beltline, The World Congress Center, Mercedes Benz Stadium, Georgia Tech Campus and other sites.
+            Rare opportunity awaits! Own a 40 units multi-family in up & coming area just minutes from the heart of
+            Midtown in Atlanta.
+            This secluded gated property has 4 sided brick buildings situated in a shape of a square. Each unit has
+            2bdr/1bth.
+            Bring your contractors and decide on how to finish each unit to suite best your investment portfolio. Sold
+            "AS-IS" without disclosures.
+            Close to Marta Westlake Station, Atlanta Beltline, The World Congress Center, Mercedes Benz Stadium,
+            Georgia Tech Campus and other sites.
             Security in place, appointment is needed.
           </p>
           <div class="plus-button">
@@ -369,7 +375,7 @@ Template Name: List Homes
             <p>Listing provided by</p>
             <span>
               <a href="#">Samuel Shechter</a>, License #357382,
-              <a href="#">Quicksilver Realty</a> inc.,<br/>
+              <a href="#">Quicksilver Realty</a> inc.,<br />
               (404) 624-6362, Source: First Multiple Listing Service.
               <a href="#">MLS Disclaimer</a>
             </span>
@@ -387,49 +393,58 @@ Template Name: List Homes
 
         </div>
         <div class="lh-finance w-100">
-            <h1 class="list-home-title d-block w-100">
-                Get Financing
-                <i class="fas fa-chevron-up faup"></i>
-            </h1>
-            <div class="row no-gutters">
-              <div class="col-6 lh-finance-list">
-                <ul>
-                  <li>P&amp;I <strong>$1,642</strong></li>
-                  <li>Insurance <strong>$67</strong></li>
-                  <li>Taxes <strong>$226</strong></li>
-                  <li>PMI <strong>$0</strong></li>
-                  <li>HOA <strong>$60</strong></li>
-                </ul>
-              </div>
-              <div class="col-6 d-flex justify-content-end">
-                <div class="chart-wrapper">
-                  <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
-                   <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+          <div class="hr hr-down d-none d-md-block"></div>
+          <h1 class="list-home-title d-block w-100">
+            Get Financing
+            <i class="fas fa-chevron-up faup"></i>
+          </h1>
+          <div class="row no-gutters">
+            <div class="col-4 col-md-3 lh-finance-list">
+              <ul>
+                <li>P&amp;I <strong>$1,642</strong></li>
+                <li>Insurance <strong>$67</strong></li>
+                <li>Taxes <strong>$226</strong></li>
+                <li>PMI <strong>$0</strong></li>
+                <li>HOA <strong>$60</strong></li>
+              </ul>
+            </div>
+            <div class="col-7 col-md-6 d-flex justify-content-end">
+              <div class="chart-wrapper">
+                <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
 
-                   <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#25aae1" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
-                   <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#3972b8" stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="40"></circle>
-                   <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#88d6f4" stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="35"></circle>
-                   <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d4dff2" stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="30"></circle>
-                       <g class="chart-text">
-                         <text x="50%" y="50%" class="chart-number">
-                           Your payment
-                         </text>
-                         <text x="50%" y="50%" class="chart-label">
-                           $1,994
-                         </text>
-                     </g>
-                  </svg>
-                </div>
+                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#25aae1"
+                    stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
+                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#3972b8"
+                    stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="40"></circle>
+                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#88d6f4"
+                    stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="35"></circle>
+                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d4dff2"
+                    stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="30"></circle>
+                  <g class="chart-text">
+                    <text x="50%" y="50%" class="chart-number">
+                      Your payment
+                    </text>
+                    <text x="50%" y="50%" class="chart-label">
+                      $1,994
+                    </text>
+                  </g>
+                </svg>
               </div>
             </div>
-            <div class="offer-link">
-              <a href="#">Get pre-qualified</a>
-              <i class="fas fa-arrow-right fasarrow"></i>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-12 col-md-8">
+              <div class="offer-link">
+                <a href="#">Get pre-qualified</a>
+                <i class="fas fa-arrow-right fasarrow"></i>
+              </div>
+              <div class="plus-button d-flex justify-content-center">
+                <i class="fas fa-plus"></i>
+                More
+              </div>
             </div>
-            <div class="plus-button d-flex justify-content-center">
-              <i class="fas fa-plus"></i>
-              More
-            </div>
+          </div>
         </div>
         <form class="lh-form">
           <label class="lh-label">Home Price</label>
@@ -528,45 +543,203 @@ Template Name: List Homes
           </h1>
           <div class="row no-gutters">
             <div class="col-12 col-md-6">
-              <div class="row no-gutters">
+              <div class="mb-4 row no-gutters">
                 <div class="border-dotted">
                   75
                 </div>
 
-                <div class="">
+                <div class="transp-desc">
                   <p>Walk Score</p>
                   <a href="#">Very Walkable</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="mb-4 col-12 col-md-6">
               <div class="row no-gutters">
                 <div class="border-dotted">
-                  75
+                  51
                 </div>
 
-                <div class="">
-                  <p>Walk Score</p>
-                  <a href="#">Very Walkable</a>
+                <div class="transp-desc">
+                  <p>Transit Score</p>
+                  <a href="#">Good Transit</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="mb-4 col-12 col-md-6">
               <div class="row no-gutters">
                 <div class="border-dotted">
-                  75
+                  51
                 </div>
 
-                <div class="">
-                  <p>Walk Score</p>
-                  <a href="#">Very Walkable</a>
+                <div class="transp-desc">
+                  <p>Bike Score</p>
+                  <a href="#">Bikeable</a>
                 </div>
               </div>
             </div>
           </div>
+          <p class="small-caps">Data by <a class="small-caps" href="#"> walkscore</a></p>
+          <div class="hr hr-down"></div>
         </div> <!-- lh-transportation -->
 
-      </div> <!--  lh-features -->
+        <div class="lh-nearby-places">
+          <h1 class="list-home-title d-block w-100">
+            Nearby Places
+            <i class="fas fa-chevron-up faup"></i>
+          </h1>
+          <div class="row no-gutters">
+            <div class="d-flex col-12 col-md-6">
+              <div>
+                <i class="fas fa-shopping-cart round-blue"></i>
+              </div>
+              <div class="places-stars">
+                <h2>Shopping</h2>
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+              </div>
+            </div>
+
+                        <div class="d-flex col-12 col-md-6">
+              <div>
+                <i class="fas fa-shopping-cart round-blue"></i>
+              </div>
+              <div class="places-stars">
+                <h2>Shopping</h2>
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+              </div>
+            </div>
+
+                        <div class="d-flex col-12 col-md-6">
+              <div>
+                <i class="fas fa-shopping-cart round-blue"></i>
+              </div>
+              <div class="places-stars">
+                <h2>Shopping</h2>
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+              </div>
+            </div>
+
+                        <div class="d-flex col-12 col-md-6">
+              <div>
+                <i class="fas fa-shopping-cart round-blue"></i>
+              </div>
+              <div class="places-stars">
+                <h2>Shopping</h2>
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+
+                <p>Walmart(0.85 mi)</p>
+                <div class="stars-reviews">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span>5 reviews</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  <!-- lh-nearby-places -->
+
+      </div> <!-- lh-features -->
 
 
 
@@ -646,10 +819,9 @@ Template Name: List Homes
           </div>
         </div>
 
-
       </div> <!-- contact-agent -->
-    </div > <!-- lh-info-wrapper -->
+    </div> <!-- lh-info-wrapper -->
   </div> <!-- container fluid -->
-</div>   <!-- lh-wrapper -->
+</div> <!-- lh-wrapper -->
 
 <?php get_footer(); ?>

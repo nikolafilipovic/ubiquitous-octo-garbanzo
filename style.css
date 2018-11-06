@@ -2463,6 +2463,12 @@ footer {
 .b-shadow {
   box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27); }
 
+.round-blue {
+  color: white;
+  background: #00aced;
+  padding: .8em;
+  border-radius: 50%; }
+
 .row.row-without-margins {
   margin: 0 !important; }
 
@@ -2610,6 +2616,8 @@ figure.lh-img-holder {
   font-size: 16px; }
   .lh-house-details.lh-house-details--big .agent-phone-text, .lh-house-details.lh-house-details--big .agent-text-text {
     margin-right: 1.4em; }
+  .lh-house-details.lh-house-details--big .agent-phone .agent-phone, .lh-house-details.lh-house-details--big .agent-text .agent-phone {
+    transform: rotate(90deg); }
 
 .lh-house-details {
   margin: 2em 0; }
@@ -2617,15 +2625,9 @@ figure.lh-img-holder {
     margin-bottom: 1.3rem; }
     .lh-house-details .lh-house--desktop {
       margin-top: 2rem; }
-  .lh-house-details .agent-phone {
-    transform: rotate(90deg);
-    color: white;
-    background: #00aced;
-    padding: .8em;
-    border-radius: 50%; }
-    .lh-house-details .agent-phone-text {
-      font-size: 1rem;
-      margin-left: 0.6em; }
+  .lh-house-details .agent-phone-text {
+    font-size: 1rem;
+    margin-left: 0.6em; }
   .lh-house-details .agent-text {
     margin-left: 1.4em;
     color: white;
@@ -2639,7 +2641,6 @@ figure.lh-img-holder {
 
 .faw-options {
   padding-top: 2em;
-  margin-right: 20px;
   color: #00aced; }
   .faw-options [class*='col-'] {
     text-align: center; }
@@ -2648,10 +2649,16 @@ figure.lh-img-holder {
     padding-right: .5em; }
   .faw-options p {
     margin-left: -1em; }
+  .faw-options .fo-container {
+    padding-right: 20px; }
 
 .hr {
-  margin-left: -42px;
-  width: calc(100% + 80px); }
+  width: calc(100% + 30px);
+  margin-left: -30px; }
+  @media (min-width: 768px) {
+    .hr {
+      margin-left: 1px;
+      width: calc(100% - 29px); } }
   .hr-up {
     padding-bottom: 25px;
     border-top: 1px solid #d6dce6; }
@@ -2875,12 +2882,16 @@ figure.lh-img-holder {
   box-shadow: inset 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27);
   margin-left: -26px;
   width: calc(100% + 26px); }
+  @media (min-width: 768px) {
+    .lh-finance:before {
+      display: none; } }
 
 .lh-finance i {
-  color: #00aced; }
+  color: #00aced;
+  margin-top: 3px; }
 
 .lh-finance h1 {
-  padding-top: 2em;
+  padding-top: 1em;
   margin-bottom: 1em; }
 
 .lh-finance ul li:nth-child(1):before {
@@ -2961,11 +2972,10 @@ figure.lh-img-holder {
   font-weight: bold; }
 
 .border-dotted {
-  border: 3px dotted #d6dce6;
-  padding: 1.2em;
-  font-size: 1.5rem;
+  border: 2px dotted #d6dce6;
+  padding: 1em;
+  font-size: 1.25rem;
   margin-right: 1em;
-  margin-bottom: 1em;
   color: #00aced; }
 
 .contact-agent-form .lh-custom-select-wrap:before, .lh-form .lh-custom-select-wrap:before {
@@ -2989,3 +2999,36 @@ figure.lh-img-holder {
   position: absolute;
   color: #a6b4c6;
   top: 1.3em; }
+
+.lh-transportation .list-home-title {
+  margin-bottom: 15px; }
+
+.lh-transportation .transp-desc {
+  padding: .6em 0; }
+  .lh-transportation .transp-desc p, .lh-transportation .transp-desc a {
+    font-size: 1.1rem;
+    font-weight: 600; }
+  .lh-transportation .transp-desc p {
+    color: #a8b6c6; }
+
+.lh-transportation .small-caps {
+  font-size: 14px; }
+
+.lh-nearby-places {
+  margin: 25px 0; }
+  .lh-nearby-places .list-home-title {
+    padding: 0; }
+  .lh-nearby-places .places-stars {
+    padding-left: 1.5em; }
+  .lh-nearby-places h2 {
+    font-size: 18px;
+    padding-top: .5em; }
+  .lh-nearby-places p {
+    font-size: 16px; }
+  .lh-nearby-places .stars-reviews {
+    margin-top: -15px; }
+    .lh-nearby-places .stars-reviews i {
+      color: #00aced; }
+    .lh-nearby-places .stars-reviews span {
+      font-size: .9rem;
+      color: #a8b6c6; }
