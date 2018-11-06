@@ -411,11 +411,21 @@ figure.lh-img-holder {
   }
   .input-group-text {
     background: none;
-    border: 1px solid;
-    // border: none;
+    border: 1px solid $lightergray;
+    color: #a6b4c6;
+  }
+  .input-group-prepend {
+    & + .form-control {
+      border-left: none;
+    }
+  }
+  .input-group-append  {
+    & ~ .form-control {
+      border-right: none;
+    }
   }
   .form-control {
-    border: 1px solid #666;
+    border: 1px solid $lightergray;
     padding: 1.4em .33em;
     // border: none;
     &:active, &:focus, &:hover {

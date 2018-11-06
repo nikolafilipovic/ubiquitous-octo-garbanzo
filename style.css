@@ -2784,9 +2784,14 @@ figure.lh-img-holder {
     } */ }
   .contact-agent-form .input-group-text, .lh-form .input-group-text {
     background: none;
-    border: 1px solid; }
+    border: 1px solid #d6dce6;
+    color: #a6b4c6; }
+  .contact-agent-form .input-group-prepend + .form-control, .lh-form .input-group-prepend + .form-control {
+    border-left: none; }
+  .contact-agent-form .input-group-append ~ .form-control, .lh-form .input-group-append ~ .form-control {
+    border-right: none; }
   .contact-agent-form .form-control, .lh-form .form-control {
-    border: 1px solid #666;
+    border: 1px solid #d6dce6;
     padding: 1.4em .33em; }
     .contact-agent-form .form-control:active, .contact-agent-form .form-control:focus, .contact-agent-form .form-control:hover, .lh-form .form-control:active, .lh-form .form-control:focus, .lh-form .form-control:hover {
       outline: none;
