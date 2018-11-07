@@ -1777,7 +1777,7 @@ footer {
           background: white;
           width: 1.5px;
           height: 1.5px;
-          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
     #search-homes .mobile-fields .dropdown .dropdown-menu, .lh-featured-props .mobile-fields .dropdown .dropdown-menu {
       min-width: 12rem;
@@ -1836,7 +1836,7 @@ footer {
           background: white;
           width: 1.5px;
           height: 1.5px;
-          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
           transform: rotate(45deg); }
     #search-homes .mobile-fields .dropdown:nth-child(odd), .lh-featured-props .mobile-fields .dropdown:nth-child(odd) {
       margin-left: 1%; }
@@ -2524,7 +2524,11 @@ figure.lh-img-holder {
   padding: 0 !important; }
 
 .lh-img-holder img {
-  display: block; }
+  display: block;
+  height: auto; }
+  @media (min-width: 768px) {
+    .lh-img-holder img {
+      height: 397.5px; } }
 
 .lh-img-holder span {
   background: rgba(36, 44, 57, 0.7);
@@ -2673,8 +2677,8 @@ figure.lh-img-holder {
   margin-left: -30px; }
   @media (min-width: 768px) {
     .hr {
-      margin-left: 1px;
-      width: calc(100% - 29px); } }
+      margin-left: 0;
+      width: calc(100% - 20px); } }
   .hr-up {
     padding-bottom: 25px;
     border-top: 1px solid #d6dce6; }

@@ -89,6 +89,10 @@ figure.lh-img-holder {
 .lh-img-holder {
   img {
     display:block;
+    height: auto;
+    @include respond-to('desktop') {
+      height: 397.5px;
+    }
   }
   span {
     background: rgba(36, 44, 57, 0.7);
@@ -276,8 +280,8 @@ figure.lh-img-holder {
   width: calc(100% + 30px);
   margin-left: -30px;
   @include respond-to('desktop') {
-    margin-left: 1px;
-    width: calc(100% - 29px);
+    margin-left: 0;
+    width: calc(100% - 20px);
   }
   &-up {
     padding-bottom: 25px;

@@ -790,7 +790,6 @@ Template Name: List Homes
             </div>
           </div>
           <p class="small-caps">Data by <a class="small-caps" href="#"> GreatSchools.org</a></p>
-          <div class="hr hr-down"></div>
 
           <div class="sch-r-offer-link d-block d-md-none">
             <div class="offer-link">
@@ -804,6 +803,7 @@ Template Name: List Homes
             </div>
           </div>
         </div> <!-- lh-school-rankings -->
+        <div class="d-none d-md-block hr hr-down"></div>
 
         <div class="lh-featured-props mb-4">
           <div class="row">
