@@ -5,7 +5,7 @@ Template Name: List Homes
   get_header();
 ?>
 <div class="lh-wrapper">
-  <div class="container-fluid">
+  <div class="container-fluid override-fluid">
     <header class="modal-menu b-shadow">
       <div class="go-back d-block d-md-none">
         <i class="fas fa-chevron-left fasback"></i>
@@ -82,16 +82,16 @@ Template Name: List Homes
     </div>
 
     <div class="row no-gutters lh-info-wrapper">
-      <div class="col-12 col-md-8">
+      <div class="left-side-container col-12 col-md-8">
         <div class="row no-gutters">
           <div class="col-12 col-md-7">
             <h1 class="lh-info-imp">11249 E Sonrisa Ave</h1>
             <p>Mesa, AZ 85212</p>
-            <span>3 bds </span>
+            <span class="dot-separated">3 bds </span>
             <span class="small-dot">&#8226;</span>
-            <span>2 ba </span>
+            <span class="dot-separated">2 ba </span>
             <span class="small-dot">&#8226;</span>
-            <span>1,209 sqft </span>
+            <span class="dot-separated">1,209 sqft </span>
 
 
             <div class="d-none d-md-block lh-house-details">
@@ -369,7 +369,7 @@ Template Name: List Homes
             <div class="row no-gutters">
               <div class="col-12 col-md-4">
                 <p>HOA: <strong>Yes</strong></p>
-              </div>                
+              </div>
               <div class="col-12 col-md-4">
                 <p>HOA free: <strong>$60</strong></p>
               </div>
@@ -381,7 +381,7 @@ Template Name: List Homes
 
           <div class="lh-provider">
             <p>Listing provided by</p>
-            <span>
+            <span class="license">
               <a href="#">Samuel Shechter</a>, License #357382,
               <a href="#">Quicksilver Realty</a> inc.,<br />
               (404) 624-6362, Source: First Multiple Listing Service.
@@ -401,7 +401,8 @@ Template Name: List Homes
             </div>
           </div>
 
-        </div>
+        </div> <!-- lh-features --> 
+
         <div class="lh-finance w-100">
           <div class="hr hr-down d-none d-md-block"></div>
           <h1 class="list-home-title d-block w-100">
@@ -612,7 +613,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">5 reviews</span>
+                  <span class="faded review">5 reviews</span>
                 </div>
                 <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
@@ -621,7 +622,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">2 reviews</span>
+                  <span class="faded review">2 reviews</span>
                 </div>
 
                 <p>Damian Gonzales (2.87 mi)</p>
@@ -631,7 +632,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">2 reviews</span>
+                  <span class="faded review">2 reviews</span>
                 </div>
               </div>
             </div>
@@ -649,7 +650,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">5 reviews</span>
+                  <span class="faded review">5 reviews</span>
                 </div>
 
                 <p>Jules Acupuncture (2.87 mi)</p>
@@ -659,7 +660,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">2 reviews</span>
+                  <span class="faded review">2 reviews</span>
                 </div>
 
                 <p>Damian Gonzales (2.87 mi)</p>
@@ -669,7 +670,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">2 reviews</span>
+                  <span class="faded review">2 reviews</span>
                 </div>
               </div>
             </div>
@@ -687,7 +688,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">5 reviews</span>
+                  <span class="faded review">5 reviews</span>
                 </div>
                 <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
@@ -696,7 +697,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">2 reviews</span>
+                  <span class="faded review">2 reviews</span>
                 </div>
 
                 <p>Damian Gonzales (2.87 mi)</p>
@@ -706,7 +707,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">2 reviews</span>
+                  <span class="faded review">2 reviews</span>
                 </div>
               </div>
             </div>
@@ -724,7 +725,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">5 reviews</span>
+                  <span class="faded review">5 reviews</span>
                 </div>
                 <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
@@ -733,7 +734,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">2 reviews</span>
+                  <span class="faded review">2 reviews</span>
                 </div>
 
                 <p>Damian Gonzales (2.87 mi)</p>
@@ -743,7 +744,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded">2 reviews</span>
+                  <span class="faded review">2 reviews</span>
                 </div>
               </div>
             </div>
@@ -805,51 +806,33 @@ Template Name: List Homes
         </div> <!-- lh-school-rankings -->
         <div class="d-none d-md-block hr hr-down"></div>
 
-        <div class="lh-featured-props mb-4">
-          <div class="row">
-            <div class="col-12 property-list">
-              <div class="d-flex justify-content-center row no-gutters">
-                <h1 class="list-home-title">Featured Properties Nearby</h1>
-                <div class="d-flex justify-content-center align-items-center col-12 column-item">
-                  <i class="fas fa-chevron-left"></i>
-                  <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-1.png)">
-                    <span class="time-on-market">
-                      5 days on the market
-                    </span>
-                    <span class="sale-type">
-                      <i class="red-dot"></i>
-                      House for Sale
-                    </span>
-                    <h1 class="property-price">$425,000</h1>
-                    <div class="property-info">
-                      <span class="beds">3 bds</span>
-                      <span class="baths">2 ba</span>
-                      <span class="sqft">1,209 sqft</span>
-                    </div>
-                    <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>
-                  </div>
-                  <i class="fas fa-chevron-right"></i>
+        <div class="property-slider lh-property-slider">
+          <div class="row no-gutters">
+            <div class="col-12">
+              <div class="owl-carousel owl-carousel-lh">
+                <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-1.png)">
+                  <span class="time-on-market">5 days on the market</span>
+                  <span class="sale-type">House for Sale</span>
+                  <h1 class="property-price">$425,000</h1>
+                  <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2
+                      ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                  <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>
                 </div>
-              </div>
-            </div>
-            <div class="w-100-25 fp-links">
-              <div class="d-flex justify-content-center">
-                <div class="offer-link">
-                  <a href="#">See all featured properties</a>
-                  <i class="fas fa-arrow-right fasarrow"></i>
+
+                <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-2.png)">
+                  <span class="time-on-market">5 days on the market</span>
+                  <span class="sale-type">House for Sale</span>
+                  <h1 class="property-price">$425,000</h1>
+                  <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2
+                      ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                  <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>
                 </div>
-              </div>
-              <div class="blue-border">
-                Buying but need to sell first? <span>The Offer Company will get you offers in 48 hours!</span>
               </div>
             </div>
           </div>
-        </div>
+        </div> <!-- property-slider -->
 
-
-
-      </div> <!-- lh-features -->
-
+      </div> <!-- left-side-container -->
 
 
       <div class="col-12 col-md-4 contact-agent">

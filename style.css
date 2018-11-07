@@ -1978,7 +1978,7 @@ footer {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
-  padding-right: 150px;
+  padding-right: 15px;
   border-radius: 5px;
   margin: 0 auto;
   cursor: pointer;
@@ -2250,7 +2250,7 @@ footer {
     background: #00aced;
     position: relative;
     z-index: 999;
-    box-shadow: 0; }
+    box-shadow: none; }
     .listing-header .navbar .navbar-brand {
       width: initial;
       margin-right: 1rem; }
@@ -2449,20 +2449,23 @@ footer {
     #search-homes .property-list .column-item:nth-child(even) {
       padding-right: 6px; }
     #search-homes .property-list .column-item:nth-child(odd) {
-      padding-left: 6px; } }
+      padding-left: 6px; }
+  #listing-area {
+    overflow-y: scroll; }
+  #search-page-body {
+    overflow-y: hidden; } }
 
 @media only screen and (max-width: 1365px) {
   #homes-search-desktop-field {
     min-width: 15rem !important; } }
 
+.override-fluid {
+  padding: 0 !important;
+  margin: 0 !important; }
+
 .lh-wrapper {
   max-width: 1024px;
   margin: 0 auto; }
-
-.container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  box-shadow: 3px 2px 16px 1px grey; }
 
 .b-shadow {
   box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27); }
@@ -2487,6 +2490,15 @@ footer {
 
 .small-caps {
   font-size: 14px !important; }
+
+.agent-phone-text, .dot-separated, .license, .review {
+  font-size: 1.1rem;
+  display: inline-block;
+  padding: 1.2rem 0;
+  font-weight: 600; }
+  @media (min-width: 768px) {
+    .agent-phone-text, .dot-separated, .license, .review {
+      padding: 0.5rem 0; } }
 
 .modal-menu {
   background: white;
@@ -2589,14 +2601,6 @@ figure.lh-img-holder {
   .lh-info-wrapper p {
     padding: 0;
     font-size: 1.1rem; }
-  .lh-info-wrapper span {
-    font-size: 1.1rem;
-    display: inline-block;
-    padding: 1.2rem 0;
-    font-weight: 600; }
-    @media (min-width: 768px) {
-      .lh-info-wrapper span {
-        padding: 0.5rem 0; } }
   .lh-info-wrapper span.small-dot {
     margin: 0 .5rem;
     font-weight: 100; }
@@ -3107,49 +3111,23 @@ figure.lh-img-holder {
   font-weight: lighter !important;
   color: #a8b6c6 !important; }
 
-@media (min-width: 320px) {
-  .lh-featured-props .property-item {
-    width: 60%; } }
-
-.lh-featured-props .fa-chevron-right, .lh-featured-props .fa-chevron-left {
-  font-size: 2.7rem;
-  padding: 0 .3em;
-  color: #d6dce6; }
-
-.lh-featured-props .fa-chevron-right {
-  color: #00aced; }
-
-.lh-featured-props .offer-link {
-  width: auto;
-  text-transform: none;
-  margin: 2em 0; }
-
-.lh-featured-props .list-home-title {
-  padding: 1.5em 0; }
-
-.lh-featured-props .property-list {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .lh-featured-props .property-list .property-item {
-    border-radius: 5px;
-    margin: 0 !important;
-    padding-right: 150px !important; }
-    .lh-featured-props .property-list .property-item .sale-type {
-      padding: 0 !important; }
-    .lh-featured-props .property-list .property-item .time-on-market {
-      padding: 0 !important; }
-    .lh-featured-props .property-list .property-item .property-info {
-      margin-top: 0 !important; }
-      .lh-featured-props .property-list .property-item .property-info .beds, .lh-featured-props .property-list .property-item .property-info .baths, .lh-featured-props .property-list .property-item .property-info .sqft {
-        vertical-align: unset !important;
-        padding: 0 !important; }
-    .lh-featured-props .property-list .property-item .property-address {
-      padding: 0 !important; }
-
 .blue-border {
   border: 1px solid #00aced;
   border-radius: 5px;
   padding: .7em; }
   .blue-border span {
+    color: #00aced; }
+
+.lh-property-slider {
+  margin: 20px 20px 20px 0; }
+  .lh-property-slider .property-item .property-info .beds, .lh-property-slider .property-item .property-info .baths, .lh-property-slider .property-item .property-info .sqft {
+    padding: 0 !important; }
+  .lh-property-slider .property-item {
+    background-size: cover !important;
+    background-repeat: no-repeat !important; }
+    .lh-property-slider .property-item .sale-type {
+      margin-top: 22%; }
+  .lh-property-slider .owl-prev span, .lh-property-slider .owl-next span {
+    font-size: 4rem !important; }
+  .lh-property-slider .owl-next span {
     color: #00aced; }

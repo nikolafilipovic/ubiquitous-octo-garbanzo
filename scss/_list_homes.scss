@@ -1,15 +1,12 @@
+.override-fluid {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .lh-wrapper {
   max-width: 1024px;
   margin: 0 auto;
 }
-
-.container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  box-shadow: 3px 2px 16px 1px grey;
-  // to be removed
-}
-
 .b-shadow {
   box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27)
   //refactor everywhere!
@@ -37,6 +34,16 @@
 
 .small-caps {
   font-size: 14px !important; 
+}
+
+.agent-phone-text, .dot-separated, .license, .review {
+  font-size: 1.1rem;
+  display:inline-block;
+  padding: 1.2rem 0;
+  font-weight: 600;
+  @include respond-to('desktop') {
+    padding: 0.5rem 0;
+  }
 }
 
 .modal-menu {
@@ -164,15 +171,6 @@ figure.lh-img-holder {
   p {
     padding: 0;
     font-size: 1.1rem;
-  }
-  span {
-    font-size: 1.1rem;
-    display:inline-block;
-    padding: 1.2rem 0;
-    font-weight: 600;
-    @include respond-to('desktop') {
-      padding: 0.5rem 0;
-    }
   }
   span.small-dot{
     margin: 0 .5rem;
@@ -858,56 +856,6 @@ figure.lh-img-holder {
   color:  #a8b6c6 !important;;
 }
 
-.lh-featured-props {
-  @include respond-to('xs-mobile') {
-    .property-item {
-      width:60%;
-    }
-  }
-  .fa-chevron-right, .fa-chevron-left {
-    font-size: 2.7rem;
-    padding: 0 .3em;
-    color: $lightergray;
-  }
-  .fa-chevron-right {
-    color: $main-color;
-  }
-  .offer-link {
-    width: auto;
-    text-transform: none;
-    margin: 2em 0;
-  }
-  .list-home-title {
-    padding: 1.5em 0;
-  }
-  .property-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .property-item {
-      border-radius: 5px;
-      margin:0 !important;
-      padding-right: 150px !important;
-      .sale-type {
-        padding: 0 !important;
-      }
-      .time-on-market {
-        padding: 0 !important;
-      }
-      .property-info {
-        margin-top: 0 !important;
-        .beds, .baths, .sqft {
-          vertical-align: unset !important;
-          padding: 0 !important;
-        }
-      }
-      .property-address {
-        padding: 0 !important;
-      }
-    }
-  }
-}
-
 .blue-border {
   border: 1px solid $main-color;
   border-radius: 5px;
@@ -917,5 +865,25 @@ figure.lh-img-holder {
   }
 }
 
+.lh-property-slider {
+  margin: 20px 20px 20px 0;
+  .property-item .property-info .beds, .property-item .property-info .baths, .property-item .property-info .sqft  {
+    padding: 0 !important;
+  }
 
+  .property-item {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    .sale-type {
+      margin-top: 22%;
+    }
+  }
 
+  .owl-prev span, .owl-next span {
+    font-size: 4rem !important;
+  }
+
+  .owl-next span {
+    color: $main-color;
+  }
+}

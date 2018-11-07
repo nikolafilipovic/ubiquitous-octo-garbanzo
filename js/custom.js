@@ -33,11 +33,20 @@ function searchOption(option) {
         return true;
     }
 }
+/* Div height */
+function docFill(){
+    if (jQuery(window).width() > 960) {
+        var areaHeight = jQuery(window).height() - 114;
+        jQuery("#map-area").css("height",areaHeight);
+        jQuery("#listing-area").css("height",areaHeight);
+    } else {
+        return true;
+    }
+  };
 /* Initialize the triggers */
 jQuery(document).ready(function(){
     // to be replaced later
     var openModal = jQuery("#open-modal");
-    
 
     jQuery( '#menu-opener' ).click(function() {
         openMenu();
@@ -54,7 +63,7 @@ jQuery(document).ready(function(){
     jQuery( 'span.estimate' ).click(function() {
         searchOption("estimate");
     });
-    jQuery(".owl-carousel").owlCarousel({    
+    jQuery(".owl-carousel-landing").owlCarousel({    
         loop:true,
         responsiveClass:true,
         nav:true,
@@ -75,6 +84,26 @@ jQuery(document).ready(function(){
             }
         }
     });
+    jQuery(".owl-carousel-lh").owlCarousel({    
+        loop:true,
+        responsiveClass: true,
+        nav: false,
+        margin: 10,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1,
+                nav: true
+            },
+            1000:{
+                items:2,
+                nav: false,
+                loop: false
+            }
+        }
+    });
     if (jQuery(window).width() < 770) {
         jQuery( "#before-cta" ).after(function() {
             return '<div class="d-xl-none d-lg-none d-md-none d-sm-block d-block cta-insert"> <h1>Be the first to know!</h1> <p>New homes are getting added every 2 minutes. Save your search and be the first to know. </p> <a href="" class="btn btn-primary btn-block cta">Save search <i class="fas fa-arrow-right"></i></a> </div>';
@@ -82,4 +111,6 @@ jQuery(document).ready(function(){
      }else{
          return;
      }
+     docFill();
  })
+ jQuery(window).resize(docFill);

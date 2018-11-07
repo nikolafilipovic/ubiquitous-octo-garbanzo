@@ -20,7 +20,7 @@ class toc_virtual_tour_slider extends ET_Builder_Module {
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="owl-carousel">
+                            <div class="owl-carousel owl-carousel-landing">
                                 <div class="property-item" style="background: url(https://via.placeholder.com/388x259)">
                                     <div style="height: 200px;"></div>
                                 </div>

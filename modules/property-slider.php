@@ -20,7 +20,7 @@ class toc_property_slider extends ET_Builder_Module {
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="owl-carousel">
+                            <div class="owl-carousel owl-carousel-landing">
                                 <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-1.png)">
                                     <span class="time-on-market">5 days on the market</span>
                                     <span class="sale-type">House for Sale</span>

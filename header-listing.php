@@ -57,7 +57,7 @@
         );
     ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="search-page-body">
 	<div id="page-container">
 	<div id="overlay"></div>
 	<header class="listing-header">
