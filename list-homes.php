@@ -807,8 +807,10 @@ Template Name: List Homes
         <div class="d-none d-md-block hr hr-down"></div>
 
         <div class="property-slider lh-property-slider">
+          <h1 class="list-home-title text-center">Featured Properties Nearby</h1>
+
           <div class="row no-gutters">
-            <div class="col-12">
+            <div class="col-11 col-md-9 col-lg-12 m-auto">
               <div class="owl-carousel owl-carousel-lh">
                 <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-1.png)">
                   <span class="time-on-market">5 days on the market</span>

@@ -3127,6 +3127,16 @@ figure.lh-img-holder {
     background-repeat: no-repeat !important; }
     .lh-property-slider .property-item .sale-type {
       margin-top: 22%; }
+  .lh-property-slider button.owl-prev {
+    transform: translateX(-10px); }
+    @media (min-width: 960px) {
+      .lh-property-slider button.owl-prev {
+        transform: translateX(10px); } }
+  .lh-property-slider button.owl-next {
+    transform: translateX(10px); }
+    @media (min-width: 960px) {
+      .lh-property-slider button.owl-next {
+        transform: translateX(-10px); } }
   .lh-property-slider .owl-prev span, .lh-property-slider .owl-next span {
     font-size: 4rem !important; }
   .lh-property-slider .owl-next span {

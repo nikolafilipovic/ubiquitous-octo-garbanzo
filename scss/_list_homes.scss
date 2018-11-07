@@ -879,10 +879,24 @@ figure.lh-img-holder {
     }
   }
 
+  button.owl-prev {
+    transform: translateX(-10px);
+    @include respond-to('s-desktop') {
+      transform: translateX(10px);
+    }
+  }
+  
+  button.owl-next {
+    transform: translateX(10px);
+    @include respond-to('s-desktop') {
+      transform: translateX(-10px);
+    }
+  }
+
+
   .owl-prev span, .owl-next span {
     font-size: 4rem !important;
   }
-
   .owl-next span {
     color: $main-color;
   }

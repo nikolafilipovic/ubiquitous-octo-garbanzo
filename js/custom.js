@@ -47,6 +47,7 @@ function docFill(){
 jQuery(document).ready(function(){
     // to be replaced later
     var openModal = jQuery("#open-modal");
+    var $ = jQuery;
 
     jQuery( '#menu-opener' ).click(function() {
         openMenu();
@@ -63,6 +64,7 @@ jQuery(document).ready(function(){
     jQuery( 'span.estimate' ).click(function() {
         searchOption("estimate");
     });
+
     jQuery(".owl-carousel-landing").owlCarousel({    
         loop:true,
         responsiveClass:true,
@@ -87,7 +89,7 @@ jQuery(document).ready(function(){
     jQuery(".owl-carousel-lh").owlCarousel({    
         loop:true,
         responsiveClass: true,
-        nav: false,
+        nav: true,
         margin: 10,
         responsive:{
             0:{
@@ -112,5 +114,6 @@ jQuery(document).ready(function(){
          return;
      }
      docFill();
+
  })
  jQuery(window).resize(docFill);
