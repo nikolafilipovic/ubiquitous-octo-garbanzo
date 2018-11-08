@@ -5,11 +5,6 @@
     get_header('listing');
     $template_directory_uri = "/wp-content/themes/theoffercompany";
 ?>
-<style>
-    .main-header {
-        background: black;
-    }
-</style>
 <div class="clearfix"></div>
 <div id="search-homes">
     <div class="container-fluid">
@@ -28,9 +23,14 @@
                         <i class="fas fa-circle color red"></i><i class="fas fa-circle color green"></i>Listing type <i class="fas fa-angle-down"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="listingDropdownDesktop">
-                        <a class="dropdown-item" href="#">Buy</a>
-                        <a class="dropdown-item" href="#">Sell</a>
-                        <a class="dropdown-item" href="#">Lease</a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon" type="checkbox" value="Nothing"><label for="comingSoon"><i class="fas fa-circle color red"></i>For Sale</label></a>
+                        <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon1" type="checkbox" value="Nothing"><label for="comingSoon1">Coming Soon</label></a>
+                        <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon2" type="checkbox" value="Nothing"><label for="comingSoon2">New Construction</label></a>
+                        <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon3" type="checkbox" value="Nothing"><label for="comingSoon3">Open Houses</label></a>
+                        <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon4" type="checkbox" value="Nothing"><label for="comingSoon4">Virtual Tours</label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction" data-toggle="tooltip" data-placement="right" id="foreclosure-tooltip" title="The lender has initiated foreclosure proceedings and an auction date has been scheduled on these properties.These properties are not found on multiple listing service (MLS)."><i class="fas fa-circle color blue"></i>Foreclosures</label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="openHouses" type="checkbox" value="Nothing"><label for="openHouses" data-toggle="tooltip" data-placement="right" id="lastcall-tooltip" title="24 hour notice to make an offer before these homes goes under contract."><i class="fas fa-circle color green"></i>Last call <i class="fas fa-info-circle info"></i></label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour"><i class="fas fa-circle color yellow"></i>Sold tour</label></a>
                     </div>
                 </div>
                 <div class="dropdown desktop">
@@ -51,7 +51,7 @@
                     <div class="dropdown-menu bedrooms" aria-labelledby="bedroomsDropdownDesktop">
                         <div class="dropdown-wrapper">
                             <a class="dropdown-item custom" href="#">Any</a>
-                            <a class="dropdown-item custom" href="#">+</a>
+                            <a class="dropdown-item custom" href="#">1+</a>
                             <a class="dropdown-item custom" href="#">2+</a>
                             <a class="dropdown-item custom" href="#">3+</a>
                             <a class="dropdown-item custom" href="#">4+</a>
@@ -63,17 +63,73 @@
                         Home type (2) <i class="fas fa-angle-down"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="homeTypeDropdownDesktop">
-                        <a class="dropdown-item" href="#">?</a>
-                        <a class="dropdown-item" href="#">?</a>
-                        <a class="dropdown-item" href="#">?</a>
+                        <a class="dropdown-item" href="#">Houses</a>
+                        <a class="dropdown-item" href="#">Condos</a>
+                        <a class="dropdown-item" href="#">Land</a>
                     </div>
                 </div>
                 <div class="dropdown desktop">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="filtersDropdownDesktop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        All filters <i class="fas fa-angle-down"></i>
+                        More filters <i class="fas fa-angle-down"></i>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="filtersDropdownDesktop">
-                        <a class="dropdown-item" href="#">?</a>
+                    <div class="dropdown-menu" id="filterDropdown" aria-labelledby="filtersDropdownDesktop">
+                        <div class="fields">
+                            <div class="form-group">
+                                <label>Bathrooms</label>
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>0+</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Square feet</label>
+                                <div class="input-group dual">
+                                    <input type="text" class="form-control" placeholder="Min">
+                                    <input type="text" class="form-control" placeholder="Max">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Lot size</label>
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>Any</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Year built</label>
+                                <div class="input-group dual">
+                                    <input type="text" class="form-control" placeholder="Min">
+                                    <input type="text" class="form-control" placeholder="Max">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Max HOA</label>
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>Any</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Days on market</label>
+                                <select class="custom-select" id="inputGroupSelect02" style="max-width: 54%;">
+                                    <option selected>Any</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Features</label>
+                                <input type="text" class="form-control input" placeholder="Golf, pool, waterfront...">
+                            </div>
+                            <a class="btn btn-primary btn-block apply" href="#" id="applyBottom">Apply</a>
+                        </div>
                     </div>
                 </div>
                 <div class="dropdown desktop">
@@ -81,8 +137,11 @@
                         Sort: Highest price <i class="fas fa-angle-down"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="filtersDropdownDesktop">
-                        <a class="dropdown-item" href="#">Lowest price</a>
-                        <a class="dropdown-item active" href="#">Highest price</a>
+						<a class="dropdown-item active" href="#">Highest price</a>
+                        <a class="dropdown-item" href="#">Bedrooms</a>
+                        <a class="dropdown-item" href="#">Bathrooms</a>
+                        <a class="dropdown-item" href="#">Square Feet</a>
+                        <a class="dropdown-item" href="#">Days on Market</a>
                     </div>
                 </div>
                 <a href="#" class="desktop-fields-map">List</a>
@@ -94,7 +153,7 @@
                 <div class="dropdown listing">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="listingDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <input class="search-checkbox" id="listing" type="checkbox" value="Nothing">
-                        <label for="listing"><i class="red-dot"></i>Sale type <i class="fas fa-angle-down"></i></label>
+                        <label for="listing"><i class="fas fa-circle color red"></i>Sale type <i class="fas fa-angle-down"></i></label>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="listingDropdown">
                         <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon" type="checkbox" value="Nothing"><label for="comingSoon">Coming soon</label></a>
@@ -149,7 +208,7 @@
                     <div class="dropdown-menu" aria-labelledby="bedroomsDropdown">
                         <div class="dropdown-wrapper">
                             <a class="dropdown-item custom" href="#">Any</a>
-                            <a class="dropdown-item custom" href="#">+</a>
+                            <a class="dropdown-item custom" href="#">1+</a>
                             <a class="dropdown-item custom" href="#">2+</a>
                             <a class="dropdown-item custom" href="#">3+</a>
                             <a class="dropdown-item custom" href="#">4+</a>
@@ -169,10 +228,172 @@
                     </div>
                 </div>
                 <div class="search-links">
-                    <a href="#" id="filters">Filters</a>
+                    <a href="#" id="openFilterBtn">Filters</a>
                     <a href="#">Sort</a>
                     <a href="#">Map</a>
                     <a href="#" id="save-search">Save search</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filter-overlay closed" id="filterOverlay">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 filter-header">
+                    <a href="#" class="apply" id="applyTop">Apply</a>
+                    <p>145 Results</p>
+                    <a href="#" class="reset">Reset</a>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 filter-body" id="filter-body">
+                    <div class="accordion" id="accordionFilters">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <input class="search-checkbox" id="listing" type="checkbox" value="Nothing">
+                                    <label for="listing"><i class="fas fa-circle color red"></i>For Sale <i class="fas fa-angle-down"></i></label>
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFilters">
+                                <div class="card-body">
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon" type="checkbox" value="Nothing"><label for="comingSoon">Coming soon</label></a>
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction">New construction</label></a>
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="openHouses" type="checkbox" value="Nothing"><label for="openHouses">Open houses</label></a>
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour">Virtual tour</label></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <button class="btn btn-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <input class="search-checkbox" id="listing" type="checkbox" value="Nothing">
+                                    <label for="listing"><i class="fas fa-circle color blue"></i>Foreclosures <i class="fas fa-angle-down"></i></label>
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFilters">
+                                <div class="card-body">
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon" type="checkbox" value="Nothing"><label for="comingSoon">Coming soon</label></a>
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction">New construction</label></a>
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="openHouses" type="checkbox" value="Nothing"><label for="openHouses">Open houses</label></a>
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour">Virtual tour</label></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <button class="btn btn-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <input class="search-checkbox" id="listing" type="checkbox" value="Nothing">
+                                    <label for="listing"><i class="fas fa-circle color green"></i>Last Call <i class="fas fa-info-circle info"></i><i class="fas fa-angle-down"></i></label>
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionFilters">
+                                <div class="card-body">
+                                    <p class="dropdown-item">Last call to make offers. These homes <br/>will go under contract in 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <button class="btn btn-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <input class="search-checkbox" id="listing" type="checkbox" value="Nothing">
+                                    <label for="listing"><i class="fas fa-circle color yellow"></i>Sold <i class="fas fa-angle-down"></i></label>
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFilters">
+                                <div class="card-body">
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon" type="checkbox" value="Nothing"><label for="comingSoon">Coming soon</label></a>
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction">New construction</label></a>
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="openHouses" type="checkbox" value="Nothing"><label for="openHouses">Open houses</label></a>
+                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour">Virtual tour</label></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-fields">
+                        <div class="price-field">
+                            <h3>Price</h3>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Min">
+                                <input type="text" class="form-control" placeholder="Max">
+                            </div>
+                        </div>
+                        <div class="room-field">
+                            <h3>Bedrooms</h3>
+                            <div class="dropdown-wrapper">
+                                <a class="dropdown-item custom studio" href="#">Studio</a>
+                                <a class="dropdown-item custom" href="#">1+</a>
+                                <a class="dropdown-item custom" href="#">2+</a>
+                                <a class="dropdown-item custom" href="#">3+</a>
+                                <a class="dropdown-item custom" href="#">4+</a>
+                                <a class="dropdown-item custom-checkbox" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour">Use exact match</label></a>
+                            </div>
+                        </div>
+                        <div class="home-field">
+                            <h3>Home Type</h3>
+                            <div class="dropdown-wrapper">
+                                <a class="dropdown-item custom-checkbox" href="#"><input class="dropdown-checkbox" id="homeTypeHouses" type="checkbox" value="Nothing"><label for="homeTypeHouses">Houses</label></a>
+                                <a class="dropdown-item custom-checkbox" href="#"><input class="dropdown-checkbox" id="homeTypeV" type="checkbox" value="Nothing"><label for="homeTypeV">Condos</label></a>
+                                <a class="dropdown-item custom-checkbox" href="#"><input class="dropdown-checkbox" id="homeTypeLand" type="checkbox" value="Nothing"><label for="homeTypeLand">Land</label></a>
+                                <a class="dropdown-item custom-checkbox" href="#"><input class="dropdown-checkbox" id="homeTypeM" type="checkbox" value="Nothing"><label for="homeTypeM">Manufactured</label></a>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="form-group">
+                                <label>Bathrooms</label>
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>0+</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Square feet</label>
+                                <div class="input-group dual">
+                                    <input type="text" class="form-control" placeholder="Min">
+                                    <input type="text" class="form-control" placeholder="Max">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Lot size</label>
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>Any</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Year built</label>
+                                <div class="input-group dual">
+                                    <input type="text" class="form-control" placeholder="Min">
+                                    <input type="text" class="form-control" placeholder="Max">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Max HOA</label>
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>Any</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Days on market</label>
+                                <select class="custom-select" id="inputGroupSelect02" style="max-width: 54%;">
+                                    <option selected>Any</option>
+                                    <option value="1">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3">3+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Features</label>
+                                <input type="text" class="form-control input" placeholder="Golf, pool, waterfront...">
+                            </div>
+                            <a class="btn btn-primary btn-block apply" href="#" id="applyBottom">Apply</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -271,21 +492,30 @@
                         </div>
                     </div>
                 </div>
+				<div class="row pagination">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+						<div>
+							<ul class="pagination">
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">4</a></li>
+							<li class="page-item"><a class="page-link" href="#">5</a></li>
+							<li class="page-item"><a class="page-link next" href="#">Next</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
                 <div class="row">
                     <footer class="footer">   
                         <div class="bottom-footer">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <div class="row">
-                                    <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12 footer-copyright">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 footer-copyright">
                                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo"><img src="<?php echo $template_directory_uri; ?>/images/footer-logo.png" alt=""/></a>
                                         <span>© <?php echo date('Y'); ?> The Offer Company</span>
                                     </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer-social">
-                                        <a href="#"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
-                                        <a href="#"><span class="social-icon"><i class="fab fa-twitter"></i></span></a>
-                                        <a href="#"><span class="social-icon"><i class="fab fa-instagram"></i></span></a>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer-contact">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 footer-contact">
                                         <h3>(888) 398-4855</h3>
                                         <span><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></span>
                                     </div>
@@ -293,22 +523,6 @@
                             </div>
                         </div>
                     </footer>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid d-xl-none d-lg-none d-md-none d-sm-block d-block pagination">
-        <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                <div>
-                    <ul class="pagination ">
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link next" href="#">Next</a></li>
-                    </ul>
                 </div>
             </div>
         </div>

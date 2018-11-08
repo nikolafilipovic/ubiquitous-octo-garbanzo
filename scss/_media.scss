@@ -311,6 +311,98 @@
                             &.active {
                                 background: #eee;
                             }
+                            &:hover,
+                            &:active {
+                                background: #eee;
+                            }
+                            &.sub {
+                                padding-left: 34px;
+                                .dropdown-checkbox {
+                                    & + label {
+                                        font-family: $default-font-family;
+                                        color:  #1e232c;
+                                        text-align: left;
+                                        text-transform: unset;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            .dropdown-checkbox {
+                                position: absolute;
+                                opacity: 0;
+                                & + label {
+                                  position: relative;
+                                  cursor: pointer;
+                                  padding: 0;
+                                  font-weight: 300;
+                                  width: 100%;
+                                  display: block;
+                                  font-family: $bold-font-family;
+                                  color:  #1e232c;
+                                  text-align: left;
+                                  text-transform: uppercase;
+                                  .fas.color {
+                                    float: initial;
+                                    font-size: 8px;
+                                    vertical-align: middle;
+                                    margin-top: -3px;
+                                    margin-right: 4px;
+                                    &.red {
+                                        color: #e03225;
+                                    }
+                                    &.blue {
+                                        color: #196aff;
+                                    }
+                                    &.green {
+                                        color: #7cd62c;
+                                    }
+                                    &.yellow {
+                                        color: #ffba13;
+                                    }
+                                  }
+                                  .fas.info {
+                                    float: initial;
+                                    vertical-align: middle;
+                                    margin-top: -3px;
+                                    color: #00aced;
+                                  }
+                                }
+                                & + label:before {
+                                  content: '';
+                                  margin-right: 10px;
+                                  display: inline-block;
+                                  vertical-align: middle;
+                                  width: 16px;
+                                  height: 16px;
+                                  background: white;
+                                  border: 1px solid #d6dce6;
+                                  border-radius: 3px;
+                                  transition: background 0.3s ease;
+                                }
+                                &:hover + label:before {
+                                  background: #00aced;
+                                }
+                                &:checked + label:before {
+                                  background: #00aced;
+                                }
+                                &:checked label::after {
+                                  content: '';
+                                  position: absolute;
+                                  left: 4px;
+                                  top: 11px;
+                                  background: white;
+                                  width: 1.5px;
+                                  height: 1.5px;
+                                  box-shadow:
+                                    1.5px 0 0 white,
+                                    3px 0 0 white,
+                                    3px -1.5px 0 white,
+                                    3px -3px 0 white,
+                                    3px -4px 0 white,
+                                    3px -6px 0 white;
+                                  transform: rotate(45deg);
+                                }
+                            }
                         }
                         &::after {
                             bottom: 100%;
@@ -429,6 +521,11 @@
     }
     #search-page-body {
         overflow-y: hidden;
+    }
+    #search-homes, .lh-featured-props {
+        .property-item {
+            border-radius: 5px;
+        }
     }
 }
 @media only screen and (max-width: 1365px) {

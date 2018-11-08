@@ -59,7 +59,6 @@
 </head>
 <body <?php body_class(); ?> id="search-page-body">
 	<div id="page-container">
-	<div id="overlay"></div>
 	<header class="listing-header">
         <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="#">

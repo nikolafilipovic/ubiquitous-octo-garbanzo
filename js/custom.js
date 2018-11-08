@@ -6,6 +6,10 @@ function openMenu() {
     jQuery( '#slide-out-nav' ).toggleClass( 'open' );
     jQuery( 'div.logo' ).toggleClass( 'slide' );
 }
+/* Open Filter */
+function openFilter() {
+    jQuery( '#filterOverlay' ).toggleClass( 'closed' );
+}
 /* Change the search option */
 function searchOption(option) {
     if (option === "buy") {
@@ -42,9 +46,22 @@ function docFill(){
     } else {
         return true;
     }
-  };
+};
+function docFilterFill(){
+    if (jQuery(window).width() < 960) {
+        var areaHeightFilter = jQuery(window).height() - 63;
+        jQuery("#filter-body").css("height",areaHeightFilter);
+    } else {
+        return true;
+    }
+};
 /* Initialize the triggers */
 jQuery(document).ready(function(){
+
+    jQuery(function () {
+        jQuery('[data-toggle="tooltip"]').tooltip()
+      })
+
     // to be replaced later
     var openModal = jQuery("#open-modal");
     var $ = jQuery;
@@ -64,7 +81,19 @@ jQuery(document).ready(function(){
     jQuery( 'span.estimate' ).click(function() {
         searchOption("estimate");
     });
-
+    jQuery( '#menu-closer' ).click(function() {
+        openMenu();
+    });
+    jQuery( '#applyTop' ).click(function() {
+        openFilter();
+    });
+    jQuery( '#applyBottom' ).click(function() {
+        openFilter();
+    });
+    jQuery( '#openFilterBtn' ).click(function() {
+        openFilter();
+    });
+    jQuery(".nav-item").dropdown();
     jQuery(".owl-carousel-landing").owlCarousel({    
         loop:true,
         responsiveClass:true,
@@ -115,6 +144,7 @@ jQuery(document).ready(function(){
          return;
      }
      docFill();
-
+     docFilterFill();
  })
  jQuery(window).resize(docFill);
+ jQuery(window).resize(docFilterFill);
