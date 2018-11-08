@@ -2491,13 +2491,19 @@ footer {
 .small-caps {
   font-size: 14px !important; }
 
-.agent-phone-text, .dot-separated, .license, .review {
+.agent-phone-text,
+.dot-separated,
+.license,
+.review {
   font-size: 1.1rem;
   display: inline-block;
   padding: 1.2rem 0;
   font-weight: 600; }
   @media (min-width: 768px) {
-    .agent-phone-text, .dot-separated, .license, .review {
+    .agent-phone-text,
+    .dot-separated,
+    .license,
+    .review {
       padding: 0.5rem 0; } }
 
 .modal-menu {
@@ -2519,7 +2525,8 @@ footer {
     .modal-menu .various-link .faw-options {
       display: flex;
       padding-top: 0; }
-      .modal-menu .various-link .faw-options .far, .modal-menu .various-link .faw-options .fas {
+      .modal-menu .various-link .faw-options .far,
+      .modal-menu .various-link .faw-options .fas {
         font-size: 1.7rem;
         margin-right: .2em; }
     .modal-menu .various-link .faw-options > * {
@@ -2636,11 +2643,14 @@ figure.lh-img-holder {
       width: 120px;
       height: 120px; }
 
-.lh-house-details.lh-house-details--big .agent-phone, .lh-house-details.lh-house-details--big .agent-text {
+.lh-house-details.lh-house-details--big .agent-phone,
+.lh-house-details.lh-house-details--big .agent-text {
   font-size: 16px; }
-  .lh-house-details.lh-house-details--big .agent-phone-text, .lh-house-details.lh-house-details--big .agent-text-text {
+  .lh-house-details.lh-house-details--big .agent-phone-text,
+  .lh-house-details.lh-house-details--big .agent-text-text {
     margin-right: 1.4em; }
-  .lh-house-details.lh-house-details--big .agent-phone .agent-phone, .lh-house-details.lh-house-details--big .agent-text .agent-phone {
+  .lh-house-details.lh-house-details--big .agent-phone .agent-phone,
+  .lh-house-details.lh-house-details--big .agent-text .agent-phone {
     transform: rotate(90deg); }
 
 .lh-house-details {
@@ -2698,9 +2708,11 @@ figure.lh-img-holder {
     background-size: cover; }
   .lh-pictures .col-6 {
     flex-basis: calc(50% - 4.5px); }
-  .lh-pictures .col-6:nth-child(1), .lh-pictures .col-6:nth-child(2) {
+  .lh-pictures .col-6:nth-child(1),
+  .lh-pictures .col-6:nth-child(2) {
     margin-bottom: 4px; }
-  .lh-pictures .col-6:nth-child(1), .lh-pictures .col-6:nth-child(3) {
+  .lh-pictures .col-6:nth-child(1),
+  .lh-pictures .col-6:nth-child(3) {
     margin-left: 4px; }
 
 .contact-agent p {
@@ -2770,18 +2782,22 @@ figure.lh-img-holder {
     .another-contact {
       justify-content: center; } }
 
-.contact-agent-form, .lh-form {
+.contact-agent-form,
+.lh-form {
   margin-top: 2.5em;
   margin-right: 20px; }
-  .contact-agent-form .lh-apendix, .lh-form .lh-apendix {
+  .contact-agent-form .lh-apendix,
+  .lh-form .lh-apendix {
     color: #a6b4c6;
     font-size: 0.95em;
     word-spacing: 1px;
     line-height: 1.4;
     padding-bottom: 25px; }
-  .contact-agent-form textarea, .lh-form textarea {
+  .contact-agent-form textarea,
+  .lh-form textarea {
     padding: .7em !important; }
-  .contact-agent-form select.lh-custom-select, .lh-form select.lh-custom-select {
+  .contact-agent-form select.lh-custom-select,
+  .lh-form select.lh-custom-select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -2790,69 +2806,106 @@ figure.lh-img-holder {
     width: 100%;
     border: 1px solid #d6dce6;
     box-shadow: inset 0px 9px 15px -10px #d6dce6; }
-  .contact-agent-form .lh-custom-select-wrap, .lh-form .lh-custom-select-wrap {
+  .contact-agent-form .lh-custom-select-wrap,
+  .lh-form .lh-custom-select-wrap {
     position: relative; }
-    .contact-agent-form .lh-custom-select-wrap:before, .lh-form .lh-custom-select-wrap:before {
+    .contact-agent-form .lh-custom-select-wrap:before,
+    .lh-form .lh-custom-select-wrap:before {
       right: 12px;
       top: 16px;
       content: "\f078"; }
-  .contact-agent-form select::-ms-expand, .lh-form select::-ms-expand {
+  .contact-agent-form select::-ms-expand,
+  .lh-form select::-ms-expand {
     display: none; }
-  .contact-agent-form .lh-label, .lh-form .lh-label {
+  .contact-agent-form .lh-label,
+  .lh-form .lh-label {
     font-size: 1.1rem;
     font-weight: 600; }
-  .contact-agent-form .has-dollar-left, .lh-form .has-dollar-left {
+  .contact-agent-form .has-dollar-left,
+  .lh-form .has-dollar-left {
     position: relative; }
-    .contact-agent-form .has-dollar-left:before, .lh-form .has-dollar-left:before {
+    .contact-agent-form .has-dollar-left:before,
+    .lh-form .has-dollar-left:before {
       left: .6em;
       content: "$"; }
-    .contact-agent-form .has-dollar-left .form-control, .lh-form .has-dollar-left .form-control {
+    .contact-agent-form .has-dollar-left .form-control,
+    .lh-form .has-dollar-left .form-control {
       padding-left: 1.4em; }
-  .contact-agent-form .has-person-left, .contact-agent-form .has-phone-left, .contact-agent-form .has-mail-left, .lh-form .has-person-left, .lh-form .has-phone-left, .lh-form .has-mail-left {
+  .contact-agent-form .has-person-left, .contact-agent-form .has-phone-left, .contact-agent-form .has-mail-left,
+  .lh-form .has-person-left,
+  .lh-form .has-phone-left,
+  .lh-form .has-mail-left {
     position: relative; }
-    .contact-agent-form .has-person-left:before, .contact-agent-form .has-phone-left:before, .contact-agent-form .has-mail-left:before, .lh-form .has-person-left:before, .lh-form .has-phone-left:before, .lh-form .has-mail-left:before {
+    .contact-agent-form .has-person-left:before, .contact-agent-form .has-phone-left:before, .contact-agent-form .has-mail-left:before,
+    .lh-form .has-person-left:before,
+    .lh-form .has-phone-left:before,
+    .lh-form .has-mail-left:before {
       left: .6em;
       top: 1em;
       content: "\f007"; }
-    .contact-agent-form .has-person-left .form-control, .contact-agent-form .has-phone-left .form-control, .contact-agent-form .has-mail-left .form-control, .lh-form .has-person-left .form-control, .lh-form .has-phone-left .form-control, .lh-form .has-mail-left .form-control {
+    .contact-agent-form .has-person-left .form-control, .contact-agent-form .has-phone-left .form-control, .contact-agent-form .has-mail-left .form-control,
+    .lh-form .has-person-left .form-control,
+    .lh-form .has-phone-left .form-control,
+    .lh-form .has-mail-left .form-control {
       padding-left: 1.8em; }
-  .contact-agent-form .has-phone-left:before, .lh-form .has-phone-left:before {
+  .contact-agent-form .has-phone-left:before,
+  .lh-form .has-phone-left:before {
     content: "\f095";
     transform: rotate(90deg); }
-  .contact-agent-form .has-mail-left:before, .lh-form .has-mail-left:before {
+  .contact-agent-form .has-mail-left:before,
+  .lh-form .has-mail-left:before {
     content: "\f0e0"; }
-  .contact-agent-form .has-amp-right, .contact-agent-form .has-year-right, .contact-agent-form .has-month-right, .lh-form .has-amp-right, .lh-form .has-year-right, .lh-form .has-month-right {
+  .contact-agent-form .has-amp-right, .contact-agent-form .has-year-right, .contact-agent-form .has-month-right,
+  .lh-form .has-amp-right,
+  .lh-form .has-year-right,
+  .lh-form .has-month-right {
     position: relative; }
-    .contact-agent-form .has-amp-right:after, .contact-agent-form .has-year-right:after, .contact-agent-form .has-month-right:after, .lh-form .has-amp-right:after, .lh-form .has-year-right:after, .lh-form .has-month-right:after {
+    .contact-agent-form .has-amp-right:after, .contact-agent-form .has-year-right:after, .contact-agent-form .has-month-right:after,
+    .lh-form .has-amp-right:after,
+    .lh-form .has-year-right:after,
+    .lh-form .has-month-right:after {
       right: .6em;
       content: "%"; }
-    .contact-agent-form .has-amp-right .form-control, .contact-agent-form .has-year-right .form-control, .contact-agent-form .has-month-right .form-control, .lh-form .has-amp-right .form-control, .lh-form .has-year-right .form-control, .lh-form .has-month-right .form-control {
+    .contact-agent-form .has-amp-right .form-control, .contact-agent-form .has-year-right .form-control, .contact-agent-form .has-month-right .form-control,
+    .lh-form .has-amp-right .form-control,
+    .lh-form .has-year-right .form-control,
+    .lh-form .has-month-right .form-control {
       padding-right: 1.4em; }
-  .contact-agent-form .has-year-right:after, .lh-form .has-year-right:after {
+  .contact-agent-form .has-year-right:after,
+  .lh-form .has-year-right:after {
     content: "/year"; }
-  .contact-agent-form .has-month-right:after, .lh-form .has-month-right:after {
+  .contact-agent-form .has-month-right:after,
+  .lh-form .has-month-right:after {
     content: "/month"; }
-  .contact-agent-form .form-control, .lh-form .form-control {
+  .contact-agent-form .form-control,
+  .lh-form .form-control {
     border: 1px solid #d6dce6;
     padding: 1.4em .33em;
     box-shadow: inset 0px 9px 15px -10px #d6dce6; }
-    .contact-agent-form .form-control:active, .contact-agent-form .form-control:focus, .contact-agent-form .form-control:hover, .lh-form .form-control:active, .lh-form .form-control:focus, .lh-form .form-control:hover {
+    .contact-agent-form .form-control:active, .contact-agent-form .form-control:focus, .contact-agent-form .form-control:hover,
+    .lh-form .form-control:active,
+    .lh-form .form-control:focus,
+    .lh-form .form-control:hover {
       outline: none; }
-  .contact-agent-form textarea, .lh-form textarea {
+  .contact-agent-form textarea,
+  .lh-form textarea {
     height: 100px;
     max-height: 200px;
     min-height: 80px; }
-  .contact-agent-form button, .lh-form button {
+  .contact-agent-form button,
+  .lh-form button {
     background: none;
     border: none;
     color: white;
     font-weight: 600; }
-  .contact-agent-form .offer-link, .lh-form .offer-link {
+  .contact-agent-form .offer-link,
+  .lh-form .offer-link {
     width: 100%;
     padding: 10px;
     margin: 1rem 0;
     font-size: 1rem; }
-  .contact-agent-form .fa-phone, .lh-form .fa-phone {
+  .contact-agent-form .fa-phone,
+  .lh-form .fa-phone {
     transform: rotate(90deg); }
 
 .plus-button {
@@ -2876,7 +2929,8 @@ figure.lh-img-holder {
       .lh-virutal-tour img {
         margin-right: 25px !important; } }
 
-.fadown, .faup {
+.fadown,
+.faup {
   font-size: 1.7rem;
   float: right;
   padding: 0 1em; }
@@ -2976,11 +3030,13 @@ figure.lh-img-holder {
     margin-bottom: .5em;
     font-size: 1rem; }
 
-.lh-provider p, .lh-provider span {
+.lh-provider p,
+.lh-provider span {
   font-size: .8rem;
   font-weight: 100; }
 
-.lh-provider p, .lh-provider a {
+.lh-provider p,
+.lh-provider a {
   font-weight: 600; }
 
 .lh-provider span {
@@ -3019,7 +3075,11 @@ figure.lh-img-holder {
   margin-right: 1em;
   color: #00aced; }
 
-.contact-agent-form .lh-custom-select-wrap:before, .lh-form .lh-custom-select-wrap:before, .contact-agent-form .has-person-left:before, .contact-agent-form .has-phone-left:before, .contact-agent-form .has-mail-left:before, .lh-form .has-person-left:before, .lh-form .has-phone-left:before, .lh-form .has-mail-left:before {
+.contact-agent-form .lh-custom-select-wrap:before,
+.lh-form .lh-custom-select-wrap:before, .contact-agent-form .has-person-left:before, .contact-agent-form .has-phone-left:before, .contact-agent-form .has-mail-left:before,
+.lh-form .has-person-left:before,
+.lh-form .has-phone-left:before,
+.lh-form .has-mail-left:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   text-rendering: auto;
@@ -3030,7 +3090,11 @@ figure.lh-img-holder {
   color: #a6b4c6;
   top: 1.2em; }
 
-.contact-agent-form .has-dollar-left:before, .lh-form .has-dollar-left:before, .contact-agent-form .has-amp-right:after, .contact-agent-form .has-year-right:after, .contact-agent-form .has-month-right:after, .lh-form .has-amp-right:after, .lh-form .has-year-right:after, .lh-form .has-month-right:after {
+.contact-agent-form .has-dollar-left:before,
+.lh-form .has-dollar-left:before, .contact-agent-form .has-amp-right:after, .contact-agent-form .has-year-right:after, .contact-agent-form .has-month-right:after,
+.lh-form .has-amp-right:after,
+.lh-form .has-year-right:after,
+.lh-form .has-month-right:after {
   font-family: "Graphik Regular", sans-serif;
   font-weight: 400;
   text-rendering: auto;
@@ -3046,7 +3110,8 @@ figure.lh-img-holder {
 
 .lh-transportation .transp-desc {
   padding: .6em 0; }
-  .lh-transportation .transp-desc p, .lh-transportation .transp-desc a {
+  .lh-transportation .transp-desc p,
+  .lh-transportation .transp-desc a {
     font-size: 1.1rem;
     font-weight: 600; }
   .lh-transportation .transp-desc p {
@@ -3112,15 +3177,41 @@ figure.lh-img-holder {
   color: #a8b6c6 !important; }
 
 .blue-border {
-  border: 1px solid #00aced;
+  border: 1.5px solid #00aced;
+  text-align: center;
+  font-size: 1.2rem;
   border-radius: 5px;
-  padding: .7em; }
+  margin-bottom: 1em;
+  padding: 1em; }
+  @media (min-width: 576px) {
+    .blue-border {
+      padding: 1em 1.8em;
+      font-size: 1.2rem; } }
+  @media (min-width: 768px) {
+    .blue-border {
+      padding: 1em 4.8em;
+      font-size: 19px; } }
   .blue-border span {
     color: #00aced; }
 
 .lh-property-slider {
   margin: 20px 20px 20px 0; }
-  .lh-property-slider .property-item .property-info .beds, .lh-property-slider .property-item .property-info .baths, .lh-property-slider .property-item .property-info .sqft {
+  .lh-property-slider .list-home-title {
+    margin: 40px 0 15px; }
+  .lh-property-slider .offer-link {
+    text-transform: none;
+    width: 65%;
+    margin: 25px auto !important; }
+    .lh-property-slider .offer-link i {
+      padding-left: 2em !important; }
+    @media (min-width: 768px) {
+      .lh-property-slider .offer-link {
+        width: 60%; }
+        .lh-property-slider .offer-link i {
+          padding-left: .5em !important; } }
+  .lh-property-slider .property-item .property-info .beds,
+  .lh-property-slider .property-item .property-info .baths,
+  .lh-property-slider .property-item .property-info .sqft {
     padding: 0 !important; }
   .lh-property-slider .property-item {
     background-size: cover !important;
@@ -3137,7 +3228,14 @@ figure.lh-img-holder {
     @media (min-width: 960px) {
       .lh-property-slider button.owl-next {
         transform: translateX(-10px); } }
-  .lh-property-slider .owl-prev span, .lh-property-slider .owl-next span {
+  .lh-property-slider .owl-prev span,
+  .lh-property-slider .owl-next span {
     font-size: 4rem !important; }
   .lh-property-slider .owl-next span {
     color: #00aced; }
+
+.top-link {
+  color: black;
+  font-weight: 600; }
+  .top-link .top-up {
+    padding-right: .7em; }

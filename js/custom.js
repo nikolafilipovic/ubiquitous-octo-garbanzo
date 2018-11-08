@@ -88,6 +88,7 @@ jQuery(document).ready(function(){
     });
     jQuery(".owl-carousel-lh").owlCarousel({    
         loop:true,
+        dots: false,
         responsiveClass: true,
         nav: true,
         margin: 10,

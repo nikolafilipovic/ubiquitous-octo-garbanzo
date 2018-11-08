@@ -401,7 +401,7 @@ Template Name: List Homes
             </div>
           </div>
 
-        </div> <!-- lh-features --> 
+        </div> <!-- lh-features -->
 
         <div class="lh-finance w-100">
           <div class="hr hr-down d-none d-md-block"></div>
@@ -809,7 +809,7 @@ Template Name: List Homes
         <div class="property-slider lh-property-slider">
           <h1 class="list-home-title text-center">Featured Properties Nearby</h1>
 
-          <div class="row no-gutters">
+          <div class="row justify-content-center no-gutters">
             <div class="col-11 col-md-9 col-lg-12 m-auto">
               <div class="owl-carousel owl-carousel-lh">
                 <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-1.png)">
@@ -830,6 +830,24 @@ Template Name: List Homes
                   <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column justify-content-center">
+            <div class="offer-link">
+              <a href="#">See all featured properties</a>
+              <i class="fas fa-arrow-right fasarrow"></i>
+            </div>
+
+            <div class="blue-border">
+              Buying but need to sell first? <span>The Offer Company will get you offers in 48 hours!</span>
+            </div>
+
+            <div class="d-none d-md-flex justify-content-center">
+              <a href="#" class="top-link">
+                <i class="fas fa-chevron-up top-up"></i>
+                Back to Top
+              </a>
             </div>
           </div>
         </div> <!-- property-slider -->
