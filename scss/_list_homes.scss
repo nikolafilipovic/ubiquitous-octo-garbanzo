@@ -6,6 +6,7 @@
 .lh-wrapper {
   max-width: 1024px;
   margin: 0 auto;
+  background: white;
 }
 
 .b-shadow {
@@ -36,10 +37,7 @@
   font-size: 14px !important;
 }
 
-.agent-phone-text,
-.dot-separated,
-.license,
-.review {
+.font-padding-stilization {
   font-size: 1.1rem;
   display: inline-block;
   padding: 1.2rem 0;
@@ -67,11 +65,19 @@
 
   .various-link {
     align-items: center;
-    padding: .3em 0 0 1.87em;
+    padding-left: 1.87em;
 
     .offer-link {
-      margin-left: 0;
-      margin-right: 1em;
+      margin: 1em 1em 1em 0;
+      font-weight: 600;
+      @include respond-to('desktop') {
+        font-size: 13px !important;
+        padding: 10px !important;
+      }
+      @include respond-to('m-desktop') {
+        font-size: 15px !important;
+        padding: 12px !important;
+      }
     }
 
     .faw-options {
@@ -80,18 +86,31 @@
 
       .far,
       .fas {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin-right: .2em;
       }
     }
 
-    .faw-options>* {
+    .faw-options > * {
       padding: 0 .5em;
     }
 
-    p {
-      font-size: 1rem;
+    a {
+      font-size: .9rem;
+      display: inline-flex;
     }
+  }
+}
+
+.close-link {
+  color: $grayish;
+  font-size: 3rem !important;
+  @include respond-to('desktop') {
+    padding-left: 10px !important;
+  }
+
+  @include respond-to('m-desktop') {
+    padding-left: 55px !important;
   }
 }
 
@@ -176,7 +195,7 @@ figure.lh-img-holder {
   font-weight: 600;
 }
 
-.red-dot {
+.crimson-dot {
   height: 10px;
   width: 10px;
   padding: 0 !important;
@@ -245,6 +264,16 @@ figure.lh-img-holder {
       height: 120px;
     }
   }
+}
+
+.red-dot {
+  width: 10px;
+  height: 10px;
+  background: red;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 4px;
 }
 
 // lh-info-wrapper

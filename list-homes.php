@@ -25,17 +25,24 @@ Template Name: List Homes
 
         <!-- save, share, virtual tour, remove, X -->
         <div class="faw-options">
+          
+          <a href="#">
           <i class="far fa-heart"></i>
-          <p>Save</p>
+            Save</a>
 
-          <i class="fas fa-share-alt"></i>
-          <p>Share</p>
+          <a href="#">
+              <i class="fas fa-share-alt"></i>
+            Share</a>
 
-          <i class="fas fa-vr-cardboard"></i>
-          <p>Virtual Tour</p>
+          <a href="#">
+              <i class="fas fa-vr-cardboard"></i>
+            Virtual Tour</a>
 
-          <i class="far fa-times-circle"></i>
-          <p>Remove</p>
+          <a href="#">
+              <i class="far fa-times-circle"></i>
+            Remove</a>
+
+          <a href="#" class="close-link">&times;</a>
         </div>
       </div>
     </header>
@@ -87,23 +94,23 @@ Template Name: List Homes
           <div class="col-12 col-md-7">
             <h1 class="lh-info-imp">11249 E Sonrisa Ave</h1>
             <p>Mesa, AZ 85212</p>
-            <span class="dot-separated">3 bds </span>
+            <span class="font-padding-stilization">3 bds </span>
             <span class="small-dot">&#8226;</span>
-            <span class="dot-separated">2 ba </span>
+            <span class="font-padding-stilization">2 ba </span>
             <span class="small-dot">&#8226;</span>
-            <span class="dot-separated">1,209 sqft </span>
+            <span class="font-padding-stilization">1,209 sqft </span>
 
 
             <div class="d-none d-md-block lh-house-details">
               <p class="lh-house lh-house--desktop">Open House <strong>Fri, Oct 12 &#8226; 11:00am - 2:00pm</strong></p>
-              <i class="fas fa-phone agent-phone round-blue"></i><strong class="agent-phone-text">Call Agent</strong>
-              <i class="fas fa-comment-alt agent-text round-blue"></i><strong class="agent-phone-text">Text Agent</strong>
+              <i class="fas fa-phone agent-phone round-blue"></i><strong class="agent-phone-text font-padding-stilization">Call Agent</strong>
+              <i class="fas fa-comment-alt agent-text round-blue"></i><strong class="agent-phone-text font-padding-stilization">Text Agent</strong>
             </div>
           </div>
           <div class="col-12 col-md-5">
             <div class="row no-gutters">
               <div class="col-6 col-md-12">
-                <span class="red-dot"></span>
+                <span class="crimson-dot"></span>
                 <strong class="small-imp">FOR SALE</strong>
                 <h1 class="lh-info-imp lh-money">$425,000</h1>
                 <a href="#" class="large-link lh-info-imp">Get pre-qualified
@@ -381,7 +388,7 @@ Template Name: List Homes
 
           <div class="lh-provider">
             <p>Listing provided by</p>
-            <span class="license">
+            <span class="font-padding-stilization">
               <a href="#">Samuel Shechter</a>, License #357382,
               <a href="#">Quicksilver Realty</a> inc.,<br />
               (404) 624-6362, Source: First Multiple Listing Service.
@@ -613,7 +620,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">5 reviews</span>
+                  <span class="faded font-padding-stilization">5 reviews</span>
                 </div>
                 <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
@@ -622,7 +629,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">2 reviews</span>
+                  <span class="faded font-padding-stilization">2 reviews</span>
                 </div>
 
                 <p>Damian Gonzales (2.87 mi)</p>
@@ -632,7 +639,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">2 reviews</span>
+                  <span class="faded font-padding-stilization">2 reviews</span>
                 </div>
               </div>
             </div>
@@ -650,7 +657,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">5 reviews</span>
+                  <span class="faded font-padding-stilization">5 reviews</span>
                 </div>
 
                 <p>Jules Acupuncture (2.87 mi)</p>
@@ -660,7 +667,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">2 reviews</span>
+                  <span class="faded font-padding-stilization">2 reviews</span>
                 </div>
 
                 <p>Damian Gonzales (2.87 mi)</p>
@@ -670,7 +677,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">2 reviews</span>
+                  <span class="faded font-padding-stilization">2 reviews</span>
                 </div>
               </div>
             </div>
@@ -688,7 +695,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">5 reviews</span>
+                  <span class="faded font-padding-stilization">5 reviews</span>
                 </div>
                 <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
@@ -697,7 +704,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">2 reviews</span>
+                  <span class="faded font-padding-stilization">2 reviews</span>
                 </div>
 
                 <p>Damian Gonzales (2.87 mi)</p>
@@ -707,7 +714,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">2 reviews</span>
+                  <span class="faded font-padding-stilization">2 reviews</span>
                 </div>
               </div>
             </div>
@@ -725,7 +732,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">5 reviews</span>
+                  <span class="faded font-padding-stilization">5 reviews</span>
                 </div>
                 <p>Jules Acupuncture (2.87 mi)</p>
                 <div class="stars-reviews">
@@ -734,7 +741,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">2 reviews</span>
+                  <span class="faded font-padding-stilization">2 reviews</span>
                 </div>
 
                 <p>Damian Gonzales (2.87 mi)</p>
@@ -744,7 +751,7 @@ Template Name: List Homes
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
-                  <span class="faded review">2 reviews</span>
+                  <span class="faded font-padding-stilization">2 reviews</span>
                 </div>
               </div>
             </div>
@@ -813,8 +820,12 @@ Template Name: List Homes
             <div class="col-11 col-md-9 col-lg-12 m-auto">
               <div class="owl-carousel owl-carousel-lh">
                 <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-1.png)">
-                  <span class="time-on-market">5 days on the market</span>
-                  <span class="sale-type">House for Sale</span>
+                  <span class="time-on-market">
+                    <i class="fas fa-vr-cardboard"></i>
+                    5 days on the market</span>
+                  <span class="sale-type">
+                    <i class="red-dot"></i>
+                  House for Sale</span>
                   <h1 class="property-price">$425,000</h1>
                   <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2
                       ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
@@ -822,8 +833,14 @@ Template Name: List Homes
                 </div>
 
                 <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-2.png)">
-                  <span class="time-on-market">5 days on the market</span>
-                  <span class="sale-type">House for Sale</span>
+                  <span class="time-on-market">
+                    <i class="fas fa-vr-cardboard"></i>
+                    5 days on the market
+                  </span>
+                  <span class="sale-type">
+                    <i class="red-dot"></i>
+                    House for Sale
+                  </span>
                   <h1 class="property-price">$425,000</h1>
                   <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2
                       ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
@@ -871,8 +888,8 @@ Template Name: List Homes
             <p>602-448-7377</p>
             <p>annete@theofferco.com</p>
             <div class="contact-agent-controlls d-block d-md-none">
-              <i class="fas fa-phone agent-phone"></i><span class="agent-phone-text">Call</span>
-              <i class="fas fa-comment-alt agent-text"></i><span class="agent-phone-text">Text</span>
+              <i class="fas fa-phone agent-phone"></i><span class="font-padding-stilization">Call</span>
+              <i class="fas fa-comment-alt agent-text"></i><span class="font-padding-stilization">Text</span>
             </div>
           </div>
         </div>

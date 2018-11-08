@@ -2465,7 +2465,8 @@ footer {
 
 .lh-wrapper {
   max-width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: white; }
 
 .b-shadow {
   box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27); }
@@ -2491,19 +2492,13 @@ footer {
 .small-caps {
   font-size: 14px !important; }
 
-.agent-phone-text,
-.dot-separated,
-.license,
-.review {
+.font-padding-stilization {
   font-size: 1.1rem;
   display: inline-block;
   padding: 1.2rem 0;
   font-weight: 600; }
   @media (min-width: 768px) {
-    .agent-phone-text,
-    .dot-separated,
-    .license,
-    .review {
+    .font-padding-stilization {
       padding: 0.5rem 0; } }
 
 .modal-menu {
@@ -2518,21 +2513,40 @@ footer {
     color: #00aced; }
   .modal-menu .various-link {
     align-items: center;
-    padding: .3em 0 0 1.87em; }
+    padding-left: 1.87em; }
     .modal-menu .various-link .offer-link {
-      margin-left: 0;
-      margin-right: 1em; }
+      margin: 1em 1em 1em 0;
+      font-weight: 600; }
+      @media (min-width: 768px) {
+        .modal-menu .various-link .offer-link {
+          font-size: 13px !important;
+          padding: 10px !important; } }
+      @media (min-width: 1000px) {
+        .modal-menu .various-link .offer-link {
+          font-size: 15px !important;
+          padding: 12px !important; } }
     .modal-menu .various-link .faw-options {
       display: flex;
       padding-top: 0; }
       .modal-menu .various-link .faw-options .far,
       .modal-menu .various-link .faw-options .fas {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin-right: .2em; }
     .modal-menu .various-link .faw-options > * {
       padding: 0 .5em; }
-    .modal-menu .various-link p {
-      font-size: 1rem; }
+    .modal-menu .various-link a {
+      font-size: .9rem;
+      display: inline-flex; }
+
+.close-link {
+  color: #b6c2c7;
+  font-size: 3rem !important; }
+  @media (min-width: 768px) {
+    .close-link {
+      padding-left: 10px !important; } }
+  @media (min-width: 1000px) {
+    .close-link {
+      padding-left: 55px !important; } }
 
 figure.lh-img-holder {
   margin-bottom: 0 !important;
@@ -2594,7 +2608,7 @@ figure.lh-img-holder {
 .lh-info-imp {
   font-weight: 600; }
 
-.red-dot {
+.crimson-dot {
   height: 10px;
   width: 10px;
   padding: 0 !important;
@@ -2642,6 +2656,15 @@ figure.lh-img-holder {
       display: block;
       width: 120px;
       height: 120px; }
+
+.red-dot {
+  width: 10px;
+  height: 10px;
+  background: red;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 4px; }
 
 .lh-house-details.lh-house-details--big .agent-phone,
 .lh-house-details.lh-house-details--big .agent-text {
