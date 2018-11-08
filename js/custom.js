@@ -59,17 +59,20 @@ function docFilterFill(){
 jQuery(document).ready(function(){
 
     jQuery(function () {
-        jQuery('[data-toggle="tooltip"]').tooltip()
-      })
+        jQuery('[data-toggle="tooltip"]').tooltip();
+    });
 
     // to be replaced later
     var openModal = jQuery("#open-modal");
     var $ = jQuery;
 
-    jQuery( '#menu-opener' ).click(function() {
+    jQuery( '#menu-closer.listing' ).click(function() {
         openMenu();
     });
     jQuery( '#menu-closer' ).click(function() {
+        openMenu();
+    });
+    jQuery( '#menu-opener' ).click(function() {
         openMenu();
     });
     jQuery( 'span.buy' ).click(function() {

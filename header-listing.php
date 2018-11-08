@@ -63,7 +63,7 @@
         <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="#">
                 <span id="desktop-icon" class="d-lg-block d-md-none d-sm-none d-none"></span>
-                <span id="menu-opener" class="d-lg-none d-md-block d-sm-block d-block"></span>
+                <span id="menu-opener" class="d-lg-none d-md-block d-sm-block d-block listing"></span>
             </a>
             <div class="d-lg-none d-md-block d-sm-inline-block d-inline-block search-mobile-field">
                 <div class="input-group homes-search-field-mobile" id="input-group">
