@@ -464,7 +464,7 @@
                 .sqft {
                     font-family: $light-font-family;
                     color: #ffffff;
-                    font-size: 13px;
+                    font-size: 15px;
                     font-weight: 400;
                     text-align: left;
                     text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
@@ -475,7 +475,7 @@
                 i {
                     color: #fff;
                     font-size: 5px;
-                    vertical-align: super;
+                    vertical-align: middle;
                     padding-left: 3px;
                     padding-right: 3px;
                     z-index: 0;
@@ -656,7 +656,7 @@
                             padding: 18px 15px;
                             font-family: $bold-font-family;
                             color:  #1e232c;
-                            font-size: 17px;
+                            font-size: 16px;
                             font-weight: 300;
                             text-align: left;
                             background: #fff;

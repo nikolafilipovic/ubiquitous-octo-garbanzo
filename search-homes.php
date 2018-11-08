@@ -22,15 +22,15 @@
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="listingDropdownDesktop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-circle color red"></i><i class="fas fa-circle color green"></i>Listing type <i class="fas fa-angle-down"></i>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="listingDropdownDesktop">
+                    <div class="dropdown-menu" aria-labelledby="listingDropdownDesktop" id="listingDropdownDesktopMenu">
                         <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon" type="checkbox" value="Nothing"><label for="comingSoon"><i class="fas fa-circle color red"></i>For Sale</label></a>
                         <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon1" type="checkbox" value="Nothing"><label for="comingSoon1">Coming Soon</label></a>
                         <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon2" type="checkbox" value="Nothing"><label for="comingSoon2">New Construction</label></a>
                         <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon3" type="checkbox" value="Nothing"><label for="comingSoon3">Open Houses</label></a>
                         <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon4" type="checkbox" value="Nothing"><label for="comingSoon4">Virtual Tours</label></a>
-                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction" data-toggle="tooltip" data-placement="right" id="foreclosure-tooltip" title="The lender has initiated foreclosure proceedings and an auction date has been scheduled on these properties.These properties are not found on multiple listing service (MLS)."><i class="fas fa-circle color blue"></i>Foreclosures</label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction" data-toggle="tooltip" data-placement="right" id="foreclosure-tooltip" title="The lender has initiated foreclosure proceedings and an auction date has been scheduled on these properties.These properties are not found on multiple listing service (MLS)."><i class="fas fa-circle color blue"></i>Foreclosures <i class="fas fa-info-circle info"></i></label></a>
                         <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="openHouses" type="checkbox" value="Nothing"><label for="openHouses" data-toggle="tooltip" data-placement="right" id="lastcall-tooltip" title="24 hour notice to make an offer before these homes goes under contract."><i class="fas fa-circle color green"></i>Last call <i class="fas fa-info-circle info"></i></label></a>
-                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour"><i class="fas fa-circle color yellow"></i>Sold tour</label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour"><i class="fas fa-circle color yellow"></i>Sold</label></a>
                     </div>
                 </div>
                 <div class="dropdown desktop">
@@ -66,6 +66,7 @@
                         <a class="dropdown-item" href="#">Houses</a>
                         <a class="dropdown-item" href="#">Condos</a>
                         <a class="dropdown-item" href="#">Land</a>
+                        <a class="dropdown-item" href="#">Manufactured</a>
                     </div>
                 </div>
                 <div class="dropdown desktop">
@@ -222,9 +223,10 @@
                         Any <i class="fas fa-angle-down"></i>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="hometypeDropdown">
-                        <a class="dropdown-item" href="#">One</a>
-                        <a class="dropdown-item" href="#">Two</a>
-                        <a class="dropdown-item" href="#">Three</a>
+                        <a class="dropdown-item" href="#">Houses</a>
+                        <a class="dropdown-item" href="#">Condos</a>
+                        <a class="dropdown-item" href="#">Land</a>
+                        <a class="dropdown-item" href="#">Manufactured</a>
                     </div>
                 </div>
                 <div class="search-links">
@@ -264,18 +266,10 @@
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingTwo">
-                                <button class="btn btn-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <button class="btn btn-secondary collapsed" type="button">
                                     <input class="search-checkbox" id="listing" type="checkbox" value="Nothing">
-                                    <label for="listing"><i class="fas fa-circle color blue"></i>Foreclosures <i class="fas fa-angle-down"></i></label>
+                                    <label for="listing"><i class="fas fa-circle color blue"></i>Foreclosures <i class="fas fa-info-circle info"></i></label>
                                 </button>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFilters">
-                                <div class="card-body">
-                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon" type="checkbox" value="Nothing"><label for="comingSoon">Coming soon</label></a>
-                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction">New construction</label></a>
-                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="openHouses" type="checkbox" value="Nothing"><label for="openHouses">Open houses</label></a>
-                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour">Virtual tour</label></a>
-                                </div>
                             </div>
                         </div>
                         <div class="card">
