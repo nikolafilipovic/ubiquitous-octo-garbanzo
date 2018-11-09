@@ -457,7 +457,7 @@
                                 padding: 0px 10px;
                                 .form-control {
                                     font-family: $light-font-family;
-                                    color:  #96a7bc;
+                                    color:  #1e232c;
                                     font-size: 16px;
                                     font-weight: 300;
                                     text-align: left;
@@ -483,6 +483,15 @@
                                         border-bottom-left-radius: 0px !important;
                                     }
                                 }
+                            }
+                        }
+                    }
+                    #homeTypeDropdownDesktop {
+                        .dropdown-checkbox {
+                            & + label {
+                              font-family: $default-font-family;
+                              color:  #1e232c;
+                              text-transform: unset;
                             }
                         }
                     }

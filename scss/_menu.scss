@@ -85,8 +85,8 @@
         }
         p.menu-title {
             font-family: $bold-font-family;
-            color: #898989;
-            font-size: 17px;
+            color: #cdd8e4;
+            font-size: 14px;
             font-weight: 500;
             text-align: left;
             text-transform: uppercase;
@@ -96,7 +96,7 @@
         .close-menu {
             float: right;
             font-size: 32px;
-            color: #898989;
+            color: #ced8e4;
             vertical-align: middle;
             margin-top: -6px;
             &:hover,
@@ -108,12 +108,16 @@
         .nav-login-btn {
             margin-top: 25px;
             margin-bottom: 10px;
-            font-size: 14px;
             background-color: #00aced;
             border-color: #00aced;
+            font-family: $light-font-family;
+            font-size: 14px;
+            text-align: left;
+            padding: 10px 14px 10px 14px;
             i {
-                font-size: 14px;
-                margin-left: 10px;
+                font-size: 13px;
+                margin-top: 4px;
+                float: right;
             }
         }
         .navigation {
@@ -140,9 +144,9 @@
                         li {
                             border-bottom: none;
                             a {
-                                font-family: $light-font-family;
-                                font-size: 16px;
-                                color: #898989;
+                                font-family: $default-font-family;
+                                font-size: 15px;
+                                color: #9ea6b8;
                                 font-weight: 400;
                                 padding-left: 5px;
                                 padding-top: 3px;
@@ -160,7 +164,7 @@
                         }
                     }
                     &:last-child {
-                        border-left: none;
+                        border-bottom: none;
                     }
                 }
             }
@@ -284,8 +288,8 @@
         }
         p.menu-title {
             font-family: $bold-font-family;
-            color: #898989;
-            font-size: 17px;
+            color: #cdd8e4;
+            font-size: 14px;
             font-weight: 500;
             text-align: left;
             text-transform: uppercase;
@@ -295,7 +299,7 @@
         .close-menu {
             float: right;
             font-size: 32px;
-            color: #898989;
+            color: #ced8e4;
             vertical-align: middle;
             margin-top: -6px;
             &:hover,
@@ -307,17 +311,22 @@
         .nav-login-btn {
             margin-top: 25px;
             margin-bottom: 10px;
+            background-color: #00aced;
+            border-color: #00aced;
+            font-family: $light-font-family;
             font-size: 14px;
-            background-color: $main-color;
-            border-color: $main-color;
+            text-align: left;
+            padding: 10px 14px 10px 14px;
             i {
-                font-size: 14px;
-                margin-left: 10px;
+                font-size: 13px;
+                margin-top: 4px;
+                float: right;
             }
         }
         .navigation {
             ul {
                 .menu-item {
+                    margin-top: 4px;
                     border-bottom: 1px solid #eee;
                     a {
                         font-family: $bold-font-family;
@@ -338,10 +347,11 @@
                     ul.sub-menu {
                         li {
                             border-bottom: none;
+                            margin-top: 0;
                             a {
-                                font-family: $light-font-family;
-                                font-size: 16px;
-                                color: #898989;
+                                font-family: $default-font-family;
+                                font-size: 15px;
+                                color: #9ea6b8;
                                 font-weight: 400;
                                 padding-left: 5px;
                                 padding-top: 3px;
@@ -359,7 +369,7 @@
                         }
                     }
                     &:last-child {
-                        border-left: none;
+                        border-bottom: none;
                     }
                 }
             }

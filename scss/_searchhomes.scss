@@ -287,7 +287,7 @@
         .input-group {
             .form-control {
                 font-family: $light-font-family;
-                color:  #96a7bc;
+                color:  #1e232c;
                 font-size: 16px;
                 font-weight: 300;
                 text-align: left;
@@ -419,8 +419,21 @@
             .favourite {
                 float: right;
                 margin-top: -28px;
-                font-size: 26px;
-                color: #fff;
+                display: block !important;
+                i {
+                    font-size: 26px;
+                    color: #fff;
+                    transition: all 0.3s ease;
+                    display: block !important;
+                    position: relative;
+                    &:hover,
+                    &:focus,
+                    &:active,
+                    &.active {
+                        color: #00aced;
+                    }
+
+                }
             }
             .sale-type {
                 font-family: $bold-font-family;
@@ -462,7 +475,7 @@
                 .beds,
                 .baths,
                 .sqft {
-                    font-family: $light-font-family;
+                    font-family: $default-font-family;
                     color: #ffffff;
                     font-size: 15px;
                     font-weight: 400;
@@ -470,7 +483,6 @@
                     text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
                     z-index: 0;
                     position: relative;
-                    // !!!!!
                 }
                 i {
                     color: #fff;

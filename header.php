@@ -33,16 +33,16 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="page-container">
-	<div id="overlay"></div>
-	<header class="main-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div id="menu-opener"><span>Menu</div><div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $template_directory_uri; ?>/images/logo.png" alt=""/></a></div>
+		<div id="overlay"></div>
+		<header class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div id="menu-opener"><span>Menu</div><div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $template_directory_uri; ?>/images/logo.png" alt=""/></a></div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="slide-out-container" id="slide-out-nav">
+			<div class="slide-out-container" id="slide-out-nav">
 				<p class="menu-title">Menu</p>
 				<span class="close-menu" id="menu-closer"><i class="fas fa-times"></i></span>
 				<a href="" class="btn btn-primary btn-block nav-login-btn">My account or register <i class="fas fa-arrow-right"></i></a>
