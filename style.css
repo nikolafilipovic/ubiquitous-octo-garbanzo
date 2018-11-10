@@ -86,6 +86,9 @@ body {
 .et_pb_button:hover::after, .et_pb_button:action::after, .et_pb_button:focus::after {
   margin-left: .3em; }
 
+#listingDropdownDesktopMenu .dropdown-item {
+  padding: 5px 30px 5px 15px; }
+
 h1.list-home-title {
   font-size: 22px; }
 
@@ -550,8 +553,8 @@ h1.list-home-title--pb {
     margin-top: 25px;
     margin-bottom: 10px;
     font-size: 14px;
-    background-color: #00aced;
-    border-color: #00aced; }
+    background-color: #00acee;
+    border-color: #00acee; }
     .listing-header .slide-out-container .nav-login-btn i {
       font-size: 14px;
       margin-left: 10px; }
@@ -580,7 +583,7 @@ h1.list-home-title--pb {
         padding-top: 3px;
         padding-bottom: 3px; }
     .listing-header .slide-out-container .navigation ul .menu-item.current_page_item a {
-      color: #00aced;
+      color: #00acee;
       font-size: 19px;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -619,10 +622,10 @@ h1.list-home-title--pb {
       transition: background 0.4s ease, box-shadow 0.4s ease;
       cursor: pointer; }
       .landing-search .search-choice span:hover {
-        background: #00aced;
+        background: #00acee;
         box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5); }
       .landing-search .search-choice span.active {
-        background: #00aced;
+        background: #00acee;
         box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5); }
       .landing-search .search-choice span.buy {
         width: 23%;
@@ -704,7 +707,7 @@ h1.list-home-title--pb {
       text-align: center; }
       .landing-search .search-field .input-group-text i {
         font-size: 26px;
-        color: #00aced; }
+        color: #00acee; }
 
 .landing-links .col-link {
   margin-bottom: 15px; }
@@ -718,7 +721,7 @@ h1.list-home-title--pb {
     .landing-links .col-link a i {
       float: right;
       position: relative;
-      color: #00aced;
+      color: #00acee;
       right: 1%;
       font-size: 17px;
       transition: right .3s ease; }
@@ -726,7 +729,7 @@ h1.list-home-title--pb {
         right: 0%; }
     .landing-links .col-link a h1 {
       font-family: "Graphik Regular", sans-serif;
-      color: #00aced;
+      color: #00acee;
       font-size: 20px;
       font-weight: 400;
       text-align: left;
@@ -841,7 +844,7 @@ h1.list-home-title--pb {
     color: #929baf;
     transition: color 0.3s ease; }
     .owl-prev span:hover, .owl-prev span:active, .owl-prev span:focus {
-      color: #00aced; }
+      color: #00acee; }
 
 .owl-next {
   top: 37%;
@@ -852,7 +855,7 @@ h1.list-home-title--pb {
     color: #929baf;
     transition: color 0.3s ease; }
     .owl-next span:hover, .owl-next span:active, .owl-next span:focus {
-      color: #00aced; }
+      color: #00acee; }
 
 /* Simple comment */
 footer {
@@ -905,12 +908,12 @@ footer {
         transition: opacity 0.3s ease;
         display: block; }
         footer .upper-footer .footer-links .more-link i {
-          color: #00aced;
+          color: #00acee;
           font-size: 16px;
           margin-right: 5px; }
         footer .upper-footer .footer-links .more-link span {
           font-family: "Graphik Medium", sans-serif;
-          color: #00aced;
+          color: #00acee;
           font-size: 14px;
           line-height: 50px;
           text-align: left;
@@ -967,7 +970,7 @@ footer {
     footer .bottom-footer .footer-contact h3 {
       font-family: "Graphik Regular", sans-serif;
       color: #b2bed9;
-      font-size: 22;
+      font-size: 22px;
       font-weight: 600;
       line-height: 30px;
       text-align: center;
@@ -1079,7 +1082,7 @@ footer {
           transition: 0.3s ease;
           margin-left: 50%; }
       .wrapper .wrapperBlocks .formBlock .formCircle {
-        background-color: #00aced;
+        background-color: #00acee;
         width: 40px;
         height: 40px;
         margin: 7% 0% 0% 5%;
@@ -1138,13 +1141,13 @@ footer {
       .wrapper .wrapperForm form .formMR {
         margin-right: 2%; }
       .wrapper .wrapperForm form .formSubmitFull {
-        background-color: #00aced;
+        background-color: #00acee;
         padding-left: 0%;
         width: 100%;
         color: #ffffff;
         margin-top: 2%; }
       .wrapper .wrapperForm form .formSubmitHalf {
-        background-color: #00aced;
+        background-color: #00acee;
         padding-left: 0%;
         width: 45%;
         margin: 0px auto;
@@ -1315,7 +1318,7 @@ footer {
         margin: 0px 1.75%;
         border: none;
         border-radius: 5px;
-        background-color: #00aced;
+        background-color: #00acee;
         color: #ffffff; }
         .wrapper .buttons form button:hover {
           transition: 0.3s ease;
@@ -1336,7 +1339,7 @@ footer {
     height: 50px;
     margin: 4% auto;
     border-radius: 5px;
-    background-color: #00aced;
+    background-color: #00acee;
     display: table;
     padding-right: 1%; }
     .wrapper .Blokovi p {
@@ -1377,7 +1380,7 @@ footer {
     max-width: 380px;
     height: 60px;
     margin: 7% auto 0% auto;
-    background-color: #00aced;
+    background-color: #00acee;
     border-radius: 5px 5px 0px 0px;
     position: absolute;
     bottom: 0%;
@@ -1389,7 +1392,7 @@ footer {
       margin-left: 3%; }
   .wrapper #button1 {
     border: none;
-    background-color: #00aced;
+    background-color: #00acee;
     width: 200px;
     height: 50px;
     margin: 3% auto;
@@ -1581,9 +1584,9 @@ footer {
     background-color: #ffffff;
     padding-left: 15px; }
     .wrapperTop p {
-      color: #00aced; }
+      color: #00acee; }
     .wrapperTop p a {
-      color: #00aced;
+      color: #00acee;
       margin-left: 7px; }
   .wrapper {
     background: #80c7f2;
@@ -1935,7 +1938,7 @@ footer {
     transition: opacity 0.3s ease;
     text-decoration: none;
     outline: none; }
-    #search-homes .search-links a#filters, .lh-featured-props .search-links a#filters {
+    #search-homes .search-links a#openFilterBtn, .lh-featured-props .search-links a#openFilterBtn {
       font-weight: bold; }
     #search-homes .search-links a#save-search, .lh-featured-props .search-links a#save-search {
       float: right;
@@ -1979,7 +1982,6 @@ footer {
   padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
-  border-radius: 5px;
   margin: 0 auto;
   cursor: pointer;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%);
@@ -2006,13 +2008,14 @@ footer {
     text-transform: lowercase;
     display: block;
     z-index: 0;
-    position: relative; }
+    position: relative;
+    margin-top: 10px; }
     #search-homes .property-list .property-item .time-on-market i, .lh-featured-props .property-list .property-item .time-on-market i {
       margin-right: 7px; }
   #search-homes .property-list .property-item .favourite, .lh-featured-props .property-list .property-item .favourite {
     float: right;
-    margin-top: -16px;
-    font-size: 22px;
+    margin-top: -28px;
+    font-size: 26px;
     color: #fff; }
   #search-homes .property-list .property-item .sale-type, .lh-featured-props .property-list .property-item .sale-type {
     font-family: "Graphik Medium", sans-serif;
@@ -2022,7 +2025,7 @@ footer {
     line-height: 30px;
     text-align: left;
     text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
-    margin-top: 120px;
+    margin-top: 22%;
     display: block;
     z-index: 0;
     position: relative; }
@@ -2054,7 +2057,7 @@ footer {
     .lh-featured-props .property-list .property-item .property-info .sqft {
       font-family: "Graphik Light", sans-serif;
       color: #ffffff;
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 400;
       text-align: left;
       text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
@@ -2063,7 +2066,7 @@ footer {
     #search-homes .property-list .property-item .property-info i, .lh-featured-props .property-list .property-item .property-info i {
       color: #fff;
       font-size: 5px;
-      vertical-align: super;
+      vertical-align: middle;
       padding-left: 3px;
       padding-right: 3px;
       z-index: 0;
@@ -2104,8 +2107,8 @@ footer {
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 14px;
-    background-color: #00aced;
-    border-color: #00aced;
+    background-color: #00acee;
+    border-color: #00acee;
     outline: none !important;
     box-shadow: none !important; }
     #search-homes .property-list .cta-insert .cta i, .lh-featured-props .property-list .cta-insert .cta i {
@@ -2152,12 +2155,501 @@ footer {
             height: auto;
             padding: 0px 5px; }
 
+#search-homes .filter-overlay, .lh-featured-props .filter-overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 99999999;
+  transition: height 0.5s ease-out;
+  overflow: hidden; }
+  #search-homes .filter-overlay.closed, .lh-featured-props .filter-overlay.closed {
+    height: 0vh; }
+  #search-homes .filter-overlay .filter-header, .lh-featured-props .filter-overlay .filter-header {
+    padding: 20px 0px;
+    text-align: center;
+    box-shadow: 0px 0px 6.65px 0.35px rgba(10, 25, 40, 0.16);
+    z-index: 99; }
+    #search-homes .filter-overlay .filter-header a, #search-homes .filter-overlay .filter-header p, .lh-featured-props .filter-overlay .filter-header a, .lh-featured-props .filter-overlay .filter-header p {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+      display: inline-block; }
+      #search-homes .filter-overlay .filter-header a:hover, #search-homes .filter-overlay .filter-header a:active, #search-homes .filter-overlay .filter-header a:focus, #search-homes .filter-overlay .filter-header p:hover, #search-homes .filter-overlay .filter-header p:active, #search-homes .filter-overlay .filter-header p:focus, .lh-featured-props .filter-overlay .filter-header a:hover, .lh-featured-props .filter-overlay .filter-header a:active, .lh-featured-props .filter-overlay .filter-header a:focus, .lh-featured-props .filter-overlay .filter-header p:hover, .lh-featured-props .filter-overlay .filter-header p:active, .lh-featured-props .filter-overlay .filter-header p:focus {
+        opacity: 0.7%; }
+    #search-homes .filter-overlay .filter-header .apply, .lh-featured-props .filter-overlay .filter-header .apply {
+      float: left;
+      font-family: "Graphik Regular", sans-serif;
+      color: #00aced;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+      padding-left: 15px; }
+    #search-homes .filter-overlay .filter-header .reset, .lh-featured-props .filter-overlay .filter-header .reset {
+      float: right;
+      font-family: "Graphik Regular", sans-serif;
+      color: #00aced;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: right;
+      padding-right: 15px; }
+    #search-homes .filter-overlay .filter-header p, .lh-featured-props .filter-overlay .filter-header p {
+      font-family: "Graphik Regular", sans-serif;
+      color: #1e232c;
+      font-size: 17px;
+      font-weight: 400;
+      text-align: left; }
+  #search-homes .filter-overlay .filter-body, .lh-featured-props .filter-overlay .filter-body {
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    display: block; }
+    #search-homes .filter-overlay .filter-body .accordion .card, .lh-featured-props .filter-overlay .filter-body .accordion .card {
+      border: 0; }
+      #search-homes .filter-overlay .filter-body .accordion .card .card-header, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header {
+        padding: 0;
+        border-radius: 0;
+        background: #fff;
+        border: 0; }
+        #search-homes .filter-overlay .filter-body .accordion .card .card-header button, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button {
+          width: 100%;
+          text-align: left;
+          padding: 18px 15px;
+          font-family: "Graphik Medium", sans-serif;
+          color: #1e232c;
+          font-size: 16px;
+          font-weight: 300;
+          text-align: left;
+          background: #fff;
+          text-transform: uppercase;
+          border: 0;
+          border-top: 1px solid #d6dce6;
+          border-radius: 0;
+          transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease, border-top 0.3s ease, border-bottom 0.3s ease; }
+          #search-homes .filter-overlay .filter-body .accordion .card .card-header button.collapsed, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button.collapsed {
+            border-top: 1px solid #d6dce6; }
+            #search-homes .filter-overlay .filter-body .accordion .card .card-header button.collapsed .fas.fa-angle-down, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button.collapsed .fas.fa-angle-down {
+              transform: rotate(0deg); }
+          #search-homes .filter-overlay .filter-body .accordion .card .card-header button::after, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button::after {
+            display: none; }
+          #search-homes .filter-overlay .filter-body .accordion .card .card-header button .fas, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .fas {
+            float: right;
+            font-size: 25px;
+            color: #d6dce6;
+            transition: color 0.3s ease, transform 0.3s ease; }
+            #search-homes .filter-overlay .filter-body .accordion .card .card-header button .fas.fa-angle-down, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .fas.fa-angle-down {
+              transform: rotate(180deg); }
+          #search-homes .filter-overlay .filter-body .accordion .card .card-header button:hover, #search-homes .filter-overlay .filter-body .accordion .card .card-header button:active, #search-homes .filter-overlay .filter-body .accordion .card .card-header button.active, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button:hover, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button:active, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button.active {
+            color: #00aced;
+            box-shadow: none; }
+            #search-homes .filter-overlay .filter-body .accordion .card .card-header button:hover .fas, #search-homes .filter-overlay .filter-body .accordion .card .card-header button:active .fas, #search-homes .filter-overlay .filter-body .accordion .card .card-header button.active .fas, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button:hover .fas, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button:active .fas, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button.active .fas {
+              color: #00aced; }
+          #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox {
+            position: absolute;
+            opacity: 0;
+            /*&:hover + label:before {
+                                    background: #00aced;
+                                }*/ }
+            #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label {
+              position: relative;
+              cursor: pointer;
+              padding: 0;
+              font-weight: 300;
+              width: 100%;
+              display: block; }
+              #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.color, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.color {
+                float: initial;
+                font-size: 8px;
+                vertical-align: middle;
+                margin-top: -3px;
+                margin-right: 10px;
+                margin-left: 2px; }
+                #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.color.red, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.color.red {
+                  color: #e03225; }
+                #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.color.blue, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.color.blue {
+                  color: #196aff; }
+                #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.color.green, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.color.green {
+                  color: #7cd62c; }
+                #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.color.yellow, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.color.yellow {
+                  color: #ffba13; }
+              #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.info, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label .fas.info {
+                float: initial;
+                vertical-align: middle;
+                margin-top: -3px;
+                color: #00aced;
+                font-size: 16px; }
+            #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label:before, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox + label:before {
+              content: '';
+              margin-right: 10px;
+              display: inline-block;
+              vertical-align: text-top;
+              width: 16px;
+              height: 16px;
+              background: white;
+              border: 1px solid #d6dce6;
+              border-radius: 3px;
+              transition: background 0.3s ease; }
+            #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox:checked + label:before, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox:checked + label:before {
+              background: #00aced; }
+            #search-homes .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox:checked + label:after, .lh-featured-props .filter-overlay .filter-body .accordion .card .card-header button .search-checkbox:checked + label:after {
+              content: '';
+              position: absolute;
+              left: 4px;
+              top: 10px;
+              background: white;
+              width: 1.5px;
+              height: 1.5px;
+              box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+              transform: rotate(45deg); }
+      #search-homes .filter-overlay .filter-body .accordion .card:first-child .card-header button, .lh-featured-props .filter-overlay .filter-body .accordion .card:first-child .card-header button {
+        border-top: 0; }
+      #search-homes .filter-overlay .filter-body .accordion .card:last-child .card-header button.collapsed, .lh-featured-props .filter-overlay .filter-body .accordion .card:last-child .card-header button.collapsed {
+        border-bottom: 1px solid #d6dce6; }
+    #search-homes .filter-overlay .filter-body .accordion .card-body, .lh-featured-props .filter-overlay .filter-body .accordion .card-body {
+      border: none;
+      padding: 0px 15px 15px 15px; }
+      #search-homes .filter-overlay .filter-body .accordion .card-body .dropdown-item, .lh-featured-props .filter-overlay .filter-body .accordion .card-body .dropdown-item {
+        font-family: "Graphik Regular", sans-serif;
+        color: #1e232c;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left; }
+        #search-homes .filter-overlay .filter-body .accordion .card-body .dropdown-item:hover, #search-homes .filter-overlay .filter-body .accordion .card-body .dropdown-item:active, #search-homes .filter-overlay .filter-body .accordion .card-body .dropdown-item:focus, .lh-featured-props .filter-overlay .filter-body .accordion .card-body .dropdown-item:hover, .lh-featured-props .filter-overlay .filter-body .accordion .card-body .dropdown-item:active, .lh-featured-props .filter-overlay .filter-body .accordion .card-body .dropdown-item:focus {
+          background: none; }
+      #search-homes .filter-overlay .filter-body .accordion .card-body::after, .lh-featured-props .filter-overlay .filter-body .accordion .card-body::after {
+        bottom: 100%;
+        left: 20%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: #ffffff;
+        border-width: 8px;
+        margin-left: -8px; }
+      #search-homes .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox, .lh-featured-props .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox {
+        position: absolute;
+        opacity: 0; }
+        #search-homes .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox + label, .lh-featured-props .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox + label {
+          position: relative;
+          cursor: pointer;
+          padding: 0;
+          font-weight: 300;
+          width: 100%;
+          display: block; }
+        #search-homes .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox + label:before, .lh-featured-props .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox + label:before {
+          content: '';
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          width: 16px;
+          height: 16px;
+          background: white;
+          border: 1px solid #d6dce6;
+          border-radius: 3px;
+          transition: background 0.3s ease; }
+        #search-homes .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox:hover + label:before, .lh-featured-props .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox:hover + label:before {
+          background: #00aced; }
+        #search-homes .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox:checked + label:before, .lh-featured-props .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox:checked + label:before {
+          background: #00aced; }
+        #search-homes .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox:checked label::after, .lh-featured-props .filter-overlay .filter-body .accordion .card-body .dropdown-checkbox:checked label::after {
+          content: '';
+          position: absolute;
+          left: 4px;
+          top: 11px;
+          background: white;
+          width: 1.5px;
+          height: 1.5px;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          transform: rotate(45deg); }
+    #search-homes .filter-overlay .filter-body .other-fields, .lh-featured-props .filter-overlay .filter-body .other-fields {
+      padding: 0px 15px; }
+      #search-homes .filter-overlay .filter-body .other-fields h3, .lh-featured-props .filter-overlay .filter-body .other-fields h3 {
+        font-family: "Graphik Medium", sans-serif;
+        color: #1e232c;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        text-transform: uppercase;
+        padding: 0;
+        font-size: 17px;
+        margin-bottom: 10px; }
+      #search-homes .filter-overlay .filter-body .other-fields .dropdown-checkbox, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-checkbox {
+        position: absolute;
+        opacity: 0; }
+        #search-homes .filter-overlay .filter-body .other-fields .dropdown-checkbox + label, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-checkbox + label {
+          position: relative;
+          cursor: pointer;
+          padding: 0;
+          font-weight: 300;
+          width: 100%;
+          display: block; }
+        #search-homes .filter-overlay .filter-body .other-fields .dropdown-checkbox + label:before, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-checkbox + label:before {
+          content: '';
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: middle;
+          width: 16px;
+          height: 16px;
+          background: white;
+          border: 1px solid #d6dce6;
+          border-radius: 3px;
+          transition: background 0.3s ease; }
+        #search-homes .filter-overlay .filter-body .other-fields .dropdown-checkbox:hover + label:before, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-checkbox:hover + label:before {
+          background: #00aced; }
+        #search-homes .filter-overlay .filter-body .other-fields .dropdown-checkbox:checked + label:before, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-checkbox:checked + label:before {
+          background: #00aced; }
+        #search-homes .filter-overlay .filter-body .other-fields .dropdown-checkbox:checked label::after, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-checkbox:checked label::after {
+          content: '';
+          position: absolute;
+          left: 4px;
+          top: 11px;
+          background: white;
+          width: 1.5px;
+          height: 1.5px;
+          box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+          transform: rotate(45deg); }
+      #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper {
+        width: 100%;
+        position: relative;
+        text-align: left; }
+        #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom {
+          background: #f5f8f9;
+          display: inline-block;
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          padding: 0;
+          color: #7e8893;
+          text-align: center;
+          line-height: 2.8;
+          margin: 0px 2px;
+          transition: color 0.3s ease, background 0.3s ease;
+          position: relative;
+          font-size: 14px;
+          font-family: "Graphik Regular", sans-serif;
+          font-weight: 400; }
+          #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom:hover, #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom:active, #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom:focus, #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom.active, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom:hover, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom:active, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom:focus, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom.active {
+            color: #fff;
+            background: #00aced;
+            cursor: pointer; }
+          #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom.studio, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom.studio {
+            width: auto;
+            padding: 0px 10px;
+            border-radius: 35%; }
+        #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom-checkbox, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom-checkbox {
+          padding: .25rem 10px; }
+          #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom-checkbox label, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom-checkbox label {
+            font-family: "Graphik Regular", sans-serif;
+            color: #1e232c;
+            font-size: 15px;
+            font-weight: 300;
+            text-align: left;
+            padding: 5px 0px; }
+          #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom-checkbox:hover, #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom-checkbox:active, #search-homes .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom-checkbox:focus, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom-checkbox:hover, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom-checkbox:active, .lh-featured-props .filter-overlay .filter-body .other-fields .dropdown-wrapper .custom-checkbox:focus {
+            background: none; }
+      #search-homes .filter-overlay .filter-body .other-fields .price-field, .lh-featured-props .filter-overlay .filter-body .other-fields .price-field {
+        padding: 10px 0px; }
+        #search-homes .filter-overlay .filter-body .other-fields .price-field input, .lh-featured-props .filter-overlay .filter-body .other-fields .price-field input {
+          padding: 18px 12px; }
+      #search-homes .filter-overlay .filter-body .other-fields .home-field .dropdown-wrapper, .lh-featured-props .filter-overlay .filter-body .other-fields .home-field .dropdown-wrapper {
+        columns: 2; }
+        #search-homes .filter-overlay .filter-body .other-fields .home-field .dropdown-wrapper .dropdown-item, .lh-featured-props .filter-overlay .filter-body .other-fields .home-field .dropdown-wrapper .dropdown-item {
+          padding: .25rem 0; }
+          #search-homes .filter-overlay .filter-body .other-fields .home-field .dropdown-wrapper .dropdown-item label, .lh-featured-props .filter-overlay .filter-body .other-fields .home-field .dropdown-wrapper .dropdown-item label {
+            padding: 5px 0px; }
+      #search-homes .filter-overlay .filter-body .other-fields .fields, .lh-featured-props .filter-overlay .filter-body .other-fields .fields {
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        #search-homes .filter-overlay .filter-body .other-fields .fields .form-group label, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group label {
+          font-family: "Graphik Medium", sans-serif;
+          color: #1e232c;
+          font-weight: 500;
+          line-height: 30px;
+          text-align: left;
+          text-transform: uppercase;
+          padding: 0;
+          font-size: 16px;
+          margin-bottom: 10px;
+          margin-top: 3px; }
+        #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .custom-select,
+        #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .form-control.input, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .custom-select,
+        .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .form-control.input {
+          font-family: "Graphik Regular", sans-serif;
+          color: #96a7bc;
+          font-size: 15px;
+          font-weight: 300;
+          text-align: left;
+          border-radius: 3px;
+          max-width: 65%;
+          width: 100%;
+          float: right;
+          position: relative;
+          outline: none;
+          border-color: #d6dce6;
+          box-shadow: inset 0px 11px 38px -24px rgba(0, 0, 0, 0.53);
+          transition: box-shadow 0.3s ease;
+          padding: 18px 12px; }
+          #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .custom-select:hover, #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .custom-select:active, #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .custom-select:focus,
+          #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .form-control.input:hover,
+          #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .form-control.input:active,
+          #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .form-control.input:focus, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .custom-select:hover, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .custom-select:active, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .custom-select:focus,
+          .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .form-control.input:hover,
+          .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .form-control.input:active,
+          .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .form-control.input:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: #d6dce6;
+            box-shadow: inset 0px 8px 38px -24px rgba(0, 0, 0, 0.53); }
+        #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual {
+          max-width: 65%;
+          width: auto;
+          float: right;
+          position: relative; }
+          #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control {
+            font-family: "Graphik Light", sans-serif;
+            color: #96a7bc;
+            font-size: 16px;
+            font-weight: 300;
+            text-align: left;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #d6dce6;
+            box-sizing: border-box;
+            border-radius: 3px;
+            background-color: #ffffff;
+            padding: 18px 12px;
+            box-shadow: inset 0px 11px 38px -24px rgba(0, 0, 0, 0.53); }
+            #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control:hover, #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control:active, #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control:focus, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control:hover, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control:active, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control:focus {
+              box-shadow: inset 0px 8px 38px -24px rgba(0, 0, 0, 0.53); }
+            #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control:not(:last-child), .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control:not(:last-child) {
+              border-top-right-radius: 0px !important;
+              border-bottom-right-radius: 0px !important; }
+            #search-homes .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control:last-child, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .form-group .input-group.dual .form-control:last-child {
+              border-top-left-radius: 0px !important;
+              border-bottom-left-radius: 0px !important; }
+        #search-homes .filter-overlay .filter-body .other-fields .fields .apply, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .apply {
+          background: #00aced;
+          border: 0;
+          padding: 10px 12px;
+          font-family: "Graphik Regular", sans-serif;
+          color: #fff;
+          font-size: 17px;
+          font-weight: 300; }
+          #search-homes .filter-overlay .filter-body .other-fields .fields .apply:hover, #search-homes .filter-overlay .filter-body .other-fields .fields .apply:active, #search-homes .filter-overlay .filter-body .other-fields .fields .apply:focus, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .apply:hover, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .apply:active, .lh-featured-props .filter-overlay .filter-body .other-fields .fields .apply:focus {
+            border: 0;
+            box-shadow: none; }
+
 #search-homes .map-wrapper, .lh-featured-props .map-wrapper {
   width: -webkit-fill-available;
   display: block;
   margin: 0 -15px;
   position: relative;
   height: 100%; }
+
+#search-homes .bottom-footer, .lh-featured-props .bottom-footer {
+  padding: 20px 0px;
+  background: #fff;
+  border-top: 1px solid #e8ecf9; }
+
+#search-homes .footer-copyright, .lh-featured-props .footer-copyright {
+  margin-top: 10px; }
+
+#search-homes .footer-copyright,
+#search-homes .footer-contact, .lh-featured-props .footer-copyright,
+.lh-featured-props .footer-contact {
+  color: #b9c1dc; }
+  #search-homes .footer-copyright h3,
+  #search-homes .footer-contact h3, .lh-featured-props .footer-copyright h3,
+  .lh-featured-props .footer-contact h3 {
+    padding-bottom: 0px; }
+
+#search-homes #filterDropdown, .lh-featured-props #filterDropdown {
+  padding: 15px;
+  min-width: 25rem; }
+  #search-homes #filterDropdown .fields .form-group label, .lh-featured-props #filterDropdown .fields .form-group label {
+    font-family: "Graphik Medium", sans-serif;
+    color: #1e232c;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 3px; }
+  #search-homes #filterDropdown .fields .form-group .custom-select,
+  #search-homes #filterDropdown .fields .form-group .form-control.input, .lh-featured-props #filterDropdown .fields .form-group .custom-select,
+  .lh-featured-props #filterDropdown .fields .form-group .form-control.input {
+    font-family: "Graphik Regular", sans-serif;
+    color: #96a7bc;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    border-radius: 3px;
+    max-width: 65%;
+    width: 100%;
+    float: right;
+    position: relative;
+    outline: none;
+    border-color: #d6dce6;
+    box-shadow: inset 0px 11px 38px -24px rgba(0, 0, 0, 0.53);
+    transition: box-shadow 0.3s ease;
+    padding: 18px 12px; }
+    #search-homes #filterDropdown .fields .form-group .custom-select:hover, #search-homes #filterDropdown .fields .form-group .custom-select:active, #search-homes #filterDropdown .fields .form-group .custom-select:focus,
+    #search-homes #filterDropdown .fields .form-group .form-control.input:hover,
+    #search-homes #filterDropdown .fields .form-group .form-control.input:active,
+    #search-homes #filterDropdown .fields .form-group .form-control.input:focus, .lh-featured-props #filterDropdown .fields .form-group .custom-select:hover, .lh-featured-props #filterDropdown .fields .form-group .custom-select:active, .lh-featured-props #filterDropdown .fields .form-group .custom-select:focus,
+    .lh-featured-props #filterDropdown .fields .form-group .form-control.input:hover,
+    .lh-featured-props #filterDropdown .fields .form-group .form-control.input:active,
+    .lh-featured-props #filterDropdown .fields .form-group .form-control.input:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #d6dce6;
+      box-shadow: inset 0px 8px 38px -24px rgba(0, 0, 0, 0.53); }
+  #search-homes #filterDropdown .fields .form-group .input-group.dual, .lh-featured-props #filterDropdown .fields .form-group .input-group.dual {
+    max-width: 65%;
+    width: auto;
+    float: right;
+    position: relative; }
+    #search-homes #filterDropdown .fields .form-group .input-group.dual .form-control, .lh-featured-props #filterDropdown .fields .form-group .input-group.dual .form-control {
+      font-family: "Graphik Light", sans-serif;
+      color: #96a7bc;
+      font-size: 16px;
+      font-weight: 300;
+      text-align: left;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #d6dce6;
+      box-sizing: border-box;
+      border-radius: 3px;
+      background-color: #ffffff;
+      padding: 18px 12px;
+      box-shadow: inset 0px 11px 38px -24px rgba(0, 0, 0, 0.53); }
+      #search-homes #filterDropdown .fields .form-group .input-group.dual .form-control:hover, #search-homes #filterDropdown .fields .form-group .input-group.dual .form-control:active, #search-homes #filterDropdown .fields .form-group .input-group.dual .form-control:focus, .lh-featured-props #filterDropdown .fields .form-group .input-group.dual .form-control:hover, .lh-featured-props #filterDropdown .fields .form-group .input-group.dual .form-control:active, .lh-featured-props #filterDropdown .fields .form-group .input-group.dual .form-control:focus {
+        box-shadow: inset 0px 8px 38px -24px rgba(0, 0, 0, 0.53); }
+      #search-homes #filterDropdown .fields .form-group .input-group.dual .form-control:not(:last-child), .lh-featured-props #filterDropdown .fields .form-group .input-group.dual .form-control:not(:last-child) {
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important; }
+      #search-homes #filterDropdown .fields .form-group .input-group.dual .form-control:last-child, .lh-featured-props #filterDropdown .fields .form-group .input-group.dual .form-control:last-child {
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important; }
+  #search-homes #filterDropdown .fields .apply, .lh-featured-props #filterDropdown .fields .apply {
+    background: #00aced;
+    border: 0;
+    padding: 10px 12px;
+    font-family: "Graphik Regular", sans-serif;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300; }
+    #search-homes #filterDropdown .fields .apply:hover, #search-homes #filterDropdown .fields .apply:active, #search-homes #filterDropdown .fields .apply:focus, .lh-featured-props #filterDropdown .fields .apply:hover, .lh-featured-props #filterDropdown .fields .apply:active, .lh-featured-props #filterDropdown .fields .apply:focus {
+      border: 0;
+      box-shadow: none; }
 
 @media only screen and (min-width: 960px) {
   .container {
@@ -2369,6 +2861,74 @@ footer {
           text-align: left; }
           #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item.active {
             background: #eee; }
+          #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item:hover, #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item:active {
+            background: #eee; }
+          #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item.sub {
+            padding-left: 34px; }
+            #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item.sub .dropdown-checkbox + label {
+              font-family: "Graphik Regular", sans-serif;
+              color: #1e232c;
+              text-align: left;
+              text-transform: unset;
+              font-size: 14px; }
+          #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox {
+            position: absolute;
+            opacity: 0; }
+            #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox + label {
+              position: relative;
+              cursor: pointer;
+              padding: 0;
+              font-weight: 300;
+              width: 100%;
+              display: block;
+              font-family: "Graphik Medium", sans-serif;
+              color: #1e232c;
+              text-align: left;
+              text-transform: uppercase; }
+              #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox + label .fas.color {
+                float: initial;
+                font-size: 8px;
+                vertical-align: middle;
+                margin-top: -3px;
+                margin-right: 4px; }
+                #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox + label .fas.color.red {
+                  color: #e03225; }
+                #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox + label .fas.color.blue {
+                  color: #196aff; }
+                #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox + label .fas.color.green {
+                  color: #7cd62c; }
+                #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox + label .fas.color.yellow {
+                  color: #ffba13; }
+              #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox + label .fas.info {
+                float: initial;
+                vertical-align: middle;
+                margin-top: -3px;
+                color: #00aced; }
+            #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox + label:before {
+              content: '';
+              margin-right: 10px;
+              display: inline-block;
+              vertical-align: middle;
+              width: 16px;
+              height: 16px;
+              background: white;
+              border: 1px solid #d6dce6;
+              border-radius: 3px;
+              transition: background 0.3s ease; }
+            #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox:hover + label:before {
+              background: #00aced; }
+            #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox:checked + label:before {
+              background: #00aced; }
+            #search-homes .desktop-fields .dropdown.desktop .dropdown-menu .dropdown-item .dropdown-checkbox:checked label::after {
+              content: '';
+              position: absolute;
+              left: 4px;
+              top: 11px;
+              background: white;
+              width: 1.5px;
+              height: 1.5px;
+              box-shadow: 1.5px 0 0 white, 3px 0 0 white, 3px -1.5px 0 white, 3px -3px 0 white, 3px -4px 0 white, 3px -6px 0 white;
+              transform: rotate(45deg); }
         #search-homes .desktop-fields .dropdown.desktop .dropdown-menu::after {
           bottom: 100%;
           left: 20%;
@@ -2453,7 +3013,9 @@ footer {
   #listing-area {
     overflow-y: scroll; }
   #search-page-body {
-    overflow-y: hidden; } }
+    overflow-y: hidden; }
+  #search-homes .property-item, .lh-featured-props .property-item {
+    border-radius: 5px; } }
 
 @media only screen and (max-width: 1365px) {
   #homes-search-desktop-field {
@@ -2463,17 +3025,37 @@ footer {
   padding: 0 !important;
   margin: 0 !important; }
 
+body {
+  background: lightblue; }
+
 .lh-wrapper {
   max-width: 1024px;
   margin: 0 auto;
   background: white; }
+
+.list-home-title {
+  font-family: "Graphik Regular", sans-serif, Arial, sans-serif;
+  font-size: 21px; }
+
+.list-home-title--not-collapsable {
+  font-family: "Graphik Regular", sans-serif, Arial, sans-serif;
+  font-size: 21px;
+  padding: 0;
+  margin-bottom: 1em; }
+
+.lh-name {
+  font-family: "Graphik Light", sans-serif, Arial, sans-serif;
+  font-weight: 600; }
+
+.lh-street {
+  font-size: 1.3rem !important; }
 
 .b-shadow {
   box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27); }
 
 .round-blue {
   color: white;
-  background: #00aced;
+  background: #00acee;
   padding: .8em;
   border-radius: 50%; }
 
@@ -2510,24 +3092,21 @@ footer {
   .modal-menu .fasback {
     font-size: 18.5px;
     padding: 0 16px;
-    color: #00aced; }
+    color: #00acee; }
   .modal-menu .various-link {
     align-items: center;
-    padding-left: 1.87em; }
+    padding-left: 1em; }
     .modal-menu .various-link .offer-link {
       margin: 1em 1em 1em 0;
-      font-weight: 600; }
-      @media (min-width: 768px) {
-        .modal-menu .various-link .offer-link {
-          font-size: 13px !important;
-          padding: 10px !important; } }
-      @media (min-width: 1000px) {
-        .modal-menu .various-link .offer-link {
-          font-size: 15px !important;
-          padding: 12px !important; } }
+      padding: 10px; }
+      .modal-menu .various-link .offer-link a {
+        font-family: "Graphik Medium", sans-serif, Arial, sans-serif;
+        font-size: .9rem;
+        color: white !important; }
     .modal-menu .various-link .faw-options {
       display: flex;
-      padding-top: 0; }
+      justify-content: space-between;
+      padding: 0 0 0 .6em; }
       .modal-menu .various-link .faw-options .far,
       .modal-menu .various-link .faw-options .fas {
         font-size: 1.5rem;
@@ -2535,18 +3114,13 @@ footer {
     .modal-menu .various-link .faw-options > * {
       padding: 0 .5em; }
     .modal-menu .various-link a {
-      font-size: .9rem;
+      font-size: 1rem;
+      color: #49c4f3;
       display: inline-flex; }
 
 .close-link {
-  color: #b6c2c7;
+  color: #b6c2c7 !important;
   font-size: 3rem !important; }
-  @media (min-width: 768px) {
-    .close-link {
-      padding-left: 10px !important; } }
-  @media (min-width: 1000px) {
-    .close-link {
-      padding-left: 55px !important; } }
 
 figure.lh-img-holder {
   margin-bottom: 0 !important;
@@ -2598,12 +3172,12 @@ figure.lh-img-holder {
   margin: 10px 15px;
   width: 202px;
   font-family: "Graphik Regular", Helvetica, Arial, Lucida, sans-serif !important;
-  background-color: #00aced; }
+  background-color: #00acee; }
   .offer-link a {
     color: white; }
   .offer-link .fasarrow {
     color: white;
-    padding-left: 1em; }
+    padding-left: 1.5em; }
 
 .lh-info-imp {
   font-weight: 600; }
@@ -2629,6 +3203,14 @@ figure.lh-img-holder {
     font-size: .9rem;
     padding-left: .3em;
     padding: 0; }
+    .lh-info-wrapper .small-imp:before {
+      display: inline-block;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 .5em .1em 0;
+      color: crimson; }
   .lh-info-wrapper .large-link {
     display: block;
     font-size: 1.2rem;
@@ -2677,7 +3259,7 @@ figure.lh-img-holder {
     transform: rotate(90deg); }
 
 .lh-house-details {
-  margin: 2em 0; }
+  margin: 3em 0; }
   .lh-house-details .lh-house {
     margin-bottom: 1.3rem; }
     .lh-house-details .lh-house--desktop {
@@ -2688,7 +3270,7 @@ figure.lh-img-holder {
   .lh-house-details .agent-text {
     margin-left: 1.4em;
     color: white;
-    background: #00aced;
+    background: #00acee;
     padding: .8em;
     border-radius: 50%;
     font-size: 16px; }
@@ -2698,7 +3280,7 @@ figure.lh-img-holder {
 
 .faw-options {
   padding-top: 2em;
-  color: #00aced; }
+  color: #00acee; }
   .faw-options [class*='col-'] {
     text-align: center; }
   .faw-options i {
@@ -2753,14 +3335,14 @@ figure.lh-img-holder {
 
 .contact-agent h2.contact-agent-prev-name {
   font-size: 1.1rem;
-  color: #00aced;
+  color: #00acee;
   padding-bottom: .2em; }
 
 .contact-agent-details {
   padding-left: .8em !important; }
 
 .contact-agent .fa-star {
-  color: #00aced; }
+  color: #00acee; }
 
 .contact-agent-controlls {
   position: absolute;
@@ -2769,7 +3351,7 @@ figure.lh-img-holder {
   .contact-agent-controlls .agent-phone {
     transform: rotate(90deg);
     color: white;
-    background: #00aced;
+    background: #00acee;
     padding: .8em;
     border-radius: 50%;
     font-size: 12px; }
@@ -2786,7 +3368,7 @@ figure.lh-img-holder {
   .contact-agent-controlls .agent-text {
     margin-left: 1.4em;
     color: white;
-    background: #00aced;
+    background: #00acee;
     padding: .8em;
     border-radius: 50%;
     font-size: 12px; }
@@ -2933,18 +3515,16 @@ figure.lh-img-holder {
 
 .plus-button {
   text-transform: uppercase;
-  color: #00aced;
-  font-size: 1.2em;
+  color: #00acee;
+  font-size: .95rem;
   font-weight: 600; }
   .plus-button i {
-    margin-right: .33em; }
+    margin-right: .6em; }
 
 .lh-virutal-tour {
   margin: 3em 0 4em;
   display: flex;
   flex-direction: column; }
-  .lh-virutal-tour .list-home-title {
-    margin-bottom: .7em; }
   .lh-virutal-tour img {
     border-radius: 5px;
     margin-right: 15px; }
@@ -2959,7 +3539,7 @@ figure.lh-img-holder {
   padding: 0 1em; }
 
 .faup {
-  color: #00aced; }
+  color: #00acee; }
 
 .fadown {
   color: #d6dce6; }
@@ -2971,10 +3551,10 @@ figure.lh-img-holder {
   margin-bottom: 2em; }
 
 .lh-features .lh-subtitle {
-  color: #00aced;
+  color: #00acee;
   padding-top: 1em;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold; }
 
 .lh-house-prop-desc p {
@@ -3005,7 +3585,7 @@ figure.lh-img-holder {
       display: none; } }
 
 .lh-finance i {
-  color: #00aced;
+  color: #00acee;
   margin-top: 3px; }
 
 .lh-finance h1 {
@@ -3096,7 +3676,7 @@ figure.lh-img-holder {
   padding: 1em;
   font-size: 1.25rem;
   margin-right: 1em;
-  color: #00aced; }
+  color: #00acee; }
 
 .contact-agent-form .lh-custom-select-wrap:before,
 .lh-form .lh-custom-select-wrap:before, .contact-agent-form .has-person-left:before, .contact-agent-form .has-phone-left:before, .contact-agent-form .has-mail-left:before,
@@ -3158,7 +3738,7 @@ figure.lh-img-holder {
     height: 35px;
     margin-bottom: .4em; }
     .lh-nearby-places .stars-reviews i {
-      color: #00aced;
+      color: #00acee;
       padding-right: .3em; }
     .lh-nearby-places .stars-reviews span {
       padding-left: .3em; }
@@ -3175,7 +3755,7 @@ figure.lh-img-holder {
     .lh-school-rankings .school-rank-group .sch-r-desc {
       padding-left: 1em; }
       .lh-school-rankings .school-rank-group .sch-r-desc p:first-of-type {
-        color: #00aced; }
+        color: #00acee; }
   .lh-school-rankings .school-rank-group:nth-child(4) {
     border-bottom: none; }
   .lh-school-rankings .offer-link {
@@ -3200,7 +3780,7 @@ figure.lh-img-holder {
   color: #a8b6c6 !important; }
 
 .blue-border {
-  border: 1.5px solid #00aced;
+  border: 1.5px solid #00acee;
   text-align: center;
   font-size: 1.2rem;
   border-radius: 5px;
@@ -3215,7 +3795,7 @@ figure.lh-img-holder {
       padding: 1em 4.8em;
       font-size: 19px; } }
   .blue-border span {
-    color: #00aced; }
+    color: #00acee; }
 
 .lh-property-slider {
   margin: 20px 20px 20px 0; }
@@ -3255,7 +3835,7 @@ figure.lh-img-holder {
   .lh-property-slider .owl-next span {
     font-size: 4rem !important; }
   .lh-property-slider .owl-next span {
-    color: #00aced; }
+    color: #00acee; }
 
 .top-link {
   color: black;

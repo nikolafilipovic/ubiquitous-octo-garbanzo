@@ -3,10 +3,36 @@
   margin: 0 !important;
 }
 
+body {
+  //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  background: lightblue;
+}
+
 .lh-wrapper {
   max-width: 1024px;
   margin: 0 auto;
   background: white;
+}
+
+.list-home-title {
+  font-family: $default-font-family, Arial, sans-serif;
+  font-size: 21px;
+}
+
+.list-home-title--not-collapsable {
+  font-family: $default-font-family, Arial, sans-serif;
+  font-size: 21px;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+.lh-name {
+  font-family: $light-font-family, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.lh-street {
+  font-size: 1.3rem !important;
 }
 
 .b-shadow {
@@ -65,24 +91,23 @@
 
   .various-link {
     align-items: center;
-    padding-left: 1.87em;
+    padding-left: 1em;
 
     .offer-link {
       margin: 1em 1em 1em 0;
-      font-weight: 600;
-      @include respond-to('desktop') {
-        font-size: 13px !important;
-        padding: 10px !important;
-      }
-      @include respond-to('m-desktop') {
-        font-size: 15px !important;
-        padding: 12px !important;
+      padding: 10px;
+      a {
+        font-family: $bold-font-family, Arial, sans-serif;
+        font-size: .9rem;
+        color: white !important;
       }
     }
 
     .faw-options {
       display: flex;
-      padding-top: 0;
+      justify-content: space-between;
+      // ??????????????
+      padding: 0 0 0 .6em;
 
       .far,
       .fas {
@@ -96,22 +121,18 @@
     }
 
     a {
-      font-size: .9rem;
+      font-size: 1rem;
+      color: $main-lighter;
       display: inline-flex;
     }
+
   }
 }
 
 .close-link {
-  color: $grayish;
+  color: $grayish !important;
   font-size: 3rem !important;
-  @include respond-to('desktop') {
-    padding-left: 10px !important;
-  }
-
-  @include respond-to('m-desktop') {
-    padding-left: 55px !important;
-  }
+  // place it on right margin
 }
 
 figure.lh-img-holder {
@@ -185,11 +206,9 @@ figure.lh-img-holder {
 
   .fasarrow {
     color: white;
-    padding-left: 1em;
+    padding-left: 1.5em;
   }
 }
-
-// offer-link
 
 .lh-info-imp {
   font-weight: 600;
@@ -204,6 +223,7 @@ figure.lh-img-holder {
 }
 
 .lh-info-wrapper {
+
   color: black;
   margin-top: 1.87em;
   padding-left: 1.87em;
@@ -222,6 +242,16 @@ figure.lh-img-holder {
     font-size: .9rem;
     padding-left: .3em;
     padding: 0;
+    &:before {
+      display: inline-block;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 .5em .1em 0;
+      color: crimson;
+      // ????????????????????????????
+    }
   }
 
   .large-link {
@@ -295,7 +325,7 @@ figure.lh-img-holder {
 }
 
 .lh-house-details {
-  margin: 2em 0;
+  margin: 3em 0;
 
   .lh-house {
     margin-bottom: 1.3rem;
@@ -655,12 +685,12 @@ figure.lh-img-holder {
 
 .plus-button {
   i {
-    margin-right: .33em;
+    margin-right: .6em;
   }
 
   text-transform: uppercase;
   color: $main-color;
-  font-size: 1.2em;
+  font-size: .95rem;
   font-weight: 600;
 }
 
@@ -668,10 +698,6 @@ figure.lh-img-holder {
   margin: 3em 0 4em;
   display: flex;
   flex-direction: column;
-
-  .list-home-title {
-    margin-bottom: .7em;
-  }
 
   img {
     border-radius: 5px;
@@ -711,7 +737,7 @@ figure.lh-img-holder {
     color: $main-color;
     padding-top: 1em;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
   }
 

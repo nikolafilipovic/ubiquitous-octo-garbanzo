@@ -92,8 +92,8 @@ Template Name: List Homes
       <div class="left-side-container col-12 col-md-8">
         <div class="row no-gutters">
           <div class="col-12 col-md-7">
-            <h1 class="lh-info-imp">11249 E Sonrisa Ave</h1>
-            <p>Mesa, AZ 85212</p>
+            <h1 class="lh-name">11249 E Sonrisa Ave</h1>
+            <p class="lh-street">Mesa, AZ 85212</p>
             <span class="font-padding-stilization">3 bds </span>
             <span class="small-dot">&#8226;</span>
             <span class="font-padding-stilization">2 ba </span>
@@ -110,8 +110,7 @@ Template Name: List Homes
           <div class="col-12 col-md-5">
             <div class="row no-gutters">
               <div class="col-6 col-md-12">
-                <span class="crimson-dot"></span>
-                <strong class="small-imp">FOR SALE</strong>
+                <strong class="small-imp house-for-sale">HOUSE FOR SALE</strong>
                 <h1 class="lh-info-imp lh-money">$425,000</h1>
                 <a href="#" class="large-link lh-info-imp">Get pre-qualified
                   <i class="fas fa-arrow-right fasarrow"></i>
@@ -161,7 +160,7 @@ Template Name: List Homes
         </div>
 
         <div class="lh-house-prop-desc">
-          <h1 class="list-home-title list-home-title--pb">Property Description</h1>
+          <h1 class="list-home-title--not-collapsable">Property Description</h1>
           <p>
             Rare opportunity awaits! Own a 40 units multi-family in up & coming area just minutes from the heart of
             Midtown in Atlanta.
@@ -180,7 +179,7 @@ Template Name: List Homes
         </div>
 
         <div class="lh-virutal-tour">
-          <h1 class="list-home-title">Virtual Walkthrough</h1>
+          <h1 class="list-home-title--not-collapsable">Virtual Walkthrough</h1>
           <img src="/wp-content/themes/theoffercompany/images/virtualtour.png" alt="virutal" />
         </div>
 
@@ -374,13 +373,13 @@ Template Name: List Homes
           </h2>
           <div class="lh-details-block">
             <div class="row no-gutters">
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-3">
                 <p>HOA: <strong>Yes</strong></p>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-3">
                 <p>HOA free: <strong>$60</strong></p>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-5">
                 <p class="mb-4">HOA Frequency: <strong>Monthly</strong></p>
               </div>
             </div>
