@@ -44,6 +44,15 @@
 
 /* Importing all modules
 ------------------------------------------------------- */
+h1.list-home-title {
+  font-size: 22px; }
+
+h1.list-home-title--pb {
+  padding-bottom: 1em; }
+
+.w-100-25 {
+  width: calc(100% - 25px) !important; }
+
 body {
   overflow-x: hidden !important; }
 
@@ -89,14 +98,10 @@ body {
 #listingDropdownDesktopMenu .dropdown-item {
   padding: 5px 30px 5px 15px; }
 
-h1.list-home-title {
-  font-size: 22px; }
-
-h1.list-home-title--pb {
-  padding-bottom: 1em; }
-
-.w-100-25 {
-  width: calc(100% - 25px) !important; }
+.google-adresses-dropdown {
+  font-family: "Graphik Regular", sans-serif;
+  color: #1e232c;
+  font-size: 16px; }
 
 /**
  * Owl Carousel v2.3.4
@@ -377,8 +382,8 @@ h1.list-home-title--pb {
       left: 0; }
     .main-header .slide-out-container p.menu-title {
       font-family: "Graphik Medium", sans-serif;
-      color: #898989;
-      font-size: 17px;
+      color: #cdd8e4;
+      font-size: 14px;
       font-weight: 500;
       text-align: left;
       text-transform: uppercase;
@@ -387,7 +392,7 @@ h1.list-home-title--pb {
     .main-header .slide-out-container .close-menu {
       float: right;
       font-size: 32px;
-      color: #898989;
+      color: #ced8e4;
       vertical-align: middle;
       margin-top: -6px; }
       .main-header .slide-out-container .close-menu:hover, .main-header .slide-out-container .close-menu:active, .main-header .slide-out-container .close-menu:focus {
@@ -395,12 +400,16 @@ h1.list-home-title--pb {
     .main-header .slide-out-container .nav-login-btn {
       margin-top: 25px;
       margin-bottom: 10px;
-      font-size: 14px;
       background-color: #00aced;
-      border-color: #00aced; }
+      border-color: #00aced;
+      font-family: "Graphik Light", sans-serif;
+      font-size: 14px;
+      text-align: left;
+      padding: 10px 14px 10px 14px; }
       .main-header .slide-out-container .nav-login-btn i {
-        font-size: 14px;
-        margin-left: 10px; }
+        font-size: 13px;
+        margin-top: 4px;
+        float: right; }
     .main-header .slide-out-container .navigation ul .menu-item {
       border-bottom: 1px solid #eee; }
       .main-header .slide-out-container .navigation ul .menu-item a {
@@ -418,9 +427,9 @@ h1.list-home-title--pb {
       .main-header .slide-out-container .navigation ul .menu-item ul.sub-menu li {
         border-bottom: none; }
         .main-header .slide-out-container .navigation ul .menu-item ul.sub-menu li a {
-          font-family: "Graphik Light", sans-serif;
-          font-size: 16px;
-          color: #898989;
+          font-family: "Graphik Regular", sans-serif;
+          font-size: 15px;
+          color: #9ea6b8;
           font-weight: 400;
           padding-left: 5px;
           padding-top: 3px;
@@ -432,7 +441,7 @@ h1.list-home-title--pb {
         padding-bottom: 10px;
         display: block; }
       .main-header .slide-out-container .navigation ul .menu-item:last-child {
-        border-left: none; }
+        border-bottom: none; }
 
 .listing-header .navbar {
   background: #fff;
@@ -534,8 +543,8 @@ h1.list-home-title--pb {
     left: 0; }
   .listing-header .slide-out-container p.menu-title {
     font-family: "Graphik Medium", sans-serif;
-    color: #898989;
-    font-size: 17px;
+    color: #cdd8e4;
+    font-size: 14px;
     font-weight: 500;
     text-align: left;
     text-transform: uppercase;
@@ -544,7 +553,7 @@ h1.list-home-title--pb {
   .listing-header .slide-out-container .close-menu {
     float: right;
     font-size: 32px;
-    color: #898989;
+    color: #ced8e4;
     vertical-align: middle;
     margin-top: -6px; }
     .listing-header .slide-out-container .close-menu:hover, .listing-header .slide-out-container .close-menu:active, .listing-header .slide-out-container .close-menu:focus {
@@ -552,13 +561,18 @@ h1.list-home-title--pb {
   .listing-header .slide-out-container .nav-login-btn {
     margin-top: 25px;
     margin-bottom: 10px;
+    background-color: #00aced;
+    border-color: #00aced;
+    font-family: "Graphik Light", sans-serif;
     font-size: 14px;
-    background-color: #00acee;
-    border-color: #00acee; }
+    text-align: left;
+    padding: 10px 14px 10px 14px; }
     .listing-header .slide-out-container .nav-login-btn i {
-      font-size: 14px;
-      margin-left: 10px; }
+      font-size: 13px;
+      margin-top: 4px;
+      float: right; }
   .listing-header .slide-out-container .navigation ul .menu-item {
+    margin-top: 4px;
     border-bottom: 1px solid #eee; }
     .listing-header .slide-out-container .navigation ul .menu-item a {
       font-family: "Graphik Medium", sans-serif;
@@ -573,11 +587,12 @@ h1.list-home-title--pb {
       .listing-header .slide-out-container .navigation ul .menu-item a:hover, .listing-header .slide-out-container .navigation ul .menu-item a:focus, .listing-header .slide-out-container .navigation ul .menu-item a:active {
         opacity: 0.7; }
     .listing-header .slide-out-container .navigation ul .menu-item ul.sub-menu li {
-      border-bottom: none; }
+      border-bottom: none;
+      margin-top: 0; }
       .listing-header .slide-out-container .navigation ul .menu-item ul.sub-menu li a {
-        font-family: "Graphik Light", sans-serif;
-        font-size: 16px;
-        color: #898989;
+        font-family: "Graphik Regular", sans-serif;
+        font-size: 15px;
+        color: #9ea6b8;
         font-weight: 400;
         padding-left: 5px;
         padding-top: 3px;
@@ -589,7 +604,7 @@ h1.list-home-title--pb {
       padding-bottom: 10px;
       display: block; }
     .listing-header .slide-out-container .navigation ul .menu-item:last-child {
-      border-left: none; }
+      border-bottom: none; }
 
 /* Width of the Menu */
 #page-container.move {
@@ -1900,7 +1915,7 @@ footer {
     padding: 0; }
   #search-homes .price-field .input-group .form-control, .lh-featured-props .price-field .input-group .form-control {
     font-family: "Graphik Light", sans-serif;
-    color: #96a7bc;
+    color: #1e232c;
     font-size: 16px;
     font-weight: 300;
     text-align: left;
@@ -2015,8 +2030,15 @@ footer {
   #search-homes .property-list .property-item .favourite, .lh-featured-props .property-list .property-item .favourite {
     float: right;
     margin-top: -28px;
-    font-size: 26px;
-    color: #fff; }
+    display: block !important; }
+    #search-homes .property-list .property-item .favourite i, .lh-featured-props .property-list .property-item .favourite i {
+      font-size: 26px;
+      color: #fff;
+      transition: all 0.3s ease;
+      display: block !important;
+      position: relative; }
+      #search-homes .property-list .property-item .favourite i:hover, #search-homes .property-list .property-item .favourite i:focus, #search-homes .property-list .property-item .favourite i:active, #search-homes .property-list .property-item .favourite i.active, .lh-featured-props .property-list .property-item .favourite i:hover, .lh-featured-props .property-list .property-item .favourite i:focus, .lh-featured-props .property-list .property-item .favourite i:active, .lh-featured-props .property-list .property-item .favourite i.active {
+        color: #00aced; }
   #search-homes .property-list .property-item .sale-type, .lh-featured-props .property-list .property-item .sale-type {
     font-family: "Graphik Medium", sans-serif;
     color: #ffffff;
@@ -2055,7 +2077,7 @@ footer {
     #search-homes .property-list .property-item .property-info .sqft, .lh-featured-props .property-list .property-item .property-info .beds,
     .lh-featured-props .property-list .property-item .property-info .baths,
     .lh-featured-props .property-list .property-item .property-info .sqft {
-      font-family: "Graphik Light", sans-serif;
+      font-family: "Graphik Regular", sans-serif;
       color: #ffffff;
       font-size: 15px;
       font-weight: 400;
@@ -2973,7 +2995,7 @@ footer {
           padding: 0px 10px; }
           #search-homes .desktop-fields .dropdown.desktop .dropdown-menu.price .input-group .form-control {
             font-family: "Graphik Light", sans-serif;
-            color: #96a7bc;
+            color: #1e232c;
             font-size: 16px;
             font-weight: 300;
             text-align: left;
@@ -2993,6 +3015,10 @@ footer {
             #search-homes .desktop-fields .dropdown.desktop .dropdown-menu.price .input-group .form-control:last-child {
               border-top-left-radius: 0px !important;
               border-bottom-left-radius: 0px !important; }
+      #search-homes .desktop-fields .dropdown.desktop #homeTypeDropdownDesktop .dropdown-checkbox + label {
+        font-family: "Graphik Regular", sans-serif;
+        color: #1e232c;
+        text-transform: unset; }
     #search-homes .desktop-fields .desktop-fields-map {
       font-family: "Graphik Regular", sans-serif;
       color: #00aced;

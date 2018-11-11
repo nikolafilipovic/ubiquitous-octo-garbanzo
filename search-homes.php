@@ -28,7 +28,7 @@
                         <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon2" type="checkbox" value="Nothing"><label for="comingSoon2">New Construction</label></a>
                         <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon3" type="checkbox" value="Nothing"><label for="comingSoon3">Open Houses</label></a>
                         <a class="dropdown-item sub" href="#"><input class="dropdown-checkbox" id="comingSoon4" type="checkbox" value="Nothing"><label for="comingSoon4">Virtual Tours</label></a>
-                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction" data-toggle="tooltip" data-placement="right" id="foreclosure-tooltip" title="The lender has initiated foreclosure proceedings and an auction date has been scheduled on these properties.These properties are not found on multiple listing service (MLS)."><i class="fas fa-circle color blue"></i>Foreclosures <i class="fas fa-info-circle info"></i></label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction" data-toggle="tooltip" data-placement="right" id="foreclosure-tooltip" title="The lender has initiated foreclosure proceedings and an auction date has been scheduled on these properties. These properties are not found on multiple listing service (MLS)."><i class="fas fa-circle color blue"></i>Foreclosures <i class="fas fa-info-circle info"></i></label></a>
                         <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="openHouses" type="checkbox" value="Nothing"><label for="openHouses" data-toggle="tooltip" data-placement="right" id="lastcall-tooltip" title="24 hour notice to make an offer before these homes goes under contract."><i class="fas fa-circle color green"></i>Last call <i class="fas fa-info-circle info"></i></label></a>
                         <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour"><i class="fas fa-circle color yellow"></i>Sold</label></a>
                     </div>
@@ -62,11 +62,11 @@
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="homeTypeDropdownDesktop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Home type (2) <i class="fas fa-angle-down"></i>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="homeTypeDropdownDesktop">
-                        <a class="dropdown-item" href="#">Houses</a>
-                        <a class="dropdown-item" href="#">Condos</a>
-                        <a class="dropdown-item" href="#">Land</a>
-                        <a class="dropdown-item" href="#">Manufactured</a>
+                    <div class="dropdown-menu" aria-labelledby="homeTypeDropdownDesktop" id="homeTypeDropdownDesktop">
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon12" type="checkbox" value="Nothing"><label for="comingSoon12">Houses</label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon22" type="checkbox" value="Nothing"><label for="comingSoon22">Condos</label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon32" type="checkbox" value="Nothing"><label for="comingSoon32">Land</label></a>
+                        <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon42" type="checkbox" value="Nothing"><label for="comingSoon42">Manufactured</label></a>
                     </div>
                 </div>
                 <div class="dropdown desktop">
@@ -289,16 +289,8 @@
                             <div class="card-header" id="headingFour">
                                 <button class="btn btn-secondary collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <input class="search-checkbox" id="listing" type="checkbox" value="Nothing">
-                                    <label for="listing"><i class="fas fa-circle color yellow"></i>Sold <i class="fas fa-angle-down"></i></label>
+                                    <label for="listing"><i class="fas fa-circle color yellow"></i>Sold </label>
                                 </button>
-                            </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionFilters">
-                                <div class="card-body">
-                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="comingSoon" type="checkbox" value="Nothing"><label for="comingSoon">Coming soon</label></a>
-                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="newConstruction" type="checkbox" value="Nothing"><label for="newConstruction">New construction</label></a>
-                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="openHouses" type="checkbox" value="Nothing"><label for="openHouses">Open houses</label></a>
-                                    <a class="dropdown-item" href="#"><input class="dropdown-checkbox" id="virtualTour" type="checkbox" value="Nothing"><label for="virtualTour">Virtual tour</label></a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -409,79 +401,80 @@
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 column-item">
                         <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-1.png)">
                             <span class="time-on-market"><i class="fas fa-vr-cardboard"></i>5 days on the market</span>
+                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
                             <span class="sale-type"><i class="red-dot"></i>House for Sale</span>
                             <h1 class="property-price">$425,000</h1>
-                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
                             <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 column-item" id="before-cta">
                         <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-2.png)">
                             <span class="time-on-market"><i class="fas fa-vr-cardboard"></i>5 days on the market</span>
-                            <i class="favourite far fa-heart"></i>
+                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
                             <span class="sale-type"><i class="red-dot"></i>House for Sale</span>
                             <h1 class="property-price">$425,000</h1>
-                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
                             <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 column-item">
                         <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-3.png)">
                             <span class="time-on-market"><i class="fas fa-vr-cardboard"></i>5 days on the market</span>
-                            <i class="favourite far fa-heart"></i>
+                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
                             <span class="sale-type"><i class="red-dot"></i>House for Sale</span>
                             <h1 class="property-price">$425,000</h1>
-                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
                             <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 column-item">
                         <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-1.png)">
                             <span class="time-on-market"><i class="fas fa-vr-cardboard"></i>5 days on the market</span>
-                            <i class="favourite far fa-heart"></i>
+                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
                             <span class="sale-type"><i class="red-dot"></i>House for Sale</span>
                             <h1 class="property-price">$425,000</h1>
-                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
                             <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 column-item">
                         <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-2.png)">
                             <span class="time-on-market"><i class="fas fa-vr-cardboard"></i>5 days on the market</span>
-                            <i class="favourite far fa-heart"></i>
+                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
                             <span class="sale-type"><i class="red-dot"></i>House for Sale</span>
                             <h1 class="property-price">$425,000</h1>
-                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
                             <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 column-item">
                         <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-3.png)">
                             <span class="time-on-market"><i class="fas fa-vr-cardboard"></i>5 days on the market</span>
-                            <i class="favourite far fa-heart"></i>
+                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
                             <span class="sale-type"><i class="red-dot"></i>House for Sale</span>
                             <h1 class="property-price">$425,000</h1>
-                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
                             <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 column-item">
                         <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-1.png)">
                             <span class="time-on-market"><i class="fas fa-vr-cardboard"></i>5 days on the market</span>
-                            <i class="favourite far fa-heart"></i>
+                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
                             <span class="sale-type"><i class="red-dot"></i>House for Sale</span>
                             <h1 class="property-price">$425,000</h1>
-                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
                             <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 column-item">
                         <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-2.png)">
                             <span class="time-on-market"><i class="fas fa-vr-cardboard"></i>5 days on the market</span>
-                            <i class="favourite far fa-heart"></i>
+                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
                             <span class="sale-type"><i class="red-dot"></i>House for Sale</span>
                             <h1 class="property-price">$425,000</h1>
-                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
                             <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
                         </div>
                     </div>
