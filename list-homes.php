@@ -103,16 +103,17 @@ Template Name: List Homes
 
             <div class="d-none d-md-block lh-house-details">
               <p class="lh-house lh-house--desktop">Open House <strong>Fri, Oct 12 &#8226; 11:00am - 2:00pm</strong></p>
-              <i class="fas fa-phone agent-phone round-blue"></i><strong class="agent-phone-text font-padding-stilization">Call Agent</strong>
-              <i class="fas fa-comment-alt agent-text round-blue"></i><strong class="agent-phone-text font-padding-stilization">Text Agent</strong>
+              <i class="fas fa-phone agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Call Agent</span>
+              <i class="fas fa-comment-alt agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Text Agent</span>
             </div>
           </div>
           <div class="col-12 col-md-5">
-            <div class="row no-gutters">
+            <div class="map-price row no-gutters">
               <div class="col-6 col-md-12">
+                <span class="crimson-dot"></span>
                 <strong class="small-imp house-for-sale">HOUSE FOR SALE</strong>
-                <h1 class="lh-info-imp lh-money">$425,000</h1>
-                <a href="#" class="large-link lh-info-imp">Get pre-qualified
+                <h1 class=" lh-money">$425,000</h1>
+                <a href="#" class="large-link">Get pre-qualified
                   <i class="fas fa-arrow-right fasarrow"></i>
                 </a>
               </div>
@@ -153,15 +154,15 @@ Template Name: List Homes
         </div>
 
         <div class="lh-house-details lh-house-details--big d-flex d-md-none">
-          <i class="fas fa-phone agent-phone round-blue"></i>
+          <i class="fas fa-phone round-blue agent-round"></i>
           <p class="agent-phone-text d-flex align-items-center">Call Agent</p>
-          <i class="fas fa-comment-alt agent-text round-blue"></i>
+          <i class="fas fa-comment-alt round-blue agent-round"></i>
           <p class="agent-phone-text d-flex align-items-center">Text Agent</p>
         </div>
 
         <div class="lh-house-prop-desc">
           <h1 class="list-home-title--not-collapsable">Property Description</h1>
-          <p>
+          <p class="lh-description">
             Rare opportunity awaits! Own a 40 units multi-family in up & coming area just minutes from the heart of
             Midtown in Atlanta.
             This secluded gated property has 4 sided brick buildings situated in a shape of a square. Each unit has
@@ -427,26 +428,7 @@ Template Name: List Homes
             </div>
             <div class="col-7 col-md-6 d-flex justify-content-end">
               <div class="chart-wrapper">
-                <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
-                  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#25aae1"
-                    stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="25"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#3972b8"
-                    stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="40"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#88d6f4"
-                    stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="35"></circle>
-                  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d4dff2"
-                    stroke-width="3" stroke-dasharray="5 95" stroke-dashoffset="30"></circle>
-                  <g class="chart-text">
-                    <text x="50%" y="50%" class="chart-number">
-                      Your payment
-                    </text>
-                    <text x="50%" y="50%" class="chart-label">
-                      $1,994
-                    </text>
-                  </g>
-                </svg>
+                <canvas width="200" height="200" id="lh-chart"></canvas>
               </div>
             </div>
           </div>
@@ -766,7 +748,7 @@ Template Name: List Homes
           </h1>
           <div class="school-rank-group row no-gutters">
             <div>
-              <i class="round-num">5</i>
+              <i class="round-blue">5</i>
               <p class="faded">out of 10</p>
             </div>
             <div class="sch-r-desc">
@@ -777,7 +759,7 @@ Template Name: List Homes
 
           <div class="school-rank-group row no-gutters">
             <div>
-              <i class="round-num">6</i>
+              <i class="round-blue">6</i>
               <p class="faded">out of 10</p>
             </div>
             <div class="sch-r-desc">
@@ -788,7 +770,7 @@ Template Name: List Homes
 
           <div class="school-rank-group row no-gutters">
             <div>
-              <i class="round-num">8</i>
+              <i class="round-blue">8</i>
               <p class="faded">out of 10</p>
             </div>
             <div class="sch-r-desc">
@@ -872,12 +854,13 @@ Template Name: List Homes
 
 
       <div class="col-12 col-md-4 contact-agent">
-        <h1 class="contact-agent-title">Contact Agent</h1>
+        <!-- <h1 class="contact-agent-title">Contact Agent</h1> -->
+        <strong class="small-imp">CONTACT AGENT</strong>
         <div class="contact-agent-prev row no-gutters">
-          <div class="col-1">
+          <div class="col-2">
             <img src="/wp-content/themes/theoffercompany/images/woman.png" />
           </div>
-          <div class="col-11 contact-agent-details">
+          <div class="col-10 contact-agent-details">
             <h2 class="contact-agent-prev-name">Anette Brown</h2>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>

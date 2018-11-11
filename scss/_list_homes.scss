@@ -6,6 +6,7 @@
 body {
   //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   background: lightblue;
+  font-family: $default-font-family, Arial, sans-serif;
 }
 
 .lh-wrapper {
@@ -15,15 +16,13 @@ body {
 }
 
 .list-home-title {
-  font-family: $default-font-family, Arial, sans-serif;
-  font-size: 21px;
+  font-size: 24px;
 }
 
 .list-home-title--not-collapsable {
-  font-family: $default-font-family, Arial, sans-serif;
-  font-size: 21px;
+  font-size: 24px;
   padding: 0;
-  margin-bottom: 1em;
+  margin-bottom: .6em;
 }
 
 .lh-name {
@@ -39,17 +38,18 @@ body {
   box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27) //refactor everywhere!
 }
 
-.round-blue {
+/*.round-blue {
   color: white;
   background: $main-color;
   padding: .8em;
   border-radius: 50%;
-}
+  // TO BE REMOVED
+} */
 
-.round-num {
+.round-blue {
   color: white;
   font-size: 1.5rem;
-  background: #00aced;
+  background: $main-lighter;
   text-align: center;
   font-style: normal;
   height: 50px;
@@ -57,6 +57,17 @@ body {
   width: 50px;
   border-radius: 50%;
   display: inline-block;
+}
+
+.agent-round {
+  padding-top: 15px !important;
+  font-size: 1.2rem !important;
+  @include respond-to('desktop') {
+    height: 40px !important;
+    padding-top: 13px !important;
+    font-size: 1rem !important;
+    width: 40px !important;
+  }
 }
 
 .small-caps {
@@ -67,7 +78,8 @@ body {
   font-size: 1.1rem;
   display: inline-block;
   padding: 1.2rem 0;
-  font-weight: 600;
+  font-family: $bold-font-family, Arial, Helvetica, sans-serif;
+  //font-weight: 600;
 
   @include respond-to('desktop') {
     padding: 0.5rem 0;
@@ -105,8 +117,7 @@ body {
 
     .faw-options {
       display: flex;
-      justify-content: space-between;
-      // ??????????????
+      flex: 1;
       padding: 0 0 0 .6em;
 
       .far,
@@ -132,7 +143,7 @@ body {
 .close-link {
   color: $grayish !important;
   font-size: 3rem !important;
-  // place it on right margin
+  margin-left: auto;
 }
 
 figure.lh-img-holder {
@@ -210,20 +221,16 @@ figure.lh-img-holder {
   }
 }
 
-.lh-info-imp {
-  font-weight: 600;
-}
-
 .crimson-dot {
+  display: inline-block;
   height: 10px;
   width: 10px;
-  padding: 0 !important;
+  padding-right: .5em;
   background-color: crimson;
   border-radius: 50%;
 }
 
 .lh-info-wrapper {
-
   color: black;
   margin-top: 1.87em;
   padding-left: 1.87em;
@@ -234,56 +241,63 @@ figure.lh-img-holder {
   }
 
   span.small-dot {
-    margin: 0 .5rem;
-    font-weight: 100;
-  }
-
-  .small-imp {
-    font-size: .9rem;
-    padding-left: .3em;
-    padding: 0;
-    &:before {
-      display: inline-block;
-      content: "";
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      margin: 0 .5em .1em 0;
-      color: crimson;
-      // ????????????????????????????
-    }
-  }
-
-  .large-link {
-    display: block;
-    font-size: 1.2rem;
+    margin: 0 .3rem;
     font-weight: bold;
-    padding: .5em 0;
-
-    .fasarrow {
-      padding-left: .5em;
-    }
   }
 
-  a.lh-info-imp {
+
+  /* a.lh-info-imp {
     padding: 0;
     margin: 1.6rem 0;
 
     @include respond-to('desktop') {
       margin: 0.6rem 0 2rem;
     }
-  }
+  } */
 
+}
+
+.small-imp {
+  font-family: $bold-font-family, Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  padding: 0;
+}
+
+.map-price {
+  font-family: $bold-font-family, Arial, Helvetica, sans-serif;
+  padding-left: 0 !important;
+  
+  @include respond-to('desktop') {
+    padding-left: 2em !important;
+  }
+  
   .lh-money {
     margin-top: .5rem;
     padding-bottom: 0;
+    font-size: 34px;
+  }
+
+  .house-for-sale {
+    padding-left: .3em;
+  }
+
+  .large-link {
+    color: $main-lighter;
+    display: block;
+    font-size: 1.2rem;
+    padding: 1em 0;
+
+    .fasarrow {
+      padding-left: .5em;
+    }
   }
 
   .lh-map {
-    padding-right: 25px;
     justify-content: flex-end;
-
+    
     @include respond-to('desktop') {
+      padding: 10px 25px 0 0;
       padding-right: 0;
       justify-content: flex-start;
     }
@@ -294,16 +308,6 @@ figure.lh-img-holder {
       height: 120px;
     }
   }
-}
-
-.red-dot {
-  width: 10px;
-  height: 10px;
-  background: red;
-  display: inline-block;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  margin-right: 4px;
 }
 
 // lh-info-wrapper
@@ -325,7 +329,7 @@ figure.lh-img-holder {
 }
 
 .lh-house-details {
-  margin: 3em 0;
+  margin: 2em 0 3em;
 
   .lh-house {
     margin-bottom: 1.3rem;
@@ -337,8 +341,12 @@ figure.lh-img-holder {
 
   .agent-phone {
     &-text {
-      font-size: 1rem;
-      margin-left: 0.6em;
+      font-size: 1.1rem;
+      margin: 0 0em 0 .7em;
+      
+      @include respond-to('s-desktop') {
+        margin: 0 1.5em 0 .7em;
+      }
     }
   }
 
@@ -391,12 +399,12 @@ figure.lh-img-holder {
   }
 
   &-up {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     border-top: 1px solid $lightergray;
   }
 
   &-down {
-    padding-top: 25px;
+    padding-top: 20px;
     border-bottom: 1px solid $lightergray;
   }
 }
@@ -427,7 +435,12 @@ figure.lh-img-holder {
 
 .contact-agent {
   p {
-    color: #4a505d !important;
+    color: #5c78b4 !important;
+    padding: .1em 0;
+  }
+
+  .contact-agent-prev {
+    margin-top: 1.5em;
   }
 
   @include respond-to('desktop') {
@@ -443,8 +456,8 @@ figure.lh-img-holder {
 
   h2.contact-agent-prev-name {
     font-size: 1.1rem;
-    color: $main-color;
-    padding-bottom: .2em;
+    color: $main-lighter;
+    padding-bottom: 0;
   }
 
   &-details {
@@ -452,7 +465,9 @@ figure.lh-img-holder {
   }
 
   .fa-star {
-    color: $main-color;
+    color: $main-lighter;
+    font-size: .8rem;
+    margin: .6em 0 1em;
   }
 
   &-controlls {
@@ -544,6 +559,7 @@ figure.lh-img-holder {
     width: 100%;
     border: 1px solid $lightergray;
     box-shadow: inset 0px 9px 15px -10px #d6dce6;
+    border-radius: .25rem;
   }
 
   .lh-custom-select-wrap {
@@ -554,6 +570,7 @@ figure.lh-img-holder {
       right: 12px;
       top: 16px;
       content: "\f078";
+      color: $lightergray !important;
     }
   }
 
@@ -695,7 +712,7 @@ figure.lh-img-holder {
 }
 
 .lh-virutal-tour {
-  margin: 3em 0 4em;
+  margin: 3em 0 2em;
   display: flex;
   flex-direction: column;
 
@@ -726,7 +743,7 @@ figure.lh-img-holder {
 
 .lh-features {
   .list-home-title {
-    padding: .5em 0
+    padding: .3em 0;
   }
 
   .hr-down {
@@ -744,9 +761,9 @@ figure.lh-img-holder {
 }
 
 .lh-house-prop-desc {
-  p {
+  .lh-description {
     padding-right: 25px;
-    color: #525b6a;
+    color: $gray-paragraph;
     font-size: 17.3px;
     margin-bottom: 1em;
   }
@@ -912,7 +929,6 @@ figure.lh-img-holder {
   color: $main-color;
 }
 
-
 %fa-base {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -921,7 +937,7 @@ figure.lh-img-holder {
   line-height: 1;
   display: inline-block;
   position: absolute;
-  color: #a6b4c6;
+  color: black;
   top: 1.2em;
 }
 
@@ -1077,6 +1093,16 @@ figure.lh-img-holder {
 
 .lh-property-slider {
   margin: 20px 20px 20px 0;
+  
+  .red-dot {
+    width: 10px;
+    height: 10px;
+    background: red;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 4px;
+  }
 
   .list-home-title {
     margin: 40px 0 15px;

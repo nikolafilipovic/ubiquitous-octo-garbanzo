@@ -3026,7 +3026,8 @@ footer {
   margin: 0 !important; }
 
 body {
-  background: lightblue; }
+  background: lightblue;
+  font-family: "Graphik Regular", sans-serif, Arial, sans-serif; }
 
 .lh-wrapper {
   max-width: 1024px;
@@ -3034,14 +3035,12 @@ body {
   background: white; }
 
 .list-home-title {
-  font-family: "Graphik Regular", sans-serif, Arial, sans-serif;
-  font-size: 21px; }
+  font-size: 24px; }
 
 .list-home-title--not-collapsable {
-  font-family: "Graphik Regular", sans-serif, Arial, sans-serif;
-  font-size: 21px;
+  font-size: 24px;
   padding: 0;
-  margin-bottom: 1em; }
+  margin-bottom: .6em; }
 
 .lh-name {
   font-family: "Graphik Light", sans-serif, Arial, sans-serif;
@@ -3053,16 +3052,17 @@ body {
 .b-shadow {
   box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27); }
 
+/*.round-blue {
+  color: white;
+  background: $main-color;
+  padding: .8em;
+  border-radius: 50%;
+  // TO BE REMOVED
+} */
 .round-blue {
   color: white;
-  background: #00acee;
-  padding: .8em;
-  border-radius: 50%; }
-
-.round-num {
-  color: white;
   font-size: 1.5rem;
-  background: #00aced;
+  background: #49c4f3;
   text-align: center;
   font-style: normal;
   height: 50px;
@@ -3071,6 +3071,16 @@ body {
   border-radius: 50%;
   display: inline-block; }
 
+.agent-round {
+  padding-top: 15px !important;
+  font-size: 1.2rem !important; }
+  @media (min-width: 768px) {
+    .agent-round {
+      height: 40px !important;
+      padding-top: 13px !important;
+      font-size: 1rem !important;
+      width: 40px !important; } }
+
 .small-caps {
   font-size: 14px !important; }
 
@@ -3078,7 +3088,7 @@ body {
   font-size: 1.1rem;
   display: inline-block;
   padding: 1.2rem 0;
-  font-weight: 600; }
+  font-family: "Graphik Medium", sans-serif, Arial, Helvetica, sans-serif; }
   @media (min-width: 768px) {
     .font-padding-stilization {
       padding: 0.5rem 0; } }
@@ -3105,7 +3115,7 @@ body {
         color: white !important; }
     .modal-menu .various-link .faw-options {
       display: flex;
-      justify-content: space-between;
+      flex: 1;
       padding: 0 0 0 .6em; }
       .modal-menu .various-link .faw-options .far,
       .modal-menu .various-link .faw-options .fas {
@@ -3120,7 +3130,8 @@ body {
 
 .close-link {
   color: #b6c2c7 !important;
-  font-size: 3rem !important; }
+  font-size: 3rem !important;
+  margin-left: auto; }
 
 figure.lh-img-holder {
   margin-bottom: 0 !important;
@@ -3179,74 +3190,69 @@ figure.lh-img-holder {
     color: white;
     padding-left: 1.5em; }
 
-.lh-info-imp {
-  font-weight: 600; }
-
 .crimson-dot {
+  display: inline-block;
   height: 10px;
   width: 10px;
-  padding: 0 !important;
+  padding-right: .5em;
   background-color: crimson;
   border-radius: 50%; }
 
 .lh-info-wrapper {
   color: black;
   margin-top: 1.87em;
-  padding-left: 1.87em; }
+  padding-left: 1.87em;
+  /* a.lh-info-imp {
+    padding: 0;
+    margin: 1.6rem 0;
+
+    @include respond-to('desktop') {
+      margin: 0.6rem 0 2rem;
+    }
+  } */ }
   .lh-info-wrapper p {
     padding: 0;
     font-size: 1.1rem; }
   .lh-info-wrapper span.small-dot {
-    margin: 0 .5rem;
-    font-weight: 100; }
-  .lh-info-wrapper .small-imp {
-    font-size: .9rem;
-    padding-left: .3em;
-    padding: 0; }
-    .lh-info-wrapper .small-imp:before {
-      display: inline-block;
-      content: "";
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      margin: 0 .5em .1em 0;
-      color: crimson; }
-  .lh-info-wrapper .large-link {
+    margin: 0 .3rem;
+    font-weight: bold; }
+
+.small-imp {
+  font-family: "Graphik Medium", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  padding: 0; }
+
+.map-price {
+  font-family: "Graphik Medium", sans-serif, Arial, Helvetica, sans-serif;
+  padding-left: 0 !important; }
+  @media (min-width: 768px) {
+    .map-price {
+      padding-left: 2em !important; } }
+  .map-price .lh-money {
+    margin-top: .5rem;
+    padding-bottom: 0;
+    font-size: 34px; }
+  .map-price .house-for-sale {
+    padding-left: .3em; }
+  .map-price .large-link {
+    color: #49c4f3;
     display: block;
     font-size: 1.2rem;
-    font-weight: bold;
-    padding: .5em 0; }
-    .lh-info-wrapper .large-link .fasarrow {
+    padding: 1em 0; }
+    .map-price .large-link .fasarrow {
       padding-left: .5em; }
-  .lh-info-wrapper a.lh-info-imp {
-    padding: 0;
-    margin: 1.6rem 0; }
-    @media (min-width: 768px) {
-      .lh-info-wrapper a.lh-info-imp {
-        margin: 0.6rem 0 2rem; } }
-  .lh-info-wrapper .lh-money {
-    margin-top: .5rem;
-    padding-bottom: 0; }
-  .lh-info-wrapper .lh-map {
-    padding-right: 25px;
+  .map-price .lh-map {
     justify-content: flex-end; }
     @media (min-width: 768px) {
-      .lh-info-wrapper .lh-map {
+      .map-price .lh-map {
+        padding: 10px 25px 0 0;
         padding-right: 0;
         justify-content: flex-start; } }
-    .lh-info-wrapper .lh-map img {
+    .map-price .lh-map img {
       display: block;
       width: 120px;
       height: 120px; }
-
-.red-dot {
-  width: 10px;
-  height: 10px;
-  background: red;
-  display: inline-block;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  margin-right: 4px; }
 
 .lh-house-details.lh-house-details--big .agent-phone,
 .lh-house-details.lh-house-details--big .agent-text {
@@ -3259,14 +3265,17 @@ figure.lh-img-holder {
     transform: rotate(90deg); }
 
 .lh-house-details {
-  margin: 3em 0; }
+  margin: 2em 0 3em; }
   .lh-house-details .lh-house {
     margin-bottom: 1.3rem; }
     .lh-house-details .lh-house--desktop {
       margin-top: 2rem; }
   .lh-house-details .agent-phone-text {
-    font-size: 1rem;
-    margin-left: 0.6em; }
+    font-size: 1.1rem;
+    margin: 0 0em 0 .7em; }
+    @media (min-width: 960px) {
+      .lh-house-details .agent-phone-text {
+        margin: 0 1.5em 0 .7em; } }
   .lh-house-details .agent-text {
     margin-left: 1.4em;
     color: white;
@@ -3299,10 +3308,10 @@ figure.lh-img-holder {
       margin-left: 0;
       width: calc(100% - 20px); } }
   .hr-up {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     border-top: 1px solid #d6dce6; }
   .hr-down {
-    padding-top: 25px;
+    padding-top: 20px;
     border-bottom: 1px solid #d6dce6; }
 
 .lh-pictures {
@@ -3321,7 +3330,11 @@ figure.lh-img-holder {
     margin-left: 4px; }
 
 .contact-agent p {
-  color: #4a505d !important; }
+  color: #5c78b4 !important;
+  padding: .1em 0; }
+
+.contact-agent .contact-agent-prev {
+  margin-top: 1.5em; }
 
 @media (min-width: 768px) {
   .contact-agent {
@@ -3335,14 +3348,16 @@ figure.lh-img-holder {
 
 .contact-agent h2.contact-agent-prev-name {
   font-size: 1.1rem;
-  color: #00acee;
-  padding-bottom: .2em; }
+  color: #49c4f3;
+  padding-bottom: 0; }
 
 .contact-agent-details {
   padding-left: .8em !important; }
 
 .contact-agent .fa-star {
-  color: #00acee; }
+  color: #49c4f3;
+  font-size: .8rem;
+  margin: .6em 0 1em; }
 
 .contact-agent-controlls {
   position: absolute;
@@ -3410,7 +3425,8 @@ figure.lh-img-holder {
     display: block;
     width: 100%;
     border: 1px solid #d6dce6;
-    box-shadow: inset 0px 9px 15px -10px #d6dce6; }
+    box-shadow: inset 0px 9px 15px -10px #d6dce6;
+    border-radius: .25rem; }
   .contact-agent-form .lh-custom-select-wrap,
   .lh-form .lh-custom-select-wrap {
     position: relative; }
@@ -3418,7 +3434,8 @@ figure.lh-img-holder {
     .lh-form .lh-custom-select-wrap:before {
       right: 12px;
       top: 16px;
-      content: "\f078"; }
+      content: "\f078";
+      color: #d6dce6 !important; }
   .contact-agent-form select::-ms-expand,
   .lh-form select::-ms-expand {
     display: none; }
@@ -3522,7 +3539,7 @@ figure.lh-img-holder {
     margin-right: .6em; }
 
 .lh-virutal-tour {
-  margin: 3em 0 4em;
+  margin: 3em 0 2em;
   display: flex;
   flex-direction: column; }
   .lh-virutal-tour img {
@@ -3545,7 +3562,7 @@ figure.lh-img-holder {
   color: #d6dce6; }
 
 .lh-features .list-home-title {
-  padding: .5em 0; }
+  padding: .3em 0; }
 
 .lh-features .hr-down {
   margin-bottom: 2em; }
@@ -3557,7 +3574,7 @@ figure.lh-img-holder {
   font-size: 15px;
   font-weight: bold; }
 
-.lh-house-prop-desc p {
+.lh-house-prop-desc .lh-description {
   padding-right: 25px;
   color: #525b6a;
   font-size: 17.3px;
@@ -3690,7 +3707,7 @@ figure.lh-img-holder {
   line-height: 1;
   display: inline-block;
   position: absolute;
-  color: #a6b4c6;
+  color: black;
   top: 1.2em; }
 
 .contact-agent-form .has-dollar-left:before,
@@ -3799,6 +3816,14 @@ figure.lh-img-holder {
 
 .lh-property-slider {
   margin: 20px 20px 20px 0; }
+  .lh-property-slider .red-dot {
+    width: 10px;
+    height: 10px;
+    background: red;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 4px; }
   .lh-property-slider .list-home-title {
     margin: 40px 0 15px; }
   .lh-property-slider .offer-link {
