@@ -4,6 +4,7 @@
 }
 
 body {
+  background: lightblue;
   font-family: $default-font-family, Arial, sans-serif;
 }
 
@@ -874,6 +875,7 @@ figure.lh-img-holder {
   h1 {
     padding-top: 1.5em;
     margin-bottom: 1em;
+    padding-bottom: 0;
   }
 
   ul {
@@ -1005,6 +1007,7 @@ figure.lh-img-holder {
 
 .border-dotted {
   border: 2px dotted $lightergray;
+  border-width: 3px;
   padding: 1em;
   font-size: 1.25rem;
   margin-right: 1em;
@@ -1036,27 +1039,40 @@ figure.lh-img-holder {
 }
 
 .lh-transportation {
+  font-family: $bold-font-family, Arial, Helvetica, sans-serif;
   .list-home-title {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+  }
+  .data-by {
+    font-family: $default-font-family !important;
+    color: black;
+  }
+
+  p,
+  a {
+    font-size: 1rem;
+    color: $main-lighter;
+    font-family: $bold-font-family, Arial, Helvetica, sans-serif;
   }
 
   .transp-desc {
     padding: .6em 0;
 
-    p,
-    a {
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-
     p {
-      color: #a8b6c6;
+      color: $grayish;
     }
   }
 }
 
 .lh-nearby-places {
   margin: 25px 0;
+
+  .round-blue {
+    height: 35px !important;
+    font-size: 1rem !important;
+    padding-top: 8.5px !important;
+    width: 35px !important;
+  }
 
   .list-home-title {
     padding-bottom: 1.1em;
@@ -1078,9 +1094,8 @@ figure.lh-img-holder {
 
   .stars-reviews {
     display: flex;
-    align-items: center;
-    height: 35px;
-    margin-bottom: .4em;
+    align-items: flex-start;
+    margin: .2em 0 .8em;
 
     i {
       color: $main-color;
@@ -1088,7 +1103,9 @@ figure.lh-img-holder {
     }
 
     span {
-      padding-left: .3em;
+      padding: 0 0 0 .3em;
+      margin-top: -3px;
+      font-family: $default-font-family, Arial, Helvetica, sans-serif !important;
     }
   }
 }

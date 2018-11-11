@@ -600,7 +600,7 @@ Template Name: List Homes
               </div>
             </div>
           </div>
-          <p class="small-caps">Data by <a class="small-caps" href="#"> walkscore</a></p>
+          <p class="small-caps data-by">Data by <a class="small-caps" href="#"> walkscore</a></p>
           <div class="hr hr-down"></div>
         </div> <!-- lh-transportation -->
 
