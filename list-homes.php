@@ -565,7 +565,7 @@ Template Name: List Homes
             Transportation
             <i class="fas fa-chevron-up faup"></i>
           </h1>
-          <div class="collapse show" id="lh-transportation">
+          <div class="transporation-group collapse show" id="lh-transportation">
             <div class="row no-gutters">
               <div class="col-12 col-md-6">
                 <div class="mb-4 row no-gutters">
@@ -604,9 +604,8 @@ Template Name: List Homes
                 </div>
               </div>
             </div>
-            <p class="small-caps">Data by <a class="small-caps" href="#"> walkscore</a></p>
+            <p class="small-caps data-by">Data by <a class="small-caps" href="#"> walkscore</a></p>
           </div>
-          <p class="small-caps data-by">Data by <a class="small-caps" href="#"> walkscore</a></p>
           <div class="hr hr-down"></div>
         </div> <!-- lh-transportation -->
 
@@ -616,7 +615,7 @@ Template Name: List Homes
             <i class="fas fa-chevron-up faup"></i>
           </h1>
           <div id="lh-nearby-places" class="collapse show">
-            <div class="row no-gutters">
+            <div class="nearby-places-group row no-gutters">
               <div class="d-flex col-12 col-md-6">
                 <div>
                   <i class="fas fa-shopping-cart round-blue"></i>
