@@ -163,6 +163,22 @@ jQuery(document).ready(function(){
         openFilter();
     });
 
+    jQuery('.toggle-collapse').click(function() {
+        var elem = jQuery(jQuery(this).data('target'));
+        if(elem.hasClass('show')) {
+            $(this).find('i').css({
+                transform: 'rotate(180deg)',
+                color: '#cbd3dd'
+            });
+        } else {
+            $(this).find('i').css({
+                transform: 'rotate(0)',
+                color: '#17acee'
+            });
+        }
+        elem.collapse("toggle");
+    });
+
     // to be replaced later
     var openModal = jQuery("#open-modal");
     var $ = jQuery;
