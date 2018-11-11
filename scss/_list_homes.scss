@@ -721,6 +721,9 @@ figure.lh-img-holder {
     height: 100px;
     max-height: 200px;
     min-height: 80px;
+    &:hover {
+      border: 1px solid black;
+    }
   }
 
   button {
