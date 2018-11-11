@@ -186,238 +186,239 @@ Template Name: List Homes
 
         <div class="lh-features">
           <div class="hr hr-up d-block d-md-none"></div>
-          <h1 class="list-home-title">
+          <h1 class="list-home-title toggle-collapse" data-target="#lh-property-amentities">
             Property Amentities
             <i class="fas fa-chevron-down fadown"></i>
           </h1>
           <div class="hr hr-down d-block d-md-none"></div>
-
-          <h2 class="lh-subtitle">
-            Features
-          </h2>
-          <div class="lh-features-list-wrap">
-            <div class="row">
-              <div class="col-6 col-md-4">
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    <span>Type:</span>
+        
+          <div class="collapse show" id="lh-property-amentities">
+            <h2 class="lh-subtitle">
+              Features
+            </h2>
+            <div class="lh-features-list-wrap">
+              <div class="row">
+                <div class="col-6 col-md-4">
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <span>Type:</span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>House</strong>
+                    </div>
                   </div>
-                  <div class="col-6 text-right">
-                    <strong>House</strong>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <span>Stories:</span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>2</strong>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <span>Beds:</span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>4</strong>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <span>Baths:</span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>2</strong>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <span>SqFt:</span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>556</strong>
+                    </div>
+                  </div>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <span>
+                        Year Built:
+                      </span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>2002</strong>
+                    </div>
                   </div>
                 </div>
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    <span>Stories:</span>
+                <div class="col-6 col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <span>
+                        Pool:
+                      </span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>Yes</strong>
+                    </div>
                   </div>
-                  <div class="col-6 text-right">
-                    <strong>2</strong>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <span>
+                        Spa:
+                      </span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>Yes</strong>
+                    </div>
                   </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    <span>Beds:</span>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <span>Lot size:</span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>12000</strong>
+                    </div>
                   </div>
-                  <div class="col-6 text-right">
-                    <strong>4</strong>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      Garage spaces:
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>4</strong>
+                    </div>
                   </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    <span>Baths:</span>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                      <span>Carportspaces:</span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>2</strong>
+                    </div>
                   </div>
-                  <div class="col-6 text-right">
-                    <strong>2</strong>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    <span>SqFt:</span>
-                  </div>
-                  <div class="col-6 text-right">
-                    <strong>556</strong>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    <span>
-                      Year Built:
-                    </span>
-                  </div>
-                  <div class="col-6 text-right">
-                    <strong>2002</strong>
+                  <div class="row no-gutters">
+                    <div class="col-6">
+                    <span> 
+                      Fireplace:
+                      </span>
+                    </div>
+                    <div class="col-6 text-right">
+                      <strong>Yes</strong>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-md-5">
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    <span>
-                      Pool:
-                    </span>
-                  </div>
-                  <div class="col-6 text-right">
-                    <strong>Yes</strong>
-                  </div>
+            </div>
+            <h2 class="lh-subtitle mt-3">
+              Room Details
+            </h2>
+            <div class="lh-details-block">
+              <p>Kitchen Features</p>
+              <strong>-</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Master bathroom</p>
+              <strong>Toilet, Soap dispenser, TV, Roof</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Laundry</p>
+              <strong>Dryer, Detergent, Ironing board</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Dining area</p>
+              <strong>-</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Basement</p>
+              <strong>Table tennis, Cinema, Popcorn</strong>
+            </div>
+            <div class="lh-details-block no-border">
+              <p>Basement</p>
+              <strong>Office desk, Chair, Security safe</strong>
+            </div>
+            <h2 class="lh-subtitle">
+              Construction
+            </h2>
+            <div class="lh-details-block">
+              <p>Architecture</p>
+              <strong>-</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Finish</p>
+              <strong>One finish, Another one</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Frame</p>
+              <strong>Item, Another item</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Roofing</p>
+              <strong>-</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Fencing</p>
+              <strong>Wooden</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Cooling</p>
+              <strong>Air condition</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Heating</p>
+              <strong>-</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Utilities</p>
+              <strong>Item, Another item</strong>
+            </div>
+            <div class="lh-details-block">
+              <p>Water</p>
+              <strong>Yes</strong>
+            </div>
+            <div class="lh-details-block no-border">
+              <p>Sewer</p>
+              <strong>Yes</strong>
+            </div>
+            <h2 class="lh-subtitle">
+              Other
+            </h2>
+            <div class="lh-details-block no-border--desktop">
+              <div class="row no-gutters">
+                <div class="col-12 col-md-3">
+                  <p>HOA: <strong>Yes</strong></p>
                 </div>
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    <span>
-                      Spa:
-                    </span>
-                  </div>
-                  <div class="col-6 text-right">
-                    <strong>Yes</strong>
-                  </div>
+                <div class="col-12 col-md-3">
+                  <p>HOA free: <strong>$60</strong></p>
                 </div>
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    <span>Lot size:</span>
-                  </div>
-                  <div class="col-6 text-right">
-                    <strong>12000</strong>
-                  </div>
+                <div class="col-12 col-md-5">
+                  <p class="mb-4">HOA Frequency: <strong>Monthly</strong></p>
                 </div>
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    Garage spaces:
-                  </div>
-                  <div class="col-6 text-right">
-                    <strong>4</strong>
-                  </div>
+              </div>
+            </div>
+
+            <div class="lh-provider">
+              <div class="lh-license">
+                <p>Listing provided by</p>
+                <span class="font-padding-stilization">
+                  <a href="#">Samuel Shechter</a>, License #357382,
+                  <a href="#">Quicksilver Realty</a> inc.,
+                  (404) 624-6362, Source: First Multiple Listing Service.
+                  <a href="#">MLS Disclaimer</a>
+                </span>
+              </div>
+
+              <div class="d-flex d-md-none">
+                <div class="offer-link">
+                  <a href="#">Make an offer</a>
+                  <i class="fas fa-arrow-right fasarrow"></i>
                 </div>
-                <div class="row no-gutters">
-                  <div class="col-6">
-                    <span>Carportspaces:</span>
-                  </div>
-                  <div class="col-6 text-right">
-                    <strong>2</strong>
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-6">
-                   <span> 
-                    Fireplace:
-                    </span>
-                  </div>
-                  <div class="col-6 text-right">
-                    <strong>Yes</strong>
-                  </div>
+
+                <div class="offer-link">
+                  <a href="#">Schedule tour</a>
+                  <i class="fas fa-arrow-right fasarrow"></i>
                 </div>
               </div>
             </div>
           </div>
-          <h2 class="lh-subtitle mt-3">
-            Room Details
-          </h2>
-          <div class="lh-details-block">
-            <p>Kitchen Features</p>
-            <strong>-</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Master bathroom</p>
-            <strong>Toilet, Soap dispenser, TV, Roof</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Laundry</p>
-            <strong>Dryer, Detergent, Ironing board</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Dining area</p>
-            <strong>-</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Basement</p>
-            <strong>Table tennis, Cinema, Popcorn</strong>
-          </div>
-          <div class="lh-details-block no-border">
-            <p>Basement</p>
-            <strong>Office desk, Chair, Security safe</strong>
-          </div>
-          <h2 class="lh-subtitle">
-            Construction
-          </h2>
-          <div class="lh-details-block">
-            <p>Architecture</p>
-            <strong>-</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Finish</p>
-            <strong>One finish, Another one</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Frame</p>
-            <strong>Item, Another item</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Roofing</p>
-            <strong>-</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Fencing</p>
-            <strong>Wooden</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Cooling</p>
-            <strong>Air condition</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Heating</p>
-            <strong>-</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Utilities</p>
-            <strong>Item, Another item</strong>
-          </div>
-          <div class="lh-details-block">
-            <p>Water</p>
-            <strong>Yes</strong>
-          </div>
-          <div class="lh-details-block no-border">
-            <p>Sewer</p>
-            <strong>Yes</strong>
-          </div>
-          <h2 class="lh-subtitle">
-            Other
-          </h2>
-          <div class="lh-details-block no-border--desktop">
-            <div class="row no-gutters">
-              <div class="col-12 col-md-3">
-                <p>HOA: <strong>Yes</strong></p>
-              </div>
-              <div class="col-12 col-md-3">
-                <p>HOA free: <strong>$60</strong></p>
-              </div>
-              <div class="col-12 col-md-5">
-                <p class="mb-4">HOA Frequency: <strong>Monthly</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="lh-provider">
-            <div class="lh-license">
-              <p>Listing provided by</p>
-              <span class="font-padding-stilization">
-                <a href="#">Samuel Shechter</a>, License #357382,
-                <a href="#">Quicksilver Realty</a> inc.,
-                (404) 624-6362, Source: First Multiple Listing Service.
-                <a href="#">MLS Disclaimer</a>
-              </span>
-            </div>
-
-            <div class="d-flex d-md-none">
-              <div class="offer-link">
-                <a href="#">Make an offer</a>
-                <i class="fas fa-arrow-right fasarrow"></i>
-              </div>
-
-              <div class="offer-link">
-                <a href="#">Schedule tour</a>
-                <i class="fas fa-arrow-right fasarrow"></i>
-              </div>
-            </div>
-          </div>
-
         </div> <!-- lh-features -->
 
         <div class="lh-finance w-100">
