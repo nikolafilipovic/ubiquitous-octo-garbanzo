@@ -722,6 +722,9 @@ figure.lh-img-holder {
     height: 100px;
     max-height: 200px;
     min-height: 80px;
+    &:hover {
+      border: 1px solid black;
+    }
   }
 
   button {
@@ -1112,7 +1115,10 @@ figure.lh-img-holder {
 }
 
 .lh-school-rankings {
-  margin-right: 20px;
+
+  #lh-school-ranking {
+    margin-right: 20px;
+  }
 
   .school-rank-group {
     display: flex;

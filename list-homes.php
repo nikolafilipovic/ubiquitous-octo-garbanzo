@@ -922,7 +922,7 @@ Template Name: List Homes
 
           <div class="form-group">
             <div class="has-mail-left">
-              <input type="email" class="form-control" placeholder="Email" />
+              <input type="text" class="form-control" placeholder="Email" />
             </div>
           </div>
 
