@@ -200,7 +200,7 @@ Template Name: List Homes
               <div class="col-6 col-md-4">
                 <div class="row no-gutters">
                   <div class="col-6">
-                    Type:
+                    <span>Type:</span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>House</strong>
@@ -208,7 +208,7 @@ Template Name: List Homes
                 </div>
                 <div class="row no-gutters">
                   <div class="col-6">
-                    Stories:
+                    <span>Stories:</span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>2</strong>
@@ -216,7 +216,7 @@ Template Name: List Homes
                 </div>
                 <div class="row no-gutters">
                   <div class="col-6">
-                    Beds:
+                    <span>Beds:</span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>4</strong>
@@ -224,7 +224,7 @@ Template Name: List Homes
                 </div>
                 <div class="row no-gutters">
                   <div class="col-6">
-                    Baths:
+                    <span>Baths:</span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>2</strong>
@@ -232,7 +232,7 @@ Template Name: List Homes
                 </div>
                 <div class="row no-gutters">
                   <div class="col-6">
-                    SqFt:
+                    <span>SqFt:</span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>556</strong>
@@ -240,7 +240,9 @@ Template Name: List Homes
                 </div>
                 <div class="row no-gutters">
                   <div class="col-6">
-                    Year Built:
+                    <span>
+                      Year Built:
+                    </span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>2002</strong>
@@ -250,7 +252,9 @@ Template Name: List Homes
               <div class="col-6 col-md-5">
                 <div class="row no-gutters">
                   <div class="col-6">
-                    Pool:
+                    <span>
+                      Pool:
+                    </span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>Yes</strong>
@@ -258,7 +262,9 @@ Template Name: List Homes
                 </div>
                 <div class="row no-gutters">
                   <div class="col-6">
-                    Spa:
+                    <span>
+                      Spa:
+                    </span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>Yes</strong>
@@ -266,7 +272,7 @@ Template Name: List Homes
                 </div>
                 <div class="row no-gutters">
                   <div class="col-6">
-                    Lot size:
+                    <span>Lot size:</span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>12000</strong>
@@ -282,7 +288,7 @@ Template Name: List Homes
                 </div>
                 <div class="row no-gutters">
                   <div class="col-6">
-                    Carportspaces:
+                    <span>Carportspaces:</span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>2</strong>
@@ -290,7 +296,9 @@ Template Name: List Homes
                 </div>
                 <div class="row no-gutters">
                   <div class="col-6">
+                   <span> 
                     Fireplace:
+                    </span>
                   </div>
                   <div class="col-6 text-right">
                     <strong>Yes</strong>
@@ -322,7 +330,7 @@ Template Name: List Homes
             <p>Basement</p>
             <strong>Table tennis, Cinema, Popcorn</strong>
           </div>
-          <div class="lh-details-block">
+          <div class="lh-details-block no-border">
             <p>Basement</p>
             <strong>Office desk, Chair, Security safe</strong>
           </div>
@@ -365,14 +373,14 @@ Template Name: List Homes
             <p>Water</p>
             <strong>Yes</strong>
           </div>
-          <div class="lh-details-block">
+          <div class="lh-details-block no-border">
             <p>Sewer</p>
             <strong>Yes</strong>
           </div>
           <h2 class="lh-subtitle">
             Other
           </h2>
-          <div class="lh-details-block">
+          <div class="lh-details-block no-border--desktop">
             <div class="row no-gutters">
               <div class="col-12 col-md-3">
                 <p>HOA: <strong>Yes</strong></p>
@@ -387,15 +395,17 @@ Template Name: List Homes
           </div>
 
           <div class="lh-provider">
-            <p>Listing provided by</p>
-            <span class="font-padding-stilization">
-              <a href="#">Samuel Shechter</a>, License #357382,
-              <a href="#">Quicksilver Realty</a> inc.,<br />
-              (404) 624-6362, Source: First Multiple Listing Service.
-              <a href="#">MLS Disclaimer</a>
-            </span>
+            <div class="lh-license">
+              <p>Listing provided by</p>
+              <span class="font-padding-stilization">
+                <a href="#">Samuel Shechter</a>, License #357382,
+                <a href="#">Quicksilver Realty</a> inc.,
+                (404) 624-6362, Source: First Multiple Listing Service.
+                <a href="#">MLS Disclaimer</a>
+              </span>
+            </div>
 
-            <div class="d-flex d-md-none justify-content-center">
+            <div class="d-flex d-md-none">
               <div class="offer-link">
                 <a href="#">Make an offer</a>
                 <i class="fas fa-arrow-right fasarrow"></i>
@@ -426,14 +436,14 @@ Template Name: List Homes
                 <li>HOA <strong>$60</strong></li>
               </ul>
             </div>
-            <div class="col-7 col-md-6 d-flex justify-content-end">
+            <div class="col-7 col-md-6 d-flex justify-content-center">
               <div class="chart-wrapper">
                 <canvas width="200" height="200" id="lh-chart"></canvas>
               </div>
             </div>
           </div>
           <div class="row no-gutters">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8 d-flex flex-column align-items-center">
               <div class="offer-link">
                 <a href="#">Get pre-qualified</a>
                 <i class="fas fa-arrow-right fasarrow"></i>

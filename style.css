@@ -3035,7 +3035,8 @@ body {
   background: white; }
 
 .list-home-title {
-  font-size: 24px; }
+  font-size: 24px;
+  font-family: "Graphik Regular", sans-serif, Arial, Helvetica, sans-serif; }
 
 .list-home-title--not-collapsable {
   font-size: 24px;
@@ -3073,7 +3074,8 @@ body {
 
 .agent-round {
   padding-top: 15px !important;
-  font-size: 1.2rem !important; }
+  font-size: 1.2rem !important;
+  transform: rotate(90deg); }
   @media (min-width: 768px) {
     .agent-round {
       height: 40px !important;
@@ -3561,18 +3563,28 @@ figure.lh-img-holder {
 .fadown {
   color: #d6dce6; }
 
-.lh-features .list-home-title {
-  padding: .3em 0; }
+.lh-features {
+  font-family: "Graphik Light", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 16.5px !important; }
+  .lh-features .list-home-title {
+    padding: .3em 0; }
+  .lh-features .hr-down {
+    margin-bottom: 2em; }
+  .lh-features .lh-subtitle {
+    color: #49c4f3;
+    font-family: "Graphik Medium", sans-serif, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px; }
+    @media (min-width: 768px) {
+      .lh-features .lh-subtitle {
+        padding-top: 1.2em; } }
 
-.lh-features .hr-down {
-  margin-bottom: 2em; }
+.no-border {
+  border: none !important; }
 
-.lh-features .lh-subtitle {
-  color: #00acee;
-  padding-top: 1em;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: bold; }
+@media (min-width: 768px) {
+  .no-border--desktop {
+    border: none !important; } }
 
 .lh-house-prop-desc .lh-description {
   padding-right: 25px;
@@ -3581,12 +3593,23 @@ figure.lh-img-holder {
   margin-bottom: 1em; }
 
 .lh-features-list-wrap {
-  margin-right: 20px;
-  font-size: 13.6px; }
+  margin-right: 20px; }
 
 .lh-finance .offer-link {
-  margin: 3rem 0 2rem;
-  width: calc(100% - 20px); }
+  margin: 2rem 0 1.5rem;
+  width: calc(100% - 20px);
+  text-transform: none;
+  font-size: 17px !important;
+  padding: 15px !important;
+  align-self: flex-start; }
+  .lh-finance .offer-link .fasarrow {
+    padding-left: .5em; }
+  @media (min-width: 768px) {
+    .lh-finance .offer-link {
+      align-self: center;
+      width: calc(100% - 120px);
+      font-size: 16px !important;
+      padding: 13px !important; } }
 
 .lh-finance:before {
   content: "";
@@ -3606,7 +3629,7 @@ figure.lh-img-holder {
   margin-top: 3px; }
 
 .lh-finance h1 {
-  padding-top: 1em;
+  padding-top: 1.5em;
   margin-bottom: 1em; }
 
 .lh-finance ul li:nth-child(1):before {
@@ -3625,7 +3648,7 @@ figure.lh-img-holder {
   background: #d3dff8; }
 
 .lh-finance ul li {
-  font-size: 18px;
+  font-size: 16.5px;
   margin: .7em 0; }
   .lh-finance ul li:before {
     display: inline-block;
@@ -3644,24 +3667,32 @@ figure.lh-img-holder {
 .lh-details-block {
   border-bottom: 1px solid #d6dce6;
   margin-right: 20px;
-  margin-bottom: 1.3rem; }
+  margin-bottom: .8em; }
   .lh-details-block > strong {
     display: block;
-    margin-bottom: .5em;
-    font-size: 1rem; }
+    margin-bottom: .8em; }
+  .lh-details-block p, .lh-details-block strong {
+    font-size: 16.5px; }
 
-.lh-provider p,
+.lh-provider .lh-license {
+  width: 80%;
+  padding-bottom: .5em; }
+  @media (min-width: 768px) {
+    .lh-provider .lh-license {
+      padding-bottom: 0; } }
+
+.lh-provider p {
+  font-family: "Graphik Regular", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+
 .lh-provider span {
-  font-size: .8rem;
-  font-weight: 100; }
-
-.lh-provider p,
-.lh-provider a {
-  font-weight: 600; }
-
-.lh-provider span {
-  padding: .5em 0 2em;
-  display: block; }
+  font-size: .9rem;
+  padding: .5em 0 1em;
+  color: #525b6a;
+  display: block;
+  font-family: "Graphik Regular", sans-serif, Arial, Helvetica, sans-serif; }
+  .lh-provider span a {
+    color: #49c4f3; }
 
 .lh-provider .offer-link {
   margin: 0 10px 20px 0;

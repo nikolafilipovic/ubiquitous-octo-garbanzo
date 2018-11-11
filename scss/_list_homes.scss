@@ -17,6 +17,7 @@ body {
 
 .list-home-title {
   font-size: 24px;
+  font-family: $default-font-family, Arial, Helvetica, sans-serif;
 }
 
 .list-home-title--not-collapsable {
@@ -62,6 +63,7 @@ body {
 .agent-round {
   padding-top: 15px !important;
   font-size: 1.2rem !important;
+  transform: rotate(90deg);
   @include respond-to('desktop') {
     height: 40px !important;
     padding-top: 13px !important;
@@ -742,6 +744,8 @@ figure.lh-img-holder {
 }
 
 .lh-features {
+  font-family: $light-font-family, Arial, Helvetica, sans-serif;
+  font-size: 16.5px !important;
   .list-home-title {
     padding: .3em 0;
   }
@@ -751,13 +755,25 @@ figure.lh-img-holder {
   }
 
   .lh-subtitle {
-    color: $main-color;
-    padding-top: 1em;
+    color: $main-lighter;
+    font-family: $bold-font-family, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 14px;
+    @include respond-to('desktop') {
+      padding-top: 1.2em;
+    }
   }
 
+}
+
+.no-border {
+  border: none !important;
+}
+
+.no-border--desktop {
+  @include respond-to('desktop') {
+    border: none !important;
+  }
 }
 
 .lh-house-prop-desc {
@@ -771,13 +787,26 @@ figure.lh-img-holder {
 
 .lh-features-list-wrap {
   margin-right: 20px;
-  font-size: 13.6px;
 }
 
 .lh-finance {
   .offer-link {
-    margin: 3rem 0 2rem;
+    margin: 2rem 0 1.5rem;
     width: calc(100% - 20px);
+    text-transform: none;
+    font-size: 17px !important;
+    padding: 15px !important;
+    align-self: flex-start;
+    .fasarrow {
+      padding-left: .5em;
+    }
+    
+    @include respond-to('desktop') {
+      align-self: center;
+      width: calc(100% - 120px);
+      font-size: 16px !important;
+      padding: 13px !important;
+    }
   }
 
   &:before {
@@ -801,7 +830,7 @@ figure.lh-img-holder {
   }
 
   h1 {
-    padding-top: 1em;
+    padding-top: 1.5em;
     margin-bottom: 1em;
   }
 
@@ -846,7 +875,7 @@ figure.lh-img-holder {
         margin: 0 .5em .1em 0;
       }
 
-      font-size: 18px;
+      font-size: 16.5px;
       margin: .7em 0;
 
       strong {
@@ -864,32 +893,43 @@ figure.lh-img-holder {
 .lh-details-block {
   border-bottom: 1px solid $lightergray;
   margin-right: 20px;
-  margin-bottom: 1.3rem;
+  margin-bottom: .8em;
 
-  &>strong {
+  & > strong {
     display: block;
-    margin-bottom: .5em;
-    font-size: 1rem;
+    margin-bottom: .8em;
+  }
+
+  p, strong {
+    font-size: 16.5px;
   }
 }
 
 .lh-provider {
-
-  p,
-  span {
-    font-size: .8rem;
-    font-weight: 100;
+  .lh-license {
+    width: 80%;
+    padding-bottom: .5em;
+    @include respond-to('desktop') {
+      padding-bottom: 0;
+    }
   }
-
-  p,
-  a {
-    font-weight: 600;
+  
+  p {
+    font-family: $default-font-family, Arial, Helvetica, sans-serif;
+    font-size: 15px;
   }
-
+  
   span {
-    padding: .5em 0 2em;
+    font-size: .9rem;
+    padding: .5em 0 1em;
+    color: $gray-paragraph;
     display: block;
+    font-family: $default-font-family, Arial, Helvetica, sans-serif;
+    a {
+      color: $main-lighter;
+    }
   }
+
 
   .offer-link {
     margin: 0 10px 20px 0;

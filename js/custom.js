@@ -92,7 +92,7 @@ jQuery(document).ready(function () {
             ctx.font = font;
             ctx.textBaseline = "middle";
 
-            var textX = Math.round(width / 2 -          ctx.measureText(text).width/2),
+            var textX = Math.round(width / 2 - ctx.measureText(text).width/2),
                 textY = height / 2;
                 
         textY += fontOpts.offsetY || 0;
@@ -102,8 +102,8 @@ jQuery(document).ready(function () {
 
      Chart.pluginService.register({
          beforeDraw: function(chart) { 
-            drawChartText(chart, "$1,994", {weight: "bold", offsetY: 10});
-            drawChartText(chart, "YOUR PAYMENT", {size: "1em", offsetY: -10});
+            drawChartText(chart, "$1,994", {weight: "bold", offsetY: 15});
+            drawChartText(chart, "YOUR PAYMENT", {size: "1em", offsetY: -15});
         }
      });
 
@@ -136,7 +136,16 @@ jQuery(document).ready(function () {
             legend: {
                 display: false
             },
-            cutoutPercentage: 85
+            cutoutPercentage: 85,
+            tooltips: {
+                callbacks: {
+                    label: function(item, data) {
+                        var label = data.labels[item.index];
+                        var val   = data.datasets[0].data[item.index];
+                        return label + ": $" + val;
+                    }
+                }
+            }
         }
     });
 
