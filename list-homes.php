@@ -457,20 +457,22 @@ Template Name: List Homes
         </div>
         <form class="lh-form">
           <label class="lh-label">Home Price</label>
-          <div class="form-group mt-1 mb-4">
-            <div class="has-dollar-left">
-              <input type="text" class="form-control" value="398,900" />
+          <div class="row no-gutters">
+            <div class="form-group mt-1 mb-4 col-12 col-md-9">
+              <div class="has-dollar-left">
+                <input type="text" class="form-control" value="398,900" />
+              </div>
             </div>
           </div>
 
           <label class="lh-label">Down payment</label>
           <div class="row no-gutters mb-3">
-            <div class="form-group mt-1 col-8 pr-1">
+            <div class="form-group mt-1 col-9 col-md-7 pr-1">
               <div class="has-dollar-left">
                 <input type="text" class="form-control" value="398,900" />
               </div>
             </div>
-            <div class="form-group mt-1 col-4 pl-1">
+            <div class="form-group mt-1 col-3 col-md-2 pl-1">
               <div class="has-amp-right">
                 <input type="text" class="form-control" value="20" />
               </div>
@@ -478,18 +480,22 @@ Template Name: List Homes
           </div>
 
           <label class="lh-label">Loan program</label>
-          <div class="lh-custom-select-wrap mb-4">
-            <select name="cars" class="lh-custom-select">
-              <option selected>30-year fixed</option>
-              <option>20-year fixed</option>
-              <option>10-year fixed</option>
-            </select>
+          <div class="row no-gutters">
+            <div class="col-12 col-md-9 lh-custom-select-wrap mb-4">
+              <select name="cars" class="lh-custom-select">
+                <option selected>30-year fixed</option>
+                <option>20-year fixed</option>
+                <option>10-year fixed</option>
+              </select>
+            </div>
           </div>
 
           <label class="lh-label">Interest rate</label>
-          <div class="form-group mt-1 mb-2">
-            <div class="has-amp-right">
-              <input type="text" class="form-control" value="4,627" />
+          <div class="row no-gutters">
+            <div class="col-12 col-md-9 form-group mt-1 mb-2">
+              <div class="has-amp-right">
+                <input type="text" class="form-control" value="4,627" />
+              </div>
             </div>
           </div>
 
@@ -502,12 +508,12 @@ Template Name: List Homes
 
           <label class="lh-label">Property tax</label>
           <div class="row no-gutters mb-3">
-            <div class="form-group mt-1 col-8 pr-1">
+            <div class="form-group mt-1 col-9 col-md-7 pr-1">
               <div class="has-year-right has-dollar-left">
                 <input type="text" class="form-control" value="2,712" />
               </div>
             </div>
-            <div class="form-group mt-1 col-4 pl-1">
+            <div class="form-group mt-1 col-3 col-md-2 pl-1">
               <div class="has-amp-right">
                 <input type="text" class="form-control" value="0.68" />
               </div>
@@ -515,9 +521,11 @@ Template Name: List Homes
           </div>
 
           <label class="lh-label">Property tax</label>
-          <div class="form-group mt-1 mb-2">
-            <div class="has-year-right has-dollar-left">
-              <input type="text" class="form-control" value="398,900" />
+          <div class="row no-gutters">
+            <div class="col-12 col-md-9 form-group mt-1 mb-2">
+              <div class="has-year-right has-dollar-left">
+                <input type="text" class="form-control" value="398,900" />
+              </div>
             </div>
           </div>
 
@@ -529,9 +537,11 @@ Template Name: List Homes
           </div>
 
           <label class="lh-label">HOA dues</label>
-          <div class="form-group mt-1 mb-4">
-            <div class="has-month-right has-dollar-left">
-              <input type="text" class="form-control" value="398,900" />
+          <div class="row no-gutters">
+            <div class="col-12 col-md-9 form-group mt-1 mb-4">
+              <div class="has-month-right has-dollar-left">
+                <input type="text" class="form-control" value="398,900" />
+              </div>
             </div>
           </div>
 

@@ -3469,8 +3469,10 @@ figure.lh-img-holder {
     display: none; }
   .contact-agent-form .lh-label,
   .lh-form .lh-label {
-    font-size: 1.1rem;
-    font-weight: 600; }
+    font-size: 16px;
+    font-family: "Graphik Medium", sans-serif, Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin: 0 0 .3em; }
   .contact-agent-form .has-dollar-left,
   .lh-form .has-dollar-left {
     position: relative; }
@@ -3530,7 +3532,7 @@ figure.lh-img-holder {
   .contact-agent-form .form-control,
   .lh-form .form-control {
     border: 1px solid #d6dce6;
-    padding: 1.4em .33em;
+    padding: 1.5em .33em;
     box-shadow: inset 0px 9px 15px -10px #d6dce6; }
     .contact-agent-form .form-control:active, .contact-agent-form .form-control:focus, .contact-agent-form .form-control:hover,
     .lh-form .form-control:active,
@@ -3679,8 +3681,8 @@ figure.lh-img-holder {
   .lh-finance ul li:before {
     display: inline-block;
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
     margin: 0 .5em .1em 0; }
   .lh-finance ul li strong {
