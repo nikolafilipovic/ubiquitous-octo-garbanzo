@@ -1098,7 +1098,10 @@ figure.lh-img-holder {
 }
 
 .lh-school-rankings {
-  margin-right: 20px;
+
+  #lh-school-ranking {
+    margin-right: 20px;
+  }
 
   .school-rank-group {
     display: flex;
