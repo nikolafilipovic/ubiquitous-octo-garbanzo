@@ -4,7 +4,6 @@
 }
 
 body {
-  
   font-family: $default-font-family, Arial, sans-serif;
 }
 
@@ -25,6 +24,10 @@ body {
   margin-bottom: .6em;
 }
 
+.hp-1 {
+  padding: 1em 0 !important;
+}
+
 .lh-name {
   font-family: $light-font-family, Arial, sans-serif;
   font-weight: 600;
@@ -35,16 +38,8 @@ body {
 }
 
 .b-shadow {
-  box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27) //refactor everywhere!
+  box-shadow: 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27)
 }
-
-/*.round-blue {
-  color: white;
-  background: $main-color;
-  padding: .8em;
-  border-radius: 50%;
-  // TO BE REMOVED
-} */
 
 .round-blue {
   color: white;
@@ -436,12 +431,20 @@ figure.lh-img-holder {
 
 .contact-agent {
   p {
-    color: #5c78b4 !important;
-    padding: .1em 0;
+    color: $gray-paragraph !important;
+    font-size: 1rem !important;
   }
 
   .contact-agent-prev {
     margin-top: 1.5em;
+  }
+
+  .offer-link {
+    font-size: .9rem !important;
+    padding: 9px !important;
+    .fasarrow {
+      padding-left: .5em;
+    }
   }
 
   @include respond-to('desktop') {
@@ -456,7 +459,7 @@ figure.lh-img-holder {
   }
 
   h2.contact-agent-prev-name {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: $main-lighter;
     padding-bottom: 0;
   }
@@ -555,7 +558,8 @@ figure.lh-img-holder {
     display: block;
     position: relative;
     padding-left: 1.3rem;
-    margin: .5em 0;
+    font-size: .95rem;
+    margin: 1em 0 0;
     cursor: pointer;
     
     input {
@@ -797,8 +801,8 @@ figure.lh-img-holder {
     padding: .3em 0;
   }
 
-  .hr-down {
-    margin-bottom: 2em;
+  #lh-property-amentities {
+    margin-top: 1em;
   }
 
   .lh-subtitle {
@@ -854,6 +858,10 @@ figure.lh-img-holder {
       font-size: 16px !important;
       padding: 13px !important;
     }
+  }
+
+  &.hide-before:before {
+    display: none !important;
   }
 
   &:before {
@@ -1138,12 +1146,17 @@ figure.lh-img-holder {
     border-bottom: 1px solid $lightergray;
 
     .faded {
-      font-size: .7rem !important;
-      padding-top: .2em;
+      font-size: .8rem !important;
+      padding-top: .4em;
     }
 
     .sch-r-desc {
+      color: $main-lighter;
       padding-left: 1em;
+
+      .small-caps {
+        color: black;
+      }
 
       p:first-of-type {
         color: $main-color;
@@ -1151,7 +1164,7 @@ figure.lh-img-holder {
     }
   }
 
-  .school-rank-group:nth-child(4) {
+  .school-rank-group:nth-child(3) {
     border-bottom: none;
   }
 
@@ -1229,6 +1242,7 @@ figure.lh-img-holder {
   .offer-link {
     text-transform: none;
     width: 65%;
+    padding: 13px !important;
     margin: 25px auto !important;
     i {
       padding-left: 2em !important;

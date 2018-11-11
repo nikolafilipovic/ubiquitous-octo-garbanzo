@@ -186,7 +186,7 @@ Template Name: List Homes
 
         <div class="lh-features">
           <div class="hr hr-up d-block d-md-none"></div>
-          <h1 class="list-home-title toggle-collapse" data-target="#lh-property-amentities">
+          <h1 class="list-home-title toggle-collapse" data-target="#lh-property-amentities" data-notify="#finance-wrap">
             Property Amentities
             <i class="fas fa-chevron-up faup"></i>
           </h1>
@@ -421,7 +421,7 @@ Template Name: List Homes
           </div>
         </div> <!-- lh-features -->
 
-        <div class="lh-finance w-100">
+        <div id="finance-wrap" class="lh-finance w-100">
           <div class="hr hr-down d-none d-md-block"></div>
           <h1 class="list-home-title d-block w-100 toggle-collapse" data-target="#lh-get-financing">
             Get Financing

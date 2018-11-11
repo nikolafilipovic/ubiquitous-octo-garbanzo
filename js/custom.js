@@ -165,16 +165,24 @@ jQuery(document).ready(function(){
 
     jQuery('.toggle-collapse').click(function() {
         var elem = jQuery(jQuery(this).data('target'));
+        var notifyElem = jQuery(jQuery(this).data('notify'));
+
         if(elem.hasClass('show')) {
             $(this).find('i').css({
                 transform: 'rotate(180deg)',
                 color: '#cbd3dd'
             });
+            if(notifyElem) {
+                notifyElem.addClass('hide-before');
+            }
         } else {
             $(this).find('i').css({
                 transform: 'rotate(0)',
                 color: '#17acee'
             });
+            if(notifyElem) {
+                notifyElem.removeClass('hide-before');
+            }
         }
         elem.collapse("toggle");
     });
