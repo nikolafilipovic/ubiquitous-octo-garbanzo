@@ -493,10 +493,11 @@ Template Name: List Homes
             </div>
           </div>
 
-          <div class="form-check mb-4">
-            <input class="form-check-input" type="checkbox" id="check_tax">
-            <label class="form-check-label" for="check_tax">
+          <div class="mb-4">
+            <label class="custom-checkmark">
               Include taxes/insurance
+              <input type="checkbox">
+              <span class="checkmark"></span>
             </label>
           </div>
 
@@ -521,10 +522,11 @@ Template Name: List Homes
             </div>
           </div>
 
-          <div class="form-check mb-4">
-            <input class="form-check-input" type="checkbox" id="check_tax">
-            <label class="form-check-label" for="check_tax">
+          <div class="mb-4">
+            <label class="custom-checkmark">
               Include PMI
+              <input type="checkbox">
+              <span class="checkmark"></span>
             </label>
           </div>
 
@@ -910,8 +912,11 @@ Template Name: List Homes
 
           <div class="form-check d-flex justify-content-center">
             <div>
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">I want financing information</label>
+              <label class="custom-checkmark">
+                I want financing information
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
             </div>
           </div>
 

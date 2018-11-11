@@ -552,6 +552,48 @@ figure.lh-img-holder {
     padding: .7em !important;
   }
 
+  .custom-checkmark {
+    display: block;
+    position: relative;
+    padding-left: 1.3rem;
+    margin: .5em 0;
+    cursor: pointer;
+    
+    input {
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+      height: 0;
+      width: 0;
+      &:checked ~ .checkmark:after {
+        display: block;
+      }
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      height: $checkbox-size;
+      width: $checkbox-size;
+      background-color: white;
+      border: 1px solid $lightergray;
+      border-radius: 3px;
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 4px;
+        top: 1px;
+        width: 5px;
+        height: 10px;
+        border: solid black;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
   select.lh-custom-select {
     -webkit-appearance: none;
     -moz-appearance: none;
