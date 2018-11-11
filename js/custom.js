@@ -163,8 +163,8 @@ jQuery(document).ready(function(){
         openFilter();
     });
 
-    jQuery('#toggle-lh-transportation').click(function() {
-        var elem = jQuery('#lh-transportation');
+    jQuery('.toggle-collapse').click(function() {
+        var elem = jQuery(jQuery(this).data('target'));
         if(elem.hasClass('show')) {
             $(this).find('i').css({
                 transform: 'rotate(180deg)',

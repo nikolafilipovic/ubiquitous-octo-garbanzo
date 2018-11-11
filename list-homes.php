@@ -558,7 +558,7 @@ Template Name: List Homes
 
         <div class="lh-transportation">
           <div class="hr hr-up"></div>
-          <h1 id="toggle-lh-transportation" class="list-home-title d-block w-100">
+          <h1 class="list-home-title d-block w-100 toggle-collapse" data-target="#lh-transportation">
             Transportation
             <i class="fas fa-chevron-up faup"></i>
           </h1>
@@ -602,166 +602,168 @@ Template Name: List Homes
               </div>
             </div>
             <p class="small-caps">Data by <a class="small-caps" href="#"> walkscore</a></p>
-            <div class="hr hr-down"></div>
           </div>
+          <div class="hr hr-down"></div>
         </div> <!-- lh-transportation -->
 
         <div class="lh-nearby-places">
-          <h1 class="list-home-title d-block w-100">
+          <h1 class="list-home-title d-block w-100 toggle-collapse" data-target="#lh-nearby-places">
             Nearby Places
             <i class="fas fa-chevron-up faup"></i>
           </h1>
-          <div class="row no-gutters">
-            <div class="d-flex col-12 col-md-6">
-              <div>
-                <i class="fas fa-shopping-cart round-blue"></i>
-              </div>
-              <div class="places-stars">
-                <h2>Shopping</h2>
-                <p>Walmart (0.85 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">5 reviews</span>
+          <div id="lh-nearby-places" class="collapse show">
+            <div class="row no-gutters">
+              <div class="d-flex col-12 col-md-6">
+                <div>
+                  <i class="fas fa-shopping-cart round-blue"></i>
                 </div>
-                <p>Jules Acupuncture (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">2 reviews</span>
-                </div>
+                <div class="places-stars">
+                  <h2>Shopping</h2>
+                  <p>Walmart (0.85 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">5 reviews</span>
+                  </div>
+                  <p>Jules Acupuncture (2.87 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">2 reviews</span>
+                  </div>
 
-                <p>Damian Gonzales (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">2 reviews</span>
+                  <p>Damian Gonzales (2.87 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">2 reviews</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex col-12 col-md-6">
+                <div>
+                  <i class="fas fa-briefcase-medical round-blue"></i>
+                </div>
+                <div class="places-stars">
+                  <h2>Hospital</h2>
+                  <p>Walmart (0.85 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">5 reviews</span>
+                  </div>
+
+                  <p>Jules Acupuncture (2.87 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">2 reviews</span>
+                  </div>
+
+                  <p>Damian Gonzales (2.87 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">2 reviews</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex col-12 col-md-6">
+                <div>
+                  <i class="fas fa-utensils round-blue"></i>
+                </div>
+                <div class="places-stars">
+                  <h2>Restaurant</h2>
+                  <p>Walmart (0.85 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">5 reviews</span>
+                  </div>
+                  <p>Jules Acupuncture (2.87 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">2 reviews</span>
+                  </div>
+
+                  <p>Damian Gonzales (2.87 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">2 reviews</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex col-12 col-md-6">
+                <div>
+                  <i class="fas fa-running round-blue"></i>
+                </div>
+                <div class="places-stars">
+                  <h2>Fitness</h2>
+                  <p>Walmart (0.85 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">5 reviews</span>
+                  </div>
+                  <p>Jules Acupuncture (2.87 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">2 reviews</span>
+                  </div>
+
+                  <p>Damian Gonzales (2.87 mi)</p>
+                  <div class="stars-reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="faded font-padding-stilization">2 reviews</span>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="d-flex col-12 col-md-6">
-              <div>
-                <i class="fas fa-briefcase-medical round-blue"></i>
-              </div>
-              <div class="places-stars">
-                <h2>Hospital</h2>
-                <p>Walmart (0.85 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">5 reviews</span>
-                </div>
-
-                <p>Jules Acupuncture (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">2 reviews</span>
-                </div>
-
-                <p>Damian Gonzales (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">2 reviews</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="d-flex col-12 col-md-6">
-              <div>
-                <i class="fas fa-utensils round-blue"></i>
-              </div>
-              <div class="places-stars">
-                <h2>Restaurant</h2>
-                <p>Walmart (0.85 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">5 reviews</span>
-                </div>
-                <p>Jules Acupuncture (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">2 reviews</span>
-                </div>
-
-                <p>Damian Gonzales (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">2 reviews</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="d-flex col-12 col-md-6">
-              <div>
-                <i class="fas fa-running round-blue"></i>
-              </div>
-              <div class="places-stars">
-                <h2>Fitness</h2>
-                <p>Walmart (0.85 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">5 reviews</span>
-                </div>
-                <p>Jules Acupuncture (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">2 reviews</span>
-                </div>
-
-                <p>Damian Gonzales (2.87 mi)</p>
-                <div class="stars-reviews">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="faded font-padding-stilization">2 reviews</span>
-                </div>
-              </div>
-            </div>
+            <p class="small-caps">Data by <a class="small-caps" href="#"> Yelp</a></p>
           </div>
-          <p class="small-caps">Data by <a class="small-caps" href="#"> Yelp</a></p>
           <div class="hr hr-down"></div>
         </div> <!-- lh-nearby-places -->
 
