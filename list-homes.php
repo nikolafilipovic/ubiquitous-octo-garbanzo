@@ -558,50 +558,52 @@ Template Name: List Homes
 
         <div class="lh-transportation">
           <div class="hr hr-up"></div>
-          <h1 class="list-home-title d-block w-100">
+          <h1 id="toggle-lh-transportation" class="list-home-title d-block w-100">
             Transportation
             <i class="fas fa-chevron-up faup"></i>
           </h1>
-          <div class="row no-gutters">
-            <div class="col-12 col-md-6">
-              <div class="mb-4 row no-gutters">
-                <div class="border-dotted">
-                  75
-                </div>
+          <div class="collapse show" id="lh-transportation">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-6">
+                <div class="mb-4 row no-gutters">
+                  <div class="border-dotted">
+                    75
+                  </div>
 
-                <div class="transp-desc">
-                  <p>Walk Score</p>
-                  <a href="#">Very Walkable</a>
+                  <div class="transp-desc">
+                    <p>Walk Score</p>
+                    <a href="#">Very Walkable</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4 col-12 col-md-6">
+                <div class="row no-gutters">
+                  <div class="border-dotted">
+                    51
+                  </div>
+
+                  <div class="transp-desc">
+                    <p>Transit Score</p>
+                    <a href="#">Good Transit</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4 col-12 col-md-6">
+                <div class="row no-gutters">
+                  <div class="border-dotted">
+                    51
+                  </div>
+
+                  <div class="transp-desc">
+                    <p>Bike Score</p>
+                    <a href="#">Bikeable</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="mb-4 col-12 col-md-6">
-              <div class="row no-gutters">
-                <div class="border-dotted">
-                  51
-                </div>
-
-                <div class="transp-desc">
-                  <p>Transit Score</p>
-                  <a href="#">Good Transit</a>
-                </div>
-              </div>
-            </div>
-            <div class="mb-4 col-12 col-md-6">
-              <div class="row no-gutters">
-                <div class="border-dotted">
-                  51
-                </div>
-
-                <div class="transp-desc">
-                  <p>Bike Score</p>
-                  <a href="#">Bikeable</a>
-                </div>
-              </div>
-            </div>
+            <p class="small-caps">Data by <a class="small-caps" href="#"> walkscore</a></p>
+            <div class="hr hr-down"></div>
           </div>
-          <p class="small-caps">Data by <a class="small-caps" href="#"> walkscore</a></p>
-          <div class="hr hr-down"></div>
         </div> <!-- lh-transportation -->
 
         <div class="lh-nearby-places">
