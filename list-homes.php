@@ -188,7 +188,7 @@ Template Name: List Homes
           <div class="hr hr-up d-block d-md-none"></div>
           <h1 class="list-home-title toggle-collapse" data-target="#lh-property-amentities">
             Property Amentities
-            <i class="fas fa-chevron-down fadown"></i>
+            <i class="fas fa-chevron-up faup"></i>
           </h1>
           <div class="hr hr-down d-block d-md-none"></div>
         
@@ -423,139 +423,141 @@ Template Name: List Homes
 
         <div class="lh-finance w-100">
           <div class="hr hr-down d-none d-md-block"></div>
-          <h1 class="list-home-title d-block w-100">
+          <h1 class="list-home-title d-block w-100 toggle-collapse" data-target="#lh-get-financing">
             Get Financing
             <i class="fas fa-chevron-up faup"></i>
           </h1>
-          <div class="row no-gutters">
-            <div class="col-4 col-md-3 lh-finance-list">
-              <ul>
-                <li>P&amp;I <strong>$1,642</strong></li>
-                <li>Insurance <strong>$67</strong></li>
-                <li>Taxes <strong>$226</strong></li>
-                <li>PMI <strong>$0</strong></li>
-                <li>HOA <strong>$60</strong></li>
-              </ul>
-            </div>
-            <div class="col-7 col-md-6 d-flex justify-content-center">
-              <div class="chart-wrapper">
-                <canvas width="200" height="200" id="lh-chart"></canvas>
+          <div id="lh-get-financing" class="collapse show">
+            <div class="row no-gutters">
+              <div class="col-4 col-md-3 lh-finance-list">
+                <ul>
+                  <li>P&amp;I <strong>$1,642</strong></li>
+                  <li>Insurance <strong>$67</strong></li>
+                  <li>Taxes <strong>$226</strong></li>
+                  <li>PMI <strong>$0</strong></li>
+                  <li>HOA <strong>$60</strong></li>
+                </ul>
+              </div>
+              <div class="col-7 col-md-6 d-flex justify-content-center">
+                <div class="chart-wrapper">
+                  <canvas width="200" height="200" id="lh-chart"></canvas>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row no-gutters">
-            <div class="col-12 col-md-8 d-flex flex-column align-items-center">
-              <div class="offer-link">
-                <a href="#">Get pre-qualified</a>
-                <i class="fas fa-arrow-right fasarrow"></i>
-              </div>
-              <div class="plus-button d-flex justify-content-center">
-                <i class="fas fa-plus"></i>
-                More
+            <div class="row no-gutters">
+              <div class="col-12 col-md-8 d-flex flex-column align-items-center">
+                <div class="offer-link">
+                  <a href="#">Get pre-qualified</a>
+                  <i class="fas fa-arrow-right fasarrow"></i>
+                </div>
+                <div class="plus-button d-flex justify-content-center">
+                  <i class="fas fa-plus"></i>
+                  More
+                </div>
               </div>
             </div>
+            <form class="lh-form">
+              <label class="lh-label">Home Price</label>
+              <div class="row no-gutters">
+                <div class="form-group mt-1 mb-4 col-12 col-md-9">
+                  <div class="has-dollar-left">
+                    <input type="text" class="form-control" value="398,900" />
+                  </div>
+                </div>
+              </div>
+
+              <label class="lh-label">Down payment</label>
+              <div class="row no-gutters mb-3">
+                <div class="form-group mt-1 col-9 col-md-7 pr-1">
+                  <div class="has-dollar-left">
+                    <input type="text" class="form-control" value="398,900" />
+                  </div>
+                </div>
+                <div class="form-group mt-1 col-3 col-md-2 pl-1">
+                  <div class="has-amp-right">
+                    <input type="text" class="form-control" value="20" />
+                  </div>
+                </div>
+              </div>
+
+              <label class="lh-label">Loan program</label>
+              <div class="row no-gutters">
+                <div class="col-12 col-md-9 lh-custom-select-wrap mb-4">
+                  <select name="cars" class="lh-custom-select">
+                    <option selected>30-year fixed</option>
+                    <option>20-year fixed</option>
+                    <option>10-year fixed</option>
+                  </select>
+                </div>
+              </div>
+
+              <label class="lh-label">Interest rate</label>
+              <div class="row no-gutters">
+                <div class="col-12 col-md-9 form-group mt-1 mb-2">
+                  <div class="has-amp-right">
+                    <input type="text" class="form-control" value="4,627" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="custom-checkmark">
+                  Include taxes/insurance
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <label class="lh-label">Property tax</label>
+              <div class="row no-gutters mb-3">
+                <div class="form-group mt-1 col-9 col-md-7 pr-1">
+                  <div class="has-year-right has-dollar-left">
+                    <input type="text" class="form-control" value="2,712" />
+                  </div>
+                </div>
+                <div class="form-group mt-1 col-3 col-md-2 pl-1">
+                  <div class="has-amp-right">
+                    <input type="text" class="form-control" value="0.68" />
+                  </div>
+                </div>
+              </div>
+
+              <label class="lh-label">Property tax</label>
+              <div class="row no-gutters">
+                <div class="col-12 col-md-9 form-group mt-1 mb-2">
+                  <div class="has-year-right has-dollar-left">
+                    <input type="text" class="form-control" value="398,900" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="custom-checkmark">
+                  Include PMI
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+
+              <label class="lh-label">HOA dues</label>
+              <div class="row no-gutters">
+                <div class="col-12 col-md-9 form-group mt-1 mb-4">
+                  <div class="has-month-right has-dollar-left">
+                    <input type="text" class="form-control" value="398,900" />
+                  </div>
+                </div>
+              </div>
+
+
+              <p class="lh-apendix">
+                <small>
+                  All calculations and costs are estimates.
+                  This information is intended for planning and educational purposes only.
+                </small>
+              </p>
+            </form>
           </div>
         </div>
-        <form class="lh-form">
-          <label class="lh-label">Home Price</label>
-          <div class="row no-gutters">
-            <div class="form-group mt-1 mb-4 col-12 col-md-9">
-              <div class="has-dollar-left">
-                <input type="text" class="form-control" value="398,900" />
-              </div>
-            </div>
-          </div>
-
-          <label class="lh-label">Down payment</label>
-          <div class="row no-gutters mb-3">
-            <div class="form-group mt-1 col-9 col-md-7 pr-1">
-              <div class="has-dollar-left">
-                <input type="text" class="form-control" value="398,900" />
-              </div>
-            </div>
-            <div class="form-group mt-1 col-3 col-md-2 pl-1">
-              <div class="has-amp-right">
-                <input type="text" class="form-control" value="20" />
-              </div>
-            </div>
-          </div>
-
-          <label class="lh-label">Loan program</label>
-          <div class="row no-gutters">
-            <div class="col-12 col-md-9 lh-custom-select-wrap mb-4">
-              <select name="cars" class="lh-custom-select">
-                <option selected>30-year fixed</option>
-                <option>20-year fixed</option>
-                <option>10-year fixed</option>
-              </select>
-            </div>
-          </div>
-
-          <label class="lh-label">Interest rate</label>
-          <div class="row no-gutters">
-            <div class="col-12 col-md-9 form-group mt-1 mb-2">
-              <div class="has-amp-right">
-                <input type="text" class="form-control" value="4,627" />
-              </div>
-            </div>
-          </div>
-
-          <div class="mb-4">
-            <label class="custom-checkmark">
-              Include taxes/insurance
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-
-          <label class="lh-label">Property tax</label>
-          <div class="row no-gutters mb-3">
-            <div class="form-group mt-1 col-9 col-md-7 pr-1">
-              <div class="has-year-right has-dollar-left">
-                <input type="text" class="form-control" value="2,712" />
-              </div>
-            </div>
-            <div class="form-group mt-1 col-3 col-md-2 pl-1">
-              <div class="has-amp-right">
-                <input type="text" class="form-control" value="0.68" />
-              </div>
-            </div>
-          </div>
-
-          <label class="lh-label">Property tax</label>
-          <div class="row no-gutters">
-            <div class="col-12 col-md-9 form-group mt-1 mb-2">
-              <div class="has-year-right has-dollar-left">
-                <input type="text" class="form-control" value="398,900" />
-              </div>
-            </div>
-          </div>
-
-          <div class="mb-4">
-            <label class="custom-checkmark">
-              Include PMI
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-
-          <label class="lh-label">HOA dues</label>
-          <div class="row no-gutters">
-            <div class="col-12 col-md-9 form-group mt-1 mb-4">
-              <div class="has-month-right has-dollar-left">
-                <input type="text" class="form-control" value="398,900" />
-              </div>
-            </div>
-          </div>
-
-
-          <p class="lh-apendix">
-            <small>
-              All calculations and costs are estimates.
-              This information is intended for planning and educational purposes only.
-            </small>
-          </p>
-        </form>
 
         <div class="lh-transportation">
           <div class="hr hr-up"></div>
