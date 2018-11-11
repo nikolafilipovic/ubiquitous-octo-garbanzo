@@ -768,53 +768,55 @@ Template Name: List Homes
         </div> <!-- lh-nearby-places -->
 
         <div class="lh-school-rankings">
-          <h1 class="list-home-title d-block w-100">
+          <h1 class="list-home-title d-block w-100 toggle-collapse" data-target="#lh-school-ranking">
             School Rankings
             <i class="fas fa-chevron-up faup"></i>
           </h1>
-          <div class="school-rank-group row no-gutters">
-            <div>
-              <i class="round-blue">5</i>
-              <p class="faded">out of 10</p>
-            </div>
-            <div class="sch-r-desc">
-              <p>Marshall Ranch Elementary</p>
-              <p class="small-caps">0.9 mi</p>
-            </div>
-          </div>
-
-          <div class="school-rank-group row no-gutters">
-            <div>
-              <i class="round-blue">6</i>
-              <p class="faded">out of 10</p>
-            </div>
-            <div class="sch-r-desc">
-              <p>Moon Valley High</p>
-              <p class="small-caps">0.9 mi</p>
-            </div>
-          </div>
-
-          <div class="school-rank-group row no-gutters">
-            <div>
-              <i class="round-blue">8</i>
-              <p class="faded">out of 10</p>
-            </div>
-            <div class="sch-r-desc">
-              <p>Tumbleweed Elementary</p>
-              <p class="small-caps">0.9 mi</p>
-            </div>
-          </div>
-          <p class="small-caps">Data by <a class="small-caps" href="#"> GreatSchools.org</a></p>
-
-          <div class="sch-r-offer-link d-block d-md-none">
-            <div class="offer-link">
-              <a href="#">Make an offer</a>
-              <i class="fas fa-arrow-right fasarrow"></i>
+          <div id="lh-school-ranking" class="collapse show"> 
+            <div class="school-rank-group row no-gutters">
+              <div>
+                <i class="round-blue">5</i>
+                <p class="faded">out of 10</p>
+              </div>
+              <div class="sch-r-desc">
+                <p>Marshall Ranch Elementary</p>
+                <p class="small-caps">0.9 mi</p>
+              </div>
             </div>
 
-            <div class="offer-link">
-              <a href="#">Schedule tour</a>
-              <i class="fas fa-arrow-right fasarrow"></i>
+            <div class="school-rank-group row no-gutters">
+              <div>
+                <i class="round-blue">6</i>
+                <p class="faded">out of 10</p>
+              </div>
+              <div class="sch-r-desc">
+                <p>Moon Valley High</p>
+                <p class="small-caps">0.9 mi</p>
+              </div>
+            </div>
+
+            <div class="school-rank-group row no-gutters">
+              <div>
+                <i class="round-blue">8</i>
+                <p class="faded">out of 10</p>
+              </div>
+              <div class="sch-r-desc">
+                <p>Tumbleweed Elementary</p>
+                <p class="small-caps">0.9 mi</p>
+              </div>
+            </div>
+            <p class="small-caps">Data by <a class="small-caps" href="#"> GreatSchools.org</a></p>
+
+            <div class="sch-r-offer-link d-block d-md-none">
+              <div class="offer-link">
+                <a href="#">Make an offer</a>
+                <i class="fas fa-arrow-right fasarrow"></i>
+              </div>
+
+              <div class="offer-link">
+                <a href="#">Schedule tour</a>
+                <i class="fas fa-arrow-right fasarrow"></i>
+              </div>
             </div>
           </div>
         </div> <!-- lh-school-rankings -->
