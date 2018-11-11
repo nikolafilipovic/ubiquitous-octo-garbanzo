@@ -30,6 +30,8 @@
 
 	<script src="<?php echo $template_directory_uri; ?>/js/owl.carousel.min.js"></script>
 	<script src="<?php echo $template_directory_uri; ?>/js/custom.js"></script>
+	<script src="<?php echo $template_directory_uri; ?>/js/lh-chart.js"></script>
+	
 </head>
 <body <?php body_class(); ?>>
 	<div id="page-container">
