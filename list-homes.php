@@ -30,7 +30,7 @@ Template Name: List Homes
           <i class="far fa-heart"></i>
             Save</a>
 
-          <a href="#">
+          <a href="#" data-toggle="modal" data-target="#share-modal">
               <i class="fas fa-share-alt"></i>
             Share</a>
 
@@ -958,4 +958,37 @@ Template Name: List Homes
   </div> <!-- container fluid -->
 </div> <!-- lh-wrapper -->
 
+
+<!-- modals -->
+<div id="share-modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Share on</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="close-link" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="sphere-container">
+          <span class="sphere sphere--fb">
+            <i class="fab fa-facebook-f"></i>
+          </span>
+          <span class="sphere sphere--twitt">
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span class="sphere sphere--in">
+            <i class="fab fa-linkedin-in"></i>
+          </span>
+          <span class="sphere sphere--pinta">
+            <i class="fab fa-pinterest-p"></i>
+          </span>
+          <span class="sphere sphere--email">
+            <i class="far fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <?php get_footer(); ?>

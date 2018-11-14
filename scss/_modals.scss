@@ -1,0 +1,67 @@
+.modal {
+  .modal-header {
+    position: relative;
+    padding: 1.4em 0;
+    justify-content: center;
+    border: none;
+    button {
+      span {
+        font-family: $default-font-family;
+        font-weight: normal;
+        font-size: 4.5rem !important;
+      }
+      position: absolute !important;
+      top: -2px;
+      right: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    h5.modal-title {
+      font-family: $default-font-family;
+      font-size: 1.2rem;
+      padding: 0;
+      font-weight: 600;
+    }
+  }
+}
+
+$sphere-size: 70px;
+$base-font: 2.6rem;
+
+.sphere-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.sphere {
+  height: $sphere-size;
+  width: $sphere-size;
+  border-radius: 50%;
+  background: crimson;
+  font-size: $base-font;
+  padding-top: calc(#{($sphere-size / 2)} - #{$base-font / 2});
+  text-align: center;
+  color: white;
+}
+
+.sphere--fb {
+  background: #3b5997;
+}
+
+.sphere--twitt {
+  background: #26a5d1;
+}
+
+.sphere--in {
+  background: #0079b8;
+}
+
+.sphere--pinta {
+  background: #ca1f26;
+}
+
+.sphere--email {
+  background: #00aced;
+}
