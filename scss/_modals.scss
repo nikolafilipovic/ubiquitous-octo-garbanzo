@@ -1,7 +1,11 @@
 .modal {
+  .modal-content {
+    width:400px;
+    margin: 0 auto;
+  }
   .modal-header {
     position: relative;
-    padding: 1.4em 0;
+    padding: 1.4em 0 0;
     justify-content: center;
     border: none;
     button {
@@ -20,17 +24,16 @@
       font-family: $default-font-family;
       font-size: 1.2rem;
       padding: 0;
-      font-weight: 600;
     }
   }
 }
 
-$sphere-size: 70px;
-$base-font: 2.6rem;
+$sphere-size: 50px;
+$base-font: 1.8rem;
 
 .sphere-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -43,7 +46,9 @@ $base-font: 2.6rem;
   font-size: $base-font;
   padding-top: calc(#{($sphere-size / 2)} - #{$base-font / 2});
   text-align: center;
-  color: white;
+  i {
+    color: white;
+  }
 }
 
 .sphere--fb {
@@ -64,4 +69,40 @@ $base-font: 2.6rem;
 
 .sphere--email {
   background: #00aced;
+}
+
+#virtual-tour-modal {
+  .modal-body--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.modal-blue-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.2em 0;
+}
+
+.blue-link {
+  border-width: 0px !important;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+  padding: .5rem 2.5rem;
+  margin: 0 .4rem;
+  text-transform: uppercase;
+  font-family: "Graphik Medium", Helvetica, Arial, Lucida, sans-serif !important;
+  background-color: #00acee;
+  color: white;
+}
+
+.custom-checkmark {
+  margin-top: 0 !important;
+  color:black;
 }

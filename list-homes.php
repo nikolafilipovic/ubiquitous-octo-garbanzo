@@ -34,7 +34,7 @@ Template Name: List Homes
               <i class="fas fa-share-alt"></i>
             Share</a>
 
-          <a href="#">
+          <a href="#" data-toggle="modal" data-target="#virtual-tour-modal">
               <i class="fas fa-vr-cardboard"></i>
             Virtual Tour</a>
 
@@ -962,7 +962,7 @@ Template Name: List Homes
 <!-- modals -->
 <div id="share-modal" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content width-override">
       <div class="modal-header">
         <h5 class="modal-title">Share on</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -971,24 +971,56 @@ Template Name: List Homes
       </div>
       <div class="modal-body">
         <div class="sphere-container">
-          <span class="sphere sphere--fb">
+          <a class="sphere sphere--fb">
             <i class="fab fa-facebook-f"></i>
-          </span>
-          <span class="sphere sphere--twitt">
+          </a>
+          <a class="sphere sphere--twitt">
             <i class="fab fa-twitter"></i>
-          </span>
-          <span class="sphere sphere--in">
+          </a>
+          <a class="sphere sphere--in">
             <i class="fab fa-linkedin-in"></i>
-          </span>
-          <span class="sphere sphere--pinta">
+          </a>
+          <a class="sphere sphere--pinta">
             <i class="fab fa-pinterest-p"></i>
-          </span>
-          <span class="sphere sphere--email">
+          </a>
+          <a class="sphere sphere--email">
             <i class="far fa-envelope"></i>
-          </span>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- virtual tour modal -->
+<div id="virtual-tour-modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content width-override">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          <i class="fas fa-vr-cardboard"></i>
+          Virtual Tour
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="close-link" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body--center">
+        <p>Would you like to add this property to your 
+          virtual tour list? Tour lists allow you to 
+          seamlessly go from one home tour to the next.</p>
+        <div class="modal-blue-links">
+            <a href="#" class="blue-link">Add to list</a>
+            <a href="#" class="blue-link">Watch now</a>
+        </div>
+        <label class="custom-checkmark">
+          Remember my answer
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
 <?php get_footer(); ?>
