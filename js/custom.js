@@ -1,3 +1,6 @@
+/* This is a duct tape patch for a strange loop where responsiveTasks() is getting executed every 2 seconds on iOS */ 
+var taskAllowance = 1;
+
 /* Move the Page Container and expand the Menu */
 function slideOutMenu(option) {
     if (option ==="open") {
@@ -19,12 +22,18 @@ function slideOutMenu(option) {
 /* Open Filter */
 function openFilter() {
     jQuery("#filterOverlay").toggleClass("closed");
+    jQuery("body").toggleClass("noscroll");
 }
-/* Open Filter */
+/* Icons.. */
 function changeHeart(parentElement) {
     jQuery(parentElement).children().toggleClass("far");
     jQuery(parentElement).children().toggleClass("active");
     jQuery(parentElement).children().toggleClass("fas");
+}
+function changeVR(parentElement) {
+    jQuery(parentElement).toggleClass("fal");
+    jQuery(parentElement).toggleClass("active");
+    jQuery(parentElement).toggleClass("fas");
 }
 /* Change the search option */
 function searchOption(option) {
@@ -53,19 +62,38 @@ function searchOption(option) {
         console.log("Initiated event that doesn't have a required option.")
     }
 }
-function showCTA() {
-    if (jQuery(window).width() < 770) {
-        jQuery("#before-cta").after(function() {
-            return '<div class="d-xl-none d-lg-none d-md-none d-sm-block d-block cta-insert"> <h1>Be the first to know!</h1> <p>New homes are getting added every 2 minutes. Save your search and be the first to know. </p> <a href="" class="btn btn-primary btn-block cta">Save search <i class="fas fa-arrow-right"></i></a> </div>';
-          });
-     }else{
-        console.log("Initiated event that doesn't have a required option.")
-     }
+function responsiveTasks() {
+    if (taskAllowance == 1) {
+        var screenRes = jQuery(window).width();
+        if (screenRes < 770) {
+            jQuery("#before-cta").after(function() {
+                return '<div class="d-xl-none d-lg-none d-md-none d-sm-block d-block cta-insert"> <h1>Be the first to know!</h1> <p>New homes are getting added every 2 minutes. Save your search and be the first to know. </p> <a href="" class="btn btn-primary btn-block cta">Save search <i class="far fa-arrow-right"></i></a> </div>';
+              });
+        } else {
+            console.log("Initiated event that doesn't have a required option.");
+        }
+        if (screenRes < 321) {
+            jQuery("#foreclosuresDropdown label span").text(function(i, text) {
+                return text.replace("Foreclosures", "Foreclo...");
+            });
+        } else {
+            console.log("Initiated event that doesn't have a required option.");
+        }
+        taskAllowance = 0;
+    } else {
+        console.log("Method was already executed once.");
+    }
 }
 /* Div height */
 function docFill() {
+    var elementHeight = 0;
+    if (jQuery("#wpadminbar").length) {
+        elementHeight = 143;
+    } else {
+        elementHeight = 111;
+    }
     if (jQuery(window).width() > 960) {
-        var areaHeight = jQuery(window).height() - 114;
+        var areaHeight = jQuery(window).height() - elementHeight;
         jQuery("#map-area").css("height", areaHeight);
         jQuery("#listing-area").css("height", areaHeight);
     } else {
@@ -144,6 +172,9 @@ jQuery(document).ready(function(){
     jQuery(".favourite").click(function() {
         changeHeart(this);
     });
+    jQuery(".fa-vr-cardboard").click(function() {
+        changeVR(this);
+    });
     jQuery("span.buy").click(function() {
         searchOption("buy");
     });
@@ -154,9 +185,6 @@ jQuery(document).ready(function(){
         searchOption("estimate");
     });
     jQuery("#applyTop").click(function() {
-        openFilter();
-    });
-    jQuery("#applyBottom").click(function() {
         openFilter();
     });
     jQuery("#openFilterBtn").click(function() {
@@ -193,12 +221,30 @@ jQuery(document).ready(function(){
 
     jQuery(".nav-item").dropdown();
     loadSliders();
-     showCTA();
-     docFill();
-     docFilterFill();
- })
- jQuery(document).resize(function(){
-    showCTA();
+    responsiveTasks();
+    docFilterFill();
+    docFill();
+ });
+jQuery(document).resize(function(){
     docFill();
     docFilterFill();
- })
+    responsiveTasks();
+ });
+jQuery(document).delegate(".dropdown-menu", "click", function(e) {
+    console.log("Stopping propagation for dropdown.");
+    e.stopPropagation();
+});
+jQuery(document).on('change', 'input:checkbox', function (e) {
+    if (jQuery(window).width() < 990) {
+        jQuery(this).closest(".dropdown").find(".parent-checkbox").attr("checked", "checked");
+    } else {
+        //Select parent on desktop. Couldn't get jQuery to catch the parent element.
+    }
+});
+jQuery(document).on('change', '.dropdown-checkbox', function (e) {
+    if (jQuery(window).width() < 990) {
+        jQuery(this).closest(".card").find(".search-checkbox").attr("checked", "checked");
+    } else {
+        //Select parent on desktop. Couldn't get jQuery to catch the parent element.
+    }
+});

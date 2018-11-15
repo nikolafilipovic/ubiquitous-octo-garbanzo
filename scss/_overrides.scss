@@ -1,5 +1,10 @@
 body {
     overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch;
+}
+body.noscroll {
+    overflow: hidden !important;
+    -webkit-overflow-scrolling: auto;
 }
 .container {
     width: 100%;
