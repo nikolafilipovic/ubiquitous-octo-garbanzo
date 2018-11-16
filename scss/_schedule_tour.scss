@@ -1,0 +1,10 @@
+.sch-t-header {
+  display: flex;
+  justify-content: flex-start;
+
+  .header-heading {
+    color: $grayish;
+    align-self: center;
+  }
+}
+

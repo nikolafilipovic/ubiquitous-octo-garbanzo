@@ -60,14 +60,9 @@ body {
 }
 
 .agent-round {
-<<<<<<< HEAD
-  padding-top: 15px !important;
-  font-size: 1.2rem !important;
-=======
   font-size: 18px !important;
   vertical-align: middle !important;
   padding-top: 12px !important;
->>>>>>> fe48fd3eebf6fb39708021d95c884e84cda861ee
   @include respond-to('desktop') {
     height: 40px !important;
     padding-top: 13px !important;
@@ -435,23 +430,12 @@ figure.lh-img-holder {
   }
 
   i {
-<<<<<<< HEAD
-    font-size: 2.5rem;
-    display: block;
-    padding-bottom: .2em;
-  }
-
-  a {
-    font-size: 1.1rem;
-    display: block;
-=======
     font-size: 1.7rem;
   }
 
   p {
     font-family: $default-font-family;
     font-size: 15px;
->>>>>>> fe48fd3eebf6fb39708021d95c884e84cda861ee
   }
 
   .fo-container {
@@ -617,10 +601,7 @@ figure.lh-img-holder {
 }
 
 .contact-agent-form,
-<<<<<<< HEAD
 .lh-form, .modal {
-=======
-.lh-form {
   .form-group {
     input {
       &::before {
@@ -628,7 +609,6 @@ figure.lh-img-holder {
       }
     }
   }
->>>>>>> fe48fd3eebf6fb39708021d95c884e84cda861ee
   .lh-apendix {
     color: #a6b4c6;
     font-size: 0.95em;
