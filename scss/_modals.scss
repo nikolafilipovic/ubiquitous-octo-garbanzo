@@ -12,7 +12,7 @@
       span {
         font-family: $default-font-family;
         font-weight: normal;
-        font-size: 4.5rem !important;
+        font-size: 3.7rem !important;
       }
       position: absolute !important;
       top: -2px;
@@ -22,7 +22,7 @@
     }
     h5.modal-title {
       font-family: $default-font-family;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       padding: 0;
     }
   }
@@ -73,11 +73,38 @@ $base-font: 1.8rem;
 
 #virtual-tour-modal {
   .modal-body--center {
+    p {
+      width: 320px;
+    }
+  }
+}
+
+#remove-modal {
+  .modal-body--center {
+    p {
+      width: 300px;
+    }
+  }
+}
+
+#virtual-tour-modal, #remove-modal {
+  .modal-body--center {
     display: flex;
     flex-direction: column;
     align-items: center;
     p {
       text-align: center;
+    }
+  }
+
+  h5.modal-title {
+    font-size: 1.1rem;
+    color: $main-lighter;
+    display: flex;
+    align-items: center;
+    i {
+      padding-right: .4em;
+      font-size: 1.3rem;
     }
   }
 }
@@ -94,7 +121,8 @@ $base-font: 1.8rem;
   border-radius: 5px;
   text-align: center;
   font-size: 13px;
-  padding: .5rem 2.5rem;
+  padding: .5rem 2rem;
+  width: 160px;
   margin: 0 .4rem;
   text-transform: uppercase;
   font-family: "Graphik Medium", Helvetica, Arial, Lucida, sans-serif !important;

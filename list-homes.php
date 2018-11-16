@@ -38,7 +38,7 @@ Template Name: List Homes
               <i class="fas fa-vr-cardboard"></i>
             Virtual Tour</a>
 
-          <a href="#">
+          <a href="#" data-toggle="modal" data-target="#remove-modal">
               <i class="far fa-times-circle"></i>
             Remove</a>
 
@@ -1012,6 +1012,35 @@ Template Name: List Homes
         <div class="modal-blue-links">
             <a href="#" class="blue-link">Add to list</a>
             <a href="#" class="blue-link">Watch now</a>
+        </div>
+        <label class="custom-checkmark">
+          Remember my answer
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- remove modal -->
+<div id="remove-modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content width-override">
+      <div class="modal-header">
+        <h5 class="modal-title">
+          <i class="far fa-times-circle"></i>
+          Remove
+        </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="close-link" aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body modal-body--center">
+        <p>Permanently remove property from future searches?</p>
+        <div class="modal-blue-links">
+            <a href="#" class="blue-link">Yes</a>
+            <a href="#" class="blue-link">No</a>
         </div>
         <label class="custom-checkmark">
           Remember my answer
