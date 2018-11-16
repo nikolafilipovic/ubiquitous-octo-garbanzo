@@ -33,6 +33,11 @@
       padding: 0;
     }
   }
+
+  .custom-checkmark {
+    margin-top: 0 !important;
+    color:black;
+  }
 }
 
 $sphere-size: 50px;
@@ -145,7 +150,3 @@ $base-font: 1.8rem;
   }
 }
 
-.custom-checkmark {
-  margin-top: 0 !important;
-  color:black;
-}
