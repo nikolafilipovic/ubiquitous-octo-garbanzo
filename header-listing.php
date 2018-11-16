@@ -87,8 +87,8 @@
             </nav>
             <div class="slide-out-container" id="slide-out-nav">
                 <p class="menu-title">Menu</p>
-                <span class="close-menu" id="menu-closer"><i class="fas fa-times"></i></span>
-                <a href="" class="btn btn-primary btn-block nav-login-btn">My account or register <i class="fas fa-arrow-right"></i></a>
+                <span class="close-menu" id="menu-closer"><i class="fal fa-times"></i></span>
+                <a href="" class="btn btn-primary btn-block nav-login-btn">My account or register <i class="far fa-arrow-right"></i></a>
                 <div class="navigation">
                     <ul>
                         <?php

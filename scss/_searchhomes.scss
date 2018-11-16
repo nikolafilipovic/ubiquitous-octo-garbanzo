@@ -46,10 +46,10 @@
                 &::after {
                     display: none;
                 }
-                .fas {
+                .fal {
                     float: right;
                     margin-top: 5px;
-                    color:  #1e232c;
+                    color:  #d6dce6;
                     transition: color 0.3s ease;
                 }
                 &:hover,
@@ -62,7 +62,7 @@
                     .search-checkbox + label {
                         font-weight: bold;
                     }
-                    .fas {
+                    .fal {
                         color: #00aced;
                     }
                 }
@@ -95,7 +95,7 @@
                             color: #ffba13;
                         }
                       }
-                      .fas.info {
+                      .fal.info {
                         float: initial;
                         vertical-align: middle;
                         margin-top: -3px;
@@ -114,9 +114,6 @@
                       border-radius: 3px;
                       transition: background 0.3s ease;
                     }
-                    /*&:hover + label:before {
-                      background: #00aced;
-                    }*/
                     &:checked + label:before {
                       background: #00aced;
                     }
@@ -150,6 +147,9 @@
                     font-size: 15px;
                     font-weight: 300;
                     text-align: left;
+                    &:active {
+                        background-color: #f8f9fa;
+                    }
                 }
                 &::after {
                     bottom: 100%;
@@ -188,13 +188,13 @@
                       border-radius: 3px;
                       transition: background 0.3s ease;
                     }
-                    &:hover + label:before {
-                      background: #00aced;
+                    &:focus + label:before {
+                        background: #fff;
                     }
                     &:checked + label:before {
                       background: #00aced;
                     }
-                    &:checked label::after {
+                    &:checked + label::after {
                       content: '';
                       position: absolute;
                       left: 4px;
@@ -252,6 +252,7 @@
                         }
                     }
                     .custom-checkbox {
+                        background-color: #fff;
                         label {
                             font-family: $default-font-family;
                             color: #1e232c;
@@ -259,6 +260,25 @@
                             font-weight: 300;
                             text-align: left;
                             padding: 5px 17px;
+                        }
+                        input {
+                            &:checked + label::after {
+                                content: '';
+                                position: absolute;
+                                left: 21px;
+                                top: 16px;
+                                background: white;
+                                width: 1.5px;
+                                height: 1.5px;
+                                box-shadow:
+                                  1.5px 0 0 white,
+                                  3px 0 0 white,
+                                  3px -1.5px 0 white,
+                                  3px -3px 0 white,
+                                  3px -4px 0 white,
+                                  3px -6px 0 white;
+                                transform: rotate(45deg);
+                            }
                         }
                     }
                 }
@@ -414,12 +434,19 @@
                 margin-top: 10px;
                 i {
                     margin-right: 7px;
+                    margin-right: 7px;
+                    font-size: 22px;
+                    vertical-align: middle;    
+                    display: inline-block !important;
+                    position: relative;     
+                    transition: all 0.3s ease;       
                 }
             }
             .favourite {
                 float: right;
                 margin-top: -28px;
                 display: block !important;
+                transition: all 0.3s ease;
                 i {
                     font-size: 26px;
                     color: #fff;
@@ -427,12 +454,15 @@
                     display: block !important;
                     position: relative;
                     &:hover,
-                    &:focus,
-                    &:active,
-                    &.active {
+                    &:active {
                         color: #00aced;
                     }
-
+                    &:focus,
+                    &.active {
+                        color: #00aced;
+                        -webkit-text-stroke-width: 2px;
+                        -webkit-text-stroke-color: #fff;
+                    }
                 }
             }
             .sale-type {
@@ -577,7 +607,8 @@
                         text-transform: uppercase;
                         &:hover,
                         &:active,
-                        &:focus {
+                        &:focus,
+                        &.active {
                             background: #00aced;
                             color:  #ffffff;
                         }
@@ -679,7 +710,7 @@
                             transition: color 0.3s ease, border-color 0.3s ease, font-weight 0.3s ease, border-top 0.3s ease, border-bottom 0.3s ease;
                             &.collapsed {
                                 border-top: 1px solid #d6dce6;
-                                .fas {
+                                .fal {
                                     &.fa-angle-down {
                                         transform: rotate(0deg);
                                     }
@@ -688,7 +719,7 @@
                             &::after {
                                 display: none;
                             }
-                            .fas {
+                            .fal {
                                 float: right;
                                 font-size: 25px;
                                 color:  #d6dce6;
@@ -702,7 +733,7 @@
                             &.active {
                                 color: #00aced;
                                 box-shadow: none;
-                                .fas {
+                                .fal {
                                     color: #00aced;
                                 }
                             }
@@ -736,7 +767,7 @@
                                         color: #ffba13;
                                     }
                                     }
-                                    .fas.info {
+                                    .fal.info {
                                     float: initial;
                                     vertical-align: middle;
                                     margin-top: -3px;
@@ -756,9 +787,6 @@
                                     border-radius: 3px;
                                     transition: background 0.3s ease;
                                 }
-                                /*&:hover + label:before {
-                                    background: #00aced;
-                                }*/
                                 &:checked + label:before {
                                     background: #00aced;
                                 }
@@ -851,13 +879,10 @@
                           border-radius: 3px;
                           transition: background 0.3s ease;
                         }
-                        &:hover + label:before {
-                          background: #00aced;
-                        }
                         &:checked + label:before {
                           background: #00aced;
                         }
-                        &:checked label::after {
+                        &:checked + label::after {
                           content: '';
                           position: absolute;
                           left: 4px;
@@ -912,9 +937,6 @@
                       border: 1px solid #d6dce6;
                       border-radius: 3px;
                       transition: background 0.3s ease;
-                    }
-                    &:hover + label:before {
-                      background: #00aced;
                     }
                     &:checked + label:before {
                       background: #00aced;
@@ -985,6 +1007,40 @@
                         &:active,
                         &:focus {
                             background: none;
+                        }
+                        input {
+                            & + label:before {
+                                content: '';
+                                margin-right: 10px;
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 16px;
+                                height: 16px;
+                                background: white;
+                                border: 1px solid #d6dce6;
+                                border-radius: 3px;
+                                transition: background 0.3s ease;
+                              }
+                            &:checked + label:before {
+                                background: #00aced;
+                            }
+                            &:checked + label::after {
+                                content: '';
+                                position: absolute;
+                                left: 4px;
+                                top: 16px;
+                                background: white;
+                                width: 1.5px;
+                                height: 1.5px;
+                                box-shadow:
+                                  1.5px 0 0 white,
+                                  3px 0 0 white,
+                                  3px -1.5px 0 white,
+                                  3px -3px 0 white,
+                                  3px -4px 0 white,
+                                  3px -6px 0 white;
+                                transform: rotate(45deg);
+                            }
                         }
                     }
                 }
@@ -1110,15 +1166,20 @@
     }
     .bottom-footer {
         padding: 20px 0px;
-        background: #fff;
         border-top: 1px solid #e8ecf9;
     }
-    .footer-copyright {margin-top: 10px;}
+    .footer-copyright {margin-top: 10px; margin-bottom: 10px;}
     .footer-copyright,
     .footer-contact {
+        text-align: center !important;
         color: #b9c1dc;
         h3 {
             padding-bottom: 0px;
+            margin-top: 10px;
+            text-align: center !important;
+        }
+        span {
+            text-align: center !important;
         }
     }
     #filterDropdown {

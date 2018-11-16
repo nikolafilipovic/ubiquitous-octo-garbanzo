@@ -14,14 +14,16 @@ body {
 }
 
 .list-home-title {
-  font-size: 24px;
-  font-family: $default-font-family, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-family: $default-font-family;
 }
 
 .list-home-title--not-collapsable {
-  font-size: 24px;
+  font-size: 20px;
   padding: 0;
   margin-bottom: .6em;
+  font-family: $default-font-family;
+  color: #1e232c;
 }
 
 .hp-1 {
@@ -29,12 +31,16 @@ body {
 }
 
 .lh-name {
-  font-family: $light-font-family, Arial, sans-serif;
-  font-weight: 600;
+  font-family: $default-font-family;
+  font-size: 23px;
+  color: #1e232c;
+  padding-bottom: 0;
 }
 
 .lh-street {
-  font-size: 1.3rem !important;
+  font-size: 15px !important;
+  color: #1e232c;
+  font-family: $default-font-family;
 }
 
 .b-shadow {
@@ -44,19 +50,24 @@ body {
 .round-blue {
   color: white;
   font-size: 1.5rem;
-  background: $main-lighter;
+  background: #00aced;
   text-align: center;
   font-style: normal;
-  height: 50px;
-  padding-top: 13px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   display: inline-block;
 }
 
 .agent-round {
+<<<<<<< HEAD
   padding-top: 15px !important;
   font-size: 1.2rem !important;
+=======
+  font-size: 18px !important;
+  vertical-align: middle !important;
+  padding-top: 12px !important;
+>>>>>>> fe48fd3eebf6fb39708021d95c884e84cda861ee
   @include respond-to('desktop') {
     height: 40px !important;
     padding-top: 13px !important;
@@ -71,14 +82,15 @@ body {
 
 .small-caps {
   font-size: 14px !important;
+  color: #00aced;
 }
 
 .font-padding-stilization {
-  font-size: 1.1rem;
+  font-size: 15px;
   display: inline-block;
-  padding: 1.2rem 0;
-  font-family: $bold-font-family, Arial, Helvetica, sans-serif;
-  //font-weight: 600;
+  padding: 10px 0px;
+  font-family: $default-font-family;
+  vertical-align: middle;
 
   @include respond-to('desktop') {
     padding: 0.5rem 0;
@@ -88,15 +100,23 @@ body {
 .modal-menu {
   background: white;
   width: 100%;
-  font-size: 18.5px;
 
   .go-back {
-    padding: 30px 0 30px 16px;
+    padding: 17px 0 17px 16px;
+    a {
+      font-size: 15px;
+      font-family: $bold-font-family;
+      font-weight: 500;
+      color: #00aced;
+    }
+    i {
+      font-size: 15px;
+      color: #00aced;
+    }
   }
-
   .fasback {
     font-size: 18.5px;
-    padding: 0 16px;
+    padding: 0px 7px 0px 0px;
     color: $main-color;
   }
 
@@ -149,6 +169,30 @@ figure.lh-img-holder {
   margin-bottom: 0 !important;
   position: relative;
   margin: 0 !important;
+  figcaption {
+    span {
+      font-size: 10px;
+      border-radius: 3px;
+      padding: 0px 12px 0px 12px;
+      font-family: $default-font-family;
+      &:first-child {
+        font-family: $light-font-family;
+        font-size: 12px;
+        padding: 4px 10px;
+        i {
+          color: #465e42;
+          background: #fff;
+          border-radius: 50%;
+          width: 18px;
+          height: 18px;
+          padding-top: 5px;
+          padding-left: 3px;
+          font-size: 9px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
 }
 
 [class^="col-"].lh-img {
@@ -193,8 +237,10 @@ figure.lh-img-holder {
 }
 
 .offer-link-group {
-  width: 100%;
-  text-align: center;
+  padding: 7px 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+  width: calc(100% + 30px);
 }
 
 .offer-link {
@@ -206,9 +252,17 @@ figure.lh-img-holder {
   padding: 16px;
   text-transform: uppercase;
   margin: 10px 15px;
-  width: 202px;
-  font-family: "Graphik Regular", Helvetica, Arial, Lucida, sans-serif !important;
+  width: 100%;
+  max-width: 47%;
   background-color: $main-color;
+
+  /* Overrides */
+  max-width: 47%;
+  font-size: 13px;
+  padding: 10px 0px;
+  text-align: center;
+  margin: 0px 4px;
+  font-family: $bold-font-family;
 
   a {
     color: white;
@@ -216,27 +270,29 @@ figure.lh-img-holder {
 
   .fasarrow {
     color: white;
-    padding-left: 1.5em;
+    padding-left: 1em;
+    font-size: 12px;
   }
 }
 
 .crimson-dot {
   display: inline-block;
-  height: 10px;
-  width: 10px;
+  height: 7px;
+  width: 7px;
   padding-right: .5em;
-  background-color: crimson;
+  background-color: #e03225;
   border-radius: 50%;
+  vertical-align: middle;
 }
 
 .lh-info-wrapper {
   color: black;
-  margin-top: 1.87em;
-  padding-left: 1.87em;
+  margin-top: 30px;
+  padding: 0px 15px;
 
   p {
     padding: 0;
-    font-size: 1.1rem;
+    font-size: 14px;
   }
 
   span.small-dot {
@@ -272,19 +328,24 @@ figure.lh-img-holder {
   }
   
   .lh-money {
-    margin-top: .5rem;
+    margin-top: .2rem;
     padding-bottom: 0;
-    font-size: 34px;
+    font-size: 25px;
+    font-family: $default-font-family;
   }
 
   .house-for-sale {
     padding-left: .3em;
+    font-family: $default-font-family;
+    font-size: 10px;
+    text-transform: uppercase;
   }
 
   .large-link {
-    color: $main-lighter;
+    color: #00aced;
     display: block;
-    font-size: 1.2rem;
+    font-size: 15px;
+    font-family: $bold-font-family;
     padding: 1em 0;
 
     .fasarrow {
@@ -303,8 +364,9 @@ figure.lh-img-holder {
 
     img {
       display: block;
-      width: 120px;
-      height: 120px;
+      max-width: 90px;
+      height: 90px;
+      margin-right: 20px;
     }
   }
 }
@@ -315,15 +377,18 @@ figure.lh-img-holder {
 
   .agent-phone,
   .agent-text {
-    font-size: 16px;
 
     &-text {
-      margin-right: 1.4em;
+      display: inline-block !important;
+      font-size: 15px;
+      font-family: $default-font-family;
+      vertical-align: middle;
+      margin-left: 6px;
+      padding-top: 5px;
     }
-
-    .agent-phone {
-      transform: rotate(90deg);
-    }
+  }
+  .agent-phone {
+    transform: rotate(90deg);
   }
 }
 
@@ -338,14 +403,9 @@ figure.lh-img-holder {
     }
   }
 
-  .agent-phone {
-    &-text {
-      font-size: 1.1rem;
-      margin: 0 0em 0 .7em;
-      
-      @include respond-to('s-desktop') {
-        margin: 0 1.5em 0 .7em;
-      }
+  .agent-phone {      
+    @include respond-to('s-desktop') {
+      margin: 0 1.5em 0 .7em;
     }
   }
 
@@ -367,14 +427,15 @@ figure.lh-img-holder {
 // lh-house-details
 
 .faw-options {
-  padding-top: 2em;
-  color: $main-color;
+  padding-top: 1em;
+  color: #00acee;
 
   [class*='col-'] {
     text-align: center;
   }
 
   i {
+<<<<<<< HEAD
     font-size: 2.5rem;
     display: block;
     padding-bottom: .2em;
@@ -383,16 +444,25 @@ figure.lh-img-holder {
   a {
     font-size: 1.1rem;
     display: block;
+=======
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-family: $default-font-family;
+    font-size: 15px;
+>>>>>>> fe48fd3eebf6fb39708021d95c884e84cda861ee
   }
 
   .fo-container {
-    padding-right: 20px;
+    padding-right: 0px;
   }
 }
 
 .hr {
   width: calc(100% + 30px);
-  margin-left: -30px;
+  margin-left: -15px;
+  margin-right: -15px;
 
   @include respond-to('desktop') {
     margin-left: 0;
@@ -400,12 +470,12 @@ figure.lh-img-holder {
   }
 
   &-up {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border-top: 1px solid $lightergray;
   }
 
   &-down {
-    padding-top: 20px;
+    padding-top: 15px;
     border-bottom: 1px solid $lightergray;
   }
 }
@@ -436,8 +506,9 @@ figure.lh-img-holder {
 
 .contact-agent {
   p {
-    color: $gray-paragraph !important;
-    font-size: 1rem !important;
+    color: #4a505d !important;
+    font-size: 14px !important;
+    line-height: 19px;
   }
 
   .contact-agent-prev {
@@ -464,9 +535,10 @@ figure.lh-img-holder {
   }
 
   h2.contact-agent-prev-name {
-    font-size: 1.05rem;
-    color: $main-lighter;
+    font-size: 15px;
+    color: #00acee;
     padding-bottom: 0;
+    font-family: $bold-font-family;
   }
 
   &-details {
@@ -476,13 +548,13 @@ figure.lh-img-holder {
   .fa-star {
     color: $main-lighter;
     font-size: .8rem;
-    margin: .6em 0 1em;
+    margin: .3em 0 1em;
   }
 
   &-controlls {
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 0;
 
     .agent-phone {
       transform: rotate(90deg);
@@ -491,6 +563,7 @@ figure.lh-img-holder {
       padding: .8em;
       border-radius: 50%;
       font-size: 12px;
+      margin-right: 4px;
 
       &-text {
         margin-left: 0.7em;
@@ -514,6 +587,7 @@ figure.lh-img-holder {
       padding: .8em;
       border-radius: 50%;
       font-size: 12px;
+      margin-right: 4px;
 
       &-text {
         font-size: 1.1rem !important;
@@ -543,7 +617,18 @@ figure.lh-img-holder {
 }
 
 .contact-agent-form,
+<<<<<<< HEAD
 .lh-form, .modal {
+=======
+.lh-form {
+  .form-group {
+    input {
+      &::before {
+       top: 1em;
+      }
+    }
+  }
+>>>>>>> fe48fd3eebf6fb39708021d95c884e84cda861ee
   .lh-apendix {
     color: #a6b4c6;
     font-size: 0.95em;
@@ -552,8 +637,7 @@ figure.lh-img-holder {
     padding-bottom: 25px;
   }
 
-  margin-top: 2.5em;
-  margin-right: 20px;
+  margin-top: 1.5em;
 
   textarea {
     padding: .7em !important;
@@ -564,7 +648,7 @@ figure.lh-img-holder {
     position: relative;
     padding-left: 1.3rem;
     font-size: .95rem;
-    margin: 1em 0 0;
+    margin: 0;
     cursor: pointer;
     
     input {
@@ -621,7 +705,7 @@ figure.lh-img-holder {
       @extend %fa-base;
       right: 12px;
       top: 16px;
-      content: "\f078";
+      content: "\f107";
       color: $lightergray !important;
     }
   }
@@ -631,10 +715,10 @@ figure.lh-img-holder {
   }
 
   .lh-label {
-    font-size: 16px;
-    font-family: $bold-font-family, Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
-    margin: 0 0 .3em;
+    font-family: $bold-font-family;
+    font-size: 15px;
+    margin: 0;
+    color: #1e232c;
   }
 
   .has-dollar-left {
@@ -717,7 +801,7 @@ figure.lh-img-holder {
 
   .form-control {
     border: 1px solid $lightergray;
-    padding: 1.5em .33em;
+    padding: 1.2em .33em;
     box-shadow: inset 0px 9px 15px -10px #d6dce6;
 
     &:active,
@@ -744,10 +828,15 @@ figure.lh-img-holder {
   }
 
   .offer-link {
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     margin: 1rem 0;
     font-size: 1rem;
+    button {
+      font-family: $bold-font-family;
+      font-size:  14px;
+      font-weight: unset;
+    }
   }
 
   .fa-phone {
@@ -775,7 +864,6 @@ figure.lh-img-holder {
 
   img {
     border-radius: 5px;
-    margin-right: 15px;
 
     @include respond-to('mobile') {
       margin-right: 25px !important;
@@ -785,7 +873,7 @@ figure.lh-img-holder {
 
 .fadown,
 .faup {
-  font-size: 1.7rem;
+  font-size: 20px;
   float: right;
   padding: 0 1em;
   transition: all 300ms ease;
@@ -811,7 +899,7 @@ figure.lh-img-holder {
   }
 
   .lh-subtitle {
-    color: $main-lighter;
+    color: #00aced;
     font-family: $bold-font-family, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 14px;
@@ -834,25 +922,38 @@ figure.lh-img-holder {
 
 .lh-house-prop-desc {
   .lh-description {
-    padding-right: 25px;
-    color: $gray-paragraph;
-    font-size: 17.3px;
+    font-size: 15px;
     margin-bottom: 1em;
+    text-align: justify;
+    color: #9399a2;
   }
 }
 
 .lh-features-list-wrap {
   margin-right: 20px;
+  font-size: 16px;
+  font-family: $default-font-family;
+  color: #1e232c;
+  .text-right {
+    strong {
+      color: #1e232c;
+    }
+  }
+}
+
+.chart-wrapper {
+  canvas {
+    height: 170px;
+    width: 170px;
+  }
 }
 
 .lh-finance {
   .offer-link {
     margin: 2rem 0 1.5rem;
-    width: calc(100% - 20px);
     text-transform: none;
-    font-size: 17px !important;
-    padding: 15px !important;
     align-self: flex-start;
+    max-width: 100%;
     .fasarrow {
       padding-left: .5em;
     }
@@ -880,8 +981,9 @@ figure.lh-img-holder {
     position: absolute;
     pointer-events: none;
     box-shadow: inset 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27);
-    margin-left: -26px;
-    width: calc(100% + 26px);
+    margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% + 30px)
   }
 
   i {
@@ -951,8 +1053,7 @@ figure.lh-img-holder {
 
 .lh-details-block {
   border-bottom: 1px solid $lightergray;
-  margin-right: 20px;
-  margin-bottom: .8em;
+  margin-bottom: .5em;
 
   & > strong {
     display: block;
@@ -960,13 +1061,14 @@ figure.lh-img-holder {
   }
 
   p, strong {
-    font-size: 16.5px;
+    font-size: 15px;
+    font-family: $default-font-family;
   }
 }
 
 .lh-provider {
   .lh-license {
-    width: 80%;
+    width: 100%;
     padding-bottom: .5em;
     @include respond-to('desktop') {
       padding-bottom: 0;
@@ -979,20 +1081,18 @@ figure.lh-img-holder {
   }
   
   span {
-    font-size: .9rem;
+    font-size: 10px;
     padding: .5em 0 1em;
     color: $gray-paragraph;
     display: block;
-    font-family: $default-font-family, Arial, Helvetica, sans-serif;
+    font-family: $default-font-family;
+    line-height: 16px;
     a {
       color: $main-lighter;
     }
   }
-
-
   .offer-link {
-    margin: 0 10px 20px 0;
-    padding: 14px !important;
+    margin-bottom: 20px;
   }
 }
 
@@ -1021,16 +1121,19 @@ figure.lh-img-holder {
 }
 
 .border-dotted {
-  border: 2px dotted $lightergray;
+  border: 1px dotted $lightergray;
   border-width: 3px;
-  padding: 1em;
   font-size: 1.25rem;
   margin-right: 1em;
-  color: $main-color;
+  color: #00acee;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding-top: 18px;
 }
 
 %fa-base {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   text-rendering: auto;
   font-variant: normal;
@@ -1055,6 +1158,7 @@ figure.lh-img-holder {
 
 .lh-transportation {
   font-family: $bold-font-family, Arial, Helvetica, sans-serif;
+  color: #00aced;
 
   .list-home-title {
     padding: 6px 0;
@@ -1074,6 +1178,7 @@ figure.lh-img-holder {
     font-size: 1rem;
     color: $main-lighter;
     font-family: $bold-font-family, Arial, Helvetica, sans-serif;
+    color: #00aced;
   }
 
   .transp-desc {
@@ -1093,10 +1198,10 @@ figure.lh-img-holder {
   }
 
   .round-blue {
-    height: 35px !important;
-    font-size: 1rem !important;
-    padding-top: 8.5px !important;
-    width: 35px !important;
+    height: 30px !important;
+    font-size: 13px !important;
+    padding-top: 8px !important;
+    width: 30px !important;
   }
 
   .list-home-title {
@@ -1108,13 +1213,19 @@ figure.lh-img-holder {
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 17px;
     padding-top: .5em;
-    font-weight: 600;
+    font-family: $bold-font-family;
   }
 
   p {
-    font-size: 16px;
+    font-size: 15px;
+    font-family: $default-font-family;
+  }
+
+  .data-by {
+    color: #252a32;
+    font-size: 14px;
   }
 
   .stars-reviews {
@@ -1138,7 +1249,6 @@ figure.lh-img-holder {
 .lh-school-rankings {
 
   #lh-school-ranking {
-    margin-right: 20px;
   }
 
   .list-home-title {
@@ -1164,9 +1274,15 @@ figure.lh-img-holder {
       }
 
       p:first-of-type {
-        color: $main-color;
+        color: #00aced;
+        font-size: 15px;
       }
     }
+  }
+
+  .round-blue {
+    padding-top: 10px;
+    font-family: $default-font-family;
   }
 
   .school-rank-group:nth-child(3) {
@@ -1174,8 +1290,7 @@ figure.lh-img-holder {
   }
 
   .offer-link {
-    margin: 20px 10px 20px 0;
-    padding: 14px !important;
+    margin: 15px 4px;
   }
 
   .sch-r-offer-link {
@@ -1190,8 +1305,9 @@ figure.lh-img-holder {
       position: absolute;
       pointer-events: none;
       box-shadow: inset 0px 16px 27px -15.25px rgba(10, 25, 40, 0.27);
-      margin-left: -26px;
-      width: calc(100% + 26px);
+      margin-left: -15px;
+      margin-right: -15px;
+      width: calc(100% + 30px);
     }
   }
 }
@@ -1207,7 +1323,8 @@ figure.lh-img-holder {
 .blue-border {
   border: 1.5px solid $main-color;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 15px;
+  font-family: $bold-font-family;
   border-radius: 5px;
   margin-bottom: 1em;
   padding: 1em;
@@ -1228,7 +1345,7 @@ figure.lh-img-holder {
 }
 
 .lh-property-slider {
-  margin: 20px 20px 20px 0;
+  padding: 0px;
   
   .red-dot {
     width: 10px;
@@ -1245,12 +1362,12 @@ figure.lh-img-holder {
   }
 
   .offer-link {
-    text-transform: none;
-    width: 65%;
-    padding: 13px !important;
-    margin: 25px auto !important;
+    max-width: 70%;
+    margin: 20px auto;
+    text-transform: unset;
+
     i {
-      padding-left: 2em !important;
+      padding-left: 10px !important;
     }
 
     @include respond-to('desktop') {

@@ -260,7 +260,7 @@
                         &::after {
                             display: none;
                         }
-                        .fas {
+                        .fal {
                             color:  #1e232c;
                             transition: color 0.3s ease;
                             &.fa-angle-down {
@@ -273,7 +273,7 @@
                         &.active {
                             outline: none !important;
                             box-shadow: none; 
-                            .fas {
+                            .fal {
                                 color: #00aced;
                             }
                         }
@@ -360,7 +360,7 @@
                                         color: #ffba13;
                                     }
                                   }
-                                  .fas.info {
+                                  .fal.info {
                                     float: initial;
                                     vertical-align: middle;
                                     margin-top: -3px;
@@ -379,13 +379,10 @@
                                   border-radius: 3px;
                                   transition: background 0.3s ease;
                                 }
-                                &:hover + label:before {
-                                  background: #00aced;
-                                }
                                 &:checked + label:before {
                                   background: #00aced;
                                 }
-                                &:checked label::after {
+                                &:checked + label::after {
                                   content: '';
                                   position: absolute;
                                   left: 4px;
@@ -539,4 +536,15 @@
 }
 @media only screen and (max-width: 1365px) {
     #homes-search-desktop-field {min-width: 15rem !important;}
+}
+@media only screen and (max-width: 1400px) {
+    #listingDropdownDesktopMenu {
+        .dropdown-item {
+            padding: 1px 30px 1px 15px !important;
+            &.sub {
+                padding-left: 34px !important;
+            }
+        }
+    }
+    #filterDropdown .form-group {margin-bottom: 5px;}
 }
