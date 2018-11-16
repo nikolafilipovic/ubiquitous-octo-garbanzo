@@ -2,25 +2,25 @@
 /*
 Template Name: List Homes
 */
-  get_header();
+  get_header(nomenu);
 ?>
 <div class="lh-wrapper">
   <div class="container-fluid override-fluid">
     <header class="modal-menu b-shadow">
       <div class="go-back d-block d-md-none">
-        <i class="fas fa-chevron-left fasback"></i>
+        <i class="far fa-chevron-left fasback"></i>
         <a href="#">Back</a>
       </div>
 
       <div class="various-link d-none d-md-flex">
         <div class="offer-link">
           <a href="#">Make an offer</a>
-          <i class="fas fa-arrow-right fasarrow"></i>
+          <i class="far fa-arrow-right fasarrow"></i>
         </div>
 
         <div class="offer-link">
           <a href="#">Schedule tour</a>
-          <i class="fas fa-arrow-right fasarrow"></i>
+          <i class="far fa-arrow-right fasarrow"></i>
         </div>
 
         <!-- save, share, virtual tour, remove, X -->
@@ -52,7 +52,7 @@ Template Name: List Homes
         <figure class="lh-img-holder">
           <img src="/wp-content/themes/theoffercompany/images/pexels-photo-259593.jpeg" alt="Propery-1">
           <figcaption class="d-md-none">
-            <span>Virtual tour</span>
+            <span><i class="fas fa-vr-cardboard"></i> Virtual tour</span>
             <span>1 / 27</span>
           </figcaption>
         </figure>
@@ -79,12 +79,12 @@ Template Name: List Homes
     <div class="offer-link-group b-shadow d-block d-md-none">
       <div class="offer-link">
         <a href="#">Make an offer</a>
-        <i class="fas fa-arrow-right fasarrow"></i>
+        <i class="far fa-arrow-right fasarrow"></i>
       </div>
 
       <div class="offer-link">
         <a href="#">Schedule tour</a>
-        <i class="fas fa-arrow-right fasarrow"></i>
+        <i class="far fa-arrow-right fasarrow"></i>
       </div>
     </div>
 
@@ -111,10 +111,10 @@ Template Name: List Homes
             <div class="map-price row no-gutters">
               <div class="col-6 col-md-12">
                 <span class="crimson-dot"></span>
-                <strong class="small-imp house-for-sale">HOUSE FOR SALE</strong>
+                <strong class="small-imp house-for-sale">FOR SALE</strong>
                 <h1 class=" lh-money">$425,000</h1>
                 <a href="#" class="large-link">Get pre-qualified
-                  <i class="fas fa-arrow-right fasarrow"></i>
+                  <i class="far fa-arrow-right fasarrow"></i>
                 </a>
               </div>
               <div class="col-6 col-md-12 d-flex lh-map">
@@ -129,23 +129,23 @@ Template Name: List Homes
         <div class="faw-options d-block d-md-none">
           <div class="hr hr-up"></div>
           <div class="fo-container row no-gutters">
-            <div class="col-3">
+            <div class="col-2">
               <i class="far fa-heart"></i>
               <p>Save</p>
             </div>
 
             <div class="col-3">
-              <i class="fas fa-share-alt"></i>
+              <i class="fal fa-share-alt"></i>
               <p>Share</p>
             </div>
 
-            <div class="col-3">
-              <i class="fas fa-vr-cardboard"></i>
+            <div class="col-4">
+              <i class="fal fa-vr-cardboard"></i>
               <p>Virtual Tour</p>
             </div>
 
             <div class="col-3">
-              <i class="far fa-times-circle"></i>
+              <i class="fal fa-times-circle"></i>
               <p>Remove</p>
             </div>
 
@@ -154,10 +154,14 @@ Template Name: List Homes
         </div>
 
         <div class="lh-house-details lh-house-details--big d-flex d-md-none">
-          <i class="fas fa-phone round-blue agent-round"></i>
-          <p class="agent-phone-text d-flex align-items-center">Call Agent</p>
-          <i class="fas fa-comment-alt round-blue agent-round"></i>
-          <p class="agent-phone-text d-flex align-items-center">Text Agent</p>
+          <div class="col-6">
+            <i class="fas fa-phone round-blue agent-round agent-phone"></i>
+            <p class="agent-phone-text d-flex align-items-center">Call Agent</p>
+          </div>
+          <div class="col-6">
+            <i class="fas fa-comment-alt-dots round-blue agent-round"></i>
+            <p class="agent-phone-text d-flex align-items-center">Text Agent</p>
+          </div>
         </div>
 
         <div class="lh-house-prop-desc">
@@ -188,7 +192,7 @@ Template Name: List Homes
           <div class="hr hr-up d-block d-md-none"></div>
           <h1 class="list-home-title toggle-collapse" data-target="#lh-property-amentities" data-notify="#finance-wrap">
             Property Amentities
-            <i class="fas fa-chevron-up faup"></i>
+            <i class="far fa-chevron-up faup"></i>
           </h1>
           <div class="hr hr-down d-block d-md-none"></div>
         
@@ -240,12 +244,12 @@ Template Name: List Homes
                     </div>
                   </div>
                   <div class="row no-gutters">
-                    <div class="col-6">
+                    <div class="col-7">
                       <span>
                         Year Built:
                       </span>
                     </div>
-                    <div class="col-6 text-right">
+                    <div class="col-5 text-right">
                       <strong>2002</strong>
                     </div>
                   </div>
@@ -399,22 +403,20 @@ Template Name: List Homes
               <div class="lh-license">
                 <p>Listing provided by</p>
                 <span class="font-padding-stilization">
-                  <a href="#">Samuel Shechter</a>, License #357382,
-                  <a href="#">Quicksilver Realty</a> inc.,
-                  (404) 624-6362, Source: First Multiple Listing Service.
-                  <a href="#">MLS Disclaimer</a>
+                  <a href="#">Samuel Shechter</a>, License #357382, <a href="#">Quicksilver Realty</a> inc.<br>
+                  (404) 624-6362, Source: First Multiple Listing Service. <a href="#">MLS Disclaimer</a>
                 </span>
               </div>
 
               <div class="d-flex d-md-none">
                 <div class="offer-link">
                   <a href="#">Make an offer</a>
-                  <i class="fas fa-arrow-right fasarrow"></i>
+                  <i class="far fa-arrow-right fasarrow"></i>
                 </div>
 
                 <div class="offer-link">
                   <a href="#">Schedule tour</a>
-                  <i class="fas fa-arrow-right fasarrow"></i>
+                  <i class="far fa-arrow-right fasarrow"></i>
                 </div>
               </div>
             </div>
@@ -425,11 +427,11 @@ Template Name: List Homes
           <div class="hr hr-down d-none d-md-block"></div>
           <h1 class="list-home-title d-block w-100 toggle-collapse" data-target="#lh-get-financing">
             Get Financing
-            <i class="fas fa-chevron-up faup"></i>
+            <i class="far fa-chevron-up faup"></i>
           </h1>
           <div id="lh-get-financing" class="collapse show">
             <div class="row no-gutters">
-              <div class="col-4 col-md-3 lh-finance-list">
+              <div class="col-5 col-md-3 lh-finance-list">
                 <ul>
                   <li>P&amp;I <strong>$1,642</strong></li>
                   <li>Insurance <strong>$67</strong></li>
@@ -440,15 +442,15 @@ Template Name: List Homes
               </div>
               <div class="col-7 col-md-6 d-flex justify-content-center">
                 <div class="chart-wrapper">
-                  <canvas width="200" height="200" id="lh-chart"></canvas>
+                  <canvas id="lh-chart"></canvas>
                 </div>
               </div>
             </div>
             <div class="row no-gutters">
               <div class="col-12 col-md-8 d-flex flex-column align-items-center">
-                <div class="offer-link">
+                <div class="offer-link wide">
                   <a href="#">Get pre-qualified</a>
-                  <i class="fas fa-arrow-right fasarrow"></i>
+                  <i class="far fa-arrow-right fasarrow"></i>
                 </div>
                 <div class="plus-button d-flex justify-content-center">
                   <i class="fas fa-plus"></i>
@@ -459,7 +461,7 @@ Template Name: List Homes
             <form class="lh-form">
               <label class="lh-label">Home Price</label>
               <div class="row no-gutters">
-                <div class="form-group mt-1 mb-4 col-12 col-md-9">
+                <div class="form-group mt-1 col-12 col-md-9">
                   <div class="has-dollar-left">
                     <input type="text" class="form-control" value="398,900" />
                   </div>
@@ -467,7 +469,7 @@ Template Name: List Homes
               </div>
 
               <label class="lh-label">Down payment</label>
-              <div class="row no-gutters mb-3">
+              <div class="row no-gutters">
                 <div class="form-group mt-1 col-9 col-md-7 pr-1">
                   <div class="has-dollar-left">
                     <input type="text" class="form-control" value="398,900" />
@@ -482,7 +484,7 @@ Template Name: List Homes
 
               <label class="lh-label">Loan program</label>
               <div class="row no-gutters">
-                <div class="col-12 col-md-9 lh-custom-select-wrap mb-4">
+                <div class="col-12 col-md-9 lh-custom-select-wrap mb-3">
                   <select name="cars" class="lh-custom-select">
                     <option selected>30-year fixed</option>
                     <option>20-year fixed</option>
@@ -500,7 +502,7 @@ Template Name: List Homes
                 </div>
               </div>
 
-              <div class="mb-4">
+              <div class="mb-3">
                 <label class="custom-checkmark">
                   Include taxes/insurance
                   <input type="checkbox">
@@ -509,7 +511,7 @@ Template Name: List Homes
               </div>
 
               <label class="lh-label">Property tax</label>
-              <div class="row no-gutters mb-3">
+              <div class="row no-gutters mb-1">
                 <div class="form-group mt-1 col-9 col-md-7 pr-1">
                   <div class="has-year-right has-dollar-left">
                     <input type="text" class="form-control" value="2,712" />
@@ -531,7 +533,7 @@ Template Name: List Homes
                 </div>
               </div>
 
-              <div class="mb-4">
+              <div class="mb-3">
                 <label class="custom-checkmark">
                   Include PMI
                   <input type="checkbox">
@@ -604,7 +606,7 @@ Template Name: List Homes
                 </div>
               </div>
             </div>
-            <p class="small-caps data-by">Data by <a class="small-caps" href="#"> walkscore</a></p>
+            <p class="data-by">Data by <a class="small-caps" href="#"> walkscore</a></p>
           </div>
           <div class="hr hr-down"></div>
         </div> <!-- lh-transportation -->
@@ -765,7 +767,7 @@ Template Name: List Homes
                 </div>
               </div>
             </div>
-            <p class="small-caps">Data by <a class="small-caps" href="#"> Yelp</a></p>
+            <p class="data-by">Data by <a class="small-caps" href="#"> Yelp</a></p>
           </div>
           <div class="hr hr-down"></div>
         </div> <!-- lh-nearby-places -->
@@ -808,17 +810,19 @@ Template Name: List Homes
                 <p class="small-caps">0.9 mi</p>
               </div>
             </div>
-            <p class="small-caps">Data by <a class="small-caps" href="#"> GreatSchools.org</a></p>
+            <p class="data-by">Data by <a class="small-caps" href="#"> GreatSchools.org</a></p>
+
+            <div class="d-block d-md-none hr hr-down"></div>
 
             <div class="sch-r-offer-link d-block d-md-none">
               <div class="offer-link">
                 <a href="#">Make an offer</a>
-                <i class="fas fa-arrow-right fasarrow"></i>
+                <i class="far fa-arrow-right fasarrow"></i>
               </div>
 
               <div class="offer-link">
                 <a href="#">Schedule tour</a>
-                <i class="fas fa-arrow-right fasarrow"></i>
+                <i class="far fa-arrow-right fasarrow"></i>
               </div>
             </div>
           </div>
@@ -865,7 +869,7 @@ Template Name: List Homes
           <div class="d-flex flex-column justify-content-center">
             <div class="offer-link">
               <a href="#">See all featured properties</a>
-              <i class="fas fa-arrow-right fasarrow"></i>
+              <i class="far fa-arrow-right fasarrow"></i>
             </div>
 
             <div class="blue-border">
@@ -918,17 +922,21 @@ Template Name: List Homes
               <input type="text" class="form-control" placeholder="Phone" />
             </div>
           </div>
-
           <div class="form-group">
             <div class="has-mail-left">
               <input type="text" class="form-control" placeholder="Email" />
             </div>
           </div>
-
           <div class="input-group">
             <textarea class="form-control" placeholder="Question"></textarea>
           </div>
-
+          <div class="another-contact mt-4">
+            <img src="/wp-content/themes/theoffercompany/images/man.png" />
+            <div class="preferred-lender">
+              <p>Preferred lender</p>
+              <h2 class="contact-agent-prev-name">David Houze</h2>
+            </div>
+          </div>
           <div class="form-check d-flex justify-content-center">
             <div>
               <label class="custom-checkmark">
@@ -938,21 +946,11 @@ Template Name: List Homes
               </label>
             </div>
           </div>
-
           <div class="offer-link">
             <button>Contact Agent</button>
-            <i class="fas fa-arrow-right fasarrow"></i>
+            <i class="far fa-arrow-right fasarrow"></i>
           </div>
         </form>
-
-        <div class="another-contact">
-          <img src="/wp-content/themes/theoffercompany/images/man.png" />
-          <div class="preferred-lender">
-            <p>Preferred lender</p>
-            <h2 class="contact-agent-prev-name">David Houze</h2>
-          </div>
-        </div>
-
       </div> <!-- contact-agent -->
     </div> <!-- lh-info-wrapper -->
   </div> <!-- container fluid -->
