@@ -1,7 +1,14 @@
 .modal {
+  margin:0 !important;
+  @include respond-to('desktop') {
+    margin-top: 2.5em !important;
+  }
   .modal-content {
-    width:400px;
+    width:290px;
     margin: 0 auto;
+    @include respond-to('desktop') {
+      width:400px;
+    }
   }
   .modal-header {
     position: relative;
@@ -34,8 +41,10 @@ $base-font: 1.8rem;
 .sphere-container {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  @include respond-to('desktop') {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 .sphere {
@@ -74,7 +83,9 @@ $base-font: 1.8rem;
 #virtual-tour-modal {
   .modal-body--center {
     p {
-      width: 320px;
+      @include respond-to('desktop') {
+        width: 320px;
+      }
     }
   }
 }
@@ -82,7 +93,9 @@ $base-font: 1.8rem;
 #remove-modal {
   .modal-body--center {
     p {
-      width: 300px;
+      @include respond-to('desktop') {
+        width: 300px;
+      }
     }
   }
 }
@@ -122,12 +135,14 @@ $base-font: 1.8rem;
   text-align: center;
   font-size: 13px;
   padding: .5rem 2rem;
-  width: 160px;
   margin: 0 .4rem;
   text-transform: uppercase;
   font-family: "Graphik Medium", Helvetica, Arial, Lucida, sans-serif !important;
   background-color: #00acee;
   color: white;
+  @include respond-to('desktop') {
+    width: 160px;
+  }
 }
 
 .custom-checkmark {

@@ -57,12 +57,15 @@ body {
 .agent-round {
   padding-top: 15px !important;
   font-size: 1.2rem !important;
-  transform: rotate(90deg);
   @include respond-to('desktop') {
     height: 40px !important;
     padding-top: 13px !important;
     font-size: 1rem !important;
     width: 40px !important;
+  }
+
+  &:first-of-type {
+    transform: rotate(90deg);
   }
 }
 
@@ -373,11 +376,13 @@ figure.lh-img-holder {
 
   i {
     font-size: 2.5rem;
-    padding-right: .5em;
+    display: block;
+    padding-bottom: .2em;
   }
 
-  p {
-    margin-left: -1em;
+  a {
+    font-size: 1.1rem;
+    display: block;
   }
 
   .fo-container {

@@ -130,23 +130,31 @@ Template Name: List Homes
           <div class="hr hr-up"></div>
           <div class="fo-container row no-gutters">
             <div class="col-3">
-              <i class="far fa-heart"></i>
-              <p>Save</p>
+              <a href="#">
+                <i class="far fa-heart"></i>
+                Save
+              </a>
             </div>
 
             <div class="col-3">
-              <i class="fas fa-share-alt"></i>
-              <p>Share</p>
+              <a href="#" data-toggle="modal" data-target="#share-modal">
+                <i class="fas fa-share-alt"></i>
+                Share
+              </a>
             </div>
 
             <div class="col-3">
-              <i class="fas fa-vr-cardboard"></i>
-              <p>Virtual Tour</p>
+              <a href="#" data-toggle="modal" data-target="#virtual-tour-modal">
+                <i class="fas fa-vr-cardboard"></i>
+                Virtual Tour
+              </a>
             </div>
 
             <div class="col-3">
-              <i class="far fa-times-circle"></i>
-              <p>Remove</p>
+              <a href="#" data-toggle="modal" data-target="#remove-modal">
+                <i class="far fa-times-circle"></i>
+                Remove
+              </a>
             </div>
 
           </div>
