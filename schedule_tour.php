@@ -88,6 +88,14 @@ Template Name: Schedule Tour
       <div id="step-3" class="step">
         <h1 data-triger="#step-1" class="step-toggler step-wrap">Success!</h1>
         <p>An email has been submited to your agent</p>
+        <div class="row">
+        <div class="col-12">
+        <div data-triger="#step-3" class="offer-link step-toggler">
+                      <a href="#">Submit</a>
+                      <i class="far fa-arrow-right fasarrow"></i>
+                    </div>
+</div>
+</div>
       </div><!-- End of step 3 -->
     </div>
 
