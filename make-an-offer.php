@@ -2,28 +2,21 @@
     /*
         Template Name: Make an offer
     */
-    get_header();
+    get_header(nomenu);
 ?>
 <!-- Privremeno! -->
 <style>
-    .main-header {
-        background: blue;
-    }
-  /* Ovo dodajemo samo da fixujemo #wrapperTop. */
-  .wrapperTop {height: 6vh;}
-  /* Kazemo wrapperu da uzme full visinu ekrana. */
-  #pageone {height: 95vh;}
   /* 6vh + 95vh je 101vh, sto bas nema mnogo smisla. Moja pretpostavka je da mozda negde margina ima neka koja vuce. */
   #pageone .wrapperBlocks {margin: 0 auto; margin-top: 10px;}
 </style>
 <!-- WRAPPER ID -->
 <div id="wrapper">
     <div class="wrapperTop">
-        <p><i class="fa fa-angle-left" aria-hidden="true"></i><a href="#"> Back</a></p>
+      <a href="#"><i class="far fa-angle-left" aria-hidden="true"></i> Back</a>
     </div>
     <div class="wrapper" id="pageone">
       <!-- Container-Fluid znaci da container bude od ivice do ivice. h-100 znaci da uzme visinu od 100% -->
-      <div class="container-fluid h-100">
+      <div class="container-fluid h-100 mod">
         <!-- h-100 znaci da uzme visinu od 100% -->
         <div class="row h-100">
           <!-- my-auto znaci da centrira y (vertikalno) marginama po sredini. -->
@@ -33,26 +26,26 @@
               <h2>11249 E Sonrisa Ave</h2>
               <h3>Mesa, AZ 85212</h3>
               <hr/>
-              <h4>Let's get started. Who is making the offer?</h4>
+              <h5>Let's get started. Who is making the offer?</h4>
             </div>
             <div class="wrapperBlocks">
               <div class="formBlock formBorderTop">
                 <div class="formCircle">
-                  <i class="fas fa-key farot"></i>
+                  <i class="fal fa-key farot"></i>
               </div>
               <h4>Buyer</h4>
               <div class="formArrow">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <i class="far fa-arrow-right" aria-hidden="true"></i>
               </div>
               <div class="cleaner"></div>
             </div>
             <div class="formBlock formBorderMid">
               <div class="formCircle">
-                <i class="fas fa-user-circle"></i>
+                <i class="fal fa-user-circle"></i>
               </div>
               <h4>Buyers Agent</h4>
               <div class="formArrow">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <i class="far fa-arrow-right" aria-hidden="true"></i>
               </div>
               <div class="cleaner"></div>
             </div>
@@ -62,7 +55,7 @@
               </div>
               <h4>Investor</h4>
               <div class="formArrow">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <i class="far fa-arrow-right" aria-hidden="true"></i>
               </div>
               <div class="cleaner"></div>
             </div>
