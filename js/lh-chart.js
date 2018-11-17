@@ -1,5 +1,9 @@
 jQuery(document).ready(function() {
-  var ctx = document.getElementById('lh-chart').getContext('2d');
+  var elem = document.getElementById('lh-chart');
+  if(!elem) return;
+
+    var ctx = elem.getContext('2d');
+
 
      function drawChartText(chart, text, fontOpts) {
         if(!fontOpts) fontOpts = {};

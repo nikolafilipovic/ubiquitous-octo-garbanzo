@@ -12,3 +12,19 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin make-circle($sphere-size, $base-font) {
+  height: $sphere-size;
+  width: $sphere-size;
+  border-radius: 50%;
+  background: crimson;
+  font-size: $base-font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  i {
+    color: white;
+    line-height: unset;
+  }
+}
