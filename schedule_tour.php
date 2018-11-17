@@ -50,10 +50,21 @@ Template Name: Schedule Tour
       </div>
       <div id="step-2" class="step">
         <h1>Notify your agent</h1>
-        <div data-triger="#step-1" class="step-toggler step-temp step-temp--orange">
-        </div>
-        <div class="step-temp step-temp--crimson">
-        </div>
+        <p>We'll send your agent a link with your request to schedule a tour of this property.</p>
+        <h2>Your information</h2>
+        <form class="lh-form">
+          <div class="row no-gutters">
+            <div class="form-group col-6 pr-2">
+              <input type="text" class="form-control" placeholder="First name" />
+            </div>
+            <div class="form-group col-6">
+              <input type="text" class="form-control" placeholder="Last Name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" />
+          </div>
+        </form>
       </div>
     </div>
 

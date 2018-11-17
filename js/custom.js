@@ -156,7 +156,9 @@ function loadSliders() {
 
 /* Initialize the triggers */
 jQuery(document).ready(function(){
-    multistep.init();
+    if(multistep) {
+        multistep.init();
+    }
     jQuery("#menu-opener").click(function() {
         slideOutMenu("open");
     });

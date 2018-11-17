@@ -24,6 +24,7 @@ var multistep = (function($) {
       setTimeout(function() {
         stage.removeClass('transit');
         stage.css('transform', 'translateX(0)');
+        stage.width(width);
         var t = stage.find('.step').first();
         t.removeClass('active');
         t.appendTo(wrap);
