@@ -35,10 +35,30 @@
 .schedule-step-form {
   font-family: $default-font-family;
   margin: 2em 1.3em 3em;
-  h1 {
+  h1.estate-tile {
     font-size: 1.2rem;
     margin-bottom: 15px;
     line-height: 1.34;
+  }
+  h1.notify-title {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    line-height: 1.34;
+  }
+  h2.information {
+    font-size: 1rem;
+    padding: 1rem 0 1.7rem;
+    font-family: $bold-font-family;
+  }
+  .offer-link {
+    text-align: center;
+    text-transform: unset;
+    padding: 16px;
+    margin-bottom: 0;
+    i {
+      margin-left: 7px;
+    }
+    font-family: $default-font-family !important;
   }
   .step-wrap {
     display: flex;
