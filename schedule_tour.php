@@ -47,7 +47,7 @@ Template Name: Schedule Tour
           <p class="approve-text">No</p>
           <i class="far fa-arrow-right arrow"></i>
         </div>
-      </div>
+      </div> <!-- End of step 1 -->
       <div id="step-2" class="step">
         <h1 class="notify-title">Notify your agent</h1>
         <p>We'll send your agent a link with your request to schedule a tour of this property.</p>
@@ -79,12 +79,15 @@ Template Name: Schedule Tour
             <input type="email" class="form-control" placeholder="Email" />
           </div>
 
-          <div class="offer-link">
+          <div data-triger="#step-3" class="offer-link step-toggler">
             <a href="#">Submit</a>
             <i class="far fa-arrow-right fasarrow"></i>
           </div>
         </form>
-      </div>
+      </div> <!-- End of step 2 -->
+      <div id="step-3" class="step">
+        <h1 data-triger="#step-1" class="step-toggler step-wrap">Success!</h1>
+      </div><!-- End of step 3 -->
     </div>
 
 
