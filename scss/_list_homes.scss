@@ -69,10 +69,6 @@ body {
     font-size: 1rem !important;
     width: 40px !important;
   }
-
-  &:first-of-type {
-    transform: rotate(90deg);
-  }
 }
 
 .small-caps {
@@ -232,10 +228,8 @@ figure.lh-img-holder {
 }
 
 .offer-link-group {
-  padding: 7px 20px;
-  margin-left: -15px;
-  margin-right: -15px;
-  width: calc(100% + 30px);
+  padding: 7px 15px;
+  width: calc(100%);
 }
 
 .offer-link {
@@ -440,6 +434,12 @@ figure.lh-img-holder {
 
   .fo-container {
     padding-right: 0px;
+    a {
+      i {
+        display: block;
+      }
+      text-align: center;
+    }
   }
 }
 
@@ -1121,7 +1121,7 @@ figure.lh-img-holder {
   display: inline-block;
   position: absolute;
   color: black;
-  top: 1.2em;
+  top: 0.9em;
 }
 
 %icon-base {
@@ -1133,7 +1133,7 @@ figure.lh-img-holder {
   display: inline-block;
   position: absolute;
   color: #a6b4c6;
-  top: 1.3em;
+  top: 1em;
 }
 
 .lh-transportation {
@@ -1308,6 +1308,11 @@ figure.lh-img-holder {
   border-radius: 5px;
   margin-bottom: 1em;
   padding: 1em;
+  color: #1e232c;
+
+  span {
+
+  }
 
   @include respond-to('tablet') {
     padding: 1em 1.8em;
