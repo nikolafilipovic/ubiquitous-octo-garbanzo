@@ -12,8 +12,7 @@ var multistep = (function($) {
 
   function addDomListeners(wrap, stage, width) {
     var toggler = wrap.find('.step-toggler');
-    
-    toggler = {click: function() {}}
+
     toggler.click(function() {
       var nextSlide = wrap.find($(this).data('triger'));
       nextSlide.appendTo(stage);

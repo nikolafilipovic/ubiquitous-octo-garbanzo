@@ -49,7 +49,7 @@ Template Name: Schedule Tour
         </div>
       </div>
       <div id="step-2" class="step">
-        <h1>Step #2</h1>
+        <h1>Notify your agent</h1>
         <div data-triger="#step-1" class="step-toggler step-temp step-temp--orange">
         </div>
         <div class="step-temp step-temp--crimson">
