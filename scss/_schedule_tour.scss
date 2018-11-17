@@ -1,6 +1,4 @@
-body {
-  background: lightblue;
-}
+
 
 .sch-t-header {
   font-family: $default-font-family !important;
@@ -186,8 +184,7 @@ body {
         color: #fff;
         font-size: 5px;
         vertical-align: middle;
-        padding-left: 3px;
-        padding-right: 3px;
+        padding: 0 1.5em !important;
         z-index: 0;
         position: relative;
       }
