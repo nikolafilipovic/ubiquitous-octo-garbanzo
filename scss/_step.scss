@@ -1,0 +1,58 @@
+.multi-step {
+  overflow: hidden;
+  max-width: 100vw;
+  .step-temp {
+    &--crimson {
+      background: crimson;
+    }
+  }
+
+  .step {
+    display: none;
+    width: 100vw;
+    &.active {
+      display: block;
+    }
+  }
+
+  .stage.transit {
+    transition: all 300ms;
+  }
+
+  .step-toggler {
+    cursor: pointer;
+  }
+
+  .step-circle {
+    @include make-circle(36px, 16px);
+  }
+
+  .step-circle--checkmark {
+    background: $main-color;
+  }
+}
+
+.schedule-step-form {
+  font-family: $default-font-family;
+  margin: 2em 1.3em 3em;
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.34;
+  }
+  .step-wrap {
+    display: flex;
+    align-items: center;
+    .arrow {
+      margin-left: auto;
+      font-size: 1.1rem;
+      color: #a9bfc7;
+    }
+  }
+  p.approve-text {
+    font-size: 1.312rem;
+    padding: 0;
+    margin-left: .5em;
+    color: #1e232c;
+  }
+}
