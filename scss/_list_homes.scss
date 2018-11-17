@@ -117,7 +117,8 @@ body {
 
     .offer-link {
       margin: 1em 1em 1em 0;
-      padding: 10px;
+      padding: 10px 10px 10px 20px;
+      display: flex;
       a {
         font-family: $bold-font-family, Arial, sans-serif;
         font-size: .9rem;
@@ -133,7 +134,7 @@ body {
       .far,
       .fas {
         font-size: 1.5rem;
-        margin-right: .2em;
+        margin-right: .5em;
       }
     }
 
@@ -236,20 +237,17 @@ figure.lh-img-holder {
   border-width: 0px !important;
   display: inline-block;
   border-radius: 5px;
-  text-align: center;
   font-size: 16px;
   padding: 16px;
   text-transform: uppercase;
   margin: 10px 15px;
   width: 100%;
-  max-width: 47%;
   background-color: $main-color;
 
   /* Overrides */
-  max-width: 47%;
+  //display: flex;
+  max-width: 22%;
   font-size: 13px;
-  padding: 10px 0px;
-  text-align: center;
   margin: 0px 4px;
   font-family: $bold-font-family;
 
@@ -259,8 +257,9 @@ figure.lh-img-holder {
 
   .fasarrow {
     color: white;
-    padding-left: 1em;
     font-size: 12px;
+    padding: 5px 10px 0 0;
+    margin-left: auto;
   }
 }
 
@@ -502,6 +501,7 @@ figure.lh-img-holder {
   .offer-link {
     font-size: .9rem !important;
     padding: 9px !important;
+    text-align: center;
     .fasarrow {
       padding-left: .5em;
     }
@@ -932,6 +932,7 @@ figure.lh-img-holder {
   .offer-link {
     margin: 2rem 0 1.5rem;
     text-transform: none;
+    text-align: center;
     align-self: flex-start;
     max-width: 100%;
     .fasarrow {
@@ -1331,25 +1332,63 @@ figure.lh-img-holder {
 
 .lh-property-slider, .sch-t-pic-info {
   padding: 0px;
-  color:white;
-  
-  .red-dot {
-    width: 10px;
-    height: 10px;
-    background: red;
-    display: inline-block;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    margin-right: 4px;
-  }
 
   .list-home-title {
-    margin: 40px 0 15px;
+    margin: 40px 0 0px;
+    font-size: 18px !important;
+  }
+
+  .list-home-subtitle {
+    color: $grayish;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .lifestyle-news {
+    padding-top: 10px;
+    .small-imp {
+      text-transform: uppercase;
+      letter-spacing: normal;
+      font-size: .7rem !important;
+      color: $main-lighter;
+    }
+
+    p {
+      font-size: 17px;
+      color: $main-lighter;
+    }
+
+    .review-by {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 30px;
+      }
+      
+      p, small {
+        font-family: $bold-font-family;
+        font-size:12px !important;
+      }
+
+      p {
+        padding: 0 .5em;
+        color: black;
+      }
+
+      small {
+        color: $grayish;
+      }
+      
+    }
   }
 
   .offer-link {
-    max-width: 70%;
+    max-width: 100%;
     margin: 20px auto;
+    text-align: center;
+    padding:10px;
     text-transform: unset;
 
     i {
@@ -1364,6 +1403,37 @@ figure.lh-img-holder {
     }
   }
 
+  .blue-bg {
+    background-color: $main-color;
+    color: white;
+    text-align: center;
+    width:100%;
+    padding: 2em;
+    margin-bottom: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% + 31px);
+    @include respond-to('desktop') {
+      width: calc(100% + 15px);
+    }
+
+    p {
+      font-size: 20px;
+      padding-bottom: .5em;
+    }
+
+    small {
+      font-size: 13px;
+    }
+
+    a {
+      font-family: $bold-font-family;
+      display: block;
+      padding-top: .5em;
+      color:white;
+    }
+  }
+
   .property-item .property-info .beds,
   .property-item .property-info .baths,
   .property-item .property-info .sqft {
@@ -1371,6 +1441,7 @@ figure.lh-img-holder {
   }
 
   .property-item {
+    padding: 106px;
     background-size: cover !important;
     background-repeat: no-repeat !important;
 
@@ -1412,3 +1483,4 @@ figure.lh-img-holder {
     padding-right: .7em;
   }
 }
+

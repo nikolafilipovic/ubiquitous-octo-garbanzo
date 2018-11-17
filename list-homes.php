@@ -25,21 +25,21 @@ Template Name: List Homes
 
         <!-- save, share, virtual tour, remove, X -->
         <div class="faw-options">
-          
+
           <a href="#">
-          <i class="far fa-heart"></i>
+            <i class="far fa-heart"></i>
             Save</a>
 
           <a href="#" data-toggle="modal" data-target="#share-modal">
-              <i class="fas fa-share-alt"></i>
+            <i class="fas fa-share-alt"></i>
             Share</a>
 
           <a href="#" data-toggle="modal" data-target="#virtual-tour-modal">
-              <i class="fas fa-vr-cardboard"></i>
+            <i class="fas fa-vr-cardboard"></i>
             Virtual Tour</a>
 
           <a href="#" data-toggle="modal" data-target="#remove-modal">
-              <i class="far fa-times-circle"></i>
+            <i class="far fa-times-circle"></i>
             Remove</a>
 
           <a href="#" class="close-link">&times;</a>
@@ -103,8 +103,10 @@ Template Name: List Homes
 
             <div class="d-none d-md-block lh-house-details">
               <p class="lh-house lh-house--desktop">Open House <strong>Fri, Oct 12 &#8226; 11:00am - 2:00pm</strong></p>
-              <i class="fas fa-phone agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Call Agent</span>
-              <i class="fas fa-comment-alt agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Text Agent</span>
+              <i class="fas fa-phone agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Call
+                Agent</span>
+              <i class="fas fa-comment-alt agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Text
+                Agent</span>
             </div>
           </div>
           <div class="col-12 col-md-5">
@@ -203,7 +205,7 @@ Template Name: List Homes
             <i class="far fa-chevron-up faup"></i>
           </h1>
           <div class="hr hr-down d-block d-md-none"></div>
-        
+
           <div class="collapse show" id="lh-property-amentities">
             <h2 class="lh-subtitle">
               Features
@@ -309,8 +311,8 @@ Template Name: List Homes
                   </div>
                   <div class="row no-gutters">
                     <div class="col-6">
-                    <span> 
-                      Fireplace:
+                      <span>
+                        Fireplace:
                       </span>
                     </div>
                     <div class="col-6 text-right">
@@ -785,7 +787,7 @@ Template Name: List Homes
             School Rankings
             <i class="fas fa-chevron-up faup"></i>
           </h1>
-          <div id="lh-school-ranking" class="collapse show"> 
+          <div id="lh-school-ranking" class="collapse show">
             <div class="school-rank-group row no-gutters">
               <div>
                 <i class="round-blue">5</i>
@@ -838,37 +840,26 @@ Template Name: List Homes
         <div class="d-none d-md-block hr hr-down"></div>
 
         <div class="property-slider lh-property-slider">
-          <h1 class="list-home-title text-center">Featured Properties Nearby</h1>
+          <h1 class="list-home-title text-center">Ahwatukee Lifestyle</h1>
+          <p class="list-home-subtitle text-center">Get weekly updates about what's happening in Ahwatukee.</p>
 
           <div class="row justify-content-center no-gutters">
             <div class="col-11 col-md-9 col-lg-12 m-auto">
               <div class="owl-carousel owl-carousel-lh">
                 <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-1.png)">
-                  <span class="time-on-market">
-                    <i class="fas fa-vr-cardboard"></i>
-                    5 days on the market</span>
-                  <span class="sale-type">
-                    <i class="red-dot"></i>
-                  House for Sale</span>
-                  <h1 class="property-price">$425,000</h1>
-                  <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2
-                      ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
-                  <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>
                 </div>
 
                 <div class="property-item" style="background: url(/wp-content/themes/theoffercompany/images/property-2.png)">
-                  <span class="time-on-market">
-                    <i class="fas fa-vr-cardboard"></i>
-                    5 days on the market
-                  </span>
-                  <span class="sale-type">
-                    <i class="red-dot"></i>
-                    House for Sale
-                  </span>
-                  <h1 class="property-price">$425,000</h1>
-                  <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2
-                      ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
-                  <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>
+                </div>
+              </div>
+
+              <div class="lifestyle-news">
+                <small class="small-imp">Upgrading home</small>
+                <p>Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest</p>
+                <div class="review-by">
+                  <img src="/wp-content/themes/theoffercompany/images/man.png" alt="review" />
+                  <p>Chris Brown</p>
+                  <small>on 25 Oct 2018</small>
                 </div>
               </div>
             </div>
@@ -876,21 +867,24 @@ Template Name: List Homes
 
           <div class="d-flex flex-column justify-content-center">
             <div class="offer-link">
-              <a href="#">See all featured properties</a>
+              <a href="#">Get updates</a>
               <i class="far fa-arrow-right fasarrow"></i>
             </div>
 
-            <div class="blue-border">
-              Buying but need to sell first? <span>The Offer Company will get you offers in 48 hours!</span>
-            </div>
-
-            <div class="d-none d-md-flex justify-content-center">
+            <!-- <div class="d-none d-md-flex justify-content-center">
               <a href="#" class="top-link">
                 <i class="fas fa-chevron-up top-up"></i>
                 Back to Top
               </a>
-            </div>
+            </div> -->
           </div>
+          <div class="blue-bg">
+              <p>Buying but need to sell first?</p>
+               <small>We have two great options to choose from.</small>
+               <a href="#">Selling options
+                <i class="far fa-arrow-right fasarrow"></i>
+               </a>
+            </div>
         </div> <!-- property-slider -->
 
       </div> <!-- left-side-container -->
@@ -1012,12 +1006,12 @@ Template Name: List Homes
         </button>
       </div>
       <div class="modal-body modal-body--center">
-        <p>Would you like to add this property to your 
-          virtual tour list? Tour lists allow you to 
+        <p>Would you like to add this property to your
+          virtual tour list? Tour lists allow you to
           seamlessly go from one home tour to the next.</p>
         <div class="modal-blue-links">
-            <a href="#" class="blue-link">Add to list</a>
-            <a href="#" class="blue-link">Watch now</a>
+          <a href="#" class="blue-link">Add to list</a>
+          <a href="#" class="blue-link">Watch now</a>
         </div>
         <label class="custom-checkmark">
           Remember my answer
@@ -1045,8 +1039,8 @@ Template Name: List Homes
       <div class="modal-body modal-body--center">
         <p>Permanently remove property from future searches?</p>
         <div class="modal-blue-links">
-            <a href="#" class="blue-link">Yes</a>
-            <a href="#" class="blue-link">No</a>
+          <a href="#" class="blue-link">Yes</a>
+          <a href="#" class="blue-link">No</a>
         </div>
         <label class="custom-checkmark">
           Remember my answer
