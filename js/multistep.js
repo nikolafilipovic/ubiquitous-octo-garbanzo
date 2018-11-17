@@ -42,6 +42,9 @@ var multistep = (function($) {
         time.elapsed = now - time.start;
         var prog = time.elapsed / time.total;
         var h = startH + (targetHeight - startH) * prog;
+        if(h < targetHeight) {
+          h = targetHeight;
+        }
         stage.height(h);
         if(prog < 1) {
           requestAnimationFrame(step);
