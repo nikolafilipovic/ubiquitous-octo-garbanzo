@@ -24,3 +24,29 @@ h1 {
 .w-100-25 {
   width: calc(100% - 25px) !important;
 }
+
+$p-color: #a8b6c6;
+
+::-webkit-input-placeholder {
+  color: $p-color !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: $p-color !important;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: $p-color !important;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: $p-color !important;
+}
+
+::-ms-input-placeholder { /* Edge */
+  color: $p-color !important;
+}
+
+:placeholder-shown { /* Standard one last! */
+  color: $p-color !important;
+}

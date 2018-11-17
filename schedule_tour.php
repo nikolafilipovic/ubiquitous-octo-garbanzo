@@ -87,6 +87,7 @@ Template Name: Schedule Tour
       </div> <!-- End of step 2 -->
       <div id="step-3" class="step">
         <h1 data-triger="#step-1" class="step-toggler step-wrap">Success!</h1>
+        <p>An email has been submited to your agent</p>
       </div><!-- End of step 3 -->
     </div>
 
