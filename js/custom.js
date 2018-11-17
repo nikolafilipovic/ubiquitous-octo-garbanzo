@@ -156,7 +156,7 @@ function loadSliders() {
 
 /* Initialize the triggers */
 jQuery(document).ready(function(){
-    if(multistep) {
+    if(typeof multistep !== 'undefined') {
         multistep.init();
     }
     jQuery("#menu-opener").click(function() {
