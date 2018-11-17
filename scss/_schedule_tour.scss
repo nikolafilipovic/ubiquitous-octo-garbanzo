@@ -1,10 +1,208 @@
+body {
+  background: lightblue;
+}
+
 .sch-t-header {
+  font-family: $default-font-family !important;
+  position: relative;
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1.1rem !important;
 
   .header-heading {
     color: $grayish;
-    align-self: center;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  a {
+    position: absolute;
+    font-family: $default-font-family !important;
+    font-size: 1.1rem !important;
   }
 }
 
+.sch-t-pic-info {
+  .column-item {
+    padding: 0;
+  }
+
+  .listing-heading {
+    padding: 15px 15px;
+    padding-top: 25px;
+
+    .location-name {
+      font-family: $default-font-family;
+      color: #1e232c;
+      font-size: 22px;
+      font-weight: 400;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+
+    .location-info {
+      font-family: $default-font-family;
+      color: #1e232c;
+      font-size: 15px;
+      font-weight: 400;
+      text-align: left;
+    }
+
+    .save-search {
+      font-family: $default-font-family;
+      color: #00aced;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: left;
+      float: right;
+      display: inline-block;
+      margin-top: -35px;
+    }
+  }
+
+  .pi-image-holder {
+    background: url(/wp-content/themes/theoffercompany/images/pexels-photo-259593.jpeg);
+    background-size: cover !important;
+    background-position: top 40% left 60% !important;
+  }
+
+  .property-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%);
+    background-size: cover !important;
+    background-position: top 45% left 55% !important;
+
+    .time-on-market {
+      font-family: $default-font-family;
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 26px;
+      text-align: left;
+      text-shadow: 0px 0px 0px rgba(29, 38, 63, 0.41);
+      text-transform: lowercase;
+      display: block;
+      z-index: 0;
+      position: relative;
+      margin-top: 10px;
+
+      i {
+        margin-right: 7px;
+        margin-right: 7px;
+        font-size: 22px;
+        vertical-align: middle;
+        display: inline-block !important;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+    }
+
+    .favourite {
+      float: right;
+      margin-top: -28px;
+      display: block !important;
+      transition: all 0.3s ease;
+
+      i {
+        font-size: 26px;
+        color: #fff;
+        transition: all 0.3s ease;
+        display: block !important;
+        position: relative;
+
+        &:hover,
+        &:active {
+          color: #00aced;
+        }
+
+        &:focus,
+        &.active {
+          color: #00aced;
+          -webkit-text-stroke-width: 2px;
+          -webkit-text-stroke-color: #fff;
+        }
+      }
+    }
+
+    .sale-type {
+      font-family: $bold-font-family;
+      color: #ffffff;
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 30px;
+      text-align: left;
+      text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
+      margin-top: 22%;
+      display: block;
+      z-index: 0;
+      position: relative;
+
+      i.red-dot {
+        width: 10px;
+        height: 10px;
+        background: red;
+        display: inline-block;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        margin-right: 4px;
+      }
+    }
+
+    .property-price {
+      font-family: $default-font-family;
+      color: #ffffff;
+      font-size: 29px;
+      text-align: left;
+      text-shadow: 0px 3px 5.7px rgba(29, 38, 63, 0.48);
+      text-transform: uppercase;
+      display: inline-block;
+      z-index: 0;
+      position: relative;
+      padding-bottom: 0;
+    }
+
+    .property-info {
+      display: inline-block;
+      .beds,
+      .baths,
+      .sqft {
+        font-family: $default-font-family;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+        text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
+        z-index: 0;
+        position: relative;
+      }
+
+      i {
+        color: #fff;
+        font-size: 5px;
+        vertical-align: middle;
+        padding-left: 3px;
+        padding-right: 3px;
+        z-index: 0;
+        position: relative;
+      }
+    }
+
+    .property-address {
+      font-family: $default-font-family;
+      color: #ffffff;
+      padding-bottom: .5em;
+      font-size: 13px;
+      text-align: left;
+      text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
+      z-index: 0;
+      position: relative;
+      display: block;
+    }
+  }
+}

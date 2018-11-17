@@ -7,74 +7,28 @@ Template Name: Schedule Tour
 <div class="lh-wrapper">
   <div class="container-fluid override-fluid">
     <header class="modal-menu b-shadow">
-      <div class="sch-t-header go-back d-flex d-md-none">
+      <div class="sch-t-header go-back">
         <a href="#">Cancel</a>
         <p class="header-heading">Schedule Tour</p>
       </div>
-
-      <div class="various-link d-none d-md-flex">
-        <div class="offer-link">
-          <a href="#">Make an offer</a>
-          <i class="far fa-arrow-right fasarrow"></i>
-        </div>
-
-        <div class="offer-link">
-          <a href="#">Schedule tour</a>
-          <i class="far fa-arrow-right fasarrow"></i>
-        </div>
-
-        <!-- save, share, virtual tour, remove, X -->
-        <div class="faw-options">
-          
-          <a href="#">
-          <i class="far fa-heart"></i>
-            Save</a>
-
-          <a href="#" data-toggle="modal" data-target="#share-modal">
-              <i class="fas fa-share-alt"></i>
-            Share</a>
-
-          <a href="#" data-toggle="modal" data-target="#virtual-tour-modal">
-              <i class="fas fa-vr-cardboard"></i>
-            Virtual Tour</a>
-
-          <a href="#" data-toggle="modal" data-target="#remove-modal">
-              <i class="far fa-times-circle"></i>
-            Remove</a>
-
-          <a href="#" class="close-link">&times;</a>
-        </div>
-      </div>
     </header>
 
-    <div class="row no-gutters">
-      <div class="col-12 col-md-7">
-        <figure class="lh-img-holder">
-          <img src="/wp-content/themes/theoffercompany/images/pexels-photo-259593.jpeg" alt="Propery-1">
-          <figcaption class="d-md-none">
-            <span><i class="fas fa-vr-cardboard"></i> Virtual tour</span>
-            <span>1 / 27</span>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="col-12 col-md-5 d-none d-md-block more-imgs">
-        <div class="row no-gutters lh-pictures">
-          <div class="col-6">
-            <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/item.png')"></div>
-          </div>
-          <div class="col-6">
-            <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/property2.png')"></div>
-          </div>
-          <div class="col-6">
-            <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/property3.png')"></div>
-          </div>
-          <div class="col-6">
-            <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/property5.png')"></div>
+    <div class="sch-t-pic-info">
+      <div class="column-item">
+        <div class="pi-image-holder">
+          <div class="property-item">
+            <span class="sale-type">
+              <i class="red-dot"></i>
+              House for Sale</span>
+            <h1 class="property-price">$425,000</h1>
+            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2
+                ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
+            <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>
           </div>
         </div>
       </div>
     </div>
+
 
     <div class="offer-link-group b-shadow d-block d-md-none">
       <div class="offer-link">
@@ -103,8 +57,10 @@ Template Name: Schedule Tour
 
             <div class="d-none d-md-block lh-house-details">
               <p class="lh-house lh-house--desktop">Open House <strong>Fri, Oct 12 &#8226; 11:00am - 2:00pm</strong></p>
-              <i class="fas fa-phone agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Call Agent</span>
-              <i class="fas fa-comment-alt agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Text Agent</span>
+              <i class="fas fa-phone agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Call
+                Agent</span>
+              <i class="fas fa-comment-alt agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Text
+                Agent</span>
             </div>
           </div>
           <div class="col-12 col-md-5">
@@ -175,11 +131,14 @@ Template Name: Schedule Tour
         <div class="lh-house-prop-desc">
           <h1 class="list-home-title--not-collapsable">Property Description</h1>
           <p class="lh-description">
-            Rare opportunity awaits! Own a 40 units multi-family in up & coming area just minutes from the heart of
+            Rare opportunity awaits! Own a 40 units multi-family in up & coming area just minutes from the heart
+            of
             Midtown in Atlanta.
-            This secluded gated property has 4 sided brick buildings situated in a shape of a square. Each unit has
+            This secluded gated property has 4 sided brick buildings situated in a shape of a square. Each unit
+            has
             2bdr/1bth.
-            Bring your contractors and decide on how to finish each unit to suite best your investment portfolio. Sold
+            Bring your contractors and decide on how to finish each unit to suite best your investment portfolio.
+            Sold
             "AS-IS" without disclosures.
             Close to Marta Westlake Station, Atlanta Beltline, The World Congress Center, Mercedes Benz Stadium,
             Georgia Tech Campus and other sites.
@@ -203,7 +162,7 @@ Template Name: Schedule Tour
             <i class="far fa-chevron-up faup"></i>
           </h1>
           <div class="hr hr-down d-block d-md-none"></div>
-        
+
           <div class="collapse show" id="lh-property-amentities">
             <h2 class="lh-subtitle">
               Features
@@ -309,8 +268,8 @@ Template Name: Schedule Tour
                   </div>
                   <div class="row no-gutters">
                     <div class="col-6">
-                    <span> 
-                      Fireplace:
+                      <span>
+                        Fireplace:
                       </span>
                     </div>
                     <div class="col-6 text-right">
@@ -785,7 +744,7 @@ Template Name: Schedule Tour
             School Rankings
             <i class="fas fa-chevron-up faup"></i>
           </h1>
-          <div id="lh-school-ranking" class="collapse show"> 
+          <div id="lh-school-ranking" class="collapse show">
             <div class="school-rank-group row no-gutters">
               <div>
                 <i class="round-blue">5</i>
@@ -849,7 +808,7 @@ Template Name: Schedule Tour
                     5 days on the market</span>
                   <span class="sale-type">
                     <i class="red-dot"></i>
-                  House for Sale</span>
+                    House for Sale</span>
                   <h1 class="property-price">$425,000</h1>
                   <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2
                       ba</span><i class="fas fa-circle"></i><span class="sqft">1,209 sqft</span></div>
@@ -1012,12 +971,12 @@ Template Name: Schedule Tour
         </button>
       </div>
       <div class="modal-body modal-body--center">
-        <p>Would you like to add this property to your 
-          virtual tour list? Tour lists allow you to 
+        <p>Would you like to add this property to your
+          virtual tour list? Tour lists allow you to
           seamlessly go from one home tour to the next.</p>
         <div class="modal-blue-links">
-            <a href="#" class="blue-link">Add to list</a>
-            <a href="#" class="blue-link">Watch now</a>
+          <a href="#" class="blue-link">Add to list</a>
+          <a href="#" class="blue-link">Watch now</a>
         </div>
         <label class="custom-checkmark">
           Remember my answer
@@ -1045,8 +1004,8 @@ Template Name: Schedule Tour
       <div class="modal-body modal-body--center">
         <p>Permanently remove property from future searches?</p>
         <div class="modal-blue-links">
-            <a href="#" class="blue-link">Yes</a>
-            <a href="#" class="blue-link">No</a>
+          <a href="#" class="blue-link">Yes</a>
+          <a href="#" class="blue-link">No</a>
         </div>
         <label class="custom-checkmark">
           Remember my answer
