@@ -1,0 +1,22 @@
+.fmlp-header-container {
+  min-height: 500px;
+  background-position: top 50% left;
+  background-size: cover;
+  background-image: url(/wp-content/themes/theoffercompany/images/bg.jpg);
+
+  .fmlp-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .faded {
+    background: rgba(8, 106, 192, 0.9);
+    width:100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
