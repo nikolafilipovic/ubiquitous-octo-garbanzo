@@ -29,7 +29,9 @@ var multistep = (function($) {
   
       var targetHeight = nextSlide.height();
       var startH = item.height();
-      stage.height(startH));
+      stage.height(startH);
+
+      console.log(startH);
 
       var time = {
         start: performance.now(),
