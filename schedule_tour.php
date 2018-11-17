@@ -40,7 +40,7 @@ Template Name: Schedule Tour
           <i class="far fa-arrow-right arrow"></i>
         </div>
         <hr />
-        <div class="step-wrap">
+        <div data-triger="#step-2-alter" class="step-toggler step-wrap">
           <a class="step-circle step-circle--checkmark">
             <i class="fas fa-times"></i>
           </a>
@@ -86,19 +86,21 @@ Template Name: Schedule Tour
         </form>
       </div> <!-- End of step 2 -->
       <div id="step-3" class="step">
-        <h1 data-triger="#step-1" class="step-toggler step-wrap">Success!</h1>
+        <h1>Success!</h1>
         <p>An email has been submited to your agent</p>
-        <div class="row">
+        <div class="row no-gutters">
         <div class="col-12">
-        <div data-triger="#step-3" class="offer-link step-toggler">
-                      <a href="#">Submit</a>
-                      <i class="far fa-arrow-right fasarrow"></i>
-                    </div>
-</div>
-</div>
+          <div data-triger="#step-3" class="offer-link step-toggler">
+            <a href="#">Submit</a>
+            <i class="far fa-arrow-right fasarrow"></i>
+          </div>
+        </div>  
+      </div>
       </div><!-- End of step 3 -->
+      <div id="step-2-alter" class="step">
+        <h1>When do you want to tour?</h1>
+      </div><!-- End of setp 2 alter -->
     </div>
-
 
   </div> <!-- container fluid -->
 </div> <!-- lh-wrapper -->
