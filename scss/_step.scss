@@ -176,3 +176,19 @@
     }
   }
 }
+
+.time {
+  .wrap {
+    padding: 1em 0;
+  }
+  .date-slide {
+    width: 100px !important;
+    text-align: center;
+  }
+  h3 {
+    font-family: $bold-font-family;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -150,7 +150,7 @@ Template Name: Schedule Tour
                 <div class="wrap">
                   <h1>Sat</h1>
                   <hr />
-                  <h2>Oct 27</h2>
+                  <h2>Oct 2</h2>
                 </div>
               </div>
             </div>
@@ -159,6 +159,49 @@ Template Name: Schedule Tour
             <i class="far fa-chevron-right"></i>
           </div>
         </div>
+
+        <div class="data-carousel-wrap time">
+          <div class="left-control-arrow">
+            <i class="far fa-chevron-left"></i>
+          </div>
+          <div class="dated-carousel">
+            <div class="dated-stage">
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>08:00 AM</h3>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>09:00 AM</h3>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>10:00 AM</h3>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>11:00 AM</h3>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>12:00 PM</h3>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>01:00 PM</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-control-arrow">
+            <i class="far fa-chevron-right"></i>
+          </div>
+        </di
       </div><!-- End of setp 2 alter -->
 
   </div> <!-- container fluid -->
