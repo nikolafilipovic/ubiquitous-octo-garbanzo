@@ -7,7 +7,7 @@ Template Name: Schedule Tour
 <div class="lh-wrapper">
   <div class="container-fluid override-fluid">
     <header class="modal-menu b-shadow">
-      <div class="sch-t-header go-back">
+      <div data-triger="back" class="sch-t-header go-back step-toggler">
         <a href="#">Cancel</a>
         <p class="header-heading">Schedule Tour</p>
       </div>

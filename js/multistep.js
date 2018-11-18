@@ -1,5 +1,6 @@
 var multistep = (function($) {
   var animating = false;
+  var prevSlide = null;
 
   function init() {
     var stage = $(`<div class='stage'></div>`);
@@ -12,15 +13,25 @@ var multistep = (function($) {
   }
 // TODO: fix margin-right pass as an option!
   function addDomListeners(wrap, stage, item) {
-    var toggler = wrap.find('.step-toggler');
+    var toggler = $('.step-toggler');
     var width = item.width();
 
     //item.css('margin-right', '15px');
-    toggler.click(function() {
+    toggler.click(function(e) {
       if(animating) return;
 
+      e.preventDefault();
       animating = true;
-      var nextSlide = wrap.find($(this).data('triger'));
+      var nextSlide;
+      var tar = $(this).data('triger');
+      if(tar == "back") {
+        if(!prevSlide) return;
+        nextSlide = prevSlide;
+      }
+      else {
+        nextSlide = $(tar);
+      }
+
       nextSlide.appendTo(stage);
       stage.width(2*width - 15);
       nextSlide.addClass('active');
@@ -31,6 +42,7 @@ var multistep = (function($) {
       var startH = item.height();
       stage.height(startH);
 
+      prevSlide = item;
       var time = {
         start: performance.now(),
         total: 300
