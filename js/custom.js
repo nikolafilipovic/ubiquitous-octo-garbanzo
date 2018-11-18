@@ -163,6 +163,10 @@ function copytag() {
     jQuery("#info-text-clone").html(jQuery("#info-text").html());
 }
 
+function copydest2() {
+    jQuery("#copy-dest-2").html(jQuery("#info-text").html());
+}
+
 function initmulti() {
     jQuery('#month-slider').multislider({
         onChange: function(data) {

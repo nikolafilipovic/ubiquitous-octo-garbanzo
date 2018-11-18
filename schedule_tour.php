@@ -90,7 +90,7 @@ Template Name: Schedule Tour
         <p>An email has been submited to your agent</p>
         <div class="row no-gutters">
         <div class="col-12">
-          <div data-triger="#step-3" class="offer-link step-toggler">
+          <div class="offer-link">
             <a href="#">Submit</a>
             <i class="far fa-arrow-right fasarrow"></i>
           </div>
@@ -238,18 +238,30 @@ Template Name: Schedule Tour
             <a href="#" class="step-toggler ml-auto" data-triger="#step-2-alter" >Change</a>
           </div>
           <div class="offer-link-form-wrap">
-            <div data-triger="#step-3-alter" class="offer-link step-toggler">
+            <div data-triger="#step-4" class="offer-link step-toggler">
               <a href="#">Submit</a>
               <i class="far fa-arrow-right fasarrow"></i>
             </div>
           </div>
         </form>
+      </div><!-- End of step 3 alter -->
+      <div id="step-4" class="step step-inset" data-on-enter="copydest2">
+        <h1>Success!</h1>
+        <p>
+          You erquested a tour for this home on 
+          <strong id="copy-dest-2"></strong>
+        </p>
+        <p>We'll be in touch to let you know if this 
+          time works with the sellers schedule.</p>
+        <div class="row no-gutters">
+        <div class="col-12">
+          <div class="offer-link">
+            <a href="#">Continue browsing</a>
+            <i class="far fa-arrow-right fasarrow"></i>
+          </div>
+        </div> 
       </div>
     </div> <!-- end of step form -->
-
-
-    
-
   </div> <!-- container fluid -->
 </div> <!-- lh-wrapper -->
 
