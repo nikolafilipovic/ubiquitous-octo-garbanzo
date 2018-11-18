@@ -1,6 +1,7 @@
 var multistep = (function($) {
   var animating = false;
-  var prevSlide = null;
+  var slideHistory = [];
+  var skipHistory = false;
 
   function init() {
     var stage = $(`<div class='stage'></div>`);
@@ -25,8 +26,12 @@ var multistep = (function($) {
       var nextSlide;
       var tar = $(this).data('triger');
       if(tar == "back") {
-        if(!prevSlide) return;
-        nextSlide = prevSlide;
+        if(slideHistory.length == 0) {
+          animating = false;
+          return;
+        }
+        nextSlide = slideHistory.pop();
+        skipHistory = true;
       }
       else {
         nextSlide = $(tar);
@@ -41,8 +46,12 @@ var multistep = (function($) {
       var targetHeight = nextSlide.height();
       var startH = item.height();
       stage.height(startH);
+      
+      if(!skipHistory) {
+        slideHistory.push(item);
+      }
+      skipHistory = false;
 
-      prevSlide = item;
       var time = {
         start: performance.now(),
         total: 300
