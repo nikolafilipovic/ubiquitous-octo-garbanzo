@@ -59,6 +59,10 @@ var multistep = (function($) {
         stage.css('width', 'auto');
         item = stage.find('.step').first();
         animating = false;
+        if(item.data('on-enter')) {
+          var fn = item.data('on-enter');
+          window[fn].call();
+        }
       }, 300);
     });
   }
@@ -68,8 +72,8 @@ var multistep = (function($) {
   }
 })(jQuery);
 
-var multislider = (function($) {
-  function ViewportFlexSlider(container) {
+(function($) {
+  function ViewportFlexSlider(container, opts) {
     var self = this;
     this.optimalItems(container);
 
@@ -82,6 +86,9 @@ var multislider = (function($) {
       self.slideRight();
       self.activeSlide = self.slides.eq(self.index + 1);
       self.activeSlide.addClass('active');
+      if(opts['onChange']) {
+        opts.onChange(self.activeSlide.data('obj'));
+      }
     });
     
     container.find('.left-control-arrow').click(function() {
@@ -89,6 +96,9 @@ var multislider = (function($) {
       self.slideLeft();
       self.activeSlide = self.slides.eq(self.index + 1);
       self.activeSlide.addClass('active');
+      if(opts['onChange']) {
+        opts.onChange(self.activeSlide.data('obj'));
+      }
     });
   }
 
@@ -156,15 +166,7 @@ var multislider = (function($) {
     });
   }
 
-  var sliders = [];
-
-  function init() {
-    $('.data-carousel-wrap').each(function() {
-      sliders.push(new ViewportFlexSlider($(this)));
-    })
-  }
-
-  return {
-    init: init
+  $.fn.multislider = function(opts) {
+    new ViewportFlexSlider(this, opts);
   }
 })(jQuery);
