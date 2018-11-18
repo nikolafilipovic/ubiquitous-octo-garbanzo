@@ -11,8 +11,12 @@
     flex-direction: column;
     h1 {
       color: white;
-      font-size: 2.375rem;
-      padding: 3rem 0 1rem;
+      font-size: 1.6rem;
+      padding: 1.375rem 0;
+      @include respond-to('desktop') {
+        font-size: 2.375rem;
+        padding: 3rem 0 1rem;
+      }
     }
   }
 
@@ -22,9 +26,20 @@
     min-height: 500px;
   }
 
+  .link-container {
+    background: white;
+    padding: 20px;
+    @include respond-to('desktop') {
+      background: transparent;
+      padding: 15px 20px;
+    }
+  }
+  
   .go-back {
-    padding: 15px 20px;
-    color: white;
+    color: $main-color;
+    @include respond-to('desktop') {
+      color: white;
+    }
     font-size: 18px;
     display: block;
     i {
@@ -44,7 +59,19 @@
   }
 
   .enterzip-group {
-    width: 35%;
+    width: 90%; 
+
+    @include respond-to('tablet') {
+      width: 80%;
+    }
+
+    @include respond-to('desktop') {
+      width: 60%;
+    }
+
+    @include respond-to('m-desktop') {
+      width: 35%;
+    }
   }
 
   .offer-link {
@@ -73,13 +100,20 @@
   }
 }
 
-.fmlp-body {
-  position: relative;
-  background: #f5f7fa;
-  min-height: 680px;
+.fmlp-floating-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  top: -175px;
+  
+  @include respond-to('desktop') {
+    top: -105px;
+  }
+}
+
+.fmlp-body {
+  background: #f5f7fa;
   
   .one-row {
     &:nth-child(1), &:nth-child(2) {
@@ -102,15 +136,33 @@
   background: white;
   box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
   padding: 3.375rem;
-  width: 59%;
-  position: absolute;
-  top: -105px;
+  width: 90%;
+  
+  @include respond-to('tablet') {
+    width: 80%;
+  }
+  
+  @include respond-to('m-desktop') {
+    width: 59%;
+  }
 }
 
 .block--smaller {
-  position: static;
-  margin-top: 330px;
-  padding: 2.5rem 3.44rem;
-  width: 41%;
+  margin-top: 30px;
+  padding: 2.5rem 1rem;
+  width: 90%;
+
+  @include respond-to('mobile') {
+    width: 70%;
+  }
+
+  @include respond-to('mobile') {
+    width: 70%;
+    padding: 2.5rem 3.44rem;
+  }
+  
+  @include respond-to('m-desktop') {
+    width: 41%;
+  }
 }
 
