@@ -46,6 +46,8 @@ var multistep = (function($) {
         stage.height(h);
         if(prog < 1) {
           requestAnimationFrame(step);
+        } else {
+          stage.css('height', 'auto');
         }
       }
       requestAnimationFrame(step);
@@ -61,7 +63,7 @@ var multistep = (function($) {
         animating = false;
         if(item.data('on-enter')) {
           var fn = item.data('on-enter');
-          window[fn].call();
+          window[fn].call(null, stage);
         }
       }, 300);
     });

@@ -197,7 +197,7 @@ Template Name: Schedule Tour
           </div>
         </div>
 
-        <p class="info-text">
+        <p id="info-text" class="info-text">
           <span id="weekday">
             Tuesday
           </span>, 
@@ -213,7 +213,7 @@ Template Name: Schedule Tour
           </div>
         </div>
       </div><!-- End of setp 2 alter -->
-      <div id="step-3-alter" class="step step-inset">
+      <div id="step-3-alter" class="step step-inset" data-on-enter="copytag">
         <h1 class="notify-title">How should we contact you?</h1>
         <p>If you already have an account, please <a href="#">Sign in</a></p>
         <form class="lh-form">
@@ -232,6 +232,11 @@ Template Name: Schedule Tour
             <input type="email" class="form-control" placeholder="Email" />
           </div>
 
+          <div class="info-text-wrap d-flex">
+            <p id="info-text-clone" class="info-text">
+            </p>
+            <a href="#" class="step-toggler ml-auto" data-triger="#step-2-alter" >Change</a>
+          </div>
           <div class="offer-link-form-wrap">
             <div data-triger="#step-3-alter" class="offer-link step-toggler">
               <a href="#">Submit</a>

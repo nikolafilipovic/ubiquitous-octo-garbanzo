@@ -159,6 +159,10 @@ function loadSliders() {
     });
 }
 
+function copytag() {
+    jQuery("#info-text-clone").html(jQuery("#info-text").html());
+}
+
 function initmulti() {
     jQuery('#month-slider').multislider({
         onChange: function(data) {

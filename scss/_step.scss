@@ -165,6 +165,16 @@
   }
 }
 
+.info-text-wrap {
+  margin: 1em 0 1.3em;
+  p {
+    font-family: $default-font-family !important;
+  }
+  a {
+    font-family: $bold-font-family !important;
+  }
+}
+
 .dated-carousel {
   margin: 0 0 10px;
   flex: 1;
