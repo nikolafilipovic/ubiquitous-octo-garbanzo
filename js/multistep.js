@@ -73,14 +73,63 @@ var multislider = (function($) {
     this.carousel = container.find('.dated-carousel');
     
     this.viewPort = container.find('.dated-carousel').width();
-    this.slide = container.find('.date-slide').first();
-    this.carousel.find('.dated-stage').width(this.carousel.find('.date-slide').length * this.slide.width() + 350);
+    this.slides = this.carousel.find('.date-slide');
+    this.slide = this.slides.first();
+    this.stage = this.carousel.find('.dated-stage');
+    this.stage.width(this.slides.length * this.slide.width() + 350);
     this.leftOver = this.viewPort - 3 * this.slide.width();
-    var space = (this.leftOver / 4);
+    this.space = (this.leftOver / 4);
+    this.index = 0;
+    this.activeSlide = this.slides.eq(this.index + 1);
+    this.activeSlide.addClass('active');
+
+    var self = this;
+
 
     this.carousel.find('.date-slide').each(function() {
-      $(this).css('marginLeft', `${space}px`);
-    })
+      $(this).css('marginLeft', `${self.space}px`);
+    });
+
+    
+    container.find('.right-control-arrow').click(function() {
+      self.activeSlide.removeClass('active');
+      self.slideRight();
+      self.activeSlide = self.slides.eq(self.index + 1);
+      self.activeSlide.addClass('active');
+    });
+    
+    container.find('.left-control-arrow').click(function() {
+      self.activeSlide.removeClass('active');
+      self.slideLeft();
+      self.activeSlide = self.slides.eq(self.index + 1);
+      self.activeSlide.addClass('active');
+    });
+  }
+
+  ViewportFlexSlider.prototype.slideRight = function() {
+    this.index++;
+    if(this.index > 2) {
+      this.index = -1;
+    }
+    console.log(this.index);
+    var offset = this.index * this.slide.width() + this.index * this.space;
+    console.log(offset);
+    this.stage.css({
+      transform: `translateX(${-1 *offset}px)`
+    });
+  }
+
+  ViewportFlexSlider.prototype.slideLeft = function() {
+    this.index--;
+    if(this.index < -1) {
+      this.index = this.slides.length - 2;
+    }
+    var offset = this.index * this.slide.width() + this.index * this.space
+    console.log(this.index);
+    console.log(offset);
+    this.stage.css({
+      transform: `translateX(-${offset}px)`
+    });
   }
 
   var sliders = [];

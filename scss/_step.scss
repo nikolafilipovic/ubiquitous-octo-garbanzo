@@ -95,8 +95,10 @@
   margin: 20px 0;
   .dated-stage {
     display: flex;
+    transition: all 400ms;
   }
   .right-control-arrow {
+    cursor: pointer;
     padding-left: 1em;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -113,6 +115,7 @@
     }
   }
   .left-control-arrow {
+    cursor: pointer;
     padding-left: 4px;
     margin-bottom: 25px;
     margin-top: 15px;

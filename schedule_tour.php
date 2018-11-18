@@ -118,7 +118,7 @@ Template Name: Schedule Tour
                   <h2>Oct 22</h2>
                 </div>
               </div>
-              <div class="date-slide active">
+              <div class="date-slide">
                 <div class="wrap">
                   <h1>Tue</h1>
                   <hr />
