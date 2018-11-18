@@ -10,7 +10,7 @@ var multistep = (function($) {
 
     addDomListeners($('.multi-step'), stage, steps.first());
   }
-
+// TODO: fix margin-right pass as an option!
   function addDomListeners(wrap, stage, item) {
     var toggler = wrap.find('.step-toggler');
     var width = item.width();
@@ -30,8 +30,6 @@ var multistep = (function($) {
       var targetHeight = nextSlide.height();
       var startH = item.height();
       stage.height(startH);
-
-      console.log(startH);
 
       var time = {
         start: performance.now(),
@@ -63,6 +61,17 @@ var multistep = (function($) {
         animating = false;
       }, 300);
     });
+  }
+
+  return {
+    init: init
+  }
+})(jQuery);
+
+var multislider = (function($) {
+
+  function init() {
+    
   }
 
   return {

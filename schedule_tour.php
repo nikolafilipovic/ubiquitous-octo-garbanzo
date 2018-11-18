@@ -97,10 +97,38 @@ Template Name: Schedule Tour
         </div>  
       </div>
       </div><!-- End of step 3 -->
-      <div id="step-2-alter" class="step">
-        <h1>When do you want to tour?</h1>
+      <div id="step-2-alter" class="step mw-100-step">
+        
       </div><!-- End of setp 2 alter -->
-    </div>
+    </div> <!-- end of step form -->
+
+
+    <div id="step-2-alter" class="step mw-100-step">
+        <h1>When do you want to tour?</h1>
+        <div class="dated-carousel">
+          <div class="date-slide">
+            <div class="wrap">
+              <h1>Mon</h1>
+              <hr />
+              <h2>Oct 22</h2>
+            </div>
+          </div>
+          <div class="date-slide active">
+            <div class="wrap">
+              <h1>Mon</h1>
+              <hr />
+              <h2>Oct 22</h2>
+            </div>
+          </div>
+          <div class="date-slide">
+            <div class="wrap">
+              <h1>Mon</h1>
+              <hr />
+              <h2>Oct 22</h2>
+            </div>
+          </div>
+        </div>
+      </div><!-- End of setp 2 alter -->
 
   </div> <!-- container fluid -->
 </div> <!-- lh-wrapper -->

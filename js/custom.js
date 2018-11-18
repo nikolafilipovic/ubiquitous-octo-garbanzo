@@ -159,6 +159,9 @@ jQuery(document).ready(function(){
     if(typeof multistep !== 'undefined') {
         multistep.init();
     }
+    if(typeof multislider !== 'undefined') {
+        multislider.init();
+    }
     jQuery("#menu-opener").click(function() {
         slideOutMenu("open");
     });

@@ -83,3 +83,48 @@
     color: #1e232c;
   }
 }
+
+.mw-100-step {
+  max-width: 100%;
+  width: 100%;
+}
+
+.dated-carousel {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px;
+  .wrap {
+    padding: 1.7em 2.2em;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1em;
+  }
+  hr {
+    border-top: 2px solid $main-color;
+    margin: 15px auto 13px;
+    width: 13px;
+
+  }
+  .date-slide {
+    margin: 0 1em;
+    border-radius: 4px;
+    box-shadow: 0px 43px 64.6px 3.4px rgba(53, 94, 140, 0.22);
+    &.active {
+      background: $main-color;
+      position: relative;
+      bottom: 8px;
+      hr {
+        border-top: 2px solid #84d7f9;
+      }
+      h2 {
+        color: white;
+      }
+    }
+  }
+}
