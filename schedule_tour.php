@@ -40,7 +40,7 @@ Template Name: Schedule Tour
           <i class="far fa-arrow-right arrow"></i>
         </div>
         <hr />
-        <div class="step-wrap">
+        <div data-triger="#step-2-alter" class="step-toggler step-wrap">
           <a class="step-circle step-circle--checkmark">
             <i class="fas fa-times"></i>
           </a>
@@ -86,19 +86,123 @@ Template Name: Schedule Tour
         </form>
       </div> <!-- End of step 2 -->
       <div id="step-3" class="step">
-        <h1 data-triger="#step-1" class="step-toggler step-wrap">Success!</h1>
+        <h1>Success!</h1>
         <p>An email has been submited to your agent</p>
-        <div class="row">
+        <div class="row no-gutters">
         <div class="col-12">
-        <div data-triger="#step-3" class="offer-link step-toggler">
-                      <a href="#">Submit</a>
-                      <i class="far fa-arrow-right fasarrow"></i>
-                    </div>
-</div>
-</div>
+          <div data-triger="#step-3" class="offer-link step-toggler">
+            <a href="#">Submit</a>
+            <i class="far fa-arrow-right fasarrow"></i>
+          </div>
+        </div>  
+      </div>
       </div><!-- End of step 3 -->
-    </div>
+      <div id="step-2-alter" class="step mw-100-step">
+        
+      </div><!-- End of setp 2 alter -->
+    </div> <!-- end of step form -->
 
+
+    <div id="step-2-alter" class="step mw-100-step">
+        <h1>When do you want to tour?</h1>
+        <div class="data-carousel-wrap">
+          <div class="left-control-arrow">
+            <i class="far fa-chevron-left"></i>
+          </div>
+          <div class="dated-carousel">
+            <div class="dated-stage">
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Mon</h1>
+                  <hr />
+                  <h2>Oct 22</h2>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Tue</h1>
+                  <hr />
+                  <h2>Oct 23</h2>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Wed</h1>
+                  <hr />
+                  <h2>Oct 24</h2>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Thu</h1>
+                  <hr />
+                  <h2>Oct 25</h2>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Fri</h1>
+                  <hr />
+                  <h2>Oct 26</h2>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Sat</h1>
+                  <hr />
+                  <h2>Oct 2</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-control-arrow">
+            <i class="far fa-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="data-carousel-wrap time">
+          <div class="left-control-arrow">
+            <i class="far fa-chevron-left"></i>
+          </div>
+          <div class="dated-carousel">
+            <div class="dated-stage">
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>08:00 AM</h3>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>09:00 AM</h3>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>10:00 AM</h3>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>11:00 AM</h3>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>12:00 PM</h3>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h3>01:00 PM</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-control-arrow">
+            <i class="far fa-chevron-right"></i>
+          </div>
+        </div>
+      </div><!-- End of setp 2 alter -->
 
   </div> <!-- container fluid -->
 </div> <!-- lh-wrapper -->
