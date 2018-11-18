@@ -143,16 +143,34 @@ var multistep = (function($) {
   ViewportFlexSlider.prototype.recalculate = function(container, numItems) {
     var self = this;
     this.carousel = container.find('.dated-carousel');
-    this.numItems = numItems;
     this.viewPort = container.find('.dated-carousel').width();
     this.slides = this.carousel.find('.date-slide');
+    this.numItems = Math.min(numItems, this.slides.length);
     this.slide = this.slides.first();
     this.stage = this.carousel.find('.dated-stage');
     this.leftOver = this.viewPort - this.numItems * this.slide.width();
-    this.space = (this.leftOver / 4);
+    this.space = this.leftOver / (numItems + 1);
+  
+    var totalSpaceTaken = (this.space + this.slide.width()) * this.numItems;
+    var isAllTaken = this.viewPort - totalSpaceTaken > this.slide.width() + this.space;
+
+    if(isAllTaken) {
+      this.stage.addClass('center');
+    } else {
+      this.stage.removeClass('center');
+    }
+
     this.index = 0;
     this.activeSlide = this.slides.eq(this.index + 1);
+    this.reset();
+
+    this.carousel.find('.date-slide').each(function() {
+      $(this).css('marginLeft', `${self.space}px`);
+    });
     
+  }
+
+  ViewportFlexSlider.prototype.reset = function() {
     this.slides.each(function() {
       $(this).removeClass('active');
     });
@@ -160,10 +178,6 @@ var multistep = (function($) {
     var offset = this.index * this.slide.width() + this.index * this.space;
     this.stage.css({
       transform: `translateX(${-1 *offset}px)`
-    });
-
-    this.carousel.find('.date-slide').each(function() {
-      $(this).css('marginLeft', `${self.space}px`);
     });
   }
 

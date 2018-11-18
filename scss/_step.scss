@@ -103,6 +103,9 @@
   .dated-stage {
     display: flex;
     transition: all 400ms;
+    &.center {
+      justify-content: center;
+    }
   }
   .right-control-arrow {
     cursor: pointer;
