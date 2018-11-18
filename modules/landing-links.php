@@ -6,7 +6,7 @@ class toc_landing_links extends ET_Builder_Module {
 		$this->plural     = esc_html__( 'Lading Page Links', 'et_builder' );
 		$this->slug       = 'et_pb_toc_landing_links';
 		$this->vb_support = 'off';
-	}
+    }
 
 	public function get_advanced_fields_config() {
 		return array(

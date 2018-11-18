@@ -31,7 +31,7 @@ Template Name: Schedule Tour
     
     <div class="multi-step schedule-step-form">
       <div id="step-1" class="step">
-        <h1>Are you workig with a real estate agent?</h1>
+        <h1 class="estate-tile">Are you workig with a real estate agent?</h1>
         <div data-triger="#step-2" class="step-toggler step-wrap">
           <a class="step-circle step-circle--checkmark">
             <i class="fas fa-check"></i>
@@ -47,12 +47,13 @@ Template Name: Schedule Tour
           <p class="approve-text">No</p>
           <i class="far fa-arrow-right arrow"></i>
         </div>
-      </div>
+      </div> <!-- End of step 1 -->
       <div id="step-2" class="step">
-        <h1>Notify your agent</h1>
+        <h1 class="notify-title">Notify your agent</h1>
         <p>We'll send your agent a link with your request to schedule a tour of this property.</p>
-        <h2>Your information</h2>
+        <p>If you already have an account, please <a href="#">Sign in</a></p>
         <form class="lh-form">
+          <h2 class="information">Your information</h2>
           <div class="row no-gutters">
             <div class="form-group col-6 pr-2">
               <input type="text" class="form-control" placeholder="First name" />
@@ -64,8 +65,38 @@ Template Name: Schedule Tour
           <div class="form-group">
             <input type="email" class="form-control" placeholder="Email" />
           </div>
+
+          <h2 class="information">Your agents information</h2>
+          <div class="row no-gutters">
+            <div class="form-group col-6 pr-2">
+              <input type="text" class="form-control" placeholder="First name" />
+            </div>
+            <div class="form-group col-6">
+              <input type="text" class="form-control" placeholder="Last Name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" />
+          </div>
+
+          <div data-triger="#step-3" class="offer-link step-toggler">
+            <a href="#">Submit</a>
+            <i class="far fa-arrow-right fasarrow"></i>
+          </div>
         </form>
-      </div>
+      </div> <!-- End of step 2 -->
+      <div id="step-3" class="step">
+        <h1 data-triger="#step-1" class="step-toggler step-wrap">Success!</h1>
+        <p>An email has been submited to your agent</p>
+        <div class="row">
+        <div class="col-12">
+        <div data-triger="#step-3" class="offer-link step-toggler">
+                      <a href="#">Submit</a>
+                      <i class="far fa-arrow-right fasarrow"></i>
+                    </div>
+</div>
+</div>
+      </div><!-- End of step 3 -->
     </div>
 
 

@@ -1,4 +1,7 @@
-/* This is a duct tape patch for a strange loop where responsiveTasks() is getting executed every 2 seconds on iOS */ 
+/** 
+ * This is a duct tape patch for a strange loop where responsiveTasks() is getting executed every 2 seconds on iOS
+ * y tho?
+*/
 var taskAllowance = 1;
 
 /* Move the Page Container and expand the Menu */
@@ -9,12 +12,14 @@ function slideOutMenu(option) {
         jQuery("#overlay").addClass("open");
         jQuery("#slide-out-nav").addClass("open");
         jQuery("div.logo").addClass("slide");
+        jQuery("body").addClass("noscroll");
     } else if (option ==="close") {
         jQuery("#page-container").removeClass("move");
         jQuery("#menu-opener").removeClass("hide");
         jQuery("#overlay").removeClass("open");
         jQuery("#slide-out-nav").removeClass("open");
         jQuery("div.logo").removeClass("slide");
+        jQuery("body").removeClass("noscroll");
     } else {
         console.log("Initiated event that doesn't have a required option.");
     }
