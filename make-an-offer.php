@@ -4,125 +4,126 @@
     */
     get_header(nomenu);
 ?>
-<!-- Privremeno! -->
 <style>
-  /* 6vh + 95vh je 101vh, sto bas nema mnogo smisla. Moja pretpostavka je da mozda negde margina ima neka koja vuce. */
-  #pageone .wrapperBlocks {margin: 0 auto; margin-top: 10px;}
+  #wrapper {
+    height: 100vh;
+    overflow: hidden;
+  }
 </style>
-<!-- WRAPPER ID -->
-<div id="wrapper">
+<div id="wrapper" class="makeanoffer">
     <div class="wrapperTop">
       <a href="#"><i class="far fa-angle-left" aria-hidden="true"></i> Back</a>
     </div>
-    <div class="wrapper" id="pageone">
-      <!-- Container-Fluid znaci da container bude od ivice do ivice. h-100 znaci da uzme visinu od 100% -->
-      <div class="container-fluid h-100 mod">
-        <!-- h-100 znaci da uzme visinu od 100% -->
-        <div class="row h-100">
-          <!-- my-auto znaci da centrira y (vertikalno) marginama po sredini. -->
-          <div class="col-12 my-auto">
-            <div class="wrapperMid">
-              <h1>Make an offer on</h1>
-              <h2>11249 E Sonrisa Ave</h2>
-              <h3>Mesa, AZ 85212</h3>
-              <hr/>
-              <h5>Let's get started. Who is making the offer?</h4>
-            </div>
-            <div class="wrapperBlocks">
-              <div class="formBlock formBorderTop">
+    <div class="wrapper multi-step">
+      <div class="step" id="pageone">
+        <!-- Container-Fluid znaci da container bude od ivice do ivice. h-100 znaci da uzme visinu od 100% -->
+        <div class="container-fluid h-100 mod">
+          <!-- h-100 znaci da uzme visinu od 100% -->
+          <div class="row h-100">
+            <!-- my-auto znaci da centrira y (vertikalno) marginama po sredini. -->
+            <div class="col-12 my-auto mod">
+              <div class="wrapperMid">
+                <h1>Make an offer on</h1>
+                <h2>11249 E Sonrisa Ave</h2>
+                <h3>Mesa, AZ 85212</h3>
+                <hr/>
+                <h5>Let's get started. Who is making the offer?</h4>
+              </div>
+              <div class="wrapperBlocks">
+                <div class="formBlock formBorderTop step-toggler" data-triger="#pagetwo">
+                  <div class="formCircle">
+                    <i class="fal fa-key farot"></i>
+                </div>
+                <h4>Buyer</h4>
+                <div class="formArrow">
+                  <i class="far fa-arrow-right" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="formBlock formBorderMid step-toggler" data-triger="#pagetwo">
                 <div class="formCircle">
-                  <i class="fal fa-key farot"></i>
+                  <i class="fal fa-user-circle"></i>
+                </div>
+                <h4>Buyers Agent</h4>
+                <div class="formArrow">
+                  <i class="far fa-arrow-right" aria-hidden="true"></i>
+                </div>
               </div>
-              <h4>Buyer</h4>
-              <div class="formArrow">
-                <i class="far fa-arrow-right" aria-hidden="true"></i>
+              <div class="formBlock formBorderBot step-toggler" data-triger="#pagetwo">
+                <div class="formCircle">
+                    <i class="fal fa-hand-holding-usd"></i>
+                </div>
+                <h4>Investor</h4>
+                <div class="formArrow">
+                  <i class="far fa-arrow-right" aria-hidden="true"></i>
+                </div>
               </div>
-              <div class="cleaner"></div>
             </div>
-            <div class="formBlock formBorderMid">
-              <div class="formCircle">
-                <i class="fal fa-user-circle"></i>
-              </div>
-              <h4>Buyers Agent</h4>
-              <div class="formArrow">
-                <i class="far fa-arrow-right" aria-hidden="true"></i>
-              </div>
-              <div class="cleaner"></div>
-            </div>
-            <div class="formBlock formBorderBot">
-              <div class="formCircle">
-                  <i class="fas fa-hand-holding-usd"></i>
-              </div>
-              <h4>Investor</h4>
-              <div class="formArrow">
-                <i class="far fa-arrow-right" aria-hidden="true"></i>
-              </div>
-              <div class="cleaner"></div>
-            </div>
-            <div class="cleaner"></div>
           </div>
         </div>
-       </div>
-     </div>
-    </div>
-    <!-- Novi block -->
-    <div class="wrapper" id="pagetwo">
+      </div>
+     </div>     
+    <div class="step" id="pagetwo">
       <div class="container-fluid h-100">
         <div class="row h-100">
-          <div class="col-12 my-auto" >
+          <div class="col-12 my-auto mod">
             <div class="wrapperMid">
                 <h1>Are you working with a real estate agent?</h1>
             </div>
-            <div class=" wrapperBlocks">
-                <div class="formBlock formBorderTop">
-                  <div class="formCircle">
-                      <i class="fas fa-check"></i>
-                  </div>
-                  <h4>Yes</h4>
-                  <div class="formArrow">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  </div>
+            <div class="wrapperBlocks">
+              <div class="formBlock formBorderTop step-toggler" data-triger="#pagethree">
+                <div class="formCircle">
+                    <i class="fas fa-check"></i>
                 </div>
-                <div class="formBlock formBorderBot">
-                  <div class="formCircle">
-                      <i class="fas fa-times faml"></i>
-                  </div>
-                  <h4>No</h4>
-                  <div class="formArrow">
-                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                  </div>
+                <h4>Yes</h4>
+                <div class="formArrow">
+                  <i class="far fa-arrow-right" aria-hidden="true"></i>
                 </div>
+              </div>
+              <div class="formBlock formBorderBot step-toggler" data-triger="#pagethree">
+                <div class="formCircle">
+                    <i class="fas fa-times faml"></i>
+                </div>
+                <h4>No</h4>
+                <div class="formArrow">
+                  <i class="far fa-arrow-right" aria-hidden="true"></i>
+                </div>
+              </div>
             </div>
           </div>
-        </div>  
-      </div>
-    </div>
-    <!-- Novi block -->
-    <div class="wrapper" id="pagethree">
+        </div>
+      </div> 
+    </div> 
+    <div  class="step" id="pagethree">
       <div class="container-fluid h-100">
         <div class="row h-100">
-            <div class="col-12 my-auto">
+            <div class="col-12 my-auto mod">
                 <div class="wrapperMid">
                   <h1>We can write up the offer for you.</h1>
                 </div>
-                <div class="wrapperMid wrapperWider">
+                <div class="wrapperMid">
                   <h3>Please provide the informaiton below and Annete will contact you within 5 minutes.</h3>
                 </div>
-                <div class="wrapperForm ">
-                  <form class="" action="#" method="post">
-                    <div class="wrapperFormText formInput">
-                      <input type="text" name="Name" class="formMR" value="Strahinja" placeholder="Name" />
+                <div class="wrapperForm">
+                  <form class="lh-form">
+                    <div class="row no-gutters">
+                      <div class="form-group col-6 pr-2">
+                        <input type="text" class="form-control" placeholder="First name">
+                      </div>
+                      <div class="form-group col-6">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                      </div>
                     </div>
-                    <div class="wrapperFormText">
-                      <input type="text" name="Last Name" class="" value="" placeholder="Last name" />
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Phone">
                     </div>
-                    <input type="text" class="formFullWidth formMR" name="" value="" placeholder="Phone"/>
-                    <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-                    <input type="submit" class="formSubmitFull" name="submit" value="Submit &rightarrow;">
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                      <a data-triger="#step-3" class="offer-link step-toggler" href="#">Submit <i class="far fa-arrow-right"></i></a>
                   </form>
                 </div>
                 <div class="personBlock">
-                    <div class="iconBlock"></div>
+                    <div class="iconBlock" style="background-image: url(/wp-content/themes/theoffercompany/images/agent.png);"></div>
                     <div class="infoBlock">
                       <h6>Anette Brown</h6>
                       <i class="fa fa-star" aria-hidden="true"></i>
@@ -133,11 +134,10 @@
                       <p>602-448-7377</p>
                       <span>anette@theofferco.com</span>
                     </div>
-                    <div class="cleaner"></div>
                 </div>
-                <div class="cleaner"></div> 
-            </div>  
-        </div> 
+              </div>  
+            </div> 
+         </div>
       </div>
     </div>
     <!-- Novi block -->
@@ -162,7 +162,7 @@
                   <p>602-448-7377</p>
                   <span>anette@theofferco.com</span>
                 </div>
-                <div class="cleaner"></div>
+                
               </div>
             </div>  
         </div>  
@@ -181,7 +181,7 @@
         <form class="" action="#" method="post">
           <legend class="legend">Your informaiton</legend>
           <div class="wrapperFormText">
-            <input type="text" name="Name" class="formMR" value="Strahinja" placeholder="Name" />
+            <input type="text" name="Name" class="formMR" placeholder="Name" />
           </div>
           <div class="wrapperFormText">
             <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
@@ -195,10 +195,10 @@
           </div>
           <div class="wrapperFormText">
             <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
-            <div class="cleaner"></div>
+            
           </div>
           <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-          <button  class="formSubmitFull " type="submit">Submit<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+          <button  class="formSubmitFull" type="submit">Submit<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </form>
       </div>
             </div>  
@@ -227,7 +227,7 @@
         <h1 class="hSmallMargin">Financial terms</h1>
       </div>
       <div class="wrapperForm  wrapperFormDekstop">
-        <form class="formsLeft " action="index.html" method="post">
+        <form class="formsLeft" action="index.html" method="post">
             <div class="wrapperFormText">
                 <legend class="legend">Purchase price</legend>
                 <input type="text" class="formMR" name="purPrice" value="" placeholder="$"/>
@@ -247,7 +247,7 @@
                 <input type="text" class="" name="earnMoney" value="" placeholder="$"/>
             </div>
         </form>
-        <div class="cleaner"></div>
+        
         <div class="wrapperForm formsLeft wrapperFormRadio">
           <form action="" class="formsLeft">
             <input type="radio" name="choice" id=""><p>Conventional</p>
@@ -262,7 +262,7 @@
       <div id="wrapperFooter" class="">
         <h3>Make an offer</h3>
         <div id="footerIcons"></div>
-        <div class="cleaner"></div>
+        
       </div>
     </div>
     <!-- novi block -->
@@ -296,13 +296,13 @@
                   </form>
                 </div>
                 <div class="radioForm radioBlock radioBlock1">
-                    <h5>Is offer "as is"</h5>
+                    <h5>Is offer"as is"</h5>
                   <form action="" method="post" class="formSmall">
                     <input type="radio" name="choice" id="" ><p>Yes</p>
                     <input type="radio" name="choice" id="" ><p>No</p>
                   </form>
                 </div>
-                <div class="cleaner"></div>
+                
               </div>
               <div class="radioForms">
                 <h5>Other terms</h5>
@@ -312,15 +312,15 @@
               </div>
               <div class="buttons">
                 <form action="" method="post">
-                  <button  class="formSubmitFull " type="submit"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
-                  <button  class="formSubmitFull " type="submit">Next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                  <button  class="formSubmitFull" type="submit"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
+                  <button  class="formSubmitFull" type="submit">Next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                 </form>
               </div>
             </div>
             <div id="wrapperFooter" class="">
                 <h3>Make an offer</h3>
                 <div id="footerIcons"></div>
-                <div class="cleaner"></div>
+                
             </div>
         </div>  
       </div>
@@ -330,7 +330,7 @@
       <div class="container-fluid h-100">
         <div class="row h-100">
             <div class="col-12 my-auto">
-                <div class="wrapperMid ">
+                <div class="wrapperMid">
                     <h1>Offer documents</h1>
                     <p>Please upload purchase contract and proof of funds or pre qualification letter</p>
                 </div>
@@ -344,15 +344,15 @@
                 </div>
                 <div class="buttons">
                     <form action="" method="post">
-                      <button  class="formSubmitFull " type="submit"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
-                      <button  class="formSubmitFull " type="submit">Next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                      <button  class="formSubmitFull" type="submit"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
+                      <button  class="formSubmitFull" type="submit">Next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                     </form>
                 </div>
             </div>
             <div id="wrapperFooter" class="">
                 <h3>Make an offer</h3>
                 <div id="footerIcons"></div>
-                <div class="cleaner"></div>
+                
             </div>
         </div>  
       </div>
@@ -429,11 +429,11 @@
          <td>No</td>
        </tr>
        <tr>
-         <td>Is offer "as is":</td>
+         <td>Is offer"as is":</td>
          <td>Yes</td>
        </tr>
      </table>
-       <p class="wrapperWider">Other terms: I'd make no further comments, offer is ready to be submitted and everything is great. Thanks a lot, looking forward to see your reply!
+       <p class="">Other terms: I'd make no further comments, offer is ready to be submitted and everything is great. Thanks a lot, looking forward to see your reply!
        </p>
        <table id="smallTable3">
         <th>Offer documents</th>
@@ -445,11 +445,11 @@
            </tr>
        </table>
        </div>
-       <div class="cleaner"></div>
+       
      <div class="buttons">
         <form action="" method="post">
-          <button  class="formSubmitFull " type="submit"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
-          <button  class="formSubmitFull " type="submit">Submit offer<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+          <button  class="formSubmitFull" type="submit"><i class="fa fa-arrow-left" aria-hidden="true"></i>Back</button>
+          <button  class="formSubmitFull" type="submit">Submit offer<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </form>
     </div>
              </div>
@@ -481,7 +481,7 @@
                       <p>602-448-7377</p>
                       <span>anette@theofferco.com</span>
                     </div>
-                    <div class="cleaner"></div>
+                    
                 </div>
                 <div id="button1"><a href="">Close</a></div>
             </div>  
@@ -510,7 +510,7 @@
           </div>
           <input type="text" class="formFullWidth formMR" name="" value="" placeholder="Phone"/>
           <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-          <button  class="formSubmitFull " type="submit">Next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+          <button  class="formSubmitFull" type="submit">Next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
         </form>
       </div>
       <div class="personBlock">
@@ -526,7 +526,7 @@
           <p>602-448-7377</p>
           <span>anette@theofferco.com</span>
         </div>
-        <div class="cleaner"></div>
+        
       </div>
             </div>
         </div> 

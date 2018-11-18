@@ -1,4 +1,8 @@
-$header-height: 55px;
+.my-auto {
+    &.mod {
+        margin: unset !important;
+    }
+}
 .wrapperTop {
 	width: 100%;
 	min-height: 55px;
@@ -24,24 +28,26 @@ $header-height: 55px;
         }
 	}
 }
-
 .wrapper {
 	background: #80c7f2;
-	background-image: url('/wp-content/themes/theoffercompany/images/make-offer-bg.png');
+	background-image: url("/wp-content/themes/theoffercompany/images/make-offer-bg-responsive.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: bottom center;
 	width: 100%;
-	height: 100vh;
+    height: 100%;
+    min-height: calc(100vh - 55px); //removing the topWrapper from the height.
 	position: relative;
-	.cleaner {
+	div:after {
+        display: table;
+        content: "";
 		clear: both;
 	}
 	.wrapperMid {
 		width: 100%;
 		height: auto;
 		margin: 0px auto;
-		text-align: center;
+        text-align: center;
 		h1 {
 			font-family: $default-font-family;
 			font-size: 21px;
@@ -80,17 +86,13 @@ $header-height: 55px;
 			padding-bottom: 8px;
 		}
 	}
-	.wrapperWider {
-		width: 100%;
-		height: auto;
-		margin: 0px auto;
-		text-align: center;
-	}
 	.wrapperBlocks {
+        max-width: 340px;
 		width: 100%;
 		height: auto;
         margin: 0px auto;
-        padding: 0 15px;
+        border-radius: 5px;
+        box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
 		.formBlock {
 			margin: 0px auto;
 			width: 100%;
@@ -98,12 +100,14 @@ $header-height: 55px;
             background-color: #ffffff;
             padding: 15px 15px;
             transition: all 0.3s ease;
-			&:hover {
-				background-color: #edeeef;
-				cursor: pointer;
-				.formArrow {
-
-				}
+            &:hover,
+            &:active,
+            &:focus {
+				background-color: #f1f1f1fc;
+                cursor: pointer;
+                .formArrow {
+                    margin-right: 0%;
+                }
 			}
 			.formCircle {
 				background-color: $main-color;
@@ -117,8 +121,6 @@ $header-height: 55px;
 				i {
 					font-size: 16px;
 					color: #ffffff;
-				}
-				.faml {
 				}
 				.farot {
 					transform: rotateY(180deg);
@@ -139,61 +141,44 @@ $header-height: 55px;
                 margin-top: 9px;
                 float: right;
                 display: inline-block;
-                i {
-                    right: 5%;
-                }
+                margin-right: 3%;
+                transition: all 0.3s ease;
 			}
 		}
 		.formBorderTop {
 			border-radius: 5px 5px 0px 0px;
-			border-bottom: 0.3px solid #c1c1c1;
+			border-bottom: 1px solid #d6dce675;
 		}
 		.formBorderMid {
 			border-radius: 0px;
 		}
 		.formBorderBot {
 			border-radius: 0px 0px 5px 5px;
-			border-top: 0.3px solid #c1c1c1;
+			border-top: 1px solid #d6dce675;
 		}
 	}
 	.wrapperForm {
 		width: 100%;
-		height: 205px;
-		margin: 0px auto;
+        margin: 0 auto;
+        max-width: 340px;
 		form {
 			width: 100%;
 			height: auto;
-			input {
-				width: 49%;
-				height: 40px;
-				border-radius: 5px;
-				color: #000000;
-				margin-bottom: 5%;
-				border: none;
-				padding-left: 3%;
-				float: left;
-			}
-			.formMR {
-				margin-right: 2%;
-			}
-			.formSubmitFull {
-				background-color: $main-color;
-				padding-left: 0%;
-				width: 100%;
-				color: #ffffff;
-				margin-top: 2%;
-			}
-			.formSubmitHalf {
-				background-color: $main-color;
-				padding-left: 0%;
-				width: 45%;
-				margin: 0px auto;
-				color: #ffffff;
-			}
-			.formFullWidth {
-				width: 100%;
-			}
-		}
+        }
+        .offer-link {
+            text-align: center;
+            text-transform: unset;
+            padding: 10px 16px;
+            margin-bottom: 0;
+            font-family: "Graphik Regular", sans-serif;
+            color: #fff;
+            font-size: 15px;
+            margin: 0;
+            i {
+                font-size: 11px;
+                margin-left: 10px;
+            }
+        }
 	}
 	.wrapperFormBigger {
 		width: 100%;
@@ -227,26 +212,6 @@ $header-height: 55px;
 			width: 100%;
 		}
 	}
-	.wrapperFormDekstop {
-		width: 750px;
-		height: 443px;
-		margin: 0px auto;
-		background-color: #c2c2c2;
-		form {
-			width: 50%;
-			height: auto;
-			input {
-				width: 94%;
-				margin-left: 3%;
-			}
-		}
-		.formsLeft {
-			float: left;
-		}
-		.formsRight {
-			float: right;
-		}
-	}
 	.wrapperFormRadio {
 		width: 100%;
 		height: auto;
@@ -268,35 +233,40 @@ $header-height: 55px;
 		}
 	}
 	.personBlock {
-		width: 100%;
-		max-width: 390px;
-		height: 160px;
+		width: 90%;
+		max-width: 340px;
 		background-color: #ffffff;
 		box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
-		margin: 3% auto 0% auto;
-		border-radius: 5px;
+        border-radius: 5px;
+        padding: 15px 20px;
+        margin: 0 auto;
+        margin-top: 40px;
 		.iconBlock {
-			height: 90px;
-			width: 90px;
+			height: 85px;
+			width: 85px;
 			border-radius: 50%;
-			float: left;
-			margin: 8% 0% 0% 8%;
-			background-color: #c2c2c2;
+            background-color: #c2c2c2;
+            background-size: cover;
+            display: inline-block;
 		}
 		.infoBlock {
-			height: 160px;
-			width: 260px;
-			float: left;
-			padding-left: 10%;
-			padding-top: 9%;
-		}
-		p {
-			color: #000000;
-			line-height: 11px;
-		}
-		h6 {
-			font-size: 16.5px;
-			font-weight: bold;
+            display: inline-block;
+            margin-left: 13px;
+            vertical-align: super;
+            p {
+                color: #5c616c;
+                line-height: 11px;
+            }
+            h6 {
+                font-size: 16.5px;
+                font-family: $publico-font-family;
+                padding-bottom: 0;
+            }
+            i {
+                font-size: 10px;
+                color: #00acee;
+                padding-bottom: 10px;
+            }
 		}
 	}
 	.goBack {
@@ -496,7 +466,8 @@ $header-height: 55px;
 			color: #ffffff;
 			padding-top: 5%;
 			margin-left: 3%;
-		}
+        }
+        all: unset;
 	}
 	#button1 {
 		border: none;
@@ -531,38 +502,51 @@ $header-height: 55px;
 }
 
 #pageone {
-	.wrapperBlocks {
-		margin-top: 6%;
-    }
     height: calc(100vh - 55px); //removing the topWrapper from the height.
+    padding-top: 3rem;
+    .wrapperBlocks {
+        margin-top: 20px;
+    }
 }
-
 #pagetwo {
-	height: 95vh;
+    height: calc(100vh - 55px); //removing the topWrapper from the height.
 	.wrapperBlocks {
-		margin-top: 10px;
+        margin-top: 50px;
 		margin-bottom: 15%;
-	}
+    }
+    .wrapperMid h1 {
+        max-width: 250px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        font-size: 23px;
+    }
+    .formBorderTop {
+        border-top: 0px;
+    }
 }
-
 #pagethree {
-	height: 95vh;
-	.personBlock {
-		margin-top: 67px;
-	}
+    height: calc(100vh - 55px); //removing the topWrapper from the height.
+    overflow-y: scroll;
+    padding-top: 3rem;
 	h1 {
-		width: 250px;
-		margin: 0px auto;
-		margin-bottom: 4%;
-	}
+        max-width: 250px;
+        margin: 0px auto;
+        font-size: 23px;
+    }
+    h3 {
+        font-size: 15px;
+        font-family: $light-font-family;
+        margin: 0 auto;
+        margin-top: 10px;
+        max-width: 250px;
+    }
 	.wrapperForm {
 		margin-top: 30px;
 	}
 }
-
 #pagefour {
-	height: 95vh;
-	padding-bottom: 20%;
+	height: calc(100vh - 55px); //removing the topWrapper from the height.
 	h1 {
 		margin-bottom: 10%;
 	}

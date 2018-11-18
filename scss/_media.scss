@@ -533,6 +533,30 @@
             border-radius: 5px;
         }
     }
+    .makeanoffer {
+        .wrapper {
+            background-image: url("/wp-content/themes/theoffercompany/images/make-offer-bg.png");
+            background-position: bottom center;
+        }
+        #pageone {
+            padding-top: 0;
+        }
+        #pagetwo {
+            .wrapperBlocks {
+                margin-top: 10px;
+            }
+        }
+        #pagethree {
+            padding-top: 0;
+            overflow-y: unset;
+        }
+        .my-auto {
+            &.mod {
+                margin-top: auto !important;
+                margin-bottom: auto !important;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 1365px) {
     #homes-search-desktop-field {min-width: 15rem !important;}
