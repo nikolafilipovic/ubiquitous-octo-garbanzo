@@ -1,8 +1,12 @@
 .fmlp-header-container {
-  min-height: 500px;
+  max-height: 380px;
   background-position: top 50% left;
   background-size: cover;
   background-image: url(/wp-content/themes/theoffercompany/images/bg.jpg);
+
+  @include respond-to('desktop') {
+    max-height: 500px;
+  }
 
   .fmlp-header {
     display: flex;
@@ -91,7 +95,7 @@
   }
 
   .enterzip-group {
-    width: 90%; 
+    width: 90%;
 
     @include respond-to('tablet') {
       width: 80%;
@@ -150,12 +154,14 @@
   top: -175px;
   
   @include respond-to('desktop') {
-    top: -105px;
+    margin-top: -30px;
   }
 }
 
 .fmlp-body {
   background: #f5f7fa;
+  position: relative; 
+  display: block;
   
   .one-row {
     &:nth-child(1), &:nth-child(2) {
@@ -181,13 +187,15 @@
 
 .fmlp-floating-block {
   border-radius: 10px;
+  margin-top: 80px;
   background: white;
   box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
-  padding: 20px;
+  padding: 1.25rem;
   width: 90%;
   
   @include respond-to('tablet') {
     width: 80%;
+    padding: 2.375rem;
   }
   
   @include respond-to('m-desktop') {
