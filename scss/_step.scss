@@ -184,6 +184,11 @@
   .date-slide {
     width: 100px !important;
     text-align: center;
+    &.active {
+      h3 {
+        color: white;
+      }
+    }
   }
   h3 {
     font-family: $bold-font-family;
