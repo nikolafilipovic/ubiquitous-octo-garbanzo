@@ -1,0 +1,168 @@
+.fmlp-header-container {
+  min-height: 500px;
+  background-position: top 50% left;
+  background-size: cover;
+  background-image: url(/wp-content/themes/theoffercompany/images/bg.jpg);
+
+  .fmlp-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+      color: white;
+      font-size: 1.6rem;
+      padding: 1.375rem 0;
+      @include respond-to('desktop') {
+        font-size: 2.375rem;
+        padding: 3rem 0 1rem;
+      }
+    }
+  }
+
+  .faded {
+    background: rgba(8, 106, 192, 0.9);
+    width:100%;
+    min-height: 500px;
+  }
+
+  .link-container {
+    background: white;
+    padding: 20px;
+    @include respond-to('desktop') {
+      background: transparent;
+      padding: 15px 20px;
+    }
+  }
+  
+  .go-back {
+    color: $main-color;
+    @include respond-to('desktop') {
+      color: white;
+    }
+    font-size: 18px;
+    display: block;
+    i {
+      padding-right: 15px;
+      font-size: 15px;
+    }
+  }
+}
+
+.fmlp-header-container, .fmlp-floating-block {
+  h1 {
+    font-size: 1.75rem;
+    color: #1e232c;
+    line-height: 48px;
+    text-align: center;
+    text-shadow: 0px 11px 54.15px rgba(29, 35, 40, 0.19);
+  }
+
+  .enterzip-group {
+    width: 90%; 
+
+    @include respond-to('tablet') {
+      width: 80%;
+    }
+
+    @include respond-to('desktop') {
+      width: 60%;
+    }
+
+    @include respond-to('m-desktop') {
+      width: 35%;
+    }
+  }
+
+  .offer-link {
+    min-width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+    text-transform: unset;
+    font-size: 1rem;
+    color: white;
+    i {
+      padding-left: .5em;
+      font-size: 12px;
+    }
+  }
+
+  .landing-search {
+    .search-field .input-group.buy::after {
+      display: none;
+    }
+
+    .search-field {
+      margin-top: 0;
+      border-radius: 10px;
+      box-shadow: 0px 2px 11px 0px rgba(10, 25, 40, 0.27) !important;
+    }
+  }
+}
+
+.fmlp-floating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -175px;
+  
+  @include respond-to('desktop') {
+    top: -105px;
+  }
+}
+
+.fmlp-body {
+  background: #f5f7fa;
+  
+  .one-row {
+    &:nth-child(1), &:nth-child(2) {
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      color: $main-color;
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: #1e232c;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.fmlp-floating-block {
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
+  padding: 3.375rem;
+  width: 90%;
+  
+  @include respond-to('tablet') {
+    width: 80%;
+  }
+  
+  @include respond-to('m-desktop') {
+    width: 59%;
+  }
+}
+
+.block--smaller {
+  margin-top: 30px;
+  padding: 2.5rem 1rem;
+  width: 90%;
+
+  @include respond-to('mobile') {
+    width: 70%;
+  }
+
+  @include respond-to('mobile') {
+    width: 70%;
+    padding: 2.5rem 3.44rem;
+  }
+  
+  @include respond-to('m-desktop') {
+    width: 41%;
+  }
+}
+
