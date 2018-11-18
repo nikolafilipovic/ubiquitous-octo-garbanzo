@@ -70,28 +70,13 @@ var multistep = (function($) {
 
 var multislider = (function($) {
   function ViewportFlexSlider(container) {
-    this.carousel = container.find('.dated-carousel');
-    this.numItems = 3;
-    this.viewPort = container.find('.dated-carousel').width();
-    this.slides = this.carousel.find('.date-slide');
-    this.slide = this.slides.first();
-    this.stage = this.carousel.find('.dated-stage');
-    this.leftOver = this.viewPort - this.numItems * this.slide.width();
-    this.space = (this.leftOver / 4);
-    this.index = 0;
-    this.activeSlide = this.slides.eq(this.index + 1);
-    this.activeSlide.addClass('active');
-
     var self = this;
-    this.carousel.find('.date-slide').each(function() {
-      $(this).css('marginLeft', `${self.space}px`);
-    });
+    this.recalculate(container)
 
-    /*
-    this.slides.each(function() {
-      $(this).width(self.slide.width());
-    }); */
-    
+    $(window).on('resize', function() {
+      self.recalculate(container);
+    })
+
     container.find('.right-control-arrow').click(function() {
       self.activeSlide.removeClass('active');
       self.slideRight();
@@ -104,6 +89,25 @@ var multislider = (function($) {
       self.slideLeft();
       self.activeSlide = self.slides.eq(self.index + 1);
       self.activeSlide.addClass('active');
+    });
+  }
+
+  ViewportFlexSlider.prototype.recalculate = function(container) {
+    var self = this;
+    this.carousel = container.find('.dated-carousel');
+    this.numItems = 3;
+    this.viewPort = container.find('.dated-carousel').width();
+    this.slides = this.carousel.find('.date-slide');
+    this.slide = this.slides.first();
+    this.stage = this.carousel.find('.dated-stage');
+    this.leftOver = this.viewPort - this.numItems * this.slide.width();
+    this.space = (this.leftOver / 4);
+    this.index = 0;
+    this.activeSlide = this.slides.eq(this.index + 1);
+    this.activeSlide.addClass('active');
+
+    this.carousel.find('.date-slide').each(function() {
+      $(this).css('marginLeft', `${self.space}px`);
     });
   }
 
