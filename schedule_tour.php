@@ -105,27 +105,44 @@ Template Name: Schedule Tour
 
     <div id="step-2-alter" class="step mw-100-step">
         <h1>When do you want to tour?</h1>
-        <div class="dated-carousel">
-          <div class="date-slide">
-            <div class="wrap">
-              <h1>Mon</h1>
-              <hr />
-              <h2>Oct 22</h2>
+        <div class="data-carousel-wrap">
+          <div class="left-control-arrow">
+            <i class="far fa-chevron-left"></i>
+          </div>
+          <div class="dated-carousel">
+            <div class="dated-stage">
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Mon</h1>
+                  <hr />
+                  <h2>Oct 22</h2>
+                </div>
+              </div>
+              <div class="date-slide active">
+                <div class="wrap">
+                  <h1>Tue</h1>
+                  <hr />
+                  <h2>Oct 23</h2>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Wed</h1>
+                  <hr />
+                  <h2>Oct 24</h2>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Wed</h1>
+                  <hr />
+                  <h2>Oct 24</h2>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="date-slide active">
-            <div class="wrap">
-              <h1>Mon</h1>
-              <hr />
-              <h2>Oct 22</h2>
-            </div>
-          </div>
-          <div class="date-slide">
-            <div class="wrap">
-              <h1>Mon</h1>
-              <hr />
-              <h2>Oct 22</h2>
-            </div>
+          <div class="right-control-arrow">
+            <i class="far fa-chevron-right"></i>
           </div>
         </div>
       </div><!-- End of setp 2 alter -->

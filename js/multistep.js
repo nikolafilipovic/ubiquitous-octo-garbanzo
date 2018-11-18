@@ -69,9 +69,19 @@ var multistep = (function($) {
 })(jQuery);
 
 var multislider = (function($) {
+  function ViewportFlexSlider(container) {
+    this.carousel = container.find('.dated-carousel');
+    this.vpWidth = 3 * this.carousel.find('.date-slide').width();
+
+
+  }
+
+  var sliders = [];
 
   function init() {
-    
+    $('.data-carousel-wrap').each(function() {
+      sliders.push(new ViewportFlexSlider($(this)));
+    })
   }
 
   return {

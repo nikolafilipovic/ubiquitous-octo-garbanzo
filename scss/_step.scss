@@ -89,12 +89,56 @@
   width: 100%;
 }
 
-.dated-carousel {
+.data-carousel-wrap {
   display: flex;
   justify-content: center;
+  margin: 20px 0;
+  .dated-stage {
+    display: flex;
+    width: 2000px;
+  }
+  .right-control-arrow {
+    padding-left: 1em;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 5px 5px 2px #355e8c15;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-right: 4px;
+    i {
+      display: block;
+    }
+  }
+  .left-control-arrow {
+    padding-left: 4px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 5px 5px 2px #355e8c15;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-right: 1em;
+    i {
+      display: block;
+    }
+  }
+}
+
+.dated-carousel {
   margin: 0 0 10px;
+  flex: 1;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
   .wrap {
-    padding: 1.7em 2.2em;
+    padding: 1em 1.3em;
   }
   h1 {
     text-align: center;
@@ -112,9 +156,9 @@
 
   }
   .date-slide {
-    margin: 0 1em;
     border-radius: 4px;
-    box-shadow: 0px 43px 64.6px 3.4px rgba(53, 94, 140, 0.22);
+    box-shadow: 0px 5px 5px 2px #355e8c15;
+    margin: 0 10px;
     &.active {
       background: $main-color;
       position: relative;
@@ -122,7 +166,8 @@
       hr {
         border-top: 2px solid #84d7f9;
       }
-      h2 {
+      h1, h2 {
+        font-family: $bold-font-family;
         color: white;
       }
     }
