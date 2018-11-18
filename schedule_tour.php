@@ -205,6 +205,13 @@ Template Name: Schedule Tour
             October
           </span> <span id="day">23</span> at <span id="time">09:00am</span>
         </p>
+
+        <div class="offer-link-wrap">
+          <div data-triger="#step-3" class="offer-link step-toggler">
+            <a href="#">Continue</a>
+            <i class="far fa-arrow-right fasarrow"></i>
+          </div>
+        </div>
       </div><!-- End of setp 2 alter -->
     </div> <!-- end of step form -->
 

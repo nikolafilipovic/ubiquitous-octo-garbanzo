@@ -140,6 +140,20 @@
   }
 }
 
+.offer-link-wrap {
+  padding: 0 1em;
+  margin-top: 1.5em;
+  .offer-link {
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin-left: .8em;
+    }
+  }
+}
+
+
 .dated-carousel {
   margin: 0 0 10px;
   flex: 1;
