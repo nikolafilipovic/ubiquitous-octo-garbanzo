@@ -100,13 +100,10 @@ var multistep = (function($) {
     var self = this;
 
     if(container.data('slider-added')) {
-      console.log("YOYOYO");
       return;
     }
 
     container.data('slider-added', true);
-
-
     this.optimalItems(container);
 
     $(window).on('resize', function() {
