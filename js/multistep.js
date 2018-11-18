@@ -71,9 +71,16 @@ var multistep = (function($) {
 var multislider = (function($) {
   function ViewportFlexSlider(container) {
     this.carousel = container.find('.dated-carousel');
-    this.vpWidth = 3 * this.carousel.find('.date-slide').width();
+    
+    this.viewPort = container.find('.dated-carousel').width();
+    this.slide = container.find('.date-slide').first();
+    this.carousel.find('.dated-stage').width(this.carousel.find('.date-slide').length * this.slide.width() + 350);
+    this.leftOver = this.viewPort - 3 * this.slide.width();
+    var space = (this.leftOver / 4);
 
-
+    this.carousel.find('.date-slide').each(function() {
+      $(this).css('marginLeft', `${space}px`);
+    })
   }
 
   var sliders = [];
