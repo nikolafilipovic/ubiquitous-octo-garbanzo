@@ -15,7 +15,7 @@ var multistep = (function($) {
     var toggler = wrap.find('.step-toggler');
     var width = item.width();
 
-    item.css('margin-right', '15px');
+    //item.css('margin-right', '15px');
     toggler.click(function() {
       if(animating) return;
 
