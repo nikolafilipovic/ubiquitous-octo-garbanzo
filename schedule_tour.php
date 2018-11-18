@@ -201,7 +201,7 @@ Template Name: Schedule Tour
           <div class="right-control-arrow">
             <i class="far fa-chevron-right"></i>
           </div>
-        </di
+        </div>
       </div><!-- End of setp 2 alter -->
 
   </div> <!-- container fluid -->
