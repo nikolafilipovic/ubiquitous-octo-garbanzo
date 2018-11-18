@@ -1,6 +1,7 @@
 var multistep = (function($) {
   var animating = false;
-  var prevSlide = null;
+  var slideHistory = [];
+  var skipHistory = false;
 
   function init() {
     var stage = $(`<div class='stage'></div>`);
@@ -25,8 +26,12 @@ var multistep = (function($) {
       var nextSlide;
       var tar = $(this).data('triger');
       if(tar == "back") {
-        if(!prevSlide) return;
-        nextSlide = prevSlide;
+        if(slideHistory.length == 0) {
+          animating = false;
+          return;
+        }
+        nextSlide = slideHistory.pop();
+        skipHistory = true;
       }
       else {
         nextSlide = $(tar);
@@ -41,8 +46,12 @@ var multistep = (function($) {
       var targetHeight = nextSlide.height();
       var startH = item.height();
       stage.height(startH);
+      
+      if(!skipHistory) {
+        slideHistory.push(item);
+      }
+      skipHistory = false;
 
-      prevSlide = item;
       var time = {
         start: performance.now(),
         total: 300
@@ -89,6 +98,14 @@ var multistep = (function($) {
 (function($) {
   function ViewportFlexSlider(container, opts) {
     var self = this;
+    this.opts = opts;
+
+    if(container.data('slider-added')) {
+      this.optimalItems(container);
+      return;
+    }
+
+    container.data('slider-added', true);
     this.optimalItems(container);
 
     $(window).on('resize', function() {
@@ -134,16 +151,39 @@ var multistep = (function($) {
   ViewportFlexSlider.prototype.recalculate = function(container, numItems) {
     var self = this;
     this.carousel = container.find('.dated-carousel');
-    this.numItems = numItems;
     this.viewPort = container.find('.dated-carousel').width();
     this.slides = this.carousel.find('.date-slide');
+    this.numItems = Math.min(numItems, this.slides.length);
     this.slide = this.slides.first();
     this.stage = this.carousel.find('.dated-stage');
     this.leftOver = this.viewPort - this.numItems * this.slide.width();
-    this.space = (this.leftOver / 4);
+    this.space = this.leftOver / (numItems + 1);
+  
+    var totalSpaceTaken = (this.space + this.slide.width()) * this.numItems;
+    var isAllTaken = this.viewPort - totalSpaceTaken > this.slide.width() + this.space;
+
+    if(isAllTaken) {
+      this.stage.addClass('center');
+    } else {
+      this.stage.removeClass('center');
+    }
+
     this.index = 0;
     this.activeSlide = this.slides.eq(this.index + 1);
-    
+    this.reset();
+
+    this.carousel.find('.date-slide').each(function() {
+      $(this).css('marginLeft', `${self.space}px`);
+      $(this).click(function() {
+        self.index = $(this).index() - 1;
+        self.activeSlide = self.slides.eq(self.index + 1);
+        self.reset();
+        self.opts.onChange(self.activeSlide.data('obj'));
+      });
+    });
+  }
+
+  ViewportFlexSlider.prototype.reset = function() {
     this.slides.each(function() {
       $(this).removeClass('active');
     });
@@ -151,10 +191,6 @@ var multistep = (function($) {
     var offset = this.index * this.slide.width() + this.index * this.space;
     this.stage.css({
       transform: `translateX(${-1 *offset}px)`
-    });
-
-    this.carousel.find('.date-slide').each(function() {
-      $(this).css('marginLeft', `${self.space}px`);
     });
   }
 
