@@ -31,7 +31,7 @@
     padding-top: 25px;
 
     .location-name {
-      font-family: $default-font-family;
+      font-family: $graphik-font-family; font-weight: 400;
       color: #1e232c;
       font-size: 22px;
       font-weight: 400;
@@ -41,7 +41,7 @@
     }
 
     .location-info {
-      font-family: $default-font-family;
+      font-family: $graphik-font-family; font-weight: 400;
       color: #1e232c;
       font-size: 15px;
       font-weight: 400;
@@ -49,7 +49,7 @@
     }
 
     .save-search {
-      font-family: $default-font-family;
+      font-family: $graphik-font-family; font-weight: 400;
       color: #00aced;
       font-size: 16px;
       font-weight: 400;
@@ -78,7 +78,7 @@
     background-position: top 45% left 55% !important;
 
     .time-on-market {
-      font-family: $default-font-family;
+      font-family: $graphik-font-family; font-weight: 400;
       color: #ffffff;
       font-size: 15px;
       line-height: 26px;
@@ -129,7 +129,7 @@
     }
 
     .sale-type {
-      font-family: $bold-font-family;
+      font-family: $graphik-font-family; font-weight: 500;
       color: #ffffff;
       font-size: 14px;
       text-transform: uppercase;
@@ -153,7 +153,7 @@
     }
 
     .property-price {
-      font-family: $default-font-family;
+      font-family: $graphik-font-family; font-weight: 400;
       color: #ffffff;
       font-size: 29px;
       text-align: left;
@@ -170,7 +170,7 @@
       .beds,
       .baths,
       .sqft {
-        font-family: $default-font-family;
+        font-family: $graphik-font-family; font-weight: 400;
         color: #ffffff;
         font-size: 15px;
         font-weight: 400;
@@ -191,7 +191,7 @@
     }
 
     .property-address {
-      font-family: $default-font-family;
+      font-family: $graphik-font-family; font-weight: 400;
       color: #ffffff;
       padding-bottom: .5em;
       font-size: 13px;

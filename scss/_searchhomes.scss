@@ -17,7 +17,7 @@
             width: 48%;
             margin-bottom: 3%;
             h3 {
-                font-family: $bold-font-family;
+                font-family: $graphik-font-family; font-weight: 500;
                 color:  #1e232c;
                 font-size: 14px;
                 font-weight: 500;
@@ -32,7 +32,7 @@
                 width: 100%;
                 text-align: left;
                 padding: 10px 9px;
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #1e232c;
                 font-size: 15px;
                 font-weight: 300;
@@ -142,7 +142,7 @@
                 margin-top: 0.60rem;
                 border: none;
                 .dropdown-item {
-                    font-family: $default-font-family;
+                    font-family: $graphik-font-family; font-weight: 400;
                     color:  #1e232c;
                     font-size: 15px;
                     font-weight: 300;
@@ -240,7 +240,7 @@
                         transition: color 0.3s ease, background 0.3s ease;
                         position: relative;
                         font-size: 14px;
-                        font-family: $default-font-family;
+                        font-family: $graphik-font-family; font-weight: 400;
                         font-weight: 400;
                         &:hover,
                         &:active,
@@ -254,7 +254,7 @@
                     .custom-checkbox {
                         background-color: #fff;
                         label {
-                            font-family: $default-font-family;
+                            font-family: $graphik-font-family; font-weight: 400;
                             color: #1e232c;
                             font-size: 15px;
                             font-weight: 300;
@@ -293,7 +293,7 @@
         width: 99%;
         margin-left: 0%; /* Because my grid skills are retarded */
         h3 {
-            font-family: $bold-font-family;
+            font-family: $graphik-font-family; font-weight: 500;
             color:  #1e232c;
             font-size: 14px;
             font-weight: 500;
@@ -306,7 +306,7 @@
         }
         .input-group {
             .form-control {
-                font-family: $light-font-family;
+                font-family: $graphik-font-family; font-weight: 300;
                 color:  #1e232c;
                 font-size: 16px;
                 font-weight: 300;
@@ -342,7 +342,7 @@
         margin-right: -15px;
         margin-top: 20px;
         a {
-            font-family: $default-font-family;
+            font-family: $graphik-font-family; font-weight: 400;
             color:  #00aced;
             font-size: 15px;
             font-weight: 300;
@@ -373,7 +373,7 @@
             padding: 15px 15px;
             padding-top: 25px;
             .location-name {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #1e232c;
                 font-size: 22px;
                 font-weight: 400;
@@ -382,14 +382,14 @@
                 padding: 0;
             }
             .location-info {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #1e232c;
                 font-size: 15px;
                 font-weight: 400;
                 text-align: left;
             }
             .save-search {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #00aced;
                 font-size: 16px;
                 font-weight: 400;
@@ -421,7 +421,7 @@
                 cursor: pointer;
               }*/
             .time-on-market {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color: #ffffff;
                 font-size: 15px;
                 line-height: 26px;
@@ -466,7 +466,7 @@
                 }
             }
             .sale-type {
-                font-family: $bold-font-family;
+                font-family: $graphik-font-family; font-weight: 500;
                 color: #ffffff;
                 font-size: 14px;
                 text-transform: uppercase;
@@ -488,7 +488,7 @@
                 }
             }
             .property-price {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color: #ffffff;
                 font-size: 29px;
                 text-align: left;
@@ -505,7 +505,7 @@
                 .beds,
                 .baths,
                 .sqft {
-                    font-family: $default-font-family;
+                    font-family: $graphik-font-family; font-weight: 400;
                     color: #ffffff;
                     font-size: 15px;
                     font-weight: 400;
@@ -525,7 +525,7 @@
                 }
             }
             .property-address {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color: #ffffff;
                 padding: 0; //!!!!!
                 font-size: 13px;
@@ -544,7 +544,7 @@
             padding: 25px 10px;
             text-align: center;
             h1 {
-                font-family: $light-font-family;
+                font-family: $graphik-font-family; font-weight: 300;
                 color:  #ffffff;
                 font-size: 22px;
                 font-weight: 400;
@@ -552,7 +552,7 @@
                 text-align: center;
             }
             p {
-                font-family: $light-font-family;
+                font-family: $graphik-font-family; font-weight: 300;
                 color:  #ffffff;
                 font-size: 15px;
                 font-weight: 400;
@@ -590,7 +590,7 @@
                 li {
                     display: inline-block;
                     a {
-                        font-family: $default-font-family;
+                        font-family: $graphik-font-family; font-weight: 400;
                         font-size: 16px;
                         font-weight: 500;
                         padding: 0;
@@ -654,7 +654,7 @@
             }
             .apply {
                 float: left;
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #00aced;
                 font-size: 16px;
                 font-weight: 400;
@@ -663,7 +663,7 @@
             }
             .reset {
                 float: right;
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #00aced;
                 font-size: 16px;
                 font-weight: 400;
@@ -671,7 +671,7 @@
                 padding-right: 15px;
             }
             p {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #1e232c;
                 font-size: 17px;
                 font-weight: 400;
@@ -697,7 +697,7 @@
                             width: 100%;
                             text-align: left;
                             padding: 18px 15px;
-                            font-family: $bold-font-family;
+                            font-family: $graphik-font-family; font-weight: 500;
                             color:  #1e232c;
                             font-size: 16px;
                             font-weight: 300;
@@ -831,7 +831,7 @@
                     border: none;
                     padding: 0px 15px 15px 15px;
                     .dropdown-item {
-                        font-family: $default-font-family;
+                        font-family: $graphik-font-family; font-weight: 400;
                         color:  #1e232c;
                         font-size: 16px;
                         font-weight: 300;
@@ -905,7 +905,7 @@
             .other-fields {
                 padding: 0px 15px;
                 h3 {
-                    font-family: $bold-font-family;
+                    font-family: $graphik-font-family; font-weight: 500;
                     color: #1e232c;
                     font-weight: 500;
                     line-height: 30px;
@@ -977,7 +977,7 @@
                         transition: color 0.3s ease, background 0.3s ease;
                         position: relative;
                         font-size: 14px;
-                        font-family: $default-font-family;
+                        font-family: $graphik-font-family; font-weight: 400;
                         font-weight: 400;
                         &:hover,
                         &:active,
@@ -996,7 +996,7 @@
                     .custom-checkbox {
                         padding: .25rem 10px;
                         label {
-                            font-family: $default-font-family;
+                            font-family: $graphik-font-family; font-weight: 400;
                             color: #1e232c;
                             font-size: 15px;
                             font-weight: 300;
@@ -1066,7 +1066,7 @@
                     margin-bottom: 15px;
                     .form-group {
                         label {
-                            font-family: $bold-font-family;
+                            font-family: $graphik-font-family; font-weight: 500;
                             color: #1e232c;
                             font-weight: 500;
                             line-height: 30px;
@@ -1079,7 +1079,7 @@
                         }
                         .custom-select,
                         .form-control.input {
-                            font-family: $default-font-family;
+                            font-family: $graphik-font-family; font-weight: 400;
                             color:  #96a7bc;
                             font-size: 15px;
                             font-weight: 300;
@@ -1109,7 +1109,7 @@
                             float: right;
                             position: relative;
                             .form-control {
-                                font-family: $light-font-family;
+                                font-family: $graphik-font-family; font-weight: 300;
                                 color:  #96a7bc;
                                 font-size: 16px;
                                 font-weight: 300;
@@ -1142,7 +1142,7 @@
                         background: #00aced;
                         border: 0;
                         padding: 10px 12px;
-                        font-family: $default-font-family;
+                        font-family: $graphik-font-family; font-weight: 400;
                         color:  #fff;
                         font-size: 17px;
                         font-weight: 300;
@@ -1188,7 +1188,7 @@
         .fields {
             .form-group {
                 label {
-                    font-family: $bold-font-family;
+                    font-family: $graphik-font-family; font-weight: 500;
                     color: #1e232c;
                     font-weight: 500;
                     line-height: 30px;
@@ -1201,7 +1201,7 @@
                 }
                 .custom-select,
                 .form-control.input {
-                    font-family: $default-font-family;
+                    font-family: $graphik-font-family; font-weight: 400;
                     color:  #96a7bc;
                     font-size: 15px;
                     font-weight: 300;
@@ -1231,7 +1231,7 @@
                     float: right;
                     position: relative;
                     .form-control {
-                        font-family: $light-font-family;
+                        font-family: $graphik-font-family; font-weight: 300;
                         color:  #96a7bc;
                         font-size: 16px;
                         font-weight: 300;
@@ -1264,7 +1264,7 @@
                 background: #00aced;
                 border: 0;
                 padding: 10px 12px;
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #fff;
                 font-size: 17px;
                 font-weight: 300;

@@ -17,7 +17,7 @@
     border: none;
     button {
       span {
-        font-family: $default-font-family;
+        font-family: $graphik-font-family; font-weight: 400;
         font-weight: normal;
         font-size: 3.7rem !important;
       }
@@ -28,7 +28,7 @@
       padding: 0;
     }
     h5.modal-title {
-      font-family: $default-font-family;
+      font-family: $graphik-font-family; font-weight: 400;
       font-size: 1.1rem;
       padding: 0;
     }

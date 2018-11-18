@@ -12,7 +12,7 @@ footer {
         .footer-links {
             padding: 0px 35px;
             h3 {
-                font-family: $bold-font-family;
+                font-family: $graphik-font-family; font-weight: 500;
                 color: #4a505d;
                 font-size: 15px;
                 font-weight: 500;
@@ -37,7 +37,7 @@ footer {
                         display: none;
                     }
                     a {
-                        font-family: $default-font-family;
+                        font-family: $graphik-font-family; font-weight: 400;
                         color:  #78869c;
                         font-size: 15px;
                         font-weight: 300;
@@ -64,7 +64,7 @@ footer {
                     margin-right: 5px;
                 }
                 span {
-                    font-family: $bold-font-family;
+                    font-family: $graphik-font-family; font-weight: 500;
                     color:  $main-color;
                     font-size: 14px;
                     line-height: 50px;
@@ -96,7 +96,7 @@ footer {
                 }
             }
             span {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #b2bed9;
                 font-size: 16px;
                 font-weight: 400;
@@ -140,7 +140,7 @@ footer {
         }
         .footer-contact {
             h3 {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #b2bed9;
                 font-size: 22px;
                 font-weight: 600;
@@ -152,7 +152,7 @@ footer {
                 display: block;
                 text-align: center;
                 a {
-                    font-family: $default-font-family;
+                    font-family: $graphik-font-family; font-weight: 400;
                     color:  #b2bed9;
                     font-size: 16px;
                     font-weight: 400;

@@ -21,7 +21,7 @@ Template Name: Finy my Local Pro
           <div class="landing-search">
             <div class="search-field">
               <div class="input-group buy" id="input-group">
-                <input type="text" class="form-control" id="landing-search" value="Enter your zip code">
+                <input type="text" class="form-control" id="landing-search" placeholder="Enter your zip code">
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
                 </div>
@@ -65,7 +65,7 @@ Template Name: Finy my Local Pro
       <div class="enterzip enterzip--inset">
         <div class="form-group mb-0 mt-0">
           <div class="input-group-prepend">
-            <input type="text" class="form-control" value="Enter your zip code" />
+            <input type="text" class="form-control" placeholder="Enter your zip code" />
             <i class="fas fa-map-marker-alt"></i>
             </div>
           </div>

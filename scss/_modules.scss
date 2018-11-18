@@ -13,7 +13,7 @@
         border-radius: 5px;
         display: inline-block;
         span {
-            font-family: $default-font-family;
+            font-family: $graphik-font-family; font-weight: 400;
             color: #ffffff;
             font-size: 20px;
             padding: 15px 0px;
@@ -100,7 +100,7 @@
             }
         }
         .form-control {
-            font-family: $light-font-family;
+            font-family: $graphik-font-family; font-weight: 300;
             color: #96a7bc;
             background: #fff;
             font-size: 19px;
@@ -160,7 +160,7 @@
                 }
             }
             h1 {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color: $main-color;
                 font-size: 20px;
                 font-weight: 400;
@@ -178,7 +178,7 @@
             top: 100%;
         }
         p {
-            font-family: $light-font-family;
+            font-family: $graphik-font-family; font-weight: 300;
             color:#929baf;
             font-size: 16px;
             font-weight: 300;
@@ -208,7 +208,7 @@
             cursor: pointer;
           }
         .time-on-market {
-            font-family: $default-font-family;
+            font-family: $graphik-font-family; font-weight: 400;
             color: #ffffff;
             font-size: 15px;
             line-height: 26px;
@@ -220,7 +220,7 @@
             position: relative;
         }
         .sale-type {
-            font-family: $bold-font-family;
+            font-family: $graphik-font-family; font-weight: 500;
             color: #ffffff;
             font-size: 14px;
             text-transform: uppercase;
@@ -233,7 +233,7 @@
             position: relative;
         }
         .property-price {
-            font-family: $default-font-family;
+            font-family: $graphik-font-family; font-weight: 400;
             color: #ffffff;
             font-size: 29px;
             text-align: left;
@@ -250,7 +250,7 @@
             .beds,
             .baths,
             .sqft {
-                font-family: $light-font-family;
+                font-family: $graphik-font-family; font-weight: 300;
                 color: #ffffff;
                 font-size: 13px;
                 font-weight: 400;
@@ -271,7 +271,7 @@
             }
         }
         .property-address {
-            font-family: $default-font-family;
+            font-family: $graphik-font-family; font-weight: 400;
             color: #ffffff;
             font-size: 13px;
             text-align: left;

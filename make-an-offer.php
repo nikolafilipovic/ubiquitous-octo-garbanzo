@@ -39,7 +39,7 @@
                   <i class="far fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
-              <div class="formBlock formBorderMid step-toggler" data-triger="#pagetwo">
+              <div class="formBlock formBorderMid step-toggler" data-triger="#">
                 <div class="formCircle">
                   <i class="fal fa-user-circle"></i>
                 </div>
@@ -48,7 +48,7 @@
                   <i class="far fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
-              <div class="formBlock formBorderBot step-toggler" data-triger="#pagetwo">
+              <div class="formBlock formBorderBot step-toggler" data-triger="#">
                 <div class="formCircle">
                     <i class="fal fa-hand-holding-usd"></i>
                 </div>
@@ -70,7 +70,7 @@
                 <h1>Are you working with a real estate agent?</h1>
             </div>
             <div class="wrapperBlocks">
-              <div class="formBlock formBorderTop step-toggler" data-triger="#pagethree">
+              <div class="formBlock formBorderTop step-toggler" data-triger="#pagefive">
                 <div class="formCircle">
                     <i class="fas fa-check"></i>
                 </div>
@@ -119,13 +119,14 @@
                     <div class="form-group">
                       <input type="email" class="form-control" placeholder="Email">
                     </div>
-                      <a data-triger="#step-3" class="offer-link step-toggler" href="#">Submit <i class="far fa-arrow-right"></i></a>
+                      <a data-triger="#pagefour" class="offer-link step-toggler" href="#">Submit <i class="far fa-arrow-right"></i></a>
                   </form>
                 </div>
                 <div class="personBlock">
                     <div class="iconBlock" style="background-image: url(/wp-content/themes/theoffercompany/images/agent.png);"></div>
                     <div class="infoBlock">
                       <h6>Anette Brown</h6>
+                      <p class="licensed">Licensed Agent</p>
                       <i class="fa fa-star" aria-hidden="true"></i>
                       <i class="fa fa-star" aria-hidden="true"></i>
                       <i class="fa fa-star" aria-hidden="true"></i>
@@ -139,86 +140,85 @@
             </div> 
          </div>
       </div>
-    </div>
-    <!-- Novi block -->
-    <div class="wrapper" id="pagefour">
-      <div class="container-fluid h-100">
-        <div class="row h-100">
-            <div class="col-12 my-auto">
+      <div class="step" id="pagefour">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+              <div class="col-12 my-auto mod">
                 <div class="wrapperMid">
                   <h1>Success!</h1>
                   <h3>Anette Brown will contact you shortly.</h3>
                 </div>
-              <div class="personBlock">
-                <div class="iconBlock"></div>
-                <div class="infoBlock">
-                  <h6>Anette Brown</h6>
-                  <p class="infoblockName">Licensed agent</p>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <p>602-448-7377</p>
-                  <span>anette@theofferco.com</span>
+                <div class="personBlock">
+                  <div class="iconBlock" style="background-image: url(/wp-content/themes/theoffercompany/images/agent.png);"></div>
+                  <div class="infoBlock">
+                    <h6>Anette Brown</h6>
+                    <p class="licensed">Licensed Agent</p>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <p>602-448-7377</p>
+                    <span>anette@theofferco.com</span>
                 </div>
-                
               </div>
             </div>  
-        </div>  
+          </div>  
+        </div>
       </div>
-    </div>
-    <!-- Novi block -->
-    <div class="wrapper" id="pagefive">
-      <div class="container-fluid h-100">
-        <div class="row h-100">
-            <div class="col-12 my-auto">
-                <div class="wrapperMid">
-        <h1>Invite your agent</h1>
-        <h3>We'll send your agent a link with your request to make an offer on this property.</h3>
-      </div>
-      <div class="wrapperForm wrapperFormBigger">
-        <form class="" action="#" method="post">
-          <legend class="legend">Your informaiton</legend>
-          <div class="wrapperFormText">
-            <input type="text" name="Name" class="formMR" placeholder="Name" />
-          </div>
-          <div class="wrapperFormText">
-            <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
-          </div>
-            <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-        </form>
-        <form class="" action="#" method="post">
-          <legend class="legend">Your agents informaiton</legend>
-          <div class="wrapperFormText">
-            <input type="text" name="Name" class="formMR" value="" placeholder="Name" />
-          </div>
-          <div class="wrapperFormText">
-            <input type="text" name="Last Name" class="input2" value="" placeholder="Last name" />
-            
-          </div>
-          <input type="email" class="formFullWidth" name="" value="" placeholder="Email"/>
-          <button  class="formSubmitFull" type="submit">Submit<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-        </form>
-      </div>
+      <div class="step" id="pagefive">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="col-12 my-auto mod">
+              <div class="wrapperMid">
+                <h1>Invite your agent</h1>
+                  <h3>We'll send your agent a link with your request to make an offer on this property.</h3>
+              </div>
+              <div class="wrapperForm">
+                <form class="lh-form">
+                  <div class="row no-gutters">
+                    <p>Your information</p>
+                    <div class="form-group col-6 pr-2">
+                      <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="form-group col-6">
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <div class="row no-gutters">
+                  <p>Your agents information</p>
+                    <div class="form-group col-6 pr-2">
+                      <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="form-group col-6">
+                      <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email">
+                  </div>
+                  <a data-triger="#pagesix" class="offer-link step-toggler" href="#">Submit <i class="far fa-arrow-right"></i></a>
+                </form>
+              </div>
             </div>  
-        </div>  
+          </div> 
+        </div>
       </div>
-    </div>
-    <!-- Novi block -->
-    <div class="wrapper" id="pagesix">
-      <div class="container-fluid h-100">
-        <div class="row h-100">
-            <div class="col-12 my-auto">
+      <div class="step" id="pagesix">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+              <div class="col-12 my-auto mod">
                 <div class="wrapperMid">
-                    <h1>Success!</h1>
-                    <h3>An email has been sent to your agent.</h3>
+                  <h1>Success!</h1>
+                  <h3>An email has been sent to your agent.</h3>
                 </div>
-                <div class="goBack">
-                   <p><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Go back</a></p>
-                </div>
+              </div>
             </div>  
-        </div>  
+          </div>  
+        </div>
       </div>
     </div>
     <!-- Novi block -->

@@ -161,7 +161,7 @@
             .navbar-nav {
                 .nav-item {
                     a.nav-link {
-                        font-family: $default-font-family;
+                        font-family: $graphik-font-family; font-weight: 400;
                         color:  #ffffff;
                         font-size: 15px;
                         font-weight: 400;
@@ -179,7 +179,7 @@
             }
             .navbar-text {
                 float: right;
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #a9dbed;
                 font-size: 15px;
                 font-weight: 400;
@@ -206,7 +206,7 @@
                     padding-left: 5px;
                     border-right: 1px solid #d6dce6;
                     #homes-search-desktop-field {
-                        font-family: $default-font-family;
+                        font-family: $graphik-font-family; font-weight: 400;
                         color:  #1e232c;
                         background: #fff;
                         font-size: 15px;
@@ -246,7 +246,7 @@
                     display: inline-block;
                     vertical-align: inherit;
                     button {
-                        font-family: $default-font-family;
+                        font-family: $graphik-font-family; font-weight: 400;
                         color:  #1e232c;
                         background: #fff;
                         font-size: 15px;
@@ -303,7 +303,7 @@
                         margin-top: 0.60rem;
                         border: none;
                         .dropdown-item {
-                            font-family: $default-font-family;
+                            font-family: $graphik-font-family; font-weight: 400;
                             color:  #1e232c;
                             font-size: 15px;
                             font-weight: 300;
@@ -319,7 +319,7 @@
                                 padding-left: 34px;
                                 .dropdown-checkbox {
                                     & + label {
-                                        font-family: $default-font-family;
+                                        font-family: $graphik-font-family; font-weight: 400;
                                         color:  #1e232c;
                                         text-align: left;
                                         text-transform: unset;
@@ -337,7 +337,7 @@
                                   font-weight: 300;
                                   width: 100%;
                                   display: block;
-                                  font-family: $bold-font-family;
+                                  font-family: $graphik-font-family; font-weight: 500;
                                   color:  #1e232c;
                                   text-align: left;
                                   text-transform: uppercase;
@@ -436,7 +436,7 @@
                                     transition: color 0.3s ease, background 0.3s ease;
                                     position: relative;
                                     font-size: 14px;
-                                    font-family: $default-font-family;
+                                    font-family: $graphik-font-family; font-weight: 400;
                                     font-weight: 400;
                                     &:hover,
                                     &:active,
@@ -453,7 +453,7 @@
                             .input-group {
                                 padding: 0px 10px;
                                 .form-control {
-                                    font-family: $light-font-family;
+                                    font-family: $graphik-font-family; font-weight: 300;
                                     color:  #1e232c;
                                     font-size: 16px;
                                     font-weight: 300;
@@ -486,7 +486,7 @@
                     #homeTypeDropdownDesktop {
                         .dropdown-checkbox {
                             & + label {
-                              font-family: $default-font-family;
+                              font-family: $graphik-font-family; font-weight: 400;
                               color:  #1e232c;
                               text-transform: unset;
                             }
@@ -495,7 +495,7 @@
                 }
             }
             .desktop-fields-map {
-                font-family: $default-font-family;
+                font-family: $graphik-font-family; font-weight: 400;
                 color:  #00aced;
                 font-size: 16px;
                 font-weight: 400;
@@ -571,4 +571,13 @@
         }
     }
     #filterDropdown .form-group {margin-bottom: 5px;}
+}
+@media only screen and (max-height: 380px) { 
+    
+    //@olja there, happy? D:
+    .makeanoffer {
+        .wrapper {
+            background-size: cover;
+        }
+    }
 }

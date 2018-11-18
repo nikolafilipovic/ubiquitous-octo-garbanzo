@@ -41,7 +41,7 @@
 }
 
 .schedule-step-form {
-  font-family: $default-font-family;
+  font-family: $graphik-font-family; font-weight: 400;
   margin: 2em 0 3em;
   h1.estate-tile {
     font-size: 1.2rem;
@@ -60,12 +60,12 @@
   h2.information {
     font-size: 1rem;
     padding: 1rem 0 1.7rem;
-    font-family: $bold-font-family;
+    font-family: $graphik-font-family; font-weight: 500;
   }
   p.info-text {
     text-align: center;
     color: #262628;
-    font-family: $bold-font-family;
+    font-family: $graphik-font-family; font-weight: 500;
   }
   .offer-link {
     text-align: center;
@@ -212,7 +212,7 @@
         border-top: 2px solid #84d7f9;
       }
       h1, h2 {
-        font-family: $bold-font-family;
+        font-family: $graphik-font-family; font-weight: 500;
         color: white;
       }
     }
@@ -233,7 +233,7 @@
     }
   }
   h3 {
-    font-family: $bold-font-family;
+    font-family: $graphik-font-family; font-weight: 500;
     font-size: 1em;
     padding: 0;
     margin: 0;
