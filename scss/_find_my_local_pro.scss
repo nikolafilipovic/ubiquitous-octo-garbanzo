@@ -10,23 +10,41 @@
     justify-content: center;
     flex-direction: column;
     h1 {
-      font-size: 38px;
       color: white;
-      line-height: 48px;
-      text-align: center;
+      font-size: 2.375rem;
       padding: 3rem 0 1rem;
-      text-shadow: 0px 11px 54.15px rgba(29, 35, 40, 0.19);
     }
-  }
-
-  .enterzip {
-    padding: 0 2.125rem;
   }
 
   .faded {
     background: rgba(8, 106, 192, 0.9);
     width:100%;
     min-height: 500px;
+  }
+
+  .go-back {
+    padding: 15px 20px;
+    color: white;
+    font-size: 18px;
+    display: block;
+    i {
+      padding-right: 15px;
+      font-size: 15px;
+    }
+  }
+}
+
+.fmlp-header-container, .fmlp-floating-block {
+  h1 {
+    font-size: 1.75rem;
+    color: #1e232c;
+    line-height: 48px;
+    text-align: center;
+    text-shadow: 0px 11px 54.15px rgba(29, 35, 40, 0.19);
+  }
+
+  .enterzip-group {
+    width: 35%;
   }
 
   .offer-link {
@@ -43,27 +61,14 @@
   }
 
   .landing-search {
-    .search-field .form-control {
-      padding: 30px 180px 30px 30px !important;
-    }
-
     .search-field .input-group.buy::after {
       display: none;
     }
 
     .search-field {
       margin-top: 0;
-    }
-  }
-
-  .go-back {
-    padding: 15px 20px;
-    color: white;
-    font-size: 18px;
-    display: block;
-    i {
-      padding-right: 15px;
-      font-size: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 11px 0px rgba(10, 25, 40, 0.27) !important;
     }
   }
 }
@@ -71,21 +76,23 @@
 .fmlp-body {
   position: relative;
   background: #f5f7fa;
-  min-height: 500px;
+  min-height: 680px;
   display: flex;
   flex-direction: column;
   align-items: center;
   
   .one-row {
-    margin-bottom: 2em;
+    &:nth-child(1), &:nth-child(2) {
+      margin-bottom: 1.5rem;
+    }
     h2 {
       color: $main-color;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
     }
 
     p {
       color: #1e232c;
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -95,8 +102,15 @@
   background: white;
   box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
   padding: 3.375rem;
-  width: 50%;
+  width: 59%;
   position: absolute;
   top: -105px;
+}
+
+.block--smaller {
+  position: static;
+  margin-top: 330px;
+  padding: 2.5rem 3.44rem;
+  width: 41%;
 }
 
