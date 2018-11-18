@@ -98,6 +98,7 @@ var multistep = (function($) {
 (function($) {
   function ViewportFlexSlider(container, opts) {
     var self = this;
+    this.opts = opts;
 
     if(container.data('slider-added')) {
       this.optimalItems(container);
@@ -173,8 +174,13 @@ var multistep = (function($) {
 
     this.carousel.find('.date-slide').each(function() {
       $(this).css('marginLeft', `${self.space}px`);
+      $(this).click(function() {
+        self.index = $(this).index() - 1;
+        self.activeSlide = self.slides.eq(self.index + 1);
+        self.reset();
+        self.opts.onChange(self.activeSlide.data('obj'));
+      });
     });
-    
   }
 
   ViewportFlexSlider.prototype.reset = function() {
