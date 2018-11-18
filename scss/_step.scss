@@ -13,6 +13,9 @@
     &.active {
       display: block;
     }
+    &-inset {
+      margin: 0 1.3em;
+    }
   }
 
   .stage {
@@ -39,7 +42,7 @@
 
 .schedule-step-form {
   font-family: $default-font-family;
-  margin: 2em 1.3em 3em;
+  margin: 2em 0 3em;
   h1.estate-tile {
     font-size: 1.2rem;
     margin-bottom: 15px;
@@ -50,9 +53,18 @@
     margin-bottom: 0;
     line-height: 1.34;
   }
+  h1.when-tour {
+    font-size: 1.3rem;
+    margin-left: 1em;
+  }
   h2.information {
     font-size: 1rem;
     padding: 1rem 0 1.7rem;
+    font-family: $bold-font-family;
+  }
+  p.info-text {
+    text-align: center;
+    color: #262628;
     font-family: $bold-font-family;
   }
   .offer-link {
@@ -82,11 +94,6 @@
     margin-left: .5em;
     color: #1e232c;
   }
-}
-
-.mw-100-step {
-  max-width: 100%;
-  width: 100%;
 }
 
 .data-carousel-wrap {
@@ -130,6 +137,41 @@
     i {
       display: block;
     }
+  }
+}
+
+.offer-link-wrap {
+  padding: 0 1em;
+  margin-top: 1.5em;
+  .offer-link {
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin-left: .8em;
+    }
+  }
+}
+
+.offer-link-form-wrap {
+  margin-top: 2.2em;
+  .offer-link {
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin-left: .8em;
+    }
+  }
+}
+
+.info-text-wrap {
+  margin: 1em 0 1.3em;
+  p {
+    font-family: $default-font-family !important;
+  }
+  a {
+    font-family: $bold-font-family !important;
   }
 }
 

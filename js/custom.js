@@ -159,13 +159,33 @@ function loadSliders() {
     });
 }
 
+function copytag() {
+    jQuery("#info-text-clone").html(jQuery("#info-text").html());
+}
+
+function copydest2() {
+    jQuery("#copy-dest-2").html(jQuery("#info-text").html());
+}
+
+function initmulti() {
+    jQuery('#month-slider').multislider({
+        onChange: function(data) {
+            jQuery("#weekday").text(data.week);
+            jQuery("#month").text(data.month);
+            jQuery("#day").text(data.day);
+        }
+    });
+    jQuery('#time-slider').multislider({
+        onChange: function(data) {
+            jQuery("#time").text(data.time);
+        }
+    });
+}
+
 /* Initialize the triggers */
 jQuery(document).ready(function(){
     if(typeof multistep !== 'undefined') {
         multistep.init();
-    }
-    if(typeof multislider !== 'undefined') {
-        multislider.init();
     }
     jQuery("#menu-opener").click(function() {
         slideOutMenu("open");

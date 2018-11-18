@@ -1,5 +1,6 @@
 var multistep = (function($) {
   var animating = false;
+  var prevSlide = null;
 
   function init() {
     var stage = $(`<div class='stage'></div>`);
@@ -12,15 +13,25 @@ var multistep = (function($) {
   }
 // TODO: fix margin-right pass as an option!
   function addDomListeners(wrap, stage, item) {
-    var toggler = wrap.find('.step-toggler');
+    var toggler = $('.step-toggler');
     var width = item.width();
 
     //item.css('margin-right', '15px');
-    toggler.click(function() {
+    toggler.click(function(e) {
       if(animating) return;
 
+      e.preventDefault();
       animating = true;
-      var nextSlide = wrap.find($(this).data('triger'));
+      var nextSlide;
+      var tar = $(this).data('triger');
+      if(tar == "back") {
+        if(!prevSlide) return;
+        nextSlide = prevSlide;
+      }
+      else {
+        nextSlide = $(tar);
+      }
+
       nextSlide.appendTo(stage);
       stage.width(2*width - 15);
       nextSlide.addClass('active');
@@ -31,6 +42,7 @@ var multistep = (function($) {
       var startH = item.height();
       stage.height(startH);
 
+      prevSlide = item;
       var time = {
         start: performance.now(),
         total: 300
@@ -46,6 +58,8 @@ var multistep = (function($) {
         stage.height(h);
         if(prog < 1) {
           requestAnimationFrame(step);
+        } else {
+          stage.css('height', 'auto');
         }
       }
       requestAnimationFrame(step);
@@ -59,6 +73,10 @@ var multistep = (function($) {
         stage.css('width', 'auto');
         item = stage.find('.step').first();
         animating = false;
+        if(item.data('on-enter')) {
+          var fn = item.data('on-enter');
+          window[fn].call(null, stage);
+        }
       }, 300);
     });
   }
@@ -68,8 +86,8 @@ var multistep = (function($) {
   }
 })(jQuery);
 
-var multislider = (function($) {
-  function ViewportFlexSlider(container) {
+(function($) {
+  function ViewportFlexSlider(container, opts) {
     var self = this;
     this.optimalItems(container);
 
@@ -82,6 +100,9 @@ var multislider = (function($) {
       self.slideRight();
       self.activeSlide = self.slides.eq(self.index + 1);
       self.activeSlide.addClass('active');
+      if(opts['onChange']) {
+        opts.onChange(self.activeSlide.data('obj'));
+      }
     });
     
     container.find('.left-control-arrow').click(function() {
@@ -89,6 +110,9 @@ var multislider = (function($) {
       self.slideLeft();
       self.activeSlide = self.slides.eq(self.index + 1);
       self.activeSlide.addClass('active');
+      if(opts['onChange']) {
+        opts.onChange(self.activeSlide.data('obj'));
+      }
     });
   }
 
@@ -156,15 +180,7 @@ var multislider = (function($) {
     });
   }
 
-  var sliders = [];
-
-  function init() {
-    $('.data-carousel-wrap').each(function() {
-      sliders.push(new ViewportFlexSlider($(this)));
-    })
-  }
-
-  return {
-    init: init
+  $.fn.multislider = function(opts) {
+    new ViewportFlexSlider(this, opts);
   }
 })(jQuery);
