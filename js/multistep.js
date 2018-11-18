@@ -98,6 +98,15 @@ var multistep = (function($) {
 (function($) {
   function ViewportFlexSlider(container, opts) {
     var self = this;
+
+    if(container.data('slider-added')) {
+      console.log("YOYOYO");
+      return;
+    }
+
+    container.data('slider-added', true);
+
+
     this.optimalItems(container);
 
     $(window).on('resize', function() {
