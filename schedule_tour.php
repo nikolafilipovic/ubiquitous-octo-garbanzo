@@ -207,12 +207,39 @@ Template Name: Schedule Tour
         </p>
 
         <div class="offer-link-wrap">
-          <div data-triger="#step-3" class="offer-link step-toggler">
+          <div data-triger="#step-3-alter" class="offer-link step-toggler">
             <a href="#">Continue</a>
             <i class="far fa-arrow-right fasarrow"></i>
           </div>
         </div>
       </div><!-- End of setp 2 alter -->
+      <div id="step-3-alter" class="step step-inset">
+        <h1 class="notify-title">How should we contact you?</h1>
+        <p>If you already have an account, please <a href="#">Sign in</a></p>
+        <form class="lh-form">
+          <div class="row no-gutters">
+            <div class="form-group col-6 pr-2">
+              <input type="text" class="form-control" placeholder="First name" />
+            </div>
+            <div class="form-group col-6">
+              <input type="text" class="form-control" placeholder="Last Name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Phone" />
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" />
+          </div>
+
+          <div class="offer-link-form-wrap">
+            <div data-triger="#step-3-alter" class="offer-link step-toggler">
+              <a href="#">Submit</a>
+              <i class="far fa-arrow-right fasarrow"></i>
+            </div>
+          </div>
+        </form>
+      </div>
     </div> <!-- end of step form -->
 
 

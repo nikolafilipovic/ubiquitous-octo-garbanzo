@@ -153,6 +153,17 @@
   }
 }
 
+.offer-link-form-wrap {
+  margin-top: 2.2em;
+  .offer-link {
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin-left: .8em;
+    }
+  }
+}
 
 .dated-carousel {
   margin: 0 0 10px;
