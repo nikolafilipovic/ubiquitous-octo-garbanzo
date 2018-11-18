@@ -134,9 +134,23 @@ Template Name: Schedule Tour
               </div>
               <div class="date-slide">
                 <div class="wrap">
-                  <h1>Wed</h1>
+                  <h1>Thu</h1>
                   <hr />
-                  <h2>Oct 24</h2>
+                  <h2>Oct 25</h2>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Fri</h1>
+                  <hr />
+                  <h2>Oct 26</h2>
+                </div>
+              </div>
+              <div class="date-slide">
+                <div class="wrap">
+                  <h1>Sat</h1>
+                  <hr />
+                  <h2>Oct 27</h2>
                 </div>
               </div>
             </div>

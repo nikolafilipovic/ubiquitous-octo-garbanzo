@@ -71,25 +71,26 @@ var multistep = (function($) {
 var multislider = (function($) {
   function ViewportFlexSlider(container) {
     this.carousel = container.find('.dated-carousel');
-    
+    this.numItems = 3;
     this.viewPort = container.find('.dated-carousel').width();
     this.slides = this.carousel.find('.date-slide');
     this.slide = this.slides.first();
     this.stage = this.carousel.find('.dated-stage');
-    this.stage.width(this.slides.length * this.slide.width() + 350);
-    this.leftOver = this.viewPort - 3 * this.slide.width();
+    this.leftOver = this.viewPort - this.numItems * this.slide.width();
     this.space = (this.leftOver / 4);
     this.index = 0;
     this.activeSlide = this.slides.eq(this.index + 1);
     this.activeSlide.addClass('active');
 
     var self = this;
-
-
     this.carousel.find('.date-slide').each(function() {
       $(this).css('marginLeft', `${self.space}px`);
     });
 
+    /*
+    this.slides.each(function() {
+      $(this).width(self.slide.width());
+    }); */
     
     container.find('.right-control-arrow').click(function() {
       self.activeSlide.removeClass('active');
@@ -108,12 +109,10 @@ var multislider = (function($) {
 
   ViewportFlexSlider.prototype.slideRight = function() {
     this.index++;
-    if(this.index > 2) {
+    if(this.index > this.slides.length - 2) {
       this.index = -1;
     }
-    console.log(this.index);
     var offset = this.index * this.slide.width() + this.index * this.space;
-    console.log(offset);
     this.stage.css({
       transform: `translateX(${-1 *offset}px)`
     });
@@ -125,8 +124,6 @@ var multislider = (function($) {
       this.index = this.slides.length - 2;
     }
     var offset = this.index * this.slide.width() + this.index * this.space
-    console.log(this.index);
-    console.log(offset);
     this.stage.css({
       transform: `translateX(-${offset}px)`
     });

@@ -140,7 +140,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   .wrap {
-    padding: 1em 1.3em;
+    padding: 1.5em 2em;
   }
   h1 {
     text-align: center;
@@ -161,6 +161,7 @@
     border-radius: 4px;
     box-shadow: 0px 5px 5px 2px #355e8c15;
     transition: all 150ms;
+    flex: 0 0 auto;
     &.active {
       background: $main-color;
       position: relative;
