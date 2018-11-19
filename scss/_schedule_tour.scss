@@ -6,19 +6,20 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
 
   .header-heading {
     color: $grayish;
     flex-grow: 1;
     font-weight: 400;
     text-align: center;
+    font-size: 1rem;
   }
 
   a {
     position: absolute;
     font-family: $default-font-family !important;
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
   }
 }
 
@@ -132,31 +133,31 @@
     .sale-type {
       font-family: $graphik-font-family; font-weight: 500;
       color: #ffffff;
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase;
-      line-height: 30px;
+      line-height: 20px;
       text-align: left;
       text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
-      margin-top: 22%;
+      margin-top: 28%;
       display: block;
       z-index: 0;
       position: relative;
 
       i.red-dot {
-        width: 10px;
-        height: 10px;
-        background: red;
+        width: 8px;
+        height: 8px;
+        background: #e03225;
         display: inline-block;
-        border: 2px solid #fff;
+        border: 1.4px solid #fff;
         border-radius: 50%;
-        margin-right: 4px;
+        margin-right: 2px;
       }
     }
 
     .property-price {
       font-family: $graphik-font-family; font-weight: 400;
       color: #ffffff;
-      font-size: 29px;
+      font-size: 22px;
       text-align: left;
       text-shadow: 0px 3px 5.7px rgba(29, 38, 63, 0.48);
       text-transform: uppercase;
@@ -173,7 +174,7 @@
       .sqft {
         font-family: $graphik-font-family; font-weight: 400;
         color: #ffffff;
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 400;
         text-align: left;
         text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
@@ -183,9 +184,9 @@
 
       i {
         color: #fff;
-        font-size: 5px;
+        font-size: 2px;
         vertical-align: middle;
-        padding: 0 1.5em !important;
+        padding: 0 3px !important;
         z-index: 0;
         position: relative;
       }
@@ -195,12 +196,36 @@
       font-family: $graphik-font-family; font-weight: 400;
       color: #ffffff;
       padding-bottom: .5em;
-      font-size: 13px;
+      font-size: 11px;
       text-align: left;
       text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
       z-index: 0;
       position: relative;
       display: block;
+      margin-top: -3px;
+    }
+  }
+  @include respond-to('s-desktop') {
+    .sale-type {
+      margin-top: 250px !important;
+      font-size: 18px !important;
+      line-height: 30px !important;
+    }
+    .property-price {
+      font-size: 36px !important;
+    }
+    .property-info {
+      span {
+        font-size: 17px !important;
+      }
+      i {
+        font-size: 3px !important;
+        padding: 0 5px !important;
+      }
+    }
+    .property-address {
+      font-size: 17px !important;
+      margin-top: 0px !important;
     }
   }
 }
