@@ -49,7 +49,7 @@ var multistep = (function($) {
   
       var targetHeight = nextSlide.height();
       var startH = item.height();
-      stage.height(startH);
+      // stage.height(startH);
       
       if(!skipHistory) {
         slideHistory.push(item);
@@ -65,9 +65,6 @@ var multistep = (function($) {
         time.elapsed = now - time.start;
         var prog = time.elapsed / time.total;
         var h = startH + (targetHeight - startH) * prog;
-        if(h < targetHeight) {
-          h = targetHeight;
-        }
         stage.height(h);
         if(prog < 1) {
           requestAnimationFrame(step);
