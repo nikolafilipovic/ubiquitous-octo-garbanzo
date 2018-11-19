@@ -10,6 +10,10 @@ var multistep = (function($) {
     steps.first().appendTo(stage);
     $('.multi-step').append(stage);
 
+    if(steps.first().data('short')) {
+      $('.multi-step').addClass('multi-step-440');
+    }
+
     addDomListeners($('.multi-step'), stage, steps.first());
   }
 // TODO: fix margin-right pass as an option!
@@ -82,6 +86,13 @@ var multistep = (function($) {
         stage.css('width', 'auto');
         item = stage.find('.step').first();
         animating = false;
+
+        if(item.data('short')) {
+          wrap.addClass('multi-step-440');
+        } else {
+          wrap.removeClass('multi-step-440');
+        }
+
         if(item.data('on-enter')) {
           var fn = item.data('on-enter');
           window[fn].call(null, stage);
