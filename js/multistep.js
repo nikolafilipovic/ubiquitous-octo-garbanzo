@@ -135,10 +135,7 @@ var multistep = (function($) {
 
   ViewportFlexSlider.prototype.optimalItems = function(container) {
     var winWid = $(window).width();
-    if(winWid > 1000) {
-      this.recalculate(container, 10);
-    }
-    else if(winWid > 800) {
+    if(winWid > 800) {
       this.recalculate(container, 6);
     }
     else if(winWid > 600) {
