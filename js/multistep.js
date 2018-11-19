@@ -49,7 +49,7 @@ var multistep = (function($) {
   
       var targetHeight = nextSlide.height();
       var startH = item.height();
-      stage.height(startH);
+      // stage.height(startH);
       
       if(!skipHistory) {
         slideHistory.push(item);
@@ -65,9 +65,6 @@ var multistep = (function($) {
         time.elapsed = now - time.start;
         var prog = time.elapsed / time.total;
         var h = startH + (targetHeight - startH) * prog;
-        if(h < targetHeight) {
-          h = targetHeight;
-        }
         stage.height(h);
         if(prog < 1) {
           requestAnimationFrame(step);
@@ -182,12 +179,14 @@ var multistep = (function($) {
       });
       totalTaken += $(this).outerWidth(true);
     });
-
-    this.allSpaceTaken = totalTaken < this.viewPort;
-
+    
+    this.allSpaceTaken = (totalTaken - this.space) < this.viewPort;
+    
     if(this.allSpaceTaken) {
+      this.carousel.find('.date-slide').last().css('marginRight', `${this.space}px`);
       this.stage.addClass('center');
     } else {
+      this.carousel.find('.date-slide').last().css('marginRight', `unset`);
       this.stage.removeClass('center');
     }
   }

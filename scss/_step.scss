@@ -257,6 +257,7 @@ body {
 
   }
   .date-slide {
+    width: 120px !important;
     border-radius: 4px;
     box-shadow: 0px 5px 5px 2px #355e8c15;
     transition: all 150ms;
@@ -282,7 +283,6 @@ body {
     padding: 1em 0;
   }
   .date-slide {
-    width: 100px !important;
     text-align: center;
     &.active {
       h3 {
