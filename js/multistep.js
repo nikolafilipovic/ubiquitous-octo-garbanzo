@@ -179,12 +179,14 @@ var multistep = (function($) {
       });
       totalTaken += $(this).outerWidth(true);
     });
-
-    this.allSpaceTaken = totalTaken < this.viewPort;
-
+    
+    this.allSpaceTaken = (totalTaken - this.space) < this.viewPort;
+    
     if(this.allSpaceTaken) {
+      this.carousel.find('.date-slide').last().css('marginRight', `${this.space}px`);
       this.stage.addClass('center');
     } else {
+      this.carousel.find('.date-slide').last().css('marginRight', `unset`);
       this.stage.removeClass('center');
     }
   }
