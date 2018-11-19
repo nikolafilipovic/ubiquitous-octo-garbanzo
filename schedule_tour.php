@@ -28,7 +28,7 @@ Template Name: Schedule Tour
         </div>
       </div>
     </div>
-    
+
     <div class="multi-step schedule-step-form">
       <div id="step-1" class="step step-inset">
         <h1 class="estate-tile">Are you workig with a real estate agent?</h1>
@@ -51,7 +51,7 @@ Template Name: Schedule Tour
       <div id="step-2" class="step step-inset">
         <h1 class="notify-title">Notify your agent</h1>
         <p>We'll send your agent a link with your request to schedule a tour of this property.</p>
-        <p>If you already have an account, please <a href="#">Sign in</a></p>
+        <p>If you already have an account, please <a href="#" class="link-blue">Sign in</a></p>
         <form class="lh-form">
           <h2 class="information">Your information</h2>
           <div class="row no-gutters">
@@ -87,17 +87,17 @@ Template Name: Schedule Tour
       </div> <!-- End of step 2 -->
       <div id="step-3" class="step step-inset">
         <h1>Success!</h1>
-        <p>An email has been submited to your agent</p>
+        <p class="pb-3">An email has been submited to your agent</p>
         <div class="row no-gutters">
-        <div class="col-12">
-          <div class="offer-link">
-            <a href="#">Submit</a>
-            <i class="far fa-arrow-right fasarrow"></i>
+          <div class="col-12">
+            <div class="offer-link">
+              <a href="#">Submit</a>
+              <i class="far fa-arrow-right fasarrow"></i>
+            </div>
           </div>
-        </div>  
-      </div>
+        </div>
       </div><!-- End of step 3 -->
-      <div id="step-2-alter" class="step" data-on-enter="initmulti">
+      <div id="step-2-alter" class="step step-calender" data-on-enter="initmulti">
         <h1 class="when-tour">When do you want to tour?</h1>
         <div id="month-slider" class="data-carousel-wrap">
           <div class="left-control-arrow">
@@ -200,7 +200,7 @@ Template Name: Schedule Tour
         <p id="info-text" class="info-text">
           <span id="weekday">
             Tuesday
-          </span>, 
+          </span>,
           <span id="month">
             October
           </span> <span id="day">23</span> at <span id="time">09:00am</span>
@@ -235,7 +235,7 @@ Template Name: Schedule Tour
           <div class="info-text-wrap d-flex">
             <p id="info-text-clone" class="info-text">
             </p>
-            <a href="#" class="step-toggler ml-auto" data-triger="#step-2-alter" >Change</a>
+            <a href="#" class="step-toggler ml-auto" data-triger="#step-2-alter">Change</a>
           </div>
           <div class="offer-link-form-wrap">
             <div data-triger="#step-4" class="offer-link step-toggler">
@@ -248,20 +248,22 @@ Template Name: Schedule Tour
       <div id="step-4" class="step step-inset" data-on-enter="copydest2">
         <h1>Success!</h1>
         <p>
-          You erquested a tour for this home on 
+          You erquested a tour for this home on
           <strong id="copy-dest-2"></strong>
         </p>
-        <p>We'll be in touch to let you know if this 
+        <p class="pb-3">We'll be in touch to let you know if this
           time works with the sellers schedule.</p>
         <div class="row no-gutters">
-        <div class="col-12">
-          <div class="offer-link">
-            <a href="#">Continue browsing</a>
-            <i class="far fa-arrow-right fasarrow"></i>
+          <div class="col-12">
+            <div class="offer-link">
+              <a href="#">Continue browsing</a>
+              <i class="far fa-arrow-right fasarrow"></i>
+            </div>
           </div>
-        </div> 
-      </div>
-    </div> <!-- end of step form -->
+        </div>
+      </div> <!-- step4 -->
+
+    </div> <!-- multi-step schedule-step-form -->
   </div> <!-- container fluid -->
 </div> <!-- lh-wrapper -->
 

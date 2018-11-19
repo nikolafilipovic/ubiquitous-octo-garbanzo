@@ -1,6 +1,10 @@
+body {
+  background:lightblue;
+}
+
 .multi-step {
   overflow: hidden;
-  max-width: 100vw;
+  
   .step-temp {
     &--crimson {
       background: crimson;
@@ -8,14 +12,25 @@
   }
 
   .step {
+    width: 440px;
+    margin: 0 auto !important;
     display: none;
-    width: 100vw;
+   
     &.active {
       display: block;
     }
     &-inset {
       margin: 0 1.3em;
     }
+
+    .link-blue {
+      color: $main-lighter;
+    }
+  }
+
+  .step-calender {
+    width: 100% !important;
+    margin: unset !important;
   }
 
   .stage {
@@ -42,11 +57,12 @@
 
 .schedule-step-form {
   font-family: $graphik-font-family; font-weight: 400;
-  margin: 2em 0 3em;
+  padding: 2em 0 3em;
   h1.estate-tile {
     font-size: 1.2rem;
     margin-bottom: 15px;
     line-height: 1.34;
+    font-weight: 400;
   }
   h1.notify-title {
     font-size: 1.3rem;
@@ -56,6 +72,7 @@
   h1.when-tour {
     font-size: 1.3rem;
     margin-left: 1em;
+    text-align: center;
   }
   h2.information {
     font-size: 1rem;
@@ -71,6 +88,7 @@
     text-align: center;
     text-transform: unset;
     margin-bottom: 0;
+    font-size: 16px !important;
     margin: 0;
     max-width: 100%;
     padding: 12px 0;
@@ -123,6 +141,10 @@
     i {
       display: block;
     }
+
+    @include respond-to('desktop') {
+      box-shadow: unset;
+    }
   }
   .left-control-arrow {
     cursor: pointer;
@@ -140,16 +162,23 @@
     i {
       display: block;
     }
+
+    @include respond-to('desktop') {
+      box-shadow: unset;
+    }
   }
 }
 
 .offer-link-wrap {
   padding: 0 1em;
   margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
   .offer-link {
-    font-size: .9rem;
+    //font-size: .9rem;
     display: flex;
     justify-content: space-between;
+    width: 30%;
     a {
       margin-left: .8em;
     }
@@ -159,7 +188,7 @@
 .offer-link-form-wrap {
   margin-top: 2.2em;
   .offer-link {
-    font-size: .9rem;
+    //font-size: .9rem;
     display: flex;
     justify-content: space-between;
     a {
