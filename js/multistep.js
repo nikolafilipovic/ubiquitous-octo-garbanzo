@@ -175,7 +175,9 @@ var multistep = (function($) {
       totalTaken += $(this).outerWidth(true);
     });
 
-    if(totalTaken < this.viewPort) {
+    this.allSpaceTaken = totalTaken < this.viewPort;
+
+    if(this.allSpaceTaken) {
       this.stage.addClass('center');
     } else {
       this.stage.removeClass('center');
@@ -187,10 +189,12 @@ var multistep = (function($) {
       $(this).removeClass('active');
     });
     this.activeSlide.addClass('active');
-    var offset = this.index * this.slide.width() + this.index * this.space;
-    this.stage.css({
-      transform: `translateX(${-1 *offset}px)`
-    });
+    if(!this.allSpaceTaken) {
+      var offset = this.index * this.slide.width() + this.index * this.space;
+      this.stage.css({
+        transform: `translateX(${-1 *offset}px)`
+      });
+    }
   }
 
   ViewportFlexSlider.prototype.slideRight = function() {
@@ -198,10 +202,12 @@ var multistep = (function($) {
     if(this.index > this.slides.length - 2) {
       this.index = -1;
     }
-    var offset = this.index * this.slide.width() + this.index * this.space;
-    this.stage.css({
-      transform: `translateX(${-1 *offset}px)`
-    });
+    if(!this.allSpaceTaken) {
+      var offset = this.index * this.slide.width() + this.index * this.space;
+      this.stage.css({
+        transform: `translateX(${-1 *offset}px)`
+      });
+    }
   }
 
   ViewportFlexSlider.prototype.slideLeft = function() {
@@ -209,10 +215,12 @@ var multistep = (function($) {
     if(this.index < -1) {
       this.index = this.slides.length - 2;
     }
-    var offset = this.index * this.slide.width() + this.index * this.space
-    this.stage.css({
-      transform: `translateX(-${offset}px)`
-    });
+    if(!this.allSpaceTaken) {
+      var offset = this.index * this.slide.width() + this.index * this.space
+      this.stage.css({
+        transform: `translateX(-${offset}px)`
+      });
+    }
   }
 
   $.fn.multislider = function(opts) {
