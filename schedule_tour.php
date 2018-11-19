@@ -30,7 +30,7 @@ Template Name: Schedule Tour
     </div>
 
     <div class="multi-step schedule-step-form">
-      <div id="step-1" class="step step-inset">
+      <div id="step-1" class="step step-inset" data-short="true">
         <h1 class="estate-tile">Are you workig with a real estate agent?</h1>
         <div data-triger="#step-2" class="step-toggler step-wrap">
           <a class="step-circle step-circle--checkmark">
@@ -48,7 +48,7 @@ Template Name: Schedule Tour
           <i class="far fa-arrow-right arrow"></i>
         </div>
       </div> <!-- End of step 1 -->
-      <div id="step-2" class="step step-inset">
+      <div id="step-2" class="step step-inset" data-short="true">
         <h1 class="notify-title">Notify your agent</h1>
         <p>We'll send your agent a link with your request to schedule a tour of this property.</p>
         <p>If you already have an account, please <a href="#" class="link-blue">Sign in</a></p>
@@ -85,7 +85,7 @@ Template Name: Schedule Tour
           </div>
         </form>
       </div> <!-- End of step 2 -->
-      <div id="step-3" class="step step-inset">
+      <div id="step-3" class="step step-inset" data-short="true">
         <h1>Success!</h1>
         <p class="pb-3">An email has been submited to your agent</p>
         <div class="row no-gutters">
@@ -213,7 +213,7 @@ Template Name: Schedule Tour
           </div>
         </div>
       </div><!-- End of setp 2 alter -->
-      <div id="step-3-alter" class="step step-inset" data-on-enter="copytag">
+      <div id="step-3-alter" class="step step-inset" data-on-enter="copytag" data-short="true">
         <h1 class="notify-title">How should we contact you?</h1>
         <p>If you already have an account, please <a href="#">Sign in</a></p>
         <form class="lh-form">
@@ -245,7 +245,7 @@ Template Name: Schedule Tour
           </div>
         </form>
       </div><!-- End of step 3 alter -->
-      <div id="step-4" class="step step-inset" data-on-enter="copydest2">
+      <div id="step-4" class="step step-inset" data-on-enter="copydest2" data-short="true">
         <h1>Success!</h1>
         <p>
           You erquested a tour for this home on
@@ -262,7 +262,6 @@ Template Name: Schedule Tour
           </div>
         </div>
       </div> <!-- step4 -->
-
     </div> <!-- multi-step schedule-step-form -->
   </div> <!-- container fluid -->
 </div> <!-- lh-wrapper -->

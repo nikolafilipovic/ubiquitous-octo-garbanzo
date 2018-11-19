@@ -4,7 +4,12 @@ body {
 
 .multi-step {
   overflow: hidden;
-  
+  margin: 0 auto !important;
+
+  &-440 {
+    max-width: 440px;
+  }
+
   .step-temp {
     &--crimson {
       background: crimson;
@@ -12,8 +17,7 @@ body {
   }
 
   .step {
-    width: 440px;
-    margin: 0 auto !important;
+    width: 100%;
     display: none;
    
     &.active {
