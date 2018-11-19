@@ -48,7 +48,7 @@ Template Name: Schedule Tour
           <i class="far fa-arrow-right arrow"></i>
         </div>
       </div> <!-- End of step 1 -->
-      <div id="step-2" class="step step-inset" data-short="true">
+      <div id="step-2" class="step step-inset step-notify" data-short="true">
         <h1 class="notify-title">Notify your agent</h1>
         <p>We'll send your agent a link with your request to schedule a tour of this property.</p>
         <p>If you already have an account, please <a href="#" class="link-blue">Sign in</a></p>
@@ -87,7 +87,7 @@ Template Name: Schedule Tour
       </div> <!-- End of step 2 -->
       <div id="step-3" class="step step-inset" data-short="true">
         <h1>Success!</h1>
-        <p class="pb-3">An email has been submited to your agent</p>
+        <p class="pb-3">An email has been submited to your agent.</p>
         <div class="row no-gutters">
           <div class="col-12">
             <div class="offer-link">
