@@ -83,7 +83,7 @@
     }
 
     input.form-control {
-      padding: 23px 20px !important;
+      padding: 26px 18px !important;
       color: #b6b6b6;
       font-family: $graphik-font-family; font-weight: 300;
       font-size: 17px;
@@ -94,7 +94,7 @@
       font-size: 26px;
       color: #00aced;
       position: absolute;
-      top: 11px;
+      top: 16px;
       right: 12px;
     }
   }
@@ -155,7 +155,7 @@
     }
 
     .form-control {
-      padding: 24px !important;
+      padding: 26px 18px !important;
     }
   }
 }
@@ -177,7 +177,7 @@
   
   .one-row {
     &:nth-child(1), &:nth-child(2) {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
     }
     h2 {
       color: $main-color;
