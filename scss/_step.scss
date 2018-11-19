@@ -141,8 +141,9 @@ body {
     i {
       display: block;
     }
-
+    
     @include respond-to('desktop') {
+      margin-right: 60px;
       box-shadow: unset;
     }
   }
@@ -162,8 +163,8 @@ body {
     i {
       display: block;
     }
-
     @include respond-to('desktop') {
+      margin-left: 60px;
       box-shadow: unset;
     }
   }

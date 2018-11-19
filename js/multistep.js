@@ -159,19 +159,11 @@ var multistep = (function($) {
     this.leftOver = this.viewPort - this.numItems * this.slide.width();
     this.space = this.leftOver / (numItems + 1);
   
-    var totalSpaceTaken = (this.space + this.slide.width()) * this.numItems;
-    var isAllTaken = this.viewPort - totalSpaceTaken > this.slide.width() + this.space;
-
-    if(isAllTaken) {
-      this.stage.addClass('center');
-    } else {
-      this.stage.removeClass('center');
-    }
-
     this.index = 0;
     this.activeSlide = this.slides.eq(this.index + 1);
     this.reset();
 
+    var totalTaken = 0;
     this.carousel.find('.date-slide').each(function() {
       $(this).css('marginLeft', `${self.space}px`);
       $(this).click(function() {
@@ -180,7 +172,14 @@ var multistep = (function($) {
         self.reset();
         self.opts.onChange(self.activeSlide.data('obj'));
       });
+      totalTaken += $(this).outerWidth(true);
     });
+
+    if(totalTaken < this.viewPort) {
+      this.stage.addClass('center');
+    } else {
+      this.stage.removeClass('center');
+    }
   }
 
   ViewportFlexSlider.prototype.reset = function() {
