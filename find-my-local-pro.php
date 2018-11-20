@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Finy my Local Pro
+Template Name: Find my Local Pro
 */
   get_header(nomenu);
 ?>
