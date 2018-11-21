@@ -65,6 +65,21 @@ $base-font: 1.8rem;
   }
 }
 
+$smallness: 0.55;
+
+.sphere-small {
+  height: $sphere-size * $smallness;
+  width: $sphere-size * $smallness;
+  font-size: $base-font * $smallness;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  i {
+    color: white;
+  } 
+}
+
 .sphere--fb {
   background: #3b5997;
 }
