@@ -1,0 +1,158 @@
+.blog-post {
+  background: white;
+
+  .container-fluid {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    background: url("/wp-content/themes/theoffercompany/images/home-showing.jpg");
+    height: 349px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: 50%;
+  }
+
+  &__pre-title {
+    font-family: $default-font-family;
+    background: $main-color;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    line-height: 0;
+    padding: 1.1em 0;
+    font-size: 0.7rem;
+    width: 9rem;
+    margin: -1.1rem auto 0;
+    border-radius: 0.4em;
+    font-weight: normal;
+  }
+
+  &__title {
+    margin: 1.2rem 0;
+    padding: 0;
+    font-family: $light-font-family;
+    font-size: 1.625rem;
+    line-height: 1.2;
+    color: $main-color;
+    font-weight: normal;
+    max-width: 20em;
+    text-align: center;
+    @include respond-to('tablet') {
+      text-align: left;
+    }
+  }
+
+  .blog-post-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond-to('tablet') {
+      justify-content: flex-start;
+    }
+    img {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-right: 0.33em;
+    }
+  }
+
+  &__sub-title {
+    font-size: 0.9rem;
+    color: #1e232c;
+    padding: 0;
+    span {
+      color: #98a6bf;
+      word-spacing: 2px;
+    }
+  }
+  
+  &__video-wrap {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__video {  
+    .sphere-small {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: .7rem;
+      transform: translate(-50%, calc(-50% - 15px));
+      padding-left: 2px;
+    }
+    .play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, calc(-50% + 15px));
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+
+  &__after-text {
+    h2 {
+      color: $main-color;
+      font-size: 1.4rem;
+      line-height: 1.455;
+      font-weight: 500;
+      padding: 0;
+      margin: 0.8em 0;
+    }
+    h3 {
+      padding: 0;
+      margin-bottom: 1em;
+    }
+    p {
+      font-family: $default-font-family;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #1e232c;
+      line-height: 1.765;
+    }
+  }
+
+  figure {
+    position: relative;
+    margin: 1.5em 0;
+    border-radius: 8px;
+    display: inline-block;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 7px;
+      left: 0;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%);
+      opacity: 0.6;
+    }
+    figcaption {
+      position: absolute;
+      font-family: $default-font-family;
+      bottom: 10px;
+      color: white;
+      left: 10px;
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+  }
+
+  aside {
+    background: cornflowerblue;
+  }
+
+  .spaced {
+    margin: 1.2em 0;
+    justify-content: center;
+    @include respond-to('tablet') {
+      justify-content: flex-start;
+    }
+    .sphere-small {
+      margin: 0 0.15em;
+    }
+  }
+}
