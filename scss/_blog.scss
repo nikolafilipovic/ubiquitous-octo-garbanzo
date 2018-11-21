@@ -1,0 +1,93 @@
+
+.blog-img-holder {
+  background-position: top 50% left;
+  background-size: cover;
+  background-image: url(/wp-content/themes/theoffercompany/images/house.jpeg);
+}
+
+.blog-header {
+  min-height: 300px;
+  padding-top: 0px !important;
+  padding-bottom: 0 !important;
+  background: $ocean-blue-opacity;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .top-fixed {
+    position: absolute;
+    top: 5px;
+    max-width: 1366px;
+  }
+
+  #menu-opener {
+    position: static !important;
+  }
+
+  .header-right {
+    margin-left: auto;
+    a {
+      i {
+        margin-top: 12px;
+        font-size: 1.8rem;
+        font-weight: 300;
+        color: white !important;
+        margin-left: .45em;
+      }
+    }
+  }
+
+  .blog-header-heading {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      color: white !important;
+      font-family: $publico-font-family;
+    }
+
+    p {
+      color: #acd3fb;
+      font-size: 1rem;
+      font-weight: 400;
+      padding-top: .5em;
+      width: 70%;
+    }
+  }
+}
+
+.posts-container {
+  max-width: 1366px;
+}
+
+.all-posts {
+  height: 500px;
+  width:100%;
+  h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 1.8rem 0;
+    padding: 0 !important;
+  }
+}
+
+.one-post {
+  padding-top: 0 !important;
+  &-image {
+    background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);
+    width: 100%;
+    background-size: cover;
+    height: 190px;
+  }
+}
+
+.popular-posts {
+  background: cornflowerblue;
+  height: 500px;
+  width:100%;
+}
+

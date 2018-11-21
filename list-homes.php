@@ -857,7 +857,7 @@ Template Name: List Homes
                 <small class="small-imp">Upgrading home</small>
                 <p>Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest</p>
                 <div class="review-by">
-                  <img src="/wp-content/themes/theoffercompany/images/man.png" alt="review" />
+                  <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
                   <p>Chris Brown</p>
                   <small>on 25 Oct 2018</small>
                 </div>
