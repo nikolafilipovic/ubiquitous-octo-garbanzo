@@ -1310,10 +1310,6 @@ figure.lh-img-holder {
   padding: 1em;
   color: #1e232c;
 
-  span {
-
-  }
-
   @include respond-to('tablet') {
     padding: 1em 1.8em;
     font-size: 1.2rem;
@@ -1329,6 +1325,47 @@ figure.lh-img-holder {
   }
 }
 
+.lifestyle-news, .one-post {
+  padding-top: 10px;
+
+  p {
+    font-size: 17px;
+    color: $main-lighter;
+  }
+}
+
+.small-imp {
+  text-transform: uppercase;
+  letter-spacing: normal;
+  font-weight: 600;
+  font-size: .7rem !important;
+  color: $main-lighter;
+}
+
+.review-by {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 30px;
+  }
+  
+  p, small {
+    font-family: $graphik-font-family; font-weight: 500;
+    font-size:12px !important;
+  }
+
+  p {
+    padding: 0 .5em;
+    color: black;
+  }
+
+  small {
+    color: $grayish;
+  }
+}
+
 .lh-property-slider, .sch-t-pic-info {
   padding: 0px;
 
@@ -1341,46 +1378,6 @@ figure.lh-img-holder {
     color: $grayish;
     font-size: 13px;
     margin-bottom: 15px;
-  }
-
-  .lifestyle-news {
-    padding-top: 10px;
-    .small-imp {
-      text-transform: uppercase;
-      letter-spacing: normal;
-      font-size: .7rem !important;
-      color: $main-lighter;
-    }
-
-    p {
-      font-size: 17px;
-      color: $main-lighter;
-    }
-
-    .review-by {
-      margin-top: 10px;
-      display: flex;
-      align-items: center;
-
-      img {
-        width: 30px;
-      }
-      
-      p, small {
-        font-family: $graphik-font-family; font-weight: 500;
-        font-size:12px !important;
-      }
-
-      p {
-        padding: 0 .5em;
-        color: black;
-      }
-
-      small {
-        color: $grayish;
-      }
-      
-    }
   }
 
   .offer-link {
