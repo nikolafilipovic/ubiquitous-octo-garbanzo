@@ -74,6 +74,15 @@ Template Name: Blog Post
           <img src="/wp-content/themes/theoffercompany/images/bavarian.jpg" alt="Bavarian home">
           <figcaption>Classic bavarian style home</figcaption>
         </figure>
+        <section class="blog-post__after-text">
+          <h3>A taste of Germany</h3>
+          <p>
+            Nestled near the heart of downtown Solvang, California — a central coast town with Danish roots — this traditional 
+            Tudor gets you all the charm of a Bavarian home with all the modern American finishings you're accustomed to, 
+            like an updated kitchen with granite countertops and hardwood floors. The home also features a bocce court, a large 3-car garage and an elevator 
+            from the garage to the second floor.
+          </p>
+        </section>
       </article>
       <aside class="col-12 col-md-4">
       </aside>
