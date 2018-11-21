@@ -63,11 +63,12 @@
 .posts-container {
   max-width: 1366px;
   min-height: 2000px;
-  padding-right: 0 !important;
+  @include respond-to('desktop') {
+    padding-right: 0 !important;
+  }
 }
 
 .all-posts {
-  height: 500px;
   width:100%;
   h2 {
     font-weight: 400;
@@ -79,8 +80,11 @@
 
 .one-post {
   padding-top: 0 !important;
-  padding-bottom: 3em;
+  padding-bottom: 1.2em;
   position: relative;
+  @include respond-to('tablet') {
+    padding-bottom: 3em;
+  }
   .right-side {
     @include respond-to('desktop') {
       padding: 0 40px 0 30px;
@@ -90,7 +94,7 @@
   &-image {
     width: 100%;
     background-size: cover;
-    height: 200px;
+    height: 220px;
     border-radius: 5px;
   }
 
@@ -128,6 +132,57 @@
     .fa-play {
       font-size: 1rem;
       padding-left: .2em;
+    }
+  }
+}
+
+.row-blue-adv {
+  @include respond-to('tablet') {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .blue-adv {
+    p {
+      @include respond-to('tablet') {
+        width: 400px;
+      }
+    }
+  }
+  margin-bottom: 2em;
+}
+
+.blue-adv {
+  background-color: $main-color;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  padding: 2.2em 2em !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include respond-to('desktop') {
+    border-radius: 5px;
+  }
+
+  h2 {
+    color: white !important;
+    margin: 0 0 1em !important;
+  }
+
+  p {
+    font-size: 1.1rem;
+    width: unset;
+  }
+
+  a {
+    color: white !important;
+    font-size: 1rem;
+    margin-top:1em;
+    i {
+      padding-left: .5em;
+      font-size: .8rem;
     }
   }
 }
