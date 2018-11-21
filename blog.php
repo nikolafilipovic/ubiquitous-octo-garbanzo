@@ -61,15 +61,19 @@ Template Name: Blog
 
 <div class="container-fluid posts-container">
   <div class="row no-gutters">
-    <div class="all-posts col-12 col-md-9">
+    <div class="all-posts col-12 col-md-8">
       <h2>All Posts</h2>
 
+      <!-- one post -->
       <div class="one-post row no-gutters">
-        <div class="col-12 col-md-4">
-          <div class="one-post-image"></div>
+        <div class="col-12 col-md-5">
+          <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);"></div>
+          <div class="play round-blue">
+            <i class="fas fa-play"></i>
+          </div>
         </div>
 
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-7 right-side">
           <small class="small-imp">Upgrading home</small>
           <p>
             Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
@@ -80,16 +84,90 @@ Template Name: Blog
             <small>on 25 Oct 2018</small>
           </div>
         </div>
-      </div>
+
+      </div> <!-- one post -->
+
+      
+      <!-- one post -->
+      <div class="one-post row no-gutters">
+        <div class="col-12 col-md-5">
+          <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/bloomhouse.jpg);"></div>
+          <div class="play round-blue">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-7 right-side">
+          <small class="small-imp">Upgrading home</small>
+          <p>
+            Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
+          </p>
+          <div class="review-by">
+            <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
+            <p>Chris Brown</p>
+            <small>on 25 Oct 2018</small>
+          </div>
+        </div>
+
+      </div> <!-- one post -->
+
+      
+      <!-- one post -->
+      <div class="one-post row no-gutters">
+        <div class="col-12 col-md-5">
+          <div class="one-post-image"  style="background-image: url(/wp-content/themes/theoffercompany/images/lulamaekitchen.jpg);"></div>
+          <div class="play round-blue">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-7 right-side">
+          <small class="small-imp">Upgrading home</small>
+          <p>
+            Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
+          </p>
+          <div class="review-by">
+            <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
+            <p>Chris Brown</p>
+            <small>on 25 Oct 2018</small>
+          </div>
+        </div>
+
+      </div> <!-- one post -->
+
+      <!-- blue full width stuff -->
+
+      
+      <!-- one post -->
+      <div class="one-post row no-gutters">
+        <div class="col-12 col-md-5">
+          <div class="one-post-image"></div>
+          <div class="play round-blue">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-7 right-side">
+          <small class="small-imp">Upgrading home</small>
+          <p>
+            Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
+          </p>
+          <div class="review-by">
+            <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
+            <p>Chris Brown</p>
+            <small>on 25 Oct 2018</small>
+          </div>
+        </div>
+
+      </div> <!-- one post -->
+
     </div>
 
-    <div class="popular-posts col-12 col-md-3">
-
+    <div class="popular-posts col-12 col-md-4">
+    
     </div>
   </div>
-
 </div>
-
 
 
 <?php get_footer(); ?>

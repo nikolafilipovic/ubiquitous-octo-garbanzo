@@ -62,6 +62,8 @@
 
 .posts-container {
   max-width: 1366px;
+  min-height: 2000px;
+  padding-right: 0 !important;
 }
 
 .all-posts {
@@ -77,11 +79,56 @@
 
 .one-post {
   padding-top: 0 !important;
+  padding-bottom: 3em;
+  position: relative;
+  .right-side {
+    @include respond-to('desktop') {
+      padding: 0 40px 0 30px;
+    }
+  }
+
   &-image {
-    background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);
     width: 100%;
     background-size: cover;
-    height: 190px;
+    height: 200px;
+    border-radius: 5px;
+  }
+
+  small {
+    padding: .8rem 0;
+    display: block;
+    font-weight: 500 !important;
+    font-size: .85rem !important;
+  }
+  
+  p {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  
+  .review-by {
+    p {
+      font-size: .85rem !important;
+      font-weight: 600;
+      @include respond-to('desktop') {
+        padding-left: 1em;
+      }
+    }
+  }
+  
+  .play {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -19px;
+    right: 19px;
+    box-shadow: 3px 9px 9px 1px #00000014;
+
+    .fa-play {
+      font-size: 1rem;
+      padding-left: .2em;
+    }
   }
 }
 
