@@ -289,3 +289,80 @@
     }
   }
 }
+
+.blog-aside {
+  .blog-contact-agent {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
+    padding: 1.2rem;
+    @include respond-to('desktop') {
+      flex-direction: column;
+    }
+
+    @include respond-to('m-desktop') {
+      flex-direction: row;
+    }
+
+
+    .agent-pic {
+      border-radius: 50%;
+
+      @include respond-to('tablet') {
+        max-width: 190px;
+      }
+
+      @include respond-to('desktop') {
+        padding-bottom: 20px;
+      }
+
+      @include respond-to('m-desktop') {
+        max-width: 100%;
+      }
+    }
+
+    .contact-details {
+      padding-left: 20px;
+      @include respond-to('tablet') {
+        padding-left: 40px;
+      }
+      @include respond-to('m-desktop') {
+        padding-left: 20px;
+      }
+
+      h2 {
+        font-size: 24px !important;
+        font-family: $publico-font-family;
+        padding-bottom: 5px !important;
+      }
+
+      .fa-star {
+        font-size: 1rem;
+        color: $main-color;
+      }
+
+      p:last-of-type {
+        padding-top: 0 !important;
+    }
+
+      p {
+        padding: .3em 0 !important;
+        font-size: 1rem;
+        font-weight: 400;
+        word-wrap: break-word;
+
+        @include respond-to('tablet') {
+          font-size: 1.1rem;
+        }
+
+        
+        @include respond-to('s-desktop') {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
