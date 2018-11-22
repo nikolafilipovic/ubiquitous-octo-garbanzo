@@ -548,13 +548,71 @@
         }
         #pagethree {
             padding-top: 0;
+            padding-bottom: 0;
             overflow-y: unset;
+        }
+        #pagefour {
+            padding-top: 0;
+            overflow-y: unset;
+        }
+        #pagefive {
+            padding-top: 0;
+            overflow-y: unset;
+        }
+        #pagesix {
+            padding-top: 0;
+            overflow-y: unset;
+        }
+        #pagetwelwe,
+        #pageseven {
+            padding-top: 0;
+            padding-bottom: 0;
+            overflow-y: unset;
+        }
+        #pageeight {
+            padding-top: 0;
+            padding-bottom: 0;
+            overflow-y: unset;
+        }
+        #pagenine {
+            padding-top: 0;
+            padding-bottom: 0;
+            overflow-y: unset;
+        }
+        #pageten {
+            padding-top: 0;
+            padding-bottom: 0;
+            overflow-y: unset;
+        }
+        #pageeleven {
+            padding-top: 0;
+            padding-bottom: 0;
+            overflow-y: unset;
+        }
+        #finalstep {
+            padding-top: 0;
+            padding-bottom: 0;
+            overflow-y: unset;
+            h1 {
+                max-width: 340px;
+                margin: 0 auto;
+                padding-bottom: 3rem;
+            }
         }
         .my-auto {
             &.mod {
                 margin-top: auto !important;
                 margin-bottom: auto !important;
             }
+        }
+        #wrapperFooter {
+            max-width: 340px;
+            left:0;
+            right:0;
+            margin-left:auto;
+            margin-right:auto;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
     }
 }

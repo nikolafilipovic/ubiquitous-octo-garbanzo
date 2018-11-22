@@ -30,9 +30,9 @@
     }
 
     p {
-      font-size: .9rem !important;
+      font-size: .9rem;
       @include respond-to('desktop') {
-        font-size: 1rem !important;
+        font-size: 1rem;
       }
     }
   }

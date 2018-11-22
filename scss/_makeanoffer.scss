@@ -11,7 +11,7 @@
 	a {
 		font-family: $graphik-font-family; font-weight: 500;
 		color: #00aced;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 55px;
         text-align: left;
         opacity: 1;
@@ -38,6 +38,10 @@
     height: 100%;
     min-height: calc(100vh - 55px); //removing the topWrapper from the height.
 	position: relative;
+	transition: background-image 0.3s ease;
+	&.nobg {
+		background-image: unset;
+	}
 	div:after {
         display: table;
         content: "";
@@ -79,6 +83,13 @@
 			height: 1px;
 		}
 		h5 {
+            font-family: $graphik-font-family; font-weight: 400;
+			font-size: 15px;
+			color: #ffffff;
+			font-weight: 400;
+			padding-bottom: 8px;
+		}
+		h6 {
             font-family: $graphik-font-family; font-weight: 400;
 			font-size: 15px;
 			color: #ffffff;
@@ -179,73 +190,26 @@
             i {
                 font-size: 11px;
                 margin-left: 10px;
+			}
+			i.right {
+                font-size: 11px;
+                margin-right: 10px;
             }
             &:hover,
             &:focus,
             &:active {
                 opacity: 0.7;
             }
-        }
-	}
-	.wrapperFormBigger {
-		width: 100%;
-		height: 303px;
-		margin: 0px auto;
-		form {
-			width: 100%;
-			height: auto;
-			input {
-				width: 49%;
-				height: 40px;
-				border-radius: 5px;
-				color: #000000;
-				margin-bottom: 4%;
-				padding-left: 3%;
-				border: none;
-				float: left;
-			}
-			button {
-				height: 40px;
-				border-radius: 5px;
-				border: none;
-				i {
-					padding-left: 4%;
-					padding-right: 4%;
-					font-size: 12px;
-				}
-			}
 		}
-		.formFullWidth {
-			width: 100%;
-		}
-	}
-	.wrapperFormRadio {
-		width: 100%;
-		height: auto;
-		float: left;
-		form {
-			width: 100%;
-			height: auto;
-			display: flex;
-			p {
-				color: #ffffff;
-				padding-top: 2%;
-				font-size: 15px;
-			}
-			input {
-				width: 7%;
-				justify-content: space-around;
-				margin-right: 3%;
-			}
-		}
+		p {font-size: 1rem !important;}
 	}
 	.personBlock {
-		width: 90%;
+		width: 92%;
 		max-width: 340px;
 		background-color: #ffffff;
 		box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
         border-radius: 5px;
-        padding: 15px 20px;
+        padding: 22px 20px;
         margin: 0 auto;
         margin-top: 40px;
 		.iconBlock {
@@ -279,8 +243,43 @@
             i {
                 font-size: 10px;
                 color: #00acee;
-                padding-bottom: 10px;
-            }
+                padding-bottom: 6px;
+			}
+			.circles {
+				text-align: center;
+				position: absolute;
+				margin-top: 8px;
+				width: 150px;
+				a {
+					width: 36px;
+					height: 36px;
+					position: relative;
+					display: inline-block;
+					border-radius: 50%;
+					background: #00acee;
+					color: #fff;
+					text-align: center;
+					padding-top: 6px;
+					margin: 0px 2px;
+					opacity: 1;
+					top: 0;
+					transition: all 0.3s ease;
+					&.rotate {
+						transform: rotate(90deg);
+					}
+					&:hover,
+					&:focus,
+					&:active {
+						opacity: 0.7;
+						top: -4px;
+						cursor: pointer;
+					}
+					i {
+						color: #fff;
+						font-size: 1rem;
+					}
+				}
+			}
 		}
 	}
 	.goBack {
@@ -414,33 +413,40 @@
 	}
 	.Blokovi {
 		width: 100%;
-		height: 50px;
-		margin: 4% auto;
 		border-radius: 5px;
-		background-color: $main-color;
+		background-color: #00acee;
 		display: table;
-		padding-right: 1%;
+		padding: 10px 15px;
+		margin-bottom: 1rem;
 		p {
-			width: 93%;
-			padding-left: 5%;
 			color: #ffffff;
 			font-size: 15px;
 			display: table-cell;
 			vertical-align: middle;
+			font-family: $graphik-font-family;
+			margin-bottom: 0 !important;
 		}
 		i {
 			width: auto;
-			font-size: 29px;
+			font-size: 26px;
 			color: #ffffff;
-			margin-right: 15px;
 			display: table-cell;
 			vertical-align: middle;
+			text-align: right;
 		}
 	}
 	.BlokoviNC {
 		background-color: transparent;
 		border: 2px solid #ffffff;
-		margin-bottom: 8%;
+		margin-bottom: 2rem;
+		i {
+			width: auto;
+			font-size: 20px;
+			color: #ffffff;
+			display: table-cell;
+			vertical-align: middle;
+			text-align: right;
+		}
 	}
 	#smallTable,
 	#smallTable1,
@@ -452,59 +458,80 @@
 		color: #ffffff;
 		tr td {
 			width: 50%;
-			&:nth-child(even) {
-				text-align: right;
-			}
+			font-family: $graphik-font-family;
+			font-weight: 400;
 		}
 	}
 	.tableFloat {
-		float: left;
-		margin-left: 2%;
-		width: 47.2%;
-		#smallTable3 {
-			margin-top: 3.5%;
+		p {
+			margin-top: 10px;
+			font-size: 0.9rem !important;
 		}
 	}
-	#wrapperFooter {
-		width: 100%;
-		max-width: 380px;
-		height: 60px;
-		margin: 7% auto 0% auto;
-		background-color: $main-color;
-		border-radius: 5px 5px 0px 0px;
-		position: absolute;
-		bottom: 0%;
-		left: 20%;
-		right: 20%;
-		h3 {
-			color: #ffffff;
-			padding-top: 5%;
-			margin-left: 3%;
-        }
-        all: unset;
+	p {color: #fff;}
+}
+#wrapperFooter {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	background: #00acee;
+	.row {
+		padding: 0.5rem 0 !important;
 	}
-	#button1 {
-		border: none;
-		background-color: $main-color;
-		width: 200px;
-		height: 50px;
-		margin: 3% auto;
-		border-radius: 5px;
-		display: table;
-		a {
-			color: #ffffff;
-			font-size: 19px;
-			text-decoration: none;
-			display: table-cell;
-			vertical-align: middle;
+	h3 {
+		font-family: $graphik-font-family;
+		color:  #ffffff;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 26px;
+		text-align: center;
+		padding-bottom: 0;
+	}
+	i {
+		&.number {
+			display: inline-block;
+			width: 28px;
+			height: 28px;
+			border-radius: 50%;
+			background-color: transparent;
 			text-align: center;
+			font-size: 15px;
+			font-weight: 500;
+			font-family: $graphik-font-family;
+			font-style: unset;
+			border: 2px solid #ffffff;
+			color: #ffffff;
+			margin-right: 11px;
+			&.active {
+				border: 2px solid transparent;
+				background-color: #ffffff;
+				color: #00acee;
+			}
 		}
-	}
-	p {
-		color: #ffffff;
+		&.one,
+		&.two {
+			&::after {
+				display: inline-block;
+				content: " ";
+				border-top: 2px solid #ffffff;
+				width: 15px;
+				position: absolute;
+				left: 28px;
+				top: 13px;
+			}
+		}
+		&.two {
+			&::after {
+				left: 69px;
+			}
+		}
 	}
 }
-
+/**
+ *	Override for all the slides
+ *	Mind the height setting!!
+ */
 #pageone {
     height: calc(100vh - 55px); //removing the topWrapper from the height.
     padding-top: 3rem;
@@ -532,7 +559,8 @@
 #pagethree {
     height: calc(100vh - 55px); //removing the topWrapper from the height.
     overflow-y: scroll;
-    padding-top: 3rem;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
 	h1 {
         max-width: 250px;
         margin: 0px auto;
@@ -543,7 +571,8 @@
         font-family: $graphik-font-family; font-weight: 300;
         margin: 0 auto;
         margin-top: 10px;
-        max-width: 250px;
+		max-width: 250px;
+		line-height: 17px;
     }
 	.wrapperForm {
 		margin-top: 30px;
@@ -593,109 +622,179 @@
         font-size: 15px;
 	}
 }
-
-#pageseven,
-#pageeight,
-#pagenine {
-	position: relative;
-}
-
 #pageeight {
+    height: calc(100vh - 55px); //removing the topWrapper from the height.
+	padding-top: 3rem;
+	overflow-y: scroll;
+	.col-12 {padding-bottom: 3rem;}
 	h1 {
-		margin-bottom: 5%;
+        margin-bottom: 1.5rem;
+	}
+	.wrapperForm {
+        p {
+            display: block;
+            width: 100%;
+            margin-bottom: 7px;
+            font-family: $graphik-font-family; font-weight: 500;
+            font-size: 14px;
+        }
+	}
+	.row.no-gutters {
+		padding-bottom: 0.5rem;
+	}
+	.radio-choice {
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+	.lh-custom-select-wrap {
+		&:before {
+			top: 1em !important;
+		}
+		.lh-custom-select {
+			height: calc(2.25rem + 2px);
+			margin-top: 30px;
+			color: #a8b6c6 !important;
+			border: 1px solid #d6dce6;
+			padding: 1.2em .50em;
+			font-size: 1rem;
+			line-height: 1.5;
+		}
 	}
 }
-
 #pagenine {
+    height: calc(100vh - 55px); //removing the topWrapper from the height.
+	padding-top: 3rem;
+	overflow-y: scroll;
+	.col-12 {padding-bottom: 3rem;}
 	h1 {
-		margin-bottom: 6%;
+        margin-bottom: 1.5rem;
 	}
-	.wrapperMid {
-		margin-bottom: 10%;
+	.wrapperForm {
+        p {
+            display: block;
+            width: 100%;
+            margin-bottom: 7px;
+            font-family: $graphik-font-family; font-weight: 500;
+            font-size: 14px;
+        }
+	}
+	.row.no-gutters {
+		padding-bottom: 0.5rem;
+	}
+	.radio-choice {
+		padding-bottom: 1rem;
+	}
+	.pr-1 {
+		text-align: left;
+	}
+	.pl-1 {
+		text-align: right;
+		p.as-is {
+			text-align: left;
+		}
 	}
 }
 
 #pageten {
+	height: calc(100vh - 55px); //removing the topWrapper from the height.
+	padding-top: 3rem;
+	overflow-y: scroll;
+	.col-12 {padding-bottom: 3rem;}
 	h1 {
-		font-size: 25px;
-		margin-bottom: 4%;
-	}
-	.wrapperWider {
-		width: 100%;
-		margin-bottom: 0%;
-	}
-}
-#pagenine p {
-	color: #ffffff;
-}
-
-#pageten p {
-	text-align: justify;
-	font-weight: normal;
-	margin: 3% auto
-}
-
-#lastPage {
-	background-image: none;
-	h1 {
-		margin-bottom: 5%;
-		font-size: 26px;
-		line-height: 30px;
-	}
-	h2 {
-		font-size: 25px;
-	}
-	h5 {
-		margin-bottom: 14%;
-	}
-	h3 {
-		margin-bottom: 12%;
-	}
-	.personBlock {
-		margin-top: -2%;
-		margin-bottom: 8%;
-	}
-}
-
-#FirstPage {
-	h1 {
-		margin-bottom: 7%;
+        margin-bottom: 1.5rem;
 	}
 	.wrapperForm {
-		margin-top: 88px;
+        p {
+            display: block;
+            width: 100%;
+            margin-bottom: 7px;
+            font-family: $graphik-font-family; font-weight: 500;
+            font-size: 14px;
+        }
 	}
-	.personBlock {
-		margin-top: 200px;
+	.wrapperMid {
+		p {
+			max-width: 340px;
+			margin: 0 auto;
+		}
 	}
-	button {
-		height: 40px;
-		border: none;
-		border-radius: 5px;
-		background-color: #00aced;
-		color: #ffffff;
-		&:hover {
-			transition: 0.3s ease;
-			opacity: 0.7;
-			cursor: pointer;
-			i {
-				transition: 0.3s ease;
-				margin-left: 8%;
-				margin-right: 0%;
-			}
-		}
-		i {
-			margin: 0% 4%;
-		}
+	.row.no-gutters {
+		padding-bottom: 0.5rem;
 	}
 }
-
-#pagesix {
-	padding-bottom: 25%;
+#pageeleven {
+	height: calc(100vh - 55px); //removing the topWrapper from the height.
+	padding-top: 1.5rem;
+	overflow-y: scroll;
+	.col-12 {padding-bottom: 3rem;}
 	h1 {
-		// margin-bottom: 30%;
+        margin-bottom: 1.5rem;
 	}
-	.goBack {
-		margin-top: 7%;
+	.wrapperForm {
+		max-width: 380px;
+        p {
+            display: block;
+            width: 100%;
+            margin-bottom: 7px;
+            font-family: $graphik-font-family; font-weight: 400;
+            font-size: 14px;
+        }
+	}
+	.row.no-gutters {
+		padding-bottom: 0.5rem;
+	}
+}
+#pagetwelwe,
+#pageseven {
+    height: calc(100vh - 55px); //removing the topWrapper from the height.
+	padding-top: 3rem;
+	overflow-y: scroll;
+	.col-12 {padding-bottom: 3rem;}
+	h1 {
+        margin-bottom: 1.5rem;
+	}
+	.wrapperForm {
+        p {
+            display: block;
+            width: 100%;
+            margin-bottom: 7px;
+            font-family: $graphik-font-family; font-weight: 500;
+            font-size: 14px;
+        }
+    }
+}
+#finalstep {
+    height: calc(100vh - 55px); //removing the topWrapper from the height.
+	padding-top: 3rem;
+	overflow-y: scroll;
+	padding-bottom: 1rem;
+	h1 {
+		padding-bottom: 1rem;
+	}
+	h5 {
+		font-size: 17px;
+	}
+	h5.push-down {
+		padding-bottom: 2.5rem;
+		font-size: 15px;
+	}
+	h6 {
+		padding-bottom: 2rem;
+	}
+	.infoBlock h6 {
+		padding-bottom: 0;
+	}
+	.personBlock {
+		margin-top: 0;
+	}
+	.wrapperForm {
+		margin-top: 3.5rem;
+		.offer-link {
+			display: block;
+			width: 100%;
+			text-align: center;
+			max-width: 100%;
+		}
 	}
 }
 /*

@@ -220,6 +220,13 @@ jQuery(document).ready(function(){
     jQuery("#openFilterBtn").click(function() {
         openFilter();
     });
+    jQuery(".step-toggler").click(function() {
+        // disable background on info review
+        if (jQuery("#pageeleven").hasClass("active")) {
+            jQuery(".multi-step").toggleClass("nobg");
+            console.log("Disabling background....");
+        }
+    });
 
     jQuery('.toggle-collapse').click(function() {
         var elem = jQuery(jQuery(this).data('target'));
