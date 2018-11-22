@@ -301,6 +301,7 @@
     padding: 1.2rem;
     @include respond-to('desktop') {
       flex-direction: column;
+      box-shadow: none;
     }
 
     @include respond-to('m-desktop') {
@@ -319,7 +320,7 @@
         padding-bottom: 20px;
       }
 
-      @include respond-to('m-desktop') {
+      @include respond-to('desktop') {
         max-width: 100%;
       }
     }
@@ -359,10 +360,24 @@
         }
 
         
-        @include respond-to('s-desktop') {
+        @include respond-to('desktop') {
           font-size: 1.2rem;
         }
       }
+    }
+  }
+
+
+  .agent-phone {
+    color: white;
+    background: $main-color;
+    padding: .8rem;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 4px;
+
+    &-rotate {
+      transform: rotate(90deg);
     }
   }
 }

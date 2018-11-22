@@ -254,25 +254,7 @@ Template Name: Blog
       <hr class="margin-negative d-block d-md-none line">
     </div> <!-- all posts -->
 
-    <!-- <aside class="blog-aside col-12 col-md-4" style="height: 500px; background: lightblue; margin-top: 30px;">
-      <div class="row no-gutters blog-contact-agent">
-        <div class="col-4 col-sm-5 col-lg-4">
-          <img src="/wp-content/themes/theoffercompany/images/agent.png" class="agent-pic" alt="agent">
-        </div>
-        <div class="col-8 col-sm-7 col-lg-8 contact-details">
-          <h2 class="contact-agent-prev-name">Anette Brown</h2>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <p>602-448-7377</p>
-          <p>annete@theofferco.com</p>
-        </div>
-      </div>
-    </aside> aside -->
-
-    <aside class="blog-aside col-12 col-md-4" style="height: 500px; background: lightblue; margin-top: 30px;">
+    <aside class="blog-aside col-12 col-md-4" style="height: 500px; margin-top: 30px;">
       <div class="blog-contact-agent">
         <div class="contact-agent-pic">
           <img src="/wp-content/themes/theoffercompany/images/agent.png" class="agent-pic" alt="agent">
@@ -286,7 +268,14 @@ Template Name: Blog
           <i class="fas fa-star"></i>
           <p>602-448-7377</p>
           <p>annete@theofferco.com</p>
+
+          <div class="call-chat-write">
+            <i class="fas fa-phone agent-phone agent-phone-rotate"></i>
+            <i class="fas fa-comment-alt agent-phone"></i>
+            <i class="fas fa-envelope agent-phone"></i>
+          </div>
         </div>
+
       </div>
     </aside> <!-- aside -->
   </div> <!-- row -->
