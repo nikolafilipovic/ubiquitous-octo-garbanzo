@@ -235,11 +235,28 @@ Template Name: Blog
 
       </div> <!-- one post -->
 
+      <hr class="d-block d-md-none line">
+      <div class="row pagination blog-pag">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <div>
+            <ul class="pagination blog-pag">
+              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link next" href="#">Next</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="margin-negative d-block d-md-none line">
 
 
     </div>
 
-    <div class="col-12 col-md-4" style="height: 500px; background: lightblue;"> 
+    <div class="col-12 col-md-4" style="height: 500px; background: lightblue; margin-top: 30px;">
     </div>
   </div>
 </div>

@@ -1,4 +1,3 @@
-
 .blog-img-holder {
   background-position: top 50% left;
   background-size: cover;
@@ -17,6 +16,10 @@
   justify-content: center;
   position: relative;
 
+  @include respond-to('tablet') {
+    min-height: 450px;
+  }
+
   .top-fixed {
     position: absolute;
     top: 5px;
@@ -29,6 +32,7 @@
 
   .header-right {
     margin-left: auto;
+
     a {
       i {
         margin-top: 12px;
@@ -48,6 +52,13 @@
     h1 {
       color: white !important;
       font-family: $publico-font-family;
+      @include respond-to('tablet') {
+        font-size: 42px;
+      }
+
+      @include respond-to('s-desktop') {
+        font-size: 52px;
+      }
     }
 
     p {
@@ -56,6 +67,10 @@
       font-weight: 400;
       padding-top: .5em;
       width: 70%;
+      @include respond-to('tablet') {
+        font-size: 1.15rem;
+        width: 100%;
+      }
     }
   }
 }
@@ -63,13 +78,15 @@
 .posts-container {
   max-width: 1366px;
   min-height: 2000px;
+
   @include respond-to('desktop') {
     padding-right: 0 !important;
   }
 }
 
 .all-posts {
-  width:100%;
+  width: 100%;
+
   h2 {
     font-weight: 400;
     font-size: 1.4rem;
@@ -82,9 +99,11 @@
   padding-top: 0 !important;
   padding-bottom: 1.2em;
   position: relative;
+
   @include respond-to('tablet') {
     padding-bottom: 3em;
   }
+
   .right-side {
     @include respond-to('desktop') {
       padding: 0 40px 0 30px;
@@ -104,22 +123,23 @@
     font-weight: 500 !important;
     font-size: .85rem !important;
   }
-  
+
   p {
     font-size: 1.3rem;
     font-weight: 400;
   }
-  
+
   .review-by {
     p {
       font-size: .85rem !important;
       font-weight: 600;
+
       @include respond-to('desktop') {
         padding-left: 1em;
       }
     }
   }
-  
+
   .play {
     position: absolute;
     display: flex;
@@ -149,6 +169,7 @@
       }
     }
   }
+
   margin-bottom: 2em;
 }
 
@@ -162,6 +183,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   @include respond-to('desktop') {
     border-radius: 5px;
   }
@@ -179,7 +201,8 @@
   a {
     color: white !important;
     font-size: 1rem;
-    margin-top:1em;
+    margin-top: 1em;
+
     i {
       padding-left: .5em;
       font-size: .8rem;
@@ -187,9 +210,82 @@
   }
 }
 
-.popular-posts {
-  background: cornflowerblue;
-  height: 500px;
-  width:100%;
+.blog-pag {
+  .page-item:first-child .page-link {
+    border-radius: 50% !important;
+    border: 0 !important;
+  }
+  
+  div ul li {
+    @include respond-to('tablet') {
+      margin-right: .8em !important;
+    }
+  }
 }
 
+.margin-negative {
+  margin-right: -15px !important;
+  margin-left: -15px !important;
+}
+
+.line {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.pagination {
+  padding: 10px 0px;
+  text-align: center;
+
+  div {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    ul {
+      width: 100%;
+      display: block;
+      text-align: center;
+      clear: none;
+      list-style: none;
+
+      li {
+        display: inline-block;
+
+        a {
+          font-family: $graphik-font-family;
+          font-weight: 400;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 0;
+          background: #fff;
+          color: #373b43;
+          border-radius: 50%;
+          display: block;
+          width: 34px;
+          line-height: 34px;
+          height: 34px;
+          border: 0;
+          margin: 0px 2px;
+          transition: background 0.3s ease, color 0.3s ease;
+          text-transform: uppercase;
+
+          &:hover,
+          &:active,
+          &:focus,
+          &.active {
+            background: #00aced;
+            color: #ffffff;
+          }
+
+          &.next {
+            border-radius: 3px;
+            width: auto;
+            height: auto;
+            padding: 0px 5px;
+          }
+        }
+      }
+    }
+  }
+}
