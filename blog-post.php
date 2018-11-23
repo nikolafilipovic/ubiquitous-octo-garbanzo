@@ -2,7 +2,7 @@
 /*
 Template Name: Blog Post
 */
-  get_header(nomenu);
+  get_header();
 ?>
 
 <section class="blog-post">
