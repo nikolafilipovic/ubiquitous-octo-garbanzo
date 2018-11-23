@@ -75,9 +75,9 @@ Template Name: Blog
 
           <div class="col-12 col-md-7 right-side">
             <small class="small-imp">Upgrading home</small>
-            <p>
+            <a href="#">
               Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
-            </p>
+            </a>
             <div class="review-by">
               <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
               <p>Chris Brown</p>
@@ -98,9 +98,9 @@ Template Name: Blog
 
           <div class="col-12 col-md-7 right-side">
             <small class="small-imp">Upgrading home</small>
-            <p>
+            <a href="#">
               This Remarkable Home Is Anything but Square
-            </p>
+            </a>
             <div class="review-by">
               <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
               <p>Chris Brown</p>
@@ -121,9 +121,9 @@ Template Name: Blog
 
           <div class="col-12 col-md-7 right-side">
             <small class="small-imp">Upgrading home</small>
-            <p>
+            <a href="#">
               A Farmhouse-Style Prefab That'll Make You Want to Ditch the Big City
-            </p>
+            </a>
             <div class="review-by">
               <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
               <p>Chris Brown</p>
@@ -144,9 +144,9 @@ Template Name: Blog
 
           <div class="col-12 col-md-7 right-side">
             <small class="small-imp">Upgrading home</small>
-            <p>
+            <a href="#">
               Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
-            </p>
+            </a>
             <div class="review-by">
               <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
               <p>Chris Brown</p>
@@ -178,9 +178,9 @@ Template Name: Blog
 
           <div class="col-12 col-md-7 right-side">
             <small class="small-imp">Upgrading home</small>
-            <p>
+            <a href="#">
               This Remarkable Home Is Anything but Square
-            </p>
+            </a>
             <div class="review-by">
               <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
               <p>Chris Brown</p>
@@ -201,9 +201,9 @@ Template Name: Blog
 
           <div class="col-12 col-md-7 right-side">
             <small class="small-imp">Upgrading home</small>
-            <p>
+            <a href="#">
               A Farmhouse-Style Prefab That'll Make You Want to Ditch the Big City
-            </p>
+            </a>
             <div class="review-by">
               <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
               <p>Chris Brown</p>
@@ -224,9 +224,9 @@ Template Name: Blog
 
           <div class="col-12 col-md-7 right-side">
             <small class="small-imp">Upgrading home</small>
-            <p>
+            <a href="#">
               Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
-            </p>
+            </a>
             <div class="review-by">
               <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
               <p>Chris Brown</p>
@@ -255,7 +255,38 @@ Template Name: Blog
         <hr class="margin-negative d-block d-md-none line">
       </div> <!-- all posts -->
 
-    <aside class="blog-aside col-12 col-md-4" style="height: 500px; margin-top: 30px;">
+    <aside class="blog-aside col-12 col-md-3">
+      <div class="popular-posts">
+        <h2>Popular Posts</h2>
+        <div class="one-popular">
+          <a href="#">Prep for ‘Prost!’ Season 9 Bavarian Style Homes to Inspire Oktoberfest</a>
+          <p>25 Oct 2018</p>
+        </div>
+
+        <div class="one-popular">
+          <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
+          <p>25 Oct 2018</p>
+        </div>
+
+        <div class="one-popular">
+          <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
+          <p>25 Oct 2018</p>
+        </div>
+
+        <div class="one-popular">
+          <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
+          <p>25 Oct 2018</p>
+        </div>
+
+        <div class="one-popular">
+          <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
+          <p>25 Oct 2018</p>
+        </div>
+
+        
+      </div> <!-- popular posts -->
+
+
       <div class="blog-contact-agent">
         <div class="contact-agent-pic">
           <img src="/wp-content/themes/theoffercompany/images/agent.png" class="agent-pic" alt="agent">
@@ -276,28 +307,10 @@ Template Name: Blog
             <i class="fas fa-envelope agent-phone"></i>
           </div>
         </div>
-
-      </div>
+      </div> <!-- bg-contact-agent -->
+      
     </aside> <!-- aside -->
 
-      <!-- <div class="personBlock">
-        <div class="iconBlock" style="background-image: url(/wp-content/themes/theoffercompany/images/agent.png);"></div>
-        <div class="infoBlock">
-          <h6>Anette Brown</h6>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <i class="fa fa-star" aria-hidden="true"></i>
-          <p>602-448-7377</p>
-          <p>anette@theofferco.com</p>
-          <div class="circles">
-            <a href="#" class="rotate"><i class="fas fa-phone"></i></a>
-            <a href="#"><i class="fas fa-comment-alt-dots"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
-          </div>
-        </div>
-      </div> -->
     </div> <!-- row -->
   </div> <!-- container fluid -->
 </div>

@@ -79,14 +79,13 @@
 
 .posts-container {
   max-width: 1366px;
-  min-height: 4000px;
 
   @include respond-to('desktop') {
     padding-right: 0 !important;
   }
 }
 
-.all-posts {
+.all-posts, .popular-posts {
   width: 100%;
 
   h2 {
@@ -94,6 +93,12 @@
     font-size: 1.4rem;
     margin: 1.8rem 0;
     padding: 0 !important;
+  }
+}
+
+.all-posts {
+  @include respond-to('desktop') {
+    box-shadow: 6px 2px 9px 1px #00000014;
   }
 }
 
@@ -126,9 +131,10 @@
     font-size: .85rem !important;
   }
 
-  p {
+  a {
     font-size: 1.3rem;
     font-weight: 400;
+    color: $main-lighter;
   }
 
   .review-by {
@@ -292,6 +298,34 @@
 }
 
 .blog-aside {
+  @include respond-to('desktop') {
+    margin-left: 3em;
+  }
+  .popular-posts {
+    h2 {
+      margin: .8em 0;
+      @include respond-to('desktop') {
+        margin: 1.8rem 0;
+      }
+    }
+    .one-popular {
+      margin-bottom: 1.5em;
+      border-bottom: 1px solid $lightergray;
+
+      a {
+        font-size: 1rem;
+        margin-bottom: 3em;
+      }
+
+      p {
+        font-weight: 500;
+        margin: .8em 0 1.5em;
+        color: $gray-paragraph;
+        font-size: .9rem;
+      }
+    }
+  }
+
   .blog-contact-agent {
     position: relative;
     border-radius: 5px;
@@ -301,6 +335,7 @@
     background: white;
     box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
     padding: 2.1rem 1.2rem;
+    margin-bottom: 3em;
 
     @include respond-to('desktop') {
       flex-direction: column;
