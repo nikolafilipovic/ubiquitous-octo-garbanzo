@@ -13,15 +13,28 @@ Template Name: Blog
             <div id="menu-opener"></div>
             <div class="header-right">
               <a href="#">
-                <i class="fas fa-search"></i>
+                <i class="fas fa-search search-click"></i>
               </a>
 
               <a href="#">
                 <i class="fas fa-bars"></i>
               </a>
             </div>
-            <!-- <div class="logo"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>"><img src="<?php //echo $template_directory_uri; ?>/images/logo.png"
-              alt="" /></a></div> -->
+          </div>
+        </div>
+
+        <div class="enterzip blog-search">
+          <div class="landing-search">
+            <div class="search-field">
+              <div class="input-group buy" id="input-group">
+                <input type="text" class="form-control" id="landing-search" placeholder="Search posts...">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -255,61 +268,61 @@ Template Name: Blog
         <hr class="margin-negative d-block d-md-none line">
       </div> <!-- all posts -->
 
-    <aside class="blog-aside col-12 col-md-3">
-      <div class="popular-posts">
-        <h2>Popular Posts</h2>
-        <div class="one-popular">
-          <a href="#">Prep for ‘Prost!’ Season 9 Bavarian Style Homes to Inspire Oktoberfest</a>
-          <p>25 Oct 2018</p>
-        </div>
-
-        <div class="one-popular">
-          <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
-          <p>25 Oct 2018</p>
-        </div>
-
-        <div class="one-popular">
-          <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
-          <p>25 Oct 2018</p>
-        </div>
-
-        <div class="one-popular">
-          <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
-          <p>25 Oct 2018</p>
-        </div>
-
-        <div class="one-popular">
-          <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
-          <p>25 Oct 2018</p>
-        </div>
-
-        
-      </div> <!-- popular posts -->
-
-
-      <div class="blog-contact-agent">
-        <div class="contact-agent-pic">
-          <img src="/wp-content/themes/theoffercompany/images/agent.png" class="agent-pic" alt="agent">
-        </div>
-        <div class="contact-details">
-          <h2 class="contact-agent-prev-name">Anette Brown</h2>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <p>602-448-7377</p>
-          <p>annete@theofferco.com</p>
-
-          <div class="call-chat-write">
-            <i class="fas fa-phone agent-phone agent-phone-rotate"></i>
-            <i class="fas fa-comment-alt agent-phone"></i>
-            <i class="fas fa-envelope agent-phone"></i>
+      <aside class="blog-aside col-12 col-md-3">
+        <div class="popular-posts">
+          <h2>Popular Posts</h2>
+          <div class="one-popular">
+            <a href="#">Prep for ‘Prost!’ Season 9 Bavarian Style Homes to Inspire Oktoberfest</a>
+            <p>25 Oct 2018</p>
           </div>
-        </div>
-      </div> <!-- bg-contact-agent -->
-      
-    </aside> <!-- aside -->
+
+          <div class="one-popular">
+            <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
+            <p>25 Oct 2018</p>
+          </div>
+
+          <div class="one-popular">
+            <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
+            <p>25 Oct 2018</p>
+          </div>
+
+          <div class="one-popular">
+            <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
+            <p>25 Oct 2018</p>
+          </div>
+
+          <div class="one-popular">
+            <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
+            <p>25 Oct 2018</p>
+          </div>
+
+
+        </div> <!-- popular posts -->
+
+
+        <div class="blog-contact-agent">
+          <div class="contact-agent-pic">
+            <img src="/wp-content/themes/theoffercompany/images/agent.png" class="agent-pic" alt="agent">
+          </div>
+          <div class="contact-details">
+            <h2 class="contact-agent-prev-name">Anette Brown</h2>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <p>602-448-7377</p>
+            <p>annete@theofferco.com</p>
+
+            <div class="call-chat-write">
+              <i class="fas fa-phone agent-phone agent-phone-rotate"></i>
+              <i class="fas fa-comment-alt agent-phone"></i>
+              <i class="fas fa-envelope agent-phone"></i>
+            </div>
+          </div>
+        </div> <!-- bg-contact-agent -->
+
+      </aside> <!-- aside -->
 
     </div> <!-- row -->
   </div> <!-- container fluid -->

@@ -1,19 +1,19 @@
 /** 
  * This is a duct tape patch for a strange loop where responsiveTasks() is getting executed every 2 seconds on iOS
  * y tho?
-*/
+ */
 var taskAllowance = 1;
 
 /* Move the Page Container and expand the Menu */
 function slideOutMenu(option) {
-    if (option ==="open") {
+    if (option === "open") {
         jQuery("#page-container").addClass("move");
         jQuery("#menu-opener").addClass("hide");
         jQuery("#overlay").addClass("open");
         jQuery("#slide-out-nav").addClass("open");
         jQuery("div.logo").addClass("slide");
         jQuery("body").addClass("noscroll");
-    } else if (option ==="close") {
+    } else if (option === "close") {
         jQuery("#page-container").removeClass("move");
         jQuery("#menu-opener").removeClass("hide");
         jQuery("#overlay").removeClass("open");
@@ -35,6 +35,7 @@ function changeHeart(parentElement) {
     jQuery(parentElement).children().toggleClass("active");
     jQuery(parentElement).children().toggleClass("fas");
 }
+
 function changeVR(parentElement) {
     jQuery(parentElement).toggleClass("fal");
     jQuery(parentElement).toggleClass("active");
@@ -42,21 +43,21 @@ function changeVR(parentElement) {
 }
 /* Change the search option */
 function searchOption(option) {
-    if (option ==="buy") {
+    if (option === "buy") {
         jQuery("#input-group").removeClass("sell");
         jQuery("#input-group").removeClass("estimate");
         jQuery("span.sell").removeClass("active");
         jQuery("span.estimate").removeClass("active");
         jQuery("#input-group").toggleClass("buy");
         jQuery("span.buy").toggleClass("active");
-    } else if (option ==="sell") {
+    } else if (option === "sell") {
         jQuery("#input-group").removeClass("buy");
         jQuery("#input-group").removeClass("estimate");
         jQuery("span.buy").removeClass("active");
         jQuery("span.estimate").removeClass("active");
         jQuery("#input-group").toggleClass("sell");
         jQuery("span.sell").toggleClass("active");
-    } else if (option ==="estimate") {
+    } else if (option === "estimate") {
         jQuery("#input-group").removeClass("buy");
         jQuery("#input-group").removeClass("sell");
         jQuery("span.buy").removeClass("active");
@@ -67,18 +68,19 @@ function searchOption(option) {
         console.log("Initiated event that doesn't have a required option.")
     }
 }
+
 function responsiveTasks() {
     if (taskAllowance == 1) {
         var screenRes = jQuery(window).width();
         if (screenRes < 770) {
-            jQuery("#before-cta").after(function() {
+            jQuery("#before-cta").after(function () {
                 return '<div class="d-xl-none d-lg-none d-md-none d-sm-block d-block cta-insert"> <h1>Be the first to know!</h1> <p>New homes are getting added every 2 minutes. Save your search and be the first to know. </p> <a href="" class="btn btn-primary btn-block cta">Save search <i class="far fa-arrow-right"></i></a> </div>';
-              });
+            });
         } else {
             console.log("Initiated event that doesn't have a required option.");
         }
         if (screenRes < 321) {
-            jQuery("#foreclosuresDropdown label span").text(function(i, text) {
+            jQuery("#foreclosuresDropdown label span").text(function (i, text) {
                 return text.replace("Foreclosures", "Foreclo...");
             });
         } else {
@@ -114,16 +116,17 @@ function docFilterFill() {
         console.log("Initiated event that doesn't have a required option.")
     }
 };
+
 function loadSliders() {
-    jQuery(".owl-carousel-landing").owlCarousel({    
-        loop:true,
-        responsiveClass:true,
-        nav:true,
-        margin:10,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
+    jQuery(".owl-carousel-landing").owlCarousel({
+        loop: true,
+        responsiveClass: true,
+        nav: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
             },
             600: {
                 items: 3,
@@ -169,58 +172,58 @@ function copydest2() {
 
 function initmulti() {
     jQuery('#month-slider').multislider({
-        onChange: function(data) {
+        onChange: function (data) {
             jQuery("#weekday").text(data.week);
             jQuery("#month").text(data.month);
             jQuery("#day").text(data.day);
         }
     });
     jQuery('#time-slider').multislider({
-        onChange: function(data) {
+        onChange: function (data) {
             jQuery("#time").text(data.time);
         }
     });
 }
 
 /* Initialize the triggers */
-jQuery(document).ready(function(){
-    if(typeof multistep !== 'undefined') {
+jQuery(document).ready(function () {
+    if (typeof multistep !== 'undefined') {
         multistep.init();
     }
-    jQuery("#menu-opener").click(function() {
+    jQuery("#menu-opener").click(function () {
         slideOutMenu("open");
     });
-    jQuery(".close-menu").click(function() {
+    jQuery(".close-menu").click(function () {
         slideOutMenu("close");
     });
     jQuery(function () {
         jQuery('[data-toggle="tooltip"]').tooltip();
     });
-    jQuery(".dropdown-item.custom").click(function() {
+    jQuery(".dropdown-item.custom").click(function () {
         jQuery(this).toggleClass("active");
     });
-    jQuery(".favourite").click(function() {
+    jQuery(".favourite").click(function () {
         changeHeart(this);
     });
-    jQuery(".fa-vr-cardboard").click(function() {
+    jQuery(".fa-vr-cardboard").click(function () {
         changeVR(this);
     });
-    jQuery("span.buy").click(function() {
+    jQuery("span.buy").click(function () {
         searchOption("buy");
     });
-    jQuery("span.sell").click(function() {
+    jQuery("span.sell").click(function () {
         searchOption("sell");
     });
-    jQuery("span.estimate").click(function() {
+    jQuery("span.estimate").click(function () {
         searchOption("estimate");
     });
-    jQuery("#applyTop").click(function() {
+    jQuery("#applyTop").click(function () {
         openFilter();
     });
-    jQuery("#openFilterBtn").click(function() {
+    jQuery("#openFilterBtn").click(function () {
         openFilter();
     });
-    jQuery(".step-toggler").click(function() {
+    jQuery(".step-toggler").click(function () {
         // disable background on info review
         if (jQuery("#pageeleven").hasClass("active")) {
             jQuery(".multi-step").toggleClass("nobg");
@@ -228,16 +231,16 @@ jQuery(document).ready(function(){
         }
     });
 
-    jQuery('.toggle-collapse').click(function() {
+    jQuery('.toggle-collapse').click(function () {
         var elem = jQuery(jQuery(this).data('target'));
         var notifyElem = jQuery(jQuery(this).data('notify'));
 
-        if(elem.hasClass('show')) {
+        if (elem.hasClass('show')) {
             $(this).find('i').css({
                 transform: 'rotate(180deg)',
                 color: '#cbd3dd'
             });
-            if(notifyElem) {
+            if (notifyElem) {
                 notifyElem.addClass('hide-before');
             }
         } else {
@@ -245,7 +248,7 @@ jQuery(document).ready(function(){
                 transform: 'rotate(0)',
                 color: '#17acee'
             });
-            if(notifyElem) {
+            if (notifyElem) {
                 notifyElem.removeClass('hide-before');
             }
         }
@@ -261,13 +264,20 @@ jQuery(document).ready(function(){
     responsiveTasks();
     docFilterFill();
     docFill();
- });
-jQuery(document).resize(function(){
+
+
+
+    jQuery('.blog-search').hide();
+    jQuery('.search-click').on('click', function () {
+        jQuery('.blog-search').toggle();
+    });
+});
+jQuery(document).resize(function () {
     docFill();
     docFilterFill();
     responsiveTasks();
- });
-jQuery(document).delegate(".dropdown-menu", "click", function(e) {
+});
+jQuery(document).delegate(".dropdown-menu", "click", function (e) {
     console.log("Stopping propagation for dropdown.");
     e.stopPropagation();
 });
