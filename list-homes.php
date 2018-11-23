@@ -27,22 +27,14 @@ Template Name: List Homes
         <div class="faw-options">
 
           <a href="#">
-            <i class="far fa-heart"></i>
-            Save</a>
-
+            <i class="far fa-heart"></i> Save</a>
           <a href="#" data-toggle="modal" data-target="#share-modal">
-            <i class="fas fa-share-alt"></i>
-            Share</a>
-
+            <i class="fal fa-share-alt"></i> Share</a>
           <a href="#" data-toggle="modal" data-target="#virtual-tour-modal">
-            <i class="fas fa-vr-cardboard"></i>
-            Virtual Tour</a>
-
+            <i class="fal fa-vr-cardboard"></i> Virtual Tour</a>
           <a href="#" data-toggle="modal" data-target="#remove-modal">
-            <i class="far fa-times-circle"></i>
-            Remove</a>
-
-          <a href="#" class="close-link">&times;</a>
+            <i class="fal fa-times-circle"></i> Remove</a>
+          <a href="#" class="close-link"><i class="fal fa-times"></i></a>
         </div>
       </div>
     </header>
@@ -105,7 +97,7 @@ Template Name: List Homes
               <p class="lh-house lh-house--desktop">Open House <strong>Fri, Oct 12 &#8226; 11:00am - 2:00pm</strong></p>
               <i class="fas fa-phone agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Call
                 Agent</span>
-              <i class="fas fa-comment-alt agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Text
+              <i class="fas fa-comment-alt-dots agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Text
                 Agent</span>
             </div>
           </div>
@@ -114,7 +106,7 @@ Template Name: List Homes
               <div class="col-6 col-md-12">
                 <span class="crimson-dot"></span>
                 <strong class="small-imp house-for-sale">FOR SALE</strong>
-                <h1 class=" lh-money">$425,000</h1>
+                <h1 class="lh-money">$425,000</h1>
                 <a href="#" class="large-link">Get pre-qualified
                   <i class="far fa-arrow-right fasarrow"></i>
                 </a>

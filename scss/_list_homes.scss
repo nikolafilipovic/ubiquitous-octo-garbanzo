@@ -4,16 +4,29 @@
 }
 
 body {
-  font-family: $default-font-family, Arial, sans-serif;
+  font-family: $graphik-font-family, Arial, sans-serif;
+  background: linear-gradient(to bottom, #00000080 0%, #00000080 100%), url(/wp-content/themes/theoffercompany/images/bg.jpg);
+  box-shadow: 0px 0px 8px 0px rgba(14, 22, 40, 0.14);
 }
 
 .lh-wrapper {
   max-width: 1024px;
   margin: 0 auto;
   background: white;
+  @include respond-to('s-desktop') {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 }
 
 .list-home-title {
+  @include respond-to('s-desktop') {
+    color:  #1e232c;
+    font-size: 1.625rem !important;
+    font-weight: 400;
+  }
   font-size: 20px;
   font-family: $graphik-font-family; font-weight: 400;
 }
@@ -24,6 +37,9 @@ body {
   margin-bottom: .6em;
   font-family: $graphik-font-family; font-weight: 400;
   color: #1e232c;
+  @include respond-to('s-desktop') {
+    font-size: 1.625rem;
+  }
 }
 
 .hp-1 {
@@ -35,12 +51,19 @@ body {
   font-size: 23px;
   color: #1e232c;
   padding-bottom: 0;
+  @include respond-to('s-desktop') {
+    font-size: 2.249rem;
+    line-height: 1.3;
+  }
 }
 
 .lh-street {
   font-size: 15px !important;
   color: #1e232c;
   font-family: $graphik-font-family; font-weight: 400;
+  @include respond-to('s-desktop') {
+    font-size: 1.499rem !important;
+  }
 }
 
 .b-shadow {
@@ -49,7 +72,7 @@ body {
 
 .round-blue {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   background: #00aced;
   text-align: center;
   font-style: normal;
@@ -65,9 +88,13 @@ body {
   padding-top: 12px !important;
   @include respond-to('desktop') {
     height: 40px !important;
-    padding-top: 13px !important;
-    font-size: 1rem !important;
+    padding-top: 12px !important;
+    font-size: 1.2rem !important;
     width: 40px !important;
+    margin-right: 10px;
+    &.fa-phone {
+      transform: rotate(90deg);
+    }
   }
 }
 
@@ -82,9 +109,15 @@ body {
   padding: 10px 0px;
   font-family: $graphik-font-family; font-weight: 400;
   vertical-align: middle;
+  color: #1e232c;
 
   @include respond-to('desktop') {
-    padding: 0.5rem 0;
+    padding: 0.4rem 0;
+    font-size: 1.249rem;
+    font-weight: 500;
+    &.agent-phone-text {
+      margin-right: 15px;
+    }
   }
 }
 
@@ -95,7 +128,7 @@ body {
   .go-back {
     padding: 17px 0 17px 16px;
     a {
-      font-size: 15px;
+      font-size: 16px;
       font-family: $graphik-font-family; font-weight: 400;
       color: #00aced;
     }
@@ -112,48 +145,80 @@ body {
 
   .various-link {
     align-items: center;
-    padding-left: 1em;
+    padding: 15px;
 
     .offer-link {
-      margin: 1em 1em 1em 0;
       padding: 10px 10px 10px 20px;
       display: flex;
+      opacity: 1;
+      transition: all 0.3s ease;
+      &:hover,
+      &:active,
+      &:focus {
+        opacity: 0.7;
+        cursor: pointer;
+        i {
+          padding-right: 5px;
+        }
+      }
       a {
-        font-family: $bold-font-family, Arial, sans-serif;
+        font-family: $graphik-font-family; font-weight: 500;
         font-size: .9rem;
         color: white !important;
+      
+        @include respond-to('s-desktop') {
+          font-size: 14px;
+        }
+      }
+      i {
+        transition: all 0.3s ease;
+        @include respond-to('s-desktop') {
+          font-size: 14px;
+        }
       }
     }
-
     .faw-options {
       display: flex;
       flex: 1;
-      padding: 0 0 0 .6em;
-
-      .far,
-      .fas {
-        font-size: 1.5rem;
-        margin-right: .5em;
+      padding: 11px 0 0 .6em;
+      a {
+        font-family: $graphik-font-family; 
+        font-weight: 400;
+        font-size: 1rem;
+        color: #00acee;
+        opacity: 1;
+        transition: all 0.3s ease;
+        &:hover,
+        &:active,
+        &:focus {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+        i {
+          font-size: 1.5rem;
+          margin-right: .4em;
+        }
       }
-    }
 
+    }
     .faw-options > * {
       padding: 0 .5em;
     }
-
     a {
       font-size: 1rem;
       color: $main-lighter;
       display: inline-flex;
     }
-
   }
 }
-
 .close-link {
-  color: $grayish !important;
-  font-size: 3rem !important;
-  margin-left: auto;
+  margin-left: auto !important;
+  margin-top: -8px !important;
+  i {
+    color: #b6c2c7 !important;
+    margin: 0 !important;
+    font-size: 2.5rem !important;
+  }
 }
 
 figure.lh-img-holder {
@@ -230,6 +295,15 @@ figure.lh-img-holder {
 .offer-link-group {
   padding: 7px 15px;
   width: calc(100%);
+  .offer-link {
+    margin: 0px 4px !important;
+    max-width: 47% !important;
+    padding: 11px !important;
+    i {
+      padding: 0 !important;
+      margin-left: 5px !important;
+    }
+  }
 }
 
 .offer-link {
@@ -270,6 +344,12 @@ figure.lh-img-holder {
   background-color: #e03225;
   border-radius: 50%;
   vertical-align: middle;
+
+  @include respond-to('s-desktop') {
+    height: 11px;
+    width: 11px;
+    vertical-align: baseline;
+  }
 }
 
 .lh-info-wrapper {
@@ -285,6 +365,9 @@ figure.lh-img-holder {
   span.small-dot {
     margin: 0 .3rem;
     font-weight: bold;
+    @include respond-to('desktop') {
+      vertical-align: middle;
+    }
   }
 
 
@@ -304,6 +387,11 @@ figure.lh-img-holder {
   font-size: .8rem;
   letter-spacing: 1px;
   padding: 0;
+  @include respond-to('s-desktop') {
+    color:  #1e232c;
+    font-size: 0.874rem;/* Approximation due to font substitution */
+    font-weight: 600;
+  }
 }
 
 .map-price {
@@ -319,6 +407,12 @@ figure.lh-img-holder {
     padding-bottom: 0;
     font-size: 25px;
     font-family: $graphik-font-family; font-weight: 400;
+
+    @include respond-to('s-desktop') {
+      color:  #1e232c;
+      font-size: 2.249rem !important;
+      font-weight: 500;
+    }
   }
 
   .house-for-sale {
@@ -326,6 +420,12 @@ figure.lh-img-holder {
     font-family: $graphik-font-family; font-weight: 400;
     font-size: 10px;
     text-transform: uppercase;
+
+    @include respond-to('s-desktop') {
+      font-size: 0.874rem !important;
+      font-weight: 600;
+      color: #1e232c;
+    }
   }
 
   .large-link {
@@ -334,7 +434,15 @@ figure.lh-img-holder {
     font-size: 15px;
     font-family: $graphik-font-family; font-weight: 500;
     padding: 1em 0;
-
+    
+    @include respond-to('s-desktop') {
+      color:  #00aced;
+      font-size: 1.25rem !important;
+      font-weight: 500;
+      .fasarrow {
+        font-size: 1.25rem !important;
+      }
+    }
     .fasarrow {
       padding-left: .5em;
     }
@@ -354,6 +462,10 @@ figure.lh-img-holder {
       max-width: 90px;
       height: 90px;
       margin-right: 20px;
+      @include respond-to('s-desktop') {
+        max-width: 145px;
+        height: 145px;
+      }
     }
   }
 }
@@ -387,6 +499,11 @@ figure.lh-img-holder {
 
     &--desktop {
       margin-top: 2rem;
+      font-size: 1.124rem;
+      font-weight: 400;
+      strong {
+        font-weight: 500;
+      }
     }
   }
 
@@ -470,6 +587,7 @@ figure.lh-img-holder {
   }
 
   justify-content: space-between;
+  margin-right: -1px;
 
   .col-6 {
     flex-basis: calc(50% - 4.5px);
@@ -491,6 +609,11 @@ figure.lh-img-holder {
     color: #4a505d !important;
     font-size: 14px !important;
     line-height: 19px;
+    @include respond-to('s-desktop') {
+      color:  #4a505d;
+      font-size: 1rem;/* Approximation due to font substitution */
+      font-weight: 400;
+    }
   }
 
   .contact-agent-prev {
@@ -522,6 +645,11 @@ figure.lh-img-holder {
     color: #00acee;
     padding-bottom: 0;
     font-family: $graphik-font-family; font-weight: 500;
+    @include respond-to('s-desktop') {
+      color:  #00aced;
+      font-size: 1.125rem;/* Approximation due to font substitution */
+      font-weight: 400;
+    }
   }
 
   &-details {
@@ -614,6 +742,10 @@ figure.lh-img-holder {
     word-spacing: 1px;
     line-height: 1.4;
     padding-bottom: 25px;
+    @include respond-to('s-desktop') {
+      color:  #a6b4c6;
+      font-size: 0.938rem;
+    }
   }
 
   margin-top: 1.5em;
@@ -698,6 +830,10 @@ figure.lh-img-holder {
     font-size: 15px;
     margin: 0;
     color: #1e232c;
+    @include respond-to('s-desktop') {
+      color:  #1e232c;
+      font-size: 0.999rem;
+    }
   }
 
   .has-dollar-left {
@@ -864,6 +1000,9 @@ figure.lh-img-holder {
     @include respond-to('mobile') {
       margin-right: 25px !important;
     }
+    @include respond-to('s-desktop') {
+      margin-right: 0 !important;
+    }
   }
 }
 
@@ -888,6 +1027,11 @@ figure.lh-img-holder {
   font-size: 16.5px !important;
   .list-home-title {
     padding: .3em 0;
+    &:hover,
+    &:active,
+    &:focus {
+      cursor: pointer;
+    }
   }
 
   #lh-property-amentities {
@@ -899,8 +1043,11 @@ figure.lh-img-holder {
     font-family: $bold-font-family, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 14px;
-    @include respond-to('desktop') {
+    @include respond-to('s-desktop') {
       padding-top: 1.2em;
+      color:  #00acee;
+      font-size: 1rem;
+      font-weight: 500;
     }
   }
 
@@ -919,9 +1066,16 @@ figure.lh-img-holder {
 .lh-house-prop-desc {
   .lh-description {
     font-size: 15px;
+    font-family: $graphik-font-family;
     margin-bottom: 1em;
     text-align: justify;
     color: #9399a2;
+    font-weight: 400;
+    @include respond-to('s-desktop') {
+      color:  #525b6a;
+      font-size: 1rem;
+      font-family: $graphik-font-family;
+    }
   }
 }
 
@@ -933,6 +1087,16 @@ figure.lh-img-holder {
   .text-right {
     strong {
       color: #1e232c;
+    }
+  }
+  @include respond-to('s-desktop') {
+    color:  #1e232c;
+    font-size: 1.124rem;
+    font-weight: 400;
+    strong {
+      color:  #1e232c;
+      font-size: 1.124rem;
+      font-weight: 500;
     }
   }
 }
@@ -1035,9 +1199,11 @@ figure.lh-img-holder {
 
       font-size: 16.5px;
       margin: .7em 0;
+      font-weight: 400;
 
       strong {
         margin-left: .11em;
+        font-weight: 600;
       }
     }
   }
@@ -1051,6 +1217,7 @@ figure.lh-img-holder {
 .lh-details-block {
   border-bottom: 1px solid $lightergray;
   margin-bottom: .5em;
+  font-family: $graphik-font-family;
 
   & > strong {
     display: block;
@@ -1060,6 +1227,18 @@ figure.lh-img-holder {
   p, strong {
     font-size: 15px;
     font-family: $graphik-font-family; font-weight: 400;
+  }
+  @include respond-to('s-desktop') {
+    p {
+      color:  #1e232c;
+      font-size: 1.125rem !important;
+      font-weight: 400 !important;
+    }
+    strong {
+      color:  #1e232c;
+      font-size: 1.125rem !important;
+      font-weight: 600 !important;
+    }
   }
 }
 
@@ -1075,6 +1254,13 @@ figure.lh-img-holder {
   p {
     font-family: $default-font-family, Arial, Helvetica, sans-serif;
     font-size: 15px;
+    @include respond-to('s-desktop') {
+      color:  #1e232c;
+      font-size: 1.063rem;
+      font-weight: 400;
+      font-size: 0.938rem;
+      font-weight: 400;
+    }
   }
   
   span {
@@ -1085,11 +1271,21 @@ figure.lh-img-holder {
     font-family: $graphik-font-family; font-weight: 400;
     line-height: 16px;
     a {
-      color: $main-lighter;
+      color: #00aced;
+    }
+    @include respond-to('s-desktop') {
+      font-size: 0.938rem;
+      font-weight: 400;
     }
   }
   .offer-link {
     margin-bottom: 20px;
+    max-width: 47%;
+    padding: 11px;
+    i {
+      padding: 0 !important;
+      margin-left: 5px;
+    }
   }
 }
 
@@ -1127,6 +1323,9 @@ figure.lh-img-holder {
   height: 60px;
   text-align: center;
   padding-top: 18px;
+  @include respond-to('s-desktop') {
+    padding-top: 15px;
+  }
 }
 
 %fa-base {
@@ -1167,7 +1366,11 @@ figure.lh-img-holder {
 
   .data-by {
     font-family: $default-font-family !important;
-    color: black;
+    color: #252932;
+    @include respond-to('s-desktop') {
+      font-size: 0.938rem !important;
+      font-weight: 500;
+    }
   }
 
   p,
@@ -1180,6 +1383,20 @@ figure.lh-img-holder {
 
   .transp-desc {
     padding: .6em 0;
+
+    @include respond-to ('s-desktop') {
+      p {
+        font-family: $graphik-font-family;
+        color:  #a8b6c7;
+        font-size: 1.127rem;
+        font-weight: 500;
+      }
+      a {
+        color:  #00aced;
+        font-size: 1.127rem;
+        font-weight: 500;
+      }
+    }
 
     p {
       color: $grayish;
@@ -1199,6 +1416,12 @@ figure.lh-img-holder {
     font-size: 13px !important;
     padding-top: 8px !important;
     width: 30px !important;
+    @include respond-to('s-desktop') {
+      height: 36px !important;
+      font-size: 14px !important;
+      padding-top: 11px !important;
+      width: 36px !important;
+    }
   }
 
   .list-home-title {
@@ -1213,16 +1436,30 @@ figure.lh-img-holder {
     font-size: 17px;
     padding-top: .5em;
     font-family: $graphik-font-family; font-weight: 500;
+    @include respond-to('s-desktop') {
+      color:  #1e232c;
+      font-size: 1.249rem;
+      font-weight: 500;
+    }
   }
 
   p {
     font-size: 15px;
     font-family: $graphik-font-family; font-weight: 400;
+    @include respond-to('s-desktop') {
+      color:  #1e232c;
+      font-size: 1.124rem;
+      font-weight: 400;
+    }
   }
 
   .data-by {
     color: #252a32;
     font-size: 14px;
+    @include respond-to('s-desktop') {
+      font-size: 0.938rem !important;
+      font-weight: 500;
+    }
   }
 
   .stars-reviews {
@@ -1238,7 +1475,11 @@ figure.lh-img-holder {
     span {
       padding: 0 0 0 .3em;
       margin-top: -3px;
-      font-family: $default-font-family, Arial, Helvetica, sans-serif !important;
+      @include respond-to('s-desktop') {
+        font-family: $graphik-font-family; 
+        font-size: 0.954rem;
+        font-weight: 400;
+      }
     }
   }
 }
@@ -1267,18 +1508,27 @@ figure.lh-img-holder {
       padding-left: 1em;
 
       .small-caps {
-        color: black;
+        color:  #1e232c;
+        @include respond-to('s-desktop') {
+          color:  #1e232c;
+          font-size: 1rem;
+          font-weight: 400;
+        }
       }
-
       p:first-of-type {
         color: #00aced;
         font-size: 15px;
+        @include respond-to('s-desktop') {
+          color:  #00aced;
+          font-size: 1.125rem;
+          font-weight: 400;
+        }
       }
     }
   }
 
   .round-blue {
-    padding-top: 10px;
+    padding-top: 8px;
     font-family: $graphik-font-family; font-weight: 400;
   }
 
@@ -1288,6 +1538,13 @@ figure.lh-img-holder {
 
   .offer-link {
     margin: 15px 4px;
+    margin: 15px 4px;
+    max-width: 47%;
+    padding: 11px;
+    i {
+      padding: 0 !important;
+      margin-left: 5px;
+    }
   }
 
   .sch-r-offer-link {
@@ -1389,12 +1646,18 @@ figure.lh-img-holder {
   .list-home-title {
     margin: 40px 0 0px;
     font-size: 18px !important;
+    @include respond-to('s-desktop') {
+      font-size: 1.625rem !important;
+    }
   }
 
   .list-home-subtitle {
     color: $grayish;
     font-size: 13px;
     margin-bottom: 15px;
+    @include respond-to('s-desktop') {
+      font-size: 1rem !important;
+    }
   }
 
   .offer-link {
@@ -1410,6 +1673,8 @@ figure.lh-img-holder {
 
     @include respond-to('desktop') {
       width: 60%;
+      font-size: 16px !important;
+      padding: 13px !important;
       i {
         padding-left: .5em !important;
       }
@@ -1422,12 +1687,12 @@ figure.lh-img-holder {
     text-align: center;
     width:100%;
     padding: 2em;
-    margin-bottom: 20px;
     margin-left: -15px;
     margin-right: -15px;
     width: calc(100% + 31px);
-    @include respond-to('desktop') {
-      width: calc(100% + 15px);
+    @include respond-to('s-desktop') {
+      margin-right: -23px;
+      width: calc(100% + 38px);
     }
 
     p {
@@ -1496,4 +1761,23 @@ figure.lh-img-holder {
     padding-right: .7em;
   }
 }
-
+.left-side-container {
+  @include respond-to('s-desktop') {
+    padding-right: 23px !important;
+  }
+}
+.list-home-title {
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+  }
+}
+.data-by {
+  font-family: $default-font-family !important;
+  color: #252932;
+  @include respond-to('s-desktop') {
+    font-size: 0.938rem !important;
+    font-weight: 500;
+  }
+}
