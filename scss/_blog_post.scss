@@ -1,3 +1,10 @@
+.blog-menu {
+  .blog-header {
+    min-height: 75px !important;
+    background-color: $ocean-blue !important;
+  }
+}
+
 .blog-post {
   background: white;
 
@@ -6,15 +13,30 @@
     margin: 0 auto;
   }
 
+  .the-post {
+    @include respond-to('desktop') {
+      box-shadow: 6px 2px 9px 1px #00000014;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+  }
+
   &__image {
     background: url("/wp-content/themes/theoffercompany/images/home-showing.jpg");
-    height: 349px;
+    height: 200px;
     margin: 0 auto;
     background-size: cover;
     background-position: 50%;
+    @include respond-to('desktop') {
+      height: 349px;
+    }
   }
 
   &__pre-title {
+    position: relative;
+    bottom: 12px;
     font-family: $default-font-family;
     background: $main-color;
     text-transform: uppercase;
@@ -24,16 +46,34 @@
     padding: 1.1em 0;
     font-size: 0.7rem;
     width: 9rem;
-    margin: -1.1rem auto 0;
     border-radius: 0.4em;
-    font-weight: normal;
+    font-weight: 500;
+    @include respond-to('desktop') {
+      position: absolute;
+      bottom: -12px;
+      left: 72px;
+      box-shadow: 3px 9px 9px 1px #00000014;
+    }
+  }
+
+  .control-header {
+    max-width: 1366px;
+    height: 0;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    position: relative;
+  }
+
+  .play {
+    left: 15px;
   }
 
   &__title {
-    margin: 1.2rem 0;
+    margin: 1.5em 0 1.2rem;
     padding: 0;
     font-family: $light-font-family;
-    font-size: 1.625rem;
+    font-size: 1.2rem;
     line-height: 1.2;
     color: $main-color;
     font-weight: normal;
@@ -41,6 +81,7 @@
     text-align: center;
     @include respond-to('tablet') {
       text-align: left;
+      font-size: 1.625rem;
     }
   }
 
@@ -57,6 +98,7 @@
       height: 20px;
       margin-right: 0.33em;
     }
+
   }
 
   &__sub-title {
@@ -96,7 +138,7 @@
   &__after-text {
     h2 {
       color: $main-color;
-      font-size: 1.4rem;
+      font-size: 1.05rem;
       line-height: 1.455;
       font-weight: 500;
       padding: 0;
@@ -141,8 +183,21 @@
     }
   }
 
-  aside {
-    background: cornflowerblue;
+  .blog-aside {
+    .related-posts-heading {
+      padding-top: .65em !important;
+    }
+    .one-related {
+      a {
+        margin-bottom: 1.5em;
+        display: block;
+      }
+    }
+  }
+
+  .p-with-border-bottom {
+    border-bottom: 1px solid $lightergray;
+    padding-bottom: 2em;
   }
 
   .spaced {
@@ -151,8 +206,152 @@
     @include respond-to('tablet') {
       justify-content: flex-start;
     }
+    
     .sphere-small {
       margin: 0 0.15em;
+      height: 35.5px;
+      width: 35.5px;
+      font-size: 1.2rem;
+    }
+  }
+
+  .post-comment {
+    margin-top: 2em;
+    .author {
+      display: flex;
+      align-items: center;
+      .author-img {
+        flex: 0 1 100px;
+        @include respond-to('desktop') {
+          flex: 0 1 60px;
+        }
+        img {
+          border-radius: 50%;
+        }
+      }
+      
+      .about-author {
+        margin-left: 1.5em;
+        font-weight: 400;
+        h2 {
+          font-size: 1.3rem;
+          padding-bottom: 5px;
+          font-weight: 400;
+          @include respond-to('desktop') {
+            font-size: 1.1rem;
+          }
+        }
+
+        p {
+          font-size: 1.15rem;
+          color: $main-color;
+          @include respond-to('desktop') {
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+    &-form {
+      .offer-link {
+        text-transform: unset !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px !important;
+
+        @include respond-to('desktop') {
+          width: 55%;
+        }
+
+        @include respond-to('m-desktop') {
+          width: 25%;
+        }
+
+        a {
+          font-weight: 400;
+        }
+
+        i {
+          padding: 2px 0 0 10px !important;
+          margin-left: unset !important;
+        }
+      }
+    }
+
+    .success {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-checkmark {
+        border-radius: 50%;
+        border:1.5px solid $main-color;
+        padding: 4px;
+        display: flex;
+        margin-right: 10px;
+        justify-content: center;
+        align-content: center;
+        i {
+          color: $main-color;
+          font-size: .7rem;
+        }
+      }
+
+      p {
+        font-size:1.1rem;
+        font-weight: 400;
+        color:$main-color;
+      }
+    }
+
+    .one-comment {
+      margin-top: 1em;
+      .pic {
+        flex: 0 0 50px;
+      }
+      h2, p {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+      
+      h2 {
+        color: $main-color;
+        margin-left: 1em;
+      }
+
+      p {
+        color: black;
+        padding: .8em 0;
+      }
+
+      .heart-date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+          font-size: 1.3rem;
+          color: #00acee;
+        }
+
+        span {
+          margin-left: .2em;
+          margin-right: .8em;
+          font-weight: 400;
+          font-size: 1rem;
+          color: $main-color;
+        }
+
+        .date {
+          p {
+            color: $gray-paragraph;
+            font-size: 1rem;
+          }
+        }
+
+        .not-hearted {
+          color: black;
+        }
+      }
     }
   }
 }
