@@ -143,6 +143,9 @@
       font-weight: 500;
       padding: 0;
       margin: 0.8em 0;
+      @include respond-to('desktop') {
+        font-size: 1.375rem;
+      }
     }
     h3 {
       padding: 0;
