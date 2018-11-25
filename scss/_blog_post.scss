@@ -261,6 +261,12 @@
         justify-content: center;
         align-items: center;
         padding: 12px !important;
+        opacity: 1;
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 0.7;
+        }
 
         @include respond-to('desktop') {
           width: 55%;
@@ -354,6 +360,124 @@
         .not-hearted {
           color: black;
         }
+      }
+    }
+  }
+
+  .home-worth {
+    background-image: url("/wp-content/themes/theoffercompany/images/rainy.jpeg");
+    background-size: cover;
+    background-position: left;
+    border-radius: 5px;
+    margin: 1em 0 3em;
+    
+    .hw-faded {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+      width: 100%;
+      background-color: rgba(0, 172, 237, 0.9);
+      border-radius: 5px;
+      @include respond-to('desktop') {
+        padding: 3.5em 2em;
+      }
+
+      h2 {
+        padding-bottom: 1em;
+        color: white;
+        text-align: center;
+        font-size: 22px;
+        line-height: 30px;
+        @include respond-to('m-desktop') {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .enterzip {
+      margin-top: 0 !important;
+      .input-group-prepend {
+        margin-right: 0 !important;
+      }
+    }
+
+    
+  .enterzip-group {
+    width: 100%;
+    max-width: 440px; 
+
+    @include respond-to('tablet') {
+      width: 80%;
+    }
+
+    @include respond-to('m-desktop') {
+      width: 60%;
+    }
+  }
+  
+    .enterzip--inset {
+      .input-group-prepend {
+        position: relative;
+        margin-right: 0 !important;
+      }
+  
+      input.form-control {
+        padding: 26px 18px !important;
+        color: #b6b6b6;
+        font-family: $graphik-font-family; font-weight: 300;
+        font-size: 17px;
+        font-weight: 300;
+      }
+  
+      i {
+        font-size: 26px;
+        color: #00aced;
+        position: absolute;
+        top: 16px;
+        right: 12px;
+      }
+    }
+  
+    .offer-link {
+      background: transparent !important;
+      border: 2px solid white !important;
+      min-width: 100%;
+      margin: 15px 0 0 0;
+      padding: 12px;
+      text-align: center;
+      text-transform: unset;
+      font-size: 1rem;
+      color: white;
+      transition: all 0.3s ease;
+      font-weight: 400;
+      opacity: 1;
+      &:hover,
+      &:focus,
+      &:active {
+          opacity: 0.7;
+      }
+    }
+  
+    .landing-search {
+      .search-field .input-group.buy::after {
+        display: none;
+      }
+  
+      .search-field {
+        margin-top: 0;
+        border-radius: 10px;
+        box-shadow: 0px 2px 11px 0px rgba(10, 25, 40, 0.27) !important;
+        max-width: unset;
+      }
+  
+      input {
+        font-size: 17px !important;
+      }
+  
+      .form-control {
+        padding: 26px 18px !important;
       }
     }
   }

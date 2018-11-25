@@ -187,6 +187,12 @@ function initmulti() {
 
 /* Initialize the triggers */
 jQuery(document).ready(function () {
+    jQuery('.blog-search').hide();
+    jQuery('.search-click').on('click', function () {
+        jQuery('.blog-search').toggle();
+    });
+
+    
     if (typeof multistep !== 'undefined') {
         multistep.init();
     }
@@ -265,12 +271,6 @@ jQuery(document).ready(function () {
     docFilterFill();
     docFill();
 
-
-
-    jQuery('.blog-search').hide();
-    jQuery('.search-click').on('click', function () {
-        jQuery('.blog-search').toggle();
-    });
 });
 jQuery(document).resize(function () {
     docFill();

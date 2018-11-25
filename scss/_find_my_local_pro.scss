@@ -104,7 +104,7 @@
 
   .enterzip-group {
     width: 90%;
-    max-width: 440px; //we don't want it going nuts on wide displays :p
+    max-width: 440px; 
 
     @include respond-to('tablet') {
       width: 80%;

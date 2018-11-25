@@ -223,7 +223,9 @@ Template Name: Blog Post
                   <h2>Strahinja S.</h2>
                 </div>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
 
                 <div class="heart-date">
                   <div class="hearts">
@@ -240,6 +242,25 @@ Template Name: Blog Post
 
               </div> <!-- one comment -->
             </section> <!-- post a comment -->
+
+            <section class="home-worth">
+              <div class="hw-faded">
+                <h2>See what your home is worth instantly</h2>
+                <div class="enterzip-group">
+                  <div class="enterzip enterzip--inset">
+                    <div class="form-group mb-0 mt-0">
+                      <div class="input-group-prepend">
+                        <input type="text" class="form-control" placeholder="Enter your home address" />
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="offer-link">
+                    I'm the owner. Show me!
+                  </a>
+                </div>
+              </div>
+            </section>
 
           </div>
         </div>

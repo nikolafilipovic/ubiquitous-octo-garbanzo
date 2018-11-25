@@ -23,6 +23,15 @@
   }
 }
 
+.offer-link {
+  opacity: 1;
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: 0.7;
+    }
+}
+
 .sch-t-pic-info {
   .column-item {
     padding: 0;
