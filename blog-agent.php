@@ -70,6 +70,23 @@ Template Name: Blog Agent
         <h1>Ahwatukee Lifestyle</h1>
         <p class="blog-subtitle">What it’s like to live in Ahwatukee.</p>
       </div>
+
+      <div class="blog-header-links">
+        <div class="sphere-container">
+          <a class="sphere sphere--fb">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="sphere sphere--twitt">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="sphere sphere--in">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="sphere sphere--email">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+        </div>
+      </div>
     </header>
   </div>
 

@@ -5,6 +5,24 @@
   }
 }
 
+.blog-header-links {
+  position: absolute;
+  bottom: 33px;
+
+  .sphere {
+    width: 40px !important;
+    height: 40px !important;
+    background: #bed9ff !important;
+    margin-left: .5em;
+    font-size: 1.3rem !important;
+    padding-top: calc(20px - 0.8rem) !important;
+
+    i {
+      color: $ocean-blue-opacity !important;
+    }
+  }
+}
+
 .blog-post, .blog-agent {
   .author {
     display: flex;
