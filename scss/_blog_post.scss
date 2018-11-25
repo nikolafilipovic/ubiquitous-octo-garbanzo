@@ -5,6 +5,43 @@
   }
 }
 
+.blog-post, .blog-agent {
+  .author {
+    display: flex;
+    align-items: center;
+    .author-img {
+      flex: 0 1 100px;
+      @include respond-to('desktop') {
+        flex: 0 1 60px;
+      }
+      img {
+        border-radius: 50%;
+      }
+    }
+    
+    .about-author {
+      margin-left: 1.5em;
+      font-weight: 400;
+      h2 {
+        font-size: 1.3rem;
+        padding-bottom: 5px;
+        font-weight: 400;
+        @include respond-to('desktop') {
+          font-size: 1.1rem;
+        }
+      }
+
+      p {
+        font-size: 1.15rem;
+        color: $main-color;
+        @include respond-to('desktop') {
+          font-size: .9rem;
+        }
+      }
+    }
+  }
+}
+
 .blog-post {
   background: white;
 
@@ -220,40 +257,7 @@
 
   .post-comment {
     margin-top: 2em;
-    .author {
-      display: flex;
-      align-items: center;
-      .author-img {
-        flex: 0 1 100px;
-        @include respond-to('desktop') {
-          flex: 0 1 60px;
-        }
-        img {
-          border-radius: 50%;
-        }
-      }
-      
-      .about-author {
-        margin-left: 1.5em;
-        font-weight: 400;
-        h2 {
-          font-size: 1.3rem;
-          padding-bottom: 5px;
-          font-weight: 400;
-          @include respond-to('desktop') {
-            font-size: 1.1rem;
-          }
-        }
-
-        p {
-          font-size: 1.15rem;
-          color: $main-color;
-          @include respond-to('desktop') {
-            font-size: .9rem;
-          }
-        }
-      }
-    }
+   
     &-form {
       .offer-link {
         text-transform: unset !important;
