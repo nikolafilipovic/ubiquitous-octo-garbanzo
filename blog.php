@@ -296,6 +296,11 @@ Template Name: Blog
             <p>25 Oct 2018</p>
           </div>
 
+          <div class="offer-link">
+            <a href="#">Get updates</a>
+            <i class="far fa-arrow-right fasarrow"></i>
+          </div>
+
 
         </div> <!-- popular posts -->
 

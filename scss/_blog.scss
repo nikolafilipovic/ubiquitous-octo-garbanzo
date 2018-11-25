@@ -4,6 +4,31 @@
   background-image: url(/wp-content/themes/theoffercompany/images/house.jpeg);
 }
 
+.offer-link {
+  font-size: .95rem;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 12px;
+  text-transform: unset;
+  align-self: center;
+  opacity: 1;
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.7;
+  }
+
+  @include respond-to('tablet') {
+    width: 60%;
+  }
+
+  @include respond-to('desktop') {
+    width: 100%;
+  }
+}
+
 .blog-header {
   min-height: 350px;
   padding-top: 0px !important;
@@ -314,10 +339,17 @@
 }
 
 .blog-aside {
+  .offer-link {
+    i {
+      padding-left: .5em;
+    }
+  }
   @include respond-to('desktop') {
     margin-left: 3em;
   }
   .popular-posts {
+    display: flex;
+    flex-direction: column;
     h2 {
       margin: .8em 0;
       @include respond-to('desktop') {
