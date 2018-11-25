@@ -33,10 +33,13 @@
 
   .link-container {
     background: white;
-    padding: 20px;
     @include respond-to('desktop') {
       background: transparent;
-      padding: 15px 20px;
+    }
+
+    a {
+      text-align: left !important;
+      box-shadow: unset !important;
     }
   }
   
