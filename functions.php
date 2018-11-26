@@ -62,5 +62,6 @@ require_once 'class-wp-bootstrap-navwalker.php';
  *  Dynamic templating for blog page
  */
 function render_view($args, $name) {
-    include_once "blog.php";
+    extract($args);
+    include_once "$name.php";
 }

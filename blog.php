@@ -77,6 +77,13 @@ Template Name: Blog
     <div class="row no-gutters">
       <div class="all-posts col-12 col-md-8">
         <h2>All Posts</h2>
+        <?php
+          $half_index = (int) ceil(count($posts) / 2);
+          $first_half = array_slice($posts, $half_index);
+        ?>
+
+        <?php foreach($first_half as $post): ?>
+        <?= var_dump($post); ?>
         <!-- one post -->
         <div class="one-post row no-gutters">
           <div class="col-12 col-md-5">
@@ -85,7 +92,6 @@ Template Name: Blog
               <i class="fas fa-play"></i>
             </div>
           </div>
-
           <div class="col-12 col-md-7 right-side">
             <small class="small-imp">Upgrading home</small>
             <a href="#">
@@ -99,76 +105,8 @@ Template Name: Blog
           </div>
 
         </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/bloomhouse.jpg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              This Remarkable Home Is Anything but Square
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/lulamaekitchen.jpg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              A Farmhouse-Style Prefab That'll Make You Want to Ditch the Big City
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
+        <?php endforeach; ?>
+        <!-- have 4 here -->
         <div class="row row-blue-adv">
           <div class="blue-adv col-12 col-md-11">
             <h2>Be the first to know!</h2>
@@ -180,75 +118,8 @@ Template Name: Blog
           </div>
         </div>
 
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/bloomhouse.jpg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              This Remarkable Home Is Anything but Square
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/lulamaekitchen.jpg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              A Farmhouse-Style Prefab That'll Make You Want to Ditch the Big City
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
+        <!-- 3 here -->
+ 
         <hr class="d-block d-md-none line">
         <div class="row pagination blog-pag">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
