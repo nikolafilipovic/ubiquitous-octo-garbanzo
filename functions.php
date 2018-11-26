@@ -57,3 +57,10 @@ add_action( 'wp_enqueue_scripts', 'load_static' );
  * Adding custom CSS classes to <li> elements on the menu...
  */
 require_once 'class-wp-bootstrap-navwalker.php';
+
+/*
+ *  Dynamic templating for blog page
+ */
+function render_view($args, $name) {
+    include_once "blog.php";
+}
