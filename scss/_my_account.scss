@@ -50,6 +50,9 @@
     .content {
         padding: 3rem 0rem !important;
     }
+    .row.section {
+        margin: 1rem 0;
+    }
     h1.segment-title {
         color:  #1e232c;
         font-size: 1.499rem;
@@ -61,6 +64,35 @@
         @include respond-to('s-desktop') {
             text-align: left;
             padding-left: 15px;
+        }
+        &.collapsable {
+            margin-top: 2rem;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-align: left;
+            padding-left: 15px;
+            &:hover,
+            &:active,
+            &:focus {
+                cursor: pointer;
+            }
+            @include respond-to('s-desktop') {
+                margin-top: unset;
+                padding-left: unset;
+                font-size: 1.499rem;
+                margin-bottom: 1.5rem;
+                &:hover,
+                &:active,
+                &:focus {
+                    cursor: unset;
+                }
+            }
+        }
+        &.center {
+            @include respond-to('s-desktop') {
+                text-align: center;
+                margin: 1.5rem 0rem;
+            }
         }
     }
     .profile-photo {
@@ -102,8 +134,12 @@
     }
     .profile {
         padding: 0px 15px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #d6dce6;
         @include respond-to('s-desktop') {
             padding: 0px;
+            padding-bottom: 15px;
+            border: none;
         }
         h1 {
             color:  #00acee;
@@ -149,6 +185,405 @@
             }
             @include respond-to('s-desktop') {
                 max-width: 75%;
+            }
+        }
+    }
+    .agent-info {
+        padding: 0px 15px;
+        @include respond-to('s-desktop') {
+            padding-bottom: 15px;
+        }
+        [type="radio"] {
+            margin-bottom: 1rem;
+            & + label {
+                color:  #1e232c;
+                font-size: 1.063rem;
+                margin-bottom: 1rem;
+                padding-left: 22px;
+                margin-right: 0;
+            }
+            &:checked + label {
+                font-weight: 500;
+                &:before {
+                    width: 19px;
+                    height: 19px;
+                    margin-top: 1px;
+                    border: 2px solid #09a9e8;
+                }
+                &:after {
+                    width: 13px;
+                    height: 13px;
+                    background: #09a9e8;
+                    position: absolute;
+                    top: 4px;
+                    left: 3px;
+                }
+            }
+            &:not(:checked) + label {
+                font-weight: 400;
+                &:before {
+                    width: 19px;
+                    height: 19px;
+                    margin-top: 1px;
+                    border: 2px solid #09a9e8;
+                }
+            }
+        }
+    }
+    .myaccount-contact-agent {
+        position: relative;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
+        padding: 1.2rem 1.2rem;
+        margin-bottom: 3em;
+        @include respond-to('s-desktop') {
+            flex-direction: column;
+            margin-top: 1rem;
+        }
+        @include respond-to('m-desktop') {
+            flex-direction: row;
+            max-width: 460px;
+        }
+        .contact-agent-pic {
+            flex: 0 1 130px;
+            @include respond-to('s-desktop') {
+                flex: 0 0 130px;
+                max-width: 130px;
+            }
+            .agent-pic {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+        .contact-details {
+            margin-left: 20px;
+            @include respond-to('tablet') {
+                margin-left: 40px;
+            }
+            @include respond-to('tablet') {
+                margin-left: 20px;
+            }
+            h2 {
+                font-size: 19px !important;
+                font-family: $publico-font-family;
+                padding-bottom: 0px !important;
+
+                @include respond-to('tablet') {
+                    font-size: 24px !important;
+                    padding-bottom: 5px !important;
+                }
+            }
+            .fa-star {
+                font-size: 14px;
+                color: $main-color;
+                @include respond-to('tablet') {
+                    font-size: 1rem;
+                }
+            }
+            p:last-of-type {
+                padding-top: 0 !important;
+            }
+            p {
+                padding: .1em 0 !important;
+                font-size: 14px;
+                font-weight: 400;
+                word-wrap: break-word;
+    
+                @include respond-to('tablet') {
+                    font-size: 1.1rem;
+                    padding: .3em 0 !important;
+                }
+            }
+            .call-chat-write {
+                position: absolute;
+                bottom: -16px;
+                @include respond-to('m-desktop') {
+                    bottom: -19px;
+                }
+            }
+        }
+        .agent-phone {
+            color: white;
+            background: $main-color;
+            padding: .6rem;
+            border-radius: 50%;
+            font-size: 15px;
+            margin-right: 4px;
+            transition: all 0.3s ease;
+            @include respond-to('m-desktop') {
+                padding: .8rem;
+                font-size: 18px;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 0.7;
+                top: -4px;
+                cursor: pointer;
+            }
+            &-rotate {
+              transform: rotate(90deg);
+            }
+        }
+    }
+    h6 {
+        color:  #00acee;
+        font-size: 1rem;
+        font-weight: 400;
+        i {
+            float: right;
+        }
+    }
+    .contact-agent-form {
+        text-align: center;
+        h5 {
+            color:  #00acee;
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 1rem;
+        }
+    }
+    .offer-link {
+        margin: 0;
+        color: #fff;
+        transition: all 0.3s ease;
+        &:hover,
+        &:active,
+        &:focus {
+            cursor: pointer;
+        }
+    }
+    .home-offers {
+        text-align: center;
+        padding: 0px 15px;
+        h3 {
+            color:  #00acee;
+            font-size: 1.118rem;
+            font-weight: 400;
+        }
+        h4 {
+            color:  #78849b;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .offer-link {
+            @include respond-to('s-desktop') {
+                max-width: 350px;
+            }
+        }
+    }
+    .home-offers-items {
+        padding: 0px 15px;
+        @include respond-to('s-desktop') {
+            margin-top: 1rem;
+            padding: 0px;
+        }
+        .card {
+            border: none;
+            box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
+            margin-bottom: 1rem;
+            .card-header {
+                color:  #00acee;
+                font-size: 1.118rem;
+                font-weight: 500;
+                border-bottom: 1px solid #edf0f3;
+                background: #fff;
+                padding: 1rem 1.25rem;
+                @include respond-to('s-desktop') {
+                    font-size: 1.194rem;
+                }
+            }
+            .card-body {
+                p {
+                    color:  #1e232c;
+                    font-size: 0.941rem;
+                    font-weight: 400;
+                    @include respond-to('s-desktop') {
+                        font-size: 1.005rem;
+                    }
+                }
+                h6 {
+                    color:  #1e232c;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    @include respond-to('s-desktop') {
+                        font-size: 1.067rem;
+                    }
+                }
+            }
+            .card-footer {
+                border-top: 1px solid #edf0f3;
+                background: #fff;
+                padding: 1rem 1.25rem;
+                p {
+                    color:  #1e232c;
+                    font-size: 0.941rem;
+                    font-weight: 400;
+                    @include respond-to('s-desktop') {
+                        font-size: 1.005rem;
+                    }
+                }
+                h6 {
+                    color:  #1e232c;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    @include respond-to('s-desktop') {
+                        font-size: 1.067rem;
+                        line-height: 1.523;
+                    }
+                }
+                .quick-contact {
+                    margin-top: 1rem;
+                    .agent-phone,
+                    .agent-text {
+                      &-text {
+                        display: inline-block !important;
+                        font-size: 1.124rem;
+                        font-weight: 500;
+                        color:  #1e232c;
+                        vertical-align: middle;
+                        padding-top: 5px;
+                      }
+                    }
+                    .agent-phone {
+                      transform: rotate(90deg);
+                      @include respond-to('s-desktop') {
+                        margin: 0 1.5em 0 .7em;
+                      }
+                    }
+                    .agent-text {
+                        margin-left: 1.4em;
+                        color: white;
+                        background: $main-color;
+                        padding: .8em;
+                        border-radius: 50%;
+                        font-size: 16px;
+                    
+                        &-text {
+                          font-size: 1rem;
+                          margin-left: 0.6em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sales-calculator {
+        .mobile-estimate {
+            text-align: center;
+            p {
+                color: #707b8f;
+                font-size: 0.95rem;
+                font-weight: 400;
+                padding-bottom: 8px;
+            }
+            h6 {
+                color: #181e28;
+                font-size: 1.25rem;
+                font-weight: 400;
+            }
+            i {
+                font-size: 1.5rem;
+                color: #d4dae4;
+                padding-bottom: 8px;
+            }
+            h5 {
+                color: #00abea;
+                font-size: 1.45rem;
+                font-weight: 400;
+            }
+        }
+        .desktop-estimate {
+            max-width: 560px;
+            width: 100%;
+            margin: 0 auto;
+            @include respond-to('s-desktop') {
+                padding-bottom: 1rem;
+            }
+            .left {
+                background: #0dbdfb;
+                padding: 20px 0px;
+                text-align: center;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                &::before {
+                    content: "\A";
+                    border-style: solid;
+                    border-width: 55px 0px 55px 55px;
+                    border-color: #00abea transparent transparent transparent;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                &::after {
+                    content: "\A";
+                    border-style: solid;
+                    border-width: 55px 0px 55px 55px;
+                    border-color: transparent transparent #00abea transparent;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+                p {
+                    color:  #c4efff;
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    line-height: 1;
+                    padding-bottom: 0;
+                }
+                h6 {
+                    color:  #ffffff;
+                    font-size: 1.375rem;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    padding-bottom: 0;
+                }
+            }
+            .right {
+                background: #00abea;
+                padding: 20px 0px;
+                text-align: center;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                p {
+                    color:  #c4efff;
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                    line-height: 1;
+                    padding-bottom: 0;
+                }
+                h6 {
+                    color:  #ffffff;
+                    font-size: 1.375rem;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    padding-bottom: 0;
+                }
+            }
+        }
+        .fields {
+            label {
+                color: #757e92;
+            }
+            .offer-link {
+                max-width: 320px;
+                margin: 0 auto;
+                margin-top: 1rem;
+            }
+            p {
+                color: #757e92;
+                font-size: 0.7rem;
+                font-weight: 400;
+                max-width: 320px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 15px;
+                text-align: center;
             }
         }
     }
