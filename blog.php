@@ -79,12 +79,11 @@ Template Name: Blog
         <h2>All Posts</h2>
         <?php
           $half_index = (int) ceil(count($posts) / 2);
-          $first_half = array_slice($posts, $half_index);
+          $first_half = array_slice($posts, 0, $half_index);
+          $second_half = array_slice($posts, $half_index);
         ?>
 
         <?php foreach($first_half as $post): ?>
-        <?= var_dump($post); ?>
-        <!-- one post -->
         <div class="one-post row no-gutters">
           <div class="col-12 col-md-5">
             <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);"></div>
@@ -93,20 +92,18 @@ Template Name: Blog
             </div>
           </div>
           <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
+            <small class="small-imp"><?= get_the_category($post->id)[0]->name; ?></small>
             <a href="#">
-              Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
+              <?= $post->post_title ?>
             </a>
             <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
+              <img src="<?= get_avatar_url($post->post_author) ?>" alt="review" />
+              <p><?= get_author_name($post->post_author) ?></p>
+              <small>on <?= format_blog_date($post->post_date, "d M Y") ?><!-- 25 Oct 2018 --></small>
             </div>
           </div>
-
-        </div> <!-- one post -->
+        </div>
         <?php endforeach; ?>
-        <!-- have 4 here -->
         <div class="row row-blue-adv">
           <div class="blue-adv col-12 col-md-11">
             <h2>Be the first to know!</h2>
@@ -118,8 +115,29 @@ Template Name: Blog
           </div>
         </div>
 
-        <!-- 3 here -->
- 
+        <?php foreach($second_half as $post): ?>
+        <div class="one-post row no-gutters">
+          <div class="col-12 col-md-5">
+            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);"></div>
+            <div class="play round-blue">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="col-12 col-md-7 right-side">
+            <small class="small-imp"><?= get_the_category($post->id)[0]->name; ?></small>
+            <a href="#">
+              <?= $post->post_title ?>
+            </a>
+            <div class="review-by">
+              <img src="<?= get_avatar_url($post->post_author) ?>" alt="review" />
+              <p><?= get_author_name($post->post_author) ?></p>
+              <small>on <?= format_blog_date($post->post_date, "d M Y") ?><!-- 25 Oct 2018 --></small>
+            </div>
+          </div>
+        </div>
+        <?php endforeach; ?>
+
+
         <hr class="d-block d-md-none line">
         <div class="row pagination blog-pag">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
