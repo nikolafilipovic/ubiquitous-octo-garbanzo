@@ -84,7 +84,7 @@ Template Name: Blog Post
     <div class="row">
       <article class="the-post col-12 col-md-8">
         <div class="row no-gutters">
-          <div class="col-12 col-lg-11">
+          <div class="col-12 col-lg-10">
             <h1 class="blog-post__title">
               Prep for `Prost!` Season 9 Bavarian Style Homes
               to Inspire Oktoberfest
