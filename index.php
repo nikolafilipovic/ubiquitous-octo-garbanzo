@@ -6,7 +6,10 @@
       'posts_per_page' => $default_posts_per_page
     )); 
 
-  render_view([
-    "posts" => $wpb_all_query->posts,
-  ], "blog");
+
+    // echo "<H1>Max page: " . $wpb_all_query->max_num_pages;
+    
+    render_view([
+      "posts" => $wpb_all_query->posts,
+    ], "blog");
 ?>

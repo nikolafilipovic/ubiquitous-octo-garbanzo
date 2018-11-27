@@ -131,7 +131,7 @@ Template Name: Blog
             <div class="review-by">
               <img src="<?= get_avatar_url($post->post_author) ?>" alt="review" />
               <p><?= get_author_name($post->post_author) ?></p>
-              <small>on <?= format_blog_date($post->post_date, "d M Y") ?><!-- 25 Oct 2018 --></small>
+              <small>on <?= format_blog_date($post->post_date, "d M Y") ?></small>
             </div>
           </div>
         </div>
