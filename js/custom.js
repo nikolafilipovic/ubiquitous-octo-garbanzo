@@ -5,24 +5,55 @@
 var taskAllowance = 1;
 
 /* Move the Page Container and expand the Menu */
-function slideOutMenu(option) {
+function slideOutMenu(option, whichOpener) {
     if (option === "open") {
         jQuery("#page-container").addClass("move");
-        jQuery("#menu-opener").addClass("hide");
+        if(whichOpener == "#menu-opener") {
+            jQuery("#menu-opener").addClass("hide");
+            jQuery("#slide-out-nav").addClass("open");
+            
+        } else if (whichOpener == "#menu-blog-opener") {
+            console.log("blog");
+            //jQuery("#menu-blog-opener").addClass("hide");
+            jQuery("#slide-out-nav-blog").addClass("open");
+        }
         jQuery("#overlay").addClass("open");
-        jQuery("#slide-out-nav").addClass("open");
         jQuery("div.logo").addClass("slide");
         jQuery("body").addClass("noscroll");
+        
     } else if (option === "close") {
         jQuery("#page-container").removeClass("move");
-        jQuery("#menu-opener").removeClass("hide");
+        if(whichOpener == "#menu-opener") {
+            jQuery("#menu-opener").removeClass("hide");
+            jQuery("#slide-out-nav").removeClass("open");
+        } else if (whichOpener == "#menu-blog-opener") {
+            //jQuery("#menu-blog-opener").removeClass("hide");
+            jQuery("#slide-out-nav-blog").removeClass("open");
+        }
         jQuery("#overlay").removeClass("open");
-        jQuery("#slide-out-nav").removeClass("open");
         jQuery("div.logo").removeClass("slide");
         jQuery("body").removeClass("noscroll");
     } else {
         console.log("Initiated event that doesn't have a required option.");
     }
+
+    // if (option === "open") {
+    //     jQuery("#page-container").addClass("move");
+    //     jQuery("#menu-opener").addClass("hide");
+    //     jQuery("#overlay").addClass("open");
+    //     jQuery("#slide-out-nav").addClass("open");
+    //     jQuery("div.logo").addClass("slide");
+    //     jQuery("body").addClass("noscroll");
+    // } else if (option === "close") {
+    //     jQuery("#page-container").removeClass("move");
+    //     jQuery("#menu-opener").removeClass("hide");
+    //     jQuery("#overlay").removeClass("open");
+    //     jQuery("#slide-out-nav").removeClass("open");
+    //     jQuery("div.logo").removeClass("slide");
+    //     jQuery("body").removeClass("noscroll");
+    // } else {
+    //     console.log("Initiated event that doesn't have a required option.");
+    // }
 }
 /* Open Filter */
 function openFilter() {
@@ -192,15 +223,22 @@ jQuery(document).ready(function () {
         jQuery('.blog-search').toggle();
     });
 
+    jQuery("#menu-blog-opener").click(function () {
+        slideOutMenu("open", "#menu-blog-opener");
+    });
+    jQuery(".close-blog-menu").click(function () {
+        slideOutMenu("close", "#menu-blog-opener");
+    });
+
     
     if (typeof multistep !== 'undefined') {
         multistep.init();
     }
     jQuery("#menu-opener").click(function () {
-        slideOutMenu("open");
+        slideOutMenu("open", "#menu-opener");
     });
     jQuery(".close-menu").click(function () {
-        slideOutMenu("close");
+        slideOutMenu("close", "#menu-opener");
     });
     jQuery(function () {
         jQuery('[data-toggle="tooltip"]').tooltip();
