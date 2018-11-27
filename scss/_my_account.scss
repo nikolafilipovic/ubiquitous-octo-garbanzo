@@ -53,6 +53,16 @@
     .row.section {
         margin: 1rem 0;
     }
+    .separator {
+        @include respond-to('s-desktop') {
+            margin: 3rem 0;
+            height: 1px;
+            width: 100%;
+            background: #d6dce6;
+            background: #ffffff;
+            background: linear-gradient(to right, #ffffff 1%,#d6dce6 15%,#d6dce6 85%,#ffffff 100%);
+        }
+    }
     h1.segment-title {
         color:  #1e232c;
         font-size: 1.499rem;
@@ -78,7 +88,6 @@
             }
             @include respond-to('s-desktop') {
                 margin-top: unset;
-                padding-left: unset;
                 font-size: 1.499rem;
                 margin-bottom: 1.5rem;
                 &:hover,
@@ -92,6 +101,7 @@
             @include respond-to('s-desktop') {
                 text-align: center;
                 margin: 1.5rem 0rem;
+                padding-left: unset;
             }
         }
     }
@@ -217,6 +227,7 @@
                     position: absolute;
                     top: 4px;
                     left: 3px;
+                    opacity: 1;
                 }
             }
             &:not(:checked) + label {
@@ -226,6 +237,10 @@
                     height: 19px;
                     margin-top: 1px;
                     border: 2px solid #09a9e8;
+                }
+                &:after {
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
                 }
             }
         }
@@ -335,6 +350,18 @@
         color:  #00acee;
         font-size: 1rem;
         font-weight: 400;
+        &.sub-title {
+            color:  #808ea6;
+            font-size: 1rem;
+            font-weight: 400;
+            padding-left: 15px;
+            @include respond-to('m-desktop') {
+                padding-left: 0px;
+                text-align: center;
+                margin-top: -27px;
+            }
+            margin-top: -24px;
+        }
         i {
             float: right;
         }
@@ -352,6 +379,11 @@
         margin: 0;
         color: #fff;
         transition: all 0.3s ease;
+        text-transform: unset;
+        text-align: center;
+        font-weight: 400;
+        font-size: 1rem;
+        max-width: 100%;
         &:hover,
         &:active,
         &:focus {
@@ -387,6 +419,7 @@
             border: none;
             box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
             margin-bottom: 1rem;
+            border-radius: 10px;
             .card-header {
                 color:  #00acee;
                 font-size: 1.118rem;
@@ -394,6 +427,8 @@
                 border-bottom: 1px solid #edf0f3;
                 background: #fff;
                 padding: 1rem 1.25rem;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
                 @include respond-to('s-desktop') {
                     font-size: 1.194rem;
                 }
@@ -420,6 +455,8 @@
                 border-top: 1px solid #edf0f3;
                 background: #fff;
                 padding: 1rem 1.25rem;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
                 p {
                     color:  #1e232c;
                     font-size: 0.941rem;
@@ -574,6 +611,9 @@
                 max-width: 320px;
                 margin: 0 auto;
                 margin-top: 1rem;
+                text-transform: unset;
+                text-align: center;
+                font-weight: 400;
             }
             p {
                 color: #757e92;
@@ -584,6 +624,441 @@
                 margin: 0 auto;
                 margin-top: 15px;
                 text-align: center;
+            }
+        }
+    }
+    .saved-homes {
+        text-align: center;
+        h2 {
+            color:  #1e232c;
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 1rem 0;
+            text-transform: uppercase;
+            @include respond-to('s-desktop') {
+                color:  #1e232c;
+                font-size: 1.124rem;
+                font-weight: 500;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+        .offer-link {
+            max-width: 320px;
+            padding: 12px;
+            font-weight: 400;
+        }
+        .saved-slider {
+            margin-top: 2rem;
+            .shadow-saved {
+                @include respond-to('s-desktop') {
+                    box-shadow: 0px 7px 47px 3.4px rgba(53, 94, 140, 0.18);
+                    border-radius: 5px;
+                }
+            }
+            .property-item {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 5px;
+                margin-left: -15px;
+                margin-right: -15px;
+                @include respond-to('s-desktop') {
+                    margin-left: unset;
+                    margin-right: unset;  
+                    border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                }
+                cursor: pointer;
+                .time-on-market {
+                    font-weight: 400;
+                    color: #ffffff;
+                    font-size: 0.813rem;
+                    line-height: 26px;
+                    text-align: left;
+                    text-shadow: 0px 0px 0px rgba(29, 38, 63, 0.41);
+                    text-transform: lowercase;
+                    display: block;
+                    z-index: 0;
+                    position: relative;
+                    i {
+                        margin-right: 7px;
+                        font-size: 0.9rem;
+                        vertical-align: middle;
+                        display: inline-block !important;
+                        position: relative;
+                        transition: all 0.3s ease;
+                    }
+                }            
+                .sale-type {
+                    color: #ffffff;
+                    font-size: 0.875rem;
+                    text-transform: uppercase;
+                    text-align: left;
+                    text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
+                    margin-top: 22%;
+                    display:  block;
+                    z-index: 0;
+                    position: relative;
+                    i.red-dot {
+                        width: 10px;
+                        height: 10px;
+                        background: red;
+                        display: inline-block;
+                        border: 2px solid #fff;
+                        border-radius: 50%;
+                        margin-right: 4px;
+                    }
+                }
+                .last-call {
+                    text-align: left;
+                    margin-top: 22%;
+                    display:  block;
+                    z-index: 0;
+                    position: relative;
+                    .badge-success {
+                        color: #ffffff;
+                        font-family: $graphik-font-family;
+                        font-weight: 500;
+                        font-size: 0.875rem;
+                        text-transform: uppercase;
+                        background: #7cd62c;
+                        i {
+                            font-size: 12px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .property-price {
+                    font-family: $graphik-font-family;
+                    color: #ffffff;
+                    font-size: 1.75rem;
+                    font-weight: 300;
+                    text-align: left;
+                    text-shadow: 0px 3px 5.7px rgba(29, 38, 63, 0.48);
+                    text-transform: uppercase;
+                    display: inline-block;
+                    z-index: 0;
+                    position: relative;
+                    padding-bottom: 0;
+                }
+                .property-info {
+                    display: inline-block;
+                    margin-top: 5px;
+                    .beds,
+                    .baths,
+                    .sqft {
+                        font-family: $graphik-font-family; font-weight: 300;
+                        color: #ffffff;
+                        font-size: 0.938rem;
+                        font-weight: 400;
+                        text-align: left;
+                        text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
+                        z-index: 0;
+                        position: relative;
+                        vertical-align: text-bottom;
+                    }
+                    i {
+                        color: #fff;
+                        font-size: 3px;
+                        vertical-align: super;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        z-index: 0;
+                        position: relative;
+                    }
+                }
+                .property-address {
+                    color: #ffffff;
+                    font-size: 0.813rem;
+                    font-weight: 400;
+                    text-align: left;
+                    text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
+                    z-index: 0;
+                    position: relative;
+                    display: block;
+                }
+                .favourite {
+                    float: right;
+                    margin-top: -17px;
+                    display: block !important;
+                    transition: all 0.3s ease;
+                    i {
+                        font-size: 26px;
+                        color: #fff;
+                        transition: all 0.3s ease;
+                        display: block !important;
+                        position: relative;
+                        &:hover,
+                        &:active {
+                            color: #00aced;
+                        }
+                        &:focus,
+                        &.active {
+                            color: #00aced;
+                            -webkit-text-stroke-width: 2px;
+                            -webkit-text-stroke-color: #fff;
+                        }
+                    }
+                }
+            }
+            .property-links {
+                margin-left: -15px;
+                margin-right: -15px;
+                @include respond-to('s-desktop') {
+                    margin-left: unset;
+                    margin-right: unset;  
+                    padding: 0 15px;
+                }
+                .offer-link:first-child {
+                    width: 48%;
+                    font-size: 13px;
+                    margin: 1rem 0;
+                    margin-right: 2.5%;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    @include respond-to('s-desktop') {
+                        width: 100%;
+                        margin-right: 0;
+                        font-size: 1rem;
+                    }
+                    i {
+                        padding: 0px 9px 0 0;
+                    }
+                }
+                .offer-link:last-child {
+                    font-weight: 400;
+                    width: 48%;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    @include respond-to('s-desktop') {
+                        width: 100%;
+                        margin-right: 0;
+                        margin-bottom: 1rem;
+                        font-size: 1rem;
+                    }
+                    i {
+                        padding: 0px 9px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    .pre-approval {
+        width: 100%;
+        display: block;
+        padding: 1rem 15px;
+        border-top: 1px solid #d6dce6;
+        text-align: center;
+        @include respond-to('s-desktop') {
+            border-top: none;
+        }
+        .offer-link {
+            width: 100%;
+            font-size: 13px;
+            padding: 13px;
+            text-transform: unset;
+            font-weight: 400;
+            @include respond-to('s-desktop') {
+                max-width: 320px;
+                margin-top: 3rem;
+                font-size: 1rem;
+            }
+            i {
+                padding: 0px 9px 0 0;
+            }
+        }
+    }
+    .saved-searches {
+        @include respond-to('s-desktop') {
+            padding: 0 15px;
+        }
+        p {
+            color:  #1e232c;
+            font-size: 0.941rem;
+            font-weight: 400;
+            padding-bottom: 0;
+        }
+        h6 {
+            color:  #00acee;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        [type="radio"] {
+            margin-bottom: 1rem;
+            & + label {
+                color:  #1e232c;
+                font-size: 1.063rem;
+                margin-bottom: 1rem;
+                padding-left: 22px;
+                margin-right: 1rem;
+            }
+            &:checked + label {
+                font-weight: 500;
+                &:before {
+                    width: 19px;
+                    height: 19px;
+                    margin-top: 1px;
+                    border: 2px solid #09a9e8;
+                }
+                &:after {
+                    width: 13px;
+                    height: 13px;
+                    background: #09a9e8;
+                    position: absolute;
+                    top: 4px;
+                    left: 3px;
+                    opacity: 1;
+                }
+            }
+            &:not(:checked) + label {
+                font-weight: 400;
+                &:before {
+                    width: 19px;
+                    height: 19px;
+                    margin-top: 1px;
+                    border: 2px solid #09a9e8;
+                }
+                &:after {
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+            }
+        }
+        .delete {
+            color:  #a4b1c4;
+            font-size: 1rem;
+            font-weight: 400;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            i {
+                font-size: 1.5rem;
+                vertical-align: middle;
+                margin-right: 0.2rem;
+            }
+        }
+    }
+    .saved-vr-tours {
+        @include respond-to('s-desktop') {
+            padding: 0 15px;
+        }
+        [type="radio"] {
+            margin-bottom: 1rem;
+            & + label {
+                color:  #1e232c;
+                font-size: 1.063rem;
+                margin-bottom: 0.5rem;
+                padding-left: 22px;
+                margin-right: 1rem;
+            }
+            &:checked + label {
+                font-weight: 500;
+                &:before {
+                    width: 19px;
+                    height: 19px;
+                    margin-top: 1px;
+                    border: 2px solid #09a9e8;
+                }
+                &:after {
+                    width: 13px;
+                    height: 13px;
+                    background: #09a9e8;
+                    position: absolute;
+                    top: 4px;
+                    left: 3px;
+                    opacity: 1;
+                }
+            }
+            &:not(:checked) + label {
+                font-weight: 400;
+                &:before {
+                    width: 19px;
+                    height: 19px;
+                    margin-top: 1px;
+                    border: 2px solid #09a9e8;
+                }
+                &:after {
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+            }
+        }
+        .save {
+            color:  #00acee;
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+            margin: 0.5rem 0;
+            @include respond-to('s-desktop') {
+                text-align: left;
+                margin: 0;
+            }
+        }
+        .offer-link {
+            width: 100%;
+            font-size: 13px;
+            padding: 13px;
+            text-transform: unset;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            @include respond-to('s-desktop') {
+                max-width: 320px;
+                margin-top: 1rem;
+                font-size: 1rem;
+            }
+            i {
+                padding: 0px 9px 0 0;
+            }
+        }
+        .vr-house {
+            position: relative;
+            background-size: cover !important;
+            background-position: center center !important;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 1rem;
+            width: 160px;
+            height: 160px;
+            @include respond-to('s-desktop') {
+                height: 180px;
+                width: 180px;
+            }
+            i {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                padding-top: 9px;
+                text-align: center;
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                background: #00acee;
+                color: #fff;
+                opacity: 1;
+                transition: all 0.3s ease;
+                &:hover,
+                &:focus,
+                &:active {
+                    opacity: 0.7;
+                    cursor: pointer;
+                }
+            }
+        }
+        .vr-address {
+            color: #1e232c;
+            font-weight: 400;
+            font-size: 1rem;
+            text-align: left;
+            line-height: 1;
+            width: 160px;
+            margin: 0 auto;
+            margin-top: 0.5rem;
+            @include respond-to('s-desktop') {
+                width: unset;
+                margin: unset;
+                margin-top: 0.5rem;
             }
         }
     }

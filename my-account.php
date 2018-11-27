@@ -24,7 +24,6 @@ Template Name: My Account
                             <div class="hover-overlay"><p>Edit Photo</p></div>
                         </div>
                     </div>
-                    
                     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="profile">
                             <h1>Rafael Nadal</h1>
@@ -34,8 +33,41 @@ Template Name: My Account
                             <p>+45 424 2499 345</p>
                             <h6>Password</h6>
                             <p>&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;&middot;</p>
-                            <a href="#" class="btn btn-block">Edit <i class="far fa-arrow-right"></i></a>
+                            <a href="#" class="btn btn-block" data-toggle="modal" data-target="#edit-modal">Edit <i class="far fa-arrow-right"></i></a>
                         </div>
+                    </div>
+                    <div id="edit-modal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content width-override">
+                            <div class="modal-header">
+                                <h5 class="modal-title">
+                                    Edit information
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="close-link" aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body modal-body--center">
+                                <label class="lh-label">Email</label>
+                                <div class="form-group mt-1">
+                                    <input type="email" class="form-control" />
+                                </div>
+                                <label class="lh-label">Phone</label>
+                                <div class="form-group mt-1">
+                                    <input type="text" class="form-control"/>
+                                </div>
+                                <label class="lh-label">Password</label>
+                                <div class="form-group mt-1">
+                                    <input type="password" class="form-control"/>
+                                </div>
+                                <label class="lh-label">Confirm password</label>
+                                <div class="form-group mt-1">
+                                    <input type="password" class="form-control"/>
+                                </div>
+                                <a href="#" class="btn btn-block">Save <i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -278,6 +310,107 @@ Template Name: My Account
                             </div>
                             <p>All calculations and costs are estimates. Please consult a professional to determine your exact proceeds.</p>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row section">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h1 class="segment-title collapsable center toggle-collapse" data-target="#saved-homes">Saved homes <i class="far fa-chevron-up faup d-md-none d-inline-block"></i></h1>
+                <h6 class="sub-title">3 homes</h6>
+                <div class="saved-homes collapse show" id="saved-homes">
+                    <h2>Share easily with others</h2>
+                    <a class="offer-link">Invite people now</a>
+                    <div class="saved-slider">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="shadow-saved">
+                                        <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-1.png)">
+                                            <span class="time-on-market"><i class="fal fa-vr-cardboard"></i>5 days on the market</span>
+                                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
+                                            <span class="sale-type"><i class="red-dot"></i>House for Sale</span>
+                                            <h1 class="property-price">$425,000</h1>
+                                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
+                                            <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
+                                        </div>
+                                        <div class="property-links">
+                                            <a class="offer-link">Make an Offer <i class="far fa-arrow-right fasarrow"></i></a>
+                                            <a class="offer-link">Schedule Tour <i class="far fa-arrow-right fasarrow"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="shadow-saved">
+                                        <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-2.png)">
+                                            <span class="time-on-market"><i class="fal fa-vr-cardboard"></i>5 days on the market</span>
+                                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
+                                            <div class="last-call"><span class="badge badge-success"><i class="far fa-dot-circle"></i> Last Call</span></div>
+                                            <h1 class="property-price">$425,000</h1>
+                                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
+                                            <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
+                                        </div>
+                                        <div class="property-links">
+                                            <a class="offer-link">Make an Offer <i class="far fa-arrow-right fasarrow"></i></a>
+                                            <a class="offer-link">Schedule Tour <i class="far fa-arrow-right fasarrow"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <div class="shadow-saved">
+                                        <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-3.png)">
+                                            <span class="time-on-market"><i class="fal fa-vr-cardboard"></i>5 days on the market</span>
+                                            <a href="#" class="favourite"><i class=" far fa-heart"></i></a>
+                                            <span class="sale-type"><i class="red-dot"></i>House for Sale</span>
+                                            <h1 class="property-price">$425,000</h1>
+                                            <div class="property-info"><span class="beds">3 bds</span><i class="fas fa-circle"></i><span class="baths">2 ba</span><i class="fas fa-circle"></i><span class="sqft">1,2...</span></div>
+                                            <span class="property-address">4549 E Cheyenne Dr, Phoenix, AZ</span>    
+                                        </div>
+                                        <div class="property-links">
+                                            <a class="offer-link">Make an Offer <i class="far fa-arrow-right fasarrow"></i></a>
+                                            <a class="offer-link">Schedule Tour <i class="far fa-arrow-right fasarrow"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pre-approval">
+                <a class="offer-link">Get pre-approved <i class="far fa-arrow-right fasarrow"></i></a>
+            </div>
+        </div>
+        <div class="separator d-md-block d-none"></div>
+        <div class="row section">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <h1 class="segment-title collapsable toggle-collapse" data-target="#saved-searches">Saved searches <i class="far fa-chevron-up faup d-md-none d-inline-block"></i></h1>
+                <div class="saved-searches collapse show" id="saved-searches">
+                    <p>Phoenix, AZ</p>
+                    <h6>For Sale, Foreclosure, 3+ Bedrooms</h6>
+                    <input type="radio" name="radio-group2" id="Instant"><label for="Instant">Instant</label> <input type="radio" name="radio-group2" id="Daily" checked><label for="Daily">Daily</label><p class="delete"><i class="fal fa-times"></i> Delete</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <h1 class="segment-title collapsable toggle-collapse" data-target="#saved-vr-tours">Saved virtual tours <i class="far fa-chevron-up faup d-md-none d-inline-block"></i></h1>
+                <div class="saved-vr-tours collapse show" id="saved-vr-tours">
+                    <input type="radio" name="radio-group3" id="Multiple" checked><label for="Multiple">Add multiple tours to list</label> 
+                    <input type="radio" name="radio-group3" id="Individual"><label for="Individual">Watch individual tour when clicked</label>
+                    <p class="save">Save</p>
+                    <a class="offer-link">Start tour <i class="far fa-arrow-right fasarrow"></i></a>
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-6">
+                            <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-1.png)"><i class="fal fa-times"></i></div>
+                            <p class="vr-address">4549 E Cheyenne Dr, Proenix, AZ</p>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-6">
+                            <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-2.png)"><i class="fal fa-times"></i></div>
+                            <p class="vr-address">4549 E Cheyenne Dr, Proenix, AZ</p>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-6 col-6">
+                            <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-3.png)"><i class="fal fa-times"></i></div>
+                            <p class="vr-address">4549 E Cheyenne Dr, Proenix, AZ</p>
+                        </div>
                     </div>
                 </div>
             </div>
