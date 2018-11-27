@@ -65,3 +65,8 @@ function render_view($args, $name) {
     extract($args);
     include_once "$name.php";
 }
+
+function format_blog_date($date, $format) {
+    $d = date_create($date);
+    return date_format($d, $format);
+}
