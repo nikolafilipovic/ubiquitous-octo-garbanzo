@@ -92,8 +92,19 @@ Template Name: Blog
             </div>
           </div>
           <div class="col-12 col-md-7 right-side">
-            <small class="small-imp"><?= get_the_category($post->id)[0]->name; ?></small>
-            <a href="#">
+            <small class="small-imp">
+              <?php
+                $categories = get_the_category($post->ID);
+                $names = [];
+                foreach($categories as $category) {
+                  if($category->name !== 'popular') {
+                    $names[] = $category->name;
+                  }
+                }
+                echo implode(" ", $names);
+              ?>
+            </small>
+            <a href="<?= get_the_permalink($post->ID) ?>">
               <?= $post->post_title ?>
             </a>
             <div class="review-by">
@@ -124,7 +135,18 @@ Template Name: Blog
             </div>
           </div>
           <div class="col-12 col-md-7 right-side">
-            <small class="small-imp"><?= get_the_category($post->id)[0]->name; ?></small>
+            <small class="small-imp">
+            <?php
+                $categories = get_the_category($post->ID);
+                $names = [];
+                foreach($categories as $category) {
+                  if($category->name !== 'popular') {
+                    $names[] = $category->name;
+                  }
+                }
+                echo implode(" ", $names);
+              ?>
+            </small>
             <a href="#">
               <?= $post->post_title ?>
             </a>
@@ -142,15 +164,28 @@ Template Name: Blog
         <div class="row pagination blog-pag">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div>
+              <?php if($max_pages > 1): ?>
               <ul class="pagination blog-pag">
-                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <?php for($i=1; $i <= $max_pages; $i++): ?>
+                  <li class="page-item">
+                    <a class="page-link <?= $i == $current_page ? "active":"" ?>" href="<?= get_pagenum_link($i) ?>">
+                      <?= $i ?>
+                    </a>
+                  </li>
+                  <!-- <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                -->
+                <?php endfor; ?>
                 <li class="page-item"><a class="page-link" href="#">...</a></li>
-                <li class="page-item"><a class="page-link next" href="#">Next</a></li>
+                <li class="page-item">
+                  <?= styled_next_posts() ?>
+                </li>
+                <!-- <li class="page-item"><a class="page-link next" href="#">Next ()</a></li>  -->
               </ul>
+              <?php endif; ?>
             </div>
           </div>
         </div>

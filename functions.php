@@ -70,3 +70,13 @@ function format_blog_date($date, $format) {
     $d = date_create($date);
     return date_format($d, $format);
 }
+
+function styled_next_posts() {
+    try {
+        $xml = new SimpleXMLElement(get_next_posts_link('Next'));
+        $xml->addAttribute('class', 'page-link next');
+        return $xml->asXML();
+    } catch(Exception $e) {
+        return "";
+    }
+}
