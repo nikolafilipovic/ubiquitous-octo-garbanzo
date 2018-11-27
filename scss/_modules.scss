@@ -355,8 +355,8 @@
     top: 6px;
     left: 2px;
     border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
 }
 [type="radio"]:not(:checked) + label:after {
     opacity: 0;
