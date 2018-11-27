@@ -7,32 +7,39 @@ var taskAllowance = 1;
 /* Move the Page Container and expand the Menu */
 function slideOutMenu(option, whichOpener) {
     if (option === "open") {
-        jQuery("#page-container").addClass("move");
         if(whichOpener == "#menu-opener") {
+            jQuery("#page-container").addClass("move");
             jQuery("#menu-opener").addClass("hide");
             jQuery("#slide-out-nav").addClass("open");
             
         } else if (whichOpener == "#menu-blog-opener") {
-            console.log("blog");
-            //jQuery("#menu-blog-opener").addClass("hide");
-            jQuery("#slide-out-nav-blog").addClass("open");
+            jQuery("#page-container").addClass("move-r");
+             jQuery("#menu-blog-opener").addClass("hide");
+             jQuery("#slide-out-nav-blog").addClass("open");
         }
         jQuery("#overlay").addClass("open");
         jQuery("div.logo").addClass("slide");
         jQuery("body").addClass("noscroll");
+        jQuery(".header-right").addClass('hide');
         
     } else if (option === "close") {
         jQuery("#page-container").removeClass("move");
+        jQuery("#page-container").removeClass("move-r");
         if(whichOpener == "#menu-opener") {
             jQuery("#menu-opener").removeClass("hide");
             jQuery("#slide-out-nav").removeClass("open");
         } else if (whichOpener == "#menu-blog-opener") {
-            //jQuery("#menu-blog-opener").removeClass("hide");
+            jQuery("#menu-blog-opener").removeClass("hide");
             jQuery("#slide-out-nav-blog").removeClass("open");
+            jQuery("#page-container").addClass('animating-right');
+            setTimeout(function() {
+                jQuery("#page-container").removeClass('animating-right');
+            }, 800);
         }
         jQuery("#overlay").removeClass("open");
         jQuery("div.logo").removeClass("slide");
         jQuery("body").removeClass("noscroll");
+        jQuery(".header-right").removeClass('hide');
     } else {
         console.log("Initiated event that doesn't have a required option.");
     }

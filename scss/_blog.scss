@@ -59,6 +59,13 @@
         margin-left: .45em;
       }
     }
+
+    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.8s cubic-bezier(0.77, 0, 0.175, 1), box-shadow 0.3s ease;
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
+      box-shadow: none;
+    }
   }
 
   .blog-header-heading {

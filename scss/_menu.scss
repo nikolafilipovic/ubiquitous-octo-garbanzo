@@ -16,7 +16,7 @@
         text-align: center;
         margin-top: -30px;
         left: 0;
-        transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+        transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1), right 0.8s cubic-bezier(0.77, 0, 0.175, 1);
         #logo {
             float: unset;
             max-width: 80% !important;
@@ -83,7 +83,7 @@
         left: -320px;
         background-color: #fff;
         overflow-x: hidden;
-        transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+        transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1), right 0.8s cubic-bezier(0.77, 0, 0.175, 1);
         padding: 40px;
         &.open {
             left: 0;
@@ -286,7 +286,7 @@
         left: -320px;
         background-color: #fff;
         overflow-x: hidden;
-        transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+        transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1), right 0.8s cubic-bezier(0.77, 0, 0.175, 1);
         padding: 40px;
         &.open {
             left: 0;
@@ -381,7 +381,127 @@
         }
     }
 }
+
+
+
+$amt: 320px;
 /* Width of the Menu */
 #page-container.move {
-    left: 320px;
+    left: $amt;
+    right: unset !important;
+}
+#page-container {
+    right: 0;
+}
+#page-container.move-r {
+    left: unset !important;
+    right: $amt; 
+}
+
+#page-container.animating-right {
+    left: unset !important;
+}
+
+.slide-out-container-right {
+    height: 100%;
+    width: 320px;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: -320px !important;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: right 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    padding: 40px;
+    &.open {
+        right: 0 !important;
+    }
+    p.menu-title {
+        font-family: $graphik-font-family; font-weight: 500;
+        color: #cdd8e4;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        text-transform: uppercase;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .close-menu, .close-blog-menu {
+        float: right;
+        font-size: 32px;
+        color: #ced8e4;
+        vertical-align: middle;
+        margin-top: -6px;
+        &:hover,
+        &:active,
+        &:focus {
+            cursor: pointer;
+        }
+    }
+    .nav-login-btn {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        background-color: #00aced;
+        border-color: #00aced;
+        font-family: $graphik-font-family; font-weight: 400;
+        font-size: 14px;
+        text-align: left;
+        padding: 10px 14px 10px 14px;
+        i {
+            font-size: 13px;
+            margin-top: 4px;
+            float: right;
+        }
+    }
+    .navigation {
+        ul {
+            .menu-item {
+                margin-top: 4px;
+                border-bottom: 1px solid #eee;
+                a {
+                    font-family: $graphik-font-family; font-weight: 500;
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: #1e232c;
+                    padding-top: 10px;
+                    padding-bottom: 5px;
+                    display: block;
+                    opacity: 1;
+                    transition: opacity 0.3s ease;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        opacity: 0.7;
+                    }
+                }
+                ul.sub-menu {
+                    li {
+                        border-bottom: none;
+                        margin-top: 0;
+                        a {
+                            font-family: $graphik-font-family; font-weight: 400;
+                            font-size: 15px;
+                            color: #9ea6b8;
+                            font-weight: 400;
+                            padding-left: 5px;
+                            padding-top: 3px;
+                            padding-bottom: 3px;
+                        }
+                    }
+                }
+                &.current_page_item {
+                    a {
+                        color: $main-color;
+                        font-size: 19px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        display: block;
+                    }
+                }
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
 }

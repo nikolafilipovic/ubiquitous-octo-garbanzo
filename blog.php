@@ -66,7 +66,7 @@ Template Name: Blog
         </div>
       </div>
 
-      <div class="slide-out-container" id="slide-out-nav-blog">
+      <div class="slide-out-container-right" id="slide-out-nav-blog">
         <p class="menu-title">Blog Menu</p>
         <span class="close-blog-menu" id="menu-closer"><i class="fal fa-times"></i></span>
         <a href="" class="btn btn-primary btn-block nav-login-btn">My account or register <i class="fal fa-arrow-right"></i></a>
