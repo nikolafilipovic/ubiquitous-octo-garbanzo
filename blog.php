@@ -153,9 +153,6 @@ Template Name: Blog
           </div>
         </div>
 
-<<<<<<< HEAD
-        <!-- 3 here -->
-=======
         <?php foreach($second_half as $post): ?>
         <div class="one-post row no-gutters">
           <div class="col-12 col-md-5">
@@ -188,8 +185,6 @@ Template Name: Blog
           </div>
         </div>
         <?php endforeach; ?>
-
->>>>>>> 4c675e300a971682a4f0c18e903607e0b2442127
 
         <hr class="d-block d-md-none line">
         <div class="row pagination blog-pag">
