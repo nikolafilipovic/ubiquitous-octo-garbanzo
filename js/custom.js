@@ -225,9 +225,8 @@ function initmulti() {
 
 /* Initialize the triggers */
 jQuery(document).ready(function () {
-    jQuery('.blog-search').hide();
     jQuery('.search-click').on('click', function () {
-        jQuery('.blog-search').toggle();
+        jQuery('.blog-search').toggleClass('hide');
     });
 
     jQuery("#menu-blog-opener").click(function () {

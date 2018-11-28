@@ -4,7 +4,6 @@
   background-image: url(/wp-content/themes/theoffercompany/images/house.jpeg);
 }
 
-
 .blog-header {
   min-height: 350px;
   padding-top: 0px !important;
@@ -21,8 +20,47 @@
     min-height: 450px;
   }
 
+  .menu-opener {
+    margin-top: 12px;
+    width: 40px;
+    height: 40px;
+    background: url(/wp-content/themes/theoffercompany/images/menu_icon.png);
+    background-position: center center;
+    display: inline-block;
+    left: 5px;
+    position: relative;
+    z-index: 99;
+    opacity: 1;
+    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.8s cubic-bezier(0.77, 0, 0.175, 1), box-shadow 0.3s ease;
+    border-radius: 50%;
+    visibility: visible;
+  }
+
+  .hide {
+    opacity: 0 !important;
+    transition: ease-in .5s !important;
+  }
+
   .landing-search .search-field .input-group.buy::after {
     left: calc(100% - 50px) !important;
+  }
+
+  .enterzip {
+    opacity: 1;
+    transition: ease-out .5s;
+  }
+
+  .slide-out-container-right {
+    text-align: left !important;
+    padding: 40px 20px !important;
+    .navigation {
+      h1 {
+        color: $main-color;
+        font-size: 19px !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
   }
 
   .blog-search {
