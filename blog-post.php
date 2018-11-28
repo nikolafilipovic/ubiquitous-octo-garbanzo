@@ -9,20 +9,20 @@ Template Name: Blog Post
     <div class="container-fluid top-fixed">
       <div class="row no-gutters blog-header-menu">
         <div class="col-12 d-flex align-items-center">
-          <div id="menu-opener"></div>
+          <div class="menu-opener"></div>
           <div class="header-right">
             <a href="#">
               <i class="fas fa-search search-click"></i>
             </a>
 
-            <a href="#">
+            <a href="#" id="menu-blog-opener">
               <i class="fas fa-bars"></i>
             </a>
           </div>
         </div>
       </div>
 
-      <div class="enterzip blog-search">
+      <div class="enterzip blog-search hide">
         <div class="landing-search">
           <div class="search-field">
             <div class="input-group buy" id="input-group">
@@ -38,32 +38,30 @@ Template Name: Blog Post
       </div>
     </div>
 
-    <div class="slide-out-container" id="slide-out-nav">
-      <p class="menu-title">Menu</p>
-      <span class="close-menu" id="menu-closer"><i class="fal fa-times"></i></span>
+    <div class="slide-out-container-right" id="slide-out-nav-blog">
+      <p class="menu-title">Blog Menu</p>
+      <span class="close-blog-menu" id="menu-closer"><i class="fal fa-times"></i></span>
       <a href="" class="btn btn-primary btn-block nav-login-btn">My account or register <i class="fal fa-arrow-right"></i></a>
       <div class="navigation">
         <ul>
-          <?php
-							$slide_nav = '';
-							$slide_menu_class = 'et_mobile_menu';
+          <h1>Blog Topics</h1>
+          <ul>
+            <li class="menu-item"><a href="http://localhost/">Real Estate</a></li>
 
-							$slide_nav = wp_nav_menu( 
-								array( 
-									'theme_location' => 'primary-menu', 
-									'container' => '', 
-									'fallback_cb' => '', 
-									'echo' => false, 
-									'items_wrap' => '%3$s' 
-								) 
-							);
-							$slide_nav .= wp_nav_menu( array( 'theme_location' => 'secondary-menu', 'container' => '', 'fallback_cb' => '', 'echo' => false, 'items_wrap' => '%3$s' ) );
+            <li class="menu-item"><a href="http://localhost/">Selling</a></li>
 
-							echo( $slide_nav );
-						?>
+            <li class="menu-item"><a href="http://localhost/">Foreclosure</a></li>
+
+            <li class="menu-item"><a href="http://localhost/">Market Trends</a></li>
+
+            <li class="menu-item"><a href="http://localhost/">Real Estate Tips</a></li>
+
+            <li class="menu-item"><a href="http://localhost/">Market News</a></li>
+          </ul>
         </ul>
       </div>
     </div>
+
   </header>
 </div>
 
