@@ -80,3 +80,30 @@ function styled_next_posts() {
         return "";
     }
 }
+
+function wpb_set_post_views($postID) {
+    $count_key = 'wpb_post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count == '') {
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    } else {
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+
+
+function get_popular_posts() {
+    $wp_popular = new WP_Query( array(
+        'posts_per_page' => 4,
+        'meta_key' => 'wpb_post_views_count',
+        'orderby' => 'meta_value_num',
+        'order' => 'DESC'
+    ));
+
+    return $wp_popular->posts;
+}
+
+remove_action( 'wpz_head', 'adjacent_posts_rel_link_wp_head', 10, 0);

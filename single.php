@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name: Blog Post
-*/
   get_header(nomenu);
 ?>
 <div class="blog-menu">
@@ -126,6 +123,7 @@ Template Name: Blog Post
             <section class="blog-post__after-text">
               <?= 
                 the_post();
+                wpb_set_post_views( get_the_ID() );
                 the_content(); 
               ?>
             </section>
@@ -172,26 +170,28 @@ Template Name: Blog Post
 
             <section class="blog-aside d-block d-md-none">
               <div class="popular-posts">
-                <h2 class="related-posts-heading">Related Posts</h2>
-                <div class="one-popular one-related">
-                  <a href="#">Prep for ‘Prost!’ Season 9 Bavarian Style Homes to Inspire Oktoberfest</a>
-                </div>
-
-                <div class="one-popular one-related">
-                  <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
-                </div>
-
-                <div class="one-popular one-related">
-                  <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
-                </div>
-
-                <div class="one-popular one-related">
-                  <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
-                </div>
-
-                <div class="one-popular">
-                  <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
-                </div>
+                <?php 
+                  $related = new WP_Query(
+                    array(
+                      'category__in' => wp_get_post_categories($post->ID),
+                      'posts_per_page' => 5,
+                      'post__not_in' => array($post->ID)
+                      )
+                    );
+                    
+                  if($related->have_posts() ) {
+                    echo '<h2 class="related-posts-heading">Related Posts</h2>';
+                    while($related->have_posts()) {
+                      $related->the_post();
+                      $title = $post->post_title;
+                      $link  = get_the_permalink($post->ID);
+                      echo '<div class="one-popular one-related">' .
+                             '<a href="' . $link . '">' . $title . '</a>' .
+                            '</div>';
+                    }
+                    wp_reset_postdata();  
+                  }
+                ?>
               </div> <!-- related posts -->
             </section>
 
@@ -282,30 +282,14 @@ Template Name: Blog Post
       <aside class="blog-aside col-12 col-md-3">
         <div class="popular-posts">
           <h2>Popular Posts</h2>
-          <div class="one-popular">
-            <a href="#">Prep for ‘Prost!’ Season 9 Bavarian Style Homes to Inspire Oktoberfest</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
-            <p>25 Oct 2018</p>
-          </div>
+          <?php foreach( get_popular_posts() as $popular ): ?>
+            <div class="one-popular">
+              <a href="<?= get_the_permalink($post->ID) ?>"><?= $popular->post_title ?></a>
+              <p>
+                <?= format_blog_date($post->post_date, "d M Y") ?>
+              </p>
+            </div>
+          <?php endforeach; ?>
         </div> <!-- popular posts -->
       </aside>
 
