@@ -259,6 +259,10 @@ jQuery(document).ready(function () {
     jQuery(".fa-vr-cardboard").click(function () {
         changeVR(this);
     });
+    jQuery(".expandables h3").click(function () {
+        jQuery(this).children(".fal").toggleClass("fa-plus");
+        jQuery(this).children(".fal").toggleClass("fa-minus");
+    });
     jQuery("span.buy").click(function () {
         searchOption("buy");
     });
