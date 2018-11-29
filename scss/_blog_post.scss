@@ -394,6 +394,47 @@
     }
   }
 
+  .post-comment-form {
+    textarea, .comment-form-author, .comment-form-email {
+      border: 1px solid #d6dce6;
+      box-shadow: inset 0px 9px 15px -10px #d6dce6;
+      padding: 1.2em .50em;
+      background: transparent !important;
+      border-radius: 5px;
+      font-family: $default-font-family !important;
+   }
+
+    textarea {
+      border-width: thin !important;
+      margin-top: 1em;
+    }
+
+    .comment-form-author, .comment-form-email {
+      width: 100%;
+      @include respond-to('desktop') {
+        width: 40%;
+      }
+      input {
+        width: 100%;
+        padding: unset !important;
+        background-color: unset !important;
+        color: unset !important;
+      }
+    }
+
+    .comment-form-author {
+      margin-right: 0;
+      margin-bottom: 1em;
+      @include respond-to('desktop') {
+        margin-right: 1em;
+        margin-bottom: 0;
+      }
+    }
+
+
+
+  }
+
   .home-worth {
     background-image: url("/wp-content/themes/theoffercompany/images/rainy.jpeg");
     background-size: cover;

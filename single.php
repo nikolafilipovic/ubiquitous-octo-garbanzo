@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="enterzip blog-search">
+      <div class="enterzip blog-search hide">
         <div class="landing-search">
           <div class="search-field">
             <div class="input-group buy" id="input-group">
