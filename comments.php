@@ -37,7 +37,8 @@
 
     <div class="date">
       <p>
-        <?= human_time_diff(date(), $comment->comment_date) ?> ago</p>
+        <?= human_time_diff(get_comment_time( 'U' ),  current_time( 'timestamp' )) ?> ago
+      </p>
     </div>
   </div>
 
