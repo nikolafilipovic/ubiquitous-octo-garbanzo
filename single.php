@@ -205,7 +205,13 @@
                   <p>About the author</p>
                 </div>
               </div>
+            
+              <!-- WP Comments -->
+              <?php
+                  comments_template();
+              ?>
 
+              <!--
               <div class="post-comment-form">
                 <form class="make-comment-form">
                   <div class="input-group">
@@ -250,7 +256,7 @@
                   </div>
                 </div>
 
-              </div> <!-- one comment -->
+              </div>-->
             </section> <!-- post a comment -->
 
             <section class="home-worth">
