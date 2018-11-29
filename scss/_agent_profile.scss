@@ -1,0 +1,494 @@
+/**
+ *  Styles for the Agent Profile page
+ *
+ */
+ #agent-profile {
+    padding: 3rem 0;
+    font-family: $graphik-font-family;
+    .btn {
+        border-radius: 5px;
+        background-color: #00acee;
+        color: #fff;
+        padding: 10px 0px;
+        margin-top: 1rem;
+        opacity: 1;
+        transition: all 0.3s ease;
+        font-size: 0.941rem;
+        &:hover,
+        &:active,
+        &:focus {
+            opacity: 0.7;
+        }
+        i {
+            margin-left: 5px;
+            font-size: 0.8rem;
+            @include respond-to('s-desktop') {
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .agent-pic-rating {
+         text-align: center;
+         @include respond-to('s-desktop') {
+            text-align: left;
+        }
+         img {
+            max-width: 50%;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            @include respond-to('s-desktop') {
+                max-width: 80%;
+            }
+        }
+        h1 {
+            font-weight: 400;
+            margin-top: 1rem;
+            @include respond-to('s-desktop') {
+                margin-top: 1.5rem;
+            }
+        }
+        i {
+            color: #00acee;
+            font-size: 1.1rem;
+        }
+        p {
+            display: inline-block;
+            font-size: 1.3rem;
+            font-weight: 500;
+            span {
+                font-size: 0.9rem;
+                color: #78869c;
+            }
+        }
+     }
+     .contact-agent {
+        p {
+            color: #4a505d !important;
+            font-size: 14px !important;
+            line-height: 6px;
+            @include respond-to('s-desktop') {
+                color: #4a505d;
+                font-size: 1rem;
+                /* Approximation due to font substitution */
+                font-weight: 400;
+            }
+        }
+        strong {
+            color: #1e232c;
+            font-size: 0.85rem !important;
+        }
+        .contact-agent-prev {
+            margin-top: 1.5em;
+        }
+        .offer-link {
+            font-size: .9rem !important;
+            padding: 9px !important;
+            text-align: center;
+            .fasarrow {
+                padding-left: .5em;
+            }
+        }
+        @include respond-to('desktop') {
+            padding-left: 1.45rem !important;
+            border-left: 1px solid $lightergray;
+        }
+        &-title {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: .9rem;
+        }
+        h2.contact-agent-prev-name {
+            font-size: 15px;
+            color: #1e232c;
+            padding-bottom: 0;
+            font-family: $graphik-font-family;
+            font-weight: 500;
+            @include respond-to('s-desktop') {
+                color: #1e232c;
+                font-size: 1.125rem;
+                font-weight: 400;
+            }
+        }
+        &-details {
+            padding-left: .8em !important;
+        }
+        .fa-star {
+            color: $main-lighter;
+            font-size: .8rem;
+            margin: .3em 0 1em;
+        }
+        &-controlls {
+            position: absolute;
+            top: 0;
+            right: 0;
+            .agent-phone {
+                transform: rotate(90deg);
+                color: white;
+                background: $main-color;
+                padding: .8em;
+                border-radius: 50%;
+                font-size: 12px;
+                margin-right: 4px;
+                &-text {
+                    margin-left: 0.7em;
+                    @include respond-to('xs-mobile') {
+                        font-size: .8rem;
+                        width: 10px;
+                    }
+                    @include respond-to('mobile') {
+                        font-size: 1.1rem;
+                        width: auto;
+                    }
+                }
+            }
+            .agent-text {
+                margin-left: 1.4em;
+                color: white;
+                background: $main-color;
+                padding: .8em;
+                border-radius: 50%;
+                font-size: 12px;
+                margin-right: 4px;
+                &-text {
+                    font-size: 1.1rem !important;
+                    margin-left: 0.7em;
+                }
+            }
+        }
+    }
+    .buttons-call-text {
+        margin: 1.5rem -15px;
+        border-top: 1px solid #d9e0ed;
+        border-bottom: 1px solid #d9e0ed;
+        @include respond-to('s-desktop') {
+            margin: 1.5rem 0;
+            border: none;
+        }
+        .one {
+            display: inline-block;
+            position: relative;
+            max-width: 48%;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            @include respond-to('s-desktop') {
+                text-align: left;
+                width: auto;
+                max-width: auto;
+            }
+            &:last-child {
+                border-left: 1px solid #d9e0ed;
+                @include respond-to('s-desktop') {
+                    border: none;
+                }
+            }
+            i {
+                width: 36px;
+                height: 36px;
+                text-align: center;
+                padding-top: 12px;
+                background: #00acee;
+                border-radius: 50%;
+                color: #fff;
+                display: inline-block;
+                vertical-align: middle;
+                
+                &.rotate {
+                    transform: rotate(90deg);
+                }
+                @include respond-to('s-desktop') {
+                    margin-right: 0.7rem;
+                }
+            }
+            p {
+                color:  #1e232c;
+                font-size: 1.249rem;
+                font-weight: 400;
+                display: inline-block;
+                vertical-align: middle;
+                @include respond-to('s-desktop') {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    h3 {
+        font-weight: 400;
+        color: #1e232c;
+    }
+    p.paragraph {
+        font-weight: 400;
+        color: #434d5e;
+        @include respond-to('s-desktop') {
+            font-size: 1rem;
+        }
+        b {
+            font-weight: 500;
+        }
+    }
+    .sphere-container {
+        justify-content: unset;
+        margin: 1rem 0;
+        .sphere-small {
+            height: 36px;
+            width: 36px;
+            font-size: 1.1rem;
+            margin-right: 0.5rem;
+        }
+    }
+    .pref-lender {
+        padding: 1.5rem 15px;
+        margin: 0 -15px;
+        margin-top: 1rem;
+        background: #edf2f5;
+        @include respond-to('s-desktop') {
+            margin: 0;
+            margin-top: 1rem;
+        }
+        h3 {
+            display: block;
+            width: 100%;
+        }
+        img {
+            height: 65px;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+        .text {
+            display: inline-block;
+            vertical-align: middle;
+            p {
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: #1e232c;
+            }
+            a {
+                font-size: 0.9rem;
+                font-weight: 400;
+            }
+        }
+    }
+    .listing-results {
+        display: block;
+        margin: 0 -15px;
+        @include respond-to('s-desktop') {
+            margin: 0;
+            width: 100%;
+        }
+        .choices {
+            border-bottom: 1px solid #e3e7ee;
+            text-align: center;
+            @include respond-to('s-desktop') {
+                text-align: left;
+            }
+            p {
+                font-size: 1rem;
+                font-weight: 400;
+                color: #747b88;
+                padding: 1rem 0;
+                display: inline-block;
+                margin-left: 5px;
+                margin-right: 5px;
+                box-shadow: none;
+                transition: all 0.3s ease;
+                margin-bottom: -1px;
+                &:hover,
+                &:active,
+                &:focus,
+                &.active {
+                    box-shadow: inset 0px -1px 0px 0px #00a6ec;
+                    cursor: pointer;
+                    color: #1e232c;
+                }
+                @include respond-to('s-desktop') {
+                   margin-left: 10px;
+                   font-size: 1.15rem;
+                }
+                span {
+                    color: #929baf;
+                }
+            }
+        }
+        .legend {
+            padding: 10px 0;
+            p {
+                display: inline-block;
+                font-size: 0.9rem;
+                font-weight: 400;
+                color: #747b88;
+                padding-bottom: 0;
+            }
+            p.price {
+                float: right;
+                margin-right: 35px;
+            }
+        }
+        .results {
+            padding: 0 15px;
+            @include respond-to('s-desktop') {
+                padding: 0;
+             }
+            .result-item {
+                padding: 10px 0;
+                border-top: 1px solid #e3e7ee;
+                img {
+                    max-width: 20%;
+                    width: auto;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                p {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    color: #00a6ec;
+                    display: inline-block;
+                    word-wrap: break-word;
+                    max-width: 50%;
+                    width: 100%;
+                    vertical-align: middle;
+                    padding-bottom: 0;
+                    @include respond-to('s-desktop') {
+                        font-size: 1.125rem;
+                        max-width: 57%;
+                    }
+                }
+                p.price {
+                    max-width: 20%;
+                    width: 100%;
+                    color: #1e232c;
+                    vertical-align: middle;
+                    @include respond-to('s-desktop') {
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }
+    .blue-bg {
+        @include respond-to('s-desktop') {
+            width: 100% !important;
+            margin: 0!important;
+            margin-bottom: 1.5rem !important;
+        }
+    }
+    .property-slider {
+        .list-home-title {
+            color:  #1e232c;
+            font-size: 1.499rem;
+            font-weight: 400;
+            @include respond-to('s-desktop') {
+                font-size: 1.499rem;
+            }
+        }
+        .list-home-subtitle {
+            color:  #929baf;
+            font-size: 1.124rem;
+            font-weight: 400;
+            @include respond-to('s-desktop') {
+                font-size: 1.124rem;
+            }
+        }
+        .small-imp {
+            color:  #00aced;
+            font-size: 0.813rem;
+            font-weight: 500;
+            @include respond-to('s-desktop') {
+                font-size: 0.813rem;
+            }
+        }
+        .lifestyle-news {
+            p {
+                color:  #00aced;
+                font-size: 1.375rem;
+                font-weight: 400;
+                @include respond-to('s-desktop') {
+                    font-size: 1.375rem;
+                }
+            }
+        }
+    }
+    .reviews {
+        .plus-button {
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .review-item {
+            margin-top: 1rem;
+            border-bottom: 1px solid #e5e5e5;
+            &:last-child {
+                border-bottom: none;
+            }
+            .review-heading {
+                i {
+                    color:  #00aced;
+                    vertical-align: middle;
+                }
+                p {
+                    color:  #1e232c;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    display: inline-block;
+                    margin-left: 10px;
+                    vertical-align: middle;
+                    @include respond-to('s-desktop') {
+                        font-size: 1.249rem;
+                    }
+                }
+                span {
+                    color: #929baf;
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    display: block;
+                    padding-bottom: 0;
+                    line-height: 1.3;
+                }
+            }
+            .review-rates {
+                padding: 1rem 0;
+                p {
+                    display: inline-block;
+                    min-width: 150px;
+                    vertical-align: middle;
+                    padding-bottom: 0.5rem;
+                    font-size: 1rem;
+                    color:  #1e232c;
+                    font-weight: 400;
+                    vertical-align: middle;
+                    @include respond-to('s-desktop') {
+                        font-size: 1.124rem;
+                        min-width: 190px;
+                    }
+                }
+                p.paragraph {
+                    width: 100%;
+                    color: #4f5969;
+                    margin-top: 1rem;
+                }
+                i {
+                    color:  #00aced;
+                    vertical-align: middle;
+                }
+                .enclosure {
+                    display: block;
+                }
+            }
+        }
+    }
+    .sidebar {
+        .contact-agent {
+            border-left: none;
+        }
+    }
+    .main {
+        @include respond-to('s-desktop') {
+            border-right: 1px solid #d6dce6;
+            padding-right: 30px;
+        }
+        
+    }
+}
