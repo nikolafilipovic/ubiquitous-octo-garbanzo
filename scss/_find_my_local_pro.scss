@@ -1,244 +1,220 @@
 .fmlp-header-container {
-  max-height: 380px;
-  background-position: top 50% left;
-  background-size: cover;
-  background-image: url(/wp-content/themes/theoffercompany/images/bg.jpg);
-
-  @include respond-to('desktop') {
-    max-height: 500px;
-  }
-
-  .fmlp-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    h1 {
-      color: white;
-      font-size: 1.4rem;
-      padding: 1.2rem 0;
-      font-weight: 400;
-      @include respond-to('desktop') {
-        font-size: 2.2rem;
-        padding: 3rem 0 1rem;
-      }
-    }
-  }
-
-  .faded {
-    background: $ocean-blue-opacity;
-    width:100%;
-    min-height: 500px;
-  }
-
-  .link-container {
-    background: white;
-    @include respond-to('desktop') {
-      background: transparent;
-    }
-
-    a {
-      text-align: left !important;
-      box-shadow: unset !important;
-    }
-  }
-  
-  .go-back {
-    color: $main-color;
-    @include respond-to('desktop') {
-      color: white;
-    }
-    font-size: 17px;
-    font-family: $graphik-font-family; font-weight: 500;
-    display: block;
-    i {
-      padding-right: 8px;
-      font-size: 15px;
-    }
-  }
+	max-height: 380px;
+	background-position: top 50% left;
+	background-size: cover;
+	background-image: url(/wp-content/themes/theoffercompany/images/bg.jpg);
+	@include respond-to('desktop') {
+		max-height: 500px;
+	}
+	.fmlp-header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		h1 {
+			color: white;
+			font-size: 1.4rem;
+			padding: 1.2rem 0;
+			font-weight: 400;
+			@include respond-to('desktop') {
+				font-size: 2.2rem;
+				padding: 3rem 0 1rem;
+			}
+		}
+	}
+	.faded {
+		background: $ocean-blue-opacity;
+		width: 100%;
+		min-height: 500px;
+	}
+	.link-container {
+		background: white;
+		@include respond-to('desktop') {
+			background: transparent;
+		}
+		a {
+			text-align: left !important;
+			box-shadow: unset !important;
+		}
+	}
+	.go-back {
+		color: $main-color;
+		@include respond-to('desktop') {
+			color: white;
+		}
+		font-size: 17px;
+		font-family: $graphik-font-family;
+		font-weight: 500;
+		display: block;
+		i {
+			padding-right: 8px;
+			font-size: 15px;
+		}
+	}
 }
 
-.fmlp-header-container, .fmlp-floating-block {
-  h1 {
-    font-size: 1.4rem;
-    color: #1e232c;
-    line-height: 48px;
-    text-align: center;
-    text-shadow: 0px 11px 54.15px rgba(29, 35, 40, 0.19);
-    font-weight: 400;
-
-    @include respond-to('desktop') {
-      font-size: 1.6rem;
-    }
-  }
-
-  .enterzip {
-    margin-top: 0 !important;
-    .input-group-prepend {
-      margin-right: 0 !important;
-    }
-  }
-
-  .enterzip--inset {
-    .input-group-prepend {
-      position: relative;
-      margin-right: 0 !important;
-    }
-
-    input.form-control {
-      padding: 26px 18px !important;
-      color: #b6b6b6;
-      font-family: $graphik-font-family; font-weight: 300;
-      font-size: 17px;
-      font-weight: 300;
-    }
-
-    i {
-      font-size: 26px;
-      color: #00aced;
-      position: absolute;
-      top: 16px;
-      right: 12px;
-    }
-  }
-
-  .enterzip-group {
-    width: 90%;
-    max-width: 440px; 
-
-    @include respond-to('tablet') {
-      width: 80%;
-    }
-
-    @include respond-to('desktop') {
-      width: 60%;
-    }
-
-    @include respond-to('m-desktop') {
-      width: 35%;
-    }
-  }
-
-  .offer-link {
-    min-width: 100%;
-    margin: 15px 0 0 0;
-    padding: 12px;
-    text-align: center;
-    text-transform: unset;
-    font-size: 1rem;
-    color: white;
-    opacity: 1;
-    transition: all 0.3s ease;
-    font-weight: 400;
-    i {
-      padding-left: .5em;
-      font-size: 12px;
-    }
-    &:hover,
-    &:focus,
-    &:active {
-        opacity: 0.7;
-    }
-  }
-
-  .landing-search {
-    .search-field .input-group.buy::after {
-      display: none;
-    }
-
-    .search-field {
-      margin-top: 0;
-      border-radius: 10px;
-      box-shadow: 0px 2px 11px 0px rgba(10, 25, 40, 0.27) !important;
-      max-width: unset;
-    }
-
-    input {
-      font-size: 17px !important;
-    }
-
-    .form-control {
-      padding: 26px 18px !important;
-    }
-  }
+.fmlp-header-container,
+.fmlp-floating-block {
+	h1 {
+		font-size: 1.4rem;
+		color: #1e232c;
+		line-height: 48px;
+		text-align: center;
+		text-shadow: 0px 11px 54.15px rgba(29, 35, 40, 0.19);
+		font-weight: 400;
+		@include respond-to('desktop') {
+			font-size: 1.6rem;
+		}
+	}
+	.enterzip {
+		margin-top: 0 !important;
+		.input-group-prepend {
+			margin-right: 0 !important;
+		}
+	}
+	.enterzip--inset {
+		.input-group-prepend {
+			position: relative;
+			margin-right: 0 !important;
+		}
+		input.form-control {
+			padding: 26px 18px !important;
+			color: #b6b6b6;
+			font-family: $graphik-font-family;
+			font-weight: 300;
+			font-size: 17px;
+			font-weight: 300;
+		}
+		i {
+			font-size: 26px;
+			color: #00aced;
+			position: absolute;
+			top: 16px;
+			right: 12px;
+		}
+	}
+	.enterzip-group {
+		width: 90%;
+		max-width: 440px;
+		@include respond-to('tablet') {
+			width: 80%;
+		}
+		@include respond-to('desktop') {
+			width: 60%;
+		}
+		@include respond-to('m-desktop') {
+			width: 35%;
+		}
+	}
+	.offer-link {
+		min-width: 100%;
+		margin: 15px 0 0 0;
+		padding: 12px;
+		text-align: center;
+		text-transform: unset;
+		font-size: 1rem;
+		color: white;
+		opacity: 1;
+		transition: all 0.3s ease;
+		font-weight: 400;
+		i {
+			padding-left: .5em;
+			font-size: 12px;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			opacity: 0.7;
+		}
+	}
+	.landing-search {
+		.search-field .input-group.buy::after {
+			display: none;
+		}
+		.search-field {
+			margin-top: 0;
+			border-radius: 10px;
+			box-shadow: 0px 2px 11px 0px rgba(10, 25, 40, 0.27) !important;
+			max-width: unset;
+		}
+		input {
+			font-size: 17px !important;
+		}
+		.form-control {
+			padding: 26px 18px !important;
+		}
+	}
 }
 
 .fmlp-floating-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  padding-bottom: 4rem;
-  @include respond-to('desktop') {
-  }
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	padding-bottom: 4rem;
+	@include respond-to('desktop') {}
 }
 
 .fmlp-body {
-  background: #f5f7fa;
-  position: relative; 
-  display: block;
-  
-  .one-row {
-    &:nth-child(1), &:nth-child(2) {
-      margin-bottom: 2.5rem;
-    }
-    h2 {
-      color: $main-color;
-      font-size: 1.2rem;
-      font-family: $graphik-font-family; font-weight: 400;
-      @include respond-to('desktop') {
-        font-size: 1.6rem;
-      }
-    }
-
-    p {
-      color: #1e232c;
-      font-size: .9rem;
-      font-weight: 400;
-      @include respond-to('desktop') {
-        font-size: 1.1rem;
-      }
-    }
-  }
+	background: #f5f7fa;
+	position: relative;
+	display: block;
+	.one-row {
+		&:nth-child(1),
+		&:nth-child(2) {
+			margin-bottom: 2.5rem;
+		}
+		h2 {
+			color: $main-color;
+			font-size: 1.2rem;
+			font-family: $graphik-font-family;
+			font-weight: 400;
+			@include respond-to('desktop') {
+				font-size: 1.6rem;
+			}
+		}
+		p {
+			color: #1e232c;
+			font-size: .9rem;
+			font-weight: 400;
+			@include respond-to('desktop') {
+				font-size: 1.1rem;
+			}
+		}
+	}
 }
 
 .fmlp-floating-block {
-  border-radius: 5px;
-  background: white;
-  box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
-  padding: 1.25rem;
-  width: 90%;
-  margin-top: -80px;
-  max-width: 790px;
-  
-  @include respond-to('tablet') {
-    width: 80%;
-    padding: 2.375rem;
-  }
-  
-  @include respond-to('m-desktop') {
-    padding: 3.375rem;
-    width: 59%;
-    margin-top: -130px;
-  }
+	border-radius: 5px;
+	background: white;
+	box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
+	padding: 1.25rem;
+	width: 90%;
+	margin-top: -80px;
+	max-width: 790px;
+	@include respond-to('tablet') {
+		width: 80%;
+		padding: 2.375rem;
+	}
+	@include respond-to('m-desktop') {
+		padding: 3.375rem;
+		width: 59%;
+		margin-top: -130px;
+	}
 }
 
 .block--smaller {
-  margin-top: 30px;
-  width: 90%;
-  max-width: 550px; //we don't want it going nuts on wide displays :p
-
-  @include respond-to('mobile') {
-    width: 70%;
-  }
-
-    @include respond-to('mobile') {
-    width: 60%;
-  }
-  
-  @include respond-to('m-desktop') {
-    padding: 2rem 3.44rem;
-    width: 35%;
-  }
+	margin-top: 30px;
+	width: 90%;
+	max-width: 550px; //we don't want it going nuts on wide displays :p
+	@include respond-to('mobile') {
+		width: 70%;
+	}
+	@include respond-to('mobile') {
+		width: 60%;
+	}
+	@include respond-to('m-desktop') {
+		padding: 2rem 3.44rem;
+		width: 35%;
+	}
 }
-
