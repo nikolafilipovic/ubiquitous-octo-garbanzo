@@ -210,53 +210,14 @@
               <?php
                   comments_template();
               ?>
-
-              <!--
-              <div class="post-comment-form">
-                <form class="make-comment-form">
-                  <div class="input-group">
-                    <textarea class="form-control" placeholder="Join the discussion..."></textarea>
-                  </div>
-                  <div class="offer-link">
-                    <a href="#">Post comment</a>
-                    <i class="far fa-arrow-right fasarrow"></i>
-                  </div>
-                </form>
-              </div>
-
+             <!-- Successfully saved part 
               <div class="success d-flex d-md-none">
                 <div class="success-checkmark">
                   <i class="fas fa-check"></i>
                 </div>
                 <p>Successfully saved.</p>
               </div>
-
-              <div class="one-comment">
-                <div class="d-flex align-items-center">
-                  <div class="pic">
-                    <img src="/wp-content/themes/theoffercompany/images/userdefault.png" alt="userdefault" />
-                  </div>
-                  <h2>Strahinja S.</h2>
-                </div>
-
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                  and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-
-                <div class="heart-date">
-                  <div class="hearts">
-                    <i class="far fa-heart not-hearted"></i>
-                    <span class="not-hearted">4</span>
-                    <i class="fas fa-heart"></i>
-                    <span>4</span>
-                  </div>
-
-                  <div class="date">
-                    <p>3 days ago</p>
-                  </div>
-                </div>
-
-              </div>-->
+                -->
             </section> <!-- post a comment -->
 
             <section class="home-worth">
