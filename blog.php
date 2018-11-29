@@ -191,30 +191,14 @@ Template Name: Blog
       <aside class="blog-aside col-12 col-md-3">
         <div class="popular-posts">
           <h2>Popular Posts</h2>
-          <div class="one-popular">
-            <a href="#">Prep for ‘Prost!’ Season 9 Bavarian Style Homes to Inspire Oktoberfest</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
-            <p>25 Oct 2018</p>
-          </div>
+          <?php foreach( get_popular_posts() as $popular ): ?>
+            <div class="one-popular">
+              <a href="<?= get_the_permalink($post->ID) ?>"><?= $popular->post_title ?></a>
+              <p>
+                <?= format_blog_date($post->post_date, "d M Y") ?>
+              </p>
+            </div>
+          <?php endforeach; ?>
 
           <div class="offer-link">
             <a href="#">Get updates</a>
