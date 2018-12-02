@@ -120,7 +120,7 @@
                     <p class="price-sqft">$5250</p>
                 </div>
 
-                
+
             </div>
             <div class="see-more">
                 <a href="#">
@@ -166,7 +166,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
             <div class="see-more">
                 <a href="#">
@@ -198,36 +198,15 @@
             </div>
         </div>
     </div>
-    <h1 class="title reports">Detailed home report</h1>
-    <div class="reports-wrapper">
-        <div class="container">
-            <div class="row row-eq-height">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-md-inline-block d-none ">
-                    <div class="outline">
-                        <h3>Property details</h3>
-                        <div class="line" style="width: 85%;"></div>
-                        <div class="line" style="width: 65%;"></div>
-                        <div class="line" style="width: 45%;"></div>
-                        <div class="line" style="width: 45%;"></div>
-                        <div class="line" style="width: 95%;"></div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 report-content">
-                    <i class="far fa-lock-alt lock"></i>
-                    <p>See property details, comparable home insights and neighborhood trends.</p>
-                    <a href="#" class="btn btn-block">I'm the owner. Show me! <i class="far fa-arrow-right"></i></a>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 d-md-inline-block d-none">
-                    <div class="outline">
-                        <h3>Neighborhood trends</h3>
-                        <div class="line" style="width: 85%;"></div>
-                        <div class="line" style="width: 65%;"></div>
-                        <div class="line" style="width: 45%;"></div>
-                        <div class="line" style="width: 45%;"></div>
-                        <div class="line" style="width: 95%;"></div>
-                    </div>
-                </div>
-            </div>
+
+    <div class="row row-blue-adv">
+        <div class="blue-adv col-12 col-md-11">
+            <h2>Be the first to know!</h2>
+            <p>New homes are getting added every 2 minutes. Save your search and be the first to know.</p>
+            <a href="#">
+                Save search
+                <i class="far fa-arrow-right"></i>
+            </a>
         </div>
     </div>
 </div>
