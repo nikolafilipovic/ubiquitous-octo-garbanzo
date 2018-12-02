@@ -9,7 +9,8 @@
     <div class="faded">
         <div class="main-header transparent">
             <div class="container">
-                <div id="menu-opener"><span>Menu</div><div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $template_directory_uri; ?>/images/logo.png" alt=""/></a></div>
+                <div id="menu-opener"><span>Menu</div>
+                <div class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo $template_directory_uri; ?>/images/logo.png" alt=""/></a></div>
             </div>
             <div class="slide-out-container" id="slide-out-nav">
 				<p class="menu-title">Menu</p>

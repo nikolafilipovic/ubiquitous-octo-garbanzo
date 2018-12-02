@@ -590,7 +590,7 @@ h1.questions {
  */
 .eval-unlocked-header-container {
     font-family: $graphik-font-family;
-    max-height: 380px;
+    max-height: 350px;
     background-position: top 50% left;
     background-size: cover;
     background-image: url(/wp-content/themes/theoffercompany/images/bg.jpg); 
@@ -600,7 +600,7 @@ h1.questions {
     .faded {
         background: $light-blue-opacity;
         width:100%;
-        min-height: 310px;
+        min-height: 350px;
         @include respond-to('desktop') {
             min-height: 500px;
         }
@@ -618,45 +618,69 @@ h1.questions {
       }
     .eval-unlocked-header {
 		display: flex;
-		align-items: center;
+		align-items: left;
 		justify-content: center;
 		flex-direction: column;
-		.eval-unlocked-header-content {
-			padding: 2rem 0;
+		padding-left: 2em;
+		@include respond-to('tablet') {
+			padding-left: 0em;
+			align-items: center;
+		}
+		&-content {
+			padding: 1rem 0;
+			@include respond-to('desktop') {
+				padding: 2em 0;
+			}
 			.status {
 				color: #ffffff;
-				font-size: 0.875rem;
 				text-transform: uppercase;
 				text-align: left;
+				font-size: 0.65rem;
+				margin-bottom: .5em;
 				text-shadow: 0px 1px 4.75px rgba(29, 38, 63, 0.53);
 				display:  block;
 				z-index: 0;
 				position: relative;
+				@include respond-to('desktop') {
+					font-size: 0.875rem;
+					// margin-bottom:
+				}
 				i.black-dot {
-					width: 10px;
-					height: 10px;
+					width: 8px;
+					height: 8px;
 					background: black;
 					display: inline-block;
-					border: 2px solid #fff;
+					border: 1.5px solid #fff;
 					border-radius: 50%;
 					margin-right: 4px;
+					@include respond-to('desktop') {
+						border: 2px solid #fff;
+						height: 10px;
+						width: 10px;
+					}
 				}
 			}
 			.property-info {
 				display: inline-block;
-				margin-top: 5px;
+				margin-top: 0;
+				@include respond-to('desktop') {
+					margin-top: 5px;
+				}
 				.beds,
 				.baths,
 				.sqft {
 					font-family: $graphik-font-family; font-weight: 300;
 					color: #ffffff;
-					font-size: 1.286rem;
+					font-size: .9rem;
+					padding-right: .5em;
 					font-weight: 400;
-					text-align: 500;
 					text-shadow: 0px 1px 1.9px rgba(29, 38, 63, 0.41);
 					z-index: 0;
 					position: relative;
 					vertical-align: text-bottom;
+					@include respond-to('desktop') {
+						font-size: 1.286rem;
+					}
 				}
 				i {
 					color: #fff;
@@ -666,22 +690,40 @@ h1.questions {
 					padding-right: 3px;
 					z-index: 0;
 					position: relative;
+					margin-right: 2em;
 				}
 			}
 			h3 {
 				color:  #ffffff;
-				font-size: 1.571rem;
+				font-size: 1.2rem;
 				font-weight: 500;
+				@include respond-to('desktop') {
+					font-size: 1.571rem;
+				}
+			}
+			p:first-of-type {
+				padding-bottom: .4em;
 			}
 			p {
 				color:  #ffffff;
-				font-size: 1.357rem;
-				font-weight: 400;
+				font-size: 1rem;
+				font-weight: 300;
+				padding-bottom: .1em;
+				// maybe
+				@include respond-to('desktop') {
+					font-weight: 400;
+					font-size: 1.357rem;
+					//padding-bottom: 1em;
+				}
+
 			}
 			strong {
 				color:  #ffffff;
-				font-size: 1.286rem;
+				font-size: .9rem;
 				font-weight: 500;
+				@include respond-to('desktop') {
+					font-size: 1.286rem;
+				}
 			}
 		}
     }
@@ -716,7 +758,8 @@ h1.questions {
 		font-size: 1.353rem;
 		font-weight: 400;
         text-align: center;
-        transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		padding-bottom: 0;
         i {
             margin-right: 5px;
         }
@@ -731,7 +774,6 @@ h1.questions {
         font-weight: 400;
         text-align: center;
         margin: 1rem 0;
-		margin-top: 2rem;
 		line-height: 1.5;
         @include respond-to('desktop') {
             font-size: 1.2rem;
@@ -753,7 +795,7 @@ h1.questions {
 		}
 		span {
 			float: right;
-			color:  #00aced;
+			color:  $main-lighter;
 		}
 	}
 	.comp {
@@ -763,7 +805,7 @@ h1.questions {
 		text-align: left;
 		margin: 0;
 		margin-top: 1rem;
-		padding-bottom: 0.5rem;
+		padding-bottom: 16px;
 		@include respond-to('desktop') {
             font-size: 1.2rem;
 		}
@@ -772,6 +814,73 @@ h1.questions {
 		}
 	}
 	.comp-homes {
+		.comp-item:last-of-type {
+			border-bottom: none;
+		}
+		.comp-item {
+			display: flex;
+			justify-content: flex-start;
+			margin: 1.5em 0;
+			padding-bottom: 1.5em;
+			border-bottom: 1px solid $lightergray;
+
+			p.price-sqft {
+				margin: 0 !important;
+				color: black;
+			}
+			
+			.ch-img {
+				flex: 0 0 100px;
+				min-height: 90px;
+				
+				.ch-background-img {
+					height: 100%;
+					width: 100%;
+					border-radius: 3px;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: top;
+				}
+			}
+
+			.info {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: flex-start;
+				padding-left: 1em;
+				flex-grow: 2;
+
+				small {
+					margin: 0 !important;
+					padding: 0 !important;
+					font-size: .7rem !important;
+					font-weight: 500;
+				}
+
+				p {
+					margin: 0 !important;
+					padding: 0 !important;
+					font-size: 1.1rem !important;
+					color: $main-lighter;
+				}
+
+				p.location {
+					font-size: .8rem !important;
+					color: unset !important;
+				}
+
+				.property-info {
+					font-size: .8rem;
+					font-weight: 400;
+					color: black !important;
+					span.dot {
+						padding: 0 3px;
+					}
+				}
+			}
+		}
+
 		.result-item {
 			padding: 10px 0;
 			border-top: 1px solid #e3e7ee;
@@ -889,7 +998,7 @@ h1.questions {
     box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
     padding: 1.25rem;
     width: 90%;
-    margin-top: -80px;
+    margin-top: -55px !important;
     margin-bottom: 3rem;
     max-width: 790px;
 
