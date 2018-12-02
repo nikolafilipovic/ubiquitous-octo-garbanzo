@@ -56,8 +56,7 @@
     <div class="eval-unlocked-floating-container">
         <div class="eval-unlocked-floating-block">
             <h1>Comparable home insights</h1>
-            <p>This estimate looks at recently sold homes with similar features to this home, like it's location,
-                square footage, bedrooms and bathrooms.</p>
+            <p class="desc">This estimate looks at recently sold homes with similar features to this home, like it's location, square footage, bedrooms and bathrooms.</p>
             <p class="avg">Avg. sold price <span>$1,775,000</span></p>
             <p class="avg">Avg. price/sqft <span>$4798</span></p>
             <p class="avg">Avg. days on market <span>36 days</span></p>
@@ -130,7 +129,7 @@
             </div>
         </div>
 
-        <div class="eval-unlocked-floating-block" style="margin-top: 0 !important;">
+        <div class="eval-unlocked-floating-block neighboorhood-trends" style="margin-top: 0 !important;">
             <h1 class="heading-center">Neighborhood trends</h1>
             <div class="comp-homes">
                 <div class="comp-item">
@@ -199,12 +198,13 @@
         </div>
     </div>
 
-    <div class="row row-blue-adv">
-        <div class="blue-adv col-12 col-md-11">
-            <h2>Be the first to know!</h2>
-            <p>New homes are getting added every 2 minutes. Save your search and be the first to know.</p>
+    <div class="row-blue-adv">
+        <div class="blue-adv">
+            <h2>Thinking of selling your home?</h2>
+            <p>We've made it simple.</p>
+            <p>Get the best price for your home and save the hassle of repairs, showings and months of uncertainly.</p>
             <a href="#">
-                Save search
+                Selling options
                 <i class="far fa-arrow-right"></i>
             </a>
         </div>
