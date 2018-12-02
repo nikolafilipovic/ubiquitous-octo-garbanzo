@@ -4,7 +4,8 @@
   }
 
   $args = array(
-    'status' => 'approve'
+    'status'  => 'approve',
+    'post_id' => $post->ID
   );
 
   $comments_query = new WP_Comment_Query;
