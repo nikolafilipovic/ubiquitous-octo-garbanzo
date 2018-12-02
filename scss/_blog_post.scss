@@ -79,11 +79,10 @@
   }
 
   &__image {
-    background: url("/wp-content/themes/theoffercompany/images/home-showing.jpg");
     height: 200px;
     margin: 0 auto;
-    background-size: cover;
-    background-position: 50%;
+    background-size: cover !important;
+    background-position: top left !important;
     @include respond-to('desktop') {
       height: 349px;
     }
@@ -152,6 +151,7 @@
       width: 20px;
       height: 20px;
       margin-right: 0.33em;
+      border-radius: 50%;
     }
 
   }
@@ -347,6 +347,9 @@
       margin-top: 1em;
       .pic {
         flex: 0 0 50px;
+        img {
+          border-radius: 50%;
+        }
       }
       h2, p {
         font-size: 1rem;

@@ -17,7 +17,7 @@
 <div class="one-comment">
   <div class="d-flex align-items-center">
     <div class="pic">
-      <img src="/wp-content/themes/theoffercompany/images/userdefault.png" alt="userdefault" />
+      <img src="<?= get_avatar_url($post->post_author) ?>" alt="userdefault" />
     </div>
     <h2>
       <?= $comment->comment_author ?>

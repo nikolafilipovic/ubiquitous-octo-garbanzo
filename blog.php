@@ -83,7 +83,9 @@ Template Name: Blog
         <?php foreach($first_half as $post): ?>
         <div class="one-post row no-gutters">
           <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);"></div>
+            <div class="one-post-image" 
+            style="background-image: url(<?= get_the_post_thumbnail_url($post) ?>);">
+            </div>
             <div class="play round-blue">
               <i class="fas fa-play"></i>
             </div>
@@ -126,7 +128,9 @@ Template Name: Blog
         <?php foreach($second_half as $post): ?>
         <div class="one-post row no-gutters">
           <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);"></div>
+            <div class="one-post-image" 
+            style="background-image: url(<?= get_the_post_thumbnail_url($post) ?>);">
+            </div>
             <div class="play round-blue">
               <i class="fas fa-play"></i>
             </div>

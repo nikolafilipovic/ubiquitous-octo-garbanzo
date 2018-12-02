@@ -66,7 +66,9 @@
 
 <section class="blog-post">
   <header class="blog-post__wrap">
-    <div class="blog-post__image"></div>
+    <div class="blog-post__image"
+    style="background-image: url('<?= get_the_post_thumbnail_url(); ?>')">
+    </div>
 
     <div class="control-header">
       <div class="play round-blue d-md-flex d-none">
@@ -88,7 +90,7 @@
               <?= the_title(); ?>
             </h1>
             <section class="blog-post-sub">
-              <img src="/wp-content/themes/theoffercompany/images/face.png" alt="author" />
+              <img src="<?= get_avatar_url($post->post_author); ?>" alt="author" />
               <h2 class="blog-post__sub-title">
                 <?= get_author_name($post->post_author); ?> <span>on <?= format_blog_date($post->post_date, "d M Y")?></span>
               </h2>
@@ -198,10 +200,10 @@
             <section class="post-comment">
               <div class="author">
                 <div class="author-img">
-                  <img src="/wp-content/themes/theoffercompany/images/chrisbrown.jpg" alt="chrisbrown" />
+                  <img src="<?= get_avatar_url($post->post_author); ?>" alt="<?= get_author_name($post->post_author); ?>" />
                 </div>
                 <div class="about-author">
-                  <h2>Chris Brown</h2>
+                  <h2><?= get_author_name($post->post_author); ?></h2>
                   <p>About the author</p>
                 </div>
               </div>
