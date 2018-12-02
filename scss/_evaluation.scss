@@ -732,7 +732,7 @@ h1.questions {
 .eval-unlocked-floating-block {
     font-family: $graphik-font-family;
     border: 3px solid #fff;
-    transition: all 0.3s ease;
+	transition: all 0.3s ease;
     &.featured {
         border-color:  #126fc1;
         .btn {
@@ -752,7 +752,12 @@ h1.questions {
         li {
             color: #126fc1;
         }
-    }
+	}
+	h1.heading-center {
+		font-size: 24px;
+		margin-bottom: 1.5em;
+		text-align: center;
+	}
     h1 {
 		color:  #1e222c;
 		font-size: 1.353rem;
@@ -813,9 +818,39 @@ h1.questions {
 			float: right;
 		}
 	}
+
+	.see-more {
+		display: flex;
+		justify-content: center;
+		width: calc(100% + 46px);
+		margin-left: -23px;
+		border-top: 1px solid $lightergray;
+
+		@include respond-to('tablet') {
+			width: calc(100% + 82px);
+			margin-left: -41px;
+		}
+
+		@include respond-to('m-desktop') {
+			width: calc(100% + 116px);
+			margin-left: -58px;
+		}
+
+		a {
+			color: $main-lighter;
+			display: block;
+			padding-top: 16px !important;
+			font-size: 1.1rem;
+			i {
+				padding-right: .5em;
+				font-weight: 400;
+			}
+		}
+	}
+
 	.comp-homes {
 		.comp-item:last-of-type {
-			border-bottom: none;
+			border-bottom: none !important;
 		}
 		.comp-item {
 			display: flex;
@@ -840,6 +875,15 @@ h1.questions {
 					background-size: cover;
 					background-repeat: no-repeat;
 					background-position: top;
+				}
+			}
+
+			.ch-circle {
+				flex: 0 0 85px;
+				min-height: 85px !important;
+				.ch-bg-img {
+					border-radius: 50%;
+					background-position: top left -20px !important;
 				}
 			}
 
@@ -868,6 +912,11 @@ h1.questions {
 				p.location {
 					font-size: .8rem !important;
 					color: unset !important;
+				}
+
+				p.new-info {
+					color: black;
+					font-size: .87rem !important;
 				}
 
 				.property-info {
@@ -907,7 +956,7 @@ h1.questions {
 					max-width: 57%;
 				}
 			}
-			p.price {
+			p.highlighted {
 				max-width: 20%;
 				width: 100%;
 				color: #1e232c;
@@ -991,12 +1040,13 @@ h1.questions {
       }
     }
   }
-  
+
   .eval-unlocked-floating-block {
-    border-radius: 5px;
-    background: white;
+	border-radius: 5px;
+	background: white;
     box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18);
-    padding: 1.25rem;
+	padding: 1.25rem;
+	padding-bottom: 16px !important;
     width: 90%;
     margin-top: -55px !important;
     margin-bottom: 3rem;
@@ -1006,7 +1056,8 @@ h1.questions {
     
     @include respond-to('tablet') {
       width: 80%;
-      padding: 2.375rem;
+	  padding: 2.375rem;
+	  padding-bottom: 16px !important;
     }
     
     @include respond-to('m-desktop') {

@@ -69,7 +69,7 @@
                     </div>
                     <div class="info">
                         <small>SOLD 5/16/18</small>
-                        <p class="price">$1,788,000</p>
+                        <p class="highlighted">$1,788,000</p>
                         <div class="property-info">
                             <span class="beds">4 bd</span>
                             <span class="dot">•</span>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="info">
                         <small>SOLD 5/16/18</small>
-                        <p class="price">$1,788,000</p>
+                        <p class="highlighted">$1,788,000</p>
                         <div class="property-info">
                             <span class="beds">4 bd</span>
                             <span class="dot">•</span>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="info">
                         <small>SOLD 5/16/18</small>
-                        <p class="price">$1,788,000</p>
+                        <p class="highlighted">$1,788,000</p>
                         <div class="property-info">
                             <span class="beds">4 bd</span>
                             <span class="dot">•</span>
@@ -119,9 +119,64 @@
                     </div>
                     <p class="price-sqft">$5250</p>
                 </div>
+
+                
+            </div>
+            <div class="see-more">
+                <a href="#">
+                    <i class="fas fa-plus"></i>
+                    See more
+                </a>
+            </div>
+        </div>
+
+        <div class="eval-unlocked-floating-block" style="margin-top: 0 !important;">
+            <h1 class="heading-center">Neighborhood trends</h1>
+            <div class="comp-homes">
+                <div class="comp-item">
+                    <div class="ch-img  ch-circle">
+                        <div class="ch-background-img ch-bg-img" style="background-image:url('/wp-content/themes/theoffercompany/images/property-1.png');"></div>
+                    </div>
+                    <div class="info">
+                        <p class="highlighted">16013 S Desert Foot...</p>
+                        <p class="new-info">Price cut to $327,000 (-$3,000)</p>
+                        <p class="location">1 mi away | 3 days ago</p>
+                    </div>
+                </div>
+
+                <div class="comp-item">
+                    <div class="ch-img ch-circle">
+                        <div class="ch-background-img ch-bg-img" style="background-image:url('/wp-content/themes/theoffercompany/images/property-2.png');"></div>
+                    </div>
+                    <div class="info">
+                        <p class="highlighted">507 W Mountain Sag...</p>
+                        <p class="new-info">Listed for $285,000</p>
+                        <p class="location">1 mi away | 3 days ago</p>
+                    </div>
+                </div>
+
+                <div class="comp-item">
+                    <div class="ch-img ch-circle">
+                        <div class="ch-background-img ch-bg-img " style="background-image:url('/wp-content/themes/theoffercompany/images/property-3.png');"></div>
+                    </div>
+                    <div class="info">
+                        <p class="highlighted">14033 S 9th PI</p>
+                        <p class="new-info">Increased to $345,000 (+$4,000)</p>
+                        <p class="location">1 mi away | 3 days ago</p>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="see-more">
+                <a href="#">
+                    <i class="fas fa-plus"></i>
+                    See more
+                </a>
             </div>
         </div>
     </div>
+
     <h1 class="questions">Can I answer any questions?</h1>
     <div class="eval-unlocked-contact-agent">
         <div class="contact-agent-pic">
