@@ -3,6 +3,22 @@
 Template Name: Blog Agent
 */
   get_header(nomenu);
+  $agent_id = $_GET['agent'] ?? 123;
+  $agent = get_user_by('id', $agent_id);
+
+  $default_posts_per_page = get_option( 'posts_per_page' );
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  $wpb_all_query = new WP_Query(array(
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'paged' => $paged,
+    'posts_per_page' => $default_posts_per_page,
+    'author' => $agent_id,
+  )); 
+
+  $posts = $wpb_all_query->posts;
+  $max_pages = $wpb_all_query->max_num_pages;
+  $current_page = $paged;
 ?>
 <div class="bg-white">
   <div class="blog-img-holder">
@@ -96,10 +112,10 @@ Template Name: Blog Agent
 
         <div class="author">
           <div class="author-img">
-            <img src="/wp-content/themes/theoffercompany/images/agent.png" alt="agent" />
+            <img src="<?= get_avatar_url($agent_id); ?>" alt="agent" />
           </div>
           <div class="about-author">
-            <h2>Get updates on weekend events, restaurant openings, live music, real estate and more.</h2>
+            <h2><?= the_author_meta('description', $agent_id); ?></h2>
             <a href="#">Get weekly updates
               <i class="fas fa-arrow-right"></i>
             </a>
@@ -358,53 +374,34 @@ Template Name: Blog Agent
       <aside class="blog-aside col-12 col-md-3">
         <div class="popular-posts">
           <h2>Popular Posts</h2>
-          <div class="one-popular">
-            <a href="#">Prep for ‘Prost!’ Season 9 Bavarian Style Homes to Inspire Oktoberfest</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">A Farmhouse-Style Prefab That’ll Make You Want to Ditch the Big City</a>
-            <p>25 Oct 2018</p>
-          </div>
-
-          <div class="one-popular">
-            <a href="#">This Historic Connecticut Home Once Hosted a Dancing George Washington</a>
-            <p>25 Oct 2018</p>
-          </div>
+          <?php foreach( get_popular_posts() as $popular ): ?>
+            <div class="one-popular">
+              <a href="<?= get_the_permalink($post->ID) ?>"><?= $popular->post_title ?></a>
+              <p>
+                <?= format_blog_date($post->post_date, "d M Y") ?>
+              </p>
+            </div>
+          <?php endforeach; ?>
 
           <div class="offer-link">
             <a href="#">Get updates</a>
             <i class="far fa-arrow-right fasarrow"></i>
           </div>
-
-
         </div> <!-- popular posts -->
-
 
         <div class="blog-contact-agent">
           <div class="contact-agent-pic">
-            <img src="/wp-content/themes/theoffercompany/images/agent.png" class="agent-pic" alt="agent">
+            <img src="<?= get_avatar_url($agent_id); ?>" class="agent-pic" alt="agent">
           </div>
           <div class="contact-details">
-            <h2 class="contact-agent-prev-name">Anette Brown</h2>
+            <h2 class="contact-agent-prev-name"><?= get_the_author_meta('display_name', $agent_id); ?></h2>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <p>602-448-7377</p>
-            <p>annete@theofferco.com</p>
+            <p><?= get_the_author_meta('user_email', $agent_id); ?></p>
 
             <div class="call-chat-write">
               <i class="fas fa-phone agent-phone agent-phone-rotate"></i>
