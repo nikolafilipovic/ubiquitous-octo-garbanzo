@@ -12,13 +12,15 @@ Template Name: Blog Agent
     'post_type' => 'post',
     'post_status' => 'publish',
     'paged' => $paged,
-    'posts_per_page' => $default_posts_per_page,
+    'posts_per_page' => 7,
     'author' => $agent_id,
   )); 
 
   $posts = $wpb_all_query->posts;
   $max_pages = $wpb_all_query->max_num_pages;
   $current_page = $paged;
+
+  list($first, $second, $third) = array_chunk($posts, 3);
 ?>
 <div class="bg-white">
   <div class="blog-img-holder">
@@ -122,75 +124,9 @@ Template Name: Blog Agent
           </div>
         </div>
 
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/bloomhouse.jpg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              This Remarkable Home Is Anything but Square
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/lulamaekitchen.jpg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              A Farmhouse-Style Prefab That'll Make You Want to Ditch the Big City
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
+        <?php foreach($first as $post): ?>
+           <?php include "post_template.php"; ?>
+        <?php endforeach; ?>
 
         <div class="row row-blue-adv">
           <div class="blue-adv col-12 col-md-11">
@@ -203,74 +139,9 @@ Template Name: Blog Agent
           </div>
         </div>
 
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/bloomhouse.jpg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              This Remarkable Home Is Anything but Square
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/lulamaekitchen.jpg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              A Farmhouse-Style Prefab That'll Make You Want to Ditch the Big City
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
+        <?php foreach($second as $post): ?>
+           <?php include "post_template.php"; ?>
+        <?php endforeach; ?>
 
         <div class="row row-blue-adv">
           <div class="blue-adv col-12 col-md-11">
@@ -282,92 +153,13 @@ Template Name: Blog Agent
             </a>
           </div>
         </div>
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/retro-design.jpeg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/lulamaekitchen.jpg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              A Farmhouse-Style Prefab That'll Make You Want to Ditch the Big City
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
-
-        <!-- one post -->
-        <div class="one-post row no-gutters">
-          <div class="col-12 col-md-5">
-            <div class="one-post-image" style="background-image: url(/wp-content/themes/theoffercompany/images/bloomhouse.jpg);"></div>
-            <div class="play round-blue">
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-7 right-side">
-            <small class="small-imp">Upgrading home</small>
-            <a href="#">
-              This Remarkable Home Is Anything but Square
-            </a>
-            <div class="review-by">
-              <img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
-              <p>Chris Brown</p>
-              <small>on 25 Oct 2018</small>
-            </div>
-          </div>
-
-        </div> <!-- one post -->
+          
+        <?php foreach($third as $post): ?>
+           <?php include "post_template.php"; ?>
+        <?php endforeach; ?>
 
         <hr class="d-block d-md-none line">
-        <div class="row pagination blog-pag">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-            <div>
-              <ul class="pagination blog-pag">
-                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                <li class="page-item"><a class="page-link next" href="#">Next</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <?php include "pagination_template.php" ?>
         <hr class="margin-negative d-block d-md-none line">
       </div> <!-- all posts -->
 
