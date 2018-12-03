@@ -82,7 +82,7 @@
     height: 200px;
     margin: 0 auto;
     background-size: cover !important;
-    background-position: top left !important;
+    background-position: left !important;
     @include respond-to('desktop') {
       height: 349px;
     }
