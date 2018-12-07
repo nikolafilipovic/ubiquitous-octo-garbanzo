@@ -1,0 +1,57 @@
+.quest-wrapper {
+  background-image: url(/wp-content/themes/theoffercompany/images/kitchen.jpg) !important;
+  background-size: cover !important;
+  background-position: top right !important;
+  min-height: 600px;
+
+  .quest-faded {
+    background: rgba(124, 196, 248, 0.9) !important;
+    min-height: 100% !important;
+  }
+
+  #pageone {
+    height: unset !important;
+    padding-top: 3em !important;
+  }
+
+  .stage {
+    .wrapperMid {
+      h1 {
+        font-size: 24px !important;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 1rem !important;
+      }
+
+      h5 {
+        width: 70%;
+        line-height: 23px;
+        margin: 3em auto 1.5em;
+      }
+    }
+  }
+
+  .wrapperForm {
+
+    .lh-form {
+      margin-top: 0 !important;
+    }
+
+    input[type='text'] {
+      font-size: .9rem !important;
+      padding: 1.5em 1em !important;
+      position: relative;
+    }
+
+    .placeholder {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: .9rem !important;
+      font-weight: 400;
+      color: $grayish;
+    }
+  }
+}
