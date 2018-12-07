@@ -2,11 +2,12 @@
   background-image: url(/wp-content/themes/theoffercompany/images/kitchen.jpg) !important;
   background-size: cover !important;
   background-position: top right !important;
-  min-height: 600px;
+  min-height: 400px;
 
   .quest-faded {
     background: rgba(124, 196, 248, 0.9) !important;
     min-height: 100% !important;
+    position: relative;
   }
 
   #pageone {
@@ -53,5 +54,17 @@
       font-weight: 400;
       color: $grayish;
     }
+  }
+
+  .complete-bar-footer {
+    position: absolute;
+    bottom: 0;
+    background: $main-color;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 1.2em;
   }
 }
