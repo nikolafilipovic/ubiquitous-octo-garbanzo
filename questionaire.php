@@ -61,73 +61,63 @@
             </div>
           </div>
         </div>
-        <div class="step" id="pagethree">
-          <div class="container-fluid h-100">
-            <div class="row h-100">
-              <div class="col-12 my-auto mod">
-                <div class="wrapperMid">
-                  <h1>We can write up the offer for you.</h1>
-                </div>
-                <div class="wrapperMid">
-                  <h3>Please provide the informaiton below and Annete will contact you within 5 minutes.</h3>
-                </div>
-                <div class="wrapperForm">
-                  <form class="lh-form">
-                    <div class="row no-gutters">
-                      <div class="form-group col-6 pr-2">
-                        <input type="text" class="form-control" placeholder="First name">
-                      </div>
-                      <div class="form-group col-6">
-                        <input type="text" class="form-control" placeholder="Last Name">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Phone">
-                    </div>
-                    <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <a data-triger="#pagefour" class="offer-link step-toggler" href="#">Submit <i class="far fa-arrow-right"></i></a>
-                  </form>
-                </div>
-                <div class="personBlock">
-                  <div class="iconBlock" style="background-image: url(/wp-content/themes/theoffercompany/images/agent.png);"></div>
-                  <div class="infoBlock">
-                    <h6>Anette Brown</h6>
-                    <p class="licensed">Licensed Agent</p>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <p>602-448-7377</p>
-                    <span>anette@theofferco.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="step" id="pagefour">
+        <!-- zasto mi ovo radi kad stavim pagefour nakon pageone?? -->
           <div class="container-fluid h-100">
             <div class="row h-100">
               <div class="col-12 my-auto mod">
                 <div class="wrapperMid">
-                  <h1>Success!</h1>
-                  <h3>Anette Brown will contact you shortly.</h3>
+                  <h1>Request your offers</h1>
+                  <h5>Does your kitchen have any of these features?</h5>
                 </div>
-                <div class="personBlock">
-                  <div class="iconBlock" style="background-image: url(/wp-content/themes/theoffercompany/images/agent.png);"></div>
-                  <div class="infoBlock">
-                    <h6>Anette Brown</h6>
-                    <p class="licensed">Licensed Agent</p>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <p>602-448-7377</p>
-                    <span>anette@theofferco.com</span>
+
+                <div class="wrapperForm">
+                  <div class="checkboxes">
+                    <div class="cb-first-group">
+                      <label class="custom-checkmark">
+                          Kitchen island
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                      </label>
+
+                      <label class="custom-checkmark">
+                          New cabinets
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                      </label>
+
+                      <label class="custom-checkmark">
+                          Tile backsplash
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                      </label>
+
+                      <label class="custom-checkmark">
+                          Double oven
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                      </label>
+                    </div>
+
+                    <div class="cb-second-group">
+                      <label class="custom-checkmark">
+                          Built-in microwave
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                      </label>
+
+                      <label class="custom-checkmark">
+                          Walk-in pantry
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                      </label>
+
+                      <label class="custom-checkmark">
+                          None of the above
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
