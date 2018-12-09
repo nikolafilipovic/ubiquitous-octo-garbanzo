@@ -7,15 +7,15 @@
 ?>
 <style>
   #wrapper {
-    height: calc(100vh - 55px);
+    height: 100vh;
   }
 </style>
 <div id="wrapper" class="makeanoffer">
-  <div class="wrapperTop">
-    <a href="#"><i class="far fa-angle-left" aria-hidden="true"></i>Back</a>
-  </div>
   <div class="wrapper quest-wrapper">
     <div class="quest-faded">
+      <div class="wrapperTop quest-WT">
+        <a href="#"><i class="far fa-angle-left" aria-hidden="true"></i>Back</a>
+      </div>
       <div class="steps multi-step">
         <div class="step" id="pageone">
           <!-- Container-Fluid znaci da container bude od ivice do ivice. h-100 znaci da uzme visinu od 100% -->
@@ -62,72 +62,73 @@
           </div>
         </div>
         <div class="step" id="pagefour">
-        <!-- zasto mi ovo radi kad stavim pagefour nakon pageone?? -->
           <div class="container-fluid h-100">
-            <div class="row h-100">
-              <div class="col-12 my-auto mod">
+            <div class="row h-100 d-block">
+              <div class="flexed col-12 my-auto mod">
                 <div class="wrapperMid">
                   <h1>Request your offers</h1>
-                  <h5>Does your kitchen have any of these features?</h5>
+                  <h5 class="smaller-margin">Does your kitchen have any of these features?</h5>
                 </div>
 
                 <div class="wrapperForm">
                   <div class="checkboxes">
                     <div class="cb-first-group">
                       <label class="custom-checkmark">
-                          Kitchen island
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
+                        Kitchen island
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
                       </label>
 
                       <label class="custom-checkmark">
-                          New cabinets
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
+                        New cabinets
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
                       </label>
 
                       <label class="custom-checkmark">
-                          Tile backsplash
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
+                        Tile backsplash
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
                       </label>
 
                       <label class="custom-checkmark">
-                          Double oven
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
+                        Double oven
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
                       </label>
                     </div>
 
                     <div class="cb-second-group">
                       <label class="custom-checkmark">
-                          Built-in microwave
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
+                        Built-in microwave
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
                       </label>
 
                       <label class="custom-checkmark">
-                          Walk-in pantry
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
+                        Walk-in pantry
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
                       </label>
 
                       <label class="custom-checkmark">
-                          None of the above
-                          <input type="checkbox">
-                          <span class="checkmark"></span>
+                        None of the above
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
                       </label>
                     </div>
                   </div>
+
                 </div>
+                <a data-triger="#pagefour" class="offer-link fixed-width step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="complete-bar-footer">
-      <p>0% complete</p>
-    </div>
+        <p>0% complete</p>
+      </div>
     </div>
   </div>
 </div>
