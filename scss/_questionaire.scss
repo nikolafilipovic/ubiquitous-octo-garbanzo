@@ -256,6 +256,109 @@
 
   }
 
+  #pageeight {
+    h1 {
+      font-size: 1.4rem;
+      font-family: $publico-font-family;
+      margin-bottom: 0 !important;
+    }
+
+    p {
+      color: $gray-paragraph;
+      font-weight: 400;
+      font-size: .95rem;
+      padding: 1em 0 2em;
+    }
+
+    .last-page {
+      width: 340px;
+    }
+
+    .blog-contact-agent {
+      position: relative;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      box-shadow: 0px 25px 64.6px 3.4px rgba(53, 94, 140, 0.18) !important;
+      padding: 2.1rem 1.2rem;
+      margin-bottom: 3em;
+
+      .contact-agent-pic {
+        flex: 0 1 130px;
+
+        @include respond-to('desktop') {
+          flex: 0 0 80px;
+          max-width: 130px;
+          margin-bottom: 20px;
+        }
+
+        .agent-pic {
+          width: 100%;
+          height: auto;
+          border-radius: 50%;
+        }
+      }
+
+      .contact-details {
+        margin-left: 20px;
+
+        @include respond-to('tablet') {
+          margin-left: 40px;
+        }
+
+        @include respond-to('tablet') {
+          margin-left: 20px;
+        }
+
+        h2 {
+          font-size: 24px !important;
+          font-family: $publico-font-family;
+          padding-bottom: 5px !important;
+        }
+
+        .fa-star {
+          font-size: 1rem;
+          color: $main-color;
+        }
+
+        p:last-of-type {
+          padding-top: 0 !important;
+        }
+
+        p {
+          padding: .3em 0 !important;
+          font-size: 1rem;
+          font-weight: 400;
+          word-wrap: break-word;
+
+          @include respond-to('tablet') {
+            font-size: 1.1rem;
+          }
+        }
+
+        .call-chat-write {
+          position: absolute;
+          bottom: -19px;
+        }
+      }
+    }
+
+    .agent-phone {
+      color: white;
+      background: $main-color;
+      padding: .8rem;
+      border-radius: 50%;
+      font-size: 18px;
+      margin-right: 4px;
+
+      &-rotate {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
   .offer-link.fixed-width {
     min-width: 100% !important;
     width: 340px !important;

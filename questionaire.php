@@ -19,11 +19,8 @@
 
       <div class="steps multi-step">
         <div class="step" id="pageone">
-          <!-- Container-Fluid znaci da container bude od ivice do ivice. h-100 znaci da uzme visinu od 100% -->
           <div class="container-fluid h-100 mod">
-            <!-- h-100 znaci da uzme visinu od 100% -->
             <div class="row h-100">
-              <!-- my-auto znaci da centrira y (vertikalno) marginama po sredini. -->
               <div class="col-12 my-auto mod">
                 <div class="wrapperMid">
                   <h1>Title goes here</h1>
@@ -56,7 +53,6 @@
                       <p class="placeholder">sqft</p>
                     </div>
                   </div>
-                  <!-- TODO: #pagetwo -->
                   <a data-triger="#pagetwo" class="offer-link step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
                 </form>
               </div>
@@ -305,41 +301,84 @@
           <div class="container-fluid h-100">
             <div class="h-100">
               <div class="flexed my-auto mod">
-                
-                  <h1 class="d-block d-md-none fstart">Manage Photos</h1>
-                  <h1 class="d-none d-md-block">Upload Photos</h1>
 
-                  <div class="q-image-gallery"> 
-                    <div class="image-card">
-                      <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-1.png)"><i
-                          class="fal fa-times"></i></div>
-                    </div>
+                <h1 class="d-block d-md-none fstart">Manage Photos</h1>
+                <h1 class="d-none d-md-block">Upload Photos</h1>
 
-                    <div class="image-card">
-                      <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-2.png)"><i
-                          class="fal fa-times"></i></div>
-                    </div>
+                <div class="q-image-gallery">
+                  <div class="image-card">
+                    <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-1.png)"><i
+                        class="fal fa-times"></i></div>
+                  </div>
 
-                    <?php for($i=0; $i<8; $i++): ?>
-                    <div class="image-card image-card--empty">
-                      <div class="chose-a-image">
-                        <div class="wrap-control">
-                          <i class="fal fa-plus"></i>
-                          <p>Add</p>
-                        </div>
+                  <div class="image-card">
+                    <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-2.png)"><i
+                        class="fal fa-times"></i></div>
+                  </div>
+
+                  <?php for($i=0; $i<8; $i++): ?>
+                  <div class="image-card image-card--empty">
+                    <div class="chose-a-image">
+                      <div class="wrap-control">
+                        <i class="fal fa-plus"></i>
+                        <p>Add</p>
                       </div>
                     </div>
-                    <?php endfor; ?>
                   </div>
-                  <a href="#" class="skip d-block d-md-none">
-                    <i class="fal fa-plus"></i>
-                    Add photos
-                  </a>
-                  <a data-triger="#pageone" class="offer-link fixed-width step-toggler with-margin-top d-block" href="#">
-                    Submit
+                  <?php endfor; ?>
+                </div>
+                <a href="#" class="skip d-block d-md-none">
+                  <i class="fal fa-plus"></i>
+                  Add photos
+                </a>
+                <a data-triger="#pageeight" class="offer-link fixed-width step-toggler with-margin-top d-block" href="#">
+                  Submit
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step" id="pageeight" data-on-enter="removeOldBackground">
+          <div class="container-fluid h-100">
+            <div class="h-100">
+              <div class="flexed my-auto mod">
+                <div class="last-page">
+                  <h1 class="fstart">Your offers are coming!</h1>
+                  <p>Hi Stefan, Thank you for your request. Your estimate comparisons from dozens of the top
+                    buyingcompanies will be delivered right to your email within 48 hours. In the meantime please feel
+                    free to contact me anytime. </p>
+
+                  <div class="blog-contact-agent">
+                    <div class="contact-agent-pic">
+                      <img src="/wp-content/themes/theoffercompany/images/agent.png" class="agent-pic" alt="agent">
+                    </div>
+                    <div class="contact-details">
+                      <h2 class="contact-agent-prev-name">Anette Brown</h2>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <p>602-448-7377</p>
+                      <p>annete@theofferco.com</p>
+
+                      <div class="call-chat-write">
+                        <i class="fas fa-phone agent-phone agent-phone-rotate"></i>
+                        <i class="fas fa-comment-alt agent-phone"></i>
+                        <i class="fas fa-envelope agent-phone"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a data-triger="#last-page" class="offer-link fixed-width step-toggler with-margin-top d-block" href="#">
+                    Continue browsing
                     <i class="fas fa-arrow-right"></i>
                   </a>
                 </div>
+
+              </div>
             </div>
           </div>
         </div>
