@@ -167,7 +167,7 @@
               <div class="flexed col-12 my-auto mod">
                 <div class="wrapperMid">
                   <h1>Request your offers</h1>
-                  <h5 class="smaller-margin">Whatelse should we know about your home?</h5>
+                  <h5 class="smaller-margin">What else should we know about your home?</h5>
                   <hr>
                   <p class="bath-desc">Please tell us about any upgrades that would add value that were not already
                     covered. (optional)</p>
