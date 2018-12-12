@@ -20,7 +20,7 @@
 
   .quest-faded {
     background: rgba(124, 196, 248, 0.9) !important;
-    min-height: 100% !important;
+    min-height: calc(100vh - 57px) !important;
     position: relative;
   }
 
@@ -288,8 +288,6 @@
   }
 
   .complete-bar-footer {
-    position: absolute;
-    bottom: 0;
     background: $main-color;
     width: 100%;
     color: white;

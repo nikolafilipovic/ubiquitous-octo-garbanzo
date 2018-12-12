@@ -6,16 +6,17 @@
   get_header(nomenu);
 ?>
 <style>
-  #wrapper {
-    height: 100vh;
+  html {
+    margin-top: 0px !important;
   }
 </style>
 <div id="wrapper" class="makeanoffer">
   <div class="wrapper quest-wrapper">
-    <div class="quest-faded">
+    <div class="quest-faded quest-faded-100">
       <div class="wrapperTop quest-WT">
         <a href="#"><i class="far fa-angle-left" aria-hidden="true"></i>Back</a>
       </div>
+
       <div class="steps multi-step">
         <div class="step" id="pageone">
           <!-- Container-Fluid znaci da container bude od ivice do ivice. h-100 znaci da uzme visinu od 100% -->
@@ -189,6 +190,7 @@
           </div>
         </div>
       </div>
+
     </div>
     <div class="complete-bar-footer">
       <p>0% complete</p>

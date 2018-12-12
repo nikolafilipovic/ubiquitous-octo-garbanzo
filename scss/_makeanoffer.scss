@@ -533,14 +533,12 @@
  *	Mind the height setting!!
  */
 #pageone {
-    height: calc(100vh - 55px); //removing the topWrapper from the height.
     padding-top: 3rem;
     .wrapperBlocks {
         margin-top: 20px;
     }
 }
 #pagetwo {
-    height: calc(100vh - 55px); //removing the topWrapper from the height.
 	.wrapperBlocks {
         margin-top: 50px;
 		margin-bottom: 15%;
@@ -557,7 +555,6 @@
     }
 }
 #pagethree {
-    height: calc(100vh - 55px); //removing the topWrapper from the height.
     overflow-y: scroll;
 	padding-top: 3rem;
 	padding-bottom: 1rem;
@@ -579,7 +576,6 @@
 	}
 }
 #pagefour {
-    height: calc(100vh - 55px); //removing the topWrapper from the height.
     padding-top: 3rem;
 	h1 {
         margin-bottom: 2.5rem;
@@ -590,7 +586,6 @@
 	}
 }
 #pagefive {
-    height: calc(100vh - 55px); //removing the topWrapper from the height.
     padding-top: 3rem;
 	h1 {
         margin-bottom: 2.5rem;
