@@ -4,6 +4,11 @@
  */
 var taskAllowance = 1;
 
+function removeOldBackground() {
+    jQuery('.quest-faded').addClass('quest-faded-white');
+    jQuery('.complete-bar-footer').hide();
+}
+
 /* Move the Page Container and expand the Menu */
 function slideOutMenu(option, whichOpener) {
     if (option === "open") {

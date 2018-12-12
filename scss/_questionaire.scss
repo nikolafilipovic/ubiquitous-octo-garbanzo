@@ -24,6 +24,11 @@
     position: relative;
   }
 
+  .quest-faded-white {
+    background: white !important;
+    min-height: 100vh !important;
+  }
+
   .multi-step {
     overflow: unset !important;
   }
