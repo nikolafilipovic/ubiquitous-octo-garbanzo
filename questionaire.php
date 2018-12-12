@@ -56,7 +56,8 @@
                       <p class="placeholder">sqft</p>
                     </div>
                   </div>
-                  <a data-triger="#pagetwo" class="offer-link step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
+                  <!-- TODO: #pagetwo -->
+                  <a data-triger="#pagesix" class="offer-link step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
                 </form>
               </div>
             </div>
@@ -191,10 +192,161 @@
         </div>
 
         <div class="step" id="pagefive" data-on-enter="removeOldBackground">
-          <h1>Hello step five!</h1>
-        </div>
-      </div>
+          <div class="container-fluid h-100">
+            <div class="row h-100 d-block">
+              <div class="flexed col-12 my-auto mod">
+                <div class="whitestep-container">
+                  <h1>Welcome to The Offer Company!</h1>
 
+                  <div class="links">
+                    <a href="#">Sign in</a>
+                    <a href="#" class="active">New Account</a>
+                  </div>
+
+                  <div class="wrapperForm">
+                    <form class="lh-form">
+
+                      <div class="row no-gutters">
+                        <div class="form-group col-6 pr-2">
+                          <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="form-group col-6">
+                          <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                      </div>
+
+                      <div class="row no-gutters">
+                        <div class="form-group col-12">
+                          <input type="text" class="form-control" placeholder="Mobile phone">
+                        </div>
+                      </div>
+
+                      <div class="row no-gutters">
+                        <div class="form-group col-12">
+                          <input type="text" class="form-control" placeholder="Enter email...">
+                        </div>
+                      </div>
+
+                      <div class="row no-gutters">
+                        <div class="form-group col-12">
+                          <input type="text" class="form-control" placeholder="Create password">
+                        </div>
+                      </div>
+
+                      <a data-triger="#pagesix" class="offer-link step-toggler" href="#">Submit <i class="far fa-arrow-right"></i></a>
+                      <a href="#" class="terms">Terms of Use</a>
+
+                      <div class="border-word">
+                        <span>OR</span>
+                        <div class="hr"></div>
+                      </div>
+
+                      <a class="offer-link offer-link--fb" href="#" class="continue-fb">
+                        <i class="fab fa-facebook-square"></i>
+                        Continue with Facebook
+                      </a>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step" id="pagesix" data-on-enter="removeOldBackground">
+          <div class="container-fluid h-100">
+            <div class="row h-100 d-block">
+              <div class="flexed col-12 my-auto mod">
+                <div class="whitestep-container">
+                  <h1>Add Photos</h1>
+
+                  <p>
+                    You don't need to tidy up, it won't affect your offers.
+                  </p>
+
+                  <h2>Photos to include:</h2>
+                  <ul>
+                    <li>
+                      <span>1</span>
+                      Kitchen: caputring counters, cabinets and floor
+                    </li>
+                    <li>
+                      <span>2</span>
+                      Bathroom: caputring sinks, showers and toilets
+                    </li>
+                    <li>
+                      <span>3</span>
+                      Furnace, water heater and AC unit
+                    </li>
+                    <li>
+                      <span>4</span>
+                      Bedrooms and common areas
+                    </li>
+                    <li>
+                      <span>5</span>
+                      Exterior and yard
+                    </li>
+                  </ul>
+
+                  <a data-triger="#pageseven" class="offer-link fixed-width step-toggler with-margin-top d-block" href="#">Start
+                    adding photos</a>
+
+                  <a href="#" class="skip">
+                    Skip, I can't take photos right now.
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step" id="pageseven" data-on-enter="removeOldBackground">
+          <div class="container-fluid h-100">
+            <div class="h-100">
+              <div class="flexed my-auto mod">
+                
+                  <h1>Manage Photos</h1>
+
+                  <div class="row no-gutters">
+                    <div class="col-6 col-md-2">
+                      <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-1.png)"><i
+                          class="fal fa-times"></i></div>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                      <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-2.png)"><i
+                          class="fal fa-times"></i></div>
+                      
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                      <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-3.png)"><i
+                          class="fal fa-times"></i></div>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                      <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-3.png)"><i
+                          class="fal fa-times"></i></div>
+                    </div>
+
+                    <div class="col-6 col-md-2">
+                      <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-3.png)"><i
+                          class="fal fa-times"></i></div>
+                    </div>
+
+                  </div>
+                  <a href="#" class="skip">
+                    Add photos
+                  </a>
+                  <a data-triger="#pagefive" class="offer-link fixed-width step-toggler with-margin-top d-block" href="#">Start
+                    tour</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
     <div class="complete-bar-footer">
       <p>0% complete</p>

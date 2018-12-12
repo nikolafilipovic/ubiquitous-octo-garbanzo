@@ -55,9 +55,171 @@
     }
   }
 
+  #pagefive {
+    h1 {
+      font-size: 1.4rem;
+      font-family: $publico-font-family;
+      text-align: center;
+      margin-bottom: 0 !important;
+    }
+
+    .links {
+      padding: 1em 0;
+      text-align: center;
+      font-weight: 400;
+      font-size: 1.15rem;
+      margin: 0 -15px;
+      border-bottom: 1px solid $lightergray;
+
+      a:first-child {
+        margin-right: 1em;
+      }
+
+      .active {
+        padding: 1em 0;
+        border-bottom: 2px solid $main-lighter;
+      }
+
+      :not(.active) {
+        color: black;
+      }
+    }
+
+    .wrapperForm {
+      margin-top: 3em;
+    }
+
+    .terms {
+      text-align: center;
+      display: block;
+      margin-top: 1.5em;
+      font-weight: 400;
+      font-size: 1rem;
+      color: $main-color;
+    }
+
+    .border-word {
+      position: relative;
+      margin: 2em 0;
+      span {
+        position: absolute;
+        color: black;
+        font-weight: 400;
+        padding: 0 1em;
+        background: white;
+        top: -10px;
+        left: calc(86% / 2);
+      }
+
+      .hr {
+        background: $lightergray;
+        height: 1px;
+      }
+    }
+
+    .offer-link--fb {
+      background: #4267b2;
+      margin-bottom: 4em;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      i {
+        font-size: 1.3rem !important;
+        position: absolute;
+        left: 15px;
+        top: 11px;
+        margin-left: 0 !important;
+      }
+    }
+  }
+
+  #pagesix {
+    .whitestep-container {
+      padding: 0 1em;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      font-family: $publico-font-family;
+      margin-bottom: 0 !important;
+    }
+
+    h2 {
+      font-size: .95rem;
+    }
+
+    p {
+      color: #7c818a;
+      font-weight: 400;
+      font-size: .95rem;
+      padding: 1em 0;
+      width: 90%;
+    }
+
+    ul {
+      li {
+        color: #7c818a;
+        margin: .5em 0;
+        font-weight: 400;
+      }
+      span {
+        display: inline-flex;
+        background: $main-color;
+        color: white;
+        width: 20px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-weight: 400;
+        margin-right: .33em;
+        font-size: .8rem;
+      }
+    }
+
+    .offer-link {
+      margin: 2em 0 !important;
+    }
+
+    .skip {
+      align-self: center;
+    }
+  }
+
+  #pageseven {
+    .vr-house {
+      position: relative;
+      background-size: cover !important;
+      background-position: center center !important;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 1rem;
+      width: 100px;
+      height: 100px;
+      i {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding-top: 9px;
+        text-align: center;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        background: #00acee;
+        color: #fff;
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+    }
+
+  }
+
   .offer-link.fixed-width {
     min-width: 100% !important;
     width: 340px !important;
+    margin-bottom: 3em !important;
     @include respond-to('tablet') {
       max-width: 340px !important;
       min-width: unset !important;
