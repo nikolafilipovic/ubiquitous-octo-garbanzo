@@ -56,13 +56,13 @@
                       <p class="placeholder">sqft</p>
                     </div>
                   </div>
-                  <a data-triger="#pagefour" class="offer-link step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
+                  <a data-triger="#pagetwo" class="offer-link step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
                 </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="step" id="pagefour">
+        <div class="step" id="pagetwo">
           <div class="container-fluid h-100">
             <div class="row h-100 d-block">
               <div class="flexed col-12 my-auto mod">
@@ -121,13 +121,13 @@
                   </div>
 
                 </div>
-                <a data-triger="#pagefour" class="offer-link fixed-width step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
+                <a data-triger="#pagethree" class="offer-link fixed-width step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="step" id="pagefour">
+        <div class="step" id="pagethree">
           <div class="container-fluid h-100">
             <div class="row h-100 d-block">
               <div class="flexed col-12 my-auto mod">
@@ -180,7 +180,7 @@
                       <textarea class="form-control" placeholder="New water heater,etc"></textarea>
                     </div>
 
-                    <a data-triger="#pagefour" class="offer-link fixed-width step-toggler with-margin-top" href="#">Next
+                    <a data-triger="#pagefive" class="offer-link fixed-width step-toggler with-margin-top" href="#">Next
                       <i class="far fa-arrow-right"></i></a>
                   </form>
                 </div>
@@ -188,6 +188,10 @@
 
             </div>
           </div>
+        </div>
+
+        <div class="step" id="pagefive" data-on-enter="removeOldBackground">
+          <h1>Hello step five!</h1>
         </div>
       </div>
 
