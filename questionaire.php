@@ -57,7 +57,7 @@
                     </div>
                   </div>
                   <!-- TODO: #pagetwo -->
-                  <a data-triger="#pagesix" class="offer-link step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
+                  <a data-triger="#pageseven" class="offer-link step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
                 </form>
               </div>
             </div>
@@ -306,41 +306,39 @@
             <div class="h-100">
               <div class="flexed my-auto mod">
                 
-                  <h1>Manage Photos</h1>
+                  <h1 class="d-block d-md-none fstart">Manage Photos</h1>
+                  <h1 class="d-none d-md-block">Upload Photos</h1>
 
-                  <div class="row no-gutters">
-                    <div class="col-6 col-md-2">
+                  <div class="q-image-gallery"> 
+                    <div class="image-card">
                       <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-1.png)"><i
                           class="fal fa-times"></i></div>
                     </div>
 
-                    <div class="col-6 col-md-2">
+                    <div class="image-card">
                       <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-2.png)"><i
                           class="fal fa-times"></i></div>
-                      
                     </div>
 
-                    <div class="col-6 col-md-2">
-                      <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-3.png)"><i
-                          class="fal fa-times"></i></div>
+                    <?php for($i=0; $i<8; $i++): ?>
+                    <div class="image-card image-card--empty">
+                      <div class="chose-a-image">
+                        <div class="wrap-control">
+                          <i class="fal fa-plus"></i>
+                          <p>Add</p>
+                        </div>
+                      </div>
                     </div>
-
-                    <div class="col-6 col-md-2">
-                      <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-3.png)"><i
-                          class="fal fa-times"></i></div>
-                    </div>
-
-                    <div class="col-6 col-md-2">
-                      <div class="vr-house" style="background: url(/wp-content/themes/theoffercompany/images/vr-house-3.png)"><i
-                          class="fal fa-times"></i></div>
-                    </div>
-
+                    <?php endfor; ?>
                   </div>
-                  <a href="#" class="skip">
+                  <a href="#" class="skip d-block d-md-none">
+                    <i class="fal fa-plus"></i>
                     Add photos
                   </a>
-                  <a data-triger="#pagefive" class="offer-link fixed-width step-toggler with-margin-top d-block" href="#">Start
-                    tour</a>
+                  <a data-triger="#pagefive" class="offer-link fixed-width step-toggler with-margin-top d-block" href="#">
+                    Submit
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
             </div>
           </div>
