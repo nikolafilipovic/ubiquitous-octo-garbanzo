@@ -58,9 +58,7 @@
     min-width: 100% !important;
     width: 340px !important;
     @include respond-to('tablet') {
-      min-width: 60% !important;
-    }
-    @include respond-to('m-desktop') {
+      max-width: 340px !important;
       min-width: unset !important;
     }
   }
@@ -103,6 +101,20 @@
         font-size: 1rem !important;
       }
 
+      .bath-desc {
+        font-weight: 400;
+        width: 100%;
+        margin: 0 auto 2em;
+        font-size: 1.1rem;
+        @include respond-to ('tablet') {
+          width: 60%;
+        }
+
+        @include respond-to ('desktop') {
+          width: 30%;
+        }
+      }
+
       h5 {
         width: 70%;
         line-height: 23px;
@@ -133,6 +145,65 @@
       font-size: .9rem !important;
       font-weight: 400;
       color: $grayish;
+    }
+
+    .textbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 340px;
+      textarea {
+        height: 110px;
+        padding: .8em 1em !important;
+        font-size: .95rem !important;
+        margin-bottom: 1em;
+      }
+    }
+
+    .radiobuttons {
+      color: white;
+      margin-bottom: 2em;
+    }
+
+    .rb-labels-group {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      padding: 0 30px;
+    }
+
+    .rb-flex-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      [type="radio"]:checked+label:before,
+      [type="radio"]:not(:checked)+label:before {
+        width: 16px !important;
+        height: 16px !important;
+      }
+
+      [type="radio"]:checked+label:after,
+      [type="radio"]:not(:checked)+label:after {
+        width: 8px !important;
+        height: 8px !important;
+        background: white !important;
+        top: 8px !important;
+        left: 4px !important;
+      }
+
+      [type="radio"]:checked+label,
+      [type="radio"]:not(:checked)+label {
+        padding-left: 28px !important;
+        font-size: 1rem !important;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+    }
+
+    .with-margin-top {
+      margin-top: 1em !important;
+      align-self: center;
     }
 
     .checkboxes {

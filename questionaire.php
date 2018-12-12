@@ -125,10 +125,74 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="complete-bar-footer">
-        <p>0% complete</p>
+
+        <div class="step" id="pagefour">
+          <div class="container-fluid h-100">
+            <div class="row h-100 d-block">
+              <div class="flexed col-12 my-auto mod">
+                <div class="wrapperMid">
+                  <h1>Request your offers</h1>
+                  <h5 class="smaller-margin">What is the condition of your master bathroom?</h5>
+                  <hr>
+                  <p class="bath-desc">We're most interested in your shower, vanity, toilet, countertops and floor.</p>
+                </div>
+
+                <div class="wrapperForm">
+                  <form class="radiobuttons">
+                    <div class="rb-flex-container">
+                      <div class="rb-labels-group">
+                        <input type="radio" name="radio-group" id="Repairs"><label for="Repairs">Needs repairs</label>
+
+                        <input type="radio" name="radio-group" id="Corrections"><label for="Corrections">Some chips,
+                          stains, cracks or loose pieces</label>
+
+                        <input type="radio" name="radio-group" id="Perfect"><label for="Perfect">Near perfect
+                          condition</label>
+                      </div>
+
+                      <a data-triger="#pagefour" class="offer-link fixed-width step-toggler with-margin-top" href="#">Next
+                        <i class="far fa-arrow-right"></i></a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="step" id="pagefour">
+          <div class="container-fluid h-100">
+            <div class="row h-100 d-block">
+              <div class="flexed col-12 my-auto mod">
+                <div class="wrapperMid">
+                  <h1>Request your offers</h1>
+                  <h5 class="smaller-margin">Whatelse should we know about your home?</h5>
+                  <hr>
+                  <p class="bath-desc">Please tell us about any upgrades that would add value that were not already
+                    covered. (optional)</p>
+                </div>
+
+                <div class="wrapperForm">
+                  <form class="textbox">
+                    <div class="input-group">
+                      <textarea class="form-control" placeholder="New water heater,etc"></textarea>
+                    </div>
+
+                    <a data-triger="#pagefour" class="offer-link fixed-width step-toggler with-margin-top" href="#">Next
+                      <i class="far fa-arrow-right"></i></a>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="complete-bar-footer">
+      <p>0% complete</p>
+    </div>
   </div>
+</div>
 </div>
