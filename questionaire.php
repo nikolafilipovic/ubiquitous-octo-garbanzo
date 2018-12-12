@@ -57,7 +57,7 @@
                     </div>
                   </div>
                   <!-- TODO: #pagetwo -->
-                  <a data-triger="#pageseven" class="offer-link step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
+                  <a data-triger="#pagetwo" class="offer-link step-toggler" href="#">Next <i class="far fa-arrow-right"></i></a>
                 </form>
               </div>
             </div>
@@ -335,7 +335,7 @@
                     <i class="fal fa-plus"></i>
                     Add photos
                   </a>
-                  <a data-triger="#pagefive" class="offer-link fixed-width step-toggler with-margin-top d-block" href="#">
+                  <a data-triger="#pageone" class="offer-link fixed-width step-toggler with-margin-top d-block" href="#">
                     Submit
                     <i class="fas fa-arrow-right"></i>
                   </a>
