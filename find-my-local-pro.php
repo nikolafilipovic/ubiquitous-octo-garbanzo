@@ -23,7 +23,7 @@ Template Name: Find my Local Pro
               <div class="input-group buy" id="input-group">
                 <input type="text" class="form-control" id="landing-search" placeholder="Enter your zip code">
                 <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
+                  <div class="input-group-text"><i class="far fa-search"></i></div>
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ Template Name: Find my Local Pro
         <div class="form-group mb-0 mt-0">
           <div class="input-group-prepend">
             <input type="text" class="form-control" placeholder="Enter your zip code" />
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="far fa-search"></i>
             </div>
           </div>
         </div>

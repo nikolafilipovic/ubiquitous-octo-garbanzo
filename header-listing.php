@@ -70,7 +70,7 @@
                     <div class="input-group homes-search-field-mobile" id="input-group">
                         <input type="text" class="form-control" id="homes-search-mobile-field" placeholder="Search by address, city or zip...">
                         <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="input-group-text"><i class="far fa-search"></i></div>
                         </div>
                     </div>
                 </div>

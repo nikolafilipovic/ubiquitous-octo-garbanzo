@@ -230,7 +230,7 @@
                     <div class="form-group mb-0 mt-0">
                       <div class="input-group-prepend">
                         <input type="text" class="form-control" placeholder="Enter your home address" />
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="far fa-search"></i>
                       </div>
                     </div>
                   </div>

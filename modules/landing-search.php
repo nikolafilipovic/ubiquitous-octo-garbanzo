@@ -24,7 +24,7 @@ class toc_landing_search extends ET_Builder_Module {
 					<div class="input-group buy" id="input-group">
 						<input type="text" class="form-control" id="landing-search" placeholder="Enter address, neighborhood, city or zip...">
 						<div class="input-group-prepend">
-							<div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
+							<div class="input-group-text"><i class="far fa-search"></i></div>
 						</div>
 					</div>
                 </div>
