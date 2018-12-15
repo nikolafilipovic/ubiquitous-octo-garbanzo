@@ -1,3 +1,5 @@
+<div id="root">
+<input type="hidden" id="agent_id" name="agent_id" value="<?= $_GET['id'] ?>">
 <?php
 /*
 Template Name: Agent Profile
@@ -19,10 +21,10 @@ Template Name: Agent Profile
                 <div class="agent-pic-rating">
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                            <img src="/wp-content/themes/theoffercompany/images/agent.png" alt="Anette Brown">
+                            <img :src="agent.photo" alt="Anette Brown">
                         </div>
                         <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
-                            <h1>Anette Brown</h1>
+                            <h1 v-cloak>{{agent.first_name}} {{agent.last_name}}</h1>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -35,11 +37,11 @@ Template Name: Agent Profile
                 <div class="buttons-call-text">
                     <div class="one">
                         <i class="fas fa-phone rotate"></i>
-                        <p>Call Agent</p>
+                        <p><a :href="'tel:'+agent.phone">Call Agent</a></p>
                     </div>
                     <div class="one">
                         <i class="fas fa-comment-alt-dots"></i>
-                        <p>Text Agent</p>
+                        <p><a :href="'sms:'+agent.phone">Text Agent</a></p>
                     </div>
                 </div>
                 <h3>Welcome!</h3>
@@ -66,46 +68,27 @@ Template Name: Agent Profile
                 <div class="pref-lender">
                     <h3>Preferred Lender</h3>
                     <img src="/wp-content/themes/theoffercompany/images/man.png">
-                    <div class="text">
-                        <p>David Houze</p>
+                    <div class="text" v-cloak>
+                        <p>{{agent.lender_fname}} {{agent.lender_lname}}</p>
                         <a href="#">Get pre-qualified <i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="listing-results">
                     <div class="choices">
                         <p class="active">Active listings <span>(5)</span></p>
-                        <p>Under contract <span>(5)</span></p>
+                        <p @click="getPendingProperties()">Under contract <span>(5)</span></p>
                     </div>
                     <div class="results">
                         <div class="legend d-md-none d-block">
                             <p>Property Address</p>
                             <p class="price">Price</p>
                         </div>
-                        <div class="result-item">
-                            <img src="/wp-content/themes/theoffercompany/images/property-1.png" alt="Property 1">
-                            <p>3400 N Kilpatrick Ave Chicago, IL 60641</p>
-                            <p class="price">$1,788,000</p>
+                        <div v-for="property in properties" class="result-item">
+                            <img :src="property.images[0]" alt="Property 1">
+                            <p>{{property.address_full}}</p>
+                            <p class="price">${{property.listPrice}}</p>
                         </div>
-                        <div class="result-item">
-                            <img src="/wp-content/themes/theoffercompany/images/property-1.png" alt="Property 1">
-                            <p>3400 N Kilpatrick Ave Chicago, IL 60641</p>
-                            <p class="price">$1,788,000</p>
-                        </div>
-                        <div class="result-item">
-                            <img src="/wp-content/themes/theoffercompany/images/property-1.png" alt="Property 1">
-                            <p>3400 N Kilpatrick Ave Chicago, IL 60641</p>
-                            <p class="price">$1,788,000</p>
-                        </div>
-                        <div class="result-item">
-                            <img src="/wp-content/themes/theoffercompany/images/property-1.png" alt="Property 1">
-                            <p>3400 N Kilpatrick Ave Chicago, IL 60641</p>
-                            <p class="price">$1,788,000</p>
-                        </div>
-                        <div class="result-item">
-                            <img src="/wp-content/themes/theoffercompany/images/property-1.png" alt="Property 1">
-                            <p>3400 N Kilpatrick Ave Chicago, IL 60641</p>
-                            <p class="price">$1,788,000</p>
-                        </div>
+                        
                         <a href="#" class="btn btn-block">Check your home's value <i class="far fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -199,21 +182,21 @@ Template Name: Agent Profile
                 <div class="contact-agent">
                     <strong class="small-imp">CONTACT AGENT</strong>
                     <div class="contact-agent-prev row no-gutters">
-                        <div class="col-2">
-                            <img src="/wp-content/themes/theoffercompany/images/woman.png" />
+                        <div class="col-2" v-cloak>
+                            <img :src="agent.photo" />
                         </div>
                         <div class="col-10 contact-agent-details">
-                            <h2 class="contact-agent-prev-name">Anette Brown</h2>
+                            <h2 class="contact-agent-prev-name" v-cloak>{{agent.first_name}} {{agent.last_name}}</h2>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <p>602-448-7377</p>
-                            <p>annete@theofferco.com</p>
+                            <p v-cloak>{{agent.phone}}</p>
+                            <p v-cloak>{{agent.email}}</p>
                             <div class="contact-agent-controlls d-block d-md-none">
-                                <i class="fas fa-phone agent-phone"></i><span class="font-padding-stilization">Call</span>
-                                <i class="fas fa-comment-alt agent-text"></i><span class="font-padding-stilization">Text</span>
+                                <i class="fas fa-phone agent-phone"></i><span class="font-padding-stilization"><a :href="'tel:'+agent.phone">Call</a></span>
+                                <i class="fas fa-comment-alt agent-text"></i><span class="font-padding-stilization"><a :href="'sms:'+agent.phone">Text</a></span>
                             </div>
                         </div>
                     </div>
@@ -247,3 +230,7 @@ Template Name: Agent Profile
     </div>
 </div>
 <?php get_footer(); ?>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script src="http://l8u.9b2.myftpupload.com/wp-content/themes/theoffercompany/agent.js?rand=<?= uniqid(); ?>"></script>

@@ -1,3 +1,4 @@
+<div id="root">
 <?php
 /*
 Template Name: Find my Local Pro
@@ -21,14 +22,14 @@ Template Name: Find my Local Pro
           <div class="landing-search">
             <div class="search-field">
               <div class="input-group buy" id="input-group">
-                <input type="text" class="form-control" id="landing-search" placeholder="Enter your zip code">
+                <input type="text" class="form-control" id="landing-search" placeholder="Enter your zip code" v-model="zip">
                 <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="far fa-search"></i></div>
+                  <div class="input-group-text"><i class="fas fa-map-marker-alt"></i></div>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#" class="offer-link">
+          <a href="#" class="offer-link" @click.prevent="getAgentId()">
             Submit
             <i class="far fa-arrow-right"></i>
           </a>
@@ -65,12 +66,12 @@ Template Name: Find my Local Pro
       <div class="enterzip enterzip--inset">
         <div class="form-group mb-0 mt-0">
           <div class="input-group-prepend">
-            <input type="text" class="form-control" placeholder="Enter your zip code" />
-            <i class="far fa-search"></i>
+            <input type="text" v-model="zip" class="form-control" placeholder="Enter your zip code" />
+            <i class="fas fa-map-marker-alt"></i>
             </div>
           </div>
         </div>
-        <a href="#" class="offer-link">
+        <a href="#" class="offer-link" id="submit" @click.prevent="getAgentId()">
           Submit
           <i class="far fa-arrow-right"></i>
         </a>
@@ -81,3 +82,9 @@ Template Name: Find my Local Pro
 
 
 <?php get_footer(); ?>
+</div>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script src="http://l8u.9b2.myftpupload.com/wp-content/themes/theoffercompany/search_agent.js?rand=<?= uniqid(); ?>"></script>

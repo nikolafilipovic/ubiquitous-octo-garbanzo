@@ -4,11 +4,6 @@
  */
 var taskAllowance = 1;
 
-function removeOldBackground() {
-    jQuery('.quest-faded').addClass('quest-faded-white');
-    jQuery('.complete-bar-footer').hide();
-}
-
 /* Move the Page Container and expand the Menu */
 function slideOutMenu(option, whichOpener) {
     if (option === "open") {
@@ -71,6 +66,13 @@ function slideOutMenu(option, whichOpener) {
 function openFilter() {
     jQuery("#filterOverlay").toggleClass("closed");
     jQuery("body").toggleClass("noscroll");
+}
+/* Open List Homes popup */
+function openLH() {
+    jQuery(".listing-header").toggleClass("z-index-0");
+    jQuery("#search-homes").toggleClass("z-index-0");
+    jQuery("#overlay").toggleClass("open");
+    jQuery(".list-homes-popup").toggleClass("show");
 }
 /* Icons.. */
 function changeHeart(parentElement) {
@@ -227,9 +229,16 @@ function initmulti() {
         }
     });
 }
-
+ 
 /* Initialize the triggers */
 jQuery(document).ready(function () {
+    
+    jQuery('.property-item').on('click',function(){
+        var url = jQuery(this).attr('data-url');
+        var property_id = jQuery(this).attr('data-index');
+        window.location="/home-listing/?property="+url+"&id="+property_id;
+    });
+
     jQuery('.search-click').on('click', function () {
         jQuery('.blog-search').toggleClass('hide');
     });
@@ -272,6 +281,12 @@ jQuery(document).ready(function () {
     });
     jQuery("span.sell").click(function () {
         searchOption("sell");
+    });
+    jQuery("#save-search").click(function () {
+        openLH();
+    });
+    jQuery("#close-lh").click(function () {
+        openLH();
     });
     jQuery("span.estimate").click(function () {
         searchOption("estimate");
