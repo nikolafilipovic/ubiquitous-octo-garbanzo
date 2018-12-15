@@ -435,7 +435,7 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 d-lg-block d-md-block d-none listing-heading">
                         <h3 class="location-name">Atlanta GA Real Estate</h3>
                         <p class="location-info">266 homes for sale</p>
-                        <a href="#" class="save-search">Save Search</a>
+                        <a href="#" class="save-search" id="saveSearch">Save Search</a>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 column-item">
                         <div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url(/wp-content/themes/theoffercompany/images/property-1.png)">
@@ -587,7 +587,7 @@
 						<i class="fal fa-vr-cardboard"></i> Virtual Tour</a>
 						<a href="#" data-toggle="modal" data-target="#remove-modal">
 						<i class="fal fa-times-circle"></i> Remove</a>
-						<a href="#" class="close-link"><i class="fal fa-times"></i></a>
+						<a href="#" class="close-link" id="CloseLink"><i class="fal fa-times"></i></a>
 					</div>
 				</div>
 			</header>

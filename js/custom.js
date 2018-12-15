@@ -285,7 +285,13 @@ jQuery(document).ready(function () {
     jQuery("#save-search").click(function () {
         openLH();
     });
+    jQuery("#saveSearch").click(function () {
+        openLH();
+    });
     jQuery("#close-lh").click(function () {
+        openLH();
+    });
+    jQuery(".close-link i").click(function () {
         openLH();
     });
     jQuery("span.estimate").click(function () {

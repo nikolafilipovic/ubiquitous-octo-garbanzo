@@ -38,6 +38,10 @@ h1 {
   width: 100%;
   z-index: 99999999;
   transition: visibility 0.8s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+  @include respond-to ('s-desktop') {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
 }
 .list-homes-popup.show {
   visibility: visible;
