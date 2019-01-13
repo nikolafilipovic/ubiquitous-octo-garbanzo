@@ -1,9 +1,17 @@
+<div id="root">
 <?php
+
     /*
     Template Name: List Homes
     */
       get_header(nomenu);
+      $new_str = explode('_',$_GET['property']);
+      $zip = array_pop($new_str);
+      $mls_id = $_GET['id'];
+      // include 'franz_functions.php';
     ?>
+<input type="hidden" name="mls_id" value="<?= $mls_id ?>" id="mls_id">
+<input type="hidden" name="zip" value="<?= $zip ?>" id="zip_id">
 <div class="lh-wrapper">
     <div class="container-fluid override-fluid">
         <header class="modal-menu b-shadow">
@@ -13,11 +21,11 @@
             </div>
             <div class="various-link d-none d-md-flex">
                 <div class="offer-link">
-                    <a href="#">Make an offer</a>
+                    <a href="/make-an-offer?id=<?php echo $_GET['id'] ?>">Make an offer</a>
                     <i class="far fa-arrow-right fasarrow"></i>
                 </div>
                 <div class="offer-link">
-                    <a href="#">Schedule tour</a>
+                    <a href="/schedule-tour?id=<?php echo $_GET['id'] ?>">Schedule tour</a>
                     <i class="far fa-arrow-right fasarrow"></i>
                 </div>
                 <!-- save, share, virtual tour, remove, X -->
@@ -30,14 +38,14 @@
                     <i class="fal fa-vr-cardboard"></i> Virtual Tour</a>
                     <a href="#" data-toggle="modal" data-target="#remove-modal">
                     <i class="fal fa-times-circle"></i> Remove</a>
-                    <a href="#" class="close-link"><i class="fal fa-times"></i></a>
+                    <a href="#" id="close2" @click="redirect" class="close-link"><i class="fal fa-times"></i></a> 
                 </div>
             </div>
         </header>
         <div class="row no-gutters">
             <div class="col-12 col-md-7">
                 <figure class="lh-img-holder">
-                    <img src="/wp-content/themes/theoffercompany/images/pexels-photo-259593.jpeg" alt="Propery-1">
+                    <img id="img0" :src="img0"  alt="" style="padding-left: 5px !important; width: 100% !important;">
                     <figcaption class="d-md-none">
                         <span><i class="fas fa-vr-cardboard"></i> Virtual tour</span>
                         <span>1 / 27</span>
@@ -47,16 +55,16 @@
             <div class="col-12 col-md-5 d-none d-md-block more-imgs">
                 <div class="row no-gutters lh-pictures">
                     <div class="col-6">
-                        <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/item.png')"></div>
+                        <div class="image" id="img1"  :style="'background: url('+img1+')'"></div>
                     </div>
                     <div class="col-6">
-                        <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/property2.png')"></div>
+                        <div class="image mr5" id="img2" :style="'background: url('+img2+')'"></div>
                     </div>
                     <div class="col-6">
-                        <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/property3.png')"></div>
+                        <div class="image" id="img3" :style="'background: url('+img3+')'"></div>
                     </div>
                     <div class="col-6">
-                        <div class="image" style="background: url('/wp-content/themes/theoffercompany/images/property5.png')"></div>
+                        <div class="image mr5" id="img4" :style="'background: url('+img4+')'"></div>
                     </div>
                 </div>
             </div>
@@ -75,18 +83,19 @@
             <div class="left-side-container col-12 col-md-8">
                 <div class="row no-gutters">
                     <div class="col-12 col-md-7">
-                        <h1 class="lh-name">11249 E Sonrisa Ave</h1>
-                        <p class="lh-street">Mesa, AZ 85212</p>
-                        <span class="font-padding-stilization">3 bds </span>
+                        <h1 class="lh-name" style="font-size: 1.549rem !important;">{{address_full}}</h1>
+                        <p class="lh-street">{{address_city}}, {{address_state}} {{address_postalCode}}</p>
+                        <span class="font-padding-stilization">{{property_bedrooms}} bds </span>
                         <span class="small-dot">&#8226;</span>
-                        <span class="font-padding-stilization">2 ba </span>
+                        <span class="font-padding-stilization">{{property_bathrooms}} ba </span>
                         <span class="small-dot">&#8226;</span>
-                        <span class="font-padding-stilization">1,209 sqft </span>
+                        <span class="font-padding-stilization">{{property_area}} sqft </span>
                         <div class="d-none d-md-block lh-house-details">
                             <p class="lh-house lh-house--desktop">Open House <strong>Fri, Oct 12 &#8226; 11:00am - 2:00pm</strong></p>
-                            <i class="fas fa-phone agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Call
-                            Agent</span>
-                            <i class="fas fa-comment-alt-dots agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">Text
+                            <i class="fas fa-phone agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization"><a :href="'tel:'+ad_agentphone">Call
+                            Agent</a></span>
+                            <i class="fas fa-comment-alt-dots agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">
+                                <a :href="'sms:'+ad_agentphone">Text
                             Agent</span>
                         </div>
                     </div>
@@ -95,7 +104,7 @@
                             <div class="col-6 col-md-12">
                                 <span class="crimson-dot"></span>
                                 <strong class="small-imp house-for-sale">FOR SALE</strong>
-                                <h1 class="lh-money">$425,000</h1>
+                                <h1 class="lh-money">{{listPrice}}</h1>
                                 <a href="#" class="large-link">Get pre-qualified
                                 <i class="far fa-arrow-right fasarrow"></i>
                                 </a>
@@ -139,36 +148,40 @@
                 </div>
                 <div class="lh-house-details lh-house-details--big d-flex d-md-none">
                     <div class="col-6">
-                        <i class="fas fa-phone round-blue agent-round agent-phone"></i>
-                        <p class="agent-phone-text d-flex align-items-center">Call Agent</p>
+                        
+                            <i class="fas fa-phone round-blue agent-round agent-phone"></i>
+                            <p class="agent-phone-text d-flex align-items-center"><a href="#">Call Agent 12345</a></p>
+                        
                     </div>
                     <div class="col-6">
+                        
                         <i class="fas fa-comment-alt-dots round-blue agent-round"></i>
-                        <p class="agent-phone-text d-flex align-items-center">Text Agent</p>
+                        <p class="agent-phone-text d-flex align-items-center"><a href="#">Text Agent</a></p>
+                         
                     </div>
                 </div>
                 <div class="lh-house-prop-desc">
                     <h1 class="list-home-title--not-collapsable">Property Description</h1>
                     <p class="lh-description">
-                        Rare opportunity awaits! Own a 40 units multi-family in up & coming area just minutes from the heart of
-                        Midtown in Atlanta.
-                        This secluded gated property has 4 sided brick buildings situated in a shape of a square. Each unit has
-                        2bdr/1bth.
-                        Bring your contractors and decide on how to finish each unit to suite best your investment portfolio. Sold
-                        "AS-IS" without disclosures.
-                        Close to Marta Westlake Station, Atlanta Beltline, The World Congress Center, Mercedes Benz Stadium,
-                        Georgia Tech Campus and other sites.
-                        Security in place, appointment is needed.
+                       
+                       
+                            {{remarks_placeholder}}<template v-if="preview">...</template>
+                        
                     </p>
-                    <div class="plus-button">
+                    <template v-if="preview">
+                    <div class="plus-button" @click="showReview()">
                         <i class="fas fa-plus"></i>
                         More
                     </div>
+                    </template>
                 </div>
-                <div class="lh-virutal-tour">
-                    <h1 class="list-home-title--not-collapsable">Virtual Walkthrough</h1>
-                    <img src="/wp-content/themes/theoffercompany/images/virtualtour.png" alt="virutal" />
+                <template v-if="tourStatus">
+                <div class="lh-virutal-tour" >
+                    <h1 class="list-home-title--not-collapsable">Virtual Walkthrough</h1>  
+                    <iframe id="vt" :src="vt" style="width: 100%; min-height: 550px; overflow:hidden !important;"></iframe>
+                    <!-- <img src="/wp-content/themes/theoffercompany/images/virtualtour.png" alt="virutal" /> -->
                 </div>
+                </template>
                 <div class="lh-features">
                     <div class="hr hr-up d-block d-md-none"></div>
                     <h1 class="list-home-title toggle-collapse" data-target="#lh-property-amentities" data-notify="#finance-wrap">
@@ -188,7 +201,7 @@
                                             <span>Type:</span>
                                         </div>
                                         <div class="col-6 text-right">
-                                            <strong>House</strong>
+                                            <strong>{{property_type}}</strong>
                                         </div>
                                     </div>
                                     <div class="row no-gutters">
@@ -196,7 +209,7 @@
                                             <span>Stories:</span>
                                         </div>
                                         <div class="col-6 text-right">
-                                            <strong>2</strong>
+                                            <strong>{{property_stories}}</strong>
                                         </div>
                                     </div>
                                     <div class="row no-gutters">
@@ -204,7 +217,7 @@
                                             <span>Beds:</span>
                                         </div>
                                         <div class="col-6 text-right">
-                                            <strong>4</strong>
+                                            <strong>{{property_bedrooms}}</strong>
                                         </div>
                                     </div>
                                     <div class="row no-gutters">
@@ -212,7 +225,7 @@
                                             <span>Baths:</span>
                                         </div>
                                         <div class="col-6 text-right">
-                                            <strong>2</strong>
+                                            <strong>{{property_bathrooms}}</strong>
                                         </div>
                                     </div>
                                     <div class="row no-gutters">
@@ -220,7 +233,7 @@
                                             <span>SqFt:</span>
                                         </div>
                                         <div class="col-6 text-right">
-                                            <strong>556</strong>
+                                            <strong>{{property_area}}</strong>
                                         </div>
                                     </div>
                                     <div class="row no-gutters">
@@ -230,7 +243,7 @@
                                             </span>
                                         </div>
                                         <div class="col-5 text-right">
-                                            <strong>2002</strong>
+                                            <strong>{{property_yearBuilt}}</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -242,7 +255,7 @@
                                             </span>
                                         </div>
                                         <div class="col-6 text-right">
-                                            <strong>Yes</strong>
+                                            <strong>{{property_pool}}</strong>
                                         </div>
                                     </div>
                                     <div class="row no-gutters">
@@ -260,7 +273,7 @@
                                             <span>Lot size:</span>
                                         </div>
                                         <div class="col-6 text-right">
-                                            <strong>12000</strong>
+                                            <strong>{{property_lotSize}}</strong>
                                         </div>
                                     </div>
                                     <div class="row no-gutters">
@@ -268,7 +281,7 @@
                                             Garage spaces:
                                         </div>
                                         <div class="col-6 text-right">
-                                            <strong>4</strong>
+                                            <strong>{{property_garageSpaces}}</strong>
                                         </div>
                                     </div>
                                     <div class="row no-gutters">
@@ -286,7 +299,7 @@
                                             </span>
                                         </div>
                                         <div class="col-6 text-right">
-                                            <strong>Yes</strong>
+                                            <strong>{{property_fireplaces}}</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -300,58 +313,58 @@
                             <strong>-</strong>
                         </div>
                         <div class="lh-details-block">
-                            <p>Master bathroom</p>
+                            <p>Master bathroom*</p>
                             <strong>Toilet, Soap dispenser, TV, Roof</strong>
                         </div>
                         <div class="lh-details-block">
                             <p>Laundry</p>
-                            <strong>Dryer, Detergent, Ironing board</strong>
+                            <strong>{{property_laundryFeatures}}</strong>
                         </div>
                         <div class="lh-details-block">
-                            <p>Dining area</p>
+                            <p>Dining area*</p>
                             <strong>-</strong>
                         </div>
                         <div class="lh-details-block">
-                            <p>Basement</p>
+                            <p>Basement*</p>
                             <strong>Table tennis, Cinema, Popcorn</strong>
                         </div>
                         <div class="lh-details-block no-border">
-                            <p>Basement</p>
+                            <p>Basement*</p>
                             <strong>Office desk, Chair, Security safe</strong>
                         </div>
                         <h2 class="lh-subtitle">
                             Construction
                         </h2>
                         <div class="lh-details-block">
-                            <p>Architecture</p>
+                            <p>Architecture*</p>
                             <strong>-</strong>
                         </div>
                         <div class="lh-details-block">
-                            <p>Finish</p>
+                            <p>Finish*</p>
                             <strong>One finish, Another one</strong>
                         </div>
                         <div class="lh-details-block">
-                            <p>Frame</p>
+                            <p>Frame*</p>
                             <strong>Item, Another item</strong>
                         </div>
                         <div class="lh-details-block">
                             <p>Roofing</p>
-                            <strong>-</strong>
+                            <strong>{{property_roof}}</strong>
                         </div>
                         <div class="lh-details-block">
-                            <p>Fencing</p>
-                            <strong>Wooden</strong>
+                            <p>Fencing*</p>
+                            <strong>-</strong>
                         </div>
                         <div class="lh-details-block">
                             <p>Cooling</p>
-                            <strong>Air condition</strong>
+                            <strong>{{property_cooling}}</strong>
                         </div>
                         <div class="lh-details-block">
                             <p>Heating</p>
-                            <strong>-</strong>
+                            <strong>{{property_heating}}</strong>
                         </div>
                         <div class="lh-details-block">
-                            <p>Utilities</p>
+                            <p>Utilities*</p>
                             <strong>Item, Another item</strong>
                         </div>
                         <div class="lh-details-block">
@@ -359,7 +372,7 @@
                             <strong>Yes</strong>
                         </div>
                         <div class="lh-details-block no-border">
-                            <p>Sewer</p>
+                            <p>Sewer*</p>
                             <strong>Yes</strong>
                         </div>
                         <h2 class="lh-subtitle">
@@ -368,22 +381,27 @@
                         <div class="lh-details-block no-border--desktop">
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-3">
-                                    <p>HOA: <strong>Yes</strong></p>
+                                    <p>HOA: 
+                                        <template v-if="hoa"><strong>Yes</strong></template>
+                                        <template v-else><strong>No</strong></template>
+                                    </p>
                                 </div>
-                                <div class="col-12 col-md-3">
-                                    <p>HOA free: <strong>$60</strong></p>
-                                </div>
-                                <div class="col-12 col-md-5">
-                                    <p class="mb-4">HOA Frequency: <strong>Monthly</strong></p>
-                                </div>
+                                <template v-if="hoa">
+                                    <div class="col-12 col-md-3">
+                                        <p>HOA Fee: <strong>$60</strong></p>
+                                    </div>
+                                    <div class="col-12 col-md-5">
+                                        <p class="mb-4">HOA Frequency: <strong>Monthly</strong></p>
+                                    </div>
+                                </template>
                             </div>
                         </div>
                         <div class="lh-provider">
                             <div class="lh-license">
                                 <p>Listing provided by</p>
                                 <span class="font-padding-stilization">
-                                <a href="#">Samuel Shechter</a>, License #357382, <a href="#">Quicksilver Realty</a> inc.<br>
-                                (404) 624-6362, Source: First Multiple Listing Service. <a href="#">MLS Disclaimer</a>
+                                <a :href="'/agent-profile/?id='+agent_id">{{agent_firstName}} {{agent_lastName}}</a>, License #357382, <a href="#">{{office_name}}</a> inc.<br>
+                                {{office_contact_office}}, Source: {{mls_provider_name}} <a href="#">MLS Disclaimer</a>
                                 </span>
                             </div>
                             <div class="d-flex d-md-none">
@@ -440,7 +458,7 @@
                             <div class="row no-gutters">
                                 <div class="form-group mt-1 col-12 col-md-9">
                                     <div class="has-dollar-left">
-                                        <input type="text" class="form-control" value="398,900" />
+                                        <input type="text" class="form-control"  :value="rawListPrice.toLocaleString()" />
                                     </div>
                                 </div>
                             </div>
@@ -448,12 +466,12 @@
                             <div class="row no-gutters">
                                 <div class="form-group mt-1 col-9 col-md-7 pr-1">
                                     <div class="has-dollar-left">
-                                        <input type="text" class="form-control" value="398,900" />
+                                        <input type="text" class="form-control" @keyup="getDownPaymentPercentage" v-model="downpayment" />
                                     </div>
                                 </div>
                                 <div class="form-group mt-1 col-3 col-md-2 pl-1">
                                     <div class="has-amp-right">
-                                        <input type="text" class="form-control" value="20" />
+                                        <input type="text" class="form-control" @keyup="getDownPayment" v-model="downpayment_percentage" />
                                     </div>
                                 </div>
                             </div>
@@ -471,50 +489,67 @@
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-9 form-group mt-1 mb-2">
                                     <div class="has-amp-right">
-                                        <input type="text" class="form-control" value="4,627" />
+                                        <input type="text" class="form-control" value="" />
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label class="custom-checkmark">
                                 Include taxes/insurance
-                                <input type="checkbox">
+                                <input type="checkbox" v-model="hide_tax">
                                 <span class="checkmark"></span>
                                 </label>
                             </div>
-                            <label class="lh-label">Property tax</label>
-                            <div class="row no-gutters mb-1">
-                                <div class="form-group mt-1 col-9 col-md-7 pr-1">
-                                    <div class="has-year-right has-dollar-left">
-                                        <input type="text" class="form-control" value="2,712" />
+                            <template v-if="hide_tax">
+                                <label class="lh-label">Property tax</label>
+                                <div class="row no-gutters mb-1">
+                                    <div class="form-group mt-1 col-9 col-md-7 pr-1">
+                                        <div class="has-year-right has-dollar-left">
+                                            <input type="text" class="form-control" v-model="tax_taxAnnualAmount" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-1 col-3 col-md-2 pl-1">
+                                        <div class="has-amp-right">
+                                            <input type="text" class="form-control" value="0.68" />
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group mt-1 col-3 col-md-2 pl-1">
-                                    <div class="has-amp-right">
-                                        <input type="text" class="form-control" value="0.68" />
+                                <label class="lh-label">Home Insurance</label>
+                                <div class="row no-gutters mb-1">
+                                    <div class="form-group mt-1 col-9 col-md-7 pr-1">
+                                        <div class="has-year-right has-dollar-left">
+                                            <input type="text" class="form-control" v-model="home_insurance.toLocaleString()"  />
+                                        </div>
+                                    </div>
+                                    <div class="form-group mt-1 col-3 col-md-2 pl-1">
+                                        <div class="has-amp-right">
+                                            <input type="text" class="form-control" value="0.0042" />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <label class="lh-label">Property tax</label>
-                            <div class="row no-gutters">
-                                <div class="col-12 col-md-9 form-group mt-1 mb-2">
-                                    <div class="has-year-right has-dollar-left">
-                                        <input type="text" class="form-control" value="398,900" />
-                                    </div>
-                                </div>
-                            </div>
+                            </template>
                             <div class="mb-3">
                                 <label class="custom-checkmark">
                                 Include PMI
-                                <input type="checkbox">
+                                <input type="checkbox" v-model="include_pmi">
                                 <span class="checkmark"></span>
                                 </label>
                             </div>
-                            <label class="lh-label">HOA dues</label>
+                            <template v-if="include_pmi">
+                                <label class="lh-label">PMI</label>
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-9 form-group mt-1 mb-4">
+                                        <div class="has-month-right has-dollar-left">
+                                            <input type="text" class="form-control" v-model="pmi" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                            <label class="lh-label">Association Fee</label>
                             <div class="row no-gutters">
                                 <div class="col-12 col-md-9 form-group mt-1 mb-4">
                                     <div class="has-month-right has-dollar-left">
-                                        <input type="text" class="form-control" value="398,900" />
+                                        <input type="text" class="form-control" v-model="association_fee" />
                                     </div>
                                 </div>
                             </div>
@@ -816,7 +851,7 @@
                     <div class="blue-bg">
                         <p>Buying but need to sell first?</p>
                         <small>We have two great options to choose from.</small>
-                        <a href="#">Selling options
+                        <a href="/selling-options?id=<?php echo $_GET['id'] ?>">Selling options
                         <i class="far fa-arrow-right fasarrow"></i>
                         </a>
                     </div>
@@ -829,17 +864,17 @@
                 <strong class="small-imp">CONTACT AGENT</strong>
                 <div class="contact-agent-prev row no-gutters">
                     <div class="col-2">
-                        <img src="/wp-content/themes/theoffercompany/images/woman.png" />
+                        <img :src="ad_photo" />
                     </div>
                     <div class="col-10 contact-agent-details">
-                        <h2 class="contact-agent-prev-name">Anette Brown</h2>
+                        <h2 class="contact-agent-prev-name">{{ad_first_name}} {{ad_last_name}}</h2>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <p>602-448-7377</p>
-                        <p>annete@theofferco.com</p>
+                        <p><a :href="'sms:'+ad_agentphone">{{ad_agentphone}}</a></p>
+                        <p><a :href="'email:'+ad_agentemail"> {{ad_agentemail}}</p>
                         <div class="contact-agent-controlls d-block d-md-none">
                             <i class="fas fa-phone agent-phone"></i><span class="font-padding-stilization">Call</span>
                             <i class="fas fa-comment-alt agent-text"></i><span class="font-padding-stilization">Text</span>
@@ -869,7 +904,7 @@
                         <img src="/wp-content/themes/theoffercompany/images/man.png" />
                         <div class="preferred-lender">
                             <p>Preferred lender</p>
-                            <h2 class="contact-agent-prev-name">David Houze</h2>
+                            <h2 class="contact-agent-prev-name">{{lender_fname}} {{lender_lname}}</h2>
                         </div>
                     </div>
                     <div class="form-check d-flex justify-content-center">
@@ -985,4 +1020,10 @@
         </div>
     </div>
 </div>
+
 <?php get_footer(); ?>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script src="http://l8u.9b2.myftpupload.com/wp-content/themes/theoffercompany/main.js?rand=<?= uniqid(); ?>"></script>
+

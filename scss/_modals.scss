@@ -1,10 +1,10 @@
 .modal {
   margin:0 !important;
   @include respond-to('desktop') {
-    margin-top: 2.5em !important;
+    padding-top: 2.5em !important;
   }
   .modal-content {
-    width:290px;
+    max-width: 340px;
     margin: 0 auto;
     @include respond-to('desktop') {
       width:400px;
@@ -61,6 +61,15 @@ $base-font: 1.8rem;
   font-size: $base-font;
   padding-top: calc(#{($sphere-size / 2)} - #{$base-font / 2});
   text-align: center;
+  opacity: 1;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.7;
+    cursor: pointer;
+  }
   i {
     color: white;
   }
@@ -76,6 +85,16 @@ $smallness: 0.55;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  opacity: 1;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
   i {
     color: white;
   } 
@@ -194,6 +213,29 @@ $smallness: 0.55;
   margin: 1.2em 0;
 }
 
+.modal {
+  .btn {
+		border-radius: 5px;
+		background-color: #00acee;
+		color: #fff;
+		padding: 10px 0px;
+		margin-top: 1rem;
+		opacity: 1;
+		transition: all 0.3s ease;
+
+		&:hover,
+		&:active,
+		&:focus {
+			opacity: 0.7;
+		}
+
+		i {
+			font-size: 0.8rem;
+			margin-left: 5px;
+    }
+  }
+}
+
 .blue-link {
   border-width: 0px !important;
   display: inline-block;
@@ -211,3 +253,91 @@ $smallness: 0.55;
   }
 }
 
+/* Custom modal styles */
+.unlock {
+  padding-top: 0 !important;
+  .multi-step {
+    width: 100%;
+  }
+  .step {
+    min-width: 320px;
+    @include respond-to('desktop') {
+      min-width: 340px;
+    }
+  }
+  .modal-header {
+    text-align: left;
+    justify-content: left;
+    padding-left: 1rem;
+    .modal-title {
+      font-family: "Publico Bold", Times, serif !important;
+      line-height: 1.2;
+      color: #4a4a4a;
+    }
+  }
+  .help-link {
+    color: #00acee;
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding-top: 0.8rem;
+  }
+  p.message {
+    font-family: "Graphik", sans-serif;
+    font-weight: 400;
+    color: #4a505d;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+  .sphere-container {
+    text-align: center;
+    p {
+      font-family: "Graphik", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      height: 50px;
+      padding-top: 13px;
+      padding-right: 10px;
+    }
+    .sphere {
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+    }
+  }
+}
+.share-saved-homes {
+  padding-top: 0 !important;
+  .multi-step {
+    width: 100%;
+  }
+  .step {
+    min-width: 320px;
+    @include respond-to('desktop') {
+      min-width: 340px;
+    }
+  }
+  .modal-header {
+    text-align: left;
+    justify-content: left;
+    padding-left: 1rem;
+    .modal-title {
+      font-family: "Graphik", sans-serif !important;
+      line-height: 1.2;
+      color: #00acee;
+    }
+  }
+  p.message {
+    font-family: "Graphik", sans-serif;
+    font-weight: 400;
+    color: #4a505d;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+  }
+}

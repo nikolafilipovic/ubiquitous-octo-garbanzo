@@ -320,7 +320,7 @@ Template Name: My Account
                 <h6 class="sub-title">3 homes</h6>
                 <div class="saved-homes collapse show" id="saved-homes">
                     <h2>Share easily with others</h2>
-                    <a class="offer-link">Invite people now</a>
+                    <a class="offer-link" data-toggle="modal" data-target="#share-saved-homes-modal">Invite people now</a>
                     <div class="saved-slider">
                         <div class="container">
                             <div class="row">
@@ -417,4 +417,27 @@ Template Name: My Account
         </div>
     </div>
 </div>
+    <!-- MODALS -->
+    <div id="share-saved-homes-modal" class="modal fade share-saved-homes" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content width-override">
+                <div class="modal-header">
+                    <h5 class="modal-title">Share saved homes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close-link" aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <p class="message">Shopping with someone else? Enter the email address and we'll notify them every time you save a home.</p>
+                        <div class="spacer-1rem"></div>
+                        <div class="has-mail-left">
+                            <input type="text" class="form-control" placeholder="Email" value="">
+                        </div>
+                        <a href="#" class="btn btn-block step-toggler">Start sharing <i class="far fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <?php get_footer(); ?>

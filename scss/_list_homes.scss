@@ -12,6 +12,12 @@ body {
 }
 
 .lh-wrapper {
+
+  .myaccount-contact-agent {
+    &.selected {
+      display: none !important;
+    }
+  }
   max-width: 1024px;
   margin: 0 auto;
   background: white;
@@ -899,6 +905,14 @@ figure.lh-img-holder {
 
     &:before {
       content: "\f0e0";
+    }
+  }
+
+  .has-key-left {
+    @extend .has-person-left;
+
+    &:before {
+      content: "\f084";
     }
   }
 
