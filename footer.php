@@ -41,9 +41,9 @@
 								<span>© <?php echo date('Y'); ?> The Offer Company</span>
 							</div>
 							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer-social">
-								<a href="#"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
-								<a href="#"><span class="social-icon"><i class="fab fa-twitter"></i></span></a>
-								<a href="#"><span class="social-icon"><i class="fab fa-instagram"></i></span></a>
+								<a href="http://facebook.com/theoffercompany" target="_blank"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
+								<a href="http://twitter.com/theoffercompany" target="_blank"><span class="social-icon"><i class="fab fa-twitter"></i></span></a>
+								<a href="http://intagram.com/theoffercompany%22" target="_blank"><span class="social-icon"><i class="fab fa-instagram"></i></span></a>
 							</div>
 							<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 footer-contact">
 								<h3>(888) 398-4855</h3>
@@ -59,5 +59,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 	<?php wp_footer(); ?>
+	<!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com -->
+<script type="text/javascript" src="https://a.optmnstr.com/app/js/api.min.js" data-account="45382" data-user="39636" async></script>
+<!-- / https://optinmonster.com -->
 </body>
 </html>
