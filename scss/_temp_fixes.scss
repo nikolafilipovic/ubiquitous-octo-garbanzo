@@ -1,0 +1,50 @@
+/*
+ *  Temp-fixing the search-homes issues.  
+ */
+#search-homes {
+    #main_content {
+        width: unset !important;
+        #map-wrapper {
+            height: calc(100vh - 105px);
+        }
+    }
+}
+#modalvue {
+    .modal {
+        visibility: visible !important;
+        display: block !important;
+        left: -100%;
+        transition: all 0.5s ease !important;
+        .modal-transition {
+            transform: unset !important;
+        }
+        &.is-visible {
+            left: 0 !important;
+        }
+        .modal-wrapper {
+            width: 100% !important;
+            top: 0 !important;
+            left: unset !important;
+            margin-left: unset !important;
+            .modal-header {
+                box-shadow: unset !important;
+                border: unset !important;
+                height: unset !important;
+            }
+            .modal-body {
+                padding: unset !important;
+                .modal-content {
+                    padding: unset !important;
+                    max-width: unset !important;
+                    #img0 {
+                        margin-left: -2.5px;
+                    }
+                    .offer-link {
+                        font-size: 13px !important;
+                        width: unset !important;
+                    }
+                }
+            }
+        }
+    }
+}
