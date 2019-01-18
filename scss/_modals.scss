@@ -17,8 +17,7 @@
     border: none;
     button {
       span {
-        font-family: $graphik-font-family; font-weight: 400;
-        font-weight: normal;
+        font-family: $graphik-font-family; font-weight: 100 !important;
         font-size: 3.7rem !important;
         color: #a7a7a7;
       }

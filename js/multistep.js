@@ -45,7 +45,8 @@ var multistep = (function($) {
       stage.width(2*width - 15);
       nextSlide.addClass('active');
       stage.addClass('transit');
-      stage.css('transform', `translateX(${-width}px)`);
+      var translateAmtW = -nextSlide.width();
+      stage.css('transform', `translateX(${translateAmtW}px)`);
   
       var targetHeight = nextSlide.height();
       var startH = item.height();

@@ -471,12 +471,12 @@ if (array_key_exists("analytics", $data)) {
                     </div>
                 </div>
                 <div class="step" id="register">
-                    <div class="eval-register-modal" id="signup">
+                    <div class="eval-register-modal">
                         <div class="modal-header">
-                             <h1>Welcome to The Offer Company!</h1>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span class="close-link" aria-hidden="true">×</span>
                             </button>
+                            <h1>Welcome to The Offer Company!</h1>
 
                             <div class="links">
                                 <a href="#">Sign in</a>
