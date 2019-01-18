@@ -387,7 +387,6 @@ if (array_key_exists("analytics", $data)) {
                             ?>">
                         <div class="modal-body">
                             <div class="form-group">
-                                <div class="has-mail-left">
                                     <!-- <input type="text" name="register_username" class="form-control" placeholder="Username"> -->
                                     <input type="email" name="register_email" class="form-control" placeholder="Email"
                                         style="margin-top: 5px">
@@ -399,7 +398,6 @@ if (array_key_exists("analytics", $data)) {
                                     <a href="#" class="btn btn-block step-toggler" data-triger="#register">Register <i
                                             class="far fa-arrow-right"></i></a>
                                     <a href="#" class="btn btn-block step-toggler" data-triger="#login">Login <i class="far fa-arrow-right"></i></a>
-                                </div>
                             </div>
                             <hr>
                             <div class="sphere-container">
@@ -407,8 +405,8 @@ if (array_key_exists("analytics", $data)) {
                                 <a class="sphere sphere--fb">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a class="sphere sphere--twitt">
-                                    <i class="fab fa-twitter"></i>
+                                <a class="sphere sphere--googl">
+                                    <i class="fab fa-google"></i>
                                 </a>
                             </div>
                         </div>
@@ -426,15 +424,11 @@ if (array_key_exists("analytics", $data)) {
                             ?>">
                         <div class="modal-body">
                             <div class="form-group">
-                                <div class="has-mail-left">
                                     <input type="email" name="login_username" class="form-control" placeholder="Username"
                                         value="">
-                                </div>
                                 <div class="spacer-1rem"></div>
-                                <div class="has-key-left">
                                     <input type="password" name="login_password" class="form-control" placeholder="Password"
                                         value="">
-                                </div>
                                 <button class="btn btn-block" type="submit" name="signin">Sign in <i class="far fa-arrow-right"></i></button>
                                 <a href="#" class="help-link">Forgot password?</a>
                             </div>
@@ -444,8 +438,8 @@ if (array_key_exists("analytics", $data)) {
                                 <a class="sphere sphere--fb">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a class="sphere sphere--twitt">
-                                    <i class="fab fa-twitter"></i>
+                                <a class="sphere sphere--googl">
+                                    <i class="fab fa-google"></i>
                                 </a>
                             </div>
                         </div>

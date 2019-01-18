@@ -1438,9 +1438,10 @@ h1.questions {
 	.links {
 		padding: 1em 0;
 		text-align: center;
+		width: calc(100% + 28*2px);
 		font-weight: 400;
 		font-size: 1.15rem;
-		margin: 0 -15px;
+		margin-left: -28px;
 		border-bottom: 1px solid $lightergray;
 
 		.active {
@@ -1452,7 +1453,7 @@ h1.questions {
 			margin-right: 1em;
 		}
 
-		&:not(.active) {
+		a:not(.active) {
 			color: black;
 		}
 	}
@@ -1477,7 +1478,7 @@ h1.questions {
 	}
 
 	.wrapperForm {
-		margin-top: 3em;
+		margin-top: 1em;
 		display: flex;
 		justify-content: center;
 		width: 100%;
@@ -1486,6 +1487,64 @@ h1.questions {
 		form {
 			width: 100%;
 			height:auto;
+		}
+	}
+
+	.offer-link {
+		text-align: center;
+		text-transform: unset;
+		padding: 10px 16px;
+		margin-bottom: 0;
+		font-family: "Graphik Regular",
+		sans-serif;
+		color: white;
+		font-size: 15px;
+		margin: 0;
+		opacity: 1;
+		transition: all 0.3s ease;
+
+		&--fb {
+			background: #4267b2;
+			margin-bottom: 4em;
+			display: flex;
+			position: relative;
+			justify-content: center;
+
+			i {
+				font-size: 1.3rem !important;
+				position: absolute;
+				left: 15px;
+				top: 11px;
+				margin-left: 0 !important;
+			}
+		}
+	}
+
+	.terms {
+		text-align: center;
+		display: block;
+		margin-top: 1.5em;
+		font-weight: 400;
+		font-size: 1rem;
+		color: #00acee;
+	}
+
+	.border-word {
+		position: relative;
+		margin: 2em 0;
+		span {
+			position: absolute;
+			color: black;
+			font-weight: 400;
+			padding: 0 1em;
+			background: white;
+			top: -10px;
+			left: calc(86% / 2);
+		}
+
+		.hr {
+			background: #d6dce6;
+			height: 1px
 		}
 	}
 
@@ -1513,10 +1572,6 @@ h1.questions {
 			margin-right: .33em;
 			font-size: .8rem;
 		}
-	}
-
-	.offer-link {
-		margin: 2em 0 !important;
 	}
 
 	.skip {
