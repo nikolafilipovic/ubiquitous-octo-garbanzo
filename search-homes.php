@@ -18,22 +18,6 @@
 		$overlay = 0;
 		$property_id = 0;		
 	}
-	/*
-	Hey you!
-
-	Just wanted to give you a heads up for the code you'll be working on.
-	There are a couple of notes, for when you start connecting it to the system.
-
-		1. Mind the checkboxes. They all need to have unique IDs in order to give you any sensible data and to actually work.
-		2. Try not to move classes and IDs around, as the elements are inheriting parent classes.
-		3. You will have to repeat some parameters. Unfortunately I couldn't find a decent solution to cram in so many elements in so many places and don't repeat the code :/
-
-		If you need any help with this, please feel free to reach out to me, and I'd be more than happy to help out.
-
-		Good luck :)
-
-		P.S. I've left the Google Maps API implemented, just remove the iframe from the wrapper.
-	*/
 ?>
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/theoffercompany/modal.css">
 <style>
@@ -121,10 +105,6 @@
 					height:100%;
 				}
 
-	#main_content {
-		width: 100%;
-	}
-
 	#search-homes #filterDropdown .fields .form-group .custom-select {
 		padding: 0px 0px 0px 10px;
 	}
@@ -168,40 +148,38 @@
         	
         </h2> -->
          <header class="modal-menu b-shadow">
-				            <div class="go-back d-block d-md-none">
-				                <i class="far fa-chevron-left fasback"></i>
-				                <a href="#">Back</a>
-				            </div>
-				            <div class="various-link d-none d-md-flex">
-				                <div class="offer-link">
-				                    <a :href="'/make-an-offer?id='+mls.id">Make an offer</a>
-				                    <i class="far fa-arrow-right fasarrow"></i>
-				                </div>
-				                <div class="offer-link">
-				                    <a :href="'/schedule-tour?id='+mls.id">Schedule tour</a>
-				                    <i class="far fa-arrow-right fasarrow"></i>
-				                </div>
-				                
-				                <div class="faw-options">
-				                    <a href="#" style="margin-right: 10px;">
-				                    <i class="far fa-heart" ></i> Save</a>
-				                    &nbsp;
-				                    <a href="#" style="margin-right: 10px;" data-toggle="modal" data-target="#share-modal">
-				                    <i class="fal fa-share-alt"></i> Share</a>
-				                    <a href="#" style="margin-right: 10px;" data-toggle="modal">
-				                    <i class="vt fal fa-vr-cardboard"></i> Virtual Tour</a>
-				                    <a href="#" style="margin-right: 10px;" data-toggle="modal">
-				                    <i class="far fa-times-circle"></i> Remove</a>
-				                    <a href="#" id="close2"  class="close-link2 modal-close2"><i class="fal fa-times"></i></a> 
-				                </div>
-				            </div>
-				        </header>
+			<div class="go-back d-block d-md-none">
+				<i class="far fa-chevron-left fasback"></i>
+				<a href="#">Back</a>
+			</div>
+			<div class="various-link d-none d-md-flex">
+				<div class="offer-link">
+					<a :href="'/make-an-offer?id='+mls.id">Make an offer</a>
+					<i class="far fa-arrow-right fasarrow"></i>
+				</div>
+				<div class="offer-link">
+					<a :href="'/schedule-tour?id='+mls.id">Schedule tour</a>
+					<i class="far fa-arrow-right fasarrow"></i>
+				</div>
+				
+				<div class="faw-options">
+					<a href="#">
+					<i class="far fa-heart" ></i> Save</a>
+					&nbsp;
+					<a href="#" data-toggle="modal" data-target="#share-modal">
+					<i class="fal fa-share-alt"></i> Share</a>
+					<a href="#" data-toggle="modal">
+					<i class="vt fal fa-vr-cardboard"></i> Virtual Tour</a>
+					<a href="#" data-toggle="modal">
+					<i class="far fa-times-circle"></i> Remove</a>
+					<a href="#" id="close2"  class="close-link2 modal-close2"><i class="fal fa-times"></i></a> 
+				</div>
+			</div>
+		</header>
       </div>
-      
       <div class="modal-body" >
-        <div class="modal-content" style="overflow-y: scroll;">
+        <div class="modal-content">
           	<!-- Experiment -->
-
 				    <div class="container-fluid override-fluid">
 				         <!-- <header class="modal-menu b-shadow">
 				            <div class="go-back d-block d-md-none">
@@ -230,14 +208,19 @@
 				                </div>
 				            </div>
 				        </header> -->
-
 				        <div class="row no-gutters">
 				            <div class="col-12 col-md-7">
 				                <figure class="lh-img-holder">
-				                    <img id="img0" :src="img0"  alt="" style="padding-left: 5px !important; width: 100% !important;">
-				                    <figcaption class="d-md-none">
+				                    <img id="img0" :src="img0"  alt="" class="d-md-block d-none">
+				                    <figcaption class="d-md-none d-block">
+										<span id="counter"></span>
+										<div class="owl-carousel owl-theme lh-responsive-slider">
+											<div class="item"><img id="img0" :src="img0" alt=""></div>
+											<div class="item"><img id="img1" :src="img1" alt=""></div>
+											<div class="item"><img id="img2" :src="img2" alt=""></div>
+											<div class="item"><img id="img3" :src="img3" alt=""></div>
+										</div>
 				                        <span><i class="fas fa-vr-cardboard"></i> Virtual tour</span>
-				                        <span>1 / 27</span>
 				                    </figcaption>
 				                </figure>
 				            </div>
@@ -258,7 +241,6 @@
 				                </div>
 				            </div>
 				        </div>
-
 				        <div class="offer-link-group b-shadow d-block d-md-none">
 				            <div class="offer-link">
 				                <a href="#">Make an offer</a>
@@ -294,7 +276,7 @@
 				                            <div class="col-6 col-md-12">
 				                                <span class="crimson-dot"></span>
 				                                <strong class="small-imp house-for-sale">FOR SALE</strong>
-				                                <h1 class="lh-money">{{mls.listPrice}}</h1>
+				                                <h1 class="lh-money">${{mls.listPrice}}</h1>
 				                                <a :href="'/prequalify/?id='+mls.id" class="large-link">Get pre-qualified
 				                                <i class="far fa-arrow-right fasarrow"></i>
 				                                </a>
@@ -325,8 +307,10 @@
 				                </div>
 				                <template v-if="tourStatus">
 				                <div class="lh-virutal-tour" >
-				                    <h1 class="list-home-title--not-collapsable">Virtual Walkthrough</h1>  
-				                    <iframe id="vt" :src="mls.virtualTourUrl" style="width: 100%; min-height: 550px; overflow:hidden !important;"></iframe>
+									<h1 class="list-home-title--not-collapsable">Virtual Walkthrough</h1>  
+									<div class="vr-iframe">
+										<iframe id="vt" :src="mls.virtualTourUrl" style="width: 100%; min-height: 550px;"></iframe>
+									</div>
 				                    <!-- <img src="/wp-content/themes/theoffercompany/images/virtualtour.png" alt="virutal" /> -->
 				                </div>
 				                </template>
@@ -2935,6 +2919,7 @@
 					let zip = vm.mls.address_postalCode;
 					vm.loadAgent(zip);					
 					$( ".modal" ).toggleClass( "is-visible" );
+					$( "body" ).toggleClass( "noscroll" );
 				}
 			});
 			// toggle modal
@@ -2950,23 +2935,27 @@
 				// alert(mls_url);
 				// setTimeout(function(){ 
 					$( ".modal" ).toggleClass( "is-visible" );
+					$( "body" ).toggleClass( "noscroll" );
 				// }, 1000);
 				// $(".modal-heading").html(modal_heading);
 			});
 
 			$("body").on("click",".modal-overlay",function(){
 				$( ".modal" ).removeClass( "is-visible" );
+				$( "body" ).removeClass( "noscroll" );
 				$("#modal-preview").attr('src','');
 			});
 
 			$("body").on("click",".modal-close",function(e){
 				e.stopPropagation();
 				$( ".modal" ).removeClass( "is-visible" );
+				$( "body" ).removeClass( "noscroll" );
 				$("#modal-preview").attr('src','');
 			});
 
 			$("body").on("click",".modal-close2",function(){
 				$( ".modal" ).removeClass( "is-visible" );
+				$( "body" ).removeClass( "noscroll" );
 				$("#modal-preview").attr('src','');
 			});
 

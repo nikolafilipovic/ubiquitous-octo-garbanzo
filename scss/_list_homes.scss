@@ -219,7 +219,8 @@ body {
     }
   }
 }
-.close-link {
+.close-link,
+.close-link2 {
   margin-left: auto !important;
   margin-top: -8px !important;
   i {
@@ -235,6 +236,9 @@ figure.lh-img-holder {
   position: relative;
   margin: 0 !important;
   figcaption {
+    .lh-responsive-slider {
+      .item {max-height: 200px;}
+    }
     span {
       font-size: 10px;
       border-radius: 3px;
@@ -268,7 +272,7 @@ figure.lh-img-holder {
   img {
     display: block;
     height: auto;
-
+    width: 100%;
     @include respond-to('desktop') {
       height: 397.5px;
     }
@@ -282,15 +286,16 @@ figure.lh-img-holder {
     padding: 12px;
     font-size: 16.23px;
     font-weight: bold;
+    z-index: 101;
   }
 
   span:first-child {
-    bottom: 15px;
+    top: 15px;
     right: 15px;
   }
 
   span:last-child {
-    top: 15px;
+    bottom: 15px;
     right: 15px;
   }
 }

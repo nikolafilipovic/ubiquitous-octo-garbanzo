@@ -110,10 +110,6 @@ h6 {
 .modal-wrapper {
   position: absolute;
   z-index: 10001;
-  /* top: 6em; */
-  left: 30%;
-  width: 82em;
-  margin-left: -16em;
   background-color: #fff;
   box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
 }
@@ -133,16 +129,6 @@ h6 {
   height: 70px !important;
   padding: 5px;
 }
-
-.modal-content {
-  padding: 1em;
-  width: 100% !important;
-    height: 300px;
-}
-.modal-content{
-      height: 600px;
-}
-
 
 .modal-header {
   position: relative;

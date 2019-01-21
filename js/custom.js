@@ -135,7 +135,7 @@ function docFill() {
     if (jQuery("#wpadminbar").length) {
         elementHeight = 143;
     } else {
-        elementHeight = 111;
+        elementHeight = 116;
     }
     if (jQuery(window).width() > 960) {
         var areaHeight = jQuery(window).height() - elementHeight;
@@ -198,6 +198,23 @@ function loadSliders() {
             }
         }
     });
+    jQuery('.lh-responsive-slider').owlCarousel({
+        dots: false,
+        responsiveClass: true,
+        nav: false,
+        autoplay: false,
+        margin: 0,
+        items: 1,
+        onInitialized: counter, 
+        onTranslated: counter
+    });
+}
+
+function counter(event) {
+    var element   = event.target;
+    var items     = event.item.count;
+    var item      = event.item.index + 1;
+    jQuery('#counter').html(item+"/"+items);
 }
 
 function copytag() {

@@ -3,9 +3,15 @@
  */
 #search-homes {
     #main_content {
-        width: unset !important;
-        #map-wrapper {
-            height: calc(100vh - 105px);
+        #listing-area {
+            @include respond-to('desktop') {
+                height: calc( 100% - 116px );
+            }
+        }
+        #map-area {
+            @include respond-to('desktop') {
+                height: calc( 100% - 116px );
+            }  
         }
     }
 }
@@ -15,6 +21,7 @@
         display: block !important;
         left: -100%;
         transition: all 0.5s ease !important;
+        padding: 0 !important;
         .modal-transition {
             transform: unset !important;
         }
@@ -22,10 +29,21 @@
             left: 0 !important;
         }
         .modal-wrapper {
-            width: 100% !important;
-            top: 0 !important;
-            left: unset !important;
-            margin-left: unset !important;
+            width: 100%;
+            position: fixed;
+            @include respond-to('s-desktop') {
+                position: absolute;
+                max-width: 1024px;
+                width: 100%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }   
+            @include respond-to('desktop') {
+                margin-top: 2.5rem;
+                border-radius: 5px;
+                overflow: hidden;
+            }  
             .modal-header {
                 box-shadow: unset !important;
                 border: unset !important;
@@ -34,17 +52,33 @@
             .modal-body {
                 padding: unset !important;
                 .modal-content {
-                    padding: unset !important;
                     max-width: unset !important;
-                    #img0 {
-                        margin-left: -2.5px;
-                    }
+                    overflow-y: scroll;
+                    border: 0;
+                    width: 100% !important;
+                    height: calc(100vh - 58px);
+                    border-radius: unset !important;
+                    @include respond-to('desktop') {
+                        max-height: 600px;
+                        height: 100%;
+                    }  
                     .offer-link {
                         font-size: 13px !important;
-                        width: unset !important;
+                        width: 100% !important;
                     }
                 }
             }
+        }
+        .lh-pictures {margin: 0 !important;}
+        .various-link {padding: 0 15px;}
+        .faw-options {padding-left: 0;}
+        .vr-iframe {overflow:hidden; border-radius: 5px;}
+        .blue-bg {
+            width: calc(100% + 30px);
+            @include respond-to('desktop') {
+                width: calc(100% + 38px);
+                border-radius: 0 !important;
+            }   
         }
     }
 }
