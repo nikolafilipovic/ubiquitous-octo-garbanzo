@@ -4,26 +4,53 @@
   */
 
   get_header(nomenu);
+  $street_address = (isset($_GET['street_address'])) ? $_GET['street_address']:'';
+  $state = (isset($_GET['state'])) ? $_GET['state']:'';
+  $city = (isset($_GET['city'])) ? $_GET['city']:'';
+  $zip = (isset($_GET['zip'])) ? $_GET['zip']:'';
 ?>
 <style>
-  html {
-    margin-top: 0px !important;
+  html {margin-top: 0px !important;}
+  .instruction {display:none !important;}
+  .gfield_label {display:none !important;}
+  .gform_body{width:50%; margin: auto;}
+  .step {
+    padding-bottom: 40%;
+}
+  @media only screen and (max-width:480px){
+div#pagefive, div#pagesix, div#pageseven, div#pageeight {
+    background: #fff;
+}
   }
 </style>
+<div id="root">
 <div id="wrapper" class="makeanoffer">
   <div class="wrapper quest-wrapper">
     <div class="quest-faded quest-faded-100">
       <div class="wrapperTop quest-WT">
         <a href="#"><i class="far fa-angle-left" aria-hidden="true"></i>Back</a>
       </div>
+	  <div class="multi-form">
+	  <!---<div class="steps multi-step">
+        <div class="step" id="pageone">
+          <div class="container-fluid h-100 mod">
+            <div class="row h-100">
+              <div class="col-12 my-auto mod">
+			  	
 
-      <div class="steps multi-step">
+			  	</div>
+			  </div>
+			</div>
+		</div>
+	  </div>--->
+	  
+    <div class="steps multi-step">
         <div class="step" id="pageone">
           <div class="container-fluid h-100 mod">
             <div class="row h-100">
               <div class="col-12 my-auto mod">
                 <div class="wrapperMid">
-                  <h1>Title goes here</h1>
+                  <h1>Questionnaire</h1>
                   <p>5 minutes to complete</p>
                   <h5>Please confirm the following facts about your home.</h5>
                 </div>
@@ -32,24 +59,24 @@
                 <form class="lh-form">
                   <div class="row no-gutters">
                     <div class="form-group col-12">
-                      <input type="text" class="form-control" value="2595 W Sunset Dr, New River, AZ 85087">
+                      <input type="text" class="form-control" placeholder="2595 W Sunset Dr, New River, AZ 85087" v-model="home_details.full_address">
                     </div>
                   </div>
                   <div class="row no-gutters">
                     <div class="form-group col-6 pr-2">
-                      <input type="text" class="form-control" value="4">
+                      <input type="text" class="form-control" placeholder="4" v-model="home_details.bedrooms">
                       <p class="placeholder">Bedrooms</p>
 
                     </div>
                     <div class="form-group col-6">
-                      <input type="text" class="form-control" value="2">
+                      <input type="text" class="form-control" placeholder="2" v-model="home_details.bathrooms">
                       <p class="placeholder">Bathrooms</p>
                     </div>
                   </div>
 
                   <div class="row no-gutters">
                     <div class="form-group col-12">
-                      <input type="text" class="form-control" value="980">
+                      <input type="text" class="form-control" placeholder="980" v-model="home_details.area">
                       <p class="placeholder">sqft</p>
                     </div>
                   </div>
@@ -73,25 +100,25 @@
                     <div class="cb-first-group">
                       <label class="custom-checkmark">
                         Kitchen island
-                        <input type="checkbox">
+                        <input type="checkbox" v-model="kitchen.island">
                         <span class="checkmark"></span>
                       </label>
 
                       <label class="custom-checkmark">
                         New cabinets
-                        <input type="checkbox">
+                        <input type="checkbox" v-model="kitchen.cabinets">
                         <span class="checkmark"></span>
                       </label>
 
                       <label class="custom-checkmark">
                         Tile backsplash
-                        <input type="checkbox">
+                        <input type="checkbox" v-model="kitchen.tile_backsplash">
                         <span class="checkmark"></span>
                       </label>
 
                       <label class="custom-checkmark">
                         Double oven
-                        <input type="checkbox">
+                        <input type="checkbox" v-model="kitchen.double_oven">
                         <span class="checkmark"></span>
                       </label>
                     </div>
@@ -99,19 +126,19 @@
                     <div class="cb-second-group">
                       <label class="custom-checkmark">
                         Built-in microwave
-                        <input type="checkbox">
+                        <input type="checkbox" v-model="kitchen.built_in_microwave">
                         <span class="checkmark"></span>
                       </label>
 
                       <label class="custom-checkmark">
                         Walk-in pantry
-                        <input type="checkbox">
+                        <input type="checkbox" v-model="kitchen.walk_in_pantry">
                         <span class="checkmark"></span>
                       </label>
 
                       <label class="custom-checkmark">
                         None of the above
-                        <input type="checkbox">
+                        <input type="checkbox" v-model="kitchen.none_of_the_above">
                         <span class="checkmark"></span>
                       </label>
                     </div>
@@ -132,19 +159,19 @@
                   <h1>Request your offers</h1>
                   <h5 class="smaller-margin">What is the condition of your master bathroom?</h5>
                   <hr>
-                  <p class="bath-desc">We're most interested in your shower, vanity, toilet, countertops and floor.</p>
+                  <p class="bath-desc">We're most interested in your shower, vanity, toilet, cabinets, countertops and floor.</p>
                 </div>
 
                 <div class="wrapperForm">
                   <form class="radiobuttons">
                     <div class="rb-flex-container">
                       <div class="rb-labels-group">
-                        <input type="radio" name="radio-group" id="Repairs"><label for="Repairs">Needs repairs</label>
+                        <input type="radio" v-model="condition.master_bedroom" value="Needs repairs" name="radio-group" id="Repairs"><label for="Repairs">Needs repairs</label>
 
-                        <input type="radio" name="radio-group" id="Corrections"><label for="Corrections">Some chips,
+                        <input type="radio" v-model="condition.master_bedroom" value="Some chips,stains, cracks or loose pieces"  name="radio-group" id="Corrections"><label for="Corrections">Some chips,
                           stains, cracks or loose pieces</label>
 
-                        <input type="radio" name="radio-group" id="Perfect"><label for="Perfect">Near perfect
+                        <input type="radio" v-model="condition.master_bedroom" value="Near perfect condition" name="radio-group" id="Perfect"><label for="Perfect">Near perfect
                           condition</label>
                       </div>
 
@@ -174,7 +201,7 @@
                 <div class="wrapperForm">
                   <form class="textbox">
                     <div class="input-group">
-                      <textarea class="form-control" placeholder="New water heater,etc"></textarea>
+                      <textarea class="form-control" v-model="condition.upgrade" placeholder="New water heater, etc"></textarea>
                     </div>
 
                     <a data-triger="#pagefive" class="offer-link fixed-width step-toggler with-margin-top" href="#">Next
@@ -204,32 +231,32 @@
 
                       <div class="row no-gutters">
                         <div class="form-group col-6 pr-2">
-                          <input type="text" class="form-control" placeholder="First name">
+                          <input type="text" class="form-control" v-model="user.fname" placeholder="First name">
                         </div>
                         <div class="form-group col-6">
-                          <input type="text" class="form-control" placeholder="Last name">
+                          <input type="text" class="form-control" v-model="user.lname" placeholder="Last name">
                         </div>
                       </div>
 
                       <div class="row no-gutters">
                         <div class="form-group col-12">
-                          <input type="text" class="form-control" placeholder="Mobile phone">
+                          <input type="text" class="form-control" v-model="user.phone" placeholder="Mobile phone">
                         </div>
                       </div>
 
                       <div class="row no-gutters">
                         <div class="form-group col-12">
-                          <input type="text" class="form-control" placeholder="Enter email...">
+                          <input type="text" class="form-control" v-model="user.email" placeholder="Enter email...">
                         </div>
                       </div>
 
                       <div class="row no-gutters">
                         <div class="form-group col-12">
-                          <input type="text" class="form-control" placeholder="Create password">
+                          <input type="password" class="form-control" v-model="user.password" placeholder="Create password">
                         </div>
                       </div>
 
-                      <a data-triger="#pagesix" class="offer-link step-toggler" href="#">Submit <i class="far fa-arrow-right"></i></a>
+                      <a data-triger="#pagesix" @click="zapQuestionnaire()" class="offer-link step-toggler" href="#">Submit <i class="far fa-arrow-right"></i></a>
                       <a href="#" class="terms">Terms of Use</a>
 
                       <div class="border-word">
@@ -347,7 +374,7 @@
                 <div class="last-page">
                   <h1 class="fstart">Your offers are coming!</h1>
                   <p>Hi Stefan, Thank you for your request. Your estimate comparisons from dozens of the top
-                    buyingcompanies will be delivered right to your email within 48 hours. In the meantime please feel
+                    buying companies will be delivered right to your email within 48 hours. In the meantime please feel
                     free to contact me anytime. </p>
 
                   <div class="blog-contact-agent">
@@ -386,8 +413,83 @@
       </div>
     </div>
     <div class="complete-bar-footer">
-      <p>0% complete</p>
+      <p><span class="percentage">0</span>% complete</p>
     </div>
   </div>
 </div>
 </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script type="text/javascript">
+  Vue.config.devtools = true;
+  vm1 = new Vue({
+    el:"#root",
+    data:{
+      home_details:{
+        full_address:'',
+        bedrooms:'',
+        bathrooms:'',
+        area:''
+      },
+      kitchen:{
+        island:true,
+        cabinets:false,
+        tile_backsplash:false,
+        double_oven:false,
+        built_in_microwave:false,
+        walk_in_pantry:false,
+        none_of_the_above:false
+      },
+      condition:{
+        master_bedroom:'',
+        upgrade:''
+      },
+      user:{
+        fname:'',
+        lname:'',
+        phone:'',
+        email:'',
+        password:''
+      }
+    },
+    methods:{
+      zapQuestionnaire: function(){
+        let data ={
+          street_address:'<?= $street_address; ?>',
+          state:'<?= $state ?>',
+          city:'<?= $city ?>',
+          zip:'<?= $zip ?>',
+          full_address: this.home_details.full_address,
+          bedrooms: this.home_details.bedrooms,
+          bathrooms: this.home_details.bathrooms,
+          area: this.home_details.area,
+          kitchen_island: this.kitchen.island,
+          cabinets: this.kitchen.cabinets,
+          tile_backsplash: this.kitchen.tile_backsplash,
+          double_oven: this.kitchen.double_oven,
+          built_in_microwave: this.kitchen.built_in_microwave,
+          walk_in_pantry: this.kitchen.walk_in_pantry,
+          none_of_the_above: this.kitchen.none_of_the_above,
+          condition_master_bedroom: this.condition.master_bedroom,
+          upgrade: this.condition.upgrade,
+          fname: this.user.fname,
+          lname: this.user.lname,
+          phone: this.user.phone,
+          email: this.user.email,
+          password: this.user.password
+        };
+        axios.get('https://hooks.zapier.com/hooks/catch/3497148/0az8w1/', {
+            params:data
+        })            
+        .then(res => {
+             console.log(res)
+        })
+        .catch(error => {
+             console.log(error)
+        });
+        
+       }
+     }
+  });
+</script>

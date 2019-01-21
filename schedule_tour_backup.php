@@ -33,7 +33,7 @@ Template Name: Schedule Tour
 
     <div class="multi-step schedule-step-form">
       <div id="step-1" class="step step-inset" data-short="true">
-        <h1 class="estate-tile">Are you workig with a real estate agent?</h1>
+        <h1 class="estate-tile">Are you working with a real estate agent?</h1>
         <div data-triger="#step-2" class="step-toggler step-wrap">
           <a class="step-circle step-circle--checkmark">
             <i class="fas fa-check"></i>
@@ -54,35 +54,35 @@ Template Name: Schedule Tour
         <h1 class="notify-title">Notify your agent</h1>
         <p>We'll send your agent a link with your request to schedule a tour of this property.</p>
         <p>If you already have an account, please <a href="#" class="link-blue">Sign in</a></p>
-        <form class="lh-form" id="contact_form2">
+        <form class="lh-form">
           <h2 class="information">Your information</h2>
           <div class="row no-gutters">
             <div class="form-group col-6 pr-2">
-              <input type="text" class="form-control" name="fname" placeholder="First name" />
+              <input type="text" class="form-control" placeholder="First name" />
             </div>
             <div class="form-group col-6">
-              <input type="text" class="form-control" name="lname" placeholder="Last Name" />
+              <input type="text" class="form-control" placeholder="Last Name" />
             </div>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Email" />
+            <input type="email" class="form-control" placeholder="Email" />
           </div>
 
           <h2 class="information">Your agents information</h2>
           <div class="row no-gutters">
             <div class="form-group col-6 pr-2">
-              <input type="text" class="form-control" name="agent_fname" placeholder="First name" />
+              <input type="text" class="form-control" placeholder="First name" />
             </div>
             <div class="form-group col-6">
-              <input type="text" class="form-control" name="agent_lname" placeholder="Last Name" />
+              <input type="text" class="form-control" placeholder="Last Name" />
             </div>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" name="agent_email" placeholder="Email" />
+            <input type="email" class="form-control" placeholder="Email" />
           </div>
 
-          <div id="contact_submit2" class="offer-link">
-            <a href="#">Submittt</a>
+          <div data-triger="#step-3" class="offer-link step-toggler">
+            <a href="#">Submit</a>
             <i class="far fa-arrow-right fasarrow"></i>
           </div>
         </form>
@@ -218,25 +218,20 @@ Template Name: Schedule Tour
       <div id="step-3-alter" class="step step-inset" data-on-enter="copytag" data-short="true">
         <h1 class="notify-title">How should we contact you?</h1>
         <p>If you already have an account, please <a href="#">Sign in</a></p>
-        <form class="lh-form" id="contact_form">
-          <input type="hidden" name="property_id" value="<?= $property['id']; ?>">
-          <input type="hidden" name="street_address" value="<?= $property['address_full']; ?>">
-          <input type="hidden" name="state" value="<?= $property['address_state']; ?>">
-          <input type="hidden" name="city" value="<?= $property['address_city']; ?>">
-          <input type="hidden" name="postal_code" value="<?= $property['address_postalCode']; ?>">
+        <form id="contact_form" class="lh-form">
           <div class="row no-gutters">
             <div class="form-group col-6 pr-2">
-              <input type="text" class="form-control" name="fname" placeholder="First name" />
+              <input type="text" class="form-control" placeholder="First name" />
             </div>
             <div class="form-group col-6">
-              <input type="text" class="form-control" name="lname" placeholder="Last Name" />
+              <input type="text" class="form-control" placeholder="Last Name" />
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="phone" placeholder="Phone" />
+            <input type="text" class="form-control" placeholder="Phone" />
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Email" />
+            <input type="email" class="form-control" placeholder="Email" />
           </div>
 
           <div class="info-text-wrap d-flex">
@@ -275,20 +270,7 @@ Template Name: Schedule Tour
 
 <?php get_footer(); ?>
 <script type="text/javascript">
-  $("#contact_submit").on("click",function(e){
-    e.preventDefault();
-    let frmData = $("#contact_form").serializeArray();
-    let info = $("#info-text-clone").text();
-    
-    frmData.push({name: "info", value: info});
-    // alert(info);
-    $.ajax({
-      type:'POST',
-      url:'http://l8u.9b2.myftpupload.com/wp-content/themes/theoffercompany/ajax_schedule_tour.php',
-      data:frmData,
-      success: function(data){
-        alert(data);
-      }
-    });
+  $("#contact_submit").on("click",function(){
+    alert('hello world');
   });
 </script>

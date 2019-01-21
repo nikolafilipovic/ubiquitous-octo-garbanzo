@@ -26,7 +26,8 @@ Template Name: Blog Post
         <div class="landing-search">
           <div class="search-field">
             <div class="input-group buy" id="input-group">
-              <input type="text" class="form-control" id="landing-search" placeholder="Search posts...">
+	          <?php get_search_form(); ?>
+              <!---<input type="text" class="form-control" id="landing-search" placeholder="Search posts...">---->
               <div class="input-group-prepend">
                 <div class="input-group-text">
                   <i class="fas fa-chevron-right"></i>

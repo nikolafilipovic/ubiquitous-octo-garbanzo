@@ -98,4 +98,4 @@
                 </div>
             </div>
         </header>
-        <div id="et-main-area">
+        <div id="et-main-area" style="z-index: -99 !important">

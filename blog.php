@@ -47,17 +47,17 @@ Template Name: Blog
           <ul>
           <h1>Blog Topics</h1>
           <ul>
-            <li class="menu-item"><a href="http://localhost/">Real Estate</a></li>
+            <li class="menu-item"><a href="/real-estate/">Real Estate</a></li>
 
-            <li class="menu-item"><a href="http://localhost/">Selling</a></li>
+            <li class="menu-item"><a href="/selling/">Selling</a></li>
 
-            <li class="menu-item"><a href="http://localhost/">Foreclosure</a></li>
+            <li class="menu-item"><a href="/foreclosure/">Foreclosure</a></li>
 
-            <li class="menu-item"><a href="http://localhost/">Market Trends</a></li>
+            <li class="menu-item"><a href="/market-trends/">Market Trends</a></li>
 
-            <li class="menu-item"><a href="http://localhost/">Real Estate Tips</a></li>
+            <li class="menu-item"><a href="/real-estate-tips/">Real Estate Tips</a></li>
 
-            <li class="menu-item"><a href="http://localhost/">Market News</a></li>
+            <li class="menu-item"><a href="/market-news/">Market News</a></li>
           </ul>
           </ul>
         </div>
@@ -115,37 +115,35 @@ Template Name: Blog
               </p>
             </div>
           <?php endforeach; ?>
-
           <div class="offer-link">
-            <a href="#">Get updates</a>
+            <a href="https://app.monstercampaigns.com/c/bejnpumprltfhvgoqdd6/">Get updates</a>
             <i class="far fa-arrow-right fasarrow"></i>
           </div>
 
 
         </div> <!-- popular posts -->
-
-
-        <div class="blog-contact-agent">
-          <div class="contact-agent-pic">
-            <img src="/wp-content/themes/theoffercompany/images/agent.png" class="agent-pic" alt="agent">
-          </div>
-          <div class="contact-details">
-            <h2 class="contact-agent-prev-name">Anette Brown</h2>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <p>602-448-7377</p>
-            <p>annete@theofferco.com</p>
-
-            <div class="call-chat-write">
-              <i class="fas fa-phone agent-phone agent-phone-rotate"></i>
-              <i class="fas fa-comment-alt agent-phone"></i>
-              <i class="fas fa-envelope agent-phone"></i>
-            </div>
-          </div>
-        </div> <!-- bg-contact-agent -->
+<!---This agent box needs to use a cookie for zipcode for display
+		<div class="blog-contact-agent">
+	        <div class="contact-agent-pic">
+	            <img src="<?= $data_agent['photo'] ?>" class="agent-pic" alt="agent">
+	        </div>
+	        <div class="contact-details">
+	            <h2 class="contact-agent-prev-name"><?= $data_agent['first_name'].' '.$data_agent['last_name'] ?></h2>
+	            <i class="fas fa-star"></i>
+	            <i class="fas fa-star"></i>
+	            <i class="fas fa-star"></i>
+	            <i class="fas fa-star"></i>
+	            <i class="fas fa-star"></i>
+	            <p><?= $data_agent['phone'] ?></p>
+	            <p><?= $data_agent['email'] ?></p>
+	            <div class="call-chat-write">
+	                <a href="tel:<?= $data_agent['phone'] ?>"><i class="fas fa-phone agent-phone agent-phone-rotate"></i></a>
+	                <a href="sms:<?= $data_agent['phone'] ?>"><i class="fas fa-comment-alt agent-phone"></i></a>
+	               <a href="mailto:<?= $data_agent['email'] ?>"> <i class="fas fa-envelope agent-phone"></i></a>
+	            </div>
+	        </div>
+	    </div>--->
+       <!-- bg-contact-agent -->
 
       </aside> <!-- aside -->
 

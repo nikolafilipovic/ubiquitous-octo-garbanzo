@@ -3,31 +3,29 @@
     /*
     Template Name: Evaluation Unlocked
     */
-
-
-function example_function(){
-    if ( is_user_logged_in() ) {
-        $user = wp_get_current_user();
-        echo $user->user_email;
-        return $user->exists();
-    }
-    return null;
-}
-
-        get_header(nomenu);
+      get_header(nomenu);
+       function example_function(){
+            if ( is_user_logged_in() ) {
+                $user = wp_get_current_user();
+                return $user->exists();
+            }
+         } 
          add_action('init', 'example_function');
          $user_status = example_function();
          if ($user_status){
             $us = 1;
-         } else {
+         }else{
             $us = 0;
          }     
          // echo $us;
       $template_directory_uri = "/wp-content/themes/theoffercompany";
-      if (!isset($_GET['street_address']) || !isset($_GET['city']) || !isset($_GET['zip'])) {
-            echo '<script type="text/javascript">';
-            echo 'window.location="/evaluation/";';
-            echo '</script>';
+      if (!isset($_GET['street_address']) || !isset($_GET['city']) || !isset($_GET['zip'])){
+            ?>
+           <!--Turned off for now  
+	           <script type="text/javascript">
+                window.location="/evaluation/";
+            </script>---->
+            <?
       }
       $street_address = $_GET['street_address'];
       $state = $_GET['state'];
@@ -205,7 +203,7 @@ function example_function(){
             city : "<?= $city; ?>",
             state : "<?= $state; ?>",
             zip : "<?= $zip; ?>",
-            property_area : <?= $property_area; ?>,
+            property_area : <?= $property_area ?>,
             properties: [],
             properties2: [],
             info:{},

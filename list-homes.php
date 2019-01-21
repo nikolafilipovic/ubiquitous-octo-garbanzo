@@ -25,7 +25,7 @@
                     <i class="far fa-arrow-right fasarrow"></i>
                 </div>
                 <div class="offer-link">
-                    <a href="/schedule-tour?id=<?php echo $_GET['id'] ?>">Schedule tour</a>
+                    <a href="/schedule-tour?id=<?php echo $_GET['id'] ?>&property=<?= $_GET['property']; ?>">Schedule tour</a>
                     <i class="far fa-arrow-right fasarrow"></i>
                 </div>
                 <!-- save, share, virtual tour, remove, X -->

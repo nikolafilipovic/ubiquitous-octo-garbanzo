@@ -2,7 +2,7 @@
 <?php
 
     /*
-    Template Name: List Homes (from Search Homes)
+    Template Name: List Homes
     */
       get_header(nomenu);
       $new_str = explode('_',$_GET['property']);

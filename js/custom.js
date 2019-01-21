@@ -67,13 +67,6 @@ function openFilter() {
     jQuery("#filterOverlay").toggleClass("closed");
     jQuery("body").toggleClass("noscroll");
 }
-/* Open List Homes popup */
-function openLH() {
-    jQuery(".listing-header").toggleClass("z-index-0");
-    jQuery("#search-homes").toggleClass("z-index-0");
-    jQuery("#overlay").toggleClass("open");
-    jQuery(".list-homes-popup").toggleClass("show");
-}
 /* Icons.. */
 function changeHeart(parentElement) {
     jQuery(parentElement).children().toggleClass("far");
@@ -236,7 +229,7 @@ jQuery(document).ready(function () {
     jQuery('.property-item').on('click',function(){
         var url = jQuery(this).attr('data-url');
         var property_id = jQuery(this).attr('data-index');
-        window.location="/home-listing/?property="+url+"&id="+property_id;
+        window.location="/search-homes/?property="+url+"&id="+property_id+"&overlay=1";
     });
 
     jQuery('.search-click').on('click', function () {
@@ -281,18 +274,6 @@ jQuery(document).ready(function () {
     });
     jQuery("span.sell").click(function () {
         searchOption("sell");
-    });
-    jQuery("#save-search").click(function () {
-        openLH();
-    });
-    jQuery("#saveSearch").click(function () {
-        openLH();
-    });
-    jQuery("#close-lh").click(function () {
-        openLH();
-    });
-    jQuery(".close-link i").click(function () {
-        openLH();
     });
     jQuery("span.estimate").click(function () {
         searchOption("estimate");

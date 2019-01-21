@@ -1,10 +1,23 @@
+<div id="root">
 <?php
 	/*
 		Template Name: Search Homes Dev
 	*/
 	get_header('listing');
 	$template_directory_uri = "/wp-content/themes/theoffercompany";
+	if (isset($_GET['overlay']) && isset($_GET['id'])){
+		if ($_GET['overlay'] == 1 && isset($_GET['id']) ){
+			$overlay = 1;
+			$property_id = $_GET['id'];			
+		}else{
+			$overlay = 0;
+			$property_id = 0;			
+		}
 
+	}else{
+		$overlay = 0;
+		$property_id = 0;		
+	}
 	/*
 	Hey you!
 
@@ -22,7 +35,22 @@
 		P.S. I've left the Google Maps API implemented, just remove the iframe from the wrapper.
 	*/
 ?>
+<link rel="stylesheet" type="text/css" href="/wp-content/themes/theoffercompany/modal.css">
 <style>
+      .offer-link {
+    width: 25%;
+}
+	.close-link2 {
+	    margin-left: auto !important;
+	    margin-top: -8px !important;
+	}
+
+
+	.offer-link{
+		margin-right: 10px !important;
+	}
+
+
 
 	body {
 		background: rgb( 255,255,255 );
@@ -60,6 +88,10 @@
 					font-size: 17px;
 				}
 
+			#home_search_dropdown .items {
+				
+			}
+
 			#home_search_dropdown .item {
 				font-size: 12px;
 				color: rgb( 70,155,181 );
@@ -82,26 +114,1097 @@
 					border-bottom: 1px solid rgb( 235,235,235 );
 					padding-bottom: 12px;
 				}
-
-	#search-homes #pagination .active a {
-		background: rgb( 0,172,237 );
-		color: rgb( 255,255,255 );
-		pointer-events: none;
-	}
+				.lifestyle-news-image {
+					border-radius:5px; 
+					width:100%; 
+					max-height:210px; 
+					height:100%;
+				}
 
 	#main_content {
 		width: 100%;
 	}
 
-	.geo_trigger {
-		cursor: pointer;
+	#search-homes #filterDropdown .fields .form-group .custom-select {
+		padding: 0px 0px 0px 10px;
 	}
-/*
-	.time-on-market a {
-		color: rgb( 255,255,255 );
+
+	#search-homes #filterDropdown .fields .form-group .custom-select,
+	#search-homes #filterDropdown .fields .form-group .form-control.input,
+	.lh-featured-props #filterDropdown .fields .form-group .custom-select,
+	.lh-featured-props #filterDropdown .fields .form-group .form-control.input,
+	.sch-t-pic-info #filterDropdown .fields .form-group .custom-select,
+	.sch-t-pic-info #filterDropdown .fields .form-group .form-control.input,
+	#search-homes #filterDropdown .fields .form-group .input-group.dual {
+		max-width: 220px;
 	}
-*/
+
+	.hidden {
+	  display: none;
+	}
+
+	.contact-agent-form .offer-link.disabled {
+		pointer-events: none;
+		background: rgb( 200,200,200 );
+	}
+
+	.contact-agent-form .offer-link.disabled i {
+		display: none;
+	}
+
+	#listing-area {
+		height: calc( 100% - 105px );
+	}
+
 </style>
+<div id="modalvue">
+<div class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-wrapper modal-transition">
+      <div class="modal-header" style="padding: 0px !important">
+        <!-- <button class="modal-close" style="z-index: 10002 !important; color: black !important; margin-top: 15px !important; font-size: 18px; padding: 5px;"><i class="fal fa-times"></i></button> -->
+        <!-- <a href="#" id="close2"  class="close-link modal-close"><i class="fal fa-times"></i></a>  -->
+        <!-- <h2 class="modal-heading">
+        	
+        </h2> -->
+         <header class="modal-menu b-shadow">
+				            <div class="go-back d-block d-md-none">
+				                <i class="far fa-chevron-left fasback"></i>
+				                <a href="#">Back</a>
+				            </div>
+				            <div class="various-link d-none d-md-flex">
+				                <div class="offer-link">
+				                    <a :href="'/make-an-offer?id='+mls.id">Make an offer</a>
+				                    <i class="far fa-arrow-right fasarrow"></i>
+				                </div>
+				                <div class="offer-link">
+				                    <a :href="'/schedule-tour?id='+mls.id">Schedule tour</a>
+				                    <i class="far fa-arrow-right fasarrow"></i>
+				                </div>
+				                
+				                <div class="faw-options">
+				                    <a href="#" style="margin-right: 10px;">
+				                    <i class="far fa-heart" ></i> Save</a>
+				                    &nbsp;
+				                    <a href="#" style="margin-right: 10px;" data-toggle="modal" data-target="#share-modal">
+				                    <i class="fal fa-share-alt"></i> Share</a>
+				                    <a href="#" style="margin-right: 10px;" data-toggle="modal">
+				                    <i class="vt fal fa-vr-cardboard"></i> Virtual Tour</a>
+				                    <a href="#" style="margin-right: 10px;" data-toggle="modal">
+				                    <i class="far fa-times-circle"></i> Remove</a>
+				                    <a href="#" id="close2"  class="close-link2 modal-close2"><i class="fal fa-times"></i></a> 
+				                </div>
+				            </div>
+				        </header>
+      </div>
+      
+      <div class="modal-body" >
+        <div class="modal-content" style="overflow-y: scroll;">
+          	<!-- Experiment -->
+
+				    <div class="container-fluid override-fluid">
+				         <!-- <header class="modal-menu b-shadow">
+				            <div class="go-back d-block d-md-none">
+				                <i class="far fa-chevron-left fasback"></i>
+				                <a href="#">Back</a>
+				            </div>
+				            <div class="various-link d-none d-md-flex">
+				                <div class="offer-link">
+				                    <a href="/make-an-offer?id=20626>">Make an offer</a>
+				                    <i class="far fa-arrow-right fasarrow"></i>
+				                </div>
+				                <div class="offer-link">
+				                    <a href="/schedule-tour?id=20626">Schedule tour</a>
+				                    <i class="far fa-arrow-right fasarrow"></i>
+				                </div>
+				               
+				                <div class="faw-options">
+				                    <a href="#" style="margin-right: 10px;">
+				                    <i class="far fa-heart" ></i> Save</a>
+				                    &nbsp;
+				                    <a href="#" style="margin-right: 10px;" data-toggle="modal" data-target="#share-modal">
+				                    <i class="fal fa-share-alt"></i> Share</a>
+				                    
+				                    
+				                    <a href="#" id="close2"  class="close-link"><i class="fal fa-times"></i></a> 
+				                </div>
+				            </div>
+				        </header> -->
+
+				        <div class="row no-gutters">
+				            <div class="col-12 col-md-7">
+				                <figure class="lh-img-holder">
+				                    <img id="img0" :src="img0"  alt="" style="padding-left: 5px !important; width: 100% !important;">
+				                    <figcaption class="d-md-none">
+				                        <span><i class="fas fa-vr-cardboard"></i> Virtual tour</span>
+				                        <span>1 / 27</span>
+				                    </figcaption>
+				                </figure>
+				            </div>
+				            <div class="col-12 col-md-5 d-none d-md-block more-imgs">
+				                <div class="row no-gutters lh-pictures">
+				                    <div class="col-6">
+				                        <div class="image" id="img1"  :style="'background: url('+img1+')'"></div>
+				                    </div>
+				                    <div class="col-6">
+				                        <div class="image mr5" id="img2" :style="'background: url('+img2+')'"></div>
+				                    </div>
+				                    <div class="col-6">
+				                        <div class="image" id="img3" :style="'background: url('+img3+')'"></div>
+				                    </div>
+				                    <div class="col-6">
+				                        <div class="image mr5" id="img4" :style="'background: url('+img4+')'"></div>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+
+				        <div class="offer-link-group b-shadow d-block d-md-none">
+				            <div class="offer-link">
+				                <a href="#">Make an offer</a>
+				                <i class="far fa-arrow-right fasarrow"></i>
+				            </div>
+				            <div class="offer-link">
+				                <a href="#">Schedule tour</a>
+				                <i class="far fa-arrow-right fasarrow"></i>
+				            </div>
+				        </div>
+				        <div class="row no-gutters lh-info-wrapper">
+				        	<div class="left-side-container col-12 col-md-8">
+				        		<div class="row no-gutters">
+				        			<div class="col-12 col-md-7">
+				                        <h1 class="lh-name" style="font-size: 1.549rem !important;">{{mls.address_full}}</h1>
+				                        <p class="lh-street">{{mls.address_city}}, {{mls.address_state}} {{mls.address_postalCode}}</p>
+				                        <span class="font-padding-stilization">{{mls.property_bedrooms}} bds </span>
+				                        <span class="small-dot">&#8226;</span>
+				                        <span class="font-padding-stilization">{{mls.property_bathrooms}} ba </span>
+				                        <span class="small-dot">&#8226;</span>
+				                        <span class="font-padding-stilization">{{mls.property_area}} sqft </span>
+				                        <div class="d-none d-md-block lh-house-details">
+				                            <p class="lh-house lh-house--desktop" v-if="mls.openhouse_id">Open House <strong>{{ mls_openhouse_date_string }}</strong></p>
+				                            <i class="fas fa-phone agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization"><a href="#">Call
+				                            Agent</a></span>
+				                            <i class="fas fa-comment-alt-dots agent-round round-blue"></i><span class="agent-phone-text font-padding-stilization">
+				                                <a href="#">Text
+				                            Agent</a></span>
+				                        </div>
+				                    </div>
+				                    <div class="col-12 col-md-5">
+				                        <div class="map-price row no-gutters">
+				                            <div class="col-6 col-md-12">
+				                                <span class="crimson-dot"></span>
+				                                <strong class="small-imp house-for-sale">FOR SALE</strong>
+				                                <h1 class="lh-money">{{mls.listPrice}}</h1>
+				                                <a :href="'/prequalify/?id='+mls.id" class="large-link">Get pre-qualified
+				                                <i class="far fa-arrow-right fasarrow"></i>
+				                                </a>
+				                            </div>
+				                            <div class="col-6 col-md-12 d-flex lh-map">
+				                                <a @click="showPropertyMap()" v-bind:class="{ hidden: property_map_visible }"><img src="/wp-content/themes/theoffercompany/images/map.png" /></a>
+				                            </div>
+				                        </div>
+                    				</div>
+				        		</div>
+				        		<div v-bind:class="{ hidden: ! property_map_visible }" style="width: 100%; min-width: 100px; height: 300px; margin-bottom: 20px;">
+				        			<div id="property_map_wrapper" style="width: 100%; height: 100%"></div>
+				        		</div>
+				        		<div class="lh-house-prop-desc">
+				                    <h1 class="list-home-title--not-collapsable">Property Description</h1>
+				                    <p class="lh-description">
+				                       
+				                       
+				                            {{remarks_placeholder}}<template v-if="preview">...</template>
+				                        
+				                    </p>
+				                    <template v-if="preview">
+				                    <div class="plus-button" @click="showReview()">
+				                        <i class="fas fa-plus"></i>
+				                        More
+				                    </div>
+				                    </template>
+				                </div>
+				                <template v-if="tourStatus">
+				                <div class="lh-virutal-tour" >
+				                    <h1 class="list-home-title--not-collapsable">Virtual Walkthrough</h1>  
+				                    <iframe id="vt" :src="mls.virtualTourUrl" style="width: 100%; min-height: 550px; overflow:hidden !important;"></iframe>
+				                    <!-- <img src="/wp-content/themes/theoffercompany/images/virtualtour.png" alt="virutal" /> -->
+				                </div>
+				                </template>
+
+				                <div class="lh-features">
+				                    <div class="hr hr-up d-block d-md-none"></div>
+				                    <h1 class="list-home-title toggle-collapse" data-target="#lh-property-amentities" data-notify="#finance-wrap">
+				                        Property Amentities
+				                        <i class="far fa-chevron-up faup"></i>
+				                    </h1>
+				                    <div class="hr hr-down d-block d-md-none"></div>
+				                    <div class="collapse show" id="lh-property-amentities">
+				                        <h2 class="lh-subtitle">
+				                            Features
+				                        </h2>
+				                        <div class="lh-features-list-wrap">
+				                            <div class="row">
+				                                <div class="col-6 col-md-4">
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            <span>Type:</span>
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>{{mls.property_type}}</strong>
+				                                        </div>
+				                                    </div>
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            <span>Stories:</span>
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>{{mls.property_stories}}</strong>
+				                                        </div>
+				                                    </div>
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            <span>Beds:</span>
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>{{mls.property_bedrooms}}</strong>
+				                                        </div>
+				                                    </div>
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            <span>Baths:</span>
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>{{mls.property_bathrooms}}</strong>
+				                                        </div>
+				                                    </div>
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            <span>SqFt:</span>
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>{{mls.property_area}}</strong>
+				                                        </div>
+				                                    </div>
+				                                    <div class="row no-gutters">
+				                                        <div class="col-7">
+				                                            <span>
+				                                            Year Built:
+				                                            </span>
+				                                        </div>
+				                                        <div class="col-5 text-right">
+				                                            <strong>{{mls.property_yearBuilt}}</strong>
+				                                        </div>
+				                                    </div>
+				                                </div>
+				                                <div class="col-6 col-md-5">
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            <span>
+				                                            Pool:
+				                                            </span>
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>{{mls.property_pool}}</strong>
+				                                        </div>
+				                                    </div>
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            <span>
+				                                            Spa:
+				                                            </span>
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>Yes</strong>
+				                                        </div>
+				                                    </div>
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            <span>Lot size:</span>
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>{{mls.property_lotSize}}</strong>
+				                                        </div>
+				                                    </div>
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            Garage spaces:
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>{{mls.property_garageSpaces}}</strong>
+				                                        </div>
+				                                    </div>
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            <span>Carportspaces:</span>
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>2</strong>
+				                                        </div>
+				                                    </div>
+				                                    <div class="row no-gutters">
+				                                        <div class="col-6">
+				                                            <span>
+				                                            Fireplace:
+				                                            </span>
+				                                        </div>
+				                                        <div class="col-6 text-right">
+				                                            <strong>{{mls.property_fireplaces}}</strong>
+				                                        </div>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <h2 class="lh-subtitle mt-3">
+				                            Room Details
+				                        </h2>
+				                        <div class="lh-details-block">
+				                            <p>Kitchen Features</p>
+				                            <strong>-</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Master bathroom*</p>
+				                            <strong>Toilet, Soap dispenser, TV, Roof</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Laundry</p>
+				                            <strong>{{mls.property_laundryFeatures}}</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Dining area*</p>
+				                            <strong>-</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Basement*</p>
+				                            <strong>Table tennis, Cinema, Popcorn</strong>
+				                        </div>
+				                        <div class="lh-details-block no-border">
+				                            <p>Basement*</p>
+				                            <strong>Office desk, Chair, Security safe</strong>
+				                        </div>
+				                        <h2 class="lh-subtitle">
+				                            Construction
+				                        </h2>
+				                        <div class="lh-details-block">
+				                            <p>Architecture*</p>
+				                            <strong>-</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Finish*</p>
+				                            <strong>One finish, Another one</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Frame*</p>
+				                            <strong>Item, Another item</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Roofing</p>
+				                            <strong>{{mls.property_roof}}</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Fencing*</p>
+				                            <strong>-</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Cooling</p>
+				                            <strong>{{mls.property_cooling}}</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Heating</p>
+				                            <strong>{{mls.property_heating}}</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Utilities*</p>
+				                            <strong>Item, Another item</strong>
+				                        </div>
+				                        <div class="lh-details-block">
+				                            <p>Water</p>
+				                            <strong>Yes</strong>
+				                        </div>
+				                        <div class="lh-details-block no-border">
+				                            <p>Sewer*</p>
+				                            <strong>Yes</strong>
+				                        </div>
+				                        <h2 class="lh-subtitle">
+				                            Other
+				                        </h2>
+				                        <div class="lh-details-block no-border--desktop">
+				                            <div class="row no-gutters">
+				                                <div class="col-12 col-md-3">
+				                                    <p>HOA: 
+				                                        <template v-if="hoa"><strong>Yes</strong></template>
+				                                        <template v-else><strong>No</strong></template>
+				                                    </p>
+				                                </div>
+				                                <template v-if="hoa">
+				                                    <div class="col-12 col-md-3">
+				                                        <p>HOA Fee: <strong>$60</strong></p>
+				                                    </div>
+				                                    <div class="col-12 col-md-5">
+				                                        <p class="mb-4">HOA Frequency: <strong>Monthly</strong></p>
+				                                    </div>
+				                                </template>
+				                            </div>
+				                        </div>
+				                        <div class="lh-provider">
+				                            <div class="lh-license">
+				                                <p>Listing provided by</p>
+				                                <span class="font-padding-stilization">
+				                                <a :href="'/agent-profile/?id='+agent.agent_id">{{mls.agent_firstName}} {{mls.agent_lastName}}</a>, License #357382, <a href="#">{{mls.office_name}}</a> inc.<br>
+				                                {{mls.office_contact_office}}, Source: {{mls.mls_provider_name}} <a href="#">MLS Disclaimer</a>
+				                                </span>
+				                            </div>
+				                            <div class="d-flex d-md-none">
+				                                <div class="offer-link">
+				                                    <a href="#">Make an offer</a>
+				                                    <i class="far fa-arrow-right fasarrow"></i>
+				                                </div>
+				                                <div class="offer-link">
+				                                    <a href="#">Schedule tour</a>
+				                                    <i class="far fa-arrow-right fasarrow"></i>
+				                                </div>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+
+				                <!--computation-->
+
+				                 <div id="finance-wrap" class="lh-finance w-100">
+				                    <div class="hr hr-down d-none d-md-block"></div>
+				                    <h1 class="list-home-title d-block w-100 toggle-collapse" data-target="#lh-get-financing">
+				                        Get Financing
+				                        <i class="far fa-chevron-up faup"></i>
+				                    </h1>
+				                    <div id="lh-get-financing" class="collapse show">
+				                        <div class="row no-gutters">
+				                            <div class="col-5 col-md-3 lh-finance-list">
+				                                <ul>
+				                                    <li>P&amp;I <strong>$1,642</strong></li>
+				                                    <li>Insurance <strong>$67</strong></li>
+				                                    <li>Taxes <strong>$226</strong></li>
+				                                    <li>PMI <strong>$0</strong></li>
+				                                    <li>HOA <strong>$60</strong></li>
+				                                </ul>
+				                            </div>
+				                            <div class="col-7 col-md-6 d-flex justify-content-center">
+				                                <div class="chart-wrapper">
+				                                    <canvas id="lh-chart"></canvas>
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <div class="row no-gutters">
+				                            <div class="col-12 col-md-8 d-flex flex-column align-items-center">
+				                                <div class="offer-link wide">
+				                                    <a :href="'/prequalify/?id='+mls.id">Get pre-qualified</a>
+				                                    <i class="far fa-arrow-right fasarrow"></i>
+				                                </div>
+				                                <div class="plus-button d-flex justify-content-center">
+				                                    <i class="fas fa-plus"></i>
+				                                    More
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <form class="lh-form">
+				                            <label class="lh-label">Home Price</label>
+				                            <div class="row no-gutters">
+				                                <div class="form-group mt-1 col-12 col-md-9">
+				                                    <div class="has-dollar-left">
+				                                        <input type="text" class="form-control"  :value="mls.rawListPrice" />
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <label class="lh-label">Down payment</label>
+				                            <div class="row no-gutters">
+				                                <div class="form-group mt-1 col-9 col-md-7 pr-1">
+				                                    <div class="has-dollar-left">
+				                                        <input type="text" class="form-control" @keyup="getDownPaymentPercentage" v-model="downpayment" />
+				                                    </div>
+				                                </div>
+				                                <div class="form-group mt-1 col-3 col-md-2 pl-1">
+				                                    <div class="has-amp-right">
+				                                        <input type="text" class="form-control" @keyup="getDownPayment" v-model="downpayment_percentage" />
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <label class="lh-label">Loan program</label>
+				                            <div class="row no-gutters">
+				                                <div class="col-12 col-md-9 lh-custom-select-wrap mb-3">
+				                                    <select name="cars" class="lh-custom-select">
+				                                        <option selected>30-year fixed</option>
+				                                        <option>20-year fixed</option>
+				                                        <option>10-year fixed</option>
+				                                    </select>
+				                                </div>
+				                            </div>
+				                            <label class="lh-label">Interest rate</label>
+				                            <div class="row no-gutters">
+				                                <div class="col-12 col-md-9 form-group mt-1 mb-2">
+				                                    <div class="has-amp-right">
+				                                        <input type="text" class="form-control" value="" />
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <div class="mb-3">
+				                                <label class="custom-checkmark">
+				                                Include taxes/insurance
+				                                <input type="checkbox" v-model="hide_tax">
+				                                <span class="checkmark"></span>
+				                                </label>
+				                            </div>
+				                            <template v-if="hide_tax">
+				                                <label class="lh-label">Property tax</label>
+				                                <div class="row no-gutters mb-1">
+				                                    <div class="form-group mt-1 col-9 col-md-7 pr-1">
+				                                        <div class="has-year-right has-dollar-left">
+				                                            <input type="text" class="form-control" v-model="tax_taxAnnualAmount" />
+				                                        </div>
+				                                    </div>
+				                                    <div class="form-group mt-1 col-3 col-md-2 pl-1">
+				                                        <div class="has-amp-right">
+				                                            <input type="text" class="form-control" value="0.68" />
+				                                        </div>
+				                                    </div>
+				                                </div>
+				                                <label class="lh-label">Home Insurance</label>
+				                                <div class="row no-gutters mb-1">
+				                                    <div class="form-group mt-1 col-9 col-md-7 pr-1">
+				                                        <div class="has-year-right has-dollar-left">
+				                                            <input type="text" class="form-control" v-model="home_insurance"  />
+				                                        </div>
+				                                    </div>
+				                                    <div class="form-group mt-1 col-3 col-md-2 pl-1">
+				                                        <div class="has-amp-right">
+				                                            <input type="text" class="form-control" value="0.0042" />
+				                                        </div>
+				                                    </div>
+				                                </div>
+				                            </template>
+				                            <div class="mb-3">
+				                                <label class="custom-checkmark">
+				                                Include PMI
+				                                <input type="checkbox" v-model="include_pmi">
+				                                <span class="checkmark"></span>
+				                                </label>
+				                            </div>
+				                            <template v-if="include_pmi">
+				                                <label class="lh-label">PMI</label>
+				                                <div class="row no-gutters">
+				                                    <div class="col-12 col-md-9 form-group mt-1 mb-4">
+				                                        <div class="has-month-right has-dollar-left">
+				                                            <input type="text" class="form-control" v-model="pmi" />
+				                                        </div>
+				                                    </div>
+				                                </div>
+				                            </template>
+				                            <label class="lh-label">Association Fee</label>
+				                            <div class="row no-gutters">
+				                                <div class="col-12 col-md-9 form-group mt-1 mb-4">
+				                                    <div class="has-month-right has-dollar-left">
+				                                        <input type="text" class="form-control" v-model="mls.association_fee" />
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <p class="lh-apendix">
+				                                <small>
+				                                All calculations and costs are estimates.
+				                                This information is intended for planning and educational purposes only.
+				                                </small>
+				                            </p>
+				                        </form>
+				                    </div>
+				                </div>
+				                <div class="lh-transportation">
+				                    <div class="hr hr-up"></div>
+				                    <h1 class="list-home-title d-block w-100 toggle-collapse" data-target="#lh-transportation">
+				                        Transportation
+				                        <i class="fas fa-chevron-up faup"></i>
+				                    </h1>
+				                    <div class="transporation-group collapse show" id="lh-transportation">
+				                        <div class="row no-gutters">
+				                            <div class="col-12 col-md-6">
+				                                <div class="mb-4 row no-gutters">
+				                                    <div class="border-dotted">
+				                                        75
+				                                    </div>
+				                                    <div class="transp-desc">
+				                                        <p>Walk Score</p>
+				                                        <a href="#">Very Walkable</a>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <div class="mb-4 col-12 col-md-6">
+				                                <div class="row no-gutters">
+				                                    <div class="border-dotted">
+				                                        51
+				                                    </div>
+				                                    <div class="transp-desc">
+				                                        <p>Transit Score</p>
+				                                        <a href="#">Good Transit</a>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <div class="mb-4 col-12 col-md-6">
+				                                <div class="row no-gutters">
+				                                    <div class="border-dotted">
+				                                        51
+				                                    </div>
+				                                    <div class="transp-desc">
+				                                        <p>Bike Score</p>
+				                                        <a href="#">Bikeable</a>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <p class="data-by">Data by <a class="small-caps" href="#"> walkscore</a></p>
+				                    </div>
+				                    <div class="hr hr-down"></div>
+				                </div>
+				                <!-- lh-transportation -->
+				                <div class="lh-nearby-places">
+				                    <h1 class="list-home-title d-block w-100 toggle-collapse" data-target="#lh-nearby-places">
+				                        Nearby Places
+				                        <i class="fas fa-chevron-up faup"></i>
+				                    </h1>
+				                    <div id="lh-nearby-places" class="collapse show">
+				                        <div class="nearby-places-group row no-gutters">
+				                            <div class="d-flex col-12 col-md-6">
+				                                <div>
+				                                    <i class="fas fa-shopping-cart round-blue"></i>
+				                                </div>
+				                                <div class="places-stars">
+				                                    <h2>Shopping</h2>
+				                                    <p>Walmart (0.85 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">5 reviews</span>
+				                                    </div>
+				                                    <p>Jules Acupuncture (2.87 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">2 reviews</span>
+				                                    </div>
+				                                    <p>Damian Gonzales (2.87 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">2 reviews</span>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <div class="d-flex col-12 col-md-6">
+				                                <div>
+				                                    <i class="fas fa-briefcase-medical round-blue"></i>
+				                                </div>
+				                                <div class="places-stars">
+				                                    <h2>Hospital</h2>
+				                                    <p>Walmart (0.85 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">5 reviews</span>
+				                                    </div>
+				                                    <p>Jules Acupuncture (2.87 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">2 reviews</span>
+				                                    </div>
+				                                    <p>Damian Gonzales (2.87 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">2 reviews</span>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <div class="d-flex col-12 col-md-6">
+				                                <div>
+				                                    <i class="fas fa-utensils round-blue"></i>
+				                                </div>
+				                                <div class="places-stars">
+				                                    <h2>Restaurant</h2>
+				                                    <p>Walmart (0.85 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">5 reviews</span>
+				                                    </div>
+				                                    <p>Jules Acupuncture (2.87 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">2 reviews</span>
+				                                    </div>
+				                                    <p>Damian Gonzales (2.87 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">2 reviews</span>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                            <div class="d-flex col-12 col-md-6">
+				                                <div>
+				                                    <i class="fas fa-running round-blue"></i>
+				                                </div>
+				                                <div class="places-stars">
+				                                    <h2>Fitness</h2>
+				                                    <p>Walmart (0.85 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">5 reviews</span>
+				                                    </div>
+				                                    <p>Jules Acupuncture (2.87 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">2 reviews</span>
+				                                    </div>
+				                                    <p>Damian Gonzales (2.87 mi)</p>
+				                                    <div class="stars-reviews">
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <i class="fas fa-star"></i>
+				                                        <span class="faded font-padding-stilization">2 reviews</span>
+				                                    </div>
+				                                </div>
+				                            </div>
+				                        </div>
+				                        <p class="data-by">Data by <a class="small-caps" href="#"> Yelp</a></p>
+				                    </div>
+				                    <div class="hr hr-down"></div>
+				                </div>
+				                <!-- lh-nearby-places -->
+				                <div class="lh-school-rankings">
+				                    <h1 class="list-home-title d-block w-100 toggle-collapse" data-target="#lh-school-ranking">
+				                        School Rankings
+				                        <i class="fas fa-chevron-up faup"></i>
+				                    </h1>
+				                    <div id="lh-school-ranking" class="collapse show">
+				                        <div class="school-rank-group row no-gutters">
+				                            <div>
+				                                <i class="round-blue">5</i>
+				                                <p class="faded">out of 10</p>
+				                            </div>
+				                            <div class="sch-r-desc">
+				                                <p>Marshall Ranch Elementary</p>
+				                                <p class="small-caps">0.9 mi</p>
+				                            </div>
+				                        </div>
+				                        <div class="school-rank-group row no-gutters">
+				                            <div>
+				                                <i class="round-blue">6</i>
+				                                <p class="faded">out of 10</p>
+				                            </div>
+				                            <div class="sch-r-desc">
+				                                <p>Moon Valley High</p>
+				                                <p class="small-caps">0.9 mi</p>
+				                            </div>
+				                        </div>
+				                        <div class="school-rank-group row no-gutters">
+				                            <div>
+				                                <i class="round-blue">8</i>
+				                                <p class="faded">out of 10</p>
+				                            </div>
+				                            <div class="sch-r-desc">
+				                                <p>Tumbleweed Elementary</p>
+				                                <p class="small-caps">0.9 mi</p>
+				                            </div>
+				                        </div>
+				                        <p class="data-by">Data by <a class="small-caps" href="#"> GreatSchools.org</a></p>
+				                        <div class="d-block d-md-none hr hr-down"></div>
+				                        <div class="sch-r-offer-link d-block d-md-none">
+				                            <div class="offer-link">
+				                                <a href="#">Make an offer</a>
+				                                <i class="far fa-arrow-right fasarrow"></i>
+				                            </div>
+				                            <div class="offer-link">
+				                                <a href="#">Schedule tour</a>
+				                                <i class="far fa-arrow-right fasarrow"></i>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				                <!-- lh-school-rankings -->
+				                <div class="d-none d-md-block hr hr-down"></div>
+				                <div class="property-slider lh-property-slider">
+				                    <h1 class="list-home-title text-center">Ahwatukee Lifestyle</h1>
+				                    <p class="list-home-subtitle text-center">Get weekly updates about what's happening in Ahwatukee.</p>
+				                    <div class="row justify-content-center no-gutters">
+				                        <div class="col-11 col-md-9 col-lg-12 m-auto">
+											<div class="row">
+												<div class="col-6">
+													<div class="lifestyle-news-image" style="background: url(/wp-content/themes/theoffercompany/images/property-1.png);"></div>
+													<div class="lifestyle-news">
+														<small class="small-imp">Upgrading home</small>
+														<p>Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest</p>
+														<div class="review-by">
+															<img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
+															<p>Chris Brown</p>
+															<small>on 25 Oct 2018</small>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="lifestyle-news-image" style="background: url(/wp-content/themes/theoffercompany/images/property-2.png)"></div>
+													<div class="lifestyle-news">
+														<small class="small-imp">Upgrading home</small>
+														<p>Prep for 'Prost!' Season 9 Bavarian Style Homes to Inspire Oktoberfest</p>
+														<div class="review-by">
+															<img src="/wp-content/themes/theoffercompany/images/chrisbrown.png" alt="review" />
+															<p>Chris Brown</p>
+															<small>on 25 Oct 2018</small>
+														</div>
+													</div>
+												</div>
+				                            </div>
+				                        </div>
+				                    </div>
+				                    <div class="d-flex flex-column justify-content-center">
+				                        <div class="offer-link">
+				                            <a href="https://app.monstercampaigns.com/c/bejnpumprltfhvgoqdd6/">Get updates</a>
+				                            <i class="far fa-arrow-right fasarrow"></i>
+				                        </div>
+				                        <!-- <div class="d-none d-md-flex justify-content-center">
+				                            <a href="#" class="top-link">
+				                              <i class="fas fa-chevron-up top-up"></i>
+				                              Back to Top
+				                            </a>
+				                            </div> -->
+				                    </div>
+				                    <div class="blue-bg">
+				                        <p>Buying but need to sell first?</p>
+				                        <small>We have two great options to choose from.</small>
+				                        <a :href="'/selling-options/?street_address='+mls.address_full+'&city='+mls.address_city+'&state='+mls.address_state">Selling options
+				                        <i class="far fa-arrow-right fasarrow"></i>
+				                        </a>
+				                    </div>
+				                </div>
+				                <!-- property-slider -->
+				        	</div>
+				        	<div class="col-12 col-md-4 contact-agent">
+				                <!-- <h1 class="contact-agent-title">Contact Agent</h1> -->
+				                <strong class="small-imp">CONTACT AGENT</strong>
+				                <div class="contact-agent-prev row no-gutters">
+				                    <div class="col-2">
+				                        <img :src="agent.photo" />
+				                    </div>
+				                    <div class="col-10 contact-agent-details">
+				                        <h2 class="contact-agent-prev-name">{{agent.first_name}} {{agent.last_name}}</h2>
+				                        <i class="fas fa-star"></i>
+				                        <i class="fas fa-star"></i>
+				                        <i class="fas fa-star"></i>
+				                        <i class="fas fa-star"></i>
+				                        <i class="fas fa-star"></i>
+				                        <p><a :href="'sms:'+agent.phone">{{agent.phone}}</a></p>
+				                        <p><a :href="'email:'+agent.email"> {{agent.email}}</a></p>
+				                        <div class="contact-agent-controlls d-block d-md-none">
+				                            <i class="fas fa-phone agent-phone"></i><span class="font-padding-stilization">Call</span>
+				                            <i class="fas fa-comment-alt agent-text"></i><span class="font-padding-stilization">Text</span>
+				                        </div>
+				                    </div>
+				                </div>
+				                <form class="contact-agent-form" v-on:submit.prevent="onSubmit">
+				                    <div class="form-group">
+				                        <div class="has-person-left">
+				                            <input type="text" class="form-control" placeholder="Name" v-model="contact_name" />
+				                        </div>
+				                    </div>
+				                    <div class="form-group">
+				                        <div class="has-phone-left">
+				                            <input type="text" class="form-control" placeholder="Phone" v-model="contact_phone" />
+				                        </div>
+				                    </div>
+				                    <div class="form-group">
+				                        <div class="has-mail-left">
+				                            <input type="text" class="form-control" placeholder="Email" v-model="contact_email" />
+				                        </div>
+				                    </div>
+				                    <div class="input-group">
+				                        <textarea class="form-control" placeholder="Question" v-model="contact_question"></textarea>
+				                    </div>
+				                    <div class="another-contact mt-4">
+				                        <img src="/wp-content/themes/theoffercompany/images/man.png" />
+				                        <div class="preferred-lender">
+				                            <p>Preferred lender</p>
+				                            <h2 class="contact-agent-prev-name">{{agent.lender_fname}} {{agent.lender_lname}}</h2>
+				                        </div>
+				                    </div>
+				                    <div class="form-check d-flex justify-content-center">
+				                        <div>
+				                            <label class="custom-checkmark">
+				                            I want financing information
+				                            <input type="checkbox" v-model="contact_allow_email">
+				                            <span class="checkmark"></span>
+				                            </label>
+				                        </div>
+				                    </div>
+				                    <div  v-bind:class="{ disabled: contact_agent_form_submitted, 'offer-link': true }">
+				                        <button @click="submitContactForm" >{{ contact_agent_form_button_text }}</button>
+				                        <i class="far fa-arrow-right fasarrow"></i>
+				                    </div>
+				                </form>
+				            </div>
+
+				        </div>
+				       	
+				    </div><!--container-->
+
+          	<!---------------->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+<div id="unlock-modal" class="modal fade unlock" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content width-override">
+            <div class="multi-step">
+                <div class="step" id="initial">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign in or register to unlock</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="close-link" aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <form method="post" class="lh-form">
+                      <input type="hidden" name="street_address" value="<?= $properties['street_address']; ?>">
+                      <input type="hidden" name="state" value="<?= $properties['state']; ?>">
+                      <input type="hidden" name="city" value="<?= $properties['city']; ?>">
+                      <input type="hidden" name="zip" value="<?= $properties['zip']; ?>">
+                      <input type="hidden" name="property_area" value="<?= $sqft; ?>">
+                      <input type="hidden" name="beds" value="<?= $beds; ?>">
+                      <input type="hidden" name="baths" value="<?= $baths; ?>">
+                      <input type="hidden" name="estimate" value="<?= $estimate; ?>">
+                      <input type="hidden" name="params" value="<?= "?street_address=$properties[street_address]&state=$properties[state]&city=$properties[city]&zip=$zip&property_area=$sqft&beds=$beds&baths=$baths&estimate=$estimate"; ?>">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <div class="has-mail-left">
+                                    <input type="email" name="register_email" class="form-control" placeholder="Email" style="margin-top: 5px">
+                                    <input type="password" name="register_password" class="form-control" placeholder="Password" style="margin-top: 5px">
+
+                                    <button href="#" class="btn btn-block" name="register" type="submit">Register <i class="far fa-arrow-right"></i></button>
+                                    <a href="#" class="btn btn-block step-toggler" data-triger="#login">Login <i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="sphere-container">
+                                <p>Or connect with</p>
+                                <a class="sphere sphere--fb">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="sphere sphere--twitt">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="step" id="login">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Welcome back!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="close-link" aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <form method="post">
+                      <input type="hidden" name="street_address" value="<?= $properties['street_address']; ?>">
+                      <input type="hidden" name="state" value="<?= $properties['state']; ?>">
+                      <input type="hidden" name="city" value="<?= $properties['city']; ?>">
+                      <input type="hidden" name="zip" value="<?= $properties['zip']; ?>">
+                      <input type="hidden" name="property_area" value="<?= $sqft; ?>">
+                      <input type="hidden" name="beds" value="<?= $beds; ?>">
+                      <input type="hidden" name="baths" value="<?= $baths; ?>">
+                      <input type="hidden" name="estimate" value="<?= $estimate; ?>">
+                    <input type="hidden" name="params" value="<?= "?street_address=$properties[street_address]&state=$properties[state]&city=$properties[city]&zip=$zip&property_area=$sqft&beds=$beds&baths=$baths&estimate=$estimate"; ?>">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="has-mail-left">
+                                <input type="email" name="login_username" class="form-control" placeholder="Username" value="">
+                            </div>
+                            <div class="spacer-1rem"></div>
+                            <div class="has-key-left">
+                                <input type="password" name="login_password" class="form-control" placeholder="Password" value="">
+                            </div>
+                            <button class="btn btn-block" type="submit" name="signin">Sign in <i class="far fa-arrow-right"></i></button>
+                            <a href="#" class="help-link">Forgot password?</a>
+                        </div>
+                        <hr>
+                        <div class="sphere-container">
+                            <p>Or connect with</p>
+                            <a class="sphere sphere--fb">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="sphere sphere--twitt">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="step" id="signup">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Create a password</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="close-link" aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <p class="message">Create a password to access your account any time.</p>
+                            <div class="spacer-1rem"></div>
+                            <div class="has-key-left">
+                                <input type="password" class="form-control" placeholder="Password" value="">
+                            </div>
+                            <a href="#" class="btn btn-block step-toggler">Submit <i class="far fa-arrow-right"></i></a>
+                            <a href="#" class="help-link">Terms of use</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
 <div class="clearfix"></div>
 <div id="search-homes">
 	<div class="container-fluid">
@@ -149,9 +1252,9 @@
 						</a>
 						<div class="subtypes" data-parent="foreclosure"></div>
 						<a class="dropdown-item primary-item" href="#">
-							<input class="dropdown-checkbox parent-checkbox is_value" id="last_call" type="checkbox" name="last_call">
-							<label for="last_call" class="checkbox_trigger">
-								<i class="fas fa-circle color green"></i>Last call
+							<input class="dropdown-checkbox parent-checkbox is_value" id="rentals" type="checkbox" name="rentals">
+							<label for="rentals" class="checkbox_trigger">
+								<i class="fas fa-circle color green"></i>Rentals 
 							</label>
 						</a>
 						<div class="subtypes" data-parent="last_call"></div>
@@ -218,6 +1321,7 @@
 									<option value="1">1+</option>
 									<option value="2">2+</option>
 									<option value="3">3+</option>
+									<option value="4">4+</option>
 								</select>
 							</div>
 							<div class="form-group">
@@ -229,10 +1333,20 @@
 							</div>
 							<div class="form-group">
 								<label>Lot size</label>
-								<div class="input-group dual">
-									<input type="text" class="form-control" placeholder="Min" id="lot_size_min">
-									<input type="text" class="form-control" placeholder="Max" id="lot_size_max">
-								</div>
+								<select class="custom-select" id="lot_size_min">
+									<option value="" selected>Any</option>
+									<option value="2000">2000+ sqft</option>
+									<option value="3000">3000+ sqft</option>
+									<option value="4000">4000+ sqft</option>
+									<option value="5000">5000+ sqft</option>
+									<option value="6000">6000+ sqft</option>
+									<option value="10890">.25+ acres</option>
+									<option value="21780">.50+ acres</option>
+									<option value="43560">1+ acres</option>
+									<option value="87120">2+ acres</option>
+									<option value="217800">5+ acres</option>
+									<option value="435600">10+ acres</option>
+								</select>
 							</div>
 							<div class="form-group">
 								<label>Year built</label>
@@ -244,19 +1358,27 @@
 							<div class="form-group">
 								<label>Max HOA</label>
 								<select class="custom-select" id="max_hoa">
-									<option selected value="">Any</option>
-									<option value="1">1+</option>
-									<option value="2">2+</option>
-									<option value="3">3+</option>
+									<option value="" selected>Any</option>
+									<option value="100">$100/mo</option>
+									<option value="200">$200/mo</option>
+									<option value="300">$300/mo</option>
+									<option value="400">$400/mo</option>
+									<option value="500">$500/mo</option>
 								</select>
 							</div>
 							<div class="form-group">
 								<label>Days on market</label>
-								<select class="custom-select" id="days_on_market" style="max-width: 54%;">
-									<option selected value="">Any</option>
-									<option value="1">1+</option>
-									<option value="2">2+</option>
-									<option value="3">3+</option>
+								<select class="custom-select" id="days_on_market">
+									<option value="" selected>Any</option>
+									<option value="1">1 day</option>
+									<option value="7">7 days</option>
+									<option value="14">14 days</option>
+									<option value="30">30 days</option>
+									<option value="90">90 days</option>
+									<option value="180">6 months</option>
+									<option value="360">12 months</option>
+									<option value="720">24 months</option>
+									<option value="1080">36 months</option>
 								</select>
 							</div>
 							<div class="form-group">
@@ -577,6 +1699,7 @@
 </div>
 </div> <!-- #et-main-area -->
 </div> <!-- #page-container -->
+</div><!--root-->
 
 <canvas id="icon_canvas" style="display: none;"></canvas>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -587,6 +1710,229 @@
 	integrity="sha256-+nuEu243+6BveXk5N+Vbr268G+4FHjUOEcfKaBqfPbc="
 	crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script type="text/javascript">
+	var vm,vm2;
+	vm = new Vue({
+		el:'#modalvue',
+		data:{
+			mls:{},
+			mls_openhouse_date: "",
+			agent:{},
+			mls_id:20626,
+			img0:'',
+            img1:'',
+            img2:'',
+            img3:'',
+            img4:'',
+            remarks_preview:'',
+            remarks_placeholder:'',
+            preview:true,
+            tourStatus:true,
+            hoa:false,
+            downpayment_percentage:20,
+            downpayment:0,
+            pmi:0,
+            include_pmi:false,
+            loan_amount:0,
+            hide_tax:false,
+            tax_taxAnnualAmount:0,
+            contact_name: '',
+            contact_email: '',
+            contact_phone: '',
+            contact_question: '',
+            contact_allow_email: false,
+            contact_agent_form_button_text: "Contact Agent",
+            contact_agent_form_submitted: false,
+            is_logged_in: <?php echo ( ! is_user_logged_in() ) ? "false" : "true"; ?>,
+            property_map_visible: false,
+		},
+		created: function(){
+			this.loadMLS(this.mls_id);
+			this.loadAgent(85353);
+		},
+		methods: {
+			loadMLS: function(mls_id){
+				this.property_map_visible = false;
+				axios.get("http://portal.theoffercompany.com/api/getMlsDetails.php?id="+mls_id)
+                .then(response => {
+                    data = response.data;
+                    this.img0 = data.images[0];
+                    this.img1 = data.images[1];
+                    this.img2 = data.images[2];
+                    this.img3 = data.images[3];
+                    this.img4 = data.images[4];
+                    this.mls = data;
+                    // this.mls.listPrice = new Intl.NumberFormat( "en-US", { style: "currency", currency: "USD" }).format( data.listPrice ).replace( /\.00$/, "" );
+
+                    this.mls.rawListPrice = data.listPrice;
+                    this.remarks_preview = this.mls.remarks.substring(0,500);
+                    this.remarks_placeholder = this.remarks_preview;
+                    if (this.mls.virtualTourUrl == null){
+                        this.tourStatus = false;
+                    }
+                    if (this.mls.association_fee > 0){
+                        this.hoa = true;
+                    }else{
+                        this.hoa = false;
+                    }
+                    //calculation
+                     this.downpayment = this.mls.rawListPrice * (this.downpayment_percentage/100);
+                    this.downpayment = this.downpayment.toFixed(2);
+                    this.home_insurance = this.home_insurance_percentage * this.mls.rawListPrice;
+                    this.home_insurance = this.home_insurance.toFixed(2);
+                    if (this.downpayment_percentage.toFixed(2) < 20){
+                        this.include_pmi = true;
+                        this.loan_amount = this.mls.rawListPrice - this.downpayment;
+                        this.loan_amount = this.loan_amount.toFixed(2);                        
+                    }                    
+                   
+                    if (this.mls.association_fee > 0){
+                        this.hoa = true;
+                    }else{
+                        this.hoa = false;
+                    }
+
+                    this.formatOpenHouseDate();
+                });
+                // console.log(this.mls.virtualTourUrl);
+                // console.log(this.tourStatus);
+                console.log(this.mls);
+			},
+			loadAgent: function(zip){
+              axios.get("http://portal.theoffercompany.com/api/getAgentDetails.php?zip="+zip)
+              .then(response => {
+                    // console.log(response.data);
+                    if (response.data.length == 0){
+                        // console.log('no data available');
+                        axios.get("http://portal.theoffercompany.com/api/getAgentDetails.php?zip=85353")
+                        .then(response =>{
+                            agent_data = response.data[0];
+                            this.agent = agent_data;
+                            this.remarks_preview = this.remarks.substring(0,500);
+                        });
+                    }else{
+                        
+                        agent_data = response.data[0];
+                        this.agent = agent_data;
+                    }
+              });    
+            },
+            showReview: function(){
+                this.preview = false;
+                this.remarks_placeholder = this.mls.remarks;
+            },
+            getDownPayment: function(){
+                
+                this.downpayment = this.mls.rawListPrice * (this.downpayment_percentage / 100);
+                this.downpayment = this.downpayment.toFixed(2);
+                if (this.downpayment_percentage < 20){
+                        this.include_pmi = true;
+                        this.loan_amount = this.mls.rawListPrice - this.downpayment;
+                        this.loan_amount = this.loan_amount.toFixed(2);
+                        this.pmi = (this.loan_amount * 0.0075) / 12;
+                        this.pmi = this.pmi.toFixed(2);
+                        console.log(this.pmi);
+                }else{
+                    this.include_pmi = false;
+                    this.pmi = 0;
+                }
+            },
+            getDownPaymentPercentage: function(){
+                this.downpayment_percentage = (this.downpayment/this.mls.rawListPrice) * 100; 
+                this.downpayment_percentage = this.downpayment_percentage.toFixed(2);
+                if (this.downpayment_percentage < 20){
+                        this.include_pmi = true;
+                        this.loan_amount = this.mls.rawListPrice - this.downpayment;
+                        this.loan_amount = this.loan_amount.toFixed(2);
+                        this.pmi = (this.loan_amount * 0.0075) / 12;
+                        this.pmi = this.pmi.toFixed(2);
+                        console.log(this.pmi);
+                }else{
+                    this.include_pmi = false;
+                    this.pmi = 0;
+                }
+            },
+			test: function(str){
+				alert(str);
+			},
+			submitContactForm: function(){
+				console.log( "submitContactForm" )
+				let self = this;
+
+				let data = {
+					contact_name: self.contact_name,
+					contact_email: self.contact_email,
+					contact_phone: self.contact_phone,
+					contact_question: self.contact_question,
+					agent_id: self.agent.id,
+					contact_allow_email: self.contact_allow_email,
+				};
+
+				self.contact_agent_form_button_text = "Sending...";
+				self.contact_agent_form_submitted = true;
+
+				console.log( "data", data )
+
+				axios.get( "https://hooks.zapier.com/hooks/catch/3497148/0enqim/", {
+						params: data,
+					})
+					.then( ( response ) => {
+						console.log( "submitContactForm success", response )
+						self.contact_agent_form_button_text = "Sent!";
+						self.contact_agent_form_submitted = true;
+
+						self.contact_name = "";
+						self.contact_email = "";
+						self.contact_phone = "";
+						self.contact_question = "";
+						self.contact_allow_email = false;
+					})
+					.catch( ( error ) => {
+						console.log( "submitContactForm error", error );
+						self.contact_agent_form_button_text = "Error, try again";
+						self.contact_agent_form_submitted = false;
+					});
+			},
+			onSubmit: function(){
+				//console.log( "onSubmit" )
+			},
+			formatOpenHouseDate: function() {
+
+				if ( ! this.mls.openhouse_id ) {
+					return "";
+				}
+
+				let start = moment( this.mls.openhouse_start );
+				let end = moment( this.mls.openhouse_end );
+
+				this.mls_openhouse_date_string = start.format( "ddd, MMM D • h:mma - " ) + end.format( "h:mma" );
+
+			},
+			showPropertyMap: function(){
+				this.property_map_visible = true;
+
+				let coords = {
+					lat: parseFloat( this.mls.geo_lat ),
+					lng: parseFloat( this.mls.geo_lng ),
+				};
+				let map = new google.maps.Map( $( "#property_map_wrapper" ).get( 0 ), {
+						zoom: 16,
+						center: coords,
+					});
+
+				let marker = new google.maps.Marker({
+								map: map,
+								position: coords,
+							});
+
+				marker.setMap( map );
+			},
+		}
+	});
+
+</script>
 <script>
 
 	$("div").delegate(".vt", "click", function(e){
@@ -603,7 +1949,7 @@
 			console.log( "SearchPage" );
 			this.search_endpoint = "http://portal.theoffercompany.com/api/getMlsResults.php";
 			this.property_template = `
-				<div class="col-xl-{BOOTSTRAP_COLUMNS_XL} col-lg-{BOOTSTRAP_COLUMNS_LG} col-md-{BOOTSTRAP_COLUMNS_MD} col-sm-{BOOTSTRAP_COLUMNS_SM} col-{BOOTSTRAP_COLUMNS_DF} column-item property" data-index="{INDEX}" data-url="{URL}" id="mls{MLS_ID}">
+				<div class="col-xl-{BOOTSTRAP_COLUMNS_XL} col-lg-{BOOTSTRAP_COLUMNS_LG} col-md-{BOOTSTRAP_COLUMNS_MD} col-sm-{BOOTSTRAP_COLUMNS_SM} col-{BOOTSTRAP_COLUMNS_DF} column-item property modal-toggle" data-index="{INDEX}" data-addr="{ADDR}" data-url="{URL}" mls-id="{MLS_ID2}" id="mls{MLS_ID}" postal="{POSTAL}">
 					<div class="property-item" style="background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #000000b8 100%), url( {IMAGE} )">
 						<span class="time-on-market"><a href="{TOUR}" target="_blank" class="{HIDDEN}"><i class="vt fal fa-vr-cardboard"></i></a>{TIME_ON_MARKET} days on the market</span>
 						<a href="#" class="favourite"><i class=" far fa-heart"></i></a>
@@ -628,19 +1974,21 @@
 					state: "",
 					zip: "",
 					country: "",
+					name: "",
 					full: "",
+					locale: "",
 				},
 				listing_types: [ "for_sale", "coming_soon", "new_construction", "open_house", "virtual_tour" ],
 				price_min: "",
 				price_max: "",
 				bedrooms: "",
 				bedrooms_exact: false,
-				property_types: [],
+				property_types: [ "house", "condo", "land", "manufactured", "town_house" ],
 				bathrooms: "",
 				area_min: "",
 				area_max: "",
 				lot_size_min: "",
-				lot_size_max: "",
+			//	lot_size_max: "",
 				year_min: "",
 				year_max: "",
 				max_hoa: "",
@@ -659,7 +2007,7 @@
 			this.current_page = 1;
 			this.sort_type = "price_high";
 			this.enable_search = true;
-			this.results_limit = 500;
+			this.results_limit = 200;
 			this.search_distance = 1609; // 1 mile in kilometers
 			this.map_visible = true;
 			this.map_node;
@@ -672,8 +2020,9 @@
 			let result = {};
 			let query = url || location.search.substr( 1 );
 
-			if ( ! query )
+			if ( ! query ) {
 				return result;
+			}
 
 			query.split( "&" ).forEach( function( part ) {
 				let item = part.split( "=" );
@@ -681,6 +2030,33 @@
 			});
 
 			return result;
+		}
+
+		SearchPage.prototype.createPermalink = function() {
+			//console.log( "createPermalink" );
+			let base_url = location.protocol + '//' + location.host + location.pathname;
+			let vals = {};
+			for ( prop in this.search_params ) {
+				if ( this.search_params[ prop ].length ) {
+					console.log( "vals[ " + prop  + " ]", vals[ prop ] );
+					vals[ prop ] = this.search_params[ prop ];
+				}
+				else if ( this.search_params[ prop ] ) {
+					let val = {};
+					for ( let key in this.search_params[ prop ] ) {
+						if ( this.search_params[ prop ][ key ].length ) {
+							val[ key ] = this.search_params[ prop ][ key ];
+						}
+					}
+					vals[ prop ] = val;
+				}
+			}
+			return base_url + "?search=" + encodeURIComponent( JSON.stringify( vals ) );
+		}
+
+		SearchPage.prototype.updateUrl = function( url ) {
+			//console.log( "updateUrl" );
+			window.history.replaceState( "", "", url );
 		}
 
 		SearchPage.prototype.fillPropertyTemplate = function( property, index ) {
@@ -700,24 +2076,27 @@
 				html = html.replace( /{BOOTSTRAP_COLUMNS_DF}/g, bootstrap_columns.DF );
 			let tour = property.virtualTourUrl;
 			html = html.replace( "{TOUR}", tour );
-			let hidden = "";
-			if ( property.virtualTourUrl == "" ) {
-				hidden = "hidden";
-			} else {
-				hidden = "";
-			}
-			html = html.replace( "{HIDDEN}", hidden );
+
+			let address_full = property.address_full;
+			html = html.replace("{ADDR}",address_full);
+
+			let hidden = ( ! property.virtualTourUrl ) ? "hidden" : "show";
+			html = html.replace("{HIDDEN}",hidden);
 
 			let mls_id = property.id;
 			html = html.replace( "{MLS_ID}", mls_id );
+			html = html.replace("{MLS_ID2}",mls_id);
+
+			let postal = property.address_postalCode;
+			html = html.replace("{POSTAL}",postal);
 
 			let image = JSON.parse( property.photos )[0] || "";
 				html = html.replace( "{IMAGE}", image );
 			let time_on_market = property.mls_daysOnMarket || "unknown days";
 				// html = html.replace( "{TIME_ON_MARKET}", time_on_market );
-			let now_date = moment( Date.now() );
-			let added_date = moment( property.added, "YYYY-MM-DD" );
-			let days = now_date.diff( added_date, "days" );
+			let b = moment(Date.now());
+			let a = moment(property.added, 'YYYY-MM-DD');
+			let days = b.diff(a, 'days');
 			html = html.replace( "{TIME_ON_MARKET}", days );
 
 			let price = new Intl.NumberFormat( "en-US", { style: "currency", currency: "USD" }).format( property.listPrice ).replace( /\.00$/, "" ) || "";
@@ -727,10 +2106,7 @@
 			let full_baths = property.property_bathsFull || 0;
 			let half_baths = property.property_bathsHalf || 0;
 			let baths = ( half_baths ) ? full_baths + "." + half_baths : full_baths;
-			if ( ! baths )
-				baths = "";
-			else
-				baths += " baths";
+				baths += ( ! baths ) ? "" : " baths";
 				html = html.replace( "{BATHS}", baths );
 			let area = property.property_area + " ft²" || "";
 				html = html.replace( "{AREA}", area );
@@ -740,12 +2116,36 @@
 				html = html.replace( "{URL}", url );
 			let sale_type = "";
 			// property type switcher for when we figure out how to categorize these
-//			if ( something === for sale )
-				sale_type = '<span class="sale-type"><i class="dot red-dot"></i>House for Sale</span>';
-//			else if ( something === foreclosure )
-//				sale_type = '<span class="sale-type"><i class="dot blue-dot"></i>Foreclosure</span>';
-//			else if ( something === foreclosure )
-//				sale_type = '<span class="sale-type"><i class="dot green-dot"></i>For Rent</span>';
+
+			let property_label = "";
+			if ( property.property_subType === "ManufacturedHome" ) {
+				property_label = "Manufactured Home";
+			} else if ( property.property_subType === "Apartment" ) {
+				property_label = "Condo";
+			} else if ( property.property_type === "LND" ) {
+				property_label = "Land";
+			} else if ( property.property_subType === "SingleFamilyResidence" ) {
+				property_label = "House";
+			} else if ( property.property_subType === "Townhouse" ) {
+				property_label = "Town House";
+			}
+
+			if ( this.search_params.listing_types.indexOf( "coming_soon" ) !== -1
+				|| this.search_params.listing_types.indexOf( "new_construction" ) !== -1
+				|| this.search_params.listing_types.indexOf( "open_house" ) !== -1
+				|| this.search_params.listing_types.indexOf( "virtual_tour" ) !== -1
+			) {
+				sale_type = `<span class="sale-type"><i class="dot red"></i>${ property_label } for Sale</span>`;
+			}
+			else if ( this.search_params.listing_types.indexOf( "foreclosure" ) !== -1 ) {
+				sale_type = `<span class="sale-type"><i class="dot blue"></i>${ property_label } Foreclosure</span>`;
+			}
+			else if ( this.search_params.listing_types.indexOf( "rentals" ) !== -1 ) {
+				sale_type = `<span class="sale-type"><i class="dot green"></i>${ property_label } For Rent</span>`;
+			}
+			else if ( this.search_params.listing_types.indexOf( "sold" ) !== -1 ) {
+				sale_type = `<span class="sale-type"><i class="dot orange"></i>${ property_label } Sold</span>`;
+			}
 			html = html.replace( "{SALE_TYPE}", sale_type );
 
 			html = html.replace( "{INDEX}", index );
@@ -753,10 +2153,19 @@
 			return html;
 		};
 
+		SearchPage.prototype.createAddressText = function() {
+
+			return Object.keys( this.search_params.address ).filter( ( key ) => {
+				return ( key !== "full" && key !== "locale" && this.search_params.address[ key ].length );
+			}).map( ( key ) => {
+				return this.search_params.address[ key ];
+			}).join( " " );
+		};
+
 		SearchPage.prototype.resetSearchOptionsView = function() {
 			console.log( "resetSearchOptionsView" );
 			let self = this;
-			$( "#homes-search-desktop-field" ).val( this.search_params.address.full );
+			$( "#homes-search-desktop-field" ).val( self.createAddressText() );
 			$( "#listingDropdownDesktopMenu .primary-item .parent-checkbox" ).prop( "checked", false );
 			$( '#listingDropdownDesktopMenu .sub input[type="checkbox"]' ).prop( "checked", false );
 			this.search_params.listing_types.forEach( ( type ) => {
@@ -766,16 +2175,20 @@
 			$( "#price_max" ).val( this.search_params.price_max );
 			$( "#beds_picker .dropdown-item" ).removeClass( "active" ).first().addClass( "active" );
 			$( "#bedrooms_exact" ).prop( "checked", this.search_params.bedrooms_exact );
-			$( '#homeTypeDropdownDesktop input[type="checkbox"]' ).prop( "checked", true ).trigger( "change" );
+			//$( '#homeTypeDropdownDesktop input[type="checkbox"]' ).prop( "checked", true ).trigger( "change" );
 			$( "#area_min" ).val( this.search_params.area_min );
 			$( "#area_max" ).val( this.search_params.area_max );
 			$( "#lot_size_min" ).val( this.search_params.lot_size_min );
-			$( "#lot_size_max" ).val( this.search_params.lot_size_max );
+			//$( "#lot_size_max" ).val( this.search_params.lot_size_max );
 			$( "#year_built_min" ).val( this.search_params.year_built_min );
 			$( "#year_built_max" ).val( this.search_params.year_built_max );
 			$( "#max_hoa" ).val( this.search_params.max_hoa );
 			$( "#days_on_market" ).val( this.search_params.days_on_market );
 			$( "#features" ).val( this.search_params.features );
+			$( `#homeTypeDropdownDesktop input[type="checkbox"]` ).prop( "checked", false );
+			this.search_params.property_types.forEach( ( type ) => {
+				$( `#homeTypeDropdownDesktop input[type="checkbox"][name="${ type }"]` ).prop( "checked", true ).trigger( "change" );
+			});
 		};
 
 		SearchPage.prototype.resetSearchView = function() {
@@ -789,76 +2202,6 @@
 			return "for_sale";
 		};
 
-		SearchPage.prototype.stateNameToCode = function( state_name ) {
-			//console.log( "stateNameToCode", state_name );
-
-			let codes = {
-				"Alabama": "AL",
-				"Alaska": "AK",
-				"Arizona": "AZ",
-				"Arkansas": "AR",
-				"California": "CA",
-				"Colorado": "CO",
-				"Connecticut": "CT",
-				"Delaware": "DE",
-				"District": "DC",
-				"Florida": "FL",
-				"Georgia": "GA",
-				"Hawaii": "HI",
-				"Idaho": "ID",
-				"Illinois": "IL",
-				"Indiana": "IN",
-				"Iowa": "IA",
-				"Kansas": "KS",
-				"Kentucky": "KY",
-				"Louisiana": "LA",
-				"Maine": "ME",
-				"Maryland": "MD",
-				"Massachusetts": "MA",
-				"Michigan": "MI",
-				"Minnesota": "MN",
-				"Mississippi": "MS",
-				"Missouri": "MO",
-				"Montana": "MT",
-				"Nebraska": "NE",
-				"Nevada": "NV",
-				"New": "NH",
-				"New": "NJ",
-				"New": "NM",
-				"New": "NY",
-				"North": "NC",
-				"North": "ND",
-				"Ohio": "OH",
-				"Oklahoma": "OK",
-				"Oregon": "OR",
-				"Pennsylvania": "PA",
-				"Rhode": "RI",
-				"South": "SC",
-				"South": "SD",
-				"Tennessee": "TN",
-				"Texas": "TX",
-				"Utah": "UT",
-				"Vermont": "VT",
-				"Virginia": "VA",
-				"Washington": "WA",
-				"West": "WV",
-				"Wisconsin": "WI",
-				"Wyoming": "WY",
-			};
-
-			return codes[ state_name ] || false;
-		};
-
-		SearchPage.prototype.countryCodeToName = function( country_code ) {
-			//console.log( "countryCodeToName", country_code );
-
-			let codes = {
-				"USA": "United States",
-			};
-
-			return codes[ country_code ] || false;
-		};
-
 		SearchPage.prototype.updateSearchView = function( update_zoom = true, highlight_index = false ) {
 			console.log( "updateSearchView", this.properties );
 
@@ -868,25 +2211,25 @@
 			this.resetSearchView();
 
 			this.properties.filter( ( property, index ) => {
-				let min = ( ( this.current_page - 1 ) * this.results_per_page );
-				let max = ( this.current_page * this.results_per_page );
-				return ( ( index >= min ) && ( index <= max ) );
-			})
-			.forEach( ( property, index ) => {
-				let html = this.fillPropertyTemplate( property, index );
-				$( "#properties" ).append( html );
-				let color = this.getPropertyColor( this.getPropertyListingType( property ) );
-				if ( highlight_index !== false ) {
-					this.addMapMarker( property.geo_lat, property.geo_lng, color, property.address_full, this.getPropertyListingType( property ), property.listPrice, true );
-				} else {
-					this.addMapMarker( property.geo_lat, property.geo_lng, color, property.address_full, this.getPropertyListingType( property ), property.listPrice );
-				}
-			});
+					let min = ( ( this.current_page - 1 ) * this.results_per_page );
+					let max = ( this.current_page * this.results_per_page );
+					return ( ( index >= min ) && ( index <= max ) );
+				})
+				.forEach( ( property, index ) => {
+					let html = this.fillPropertyTemplate( property, index );
+					$( "#properties" ).append( html );
+					let color = this.getPropertyColor( this.getPropertyListingType( property ) );
+					if ( highlight_index !== false ) {
+						this.addMapMarker( property.geo_lat, property.geo_lng, color, property.address_full, this.getPropertyListingType( property ), property.listPrice, true );
+					} else {
+						this.addMapMarker( property.geo_lat, property.geo_lng, color, property.address_full, this.getPropertyListingType( property ), property.listPrice );
+					}
+				});
 
-			//let city = ( this.properties.length ) ? this.properties[0].address_city : "";
-			$( ".city_text" ).text( this.search_params.address.city );
-			//let state = ( this.properties.length ) ? this.properties[0].address_state : "";
-			$( ".state_text" ).text( this.search_params.address.state );
+			let city = ( this.properties.length ) ? this.properties[0].address_city : "";
+			$( ".city_text" ).text( city );
+			let state = ( this.properties.length ) ? this.properties[0].address_state : "";
+			$( ".state_text" ).text( state );
 			let properties_amount_text = this.properties.length;
 			if ( this.properties.length === this.results_limit )
 				properties_amount_text += "+";
@@ -902,41 +2245,33 @@
 			
 			let params = [];
 
-//			if ( this.search_params.address )
-//				params.push([ "1", "ADDRESS", this.search_params.address ]);
+			if ( this.search_params.address ) {
 
-			if ( this.search_params.address.street_number )
-				params.push([ "address_streetNumberText", "LIKE", this.search_params.address.street_number ]);
-
-			if ( this.search_params.address.street )
-				params.push([ "address_streetName", "LIKE", this.search_params.address.street ]);
-
-			if ( this.search_params.address.city )
-				params.push([ "address_city", "LIKE", this.search_params.address.city ]);
-
-			if ( this.search_params.address.county ) {;
-				let search = this.search_params.address.county.replace( /\s?county\s?/i, "" )
-				params.push([ "geo_county", "LIKE", search ]);
-			}
-
-			if ( this.search_params.address.state )
-				params.push([ "address_state", "LIKE", this.search_params.address.state ]);
-
-			if ( this.search_params.address.state_full ) {
-				let code = this.stateNameToCode( this.search_params.address.state_full );
-				if ( code )
-					params.push([ "address_state", "LIKE", code ]);
-			}
-
-			if ( this.search_params.address.zip )
-				params.push([ "address_postalCode", "LIKE", this.search_params.address.zip ]);
-
-			if ( this.search_params.address.country ) {
-				let search = this.countryCodeToName( this.search_params.address.country );
-				params.push([ "address_country", "LIKE", search ]);
+				const address_map = {
+					state: "address_state",
+					country: "address_country",
+					zip: "address_postalCode",
+					street: "address_streetName",	
+					street_number: "address_streetNumberText",
+					city: "address_city",
+				};
+				//params.push([ "1", "ADDRESS", this.search_params.address ]);
+				Object.keys( this.search_params.address )
+					.filter( ( key ) => {
+						return this.search_params.address[ key ].length && address_map[ key ];
+					})
+					.forEach( ( key ) => {
+						//console.log( "keys", key, this.search_params.address[ key ] )
+						let val = this.search_params.address[ key ];
+						if ( key === "country" && val === "USA" ) {
+							val = "United States";
+						}
+						params.push( [ address_map[ key ], "LIKE", val ] );
+					});
 			}
 
 			if ( this.search_params.listing_types ) {
+				console.log( "this.search_params.listing_types", this.search_params.listing_types )
 				let options = this.search_params.listing_types.map( ( item ) => {
 
 					// for sale
@@ -947,21 +2282,29 @@
 						return [ "remarks", "LIKE", "new construction" ];
 					}
 					else if ( item === "open_house" ) {
-						return [ "1", "OPEN_HOUSE", "" ];
+						let compare_string = "OPEN_HOUSE_ONLY";
+						this.search_params.listing_types.some( ( param ) => {
+							if ( param !== open_house ) {
+								compare_string = "OPEN_HOUSE_OTHERS";
+								return true;
+							}
+						});
+						return [ "1", compare_string, "" ];
 					}
 					else if ( item === "virtual_tour" ) {
 						return [ "virtualTourUrl", "NOT NULL", "" ];
 					}
-					else if ( item === "last_call" ) {
-						return false; //[ "remarks", "LIKE", "new construction" ];
+					// rentals
+					else if ( item === "rentals" ) {
+						return [ "property_type", "=", "RNT" ];
 					}
 					// foreclosure
 					else if ( item === "foreclosure" ) {
-						return false; //[ "remarks", "LIKE", "new construction" ];
+						return [ "remarks", "LIKE", "foreclosure" ];
 					}
 					// sold
 					else if ( item === "sold" ) {
-						return false; //[ "remarks", "LIKE", "new construction" ];
+						return [ "mls_status", "=", "Closed" ];
 					}
 
 					else {
@@ -996,19 +2339,22 @@
 
 			if ( this.search_params.property_types ) {
 				let options = this.search_params.property_types.map( ( item ) => {
+					let type = "property_subType";
 					if ( item === "house" )
 						item = "SingleFamilyResidence";
 					else if ( item === "condo" )
 						item = "Apartment";
-				//	else if ( item === "land" )
-				//		item = "SingleFamilyResidence";
-				//	else if ( item === "manufactured" )
-				//		item = "SingleFamilyResidence";
+					else if ( item === "land" ) {
+						type = "property_type";
+						item = "LND";
+					}
+					else if ( item === "manufactured" )
+						item = "ManufacturedHome";
 					else if ( item === "town_house" )
 						item = "Townhouse";
 					else
 						item = "";
-					return ( item ) ? [ "property_subType", "=", item ] : false ;
+					return ( item ) ? [ type, "=", item ] : false ;
 				}).filter( item => item );
 				let group = {
 					group: true,
@@ -1019,7 +2365,7 @@
 			}
 
 			if ( this.search_params.bathrooms )
-				params.push([ "property_bathrooms", "=", this.search_params.bathrooms ]);
+				params.push([ "property_bathrooms", ">=", this.search_params.bathrooms ]);
 
 			if ( this.search_params.area_min )
 				params.push([ "property_area", ">=", this.search_params.area_min ]);
@@ -1029,18 +2375,25 @@
 
 			if ( this.search_params.lot_size_min )
 				params.push([ "property_lotSizeArea", ">=", this.search_params.lot_size_min ]);
-
+/*
 			if ( this.search_params.lot_size_max )
 				params.push([ "property_lotSizeArea", "<=", this.search_params.lot_size_max ]);
-
+*/
 			if ( this.search_params.year_min )
 				params.push([ "property_yearBuilt", ">=", this.search_params.year_min ]);
 
-//			if ( this.search_params.max_hoa )
-//				params.push([ "", "", this.search_params.max_hoa ]);
+			if ( this.search_params.year_max )
+				params.push([ "property_yearBuilt", "<=", this.search_params.year_max ]);
 
-			if ( this.search_params.days_on_market )
-				params.push([ "mls_daysOnMarket", "=", this.search_params.days_on_market ]);
+			if ( this.search_params.max_hoa )
+				params.push([ "association_fee", "<=", this.search_params.max_hoa ]);
+
+			if ( this.search_params.days_on_market ) {
+				let days = this.search_params.days_on_market;
+				console.log( "days", days )
+				console.log( "moment( new Date() ).subtract( days, 'days' ) ]).format( 'YYYY-MM-DD HH:mm:ss' )", moment( new Date() ).subtract( days, "days" ).format( "YYYY-MM-DD HH:mm:ss" ) )
+				params.push([ "added", ">=", moment( new Date() ).subtract( days, "days" ).format( "YYYY-MM-DD HH:mm:ss" ) ]);
+			}
 
 			if ( this.search_params.features ) {
 				this.search_params.features.split( /\s?,\s?/ ).forEach( ( feature ) => {
@@ -1061,6 +2414,12 @@
 			return params;
 		};
 
+		SearchPage.prototype.parsePropertiesData = function( properties ) {
+			return properties.map( ( property ) => {
+				return property;
+			});
+		};
+
 		SearchPage.prototype.getSearchResults = function() {
 			console.log( "getSearchResults" );
 			
@@ -1075,7 +2434,7 @@
 						limit: this.results_limit,
 					},
 					success: ( response ) => {
-						this.properties = response.data;
+						this.properties = this.parsePropertiesData( response.data );
 						return resolve();
 					},
 					error: ( error ) => {
@@ -1175,18 +2534,8 @@
 
 		};
 
-		SearchPage.prototype.handleAutocomplete = function( predictions, status ) {
-
-			if ( status != google.maps.places.PlacesServiceStatus.OK ) {
-				console.error( "Autocomplete Fail:", status );
-				return;
-			}
-			
-			this.updateAddressDropdown( true, predictions );
-
-		}
-
 		SearchPage.prototype.parseGoogleAutocompletePlace = function( prediction ) {
+			console.log( "parseGoogleAutocompletePlace", prediction )
 
 			if ( typeof prediction.types === "undefined" ) {
 				return false;
@@ -1300,6 +2649,17 @@
 
 			return data;
 
+		};
+
+		SearchPage.prototype.handleAutocomplete = function( predictions, status ) {
+
+			if ( status != google.maps.places.PlacesServiceStatus.OK ) {
+				console.error( "Autocomplete Fail:", status );
+				return;
+			}
+			
+			this.updateAddressDropdown( true, predictions );
+
 		}
 
 		SearchPage.prototype.initTriggers = function() {
@@ -1309,53 +2669,45 @@
 			// address
 			$( "#homes-search-desktop-field" ).on( "change input", $.debounce( self.debounce_time, function(){
 				let val = $(this).val();
-				self.search_params.address.full = val;
-				/*
+				//self.search_params.address = val;
 				self.search();
-				*/
-				if ( val.length < 3 ) {
+				if ( val.length <= 3 ) {
 					return;
 				}
 				if ( $( "#homes-search-desktop-field" ).is( ":focus" ) ) {
 					autocompleteService.getQueryPredictions( {
-						input: self.search_params.address.full,
+						input: val,
 						location: new google.maps.LatLng( parseFloat( default_geo.latitude ), parseFloat( default_geo.longitude ) ),
 						radius: 10000,
 					}, self.handleAutocomplete.bind( self ) );
 				}
 			}) );
 
-		
-
-			// skip if type is undefined
-			
-/*
-			autocompleteService.addListener( "place_changed", function(){
-				console.log( "place_changed", arguments );
-			});
-*/
 			// address
 			$( "#homes-search-desktop-field" ).on( "blur", function() {
 				self.updateAddressDropdown( false );
 			});
 
 			// autocomplete click
-			$( "#home_search_dropdown .items" ).on( "click", ".item", function() {
+			$( "#home_search_dropdown .items" ).on( "click", ".item", function(){
 				let el = $(this);
-				
-				self.search_params.address.full = el.find( ".main_text" ).text() || "";
-				self.search_params.address.locale = el.find( ".sub_text" ).text() || "";
-				self.search_params.address.street_number = el.attr( "data-street_number" ) || "";
-				self.search_params.address.street = el.attr( "data-street" ) || "";
-				self.search_params.address.city = el.attr( "data-city" ) || "";
-				self.search_params.address.county = el.attr( "data-county" ) || "";
-				self.search_params.address.state = el.attr( "data-state" ) || "";
-				self.search_params.address.zip = el.attr( "data-zip" ) || "";
-				self.search_params.address.country = el.attr( "data-country" ) || "";
-				self.search_params.address.name = el.attr( "data-name" ) || "";
 
-				$( "#homes-search-desktop-field" ).val( self.search_params.address.full + " " + self.search_params.address.locale ).blur();
-				self.search();
+				let address = {
+					street_number: el.attr( "data-street_number" ),
+					street: el.attr( "data-street" ),
+					city: el.attr( "data-city" ),
+					county: el.attr( "data-county" ),
+					state: el.attr( "data-state" ),
+					zip: el.attr( "data-zip" ),
+					country: el.attr( "data-country" ),
+					name: el.attr( "data-name" ),
+					full: el.find( ".main_text" ).text(),
+					locale: el.find( ".sub_text" ).text(),
+				};
+
+				$( "#homes-search-desktop-field" ).val( self.createAddressText() ).trigger( "change" ).blur();
+
+				self.search_params.address = address;
 			});
 
 			// listing_types group
@@ -1385,17 +2737,24 @@
 				self.search();
 			});
 
+			// bathrooms fuzzy
+			$( "#baths" ).on( "change", function(){
+				let val = $(this).val() || null;
+				self.search_params.bathrooms = parseInt( val, 10 );
+				self.search();
+			});
+
 			// price_min
 			$( "#price_min" ).on( "change input", $.debounce( self.debounce_time, function(){
 				let val = $(this).val() || null;
-				self.search_params.price_min = val;
+				self.search_params.price_min = parseInt( val.replace( /,/g, "" ), 10 );
 				self.search();
 			}) );
 
 			// price_max
 			$( "#price_max" ).on( "change input", $.debounce( self.debounce_time, function(){
 				let val = $(this).val() || null;
-				self.search_params.price_max = val;
+				self.search_params.price_max = parseInt( val.replace( /,/g, "" ), 10 );
 				self.search();
 			}) );
 
@@ -1405,7 +2764,7 @@
 				let val = el.attr( "data-value" ) || null;
 				$( "#beds_picker a" ).removeClass( "active" );
 				el.addClass( "active" );
-				self.search_params.bedrooms = val;
+				self.search_params.bedrooms = parseInt( val, 10 );
 				self.search();
 			});
 
@@ -1433,42 +2792,43 @@
 			// bathrooms
 			$( "#beds_picker" ).on( "change", function(){
 				let val = $(this).attr( "data-value" ) || null;
-				self.search_params.bathrooms = val;
+				self.search_params.bathrooms = parseInt( val, 10 );
 				self.search();
 			});
 
 			// area_min
 			$( "#area_min" ).on( "change input", $.debounce( self.debounce_time, function(){
 				let val = $(this).val() || null;
-				self.search_params.area_min = val;
+				self.search_params.area_min = parseInt( val, 10 );
 				self.search();
 			}) );
 
 			// area_max
 			$( "#area_max" ).on( "change input", $.debounce( self.debounce_time, function(){
 				let val = $(this).val() || null;
-				self.search_params.area_max = val;
+				self.search_params.area_max = parseInt( val, 10 );
 				self.search();
 			}) );
 
 			// lot_size_min
-			$( "#lot_size_min" ).on( "change input", $.debounce( self.debounce_time, function(){
+			$( "#lot_size_min" ).on( "change", $.debounce( self.debounce_time, function(){
 				let val = $(this).val() || null;
-				self.search_params.lot_size_min = val;
+				self.search_params.lot_size_min = parseInt( val, 10 );
 				self.search();
 			}) );
 
 			// lot_size_max
+			/*
 			$( "#lot_size_max" ).on( "change input", $.debounce( self.debounce_time, function(){
 				let val = $(this).val() || null;
-				self.search_params.lot_size_max = val;
+				self.search_params.lot_size_max = parseInt( val, 10 );
 				self.search();
 			}) );
-
+			*/
 			// lot_size
 			$( "#lot_size" ).on( "change", function(){
 				let val = $(this).attr( "data-value" ) || null;
-				self.search_params.lot_size = val;
+				self.search_params.lot_size = parseInt( val, 10 );
 				self.search();
 			});
 
@@ -1487,16 +2847,16 @@
 			}) );
 
 			// lot_size
-			$( "#max_hoa" ).on( "change", function(){
-				let val = $(this).attr( "data-value" ) || null;
-				self.search_params.max_hoa = val;
+			$( "#max_hoa" ).on( "change", $.debounce( self.debounce_time, function(){
+				let val = $(this).val() || null;
+				self.search_params.max_hoa = parseInt( val.replace( /,/g, "" ), 10 );
 				self.search();
-			});
+			}) );
 
 			// lot_size
 			$( "#days_on_market" ).on( "change", function(){
-				let val = $(this).attr( "data-value" ) || null;
-				self.search_params.days_on_market = val;
+				let val = $(this).val() || null;
+				self.search_params.days_on_market = parseInt( val, 10 );
 				self.search();
 			});
 
@@ -1508,7 +2868,7 @@
 			}) );
 
 			// pagination
-			$( "#pagination" ).on( "click", "li:not( .active )", function() {
+			$( "#pagination" ).on( "click", "li", function() {
 				let page = $(this).attr( "data-page" );
 				if ( page === "next" )
 					page = ( self.current_page + 1 );
@@ -1563,16 +2923,57 @@
 			$( "#properties" ).on( "click", ".property", function(){
 				let el = $(this);
 				let url = el.attr( "data-url" );
-				window.location.href = url;
+				//window.location.href = url;
+			});
+			//
+			$(document).ready(function(){
+				let overlay = <?= $overlay; ?>;
+				let property_id = <?= $property_id; ?>;
+				
+				if (overlay == 1){
+					vm.loadMLS(property_id);
+					let zip = vm.mls.address_postalCode;
+					vm.loadAgent(zip);					
+					$( ".modal" ).toggleClass( "is-visible" );
+				}
+			});
+			// toggle modal
+			$( "body" ).on( "click", ".modal-toggle", function(){
+				mls_url = $(this).attr('data-url');
+				modal_heading = $(this).attr('data-addr');
+				mls_id = $(this).attr('mls-id');
+				zip_code = $(this).attr('postal');
+				vm.loadMLS(mls_id);
+				vm.loadAgent(zip_code);
+				new_url = 'http://l8u.9b2.myftpupload.com'+mls_url;
+				$("#modal-preview").attr('src',new_url);
+				// alert(mls_url);
+				// setTimeout(function(){ 
+					$( ".modal" ).toggleClass( "is-visible" );
+				// }, 1000);
+				// $(".modal-heading").html(modal_heading);
+			});
+
+			$("body").on("click",".modal-overlay",function(){
+				$( ".modal" ).removeClass( "is-visible" );
+				$("#modal-preview").attr('src','');
+			});
+
+			$("body").on("click",".modal-close",function(e){
+				e.stopPropagation();
+				$( ".modal" ).removeClass( "is-visible" );
+				$("#modal-preview").attr('src','');
+			});
+
+			$("body").on("click",".modal-close2",function(){
+				$( ".modal" ).removeClass( "is-visible" );
+				$("#modal-preview").attr('src','');
 			});
 
 			// browser geolocation
 			$( ".geo_trigger" ).click( function(){
 				let el = $(this);
-				if ( location.protocol !== "https" ) {
-					alert( "HTTPS required for geolocation" );
-				}
-				else if ( ! self.user_coords.latitude ) {
+				if ( ! self.user_coords.latitude ) {
 					self.updateGeoFromBrowser();
 				}
 			})
@@ -1609,14 +3010,13 @@
 				this.search_params.geo_lng = position.coords.longitude;
 
 				this.search();
-			}, ( error ) => {
-				alert( error.message );
-				console.error( error.message );
 			});
 		};
 
 		SearchPage.prototype.search = function() {
 			console.log( "search" );
+
+			this.updateUrl( this.createPermalink() );
 
 			if ( ! this.enable_search ) {
 				return new Promise( ( resolve, reject ) => {
@@ -1640,18 +3040,18 @@
 			console.log( "init" );
 
 			this.search_params.address.city = "Phoenix";
-			this.search_params.address.state = "AZ";
-			this.search_params.address.country = "USA";
 
 			let url_params = this.getJsonFromUrl();
+			console.log( "url_params", url_params )
 			try {
 				if ( url_params.search ) {
 					let data = JSON.parse( url_params.search );
+					console.log( "data", data )
 					this.search_params = { ...this.search_params, ...data };
 				}
 			} catch ( error ) {}
 
-			this.search_params.address.full = this.search_params.address.full || this.search_params.address.city + " " + this.search_params.address.state;
+			console.log( "search_params", this.search_params )
 
 			this.enable_search = false;
 			this.initTriggers();
@@ -1765,7 +3165,7 @@
 		};
 
 		SearchPage.prototype.createMapMarker = function( latitude, longitude, color = "", title = "", listing_type = "for_sale", price = null, highlight = false ) {
-			console.log( "createMapMarker", latitude, longitude, title, listing_type, price, highlight );
+			//console.log( "createMapMarker", latitude, longitude, title, listing_type, price, highlight );
 
 			let icon = this.createMarkerIcon( color, price, highlight );
 
@@ -1779,7 +3179,7 @@
 		};
 
 		SearchPage.prototype.addMapMarker = function( latitude, longitude, color = "", title = "", listing_type = "for_sale", price = null, highlight = false ) {
-			console.log( "addMapMarker", latitude, longitude, title, listing_type, price, highlight );
+			//console.log( "addMapMarker", latitude, longitude, title, listing_type, price, highlight );
 
 			let marker = this.createMapMarker( latitude, longitude, color, title, listing_type, price, highlight );
 
@@ -1787,7 +3187,7 @@
 		};
 
 		SearchPage.prototype.clearMapMarkers = function() {
-			console.log( "clearMapMarkers", this.map_markers );
+			//console.log( "clearMapMarkers", this.map_markers );
 
 			this.map_markers.forEach( ( marker ) => {
 				marker.setMap( null );
@@ -1796,7 +3196,7 @@
 		};
 
 		SearchPage.prototype.spliceSingleMapMarker = function( search_index ) {
-			console.log( "spliceSingleMapMarker", search_index );
+			//console.log( "spliceSingleMapMarker", search_index );
 
 			let marker = this.map_markers.filter( ( marker, index ) => {
 				return ( index === search_index );
@@ -1810,7 +3210,7 @@
 		};
 
 		SearchPage.prototype.updateMapBounds = function( lat = 32, lng = -112, zoom = 1 ) {
-			console.log( "updateMapBounds", this.map_markers );
+			//console.log( "updateMapBounds", this.map_markers );
 
 			if ( ! this.map_markers.length ) {
 				map.setZoom( zoom );
@@ -1827,7 +3227,7 @@
 		};
 
 		SearchPage.prototype.clearPaginationView = function() {
-			console.log( "updatePaginationView" );
+			//console.log( "clearPaginationView" );
 
 			$( "#pagination .page-item:not( .ignore )" ).remove();
 			$( "#pagination .page-item.ignore" ).css({
@@ -1836,7 +3236,7 @@
 		};
 
 		SearchPage.prototype.updatePaginationView = function() {
-			console.log( "updatePaginationView" );
+			//console.log( "updatePaginationView" );
 
 			this.clearPaginationView();
 
@@ -1853,7 +3253,7 @@
 		};
 
 		SearchPage.prototype.changePage = function( page ) {
-			console.log( "changePage", page );
+			//.log( "changePage", page );
 
 			$( "#pagination li.active" ).removeClass( "active" );
 			$( `#pagination li[data-page="${ page }"]` ).addClass( "active" );
@@ -1964,7 +3364,6 @@
 	//})(jQuery);
 
 </script>
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaSZpfZpwVHh1sc7hV0FOLf7c96sInpsI&callback=initMap&libraries=places"></script> -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaSZpfZpwVHh1sc7hV0FOLf7c96sInpsI&callback=initMap&libraries=places"></script>
 <script>
 
@@ -1998,5 +3397,7 @@
 		}
 
 </script>
+
+
 </body>
 </html>

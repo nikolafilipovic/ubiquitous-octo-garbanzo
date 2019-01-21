@@ -1,0 +1,144 @@
+<style>
+  .et_pb_section_1{
+    z-index: 0 !important;
+  }
+  .et_pb_section_2{
+    z-index: 0 !important;
+  }
+ #home_search_dropdown {
+        display: none;
+        background: rgb( 255,255,255 );
+        border: 1px solid rgb( 222,222,222 );
+        position: fixed;
+        top: 80px;
+        left: 2px;
+        z-index: 9999 !important;
+      }
+
+    #home_search_dropdown .section {
+
+    }
+
+      #home_search_dropdown .header {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: rgb( 180,180,180 );
+        padding-left: 30px;
+        padding-top: 10px;
+        position: relative;
+
+      }
+        #home_search_dropdown .header:before {
+          content: "\f102";
+          font-family: "dashicons";
+          position: absolute;
+          top: 9px;
+          left: 8px;
+          font-size: 17px;
+        }
+
+      #home_search_dropdown .items {
+        
+      }
+
+      #home_search_dropdown .item {
+        font-size: 12px;
+        color: rgb( 70,155,181 );
+        padding-top: 5px;
+        padding-left: 30px;
+        cursor: pointer;
+      }
+        #home_search_dropdown .item:hover {
+          background: rgb( 243,243,251 );
+        }
+
+        #home_search_dropdown .item:hover .sub_text {
+          color: rgb( 180,180,180 );
+        }
+
+        #home_search_dropdown .item .sub_text {
+          font-size: 11px;
+          color: rgb( 210,210,210 );
+          line-height: 9px;
+          border-bottom: 1px solid rgb( 235,235,235 );
+          padding-bottom: 12px;
+        }
+</style>
+
+   <script>
+      let default_geo = {
+      latitude: 33.45,
+      longitude: -112.065,
+    };
+      // This example retrieves autocomplete predictions programmatically from the
+      // autocomplete service, and displays them as an HTML list.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      function initService() {
+        var displaySuggestions = function(predictions, status) {
+          if (status != google.maps.places.PlacesServiceStatus.OK) {
+            alert(status);
+            return;
+          }
+          let input_el = jQuery( ".search-desktop-field" );
+          let x = input_el.offset().left;
+          let y = ( input_el.offset().top + input_el.outerHeight() );
+          let width = input_el.outerWidth();
+
+          let parent = jQuery( "#home_search_dropdown .items" );
+          parent.html( "" );
+
+          jQuery( "#home_search_dropdown" )
+          .css({
+            top: y,
+            left: x,
+            width: width,
+          })
+          .slideDown();
+          
+          // document.getElementById('results').innerHTML = "";
+          predictions.forEach(function(prediction) {
+            console.log(prediction);
+            // var li = document.createElement('li');
+            // li.appendChild(document.createTextNode(prediction.description));
+            // document.getElementById('results').appendChild(li);
+            parent.append( `
+              <div class="item">
+                <div class="main_text">${ prediction.description }</div>
+                <div class="sub_text">test</div>
+              </div>
+            ` );
+          });
+        };
+
+        //clicking an item on google autocomplete module
+        jQuery("#landing-search").on("blur",function(){
+          jQuery("#home_search_dropdown").slideUp();
+        });
+        jQuery( "#home_search_dropdown .items" ).on( "click", ".item", function(){
+          let el = jQuery(this);
+          let address = el.find( ".main_text" ).text();
+          let full_address = address;
+          jQuery( "#landing-search" ).val( full_address ).trigger( "change" ).blur();
+          jQuery("#home_search_dropdown").slideUp();
+          window.location="/search-homes/?search="+full_address;
+        });
+
+        var service = new google.maps.places.AutocompleteService();
+        var query = document.getElementById('landing-search');
+        query.addEventListener('keyup',function(){
+            search_field = this.value;
+            service.getQueryPredictions({ 
+            input: search_field,
+            location: new google.maps.LatLng( parseFloat( default_geo.latitude ), parseFloat( default_geo.longitude ) ),
+            radius: 10000 
+          }, displaySuggestions);
+        });
+        
+      }
+    </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaSZpfZpwVHh1sc7hV0FOLf7c96sInpsI&libraries=places&callback=initService"
+        async defer></script>

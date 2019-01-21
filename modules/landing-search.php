@@ -16,20 +16,31 @@ class toc_landing_search extends ET_Builder_Module {
 
 	function render() {
 		$output = sprintf(
-			'<div class="landing-search">
+			'
+			
+			<div class="landing-search">
                 <div class="search-choice">
                     <span class="buy active">Buy</span><span class="sell">Sell</span><span class="estimate">Estimate</span>
                 </div>
-                <div class="search-field">
+                <div class="search-field search-desktop-field">
 					<div class="input-group buy" id="input-group">
-						<input type="text" class="form-control" id="landing-search" placeholder="Enter address, neighborhood, city or zip...">
+						<input type="text" class="form-control" id="landing-search" placeholder="Enter addresss, neighborhood, city or zip...">
 						<div class="input-group-prepend">
-							<div class="input-group-text"><i class="far fa-search"></i></div>
+							<div class="input-group-text"><i class="far fa-search" id="search-button"></i></div>
 						</div>
+						<br>
+						<div id="home_search_dropdown">
+			              <div class="section">
+			                <div class="header">Addresses</div>
+			                <div class="items"></div>
+			              </div>
+			            </div>
 					</div>
+
                 </div>
 			</div>'
 		);
+		
 		return $output;
 	}
 }
